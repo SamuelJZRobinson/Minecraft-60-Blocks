@@ -6,6 +6,10 @@ setblock 21 130 7 minecraft:oak_wall_sign[facing=north] destroy
 fill 20 130 5 20 130 -3 minecraft:oak_wall_sign[facing=east] destroy
 fill 22 130 -3 22 130 5 minecraft:oak_wall_sign[facing=west] destroy
 
-# Extra Info
+# Game Info
 fill 20 132 -3 20 131 -3 minecraft:oak_wall_sign[facing=south] destroy
 fill 22 132 -3 22 131 -3 minecraft:oak_wall_sign[facing=south] destroy
+
+# Project Info
+setblock 20 132 -8 minecraft:oak_wall_sign[facing=south] destroy
+setblock 22 132 -8 minecraft:oak_wall_sign[facing=south] destroy
