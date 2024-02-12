@@ -1,3 +1,4 @@
+### Should probably change this to lobby team, they are also opposite of playing
 # NOROOM
 team add NoRoom "NoRoom"
 team modify Lobby collisionRule never
