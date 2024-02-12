@@ -1,5 +1,4 @@
 # Official Items
-execute unless en
 summon armor_stand 19.50 131.39 5.50 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyAmmo"],DisabledSlots:4144959,Rotation:[-90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:1}}]}
 summon armor_stand 19.25 131.64 4.50 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyAxe"],DisabledSlots:4144959,Rotation:[90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:21}}]}
 summon armor_stand 19.50 131.38 3.50 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyBoyScoutHandbook"],DisabledSlots:4144959,Rotation:[-90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:3}}]}
