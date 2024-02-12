@@ -1,0 +1,1 @@
+playsound minecraft:block.iron_door.close ambient @a 0 55 30 16 0.6 0

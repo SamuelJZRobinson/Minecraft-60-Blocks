@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_dye"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 32
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": "Gas"
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{gas:1b}"
+        }
+      ]
+    }
+  ]
+}

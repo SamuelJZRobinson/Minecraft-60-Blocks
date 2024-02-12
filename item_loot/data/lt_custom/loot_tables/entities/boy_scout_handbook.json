@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:saddle",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Boy Scout Handbook"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:3,itemId:3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:saddle",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Dolores"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:7,itemId:19}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

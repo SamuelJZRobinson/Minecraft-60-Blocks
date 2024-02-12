@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:slime,tag=scavengeItem] at @s store result entity @e[type=minecraft:armor_stand,tag=scavengeItem,limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0]

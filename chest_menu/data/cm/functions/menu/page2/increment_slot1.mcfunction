@@ -1,0 +1,19 @@
+# Increment Slot For Void Items
+execute if score slotOne ChestMenuExplore matches 2 if score suitcase ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 3 if score ammo ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 4 if score armour ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 5 if score axe ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 6 if score boyScoutHandbook ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 7 if score bugSpray ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 8 if score cards ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 9 if score checkers ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 10 if score flashlight ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 11 if score gasMask ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 12 if score gun ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 13 if score harmonica ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 14 if score map ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 15 if score medkit ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 16 if score padlock ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 17 if score radio ItemsBunker matches 0 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 18 if score cans ItemsBunker matches ..3 run scoreboard players add slotOne ChestMenuExplore 1
+execute if score slotOne ChestMenuExplore matches 19 if score bottles ItemsBunker matches ..3 run scoreboard players add slotOne ChestMenuExplore 1

@@ -1,0 +1,1 @@
+playsound minecraft:entity.shulker.open block @s ~ ~ ~ 1 0.75 1

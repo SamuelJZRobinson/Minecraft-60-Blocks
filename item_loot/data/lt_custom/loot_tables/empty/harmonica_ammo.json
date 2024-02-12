@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone_meal"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 1
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": "Breathe"
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{breathe:1b}"
+        }
+      ]
+    }
+  ]
+}

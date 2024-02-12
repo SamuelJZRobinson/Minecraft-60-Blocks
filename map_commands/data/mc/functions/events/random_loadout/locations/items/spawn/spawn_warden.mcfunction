@@ -1,0 +1,1 @@
+summon warden ~ ~ ~ {Glowing:0b,DeathTime:19,DeathLootTable:"lt_custom:entities/soup_can",Team:"Enemy",PersistenceRequired:1b,NoAI:0b,Attributes:[{Name:"generic.max_health",Base:70},{Name:"generic.follow_range",Base:40},{Name:"generic.movement_speed",Base:0.45}],Brain:{memories:{"minecraft:dig_cooldown":{value:{},ttl:1200L}}}}

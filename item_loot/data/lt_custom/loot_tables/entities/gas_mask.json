@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:saddle",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Gas Mask"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:9,itemId:8}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

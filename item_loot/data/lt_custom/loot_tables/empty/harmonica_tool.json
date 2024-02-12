@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Harmonica"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Click to fire",
+                  "color": "dark_gray",
+                  "underlined": true
+                },
+                {
+                  "text": "60% enrage | 40% stun",
+                  "color": "dark_green"
+                },
+                {
+                  "text": "Range: 16",
+                  "color": "dark_green"
+                },
+                {
+                  "text": "Firerate: 20 seconds",
+                  "color": "dark_green"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:6,itemId:10,harmonica:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

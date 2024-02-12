@@ -1,0 +1,1 @@
+fill 3 59 31 -3 59 31 minecraft:redstone_block replace air

@@ -1,0 +1,1 @@
+summon enderman ~ ~ ~ {Glowing:0b,DeathTime:19,DeathLootTable:"minecraft:empty",Team:"Enemy",PersistenceRequired:1b,NoAI:0b,CanPickUpLoot:0b,Health:28f,Attributes:[{Name:"generic.max_health",Base:28},{Name:"generic.follow_range",Base:40},{Name:"generic.movement_speed",Base:0.35}]}

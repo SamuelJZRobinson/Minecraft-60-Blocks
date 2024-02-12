@@ -1,0 +1,1 @@
+tellraw @s {"text":"Download resource pack","underlined":true,"color":"blue","clickEvent":{"action":"open_url","value":"https://drive.google.com/file/d/1TdCeS-I-zT2WG9V7PgRVc9PcPJVXfMYI/view?usp=sharing"}}

@@ -1,0 +1,1 @@
+playsound minecraft:entity.skeleton.hurt player @a 0 55 30 16 0.5 0.5

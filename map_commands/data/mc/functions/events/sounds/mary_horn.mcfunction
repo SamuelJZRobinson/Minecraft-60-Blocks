@@ -1,0 +1,1 @@
+playsound item.goat_horn.sound.2 neutral @p[team=Playing] ~ ~ ~ 0.5 1 0

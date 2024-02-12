@@ -1,0 +1,48 @@
+
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:saddle",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Gun",
+                "color": "gray",
+                "bold": true
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Click to cycle",
+                  "color": "dark_gray",
+                  "underlined": true
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Ranged weapon with a clip",
+                  "color": "dark_green"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:10,isMenu:1b,page:2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

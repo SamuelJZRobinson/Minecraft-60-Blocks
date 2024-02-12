@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:empty",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Gun"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Click to fire",
+                  "color": "dark_gray",
+                  "underlined": true
+                },
+                {
+                  "text": "Range: 128",
+                  "color": "dark_green"
+                },
+                {
+                  "text": "Damage: 4 to 14",
+                  "color": "dark_green"
+                },
+                {
+                  "text": "Headshots",
+                  "color": "dark_green"
+                },
+                {
+                  "text": "Firerate: 1.25 seconds",
+                  "color": "dark_green"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:2,itemId:9,gun:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

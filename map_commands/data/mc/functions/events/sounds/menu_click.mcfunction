@@ -1,0 +1,1 @@
+playsound minecraft:block.note_block.xylophone record @s ~ ~ ~ 1 2 1

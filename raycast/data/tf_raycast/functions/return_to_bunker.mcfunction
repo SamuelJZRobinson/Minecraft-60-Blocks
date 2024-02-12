@@ -1,0 +1,1 @@
+execute if score clock Timer matches 4 run scoreboard players set seconds Timer 1

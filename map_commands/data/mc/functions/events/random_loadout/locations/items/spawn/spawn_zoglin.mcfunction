@@ -1,0 +1,1 @@
+summon minecraft:zoglin ~ ~ ~ {Glowing:0b,DeathTime:19,DeathLootTable:"minecraft:empty",Team:"Enemy",PersistenceRequired:1b,NoAI:0b,Attributes:[{Name:"generic.follow_range",Base:40},{Name:"generic.movement_speed",Base:0.4}]}

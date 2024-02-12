@@ -1,0 +1,1 @@
+loot give @p[team=Playing] loot lt_custom:empty/harmonica_ammo

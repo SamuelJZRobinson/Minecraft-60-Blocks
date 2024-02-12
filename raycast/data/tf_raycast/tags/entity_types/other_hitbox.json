@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:spider",
+    "minecraft:cave_spider",
+    "minecraft:endermite",
+    "minecraft:slime",
+    "minecraft:zoglin",
+    "minecraft:creeper",
+    "minecraft:enderman",
+    "minecraft:ravager",
+    "minecraft:warden"
+  ]
+}
