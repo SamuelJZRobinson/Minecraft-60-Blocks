@@ -83,7 +83,7 @@ execute store result score waterLeft ItemsHouse if entity @e[type=minecraft:slim
   scoreboard players operation remainder ItemsHouse -= math_out em
 
 # Compensate Remaining Items
-execute if score remainder ItemsHouse matches 1.. run function mc:states/stages/5_setup_house/place/items/fix_remainder
+execute if score remainder ItemsHouse matches 1.. run function mc:states/stages/5_setup_house/place/items/set/set_room_count_fix_leftovers
 
 # Assign Items For Specific Rooms
   # Kitchen Soup (3 to 5, n+1)

@@ -22,4 +22,4 @@ scoreboard players add allocated ItemsHouse 1
 scoreboard players remove remainder ItemsHouse 1
 
 # Loop Function If Items Are Owed
-execute if score remainder ItemsHouse matches 1.. run function mc:states/stages/5_setup_house/place/items/fix_remainder
+execute if score remainder ItemsHouse matches 1.. run function mc:states/stages/5_setup_house/place/items/set/set_room_count_fix_leftovers

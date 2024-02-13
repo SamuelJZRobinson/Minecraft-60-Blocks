@@ -326,4 +326,4 @@ execute if score bunkerSide GameStatus matches 0 run schedule function mc:states
 execute if score bunkerSide GameStatus matches 1 run schedule function mc:states/stages/5_setup_house/place/floorplans/spawn/spawn_east_checkers 3t replace
 
 # Check For Blocks
-schedule function mc:states/stages/5_setup_house/place/floorplans/check_for_block 4t replace
+schedule function mc:states/stages/5_setup_house/place/floorplans/spawn/check_for_block 4t replace

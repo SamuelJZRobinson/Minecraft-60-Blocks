@@ -138,4 +138,4 @@
   tag @e[type=minecraft:marker,x=14,y=63,z=-10,dx=19,dy=4,dz=6] add hallway
 
 # Count High Spots
-schedule function mc:states/stages/5_setup_house/place/floorplans/count_high_spots 2t replace
+schedule function mc:states/stages/5_setup_house/place/floorplans/spawn/count_high_spots 2t replace

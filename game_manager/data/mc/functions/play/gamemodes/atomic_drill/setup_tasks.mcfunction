@@ -54,7 +54,7 @@
   execute if score task AtomicDrill matches 6 run scoreboard players set dialogueMax AtomicDrill 11
   # Create Marker
   execute if score task AtomicDrill matches 6 run scoreboard players set clock Timer 1
-  execute if score task AtomicDrill matches 6 run function mc:states/stages/5_setup_house/place/floorplans/spawn_bunker_indicator
+  execute if score task AtomicDrill matches 6 run function mc:states/stages/5_setup_house/place/floorplans/spawn/spawn_bunker_indicator
 
 # Task 7 (Find Radio In The Living Room Shelf)
   # Set Dialogue
@@ -81,7 +81,7 @@
   execute if score task AtomicDrill matches 9 run scoreboard players set dialogue AtomicDrill 14
   execute if score task AtomicDrill matches 9 run scoreboard players set dialogueMax AtomicDrill 14
   # Create Marker
-  execute if score task AtomicDrill matches 9 run function mc:states/stages/5_setup_house/place/floorplans/spawn_bunker_indicator
+  execute if score task AtomicDrill matches 9 run function mc:states/stages/5_setup_house/place/floorplans/spawn/spawn_bunker_indicator
 
 # Task 10 (Scavenge House)
   # Set Dialogue
