@@ -50,4 +50,4 @@ execute if score math_out em matches 6 run function mc:states/stages/5_setup_hou
 execute unless entity @e[type=minecraft:zombie,tag=houseMary,limit=1] run schedule function mc:states/stages/5_setup_house/place/characters/spawn/spawn_characters 10t replace
 
 # Items
-schedule function mc:states/stages/5_setup_house/place/items/spawn_items_check 12t replace
+schedule function mc:states/stages/5_setup_house/place/items/spawn/spawn_items_check 12t replace

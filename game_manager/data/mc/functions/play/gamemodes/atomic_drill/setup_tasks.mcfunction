@@ -1,5 +1,7 @@
 # Notes
   # bunkerSide is managed by mc:states/stages/5_setup_house/place/floorplans/clone/clone_floorplan1
+  ### Item summon scripts are broken since they were grouped into one file.
+  ### Character summon scripts might be broken due to a change.
 
 # Task 1 (Goto Hallway Marker)
   # Set Dialogue
@@ -62,7 +64,7 @@
   execute if score task AtomicDrill matches 7 positioned 19.30 65.00 6.45 run function mc:states/stages/5_setup_house/place/items/spawn/spawn_radio
   execute if score task AtomicDrill matches 7 run data modify entity @e[type=slime,tag=scavengeRadio,limit=1] Invulnerable set value 0b
   execute if score task AtomicDrill matches 7 as @e[type=minecraft:slime,tag=scavengeRadio,limit=1] at @s run teleport @s ~ ~ ~ 90 0
-  execute if score task AtomicDrill matches 7 run function mc:states/stages/5_setup_house/place/items/sync_rotation
+  execute if score task AtomicDrill matches 7 run function mc:states/stages/5_setup_house/place/items/raise/sync_rotation
 
 # Task 8 (Find Gas Mask On Wall)
   # Set Dialogue
@@ -72,7 +74,7 @@
   execute if score task AtomicDrill matches 8 positioned 28.50 66.50 -3.25 run function mc:states/stages/5_setup_house/place/items/spawn/spawn_gas_mask
   execute if score task AtomicDrill matches 8 run data modify entity @e[type=slime,tag=scavengeGasMask,limit=1] Invulnerable set value 0b
   execute if score task AtomicDrill matches 8 as @e[type=minecraft:slime,tag=scavengeGasMask,limit=1] at @s run teleport @s ~ ~ ~ -180 0
-  execute if score task AtomicDrill matches 8 run function mc:states/stages/5_setup_house/place/items/sync_rotation
+  execute if score task AtomicDrill matches 8 run function mc:states/stages/5_setup_house/place/items/raise/sync_rotation
 
 # Task 9 (Salvage Items)
   # Set Dialogue

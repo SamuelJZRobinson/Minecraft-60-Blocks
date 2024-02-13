@@ -41,4 +41,4 @@ execute if score room ItemsHouseHigh matches 7 if score sideBathroomTableItems I
   execute if score room ItemsHouseHigh matches 7 run scoreboard players remove sideBathroomTableItems ItemsHouseHigh 1
 
 # Rotate Item
-function mc:states/stages/5_setup_house/place/items/rotate_items
+function mc:states/stages/5_setup_house/place/items/raise/rotate_items

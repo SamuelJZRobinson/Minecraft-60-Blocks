@@ -16,7 +16,7 @@ execute if score room ItemsHouse matches 2 if score hallwaySoup ItemsHouse match
   execute if score room ItemsHouse matches 2 run scoreboard players remove hallway ItemsHouse 1
 
 # Rotate Item
-function mc:states/stages/5_setup_house/place/items/rotate_items
+function mc:states/stages/5_setup_house/place/items/raise/rotate_items
 
 # Decrease Scores
 scoreboard players remove itemCount ItemsHouse 1

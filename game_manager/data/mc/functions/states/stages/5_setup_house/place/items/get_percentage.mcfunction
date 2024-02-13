@@ -5,6 +5,8 @@
   # During random selections math_in2 is increased by 1 to avoid omitting the max range
   # startOne sets math_in1 to 1 when the dice is rolled instead of being a percentage of the max value
 
+### This script should ideally be in the math module
+
 # Keep In Range
 execute if score math_in1 em matches ..-1 run scoreboard players set math_in1 em 0
 execute if score math_in1 em matches 101.. run scoreboard players set math_in1 em 100
