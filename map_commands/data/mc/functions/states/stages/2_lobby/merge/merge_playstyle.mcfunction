@@ -8,10 +8,8 @@
 # Manage Playstyle
   # Menu Sound
   execute if score started Lobby matches 1 run function mc:events/sounds/menu_click_error
-  execute if score started Lobby matches 0 run function mc:events/sounds/menu_click
-
-  # Warning
   execute if score started Lobby matches 1 run tellraw @s {"text":"Game already in progress!","color":"red"}
+  execute if score started Lobby matches 0 run function mc:events/sounds/menu_click
 
   # Keep In Range
   execute if score gameMode Lobby matches 5.. run scoreboard players set gameMode Lobby 1

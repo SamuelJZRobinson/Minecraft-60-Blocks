@@ -14,8 +14,12 @@ scoreboard players set modulo Timer 0
 # Lobby
 scoreboard objectives add Lobby dummy {"bold":true,"color":"white","text":"Lobby"}
 scoreboard players set started Lobby 0
-scoreboard players set playerCount Lobby 0
-scoreboard players set PLAYER_LIMIT Lobby 1
+
+# PLAYER COUNT
+scoreboard objectives add PlayerCount dummy {"bold":true,"color":"white","text":"Player Count"}
+scoreboard players set PLAYER_LIMIT PlayerCount 1
+scoreboard players set playingAliveCount PlayersCount 0
+scoreboard players set lobbyAliveCount PlayerCount 0
 
 # Math
   scoreboard objectives add em dummy {"bold":true,"color":"white","text":"em"}
