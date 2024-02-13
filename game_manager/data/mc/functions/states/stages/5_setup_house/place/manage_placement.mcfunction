@@ -27,8 +27,8 @@
     # Floorplan keeps track of what structure is loaded to avoid duplicate clones.
   # Tags:
     # [north|east|south|west]: applies directions to parent markers inherited by child items that face it.
-    # [table|wall]: indicates a high position, priortized first.
-    # floor: indicates a low position, default after high postion allocations.
+    # floor: indicates a default low position.
+    # [table|wall]: indicates a high position, a random number of items are raised.
     # antiWall: stops wall items from being placed, specifically for windows and awkward positions.
     # room: looks underground to detect markers precisely on the floor.
 
