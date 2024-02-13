@@ -1,4 +1,4 @@
 scoreboard players operation memory em = TIMMY_BOOST StatusOdds
-function mc:events/random_loadout/house/items/get_percentage
+function mc:states/stages/5_setup_house/place/items/get_percentage
 execute if score math_out em matches 1 run scoreboard players add maxLoot ItemsExpedition 1
 scoreboard players set math_out em 0

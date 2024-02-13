@@ -1,9 +1,14 @@
 # Game Menu
-data merge block 21 132 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Character","color":"yellow","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_character"},"bold":true}',Text2:'{"text":"#","color":"red"}',Text3:'{"text":"","color":"dark_red","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
-data merge block 22 131 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Gamemode","color":"yellow","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_gamemode"},"bold":true}',Text2:'{"text":"#","color":"red}',Text3:'{"text":"","color":"dark_red","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
-data merge block 21 131 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Difficulty","color":"yellow","clickEvent":{"action":"run_command","value":"execute unless score gamemode Settings matches 1 run function mc:states/stages/2_lobby/set/set_difficulty"},"bold":true}',Text2:'{"text":"#","color":"red}',Text3:'{"text":"","clickEvent":{"action":"run_command","value":"execute unless score gamemode Settings matches 1 run function mc:sounds/menu_click"}}'}
-data merge block 20 131 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Expedition","color":"yellow","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_expedition"},"bold":true}',Text2:'{"text":"#","color":"red}',Text3:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
-data merge block 21 130 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Start Game","color":"green","bold":true}',Text2:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:states/stages/increment_state"}}',Text3:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
+  # Character
+  data merge block 21 132 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Character","color":"yellow","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_character"},"bold":true}',Text2:'{"text":"#","color":"red"}',Text4:'{"text":"","color":"dark_red","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
+  # Gamemode
+  data merge block 22 131 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Gamemode","color":"yellow","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_gamemode"},"bold":true}',Text2:'{"text":"#","color":"red}',Text4:'{"text":"","color":"dark_red","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
+  # Difficulty
+  data merge block 21 131 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Difficulty","color":"yellow","clickEvent":{"action":"run_command","value":"execute unless score gamemode Settings matches 1 run function mc:states/stages/2_lobby/set/set_difficulty"},"bold":true}',Text2:'{"text":"#","color":"red}',Text4:'{"text":"","clickEvent":{"action":"run_command","value":"execute unless score gamemode Settings matches 1 run function mc:sounds/menu_click"}}'}
+  # Expedition
+  data merge block 20 131 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Expedition","color":"yellow","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_expedition"},"bold":true}',Text2:'{"text":"#","color":"red}',Text4:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
+  # Start Game
+  data merge block 21 130 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Start Game","color":"green","bold":true}',Text2:'{"text":"","clickEvent":{"action":"run_command","value":"scoreboard players set state GameStatus 3"}}',Text3:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:states/stages/manage_states"}}',Text4:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
 
 # Items
   # Ammo

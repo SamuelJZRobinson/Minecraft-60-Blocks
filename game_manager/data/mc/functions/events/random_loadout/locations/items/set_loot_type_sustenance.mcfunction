@@ -11,7 +11,7 @@ function em:math/randomp
 # Get Percentage
 scoreboard players operation memory em = sustenanceCount ItemsExpedition
 scoreboard players operation math_in1 em = math_out em
-function mc:events/random_loadout/house/items/get_percentage
+function mc:states/stages/5_setup_house/place/items/get_percentage
 scoreboard players operation soupCount ItemsExpedition = math_out em
 scoreboard players operation waterCount ItemsExpedition = sustenanceCount ItemsExpedition
 scoreboard players operation waterCount ItemsExpedition -= soupCount ItemsExpedition

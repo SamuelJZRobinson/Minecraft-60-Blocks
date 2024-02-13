@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:marker,tag=floor] at @s unless block ~ ~ ~ minecraft:air run kill @s

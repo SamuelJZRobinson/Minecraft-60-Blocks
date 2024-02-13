@@ -7,7 +7,7 @@ scoreboard players set startOne em 1
 # Loot Chance
   # Roll Dice (% in max, n+1)
   scoreboard players operation memory em = NO_LOOT ExpeditionOdds
-  function mc:events/random_loadout/house/items/get_percentage
+  function mc:states/stages/5_setup_house/place/items/get_percentage
   # Success
   execute unless score math_out em matches 1 run function mc:events/random_loadout/locations/items/set_loot_count_items
   # Fail
