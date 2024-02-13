@@ -5,7 +5,7 @@ team modify Lobby collisionRule never
 team modify Lobby color gray
 team modify Lobby deathMessageVisibility never
 team modify Lobby friendlyFire false
-team modify Lobby nametagVisibility never
+team modify Lobby nametagVisibility always
 team modify Lobby seeFriendlyInvisibles true
 
 # PLAYING
@@ -32,7 +32,7 @@ team modify NoRoom collisionRule never
 team modify NoRoom color red
 team modify NoRoom deathMessageVisibility never
 team modify NoRoom friendlyFire false
-team modify NoRoom nametagVisibility never
+team modify NoRoom nametagVisibility always
 team modify NoRoom seeFriendlyInvisibles true
 
 # MARKER

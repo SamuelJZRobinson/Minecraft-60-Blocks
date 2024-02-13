@@ -1,7 +1,3 @@
-# Hide Transition
-effect give @a blindness 60 0 false
-
-# Refresh Game
 function mc:states/stages/1_factory_reset/clear/clear_schedules
 schedule function mc:states/stages/1_factory_reset/set/set_gamerules 2t replace
 schedule function mc:states/stages/1_factory_reset/set/set_teams 4t replace

@@ -1,3 +1,8 @@
+# SETTINGS
+scoreboard players set initialCharacter Settings 0
+scoreboard players set gameMode Settings 1
+scoreboard players set difficulty Settings 1
+
 # Player Related
 scoreboard players reset * PlayerHunger
 scoreboard players reset * PlayerDeaths
