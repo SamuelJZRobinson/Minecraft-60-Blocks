@@ -1,0 +1,2 @@
+execute if score doPovExpedition Settings matches 0 run data merge block 20 131 7 {Text2:'{"text":"Automatic","color":"red"}'}
+execute if score doPovExpedition Settings matches 1 run data merge block 20 131 7 {Text2:'{"text":"In-Person","color":"red"}'}

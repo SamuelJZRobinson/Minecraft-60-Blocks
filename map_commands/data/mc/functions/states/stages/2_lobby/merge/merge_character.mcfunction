@@ -1,0 +1,2 @@
+execute if score doTed Settings matches 0 run data merge block 21 132 7 {Text2:'{"text":"Dolores","color":"red"}'}
+execute if score doTed Settings matches 1 run data merge block 21 132 7 {Text2:'{"text":"Ted","color":"red"}'}

@@ -1,0 +1,1 @@
+scoreboard players set doException Exception 0

@@ -1,6 +1,9 @@
-# Nuke Selection
-  # Start
-  data merge block 21 130 7 {GlowingText:1b, Color:"light_blue",Text1:'{"text":"Begin Game","bold":true}',Text2:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:play/lobby/manage_playstyle"}}',Text4:'{"text":"Click to begin","underlined":true,"color":"dark_blue","clickEvent":{"action":"run_command","value":"execute if score started Lobby matches 0 run function mc:play/lobby/start_game"}}'}
+# Game Menu
+data merge block 21 132 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Character","color":"yellow","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_character"},"bold":true}',Text2:'{"text":"#","color":"red"}',Text3:'{"text":"","color":"dark_red","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
+data merge block 22 131 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Gamemode","color":"yellow","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_gamemode"},"bold":true}',Text2:'{"text":"#","color":"red}',Text3:'{"text":"","color":"dark_red","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
+data merge block 21 131 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Difficulty","color":"yellow","clickEvent":{"action":"run_command","value":"execute unless score gamemode Settings matches 1 run function mc:states/stages/2_lobby/set/set_difficulty"},"bold":true}',Text2:'{"text":"#","color":"red}',Text3:'{"text":"","clickEvent":{"action":"run_command","value":"execute unless score gamemode Settings matches 1 run function mc:sounds/menu_click"}}'}
+data merge block 20 131 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Expedition","color":"yellow","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_expedition"},"bold":true}',Text2:'{"text":"#","color":"red}',Text3:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
+data merge block 21 130 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Start Game","color":"green","bold":true}',Text2:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:states/stages/increment_state"}}',Text3:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
 
 # Items
   # Ammo
@@ -52,4 +55,4 @@
   # Game Creator
   data merge block 20 132 -8 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Game Creator","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text2:'{"text":"Robot Gentleman","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_store_url"}}',Text4:'{"text":"Click to visit","underlined":true,"color":"dark_blue"}'}
   # Credits
-  data merge block 22 132 -8 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Map Creator","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text2:'{"text":"BlackeyeI"}',Text4:'{"text":"Click for credits","color":"dark_blue","underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_credits"}}'}
+  data merge block 22 132 -8 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Map Creator","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text2:'{"text":"browneyeI"}',Text4:'{"text":"Click for credits","color":"dark_blue","underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_credits"}}'}

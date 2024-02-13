@@ -4,7 +4,7 @@
 
 # STATUS ODDS
   # Levels
-  scoreboard objectives add StatusLevels dummy {"bold":true,"color":"white","text":"StatusLevels"}
+  scoreboard objectives add StatusLevels dummy {"bold":true,"color":"white","text":"Status Levels"}
   scoreboard players set BREAKDOWN_MIN StatusLevels 12
   scoreboard players set BREAKDOWN_RAGE_MAX StatusLevels 18
   scoreboard players set BREAKDOWN_MAX StatusLevels 35
@@ -23,7 +23,7 @@
   scoreboard players set SICKNESS_MIN StatusLevels 5
   scoreboard players set SICKNESS_MAX StatusLevels 20
   # Odds
-  scoreboard objectives add StatusOdds dummy {"bold":true,"color":"white","text":"StatusOdds"}
+  scoreboard objectives add StatusOdds dummy {"bold":true,"color":"white","text":"Status Odds"}
   scoreboard players set BUNKER_BLACKOUT StatusOdds 70
   scoreboard players set CANNIBALISM StatusOdds 15
   scoreboard players set CRAZY StatusOdds 2
@@ -54,7 +54,7 @@
 
 # STATUS
   # Dolores
-  scoreboard objectives add DoloresStatus dummy {"bold":true,"color":"white","text":"DoloresStatus"}
+  scoreboard objectives add DoloresStatus dummy {"bold":true,"color":"white","text":"Dolores Status"}
   scoreboard players set build DoloresStatus 0
   scoreboard players operation soup DoloresStatus = HUNGER_MAX StatusLevels
   scoreboard players set soupLevel DoloresStatus 0
@@ -75,7 +75,7 @@
   scoreboard players operation breakdown DoloresStatus = BREAKDOWN_MAX StatusLevels
   scoreboard players operation infection DoloresStatus = INFECTION_MAX StatusLevels
   # Mary
-  scoreboard objectives add MaryStatus dummy {"bold":true,"color":"white","text":"MaryStatus"}
+  scoreboard objectives add MaryStatus dummy {"bold":true,"color":"white","text":"Mary Status"}
   scoreboard players set build MaryStatus 0
   scoreboard players operation soup MaryStatus = HUNGER_MAX StatusLevels
   scoreboard players set soupLevel MaryStatus 0
@@ -97,7 +97,7 @@
   scoreboard players operation breakdown MaryStatus = BREAKDOWN_MAX StatusLevels
   scoreboard players operation infection MaryStatus = INFECTION_MAX StatusLevels
   # Ted
-  scoreboard objectives add TedStatus dummy {"bold":true,"color":"white","text":"TedStatus"}
+  scoreboard objectives add TedStatus dummy {"bold":true,"color":"white","text":"Ted Status"}
   scoreboard players set build TedStatus 0
   scoreboard players operation soup TedStatus = HUNGER_MAX StatusLevels
   scoreboard players set soupLevel TedStatus 0
@@ -118,7 +118,7 @@
   scoreboard players operation breakdown TedStatus = BREAKDOWN_MAX StatusLevels
   scoreboard players operation infection TedStatus = INFECTION_MAX StatusLevels
   # Timmy
-  scoreboard objectives add TimmyStatus dummy {"bold":true,"color":"white","text":"TimmyStatus"}
+  scoreboard objectives add TimmyStatus dummy {"bold":true,"color":"white","text":"Timmy Status"}
   scoreboard players set build TimmyStatus 0
   scoreboard players operation soup TimmyStatus = HUNGER_MAX StatusLevels
   scoreboard players set soupLevel TimmyStatus 0

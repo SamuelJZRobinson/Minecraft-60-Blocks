@@ -23,7 +23,7 @@ schedule clear mc:timers/engine/timer_loop
   schedule clear mc:events/endings/surface_scene
 
 # Atomic Drill
-execute if score gameMode Settings matches 1 run function mc:states/stages/1_factory_reset/clear/clear_schedules_atomic_drill
+execute if score gamemode Settings matches 1 run function mc:states/stages/1_factory_reset/clear/clear_schedules_atomic_drill
 
 # Expedition
 schedule clear mc:timers/expedition/timer_setup

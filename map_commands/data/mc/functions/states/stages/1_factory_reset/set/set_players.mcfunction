@@ -2,6 +2,9 @@
 clear @a
 xp set @a 0 levels
 
+# Advancements
+advancement revoke @a everything
+
 # Teams
 execute unless score restartScavenge GameStatus matches 1 run team empty Playing
 
