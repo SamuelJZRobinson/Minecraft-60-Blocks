@@ -9,7 +9,7 @@ execute if score bunkerSide GameStatus matches 1 store success score survived Ga
 function mc:quit/refresh_locations_house
 
 # Give Atomic Drill Items
-execute if score gameMode Lobby matches 1 run function mc:timers/scavenge/give_atomic_drill_items
+execute if score gamemode Settings matches 1 run function mc:timers/scavenge/give_atomic_drill_items
 
 # Blindness
 scoreboard players set blindness GameStatus 2

@@ -53,6 +53,3 @@ gamerule doLimitedCrafting true
 gamerule showDeathMessages true
 gamerule keepInventory true
 gamerule spawnRadius 0
-
-# STATUS
-tellraw @a "Gamerules set"

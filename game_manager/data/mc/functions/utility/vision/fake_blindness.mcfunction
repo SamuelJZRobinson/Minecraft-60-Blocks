@@ -13,7 +13,7 @@ execute if score blindness GameStatus matches 2 run function mc:utility/vision/f
   # Remove
   execute if score blindness GameStatus matches 3 run item replace entity @s armor.head with air 1
   execute if score blindness GameStatus matches 3 run effect clear @s slowness
-  execute if score blindness GameStatus matches 3 unless score gameMode Lobby matches 1 run title @s actionbar {"text":""}
+  execute if score blindness GameStatus matches 3 unless score gamemode Settings matches 1 run title @s actionbar {"text":""}
   # Give Outfit
   execute if score blindness GameStatus matches 3 if score clock Timer matches ..2 run function mc:play/lobby/manage_house_outfit
   execute if score blindness GameStatus matches 3 if score clock Timer matches 4 run function mc:play/lobby/manage_expedition_outfit

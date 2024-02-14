@@ -14,7 +14,7 @@ kill @e[type=area_effect_cloud,tag=bunkerHitbox]
 title @a times 20 20 20
 title @a title {"text":"THE END","color":"white"}
 # Scavenge Item Count
-execute if score gameMode Lobby matches 3 run title @p[team=Playing] subtitle [{"text":"Items Collected: "},{"score":{"name":"itemCount","objective":"AtomicDrill"}}]
+execute if score gamemode Settings matches 3 run title @p[team=Playing] subtitle [{"text":"Items Collected: "},{"score":{"name":"itemCount","objective":"AtomicDrill"}}]
 
 # Change To Surface Scene # 
 schedule function mc:events/endings/transition_scene 5s replace

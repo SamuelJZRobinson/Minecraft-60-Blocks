@@ -7,6 +7,7 @@ team modify Lobby deathMessageVisibility never
 team modify Lobby friendlyFire false
 team modify Lobby nametagVisibility always
 team modify Lobby seeFriendlyInvisibles true
+team join Lobby @a
 
 # PLAYING
 team add Playing "Playing"
