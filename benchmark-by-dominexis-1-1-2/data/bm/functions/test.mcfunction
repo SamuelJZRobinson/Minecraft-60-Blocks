@@ -1,1 +1,0 @@
-execute if score clock Timer matches 4 if entity @p[team=Playing,nbt={SelectedItem:{id:"minecraft:saddle",Count:1b,tag:{itemId:7}}}] as @p[team=Playing] run effect give @s night_vision 12 0 true
