@@ -1,6 +1,3 @@
-# Notes
-  # Items are shared with mc:events/random_loadout/locations/spawn_items
-
 # Set Scores
 scoreboard players set soupCount ItemsHouse 7
 scoreboard players set waterCount ItemsHouse 8
@@ -25,7 +22,3 @@ function mc:states/stages/4_setup/place/items/spawn/spawn_suitcase
 function mc:states/stages/4_setup/place/items/spawn/spawn_waters
 # Custom Items
 function mc:states/stages/4_setup/place/items/spawn/spawn_armour
-
-# Custom Items
-  # Body Armour
-  summon minecraft:slime ~ ~ ~ {Silent:1b,Invulnerable:1b,Team:"Item",DeathTime:19,DeathLootTable:"lt_custom:entities/body_armour",PersistenceRequired:1b,NoAI:1b,Health:1f,Size:0,Tags:["scavengeItem","scavengeBodyArmour","threeSlots"],Passengers:[{id:"minecraft:armor_stand",Glowing:1b,Marker:1b,Invisible:1b,Tags:["scavengeItem","scavengeBodyArmour"],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:20}}]}],ActiveEffects:[{Id:14b,Amplifier:0b,Duration:19999980,ShowParticles:0b}]}

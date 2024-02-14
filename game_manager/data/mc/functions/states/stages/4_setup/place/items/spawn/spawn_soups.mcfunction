@@ -1,4 +1,4 @@
-# Spawn
+# Spawn Soup
 function mc:states/stages/4_setup/place/items/spawn/spawn_soup
 
 # Loop

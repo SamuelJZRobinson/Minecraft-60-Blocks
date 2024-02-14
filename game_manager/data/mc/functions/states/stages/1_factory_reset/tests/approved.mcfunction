@@ -15,4 +15,4 @@ scoreboard players set state GameStatus 2
 schedule function mc:states/stages/manage_states 14t replace
 
 # Status
-tellraw @a {"text":"60 Seconds data loaded!","bold":false,"color":"green"}
+tellraw @a ["",{"text":"60 ","bold":true,"color":"yellow"},{"text":"Seconds ","bold":true,"color":"red"},{"text":"datapack loaded!","color":"white"}]

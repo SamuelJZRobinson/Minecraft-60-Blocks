@@ -19,4 +19,8 @@
   execute if score clock Timer matches 4 as @e[type=slime,team=!Enemy,team=!Item,team=!NoRoom] run team join Enemy @s
 
 # Bunker Cosmetic
-execute if score clock Timer matches 3 run function mc:status/particles/bunker_blackout_chance
+execute if score clock Timer matches 3 run function mc:particles/bunker_blackout_chance
+
+# Particles
+execute unless score clock Timer matches 3.. run function mc:particles/manage_location_markers
+execute if score clock Timer matches 3 run function mc:particles/manage_bunker_particles

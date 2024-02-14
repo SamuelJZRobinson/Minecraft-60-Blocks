@@ -9,8 +9,8 @@
   execute if score task AtomicDrill matches 1 run scoreboard players set dialogue AtomicDrill 1
   execute if score task AtomicDrill matches 1 run scoreboard players set dialogueMax AtomicDrill 2
   # Create Marker
-  execute if score task AtomicDrill matches 1 positioned 22.50 64.00 -6.50 run function mc:status/particles/spawn_cross_marker
-  execute if score task AtomicDrill matches 1 positioned 22.50 66.00 -6.50 run function mc:status/particles/spawn_arrow_marker
+  execute if score task AtomicDrill matches 1 positioned 22.50 64.00 -6.50 run function mc:particles/spawn_cross_marker
+  execute if score task AtomicDrill matches 1 positioned 22.50 66.00 -6.50 run function mc:particles/spawn_arrow_marker
   # Remove Effects
   execute if score task AtomicDrill matches 1 run effect clear @p[team=Playing]
   # Add Effects
@@ -21,8 +21,8 @@
   execute if score task AtomicDrill matches 2 run scoreboard players set dialogue AtomicDrill 3
   execute if score task AtomicDrill matches 2 run scoreboard players set dialogueMax AtomicDrill 4
   # Create Marker
-  execute if score task AtomicDrill matches 2 positioned 13.50 64.00 5.50 run function mc:status/particles/spawn_cross_marker
-  execute if score task AtomicDrill matches 2 positioned 13.50 66.00 5.50 run function mc:status/particles/spawn_arrow_marker
+  execute if score task AtomicDrill matches 2 positioned 13.50 64.00 5.50 run function mc:particles/spawn_cross_marker
+  execute if score task AtomicDrill matches 2 positioned 13.50 66.00 5.50 run function mc:particles/spawn_arrow_marker
 
 # Task 3 (Find Timmy)
   # Set Dialogue

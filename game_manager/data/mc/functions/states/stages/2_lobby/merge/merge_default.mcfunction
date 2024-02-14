@@ -49,8 +49,8 @@
   data merge block 22 130 5 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Body Armour","bold":true}',Text2:'{"text":"3 Slots","italic":true}',Text3:'{"text":"Protects against"}',Text4:'{"text":"bandit ambushes"}'}
 
 # Extra Info
-  # Goal
-  data merge block 22 132 -3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Goal Of Game","bold":true}',Text2:'{"text":"Collect supplies,"}',Text3:'{"text":"protect family,"}',Text4:'{"text":"find rescue"}'}
+  # Game Goal
+  data merge block 22 132 -3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Game Goal","bold":true}',Text2:'{"text":"Collect supplies,"}',Text3:'{"text":"protect family,"}',Text4:'{"text":"find rescue"}'}
   # Highscore
   data merge block 20 132 -3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Highscores","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text4:'{"text":"Click to view","color":"dark_blue","underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_highscores"}}'}
   # Ideal Settings

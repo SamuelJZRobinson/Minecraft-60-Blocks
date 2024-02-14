@@ -1,4 +1,4 @@
-# Spawn
+# Spawn Water
 function mc:states/stages/4_setup/place/items/spawn/spawn_water
 
 # Loop
