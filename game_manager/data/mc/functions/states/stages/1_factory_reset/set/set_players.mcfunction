@@ -26,4 +26,4 @@ execute unless score restartScavenge GameStatus matches 1 run gamemode adventure
 
 # Goto Lobby
 spawnpoint @a 21 129 -2
-execute unless score restartScavenge GameStatus matches 1 run function mc:play/gamemodes/teleport_to_lobby
+execute unless score restartScavenge GameStatus matches 1 run teleport @a 21.50 130.00 -2.50 0 0

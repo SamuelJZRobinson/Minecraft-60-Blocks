@@ -25,7 +25,7 @@ execute if score expeditionMode Lobby matches 1 unless score expeditionDeath Ato
 
 # Bunker Related
   # Teleport
-  schedule function mc:play/gamemodes/teleport_to_bunker 19t replace
+  schedule function mc:utility/tp/tp_bunker 19t replace
   # Titles
   title @a times 10 20 10
   title @a title {"text":"Meanwhile","color":"gold"}

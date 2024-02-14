@@ -1,5 +1,5 @@
 # Notes
-  # The delay before cloning nukes prevents the risk of seizures and unnecessary computations
+  # Nuke cloning is delayed to prevent seizures and unnecessary computations.
 
 execute if score gamemode Settings matches 1 run data merge block 22 131 7 {Text2:'{"text":"Atomic Drill","color":"red"}'}
 execute if score gamemode Settings matches 2 run data merge block 22 131 7 {Text2:'{"text":"Apocalypse","color":"red"}'}

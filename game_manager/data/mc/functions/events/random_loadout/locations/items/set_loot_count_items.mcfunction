@@ -22,24 +22,24 @@
   # Item Boost (1 in x, n+1)
   # scoreboard players operation memory em = ITEM_BOOST StatusOdds
   # execute if score gearCount ItemsExpedition matches 4 run scoreboard players add maxLoot ItemsExpedition 1
-  # execute if score gearCount ItemsExpedition matches 1..3 run function mc:states/stages/5_setup_house/place/items/get_percentage
+  # execute if score gearCount ItemsExpedition matches 1..3 run function em:math/get_percentage
   # execute if score gearCount ItemsExpedition matches 1 if score math_out em matches 1 run scoreboard players add maxLoot ItemsExpedition 1
   # execute if score gearCount ItemsExpedition matches 2 if score math_out em matches 1..2 run scoreboard players add maxLoot ItemsExpedition 1
   # execute if score gearCount ItemsExpedition matches 3 if score math_out em matches 1..3 run scoreboard players add maxLoot ItemsExpedition 1
   # scoreboard players set math_out em 0
   # Supply (1 in x, n+1)
   scoreboard players operation memory em = SUPPLY_BOOST StatusOdds
-  function mc:states/stages/5_setup_house/place/items/get_percentage
+  function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players add maxLoot ItemsExpedition 4
   scoreboard players set math_out em 0
   # Timmy (1 in x, n+1)
   scoreboard players operation memory em = TIMMY_BOOST StatusOdds
-  execute if score characterSent ChestMenuExplore matches 5 run function mc:states/stages/5_setup_house/place/items/get_percentage
+  execute if score characterSent ChestMenuExplore matches 5 run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players add maxLoot ItemsExpedition 1
   scoreboard players set math_out em 0
   # Fatigue (1 in x, n+1)
   scoreboard players operation memory em = FATIGUE_PENALTY StatusOdds
-  execute if score isFatigued ItemsExpedition matches 1 run function mc:states/stages/5_setup_house/place/items/get_percentage
+  execute if score isFatigued ItemsExpedition matches 1 run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players remove maxLoot ItemsExpedition 1
   scoreboard players set math_out em 0
 

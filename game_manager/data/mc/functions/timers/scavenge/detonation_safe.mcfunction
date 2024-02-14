@@ -16,6 +16,6 @@ execute if score gameMode Lobby matches 3 run scoreboard players set ending Game
 # Set Music
 scoreboard players set music GameStatus 3
 # Teleport To Bunker
-function mc:play/gamemodes/teleport_to_bunker
+function mc:utility/tp/tp_bunker
 # Check Items
 function mc:status/scavenge/check_item/manage_check

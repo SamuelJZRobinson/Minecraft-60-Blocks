@@ -1,5 +1,5 @@
 # Notes
-  # bunkerSide is managed by mc:states/stages/5_setup_house/place/floorplans/clone/clone_floorplan1
+  # bunkerSide is managed by mc:states/stages/4_setup/place/floorplans/clone/clone_floorplan_1
   ### Item summon scripts are broken since they were grouped into one file.
   ### Character summon scripts might be broken due to a change.
 
@@ -29,7 +29,7 @@
   execute if score task AtomicDrill matches 3 run scoreboard players set dialogue AtomicDrill 5
   execute if score task AtomicDrill matches 3 run scoreboard players set dialogueMax AtomicDrill 7
   # Spawn Timmy
-  execute if score task AtomicDrill matches 3 run function mc:states/stages/5_setup_house/place/characters/spawn_timmy
+  execute if score task AtomicDrill matches 3 run function mc:states/stages/4_setup/place/characters/spawn_timmy
   execute if score task AtomicDrill matches 3 run data modify entity @e[type=zombie,tag=houseTimmy,limit=1] Invulnerable set value 0b
 
 # Task 4 (Find Soup In The Bathtub)
@@ -37,7 +37,7 @@
   execute if score task AtomicDrill matches 4 run scoreboard players set dialogue AtomicDrill 8
   execute if score task AtomicDrill matches 4 run scoreboard players set dialogueMax AtomicDrill 8
   # Place Soup Can
-  execute if score task AtomicDrill matches 4 positioned 22.40 64.00 6.45 run function mc:states/stages/5_setup_house/place/items/spawn/spawn_soup
+  execute if score task AtomicDrill matches 4 positioned 22.40 64.00 6.45 run function mc:states/stages/4_setup/place/items/spawn/spawn_soup
   execute if score task AtomicDrill matches 4 run data modify entity @e[type=slime,tag=scavengeSoup,limit=1] Invulnerable set value 0b
 
 # Task 5 (Find Water In The Kitchen)
@@ -45,7 +45,7 @@
   execute if score task AtomicDrill matches 5 run scoreboard players set dialogue AtomicDrill 9
   execute if score task AtomicDrill matches 5 run scoreboard players set dialogueMax AtomicDrill 9
   # Place Water Bottle
-  execute if score task AtomicDrill matches 5 positioned 27.50 65.00 -14.55 run function mc:states/stages/5_setup_house/place/items/spawn/spawn_water
+  execute if score task AtomicDrill matches 5 positioned 27.50 65.00 -14.55 run function mc:states/stages/4_setup/place/items/spawn/spawn_water
   execute if score task AtomicDrill matches 5 run data modify entity @e[type=slime,tag=scavengeWater,limit=1] Invulnerable set value 0b
 
 # Task 6 (Salvage Items)
@@ -54,34 +54,34 @@
   execute if score task AtomicDrill matches 6 run scoreboard players set dialogueMax AtomicDrill 11
   # Create Marker
   execute if score task AtomicDrill matches 6 run scoreboard players set clock Timer 1
-  execute if score task AtomicDrill matches 6 run function mc:states/stages/5_setup_house/place/floorplans/spawn/spawn_bunker_indicator
+  execute if score task AtomicDrill matches 6 run function mc:states/stages/4_setup/place/floorplans/spawn/spawn_bunker_indicator
 
 # Task 7 (Find Radio In The Living Room Shelf)
   # Set Dialogue
   execute if score task AtomicDrill matches 7 run scoreboard players set dialogue AtomicDrill 12
   execute if score task AtomicDrill matches 7 run scoreboard players set dialogueMax AtomicDrill 12
   # Place Radio
-  execute if score task AtomicDrill matches 7 positioned 19.30 65.00 6.45 run function mc:states/stages/5_setup_house/place/items/spawn/spawn_radio
+  execute if score task AtomicDrill matches 7 positioned 19.30 65.00 6.45 run function mc:states/stages/4_setup/place/items/spawn/spawn_radio
   execute if score task AtomicDrill matches 7 run data modify entity @e[type=slime,tag=scavengeRadio,limit=1] Invulnerable set value 0b
   execute if score task AtomicDrill matches 7 as @e[type=minecraft:slime,tag=scavengeRadio,limit=1] at @s run teleport @s ~ ~ ~ 90 0
-  execute if score task AtomicDrill matches 7 run function mc:states/stages/5_setup_house/place/items/raise/sync_rotation
+  execute if score task AtomicDrill matches 7 run function mc:states/stages/4_setup/place/items/raise/sync_rotation
 
 # Task 8 (Find Gas Mask On Wall)
   # Set Dialogue
   execute if score task AtomicDrill matches 8 run scoreboard players set dialogue AtomicDrill 13
   execute if score task AtomicDrill matches 8 run scoreboard players set dialogueMax AtomicDrill 13
   # Place Gas Mask
-  execute if score task AtomicDrill matches 8 positioned 28.50 66.50 -3.25 run function mc:states/stages/5_setup_house/place/items/spawn/spawn_gas_mask
+  execute if score task AtomicDrill matches 8 positioned 28.50 66.50 -3.25 run function mc:states/stages/4_setup/place/items/spawn/spawn_gas_mask
   execute if score task AtomicDrill matches 8 run data modify entity @e[type=slime,tag=scavengeGasMask,limit=1] Invulnerable set value 0b
   execute if score task AtomicDrill matches 8 as @e[type=minecraft:slime,tag=scavengeGasMask,limit=1] at @s run teleport @s ~ ~ ~ -180 0
-  execute if score task AtomicDrill matches 8 run function mc:states/stages/5_setup_house/place/items/raise/sync_rotation
+  execute if score task AtomicDrill matches 8 run function mc:states/stages/4_setup/place/items/raise/sync_rotation
 
 # Task 9 (Salvage Items)
   # Set Dialogue
   execute if score task AtomicDrill matches 9 run scoreboard players set dialogue AtomicDrill 14
   execute if score task AtomicDrill matches 9 run scoreboard players set dialogueMax AtomicDrill 14
   # Create Marker
-  execute if score task AtomicDrill matches 9 run function mc:states/stages/5_setup_house/place/floorplans/spawn/spawn_bunker_indicator
+  execute if score task AtomicDrill matches 9 run function mc:states/stages/4_setup/place/floorplans/spawn/spawn_bunker_indicator
 
 # Task 10 (Scavenge House)
   # Set Dialogue
@@ -100,7 +100,7 @@
   execute if score task AtomicDrill matches 12 run scoreboard players set dialogue AtomicDrill 25
   execute if score task AtomicDrill matches 12 run scoreboard players set dialogueMax AtomicDrill 26
   # Teleport To Bunker
-  execute if score task AtomicDrill matches 12 run function mc:play/gamemodes/teleport_to_bunker
+  execute if score task AtomicDrill matches 12 run function mc:utility/tp/tp_bunker
   # Give Journal
   execute if score task AtomicDrill matches 12 run give @p[team=Playing] written_book{dailyStory:1b,title:"Journal",author:"BlackeyeI",generation:0,pages:['[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"},"bold":true},{"text":"\\nCongratulations on making it to the shelter! However, treacherous days are ahead. Your survival depends on whatever and whomever you bring with you. As the world burns, you will need to utilize scarce resources. Today your first duty will be distributing rations.","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nIf you fail to nourish yourselves, I guarantee that none of you will ever see daylight again. While supplies are plentiful, you can share them with individual family members by clicking their portrait and adjacent icons or with everyone using the icons below.","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nSince you do not know the duration of your stay, it is crucial to defer your appetite and hoard supplies. However, everyone must eat at some point. An average person will survive ten days without soup and six days without water!","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nSkipping too many meals will also lower your immunity. Now please acquaint yourself with the cold steel around you. Though secure, it is the leading cause of insanity. Endless days in a box filled with the subtle hum of ventilation shafts will muddle anyone\'s","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"dau"}},{"text":"\\nthoughts, so keep yourself occupied with activities. Try to get some rest; we will continue training tomorrow. Goodnight.","bold":false}]']} 1
 

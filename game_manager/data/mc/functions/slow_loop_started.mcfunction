@@ -8,7 +8,7 @@
   execute unless score clock Timer matches 4 run effect give @a[scores={PlayerHunger=..19}] minecraft:saturation 1 255 true
   scoreboard players reset @a[scores={PlayerHunger=20}] PlayerHunger
   # Give Blindness
-  execute if score blindness GameStatus matches 1.. as @p[team=Playing] run function mc:play/gamemodes/fake_blindness
+  execute if score blindness GameStatus matches 1.. as @p[team=Playing] run function mc:utility/vision/fake_blindness
   # Lock Slots
   execute if score lockInventory GameStatus matches 1..2 as @p[team=Playing] run function mc:status/scavenge/lock_inventory
   execute if score clock Timer matches 2.. as @p[team=Playing] run function mc:timers/scavenge/clear_items

@@ -11,7 +11,7 @@ scoreboard players set startOne em 0
 
 # Adjust Scores
 scoreboard players operation memory em = GEAR_BREAK ExpeditionOdds
-function mc:states/stages/5_setup_house/place/items/get_percentage
+function em:math/get_percentage
 
 # Break Chance (<= amount in 10, n+1)
 scoreboard players operation memory em = math_out em

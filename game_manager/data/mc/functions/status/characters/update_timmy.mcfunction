@@ -7,7 +7,7 @@
   execute if score day GameStatus = FATIGUE_MAX StatusLevels run scoreboard players set fatigued TimmyStatus 1
   # Fatigue Chance (1 in x, n+1)
   scoreboard players operation memory em = FATIGUE StatusOdds
-  execute if score fatigued TimmyStatus matches 0 if score day GameStatus >= FATIGUE_MIN StatusLevels if score day GameStatus <= FATIGUE_MAX StatusLevels run function mc:states/stages/5_setup_house/place/items/get_percentage
+  execute if score fatigued TimmyStatus matches 0 if score day GameStatus >= FATIGUE_MIN StatusLevels if score day GameStatus <= FATIGUE_MAX StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set fatigued TimmyStatus 1
   scoreboard players set math_out em 0
 
@@ -27,7 +27,7 @@
   execute if score infection TimmyStatus matches 0 run scoreboard players set alive TimmyStatus 0
   # Infection Chance (1 in x, n+1)
   scoreboard players operation memory em = INFECTION StatusOdds
-  execute if score alive TimmyStatus matches 1 if score sick TimmyStatus matches 0 if score infection TimmyStatus <= INFECTION_MIN StatusLevels run function mc:states/stages/5_setup_house/place/items/get_percentage
+  execute if score alive TimmyStatus matches 1 if score sick TimmyStatus matches 0 if score infection TimmyStatus <= INFECTION_MIN StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set sick TimmyStatus 1
   scoreboard players set math_out em 0
 
@@ -38,7 +38,7 @@
   execute if score sanity TimmyStatus = SANITY_MAX StatusLevels run scoreboard players set crazyRage TimmyStatus 0
   # Crazy Chance (1 in x, n+1)
   scoreboard players operation memory em = CRAZY StatusOdds
-  execute if score alive TimmyStatus matches 1 if score crazy TimmyStatus matches 0 if score sanity TimmyStatus = SANITY_MIN StatusLevels run function mc:states/stages/5_setup_house/place/items/get_percentage
+  execute if score alive TimmyStatus matches 1 if score crazy TimmyStatus matches 0 if score sanity TimmyStatus = SANITY_MIN StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set crazy TimmyStatus 1
   scoreboard players set math_out em 0
 
@@ -50,14 +50,14 @@
   execute if score escaped TimmyStatus matches 1 run scoreboard players set alive TimmyStatus 0
   # Destroy Item Chance (1 in x, n+1)
   scoreboard players operation memory em = CRAZY_RAGE StatusOdds
-  execute if score alive TimmyStatus matches 1 if score crazyRage TimmyStatus matches 0 if score breakdown TimmyStatus <= BREAKDOWN_RAGE_MAX StatusLevels if score breakdown TimmyStatus > BREAKDOWN_MIN StatusLevels run function mc:states/stages/5_setup_house/place/items/get_percentage
+  execute if score alive TimmyStatus matches 1 if score crazyRage TimmyStatus matches 0 if score breakdown TimmyStatus <= BREAKDOWN_RAGE_MAX StatusLevels if score breakdown TimmyStatus > BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set crazyRage TimmyStatus 1
   execute if score crazyRage TimmyStatus matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set escaped TimmyStatus 1
   execute if score crazyRage TimmyStatus matches 1 if score itemCount ItemsBunker matches 1.. run function mc:status/characters/load_crazy_timmy
   scoreboard players set math_out em 0
   # Breakdown Chance (1 in x, n+1)
   scoreboard players operation memory em = MENTAL_BREAKDOWN StatusOdds
-  execute if score alive TimmyStatus matches 1 if score breakdown TimmyStatus <= BREAKDOWN_MIN StatusLevels run function mc:states/stages/5_setup_house/place/items/get_percentage
+  execute if score alive TimmyStatus matches 1 if score breakdown TimmyStatus <= BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set escaped TimmyStatus 1
   execute if score escaped TimmyStatus matches 1 run scoreboard players set alive TimmyStatus 0
   scoreboard players set math_out em 0
@@ -69,18 +69,18 @@
   # Malnutrition Chance (1 in x, n+1)
     # Has Soup, No Water
     execute if score sick TimmyStatus matches 0 if score soup TimmyStatus > HUNGER_MIN StatusLevels if score water TimmyStatus <= THIRST_MIN StatusLevels run scoreboard players operation memory em = SICKNESS_DEHYDRATION StatusOdds
-    execute if score alive TimmyStatus matches 1 if score sick TimmyStatus matches 0 if score soup TimmyStatus > HUNGER_MIN StatusLevels if score water TimmyStatus <= THIRST_MIN StatusLevels run function mc:states/stages/5_setup_house/place/items/get_percentage
+    execute if score alive TimmyStatus matches 1 if score sick TimmyStatus matches 0 if score soup TimmyStatus > HUNGER_MIN StatusLevels if score water TimmyStatus <= THIRST_MIN StatusLevels run function em:math/get_percentage
     # No Soup, Has Water
     execute if score sick TimmyStatus matches 0 if score soup TimmyStatus <= HUNGER_MIN StatusLevels if score water TimmyStatus > THIRST_MIN StatusLevels run scoreboard players operation memory em = SICKNESS_STARVATION StatusOdds
-    execute if score alive TimmyStatus matches 1 if score sick TimmyStatus matches 0 if score soup TimmyStatus <= HUNGER_MIN StatusLevels if score water TimmyStatus > THIRST_MIN StatusLevels run function mc:states/stages/5_setup_house/place/items/get_percentage
+    execute if score alive TimmyStatus matches 1 if score sick TimmyStatus matches 0 if score soup TimmyStatus <= HUNGER_MIN StatusLevels if score water TimmyStatus > THIRST_MIN StatusLevels run function em:math/get_percentage
     # No Soup, No Water
     execute if score sick TimmyStatus matches 0 if score soup TimmyStatus <= HUNGER_MIN StatusLevels if score water TimmyStatus <= THIRST_MIN StatusLevels run scoreboard players operation memory em = SICKNESS_DEHYDRATION StatusOdds
-    execute if score alive TimmyStatus matches 1 if score sick TimmyStatus matches 0 if score soup TimmyStatus <= HUNGER_MIN StatusLevels if score water TimmyStatus <= THIRST_MIN StatusLevels run function mc:states/stages/5_setup_house/place/items/get_percentage
+    execute if score alive TimmyStatus matches 1 if score sick TimmyStatus matches 0 if score soup TimmyStatus <= HUNGER_MIN StatusLevels if score water TimmyStatus <= THIRST_MIN StatusLevels run function em:math/get_percentage
   execute unless score task AtomicDrill matches 13..15 if score math_out em matches 1 run scoreboard players set sick TimmyStatus 1
   scoreboard players set math_out em 0
   # Sickness Death Chance (1 in x, n+1)
   scoreboard players operation memory em = SICKNESS_DEATH StatusOdds
-  execute if score alive TimmyStatus matches 1 if score sickness TimmyStatus <= SICKNESS_MIN StatusLevels run function mc:states/stages/5_setup_house/place/items/get_percentage
+  execute if score alive TimmyStatus matches 1 if score sickness TimmyStatus <= SICKNESS_MIN StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set alive TimmyStatus 0
   scoreboard players set math_out em 0
 

@@ -15,20 +15,20 @@ scoreboard players set startOne em 0
   scoreboard players operation memory em = mobCount MobsExpedition
   execute if score banditAlert ChestMenuExplore matches 0 run scoreboard players set math_in1 em 63
   execute if score banditAlert ChestMenuExplore matches 1 run scoreboard players set math_in1 em 38
-  function mc:states/stages/5_setup_house/place/items/get_percentage
+  function em:math/get_percentage
   scoreboard players operation tierOne MobsExpedition = math_out em
   scoreboard players set math_out em 0
   # Tier 2 (% in x, n+1)
   scoreboard players operation memory em = mobCount MobsExpedition
   execute if score banditAlert ChestMenuExplore matches 0 run scoreboard players set math_in1 em 38
   execute if score banditAlert ChestMenuExplore matches 1 run scoreboard players set math_in1 em 50
-  function mc:states/stages/5_setup_house/place/items/get_percentage
+  function em:math/get_percentage
   scoreboard players operation tierTwo MobsExpedition = math_out em
   scoreboard players set math_out em 0
   # Tier 3 (% in x, n+1)
   scoreboard players operation memory em = mobCount MobsExpedition
   execute if score banditAlert ChestMenuExplore matches 1 run scoreboard players set math_in1 em 13
-  execute if score banditAlert ChestMenuExplore matches 1 run function mc:states/stages/5_setup_house/place/items/get_percentage
+  execute if score banditAlert ChestMenuExplore matches 1 run function em:math/get_percentage
   scoreboard players operation tierThree MobsExpedition = math_out em
   execute if score tierThree MobsExpedition matches 2.. run scoreboard players set tierThree MobsExpedition 1
   scoreboard players set math_out em 0
@@ -44,7 +44,7 @@ execute unless score diffirence MobsExpedition matches 0 run function mc:events/
 # Bandits (% in x, n+1)
 scoreboard players operation memory em = tierTwo MobsExpedition
 scoreboard players set math_in1 em 80
-execute if score banditAlert ChestMenuExplore matches 1 run function mc:states/stages/5_setup_house/place/items/get_percentage
+execute if score banditAlert ChestMenuExplore matches 1 run function em:math/get_percentage
 execute if score banditAlert ChestMenuExplore matches 1 run scoreboard players operation tierTwoBandit MobsExpedition = math_out em
 execute if score banditAlert ChestMenuExplore matches 1 run scoreboard players operation tierTwo MobsExpedition -= tierTwoBandit MobsExpedition
 scoreboard players set math_out em 0

@@ -8,7 +8,7 @@ scoreboard players set startOne em 1
   # Sustenance (Mode, n+1)
   scoreboard players operation memory em = maxLoot ItemsExpedition
   scoreboard players set math_in1 em 30
-  function mc:states/stages/5_setup_house/place/items/get_percentage
+  function em:math/get_percentage
   scoreboard players operation sustenanceCount ItemsExpedition = math_out em
   scoreboard players set math_out em 0
   # Special (Leftover)

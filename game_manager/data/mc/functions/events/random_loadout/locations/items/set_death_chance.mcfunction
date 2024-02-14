@@ -24,7 +24,7 @@ scoreboard players set deathChance ItemsExpedition 0
 
 # Modify Chance According To Difficulty
 scoreboard players operation memory em = deathChance ItemsExpedition
-function mc:states/stages/5_setup_house/place/items/get_percentage
+function em:math/get_percentage
 
 # Roll Dice (n+1)
 scoreboard players set math_in1 em 1

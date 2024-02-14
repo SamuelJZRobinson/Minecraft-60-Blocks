@@ -42,14 +42,14 @@
     scoreboard players set notRandom em 1
     scoreboard players operation memory em = MENTAL_BREAKDOWN StatusOdds
     scoreboard players set math_in1 em 20
-    function mc:states/stages/5_setup_house/place/items/get_percentage
+    function em:math/get_percentage
     scoreboard players operation DOLORES_RESISTANCE StatusOdds = math_out em
     # Mary Crazy Resistance (Mode, n+1)
     scoreboard players set mode em 3
     scoreboard players set notRandom em 1
     scoreboard players operation memory em = MENTAL_BREAKDOWN StatusOdds
     scoreboard players set math_in1 em 20
-    function mc:states/stages/5_setup_house/place/items/get_percentage
+    function em:math/get_percentage
     scoreboard players operation MARY_RESISTANCE StatusOdds = math_out em
 
 # STATUS

@@ -1,2 +1,2 @@
 execute if score started GameStatus matches 1 run data modify storage minecraft:messages message set value "Cannot reset while game is running!"
-execute if score started GameStatus matches 1 run function mc:messages/raise_exception
+execute if score started GameStatus matches 1 run function mc:error_handling/raise_exception
