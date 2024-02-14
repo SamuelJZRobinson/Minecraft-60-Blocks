@@ -111,7 +111,7 @@
 
 # Task 14 (Feed Thirsty Characters And Event One, Day Three)
   # Force Thirst
-  execute if score task AtomicDrill matches 14 run function mc:play/gamemodes/atomic_drill/force_thirst
+  execute if score task AtomicDrill matches 14 run function mc:states/stages/5_atomic_drill/force_thirst
   # Give Journal
   execute if score task AtomicDrill matches 14 run give @p[team=Playing] written_book{dailyStory:1b,title:"Journal",author:"BlackeyeI",generation:0,pages:['[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"},"bold":true},{"text":"\\nReveille cadets, today things get serious as you address one of many ethical dilemmas destined to arise. As we await the return of your scavenger, we will see how you respond under stress. For now, you will ration food. ","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nWe cannot risk anyone dying of dehydration, especially in a training exercise, so please do not hesitate to have your fair share of water. As a proud army man, I know little about the imagination..., only its destruction. Hence, I will ask you to use yours now.","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nSuppose that food was in low supply and the family hamster snuck into the shelter. Do you pity the cries of your children or cook him out of desperation to quench that inner urge?","bold":false}]']} 1
   # Set Event
@@ -125,7 +125,7 @@
 # Task 16 (Character Returns Injured, Day Five)
   # Journal Managed By cm:menu/submit/manage_events
   # Force Expedition Return
-  execute if score task AtomicDrill matches 16 run function mc:play/gamemodes/atomic_drill/force_expedition_return
+  execute if score task AtomicDrill matches 16 run function mc:states/stages/5_atomic_drill/force_expedition_return
 
 # Task 17 (Advice About Knocking, Day Six)
   # Give Journal
@@ -152,10 +152,10 @@
   execute if score task AtomicDrill matches 21 run setblock 0 54 29 minecraft:air
   execute if score task AtomicDrill matches 21 run kill @e[type=minecraft:armor_stand,tag=menuText]
   # Break The Script
-  execute if score task AtomicDrill matches 21 run schedule clear mc:play/gamemodes/atomic_drill/task_loop
+  execute if score task AtomicDrill matches 21 run schedule clear mc:states/stages/5_atomic_drill/task_loop
 
 # Request Dialogue
-execute unless score task AtomicDrill matches 13.. run function mc:play/gamemodes/atomic_drill/dialogue_relay
+execute unless score task AtomicDrill matches 13.. run function mc:states/stages/5_atomic_drill/dialogue_relay
 
 # Debounce Stage
 scoreboard players set stage AtomicDrill 1

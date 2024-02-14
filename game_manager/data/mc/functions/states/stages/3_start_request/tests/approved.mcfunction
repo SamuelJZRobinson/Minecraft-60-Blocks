@@ -16,5 +16,5 @@ scoreboard players set @s ChestMenuMain 0
 clear @a
 
 # Run Gamemode
-# execute if score gamemode Settings matches 1 run function mc:play/gamemodes/atomic_drill/start_gamemode
+# execute if score gamemode Settings matches 1 run function mc:states/stages/5_atomic_drill/start_gamemode
 # execute if score gamemode Settings matches 3 run function mc:play/gamemodes/apocalypse_and_scavenge/start_gamemode
