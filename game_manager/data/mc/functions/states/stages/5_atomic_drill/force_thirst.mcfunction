@@ -5,4 +5,4 @@ execute unless score characterSent ChestMenuExplore matches 4 if score alive Ted
 execute unless score characterSent ChestMenuExplore matches 5 if score alive TimmyStatus matches 1 run scoreboard players operation water TimmyStatus = THIRST_MIN StatusLevels
 
 # Refresh Character Status
-function mc:status/characters/manage_characters
+function mc:states/stages/7_bunker/decorations/characters/manage_characters

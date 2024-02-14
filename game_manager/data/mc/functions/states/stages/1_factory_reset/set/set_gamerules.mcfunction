@@ -1,5 +1,5 @@
 # WORLD BORDER
-worldborder set 512
+worldborder set 1024
 worldborder damage amount 1
 worldborder damage buffer 0
 worldborder center 0.00 0.00

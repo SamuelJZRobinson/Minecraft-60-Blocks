@@ -89,7 +89,7 @@
 
 # Decorate Bunker
   # Spawn
-  execute if score alive TimmyStatus matches 1 unless entity @e[x=2,y=54,z=29,dy=4,dz=1,type=minecraft:armor_stand,tag=bunkerTimmy] run function mc:status/characters/spawn_timmy
+  execute if score alive TimmyStatus matches 1 unless entity @e[x=2,y=54,z=29,dy=4,dz=1,type=minecraft:armor_stand,tag=bunkerTimmy] run function mc:states/stages/7_bunker/decorations/characters/spawn/spawn_timmy
   # Simplify Status Text Checks
   execute if score soup TimmyStatus > HUNGER_MID StatusLevels run scoreboard players set soupLevel TimmyStatus 0
   execute if score soup TimmyStatus <= HUNGER_MID StatusLevels if score soup TimmyStatus > HUNGER_MIN StatusLevels run scoreboard players set soupLevel TimmyStatus 1
@@ -102,4 +102,4 @@
   execute if score water TimmyStatus <= THIRST_MIN StatusLevels run scoreboard players set waterLevel TimmyStatus 2
     # Armor stand visibility managed by tf_raycast:set_name_visibility
   # Update Death
-  execute if score alive TimmyStatus matches 0 as @e[x=2,y=54,z=29,dy=4,dz=1,type=minecraft:armor_stand,tag=bunkerTimmy] run function mc:status/characters/update_timmy_dead
+  execute if score alive TimmyStatus matches 0 as @e[x=2,y=54,z=29,dy=4,dz=1,type=minecraft:armor_stand,tag=bunkerTimmy] run function mc:states/stages/7_bunker/decorations/characters/update/update_timmy_dead

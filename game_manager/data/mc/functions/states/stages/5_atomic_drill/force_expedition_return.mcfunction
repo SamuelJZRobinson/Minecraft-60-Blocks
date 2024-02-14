@@ -30,4 +30,4 @@
   function mc:status/scavenge/check_item/set_bundle_details
 
   # Refresh Bunker Decorations
-  schedule function mc:status/manage_decorations 0.5s replace
+  schedule function mc:states/stages/7_bunker/decorations/manage_decorations 0.5s replace

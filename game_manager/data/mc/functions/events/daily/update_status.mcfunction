@@ -4,7 +4,7 @@ execute if score day GameStatus matches 2 run scoreboard players set expeditionP
 
 # Item And Character Related
 execute if score day GameStatus matches 1..7 unless score characterRevived GameStatus matches 1.. run function mc:events/daily/revive_chance
-schedule function mc:status/manage_decorations 1t replace
+schedule function mc:states/stages/7_bunker/decorations/manage_decorations 1t replace
 schedule function mc:status/scavenge/check_item/set_bundle_details 11t replace
 
 # Request Random Event
