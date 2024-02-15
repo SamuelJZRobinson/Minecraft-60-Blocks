@@ -1,4 +1,4 @@
-# Alert Interval
+# Ping Interval
 execute if score alertInterval Timer matches 2.. run scoreboard players operation modulo Timer = seconds Timer
 execute if score alertInterval Timer matches 2.. run scoreboard players operation modulo Timer %= alertInterval Timer
 execute if score alertInterval Timer matches 2.. if score modulo Timer matches 0 run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 16 1
