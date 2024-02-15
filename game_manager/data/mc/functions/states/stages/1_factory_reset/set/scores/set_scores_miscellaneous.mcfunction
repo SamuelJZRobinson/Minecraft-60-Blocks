@@ -56,3 +56,5 @@ scoreboard players set lobbyAliveCount PlayerCount 0
 # Character Status
 scoreboard objectives add GameStatus dummy {"bold":true,"color":"white","text":"Game Status"}
 scoreboard objectives add CheckItems dummy {"bold":true,"color":"white","text":"Check Items"}
+
+scoreboard players set houseLoaded GameStatus 1

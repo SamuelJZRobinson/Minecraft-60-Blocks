@@ -93,4 +93,4 @@ scoreboard players set expeditionPrepared ChestMenuExplore 1
 # Place Chest Menu
 function cm:menu/place_chest_menu
 function mc:events/daily/check_ending
-function mc:states/stages/7_bunker/decorations/manage_decorations
+function mc:states/stages/8_bunker/decorations/manage_decorations

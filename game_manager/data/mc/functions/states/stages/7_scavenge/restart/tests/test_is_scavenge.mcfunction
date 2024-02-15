@@ -1,0 +1,2 @@
+execute unless score state GameStatus matches 7 run data modify storage minecraft:messages message set value "Cannot restart scavenge, not running!"
+execute unless score state GameStatus matches 7 run function mc:error_handling/raise_warning

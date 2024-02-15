@@ -33,12 +33,16 @@ scoreboard players remove sumTableItems ItemsHouseHigh 1
 execute if score sumTableItems ItemsHouseHigh matches 0 run function mc:states/stages/4_setup/place/items/refresh_scores
 execute if score sumTableItems ItemsHouseHigh matches 1.. run schedule function mc:states/stages/4_setup/place/items/manage_items 1t
 
-# Start Scavenge
-  # Sync Armour Stand Rotation
-  execute if score sumTableItems ItemsHouseHigh matches 0 run function mc:states/stages/4_setup/place/items/raise/sync_rotation
-  # Cleanup Leftover Markers
-  execute if score sumTableItems ItemsHouseHigh matches 0 run kill @e[type=minecraft:marker]
+# Adjust Items
+execute if score sumTableItems ItemsHouseHigh matches 0 run function mc:states/stages/4_setup/place/items/raise/sync_rotation
+
+# Cleanup Leftover Markers
+execute if score sumTableItems ItemsHouseHigh matches 0 run kill @e[type=minecraft:marker]
+
+# Declare Loaded
+scoreboard players set houseLoaded GameStatus 1
+
   # Start Exploration Timer
-  execute if score sumTableItems ItemsHouseHigh matches 0 run function mc:timer/exploration/timer_init
+  # execute if score sumTableItems ItemsHouseHigh matches 0 run function mc:timer/exploration/timer_init
   # Adjust Effects
-  execute if score sumTableItems ItemsHouseHigh matches 0 run scoreboard players set blindness GameStatus 3
+  # execute if score sumTableItems ItemsHouseHigh matches 0 run scoreboard players set blindness GameStatus 3

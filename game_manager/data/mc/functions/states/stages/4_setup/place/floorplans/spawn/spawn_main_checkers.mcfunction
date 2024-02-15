@@ -320,10 +320,10 @@
   summon minecraft:marker 11.50 64.00 0.50 {Tags:["floor","south"]}
 
 # West Room
-execute if score bunkerSide GameStatus matches 0 run schedule function mc:states/stages/4_setup/place/floorplans/spawn/spawn_west_checkers 2t replace
+execute if score bunkerSide GameStatus matches 0 run function mc:states/stages/4_setup/place/floorplans/spawn/spawn_west_checkers
 
 # East Room
-execute if score bunkerSide GameStatus matches 1 run schedule function mc:states/stages/4_setup/place/floorplans/spawn/spawn_east_checkers 3t replace
+execute if score bunkerSide GameStatus matches 1 run function mc:states/stages/4_setup/place/floorplans/spawn/spawn_east_checkers
 
 # Check For Blocks
 schedule function mc:states/stages/4_setup/place/floorplans/spawn/check_for_block 4t replace

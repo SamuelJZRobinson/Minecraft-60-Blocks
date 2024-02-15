@@ -15,7 +15,7 @@ schedule clear mc:utility/timer/engine/timer_loop
   schedule clear mc:states/stages/4_setup/place/floorplans/spawn/check_for_block
   schedule clear mc:states/stages/4_setup/place/floorplans/spawn/count_high_spots
   # Stage 2
-  schedule clear mc:states/stages/4_setup/place/characters/spawn/spawn_characters
+  schedule clear mc:states/stages/4_setup/place/characters/spawn/spawn_all
   schedule clear mc:states/stages/4_setup/place/items/spawn_items
   # Stage 3
   schedule clear mc:states/stages/4_setup/place/items/manage_items

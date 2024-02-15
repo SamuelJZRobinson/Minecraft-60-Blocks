@@ -1,5 +1,6 @@
 # Notes
-  # math_in1 determines what percentage of items are moved from the floor and must stay between 1 to 100
+  # math_in1 determines what percentage of items are moved from the floor and must stay between 1 to 100.
+  # em:math/get_percentage chooses % to max (n+1).
 
 # Count Room Item Types
   # Bathroom
@@ -61,7 +62,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Reduce Table Items When Space Is Insufficient
     scoreboard players operation memory em = bathroomTableItems ItemsHouseHigh
     execute if score bathroomTableItems ItemsHouseHigh > bathroomTables ItemsHouseHigh run scoreboard players operation memory em = bathroomTables ItemsHouseHigh
-    # Generate Random Number (% to max, n+1)
+    # Generate Random Number
     scoreboard players set math_in1 em 65
     function em:math/get_percentage
     scoreboard players operation bathroomTableItems ItemsHouseHigh = math_out em
@@ -70,7 +71,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Reduce Table Items When Space Is Insufficient
     scoreboard players operation memory em = hallwayTableItems ItemsHouseHigh
     execute if score hallwayTableItems ItemsHouseHigh > hallwayTables ItemsHouseHigh run scoreboard players operation memory em = hallwayTables ItemsHouseHigh
-    # Generate Random Number (% to max, n+1)
+    # Generate Random Number
     scoreboard players set math_in1 em 65
     function em:math/get_percentage
     scoreboard players operation hallwayTableItems ItemsHouseHigh = math_out em
@@ -79,7 +80,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Reduce Table Items When Space Is Insufficient
     scoreboard players operation memory em = kidsBedroomTableItems ItemsHouseHigh
     execute if score kidsBedroomTableItems ItemsHouseHigh > kidsBedroomTables ItemsHouseHigh run scoreboard players operation memory em = kidsBedroomTables ItemsHouseHigh
-    # Generate Random Number (% to max, n+1)
+    # Generate Random Number
     scoreboard players set math_in1 em 50
     function em:math/get_percentage
     scoreboard players operation kidsBedroomTableItems ItemsHouseHigh = math_out em
@@ -88,7 +89,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Reduce Table Items When Space Is Insufficient
     scoreboard players operation memory em = kitchenTableItems ItemsHouseHigh
     execute if score kitchenTableItems ItemsHouseHigh > kitchenTables ItemsHouseHigh run scoreboard players operation memory em = kitchenTables ItemsHouseHigh
-    # Generate Random Number (% to max, n+1)
+    # Generate Random Number
     scoreboard players set math_in1 em 80
     function em:math/get_percentage
     scoreboard players operation kitchenTableItems ItemsHouseHigh = math_out em
@@ -97,7 +98,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Reduce Table Items When Space Is Insufficient
     scoreboard players operation memory em = loungeTableItems ItemsHouseHigh
     execute if score loungeTableItems ItemsHouseHigh > loungeTables ItemsHouseHigh run scoreboard players operation memory em = loungeTables ItemsHouseHigh
-    # Generate Random Number (% to max, n+1)
+    # Generate Random Number
     scoreboard players set math_in1 em 65
     function em:math/get_percentage
     scoreboard players operation loungeTableItems ItemsHouseHigh = math_out em
@@ -106,7 +107,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Reduce Table Items When Space Is Insufficient
     scoreboard players operation memory em = masterBedroomTableItems ItemsHouseHigh
     execute if score masterBedroomTableItems ItemsHouseHigh > masterBedroomTables ItemsHouseHigh run scoreboard players operation memory em = masterBedroomTables ItemsHouseHigh
-    # Generate Random Number (% to max, n+1)
+    # Generate Random Number
     scoreboard players set math_in1 em 80
     function em:math/get_percentage
     scoreboard players operation masterBedroomTableItems ItemsHouseHigh = math_out em
@@ -115,7 +116,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Reduce Table Items When Space Is Insufficient
     scoreboard players operation memory em = sideBathroomTableItems ItemsHouseHigh
     execute if score sideBathroomTableItems ItemsHouseHigh > sideBathroomTables ItemsHouseHigh run scoreboard players operation memory em = sideBathroomTables ItemsHouseHigh
-    # Generate Random Number (% to max, n+1)
+    # Generate Random Number
     scoreboard players set math_in1 em 50
     function em:math/get_percentage
     scoreboard players operation sideBathroomTableItems ItemsHouseHigh = math_out em
