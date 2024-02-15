@@ -1,5 +1,5 @@
 # Timer Engine
-schedule clear mc:timers/engine/timer_loop
+schedule clear mc:utility/timer/engine/timer_loop
 
 # Apocalypse And Scavenge
   # Stage 1
@@ -26,4 +26,4 @@ schedule clear mc:timers/engine/timer_loop
 execute if score gamemode Settings matches 1 run function mc:states/stages/1_factory_reset/clear/clear_schedules_atomic_drill
 
 # Expedition
-schedule clear mc:timers/expedition/timer_setup
+schedule clear mc:timer/expedition/timer_init

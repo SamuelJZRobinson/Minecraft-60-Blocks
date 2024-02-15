@@ -53,7 +53,7 @@
   execute if score alive TimmyStatus matches 1 if score crazyRage TimmyStatus matches 0 if score breakdown TimmyStatus <= BREAKDOWN_RAGE_MAX StatusLevels if score breakdown TimmyStatus > BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set crazyRage TimmyStatus 1
   execute if score crazyRage TimmyStatus matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set escaped TimmyStatus 1
-  execute if score crazyRage TimmyStatus matches 1 if score itemCount ItemsBunker matches 1.. run function mc:status/characters/load_crazy_timmy
+  execute if score crazyRage TimmyStatus matches 1 if score itemCount ItemsBunker matches 1.. run function mc:states/stages/7_bunker/decorations/characters/set/set_crazy_timmy
   scoreboard players set math_out em 0
   # Breakdown Chance (1 in x, n+1)
   scoreboard players operation memory em = MENTAL_BREAKDOWN StatusOdds

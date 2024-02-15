@@ -21,4 +21,4 @@ execute if score alive TedStatus matches 1 unless score characterSent ChestMenuE
 execute if score alive TimmyStatus matches 1 unless score characterSent ChestMenuExplore matches 5 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run schedule function mc:states/stages/7_bunker/decorations/characters/update/update_timmy 6t replace
 
 # Hide Characters During Expedition
-execute if score characterSent ChestMenuExplore matches 1.. run function mc:status/characters/hide_expedition
+execute if score characterSent ChestMenuExplore matches 1.. run function mc:states/stages/7_bunker/decorations/characters/update/update_expedition_hide

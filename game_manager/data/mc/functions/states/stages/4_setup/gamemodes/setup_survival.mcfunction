@@ -50,7 +50,7 @@
 #   scoreboard players set music GameStatus 3
 #   function mc:utility/music/manage_music
 
-#   # Teleport To Bunker
+#   # Goto Bunker
 #   function mc:utility/tp/tp_bunker
 
 #   # Remove Blindness

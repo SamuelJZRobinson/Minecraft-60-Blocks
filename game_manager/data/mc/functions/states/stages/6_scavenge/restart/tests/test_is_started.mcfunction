@@ -1,0 +1,2 @@
+execute if score started GameStatus matches 0 run data modify storage minecraft:messages message set value "Cannot restart scavenge, game not started!"
+execute if score started GameStatus matches 0 run function mc:error_handling/raise_warning

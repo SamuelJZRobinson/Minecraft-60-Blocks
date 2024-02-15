@@ -6,7 +6,7 @@ xp set @a 0 levels
 advancement revoke @a everything
 
 # Teams
-execute unless score restartScavenge GameStatus matches 1 run team empty Playing
+team empty Playing
 
 # Titles
 title @a clear
@@ -22,8 +22,8 @@ effect give @a minecraft:saturation 1 10 true
 gamerule naturalRegeneration true
 
 # Gamemode
-execute unless score restartScavenge GameStatus matches 1 run gamemode adventure @a
+gamemode adventure @a
 
 # Goto Lobby
 spawnpoint @a 21 129 -2
-execute unless score restartScavenge GameStatus matches 1 run teleport @a 21.50 130.00 -2.50 0 0
+teleport @a 21.50 130.00 -2.50 0 0

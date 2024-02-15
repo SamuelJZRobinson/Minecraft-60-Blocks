@@ -39,6 +39,6 @@ execute if score sumTableItems ItemsHouseHigh matches 1.. run schedule function 
   # Cleanup Leftover Markers
   execute if score sumTableItems ItemsHouseHigh matches 0 run kill @e[type=minecraft:marker]
   # Start Exploration Timer
-  execute if score sumTableItems ItemsHouseHigh matches 0 run function mc:timers/exploration/timer_setup
+  execute if score sumTableItems ItemsHouseHigh matches 0 run function mc:timer/exploration/timer_init
   # Adjust Effects
   execute if score sumTableItems ItemsHouseHigh matches 0 run scoreboard players set blindness GameStatus 3

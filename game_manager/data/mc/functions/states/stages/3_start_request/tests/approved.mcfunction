@@ -1,7 +1,5 @@
 # Adjust Scores
 scoreboard players set started GameStatus 1
-### What is this for?
-scoreboard players reset restartScavenge GameStatus
 
 # Remove Lobby Content
 function mc:states/stages/2_lobby/set/place_empty_signs_menu

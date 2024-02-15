@@ -11,7 +11,7 @@
   # Timmy
   function mc:states/stages/4_setup/place/characters/spawn_timmy
 
-# Teleport To Random Spaces And Remove Marker
+# Goto Random Spaces And Remove Marker
   # Ted
   execute if score doTed Settings matches 1 as @e[type=minecraft:zombie,tag=houseTed,limit=1] run function mc:states/stages/4_setup/place/characters/teleport/tp_ted
   # Dolores

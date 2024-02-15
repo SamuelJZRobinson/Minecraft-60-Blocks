@@ -5,7 +5,7 @@ scoreboard players set lockInventory GameStatus 1
 # Give Outfit
 function mc:utility/outfit/manage_house_outfit
 
-# Random House Placement
+# Randomize House
 function mc:states/stages/4_setup/place/manage_placement
 
 # Goto House

@@ -13,4 +13,4 @@ execute unless score locationVisited ChestMenuExplore matches 0 run function mc:
 execute unless score locationVisited ChestMenuExplore matches 0 run function mc:events/random_loadout/locations/items/tp_enemies_and_items
 
 # Call Root
-schedule function mc:timers/expedition/timer_setup 4s replace
+schedule function mc:timer/expedition/timer_init 4s replace

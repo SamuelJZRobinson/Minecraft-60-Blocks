@@ -47,7 +47,7 @@
   execute if score alive MaryStatus matches 1 if score crazyRage MaryStatus matches 0 if score breakdown MaryStatus <= BREAKDOWN_RAGE_MAX StatusLevels if score breakdown MaryStatus > BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set crazyRage MaryStatus 1
   execute if score crazyRage MaryStatus matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set escaped MaryStatus 1
-  execute if score crazyRage MaryStatus matches 1 if score itemCount ItemsBunker matches 1.. run function mc:status/characters/load_crazy_mary
+  execute if score crazyRage MaryStatus matches 1 if score itemCount ItemsBunker matches 1.. run function mc:states/stages/7_bunker/decorations/characters/set/set_crazy_mary
   scoreboard players set math_out em 0
   # Breakdown Chance (1 in x, n+1)
   scoreboard players operation memory em = MARY_RESISTANCE StatusOdds

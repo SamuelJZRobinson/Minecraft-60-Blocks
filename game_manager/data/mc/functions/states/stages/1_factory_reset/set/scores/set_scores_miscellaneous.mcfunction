@@ -32,7 +32,7 @@ scoreboard objectives add PlayerWins dummy {"bold":true,"color":"white","text":"
 
 # Lobby
 scoreboard objectives add Lobby dummy {"bold":true,"color":"white","text":"Lobby"}
-scoreboard players set started GameStatus 0
+# scoreboard players set started GameStatus 0
 
 # PLAYER COUNT
 scoreboard objectives add PlayerCount dummy {"bold":true,"color":"white","text":"Player Count"}

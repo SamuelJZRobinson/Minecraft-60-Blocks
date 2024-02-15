@@ -1,5 +1,8 @@
+# Set Score
+scoreboard players set testsFailed Exception 0
+
 # Test List
-function mc:states/stages/1_factory_reset/tests/check_new_game
+function mc:states/stages/1_factory_reset/tests/test_not_started
 
 # Approve
-execute if score started GameStatus matches 0 if score doException Exception matches 0 run schedule function mc:states/stages/1_factory_reset/tests/approved 1t replace
+execute if score testsFailed Exception matches 0 run schedule function mc:states/stages/1_factory_reset/tests/approved 1t replace

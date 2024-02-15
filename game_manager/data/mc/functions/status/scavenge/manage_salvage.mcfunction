@@ -9,4 +9,4 @@ teleport @e[type=minecraft:item] @p[team=Playing]
 
 # Salvage Crate
 execute unless score lockInventory GameStatus matches 3 run function mc:status/scavenge/check_full_slots
-execute unless score lockInventory GameStatus matches 3 as @p[team=Playing,scores={OpenShulkerBox=1..}] run function mc:timers/scavenge/open_salvage_crate
+execute unless score lockInventory GameStatus matches 3 as @p[team=Playing,scores={OpenShulkerBox=1..}] run function mc:timer/scavenge/open_salvage_crate

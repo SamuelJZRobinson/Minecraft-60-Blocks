@@ -32,10 +32,10 @@
   execute if score task AtomicDrill matches 9 if score itemCount AtomicDrill matches 2.. run scoreboard players set itemCount AtomicDrill 0
   
   # Task 10 (Scavenge House)
-  # Managed By mc:timers/scavenge/manage_survival
+  # Managed By mc:timer/scavenge/manage_survival
 
   # Task 11 (Failed To Enter Bunker)
-  # Managed By mc:timers/scavenge/manage_survival and mc:play/atomic_drill/dialogue_relay_show
+  # Managed By mc:timer/scavenge/manage_survival and mc:play/atomic_drill/dialogue_relay_show
   
   # Task 12 To 21
   # Managed By cm:menu/submit/submit_selection
