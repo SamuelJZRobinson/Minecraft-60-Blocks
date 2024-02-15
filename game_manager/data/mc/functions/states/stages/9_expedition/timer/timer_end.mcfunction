@@ -1,5 +1,5 @@
 # Adjust Scores
-scoreboard players set clock Timer 3
+### scoreboard players set clock Timer 3
 scoreboard players set music GameStatus 3
 scoreboard objectives setdisplay sidebar
 scoreboard players set showEscape ItemsExpedition 0
@@ -36,3 +36,7 @@ execute if score expeditionMode Lobby matches 1 unless score expeditionDeath Ato
 # Atomic Drill
 execute if score expeditionMode Lobby matches 1 if score task AtomicDrill matches 15..16 run schedule function cm:menu/page3/events/event2_return 21t replace
 execute unless score task AtomicDrill matches 15..16 run scoreboard players set expeditionDeath AtomicDrill 0
+
+# Set State
+execute if score state GameStatus matches 9 run scoreboard players set state GameStatus 8
+function mc:states/stages/manage_states

@@ -39,10 +39,5 @@ execute if score sumTableItems ItemsHouseHigh matches 0 run function mc:states/s
 # Cleanup Leftover Markers
 execute if score sumTableItems ItemsHouseHigh matches 0 run kill @e[type=minecraft:marker]
 
-# Declare Loaded
-scoreboard players set houseLoaded GameStatus 1
-
-  # Start Exploration Timer
-  # execute if score sumTableItems ItemsHouseHigh matches 0 run function mc:timer/exploration/timer_init
-  # Adjust Effects
-  # execute if score sumTableItems ItemsHouseHigh matches 0 run scoreboard players set blindness GameStatus 3
+# Declare House Loaded
+execute if score sumTableItems ItemsHouseHigh matches 0 run function mc:states/stages/4_setup/place/setup_house_done

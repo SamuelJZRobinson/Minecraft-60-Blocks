@@ -1,5 +1,5 @@
 # Timer Engine
-schedule clear mc:utility/timer/engine/timer_loop
+schedule clear mc:utility/timer/timer_loop
 
 # Apocalypse And Scavenge
   # Stage 1
