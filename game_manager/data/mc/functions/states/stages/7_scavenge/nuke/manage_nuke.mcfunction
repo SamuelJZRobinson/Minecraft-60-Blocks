@@ -10,7 +10,7 @@ execute if score bunkerSide GameStatus matches 1 store success score survived Ga
 function mc:states/stages/1_factory_reset/clear/clear_locations_house
 
 # Blindness
-# scoreboard players set blindness GameStatus 2
+# scoreboard players set fakeBlindness GameStatus 2
 
 # Outcome
 execute if score gamemode Settings matches 1 run function mc:states/stages/7_scavenge/nuke/give_drill_items

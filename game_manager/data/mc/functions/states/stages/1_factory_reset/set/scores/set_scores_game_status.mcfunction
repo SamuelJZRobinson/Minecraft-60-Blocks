@@ -4,8 +4,7 @@ scoreboard players set adultsAlive GameStatus 0
 scoreboard players set childrenAlive GameStatus 0
 scoreboard players set totalAlive GameStatus 0
 scoreboard players set totalPresent GameStatus 0
-scoreboard players set blindness GameStatus 0
-scoreboard players set loadingStatus GameStatus 0
+scoreboard players set fakeBlindness GameStatus 0
 scoreboard players set preBunkerLook GameStatus 0
 scoreboard players set bunkerLook GameStatus 0
 scoreboard players set characterRevived GameStatus 0

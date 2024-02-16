@@ -1,6 +1,6 @@
 # Set Scores
 scoreboard players set lockInventory GameStatus 1
-# scoreboard players set blindness GameStatus 2
+# scoreboard players set fakeBlindness GameStatus 2
 
 # Give Outfit
 function mc:utility/outfit/manage_house_outfit

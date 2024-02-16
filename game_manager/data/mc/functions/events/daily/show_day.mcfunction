@@ -3,7 +3,7 @@ execute if score expeditionDuration ChestMenuExplore matches 1.. run scoreboard 
 scoreboard players add day GameStatus 1
 
 # Blindness
-scoreboard players set blindness GameStatus 1
+scoreboard players set fakeBlindness GameStatus 1
 
 # Titles
 title @a times 0 50 20

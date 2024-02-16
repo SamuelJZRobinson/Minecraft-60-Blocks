@@ -3,7 +3,7 @@
   # The player cannot be a spectator since they do not load chunks
 
 # Player Related
-scoreboard players set blindness GameStatus 3
+scoreboard players set fakeBlindness GameStatus 3
 function mc:utility/tp/tp_bunker
 # Destroy Bunker Labels
 kill @e[type=armor_stand,tag=bunkerMarker]

@@ -1,2 +1,2 @@
-scoreboard players set blindness GameStatus 1
+scoreboard players set fakeBlindness GameStatus 1
 schedule function mc:events/endings/surface_scene 2s replace

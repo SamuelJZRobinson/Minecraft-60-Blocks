@@ -2,7 +2,7 @@
   # Driven away endings are randomly chosen when nobody is inside the bunker
 
 # Remove Blindness
-scoreboard players set blindness GameStatus 3
+scoreboard players set fakeBlindness GameStatus 3
 
 # Set Title Times
 title @a times 40 60 20

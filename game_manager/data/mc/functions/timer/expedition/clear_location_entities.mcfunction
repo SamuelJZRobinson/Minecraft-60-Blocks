@@ -3,7 +3,7 @@ effect give @s resistance 10 5 true
 effect give @s slow_falling 10 0 true
 
 # Blindness
-scoreboard players set blindness GameStatus 2
+scoreboard players set fakeBlindness GameStatus 2
 
 # Teleport Locations
 execute if score preLocationVisited ChestMenuExplore matches 1 run teleport @s -129.00 302.00 -383.00 0 0
