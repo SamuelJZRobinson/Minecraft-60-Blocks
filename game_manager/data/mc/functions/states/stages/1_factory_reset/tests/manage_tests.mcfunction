@@ -5,4 +5,4 @@ scoreboard players set testsFailed Exception 0
 function mc:states/stages/1_factory_reset/tests/test_not_started
 
 # Approve
-execute if score testsFailed Exception matches 0 run schedule function mc:states/stages/1_factory_reset/tests/approve 1t replace
+execute if score testsFailed Exception matches 0 run function mc:states/stages/1_factory_reset/tests/approve

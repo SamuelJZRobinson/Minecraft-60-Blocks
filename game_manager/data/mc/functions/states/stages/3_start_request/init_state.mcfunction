@@ -1,5 +1,5 @@
 # Notes
-  # Cannot schedule initial start_request to allow @s selection.
+  # Cannot schedule initial start_request to allow @s selection so do it for manage_tests.
 
 # Setup Players
 team join Playing @s
@@ -9,4 +9,4 @@ clear @a
 tellraw @a "state 3"
 
 # Run Tests
-function mc:states/stages/3_start_request/tests/manage_tests
+schedule function mc:states/stages/3_start_request/tests/manage_tests 1t replace

@@ -1,3 +1,6 @@
+# Note
+  # Do not schedule tests and approve to avoid issues when calling manage_tests externally while it's already running.
+
 # Set Score
 scoreboard players set testsFailed Exception 1
 
