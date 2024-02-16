@@ -8,7 +8,7 @@
   # Expedition
   data merge block 20 131 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Expedition","color":"yellow","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_expedition"},"bold":true}',Text2:'{"text":"#","color":"red}',Text4:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
   # Start Game
-  data merge block 21 130 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Start Game","color":"green","bold":true}',Text2:'{"text":"","clickEvent":{"action":"run_command","value":"scoreboard players set state GameStatus 3"}}',Text3:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:states/stages/manage_states"}}',Text4:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
+  data merge block 21 130 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Start Game","color":"green","bold":true}',Text2:'{"text":"","clickEvent":{"action":"run_command","value":"scoreboard players set state GameStatus 3"}}',Text3:'{"text":"","clickEvent":{"action":"run_command","value":"schedule function mc:states/stages/manage_states 1t replace"}}',Text4:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
 
 # Items
   # Ammo

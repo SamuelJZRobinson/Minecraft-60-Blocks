@@ -39,4 +39,4 @@ execute unless score task AtomicDrill matches 15..16 run scoreboard players set 
 
 # Set State
 execute if score state GameStatus matches 9 run scoreboard players set state GameStatus 8
-function mc:states/stages/manage_states
+schedule function mc:states/stages/manage_states 1t replace

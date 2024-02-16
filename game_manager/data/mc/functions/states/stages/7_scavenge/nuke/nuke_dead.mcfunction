@@ -8,4 +8,4 @@ execute if score gamemode Settings matches 2..3 run scoreboard players set endin
 
 # Set State
 scoreboard players set state GameStatus 8
-function mc:states/stages/manage_states
+schedule function mc:states/stages/manage_states 1t replace

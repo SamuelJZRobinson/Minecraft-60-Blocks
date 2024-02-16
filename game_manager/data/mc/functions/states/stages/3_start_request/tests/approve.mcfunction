@@ -7,4 +7,4 @@ execute if score started GameStatus matches 1 run kill @e[type=armor_stand,tag=l
 
 # Set State
 scoreboard players set state GameStatus 4
-schedule function mc:states/stages/manage_states 14t replace
+schedule function mc:states/stages/manage_states 1t replace

@@ -13,4 +13,4 @@ function mc:utility/tp/tp_house
 
 # Set State
 scoreboard players set state GameStatus 6
-function mc:states/stages/manage_states
+schedule function mc:states/stages/manage_states 1t replace
