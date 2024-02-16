@@ -1,5 +1,5 @@
 # Notes
-  # @s will only target the player clicking the sign in this first script.
+  # Cannot schedule initial start_request to allow @s selection.
 
 # Setup Players
 team join Playing @s
