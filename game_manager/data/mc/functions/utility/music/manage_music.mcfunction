@@ -29,7 +29,6 @@ execute if score music GameStatus matches 4 run schedule function mc:utility/mus
 execute if score music GameStatus matches 5 run playsound minecraft:music_disc.otherside record @a 0.5 54.5 30.0 1 1 1
 execute if score music GameStatus matches 5 run schedule function mc:utility/music/manage_music 195s replace
 
-# Refresh Scores
-scoreboard players operation preClock Timer = clock Timer
+# Set Scores
 scoreboard players operation preMusic GameStatus = music GameStatus
 scoreboard players reset @a[scores={PlayerLeave=1..}] PlayerLeave

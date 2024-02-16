@@ -10,5 +10,5 @@ execute if score showEscape ItemsExpedition matches 0 if score itemsLeft ItemsEx
 execute if score showEscape ItemsExpedition matches 0 if score itemsLeft ItemsExpedition matches 0 run scoreboard players set showEscape ItemsExpedition 1
 
 # Time Depleted
-execute if score seconds Timer matches 0 as @p[team=Playing] run function mc:states/stages/9_expedition/timer/timer_end
+execute if score seconds Timer matches 0 run function mc:states/stages/9_expedition/timer/timer_end
 ### execute if score seconds Timer matches 0 run function mc:timer/expedition/time_depleted

@@ -17,8 +17,5 @@ execute if score gamemode Settings matches 1 run function mc:states/stages/7_sca
 execute if score survived GameStatus matches 1 run function mc:states/stages/7_scavenge/nuke/nuke_safe
 execute if score survived GameStatus matches 0 run function mc:states/stages/7_scavenge/nuke/nuke_dead
 
-# Set Clock
-### scoreboard players set clock Timer 3
-
 # Unlock Inventory
 scoreboard players set lockInventory GameStatus 0
