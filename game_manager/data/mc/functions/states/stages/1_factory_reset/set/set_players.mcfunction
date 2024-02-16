@@ -21,9 +21,6 @@ effect give @a minecraft:instant_health 1 10 true
 effect give @a minecraft:saturation 1 10 true
 gamerule naturalRegeneration true
 
-# Gamemode
-gamemode adventure @a
-
 # Goto Lobby
 spawnpoint @a 21 129 -2
 teleport @a 21.50 130.00 -2.50 0 0

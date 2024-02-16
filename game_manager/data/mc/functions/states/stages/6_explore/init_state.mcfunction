@@ -1,5 +1,5 @@
-# Outfit
-function mc:utility/outfit/manage_house_outfit
+# Notes
+  # Fake blindess must give outfits since it may override what other scripts give with time disparities.
 
 # Effect
 effect give @p[team=Playing] minecraft:speed infinite 1 true
