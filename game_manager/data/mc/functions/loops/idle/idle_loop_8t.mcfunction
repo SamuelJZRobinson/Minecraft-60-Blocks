@@ -1,12 +1,12 @@
 # Start
 execute if score started GameStatus matches 1 run function mc:loops/active/active_loop_8t
 
-# Music
-execute unless score preMusic GameStatus = music GameStatus run function mc:utility/music/manage_music
-execute as @a[scores={PlayerLeave=1..}] at @s run function mc:utility/music/manage_music_return
+# Team Validation
+function mc:utility/team/team_validation
 
-# Defautlt Gamemode
-execute if score started GameStatus matches 0 run gamemode adventure @a[gamemode=!adventure,team=Lobby]
+# Music
+execute unless score preMusic GameStatus = music GameStatus run function mc:utility/music/music_loop
+execute as @a[scores={PlayerLeave=1..}] run function mc:utility/music/music_loop_player
 
 # Loop
 schedule function mc:loops/idle/idle_loop_8t 8t replace

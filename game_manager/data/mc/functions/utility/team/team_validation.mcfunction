@@ -5,4 +5,5 @@ gamemode adventure @a[gamemode=!adventure,team=Playing]
 
 # Lobby
 team join Lobby @a[team=!Lobby,team=!Playing,team=!Enemy]
-gamemode spectator @a[gamemode=!spectator,team=Lobby]
+execute if score started GameStatus matches 0 run gamemode adventure @a[name=!"BlackeyeI",gamemode=!adventure,team=Lobby]
+execute if score started GameStatus matches 1 run gamemode spectator @a[name=!"BlackeyeI",gamemode=!spectator,team=Lobby]

@@ -1,6 +1,3 @@
-# Notes
-  # Rejoining players are addressed individually since they ignore the clock change and will cause various conflicting schedules
-
 # Prevent Music Overlap
 stopsound @s record
 

@@ -7,8 +7,6 @@ execute if score state GameStatus matches 5..8 run function mc:particles/manage_
 execute if score state GameStatus matches 8 run function mc:particles/manage_bunker_particles
 
 # Player Related
-  # Team Balance
-  function mc:utility/team/team_validation
   # Hunger
   effect give @a[scores={PlayerHunger=..19}] minecraft:saturation 1 255 true
   scoreboard players reset @a[scores={PlayerHunger=20..}] PlayerHunger

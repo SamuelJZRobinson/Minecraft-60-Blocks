@@ -48,7 +48,7 @@
 
 #   # Set Music
 #   scoreboard players set music GameStatus 3
-#   function mc:utility/music/manage_music
+#   function mc:utility/music/music_loop
 
 #   # Goto Bunker
 #   function mc:utility/tp/tp_bunker
