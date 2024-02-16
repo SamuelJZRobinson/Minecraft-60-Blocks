@@ -8,6 +8,5 @@ scoreboard players set lockInventory GameStatus 1
 # Randomize House
 function mc:states/stages/4_setup/place/manage_placement
 
-# Player
-effect give @p[team=Playing] minecraft:speed infinite 1 true
+# Goto House
 function mc:utility/tp/tp_house

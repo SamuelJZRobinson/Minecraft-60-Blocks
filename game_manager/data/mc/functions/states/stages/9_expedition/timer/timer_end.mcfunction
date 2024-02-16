@@ -38,5 +38,5 @@ execute if score expeditionMode Lobby matches 1 if score task AtomicDrill matche
 execute unless score task AtomicDrill matches 15..16 run scoreboard players set expeditionDeath AtomicDrill 0
 
 # Set State
-execute if score state GameStatus matches 9 run scoreboard players set state GameStatus 8
+scoreboard players set state GameStatus 8
 schedule function mc:states/stages/manage_states 1t replace

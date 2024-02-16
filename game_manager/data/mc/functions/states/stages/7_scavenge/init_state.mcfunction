@@ -11,5 +11,7 @@ title @a title {"text":"Nuke Sighted!","bold":true,"color":"gold"}
 title @a subtitle {"text":"Collect Supplies","color":"red"}
 playsound minecraft:entity.skeleton_horse.death hostile @a ~ ~ ~ 128 1
 
+tellraw @a "state 7"
+
 # Run Timer
 function mc:utility/timer/timer_init
