@@ -1,10 +1,7 @@
-# Notes
-  # lockInventory determines the number of free slots, including: 0 (all free), 1 (all locked), 2 (four hotbar free), 3 (all free and chekc items for expedition)
-
 # Cosmetics And Particles
-execute if score state GameStatus matches 8 run function mc:particles/bunker_blackout_chance
-execute if score state GameStatus matches 5..8 run function mc:particles/manage_location_markers
-execute if score state GameStatus matches 8 run function mc:particles/manage_bunker_particles
+execute if score state GameStatus matches 8 run function mc:states/stages/8_bunker/cosmetic/bunker_blackout_chance
+execute if score state GameStatus matches 5..8 run function mc:utility/particles/manage_particles_markers
+execute if score state GameStatus matches 8 run function mc:utility/particles/manage_particles_bunker
 
 # Player Related
   # Hunger
@@ -16,7 +13,7 @@ execute if score state GameStatus matches 8 run function mc:particles/manage_bun
   execute if score lockInventory GameStatus matches 1..2 as @p[team=Playing] run function mc:utility/inventory/lock_inventory
   execute as @p[team=Playing,nbt=!{Inventory:[{id:"minecraft:written_book",Slot:8b,Count:1b,tag:{gameMenu:1b}}]}] run function mc:utility/inventory/give_game_menu
   # execute if score clock Timer matches 2.. as @p[team=Playing] run function mc:timer/scavenge/clear_items
-  # Remove Ground Items
+  # Clear Ground Items
   execute as @e[type=item,nbt={Item:{tag:{locked:1b}}}] run kill @s
 
 # Expedition

@@ -1,3 +1,10 @@
+# Notes
+  # lockInventory determines the number of free slots including:
+    # 0 (all free)
+    # 1 (all locked)
+    # 2 (1-4 hotbar free)
+    # 3 (all free and chekc items for expedition)
+
 # Adjust Scores
 execute if score lockInventory GameStatus matches 1 run scoreboard players set lockedSlotsMax GameStatus 36
 execute if score lockInventory GameStatus matches 2 run scoreboard players set lockedSlotsMax GameStatus 32

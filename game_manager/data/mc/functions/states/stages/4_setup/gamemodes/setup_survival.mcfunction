@@ -8,14 +8,14 @@
 #     # Sustenance
 #       # Set Boundaries According To Difficulty (math_in2 is n+1)
 #         # Easy (6 to 8 items)
-#         execute if score difficulty Lobby matches 1 run scoreboard players set math_in1 em 6
-#         execute if score difficulty Lobby matches 1 run scoreboard players set math_in2 em 9
+#         execute if score difficulty Settings matches 1 run scoreboard players set math_in1 em 6
+#         execute if score difficulty Settings matches 1 run scoreboard players set math_in2 em 9
 #         # Medium (4 to 6 items)
-#         execute if score difficulty Lobby matches 2 run scoreboard players set math_in1 em 4
-#         execute if score difficulty Lobby matches 2 run scoreboard players set math_in2 em 7
+#         execute if score difficulty Settings matches 2 run scoreboard players set math_in1 em 4
+#         execute if score difficulty Settings matches 2 run scoreboard players set math_in2 em 7
 #         # Hard (2 to 3 items)
-#         execute if score difficulty Lobby matches 3 run scoreboard players set math_in1 em 2
-#         execute if score difficulty Lobby matches 3 run scoreboard players set math_in2 em 4
+#         execute if score difficulty Settings matches 3 run scoreboard players set math_in1 em 2
+#         execute if score difficulty Settings matches 3 run scoreboard players set math_in2 em 4
 
 #       # Soup Cans
 #         # Generate Random Number
@@ -33,15 +33,15 @@
 
 #     # Character
 #       # Easy
-#       execute if score difficulty Lobby matches 1 run loot insert 32 58 -7 loot lt_custom:chests/survival_easy_characters
+#       execute if score difficulty Settings matches 1 run loot insert 32 58 -7 loot lt_custom:chests/survival_easy_characters
 #       # Medium
-#       execute if score difficulty Lobby matches 2 run loot insert 32 58 -7 loot lt_custom:chests/survival_normal_characters
+#       execute if score difficulty Settings matches 2 run loot insert 32 58 -7 loot lt_custom:chests/survival_normal_characters
 #       # Hard
-#       execute if score difficulty Lobby matches 3 run loot insert 32 58 -7 loot lt_custom:chests/survival_hard_characters
+#       execute if score difficulty Settings matches 3 run loot insert 32 58 -7 loot lt_custom:chests/survival_hard_characters
 
 #     # Bonous Bunker Stock
 #       # Easy And Medium
-#       execute if score difficulty Lobby matches 1..2 run schedule function mc:status/scavenge/load_bonous_items 0.2s
+#       execute if score difficulty Settings matches 1..2 run schedule function mc:status/scavenge/load_bonous_items 0.2s
 
 #     # Declare New Day
 #     schedule function mc:states/stages/8_bunker/daily/manage_new_day 3s

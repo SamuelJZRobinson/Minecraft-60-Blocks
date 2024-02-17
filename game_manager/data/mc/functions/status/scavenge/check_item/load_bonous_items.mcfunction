@@ -4,11 +4,11 @@
 
 # Set Items Awarded
   # Easy
-  execute if score difficulty Lobby matches 1 run scoreboard players add itemsOwed CheckItems 3
-  execute if score difficulty Lobby matches 1 if score suitcase ItemsBunker matches 3 run scoreboard players add itemsOwed CheckItems 2
+  execute if score difficulty Settings matches 1 run scoreboard players add itemsOwed CheckItems 3
+  execute if score difficulty Settings matches 1 if score suitcase ItemsBunker matches 3 run scoreboard players add itemsOwed CheckItems 2
   # Medium
-  execute if score difficulty Lobby matches 2 run scoreboard players add itemsOwed CheckItems 1
-  execute if score difficulty Lobby matches 2 if score suitcase ItemsBunker matches 3 run scoreboard players add itemsOwed CheckItems 1
+  execute if score difficulty Settings matches 2 run scoreboard players add itemsOwed CheckItems 1
+  execute if score difficulty Settings matches 2 if score suitcase ItemsBunker matches 3 run scoreboard players add itemsOwed CheckItems 1
 
 # Append Unsalvaged Items
   # Official

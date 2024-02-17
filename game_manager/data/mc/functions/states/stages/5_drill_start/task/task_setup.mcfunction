@@ -1,19 +1,12 @@
-# Notes
-  # bunkerSide is managed by mc:states/stages/4_setup/place/floorplans/clone/clone_fp_1
-  ### Item summon scripts are broken since they were grouped into one file.
-  ### Character summon scripts might be broken due to a change.
-
 # Task 1 (Goto Hallway Marker)
   # Set Dialogue
   execute if score task AtomicDrill matches 1 run title @a times 0 80 0
   execute if score task AtomicDrill matches 1 run scoreboard players set dialogue AtomicDrill 1
   execute if score task AtomicDrill matches 1 run scoreboard players set dialogueMax AtomicDrill 2
   # Create Marker
-  execute if score task AtomicDrill matches 1 positioned 22.50 64.00 -6.50 run function mc:particles/spawn_cross_marker
-  execute if score task AtomicDrill matches 1 positioned 22.50 66.00 -6.50 run function mc:particles/spawn_arrow_marker
-  # Remove Effects
-  execute if score task AtomicDrill matches 1 run effect clear @p[team=Playing]
-  # Add Effects
+  execute if score task AtomicDrill matches 1 positioned 22.50 64.00 -6.50 run function mc:utility/particles/spawn/spawn_marker_cross
+  execute if score task AtomicDrill matches 1 positioned 22.50 66.00 -6.50 run function mc:utility/particles/spawn/spawn_marker_arrow
+  # Effects
   execute if score task AtomicDrill matches 1 run effect give @p[team=Playing] speed 999999 1 true
 
 # Task 2 (Goto Living Room Marker)
@@ -21,30 +14,30 @@
   execute if score task AtomicDrill matches 2 run scoreboard players set dialogue AtomicDrill 3
   execute if score task AtomicDrill matches 2 run scoreboard players set dialogueMax AtomicDrill 4
   # Create Marker
-  execute if score task AtomicDrill matches 2 positioned 13.50 64.00 5.50 run function mc:particles/spawn_cross_marker
-  execute if score task AtomicDrill matches 2 positioned 13.50 66.00 5.50 run function mc:particles/spawn_arrow_marker
+  execute if score task AtomicDrill matches 2 positioned 13.50 64.00 5.50 run function mc:utility/particles/spawn/spawn_marker_cross
+  execute if score task AtomicDrill matches 2 positioned 13.50 66.00 5.50 run function mc:utility/particles/spawn/spawn_marker_arrow
 
 # Task 3 (Find Timmy)
   # Set Dialogue
   execute if score task AtomicDrill matches 3 run scoreboard players set dialogue AtomicDrill 5
   execute if score task AtomicDrill matches 3 run scoreboard players set dialogueMax AtomicDrill 7
   # Spawn Timmy
-  execute if score task AtomicDrill matches 3 run function mc:states/stages/4_setup/place/characters/spawn_timmy
+  execute if score task AtomicDrill matches 3 run function mc:states/stages/4_setup/place/characters/spawn/spawn_timmy
   execute if score task AtomicDrill matches 3 run data modify entity @e[type=zombie,tag=houseTimmy,limit=1] Invulnerable set value 0b
 
-# Task 4 (Find Soup In The Bathtub)
+# Task 4 (Find Soup In Bathtub)
   # Set Dialogue
   execute if score task AtomicDrill matches 4 run scoreboard players set dialogue AtomicDrill 8
   execute if score task AtomicDrill matches 4 run scoreboard players set dialogueMax AtomicDrill 8
-  # Place Soup Can
+  # Place Soup
   execute if score task AtomicDrill matches 4 positioned 22.40 64.00 6.45 run function mc:states/stages/4_setup/place/items/spawn/spawn_soup
   execute if score task AtomicDrill matches 4 run data modify entity @e[type=slime,tag=scavengeSoup,limit=1] Invulnerable set value 0b
 
-# Task 5 (Find Water In The Kitchen)
+# Task 5 (Find Water In Kitchen)
   # Set Dialogue
   execute if score task AtomicDrill matches 5 run scoreboard players set dialogue AtomicDrill 9
   execute if score task AtomicDrill matches 5 run scoreboard players set dialogueMax AtomicDrill 9
-  # Place Water Bottle
+  # Place Water
   execute if score task AtomicDrill matches 5 positioned 27.50 65.00 -14.55 run function mc:states/stages/4_setup/place/items/spawn/spawn_water
   execute if score task AtomicDrill matches 5 run data modify entity @e[type=slime,tag=scavengeWater,limit=1] Invulnerable set value 0b
 
@@ -56,7 +49,7 @@
   execute if score task AtomicDrill matches 6 run scoreboard players set clock Timer 1
   execute if score task AtomicDrill matches 6 run function mc:states/stages/4_setup/place/floorplans/spawn/spawn_bunker_indicator
 
-# Task 7 (Find Radio In The Living Room Shelf)
+# Task 7 (Find Radio In Living Room Shelf)
   # Set Dialogue
   execute if score task AtomicDrill matches 7 run scoreboard players set dialogue AtomicDrill 12
   execute if score task AtomicDrill matches 7 run scoreboard players set dialogueMax AtomicDrill 12
@@ -66,7 +59,7 @@
   execute if score task AtomicDrill matches 7 as @e[type=minecraft:slime,tag=scavengeRadio,limit=1] at @s run teleport @s ~ ~ ~ 90 0
   execute if score task AtomicDrill matches 7 run function mc:states/stages/4_setup/place/items/raise/sync_rotation
 
-# Task 8 (Find Gas Mask On Wall)
+# Task 8 (Find Gas Mask In Hallway)
   # Set Dialogue
   execute if score task AtomicDrill matches 8 run scoreboard players set dialogue AtomicDrill 13
   execute if score task AtomicDrill matches 8 run scoreboard players set dialogueMax AtomicDrill 13
@@ -87,8 +80,8 @@
   # Set Dialogue
   execute if score task AtomicDrill matches 10 run scoreboard players set dialogue AtomicDrill 15
   execute if score task AtomicDrill matches 10 run scoreboard players set dialogueMax AtomicDrill 19
-  # House Loadout managed by mc:play/atomic_drill/dialogue_relay_show
-  execute if score task AtomicDrill matches 10 run scoreboard players set difficulty Lobby 2
+  # House Loadout managed by mc:play/atomic_drill/show/show_dialogue_loop_show
+  execute if score task AtomicDrill matches 10 run scoreboard players set difficulty Settings 2
 
 # Task 11 (Failed To Enter Bunker)
   # Set Dialogue
@@ -111,7 +104,7 @@
 
 # Task 14 (Feed Thirsty Characters And Event One, Day Three)
   # Force Thirst
-  execute if score task AtomicDrill matches 14 run function mc:states/stages/5_drill/force_thirst
+  execute if score task AtomicDrill matches 14 run function mc:states/stages/5_drill_start/force_thirst
   # Give Journal
   execute if score task AtomicDrill matches 14 run give @p[team=Playing] written_book{dailyStory:1b,title:"Journal",author:"BlackeyeI",generation:0,pages:['[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"},"bold":true},{"text":"\\nReveille cadets, today things get serious as you address one of many ethical dilemmas destined to arise. As we await the return of your scavenger, we will see how you respond under stress. For now, you will ration food. ","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nWe cannot risk anyone dying of dehydration, especially in a training exercise, so please do not hesitate to have your fair share of water. As a proud army man, I know little about the imagination..., only its destruction. Hence, I will ask you to use yours now.","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nSuppose that food was in low supply and the family hamster snuck into the shelter. Do you pity the cries of your children or cook him out of desperation to quench that inner urge?","bold":false}]']} 1
   # Set Event
@@ -125,7 +118,7 @@
 # Task 16 (Character Returns Injured, Day Five)
   # Journal Managed By cm:menu/submit/manage_events
   # Force Expedition Return
-  execute if score task AtomicDrill matches 16 run function mc:states/stages/5_drill/force_expedition_return
+  execute if score task AtomicDrill matches 16 run function mc:states/stages/5_drill_start/force_expedition_return
 
 # Task 17 (Advice About Knocking, Day Six)
   # Give Journal
@@ -152,10 +145,10 @@
   execute if score task AtomicDrill matches 21 run setblock 0 54 29 minecraft:air
   execute if score task AtomicDrill matches 21 run kill @e[type=minecraft:armor_stand,tag=menuText]
   # Break The Script
-  execute if score task AtomicDrill matches 21 run schedule clear mc:states/stages/5_drill/task_loop
+  execute if score task AtomicDrill matches 21 run schedule clear mc:states/stages/5_drill_start/task/task_loop
 
 # Request Dialogue
-execute unless score task AtomicDrill matches 13.. run function mc:states/stages/5_drill/dialogue_relay
+execute unless score task AtomicDrill matches 13.. run function mc:states/stages/5_drill_start/show/show_dialogue_loop
 
 # Debounce Stage
 scoreboard players set stage AtomicDrill 1

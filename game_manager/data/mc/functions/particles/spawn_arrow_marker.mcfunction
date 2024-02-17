@@ -1,1 +1,0 @@
-summon minecraft:armor_stand ~ ~ ~ {Team:"Marker",NoGravity:1b,Invulnerable:1b,Glowing:1b,Small:1b,Invisible:1b,NoBasePlate:1b,Tags:["houseMarker","arrowMarker","smallSquare","spin"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gold_block",Count:1b}]}

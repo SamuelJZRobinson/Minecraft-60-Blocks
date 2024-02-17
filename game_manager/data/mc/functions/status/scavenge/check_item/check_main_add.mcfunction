@@ -29,7 +29,7 @@ execute store result score itemId CheckItems run data get storage minecraft:chec
   execute if score stage CheckItems matches 8..9 run function mc:status/scavenge/check_item/check_main_add_one
 
 # Append Bundles
-execute if score stage CheckItems matches 2 if score difficulty Lobby matches 1..2 if score itemsTotal CheckItems matches ..5 run function mc:status/scavenge/check_item/set_bundle_bonous
+execute if score stage CheckItems matches 2 if score difficulty Settings matches 1..2 if score itemsTotal CheckItems matches ..5 run function mc:status/scavenge/check_item/set_bundle_bonous
 execute if score stage CheckItems matches 6 run function mc:status/scavenge/check_item/set_bundle_expedition_loot
 execute if score stage CheckItems matches 8..9 run function mc:status/scavenge/check_item/set_bundle_expedition_loot
 

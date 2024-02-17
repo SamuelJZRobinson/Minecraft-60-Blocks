@@ -1,13 +1,12 @@
 # Set Scores
 scoreboard players set lockInventory GameStatus 1
 
-# Give Outfit
-function mc:utility/outfit/manage_house_outfit
-
-# Fixed House Layout
+# Load Floorplan
 function mc:states/stages/4_setup/place/floorplans/clone/clone_fp_1_drill
 
 # Goto House
 function mc:utility/tp/tp_house
 
-### Set Atomic Drill state
+# Set State
+scoreboard players set state GameStatus 5
+schedule function mc:states/stages/manage_states 1t replace

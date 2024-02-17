@@ -1,0 +1,1 @@
+summon minecraft:armor_stand ~ ~ ~ {Team:"Marker",Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["houseMarker","markerSmallSquare"],DisabledSlots:4144959}

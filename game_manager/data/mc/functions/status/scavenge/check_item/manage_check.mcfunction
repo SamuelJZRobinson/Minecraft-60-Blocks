@@ -5,7 +5,7 @@
 
 # Count Items Accordingly
 execute if score stage CheckItems matches 1 run function mc:status/scavenge/check_item/check_main_add
-execute if score stage CheckItems matches 2 if score difficulty Lobby matches 1..2 run function mc:status/scavenge/check_item/load_bonous_items
-execute if score stage CheckItems matches 2 if score difficulty Lobby matches 3 run scoreboard players set stage CheckItems 3
+execute if score stage CheckItems matches 2 if score difficulty Settings matches 1..2 run function mc:status/scavenge/check_item/load_bonous_items
+execute if score stage CheckItems matches 2 if score difficulty Settings matches 3 run scoreboard players set stage CheckItems 3
 execute if score stage CheckItems matches 3 run schedule function mc:states/stages/8_bunker/daily/manage_new_day 1t replace
 execute if score stage CheckItems matches 4 run function mc:status/scavenge/check_item/check_main_remove

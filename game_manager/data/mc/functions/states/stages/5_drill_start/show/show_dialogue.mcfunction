@@ -35,7 +35,7 @@ execute if score dialogue AtomicDrill matches 15 run title @s actionbar {"text":
 execute if score dialogue AtomicDrill matches 16 run title @s actionbar {"text":"Sometimes you have extra time to wander, but you must pack after the siren!","color":"white"}
 execute if score dialogue AtomicDrill matches 17 run title @s actionbar {"text":"Our warning system provides sixty seconds to gather items and family.","color":"white"}
 execute if score dialogue AtomicDrill matches 18 run title @s actionbar {"text":"Remember to stand beside the shelter when your time is up!","color":"white"}
-execute if score dialogue AtomicDrill matches 19 run function mc:play/gamemodes/apocalypse_and_scavenge/start_gamemode
+### execute if score dialogue AtomicDrill matches 19 run function mc:play/gamemodes/apocalypse_and_scavenge/start_gamemode
 
 # Task Eleven (Failed To Enter Bunker)
 execute if score dialogue AtomicDrill matches 20 run title @s actionbar {"text":"Even hares can sprint faster than you recruit!","color":"white"}
