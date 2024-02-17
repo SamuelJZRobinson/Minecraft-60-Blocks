@@ -22,5 +22,4 @@ effect give @a minecraft:saturation 1 10 true
 gamerule naturalRegeneration true
 
 # Goto Lobby
-spawnpoint @a 21 129 -2
-teleport @a 21.50 130.00 -2.50 0 0
+function mc:utility/tp/tp_lobby
