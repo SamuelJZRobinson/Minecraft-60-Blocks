@@ -8,7 +8,7 @@ scoreboard players set fakeBlindness GameStatus 2
 function mc:utility/tp/tp_house_ruins
 
 # Set Title Times
-title @a times 40 60 20
+title @a times 20 80 20
 
 # Perished Endings
   # Title
@@ -44,7 +44,7 @@ title @a times 40 60 20
   # 16 - Marlon Invasion
 
 # Show Game Statistics
-execute unless score gamemode Settings matches 3 run schedule function mc:states/stages/10_ending/show/show_statistics 2s replace
+schedule function mc:states/stages/10_ending/show/show_statistics 2s replace
 
 # Set State
 schedule function mc:states/stages/10_ending/show/stop_game 7s replace
