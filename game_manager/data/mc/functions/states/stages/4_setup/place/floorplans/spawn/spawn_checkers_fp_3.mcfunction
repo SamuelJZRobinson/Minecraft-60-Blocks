@@ -15,8 +15,6 @@
   summon minecraft:marker 34.19 65.00 -17.00 {Tags:["table","antiWall","west"]}
   # Wall
   summon minecraft:marker 30.25 65.25 -17.50 {Tags:["wall","east"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=30,y=63,z=-22,dx=4,dy=4,dz=9] add masterBedroom
 
 # Kitchen
   # Countertops
@@ -54,8 +52,6 @@
   # Walls
   summon minecraft:marker 19.75 65.25 0.50 {Tags:["wall","west"]}
   summon minecraft:marker 13.50 65.25 -0.75 {Tags:["wall","south"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=10,y=63,z=-1,dx=9,dy=4,dz=9] add kitchen
 
 # Kid Bedroom
   # Beds
@@ -76,8 +72,6 @@
   summon minecraft:marker 29.19 65.00 1.00 {Tags:["table","antiWall","west"]}
   # Wall
   summon minecraft:marker 22.25 65.25 6.50 {Tags:["wall","east"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=22,y=63,z=-1,dx=7,dy=4,dz=9] add kidsBedroom
 
 # Side Bathroom
   # Toilet
@@ -87,8 +81,6 @@
   summon minecraft:marker 37.50 65.00 -9.50 {Tags:["table","south"]}
   # Window
   summon minecraft:marker 41.19 65.00 -6.50 {Tags:["table","antiWall","west"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=36,y=63,z=-10,dx=5,dy=4,dz=6] add sideBathroom
 
 # Bathroom
   # Countertops
@@ -103,8 +95,6 @@
   summon minecraft:marker 21.50 64.00 -14.50 {Tags:["floor","north"]}
   # Window
   summon minecraft:marker 24.50 65.00 -21.19 {Tags:["table","antiWall","south"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=21,y=63,z=-22,dx=6,dy=4,dz=9] add bathroom
 
 # Lounge Room
   # Fire Place
@@ -129,8 +119,6 @@
   summon minecraft:marker 14.00 65.00 -21.19 {Tags:["table","antiWall","south"]}
   summon minecraft:marker 10.81 65.00 -15.00 {Tags:["table","antiWall","east"]}
   summon minecraft:marker 10.81 65.00 -19.00 {Tags:["table","antiWall","south"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=10,y=63,z=-22,dx=8,dy=4,dz=9] add lounge
 
 # Hallway
   # North Wall
@@ -145,8 +133,3 @@
   summon minecraft:marker 27.25 65.00 -4.85 {Tags:["table","west"]}
   summon minecraft:marker 27.55 65.00 -4.20 {Tags:["table","west"]}
   summon minecraft:marker 27.25 65.00 -3.55 {Tags:["table","west"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=14,y=63,z=-10,dx=19,dy=4,dz=6] add hallway
-
-# Count High Spots
-function mc:states/stages/4_setup/place/floorplans/spawn/count_high_spots

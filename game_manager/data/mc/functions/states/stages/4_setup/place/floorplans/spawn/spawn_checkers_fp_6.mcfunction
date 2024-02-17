@@ -16,8 +16,6 @@
   summon minecraft:marker 17.00 65.00 -21.19 {Tags:["table","antiWall","south"]}
   summon minecraft:marker 13.00 65.00 -21.19 {Tags:["table","antiWall","south"]}
   summon minecraft:marker 10.81 65.00 -14.00 {Tags:["table","antiWall","east"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=10,y=63,z=-22,dx=8,dy=4,dz=9] add masterBedroom
 
 # Kitchen
   # Central Table
@@ -53,8 +51,6 @@
   summon minecraft:marker 19.75 65.25 1.00 {Tags:["wall","west"]}
   # South Window
   summon minecraft:marker 16.50 65.00 8.19 {Tags:["table","antiWall","north"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=10,y=63,z=-1,dx=9,dy=4,dz=9] add kitchen
 
 # Kid Bedroom
   # Tables
@@ -77,8 +73,6 @@
   summon minecraft:marker 32.50 67.19 -12.81 {Tags:["table","north"]}
   # Lower Bed
   summon minecraft:marker 30.50 64.56 -16.50 {Tags:["table","north"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=30,y=63,z=-22,dx=4,dy=4,dz=9] add kidsBedroom
 
 # Side Bathroom
   # Countertops
@@ -88,8 +82,6 @@
   summon minecraft:marker 8.50 65.19 -4.50 {Tags:["table","east"]}
   # Window
   summon minecraft:marker 6.81 65.00 -6.50 {Tags:["table","antiWall","east"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=6,y=63,z=-10,dx=5,dy=4,dz=6] add sideBathroom
 
 # Bathroom
   # Countertop
@@ -104,8 +96,6 @@
   # Windows
   summon minecraft:marker 29.13 65.00 1.00 {Tags:["table","antiWall","west"]}
   summon minecraft:marker 26.00 65.00 8.13 {Tags:["table","antiWall","north"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=22,y=63,z=-1,dx=7,dy=4,dz=9] add bathroom
 
 # Lounge Room
   # Entrance Table
@@ -130,8 +120,6 @@
   summon minecraft:marker 25.50 65.00 -13.50 {Tags:["table","north"]}
   # North Window
   summon minecraft:marker 24.50 65.00 -21.19 {Tags:["table","antiWall","south"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=21,y=63,z=-22,dx=6,dy=4,dz=9] add lounge
 
 # Hallway
   # North Walls
@@ -142,8 +130,3 @@
   summon minecraft:marker 27.00 66.25 -3.25 {Tags:["wall","north"]}
   summon minecraft:marker 22.00 66.25 -3.25 {Tags:["wall","north"]}
   summon minecraft:marker 18.00 66.25 -3.25 {Tags:["wall","north"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=14,y=63,z=-10,dx=19,dy=4,dz=6] add hallway
-
-# Count High Spots
-function mc:states/stages/4_setup/place/floorplans/spawn/count_high_spots

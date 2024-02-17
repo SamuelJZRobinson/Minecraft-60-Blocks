@@ -13,8 +13,6 @@
   summon minecraft:marker 24.50 64.50 2.50 {Tags:["table","east"]}
   # Wall
   summon minecraft:marker 22.25 66.25 3.00 {Tags:["wall","east"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=22,y=63,z=-1,dx=7,dy=4,dz=9] add masterBedroom
 
 # Kitchen
   # East Benches
@@ -48,8 +46,6 @@
   summon minecraft:marker 13.00 65.00 -21.19 {Tags:["table","antiWall","south"]}
   # Wall
   summon minecraft:marker 12.50 65.25 -12.25 {Tags:["wall","north"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=10,y=63,z=-22,dx=8,dy=4,dz=9] add kitchen
 
 # Kid Bedroom
   # Beds
@@ -72,8 +68,6 @@
   # Chairs
   summon minecraft:marker 12.50 65.00 3.50 {Tags:["table","west"]}
   summon minecraft:marker 16.50 65.00 6.50 {Tags:["table","south"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=10,y=63,z=-1,dx=9,dy=4,dz=9] add kidsBedroom
 
 # Side Bathroom
   # Benches
@@ -83,8 +77,6 @@
   summon minecraft:marker 10.50 65.19 -4.50 {Tags:["table","north"]}
   # Window
   summon minecraft:marker 6.81 65.00 -6.50 {Tags:["table","antiWall","east"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=6,y=63,z=-10,dx=5,dy=4,dz=6] add sideBathroom
 
 # Bathroom
   # Tables
@@ -99,8 +91,6 @@
   summon minecraft:marker 32.50 64.00 -16.50 {Tags:["floor","north"]}
   # Window
   summon minecraft:marker 31.50 65.00 -21.19 {Tags:["table","antiWall","south"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=30,y=63,z=-22,dx=4,dy=4,dz=9] add bathroom
 
 # Lounge Room
   # Fireplace
@@ -118,8 +108,6 @@
   summon minecraft:marker 21.50 65.00 -14.50 {Tags:["table","east"]}
   # Wall
   summon minecraft:marker 21.50 66.00 -17.25 {Tags:["wall","north"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=21,y=63,z=-22,dx=6,dy=4,dz=9] add lounge
 
 # Hallway
   # North Wall
@@ -130,8 +118,3 @@
   summon minecraft:marker 29.25 66.00 -4.00 {Tags:["wall","east"]}
   summon minecraft:marker 27.75 66.00 -4.00 {Tags:["wall","west"]}
   summon minecraft:marker 22.50 66.00 -3.25 {Tags:["wall","north"]}
-  # Tag Room
-  tag @e[type=minecraft:marker,x=14,y=63,z=-10,dx=19,dy=4,dz=6] add hallway
-
-# Count High Spots
-function mc:states/stages/4_setup/place/floorplans/spawn/count_high_spots
