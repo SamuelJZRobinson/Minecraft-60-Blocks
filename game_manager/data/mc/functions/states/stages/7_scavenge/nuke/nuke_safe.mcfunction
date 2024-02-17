@@ -22,9 +22,6 @@ scoreboard players set music GameStatus 3
 # Check Items
 function mc:status/scavenge/check_item/manage_check
 
-# Goto Bunker
-function mc:utility/tp/tp_bunker
-
 # Set State
 scoreboard players set state GameStatus 8
 schedule function mc:states/stages/manage_states 1t replace

@@ -1,1 +1,0 @@
-scoreboard players set fakeBlindness GameStatus 3

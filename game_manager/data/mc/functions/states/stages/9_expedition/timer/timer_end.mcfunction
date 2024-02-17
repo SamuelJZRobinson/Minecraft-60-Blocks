@@ -16,9 +16,9 @@ tellraw @p[team=Playing] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 execute unless score task AtomicDrill matches 15..16 run scoreboard players set characterSent ChestMenuExplore 0
 
 # Append Inventory Items
-execute if score expeditionMode Lobby matches 1 unless score expeditionDeath AtomicDrill matches 1.. run function mc:timer/expedition/get_player_inventory
+execute if score doPovExpedition Settings matches 1 unless score expeditionDeath AtomicDrill matches 1.. run function mc:timer/expedition/get_player_inventory
 scoreboard players set stage CheckItems 9
-execute if score expeditionMode Lobby matches 1 unless score expeditionDeath AtomicDrill matches 1.. run function mc:status/scavenge/check_item/check_main_add
+execute if score doPovExpedition Settings matches 1 unless score expeditionDeath AtomicDrill matches 1.. run function mc:status/scavenge/check_item/check_main_add
 
 # Effects
 # effect give @p[team=Playing] minecraft:blindness 2 0 true
@@ -31,10 +31,10 @@ execute if score expeditionMode Lobby matches 1 unless score expeditionDeath Ato
   title @a title {"text":"Meanwhile","color":"gold"}
   title @a subtitle {"text":"In the bunker","color":"red"}
   # Update Items
-  schedule function mc:events/daily/update_status 20t replace
+  schedule function mc:states/stages/8_bunker/daily/update_bunker 20t replace
 
 # Atomic Drill
-execute if score expeditionMode Lobby matches 1 if score task AtomicDrill matches 15..16 run schedule function cm:menu/page3/events/event2_return 21t replace
+execute if score doPovExpedition Settings matches 1 if score task AtomicDrill matches 15..16 run schedule function cm:menu/page3/events/event2_return 21t replace
 execute unless score task AtomicDrill matches 15..16 run scoreboard players set expeditionDeath AtomicDrill 0
 
 # Set State

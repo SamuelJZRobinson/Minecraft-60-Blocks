@@ -14,8 +14,8 @@ execute unless entity @e[type=minecraft:item_frame,tag=calendar] run summon item
 
 # Spawn Markers
 function mc:states/stages/4_setup/place/floorplans/spawn/spawn_bunker_indicator
-function mc:states/stages/4_setup/place/floorplans/spawn/spawn_main_checkers
-schedule function mc:states/stages/4_setup/place/floorplans/spawn/spawn_floorplan_3_checkers 5t replace
+function mc:states/stages/4_setup/place/floorplans/spawn/spawn_checkers
+schedule function mc:states/stages/4_setup/place/floorplans/spawn/spawn_checkers_fp_3 1t replace
 
 # Remember Floorplan
 scoreboard players set preFloorplan GameStatus 3

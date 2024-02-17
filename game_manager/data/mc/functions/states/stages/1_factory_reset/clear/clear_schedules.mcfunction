@@ -4,12 +4,12 @@ schedule clear mc:utility/timer/timer_loop
 # Apocalypse And Scavenge
   # Stage 1
   schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_main_checkers
-  schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_floorplan_1_checkers
-  schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_floorplan_2_checkers
-  schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_floorplan_3_checkers
-  schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_floorplan_4_checkers
-  schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_floorplan_5_checkers
-  schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_floorplan_6_checkers
+  schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_fp_1_checkers
+  schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_fp_2_checkers
+  schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_fp_3_checkers
+  schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_fp_4_checkers
+  schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_fp_5_checkers
+  schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_fp_6_checkers
   schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_west_checkers
   schedule clear mc:states/stages/4_setup/place/floorplans/spawn/spawn_east_checkers
   schedule clear mc:states/stages/4_setup/place/floorplans/spawn/check_for_block

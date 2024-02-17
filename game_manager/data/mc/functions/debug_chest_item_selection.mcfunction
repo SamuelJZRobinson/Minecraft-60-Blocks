@@ -43,7 +43,7 @@ scoreboard players set radio ItemsBunker 1
 scoreboard players set suitcase ItemsBunker 3
 scoreboard players set armour ItemsBunker 3
 
-function mc:status/scavenge/count_bunker_items
+function mc:states/stages/8_bunker/decorations/items/count/count_items
 
 # Characters
 scoreboard players set alive DoloresStatus 1
@@ -92,5 +92,5 @@ scoreboard players set expeditionPrepared ChestMenuExplore 1
 
 # Place Chest Menu
 function cm:menu/place_chest_menu
-function mc:events/daily/check_ending
+function mc:states/stages/8_bunker/daily/check_ending
 function mc:states/stages/8_bunker/decorations/manage_decorations

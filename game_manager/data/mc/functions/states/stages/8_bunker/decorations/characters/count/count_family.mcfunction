@@ -1,4 +1,4 @@
-# Refresh Scores
+# Set Scores
 scoreboard players set adultsAlive GameStatus 0
 scoreboard players set childrenAlive GameStatus 0
 scoreboard players set totalAlive GameStatus 0

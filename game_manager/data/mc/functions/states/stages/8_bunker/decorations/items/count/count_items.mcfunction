@@ -1,15 +1,15 @@
 # Calculate Real Count
   # Soup
-  execute if score cans ItemsBunker matches 1.. run function mc:status/scavenge/count_bunker_items_soup
+  execute if score cans ItemsBunker matches 1.. run function mc:states/stages/8_bunker/decorations/items/count/count_items_soup
   execute if score cans ItemsBunker matches ..0 run scoreboard players set cansInt RealCount 0
   execute if score cans ItemsBunker matches ..0 run scoreboard players set cansFloat RealCount 0
   # Water
-  execute if score bottles ItemsBunker matches 1.. run function mc:status/scavenge/count_bunker_items_water
+  execute if score bottles ItemsBunker matches 1.. run function mc:states/stages/8_bunker/decorations/items/count/count_items_water
   execute if score bottles ItemsBunker matches ..0 run scoreboard players set bottlesInt RealCount 0
   execute if score bottles ItemsBunker matches ..0 run scoreboard players set bottlesFloat RealCount 0
 
 # Count Bunker Items
-  # Refresh Score
+  # Set Score
   scoreboard players set itemCount ItemsBunker 0
   # Official
   execute if score ammo ItemsBunker matches 1 run scoreboard players add itemCount ItemsBunker 1

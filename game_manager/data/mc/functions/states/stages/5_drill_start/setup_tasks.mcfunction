@@ -1,5 +1,5 @@
 # Notes
-  # bunkerSide is managed by mc:states/stages/4_setup/place/floorplans/clone/clone_floorplan_1
+  # bunkerSide is managed by mc:states/stages/4_setup/place/floorplans/clone/clone_fp_1
   ### Item summon scripts are broken since they were grouped into one file.
   ### Character summon scripts might be broken due to a change.
 

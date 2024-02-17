@@ -6,7 +6,7 @@
 effect give @p[team=Playing] invisibility 4 0 true
 
 # Copy Player Items
-execute if score expeditionMode Lobby matches 1 as @p[team=Playing] run function mc:events/random_loadout/locations/items/copy_player_items
+execute if score doPovExpedition Settings matches 1 as @p[team=Playing] run function mc:events/random_loadout/locations/items/copy_player_items
 
 # Teleport Entities
 execute unless score locationVisited ChestMenuExplore matches 0 run function mc:events/random_loadout/locations/items/tp_players

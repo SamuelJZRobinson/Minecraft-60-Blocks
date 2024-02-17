@@ -1,0 +1,1 @@
+scoreboard players set fakeBlindness GameStatus 2

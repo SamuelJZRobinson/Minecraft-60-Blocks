@@ -44,7 +44,7 @@
 #       execute if score difficulty Lobby matches 1..2 run schedule function mc:status/scavenge/load_bonous_items 0.2s
 
 #     # Declare New Day
-#     schedule function mc:events/daily/manage_new_day 3s
+#     schedule function mc:states/stages/8_bunker/daily/manage_new_day 3s
 
 #   # Set Music
 #   scoreboard players set music GameStatus 3

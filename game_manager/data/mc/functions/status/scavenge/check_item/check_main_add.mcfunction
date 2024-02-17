@@ -43,6 +43,6 @@ execute if score stage CheckItems matches 1 if score itemsTotal CheckItems match
 execute if score stage CheckItems matches 2 if score itemsTotal CheckItems matches 0 run scoreboard players set stage CheckItems 3
 execute if score stage CheckItems matches 2 if score itemsTotal CheckItems matches 0 run function mc:status/scavenge/check_item/manage_check
 execute if score stage CheckItems matches 6 if score itemsTotal CheckItems matches 0 run function mc:events/random_loadout/locations/items/get_slot_random
-execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score expeditionMode Lobby matches 0 run schedule function mc:status/scavenge/check_item/set_bundle_details 1t replace
-execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score expeditionMode Lobby matches 0 unless score task AtomicDrill matches 16 run scoreboard players set characterSent ChestMenuExplore 0
-execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score expeditionMode Lobby matches 1 run schedule function mc:events/random_loadout/locations/items/manage_items 1t replace
+execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score doPovExpedition Settings matches 0 run schedule function mc:status/scavenge/check_item/set_bundle_details 1t replace
+execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score doPovExpedition Settings matches 0 unless score task AtomicDrill matches 16 run scoreboard players set characterSent ChestMenuExplore 0
+execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score doPovExpedition Settings matches 1 run schedule function mc:events/random_loadout/locations/items/manage_items 1t replace
