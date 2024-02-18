@@ -21,5 +21,5 @@ function em:math/randomp
 execute if score math_out em <= memory em run function mc:events/random_loadout/locations/items/load_gear_break
 execute if score math_out em > memory em run scoreboard players set stage CheckItems 9
 execute if score math_out em > memory em run data modify storage minecraft:checkitem checkId set from storage minecraft:bundles expeditionGearId
-execute if score math_out em > memory em run function mc:status/scavenge/check_item/check_main_add
+execute if score math_out em > memory em run function mc:utility/scavenge/check_item/check_main_add
 scoreboard players set math_out em 0

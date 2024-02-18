@@ -3,7 +3,7 @@
   # The item checker ensures items are processed, manages bonous items, and starts the first day
 
 # Copy Hotbar From Player
-execute as @p[team=Playing] run function mc:utility/scavenge/get_hotbar
+execute as @p[team=Playing] run function mc:utility/scavenge/collect/inventory/get_hotbar
 
 # Clear
 function mc:states/stages/7_scavenge/nuke/clear_players
@@ -20,7 +20,7 @@ execute if score gamemode Settings matches 3 run scoreboard players set ending G
 scoreboard players set music GameStatus 3
 
 # Check Items
-function mc:status/scavenge/check_item/manage_check
+function mc:utility/scavenge/check_item/manage_check
 
 # Set State
 scoreboard players set state GameStatus 8

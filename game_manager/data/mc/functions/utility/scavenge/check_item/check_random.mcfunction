@@ -61,10 +61,10 @@ scoreboard players remove itemsOwed CheckItems 1
 
 # Call Next Function
 execute if score itemsOwed CheckItems matches 0 run data remove storage minecraft:checkitem randomId
-execute if score stage CheckItems matches 2 if score itemsOwed CheckItems matches 0 run function mc:status/scavenge/check_item/check_main_add
-execute if score stage CheckItems matches 6 if score itemsOwed CheckItems matches 0 run function mc:status/scavenge/check_item/check_main_add
-execute if score stage CheckItems matches 4 if score itemsOwed CheckItems matches 0 run function mc:status/scavenge/check_item/check_main_remove
-execute if score stage CheckItems matches 7 if score itemsOwed CheckItems matches 0 run function mc:status/scavenge/check_item/check_main_remove
+execute if score stage CheckItems matches 2 if score itemsOwed CheckItems matches 0 run function mc:utility/scavenge/check_item/check_main_add
+execute if score stage CheckItems matches 6 if score itemsOwed CheckItems matches 0 run function mc:utility/scavenge/check_item/check_main_add
+execute if score stage CheckItems matches 4 if score itemsOwed CheckItems matches 0 run function mc:utility/scavenge/check_item/check_main_remove
+execute if score stage CheckItems matches 7 if score itemsOwed CheckItems matches 0 run function mc:utility/scavenge/check_item/check_main_remove
 
 # Loop
-execute if score itemsOwed CheckItems matches 1.. run function mc:status/scavenge/check_item/check_random
+execute if score itemsOwed CheckItems matches 1.. run function mc:utility/scavenge/check_item/check_random

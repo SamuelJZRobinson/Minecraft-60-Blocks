@@ -37,13 +37,13 @@ execute if score cans ItemsBunker matches ..-1 run scoreboard players set cans I
 execute if score bottles ItemsBunker matches ..-1 run scoreboard players set bottles ItemsBunker 0
 
 # Append Bundle
-execute if score stage CheckItems matches 4 run function mc:status/scavenge/check_item/set_bundle_crazy_lost
-execute if score stage CheckItems matches 5 run function mc:status/scavenge/check_item/set_bundle_family_lost
-execute if score stage CheckItems matches 7 run function mc:status/scavenge/check_item/set_bundle_expedition_lost
+execute if score stage CheckItems matches 4 run function mc:utility/scavenge/check_item/set_bundle_crazy_lost
+execute if score stage CheckItems matches 5 run function mc:utility/scavenge/check_item/set_bundle_family_lost
+execute if score stage CheckItems matches 7 run function mc:utility/scavenge/check_item/set_bundle_expedition_lost
 
 # Erase Array Value
 data remove storage minecraft:checkitem checkId[0]
 execute store result score itemsTotal CheckItems run data get storage minecraft:checkitem checkId
 
 # Loop If Values Exist
-execute if score itemsTotal CheckItems matches 1.. run function mc:status/scavenge/check_item/check_main_remove
+execute if score itemsTotal CheckItems matches 1.. run function mc:utility/scavenge/check_item/check_main_remove

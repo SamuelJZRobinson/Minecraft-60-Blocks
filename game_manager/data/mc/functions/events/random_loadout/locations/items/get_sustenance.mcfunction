@@ -12,7 +12,7 @@ execute if score loadItem ItemsExpedition matches 2 if score waterCount ItemsExp
 
 # Call Root
 execute if score loadItem ItemsExpedition matches 3 run scoreboard players add stage ItemsExpedition 1
-execute if score loadItem ItemsExpedition matches 3 run function mc:status/scavenge/check_item/check_main_add
+execute if score loadItem ItemsExpedition matches 3 run function mc:utility/scavenge/check_item/check_main_add
 
 # Loop
 execute if score loadItem ItemsExpedition matches 1..2 run function mc:events/random_loadout/locations/items/get_sustenance

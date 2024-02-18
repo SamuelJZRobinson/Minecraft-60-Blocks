@@ -8,4 +8,4 @@ function mc:sounds/bunker_door1
 # Append Lost Character Bundle
 scoreboard players set stage CheckItems 5
 data modify storage minecraft:checkitem checkId append value 20
-function mc:status/scavenge/check_item/check_main_remove
+function mc:utility/scavenge/check_item/check_main_remove

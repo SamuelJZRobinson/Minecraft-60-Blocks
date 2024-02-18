@@ -16,7 +16,7 @@ scoreboard players set crazyRage TedStatus -1
     execute if score suitcase ItemsBunker matches ..0 run scoreboard players add destroyItemFails CheckItems 1
 
   # Successfully Loaded Items
-  execute if score destroyItemFails CheckItems matches ..2 run function mc:status/scavenge/check_item/check_random
+  execute if score destroyItemFails CheckItems matches ..2 run function mc:utility/scavenge/check_item/check_random
 
   # Failed To Load Items
   execute if score destroyItemFails CheckItems matches 3 run function mc:states/stages/8_bunker/decorations/characters/set/set_crazy_all
