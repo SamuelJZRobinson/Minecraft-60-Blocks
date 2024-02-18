@@ -1,4 +1,4 @@
-# Copy Hitbar Item IDs
+# Copy Hotbar Item IDs
 data modify storage minecraft:checkitem checkId append from entity @s Inventory[{Slot:0b}].tag.itemId
 data modify storage minecraft:checkitem checkId append from entity @s Inventory[{Slot:1b}].tag.itemId
 data modify storage minecraft:checkitem checkId append from entity @s Inventory[{Slot:2b}].tag.itemId

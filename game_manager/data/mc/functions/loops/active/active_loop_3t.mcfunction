@@ -11,7 +11,7 @@
 execute if score state GameStatus matches 5..7 as @e[tag=spin] at @s run tp @e[tag=spin] ~ ~ ~ ~3 ~
 
 # Salvage Crate
-execute if score lockInventory GameStatus matches 2.. run function mc:status/scavenge/manage_salvage
+execute if score lockInventory GameStatus matches 2.. run function mc:utility/scavenge/manage_salvage
 
 # Chest Menu
 execute if score state GameStatus matches 8 as @p[team=Playing] run function cm:manage_chest_menu

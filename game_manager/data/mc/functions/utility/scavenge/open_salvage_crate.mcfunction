@@ -1,12 +1,13 @@
 # Notes
-  # The custom character head is a saddle so each hotbar slot must be cleaned separately
+  # The crate must trigger always when opened to stop players inserting items and queueing delayed item collections.
+  # Checking for fullSlots prevents unnecessary computations.
 
 # Crate
   # SFX
   execute if score bunkerSide GameStatus matches 0 run particle explosion 37.50 65.00 -6.50 0 0 0 1 1 normal
   execute if score bunkerSide GameStatus matches 1 run particle explosion 10.65 65.00 -6.50 0 0 0 1 1 normal
   playsound minecraft:item.armor.equip_netherite player @s ~ ~ ~ 1 0.5 1
-  # Forcefully Shut
+  # Force Shut
   execute if score bunkerSide GameStatus matches 0 run setblock 37 64 -7 red_shulker_box{CustomName:'{"text":"Salvage Crate"}'} destroy
   execute if score bunkerSide GameStatus matches 1 run setblock 10 64 -7 red_shulker_box{CustomName:'{"text":"Salvage Crate"}'} destroy
 

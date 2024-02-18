@@ -6,7 +6,3 @@ kill @e[type=minecraft:experience_orb]
 execute as @e[type=minecraft:item,tag=!fastPickup] run data modify entity @s PickupDelay set value 0
 tag @e[type=item] add fastPickup
 teleport @e[type=minecraft:item] @p[team=Playing]
-
-# Salvage Crate
-execute unless score lockInventory GameStatus matches 3 run function mc:status/scavenge/check_full_slots
-execute unless score lockInventory GameStatus matches 3 as @p[team=Playing,scores={OpenShulkerBox=1..}] run function mc:utility/scavenge/open_salvage_crate
