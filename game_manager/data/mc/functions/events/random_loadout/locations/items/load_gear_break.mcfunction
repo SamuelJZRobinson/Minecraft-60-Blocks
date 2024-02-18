@@ -6,4 +6,4 @@ scoreboard players set itemsOwed CheckItems 1
 data modify storage minecraft:checkitem randomId set from storage minecraft:bundles expeditionGearId
 
 # Remove Items
-function mc:utility/scavenge/process/check_random
+function mc:utility/scavenge/process/bundles/check/check_random

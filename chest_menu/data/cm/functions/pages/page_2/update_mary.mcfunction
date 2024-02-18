@@ -1,0 +1,11 @@
+# Toggle
+  # Normal
+  execute if score tired MaryStatus matches 0 if score mutated MaryStatus matches 0 if score characterSelect ChestMenuExplore matches 2 run data modify block 0 54 29 Items insert 0 value {Slot:1b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:12,isMenu:1b,page:3,selection:7,display:{Name:'{"text":"Send Mary","color":"gray","bold":true}',Lore:['{"text":"Click to ignore","color":"dark_gray","underlined":true}']}}}
+  execute if score tired MaryStatus matches 0 if score mutated MaryStatus matches 0 if score characterSelect ChestMenuExplore matches 0.. run data modify block 0 54 29 Items insert 0 value {Slot:1b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:72,isMenu:1b,page:3,selection:6,display:{Name:'{"text":"Ignore Mary","color":"gray","bold":true}',Lore:['{"text":"Click to send","color":"dark_gray","underlined":true}']}}}
+  # Mutant
+  execute if score mutated MaryStatus matches 1 if score characterSelect ChestMenuExplore matches 3 run data modify block 0 54 29 Items insert 0 value {Slot:1b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:28,isMenu:1b,page:3,selection:7,display:{Name:'{"text":"Send Mary","color":"gray","bold":true}',Lore:['{"text":"Click to ignore","color":"dark_gray","underlined":true}']}}}
+  execute if score mutated MaryStatus matches 1 if score characterSelect ChestMenuExplore matches 0.. run data modify block 0 54 29 Items insert 0 value {Slot:1b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:82,isMenu:1b,page:3,selection:6,display:{Name:'{"text":"Ignore Mary","color":"gray","bold":true}',Lore:['{"text":"Click to send","color":"dark_gray","underlined":true}']}}}
+  execute if score mutated MaryStatus matches 1 run data modify block 0 54 29 Items[{Slot:1b}].tag.display.Lore append value '{"text":"Invincible to sickness and bandits","color":"dark_green"}'
+  execute if score mutated MaryStatus matches 1 run data modify block 0 54 29 Items[{Slot:1b}].tag.display.Lore append value '{"text":"Cannot carry gear","color":"dark_red"}'
+# Lock
+execute if score tired MaryStatus matches 1 run data modify block 0 54 29 Items insert 0 value {Slot:1b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:98,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Mary needs rest","color":"dark_red"}']}}}

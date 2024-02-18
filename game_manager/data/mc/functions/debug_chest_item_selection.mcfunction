@@ -91,6 +91,6 @@ scoreboard players set water TimmyStatus 100
 scoreboard players set expeditionPrepared ChestMenuExplore 1
 
 # Place Chest Menu
-function cm:menu/place_chest_menu
+function cm:place_chest_menu
 function mc:states/stages/8_bunker/daily/check_ending
 function mc:states/stages/8_bunker/decorations/manage_decorations

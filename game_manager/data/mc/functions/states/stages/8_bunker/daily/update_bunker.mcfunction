@@ -1,5 +1,5 @@
 # Chest Menu
-function cm:menu/place_chest_menu
+function cm:place_chest_menu
 execute if score day GameStatus matches 2 run scoreboard players set expeditionPrepared ChestMenuExplore 0
 
 # Character Revive

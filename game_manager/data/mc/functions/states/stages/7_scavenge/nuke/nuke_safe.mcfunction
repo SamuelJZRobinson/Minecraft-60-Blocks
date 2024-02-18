@@ -20,7 +20,7 @@ execute if score gamemode Settings matches 3 run scoreboard players set ending G
 scoreboard players set music GameStatus 3
 
 # Check Items
-function mc:utility/scavenge/process/manage_check
+function mc:utility/scavenge/process/manage_process
 
 # Set State
 scoreboard players set state GameStatus 8

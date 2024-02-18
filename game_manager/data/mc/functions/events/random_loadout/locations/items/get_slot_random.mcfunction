@@ -23,4 +23,4 @@ execute if score loadItem ItemsExpedition matches 4 run scoreboard players add s
 execute if score loadItem ItemsExpedition matches 4 run function mc:events/random_loadout/locations/items/manage_items
 
 # Loop
-execute if score loadItem ItemsExpedition matches 1..3 if score itemsOwed CheckItems matches 1.. run function mc:utility/scavenge/process/check_random
+execute if score loadItem ItemsExpedition matches 1..3 if score itemsOwed CheckItems matches 1.. run function mc:utility/scavenge/process/bundles/check/check_random
