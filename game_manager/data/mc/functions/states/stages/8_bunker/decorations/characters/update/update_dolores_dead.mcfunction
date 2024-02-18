@@ -10,4 +10,4 @@ execute if score escaped DoloresStatus matches 1 run function mc:sounds/bunker_d
 # Append Lost Character Bundle
 scoreboard players set stage CheckItems 5
 data modify storage minecraft:checkitem checkId append value 19
-function mc:utility/scavenge/check_item/check_main_remove
+function mc:utility/scavenge/process/check_main_remove

@@ -2,7 +2,7 @@
 execute unless data storage minecraft:bundles expeditionLostItems run data modify storage minecraft:bundles expeditionLostItems set from storage minecraft:bundletemplate Item
 
 # Set Temporary Item
-function mc:utility/scavenge/check_item/set_temp_item
+function mc:utility/scavenge/process/set_temp_item
 
 # Append Lost Items Bundle
 data modify storage minecraft:bundles expeditionLostItems.tag.Items append from storage minecraft:tempitem Items
@@ -17,7 +17,7 @@ execute if score gearIndexRemove ItemsExpedition matches 3 run data remove stora
 execute store result score tempCount CheckItems run data get storage minecraft:bundles expeditionGearId
 execute if score tempCount CheckItems matches 1.. run data modify storage minecraft:checkitem checkId set from storage minecraft:bundles expeditionGearId
 execute if score tempCount CheckItems matches 1.. run scoreboard players set stage CheckItems 6
-execute if score tempCount CheckItems matches 1.. run function mc:utility/scavenge/check_item/check_main_add
+execute if score tempCount CheckItems matches 1.. run function mc:utility/scavenge/process/check_main_add
 
 # Refresh Scores
 scoreboard players reset gearIndexRemove ItemsExpedition

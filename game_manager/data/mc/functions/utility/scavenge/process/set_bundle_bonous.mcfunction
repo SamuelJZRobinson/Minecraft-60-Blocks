@@ -4,7 +4,7 @@ execute if score difficulty Settings matches 2 if score itemsTotal CheckItems ma
 execute unless data storage minecraft:bundles bunkerItems run data modify storage minecraft:bundles bunkerItems set from storage minecraft:bundletemplate Item
 
 # Set Temporary Item
-function mc:utility/scavenge/check_item/set_temp_item
+function mc:utility/scavenge/process/set_temp_item
 
 # Append Bundles
   # Suitcase

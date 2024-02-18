@@ -30,4 +30,4 @@
 
 # Increment Stage
 scoreboard players set stage CheckItems 2
-function mc:utility/scavenge/check_item/manage_check
+function mc:utility/scavenge/process/manage_check

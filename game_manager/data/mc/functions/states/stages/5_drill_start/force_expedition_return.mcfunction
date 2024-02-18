@@ -21,13 +21,13 @@
   scoreboard players set locationVisited ChestMenuExplore 0
 
   # Give Medkit
-  # function mc:utility/scavenge/check_item/set_temp_item
+  # function mc:utility/scavenge/process/set_temp_item
   # execute if score medkit ItemsBunker matches 0 run data modify storage minecraft:bundles bunkerItems.tag.Items append from storage minecraft:tempitem Items
   execute if score medkit ItemsBunker matches 0 run scoreboard players set medkit ItemsBunker 2
   data modify storage minecraft:checkitem checkId append value 12
   scoreboard players set stage CheckItems 9
-  function mc:utility/scavenge/check_item/check_main_add
-  function mc:utility/scavenge/check_item/set_bundle_details
+  function mc:utility/scavenge/process/check_main_add
+  function mc:utility/scavenge/process/set_bundle_details
 
   # Refresh Bunker Decorations
   schedule function mc:states/stages/8_bunker/decorations/manage_decorations 0.5s replace

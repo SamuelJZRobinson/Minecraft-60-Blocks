@@ -36,4 +36,4 @@
   execute if score armour ItemsBunker matches ..0 run data modify storage minecraft:checkitem randomId append value 18
 
 # Choose Items
-function mc:utility/scavenge/check_item/check_random
+function mc:utility/scavenge/process/check_random
