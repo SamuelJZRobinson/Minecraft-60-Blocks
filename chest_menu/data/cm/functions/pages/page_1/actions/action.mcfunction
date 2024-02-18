@@ -5,7 +5,7 @@
 # Debounce Menu
 scoreboard players set bool ChestMenuMain 1
 
-# Managed by pages/page_2/items/items (Count supplies > toggle character feeding > Count supplies)
+# Managed by page1/items (Count supplies > toggle character feeding > Count supplies)
 
 # Mass Items
   # Soup

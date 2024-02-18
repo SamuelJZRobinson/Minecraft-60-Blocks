@@ -6,22 +6,22 @@ execute if score selection ChestMenuMain matches 6 run scoreboard players set ch
 # Update GUI
   # Clean Gun (1)
     # Toggle
-    execute if score choice ChestMenuEvent matches 1 run data modify block 0 54 29 Items insert 0 value {Slot:12b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:10,isMenu:1b,page:4,selection:7,display:{Name:'{"text":"Clean gun","color":"gray","bold":true}'}}}
-    execute if score choice ChestMenuEvent matches 0.. unless score gun ItemsBunker matches 0 run data modify block 0 54 29 Items insert 0 value {Slot:12b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:70,isMenu:1b,page:4,selection:4,display:{Name:'{"text":"Ignore gun","color":"gray","bold":true}',Lore:['{"text":"Click to clean gun,"color":"dark_gray","underlined":true}']}}}
+    execute if score choice ChestMenuEvent matches 1 run data modify block 0 54 29 Items insert 0 value {Slot:12b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:10,isMenu:1b,page:3,selection:7,display:{Name:'{"text":"Clean gun","color":"gray","bold":true}'}}}
+    execute if score choice ChestMenuEvent matches 0.. unless score gun ItemsBunker matches 0 run data modify block 0 54 29 Items insert 0 value {Slot:12b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:70,isMenu:1b,page:3,selection:4,display:{Name:'{"text":"Ignore gun","color":"gray","bold":true}',Lore:['{"text":"Click to clean gun,"color":"dark_gray","underlined":true}']}}}
     # Lock
-    execute if score gun ItemsBunker matches 0 run data modify block 0 54 29 Items insert 0 value {Slot:12b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:96,isMenu:1b,page:4,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Requires gun","color":"dark_red"}']}}}
+    execute if score gun ItemsBunker matches 0 run data modify block 0 54 29 Items insert 0 value {Slot:12b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:96,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Requires gun","color":"dark_red"}']}}}
   # Play Shadow Bunnies With Flashlight (2)
     # Toggle
-    execute if score choice ChestMenuEvent matches 2 run data modify block 0 54 29 Items insert 0 value {Slot:13b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:8,isMenu:1b,page:4,selection:7,display:{Name:'{"text":"Play shadow bunnies","color":"gray","bold":true}'}}}
-    execute if score choice ChestMenuEvent matches 0.. unless score flashlight ItemsBunker matches 0 run data modify block 0 54 29 Items insert 0 value {Slot:13b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:68,isMenu:1b,page:4,selection:5,display:{Name:'{"text":"Ignore flashlight","color":"gray","bold":true}',Lore:['{"text":"Click to play shadow bunnies,"color":"dark_gray","underlined":true}']}}}
+    execute if score choice ChestMenuEvent matches 2 run data modify block 0 54 29 Items insert 0 value {Slot:13b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:8,isMenu:1b,page:3,selection:7,display:{Name:'{"text":"Play shadow bunnies","color":"gray","bold":true}'}}}
+    execute if score choice ChestMenuEvent matches 0.. unless score flashlight ItemsBunker matches 0 run data modify block 0 54 29 Items insert 0 value {Slot:13b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:68,isMenu:1b,page:3,selection:5,display:{Name:'{"text":"Ignore flashlight","color":"gray","bold":true}',Lore:['{"text":"Click to play shadow bunnies,"color":"dark_gray","underlined":true}']}}}
     # Lock
-    execute if score flashlight ItemsBunker matches 0 run data modify block 0 54 29 Items insert 0 value {Slot:13b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:94,isMenu:1b,page:4,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Requires flashlight","color":"dark_red"}']}}}
+    execute if score flashlight ItemsBunker matches 0 run data modify block 0 54 29 Items insert 0 value {Slot:13b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:94,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Requires flashlight","color":"dark_red"}']}}}
   # Listen To Radio Radio (3)
     # Toggle
-    execute if score choice ChestMenuEvent matches 3 run data modify block 0 54 29 Items insert 0 value {Slot:14b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:15,isMenu:1b,page:4,selection:7,display:{Name:'{"text":"Listen to the radio","color":"gray","bold":true}'}}}
-    execute if score choice ChestMenuEvent matches 0.. unless score radio ItemsBunker matches 0 run data modify block 0 54 29 Items insert 0 value {Slot:14b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:75,isMenu:1b,page:4,selection:6,display:{Name:'{"text":"Ignore radio","color":"gray","bold":true}',Lore:['{"text":"Click to listen to the radio,"color":"dark_gray","underlined":true}']}}}
+    execute if score choice ChestMenuEvent matches 3 run data modify block 0 54 29 Items insert 0 value {Slot:14b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:15,isMenu:1b,page:3,selection:7,display:{Name:'{"text":"Listen to the radio","color":"gray","bold":true}'}}}
+    execute if score choice ChestMenuEvent matches 0.. unless score radio ItemsBunker matches 0 run data modify block 0 54 29 Items insert 0 value {Slot:14b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:75,isMenu:1b,page:3,selection:6,display:{Name:'{"text":"Ignore radio","color":"gray","bold":true}',Lore:['{"text":"Click to listen to the radio,"color":"dark_gray","underlined":true}']}}}
     # Lock
-    execute if score radio ItemsBunker matches 0 run data modify block 0 54 29 Items insert 0 value {Slot:14b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:101,isMenu:1b,page:4,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Requires radio","color":"dark_red"}']}}}
+    execute if score radio ItemsBunker matches 0 run data modify block 0 54 29 Items insert 0 value {Slot:14b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:101,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Requires radio","color":"dark_red"}']}}}
 
 # Output
 scoreboard players operation event15Choice AtomicDrill = choice ChestMenuEvent
