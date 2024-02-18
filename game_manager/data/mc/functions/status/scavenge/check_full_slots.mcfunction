@@ -1,5 +1,5 @@
 # Notes
-  # mc:timer/scavenge/open_salvage_crate makes mobs collectable again
+  # mc:utility/scavenge/open_salvage_crate makes mobs collectable again
 
 # Refresh Score
 scoreboard players set fullSlots GameStatus 0

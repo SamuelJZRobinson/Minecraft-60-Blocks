@@ -3,7 +3,7 @@
   # The item checker ensures items are processed, manages bonous items, and starts the first day
 
 # Copy Hotbar From Player
-execute as @p[team=Playing] run function mc:timer/scavenge/get_player_hotbar
+execute as @p[team=Playing] run function mc:utility/scavenge/get_hotbar
 
 # Clear
 function mc:states/stages/7_scavenge/nuke/clear_players

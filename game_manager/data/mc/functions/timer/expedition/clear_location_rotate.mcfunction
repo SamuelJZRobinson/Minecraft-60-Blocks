@@ -20,7 +20,7 @@ kill @e[type=slime]
 # Final
 execute if score rotate ChestMenuExplore matches 5 run gamerule doMobLoot true
 execute if score rotate ChestMenuExplore matches 5 run kill @e[type=armor_stand,tag=locationCentre]
-execute if score rotate ChestMenuExplore matches 5 as @p[team=Playing] run function mc:timer/scavenge/clear_all
+execute if score rotate ChestMenuExplore matches 5 as @p[team=Playing] run function mc:utility/scavenge/clear_all
 execute if score rotate ChestMenuExplore matches 5 run scoreboard players set fakeBlindness GameStatus 2
 # execute if score rotate ChestMenuExplore matches 5 run team empty Item
 execute if score rotate ChestMenuExplore matches 5 run scoreboard players set rotate ChestMenuExplore 0

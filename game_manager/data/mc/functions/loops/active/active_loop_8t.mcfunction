@@ -12,7 +12,6 @@ execute if score state GameStatus matches 8 run function mc:utility/particles/ma
   # Inventory
   execute if score lockInventory GameStatus matches 1..2 as @p[team=Playing] run function mc:utility/inventory/lock_inventory
   execute as @p[team=Playing,nbt=!{Inventory:[{id:"minecraft:written_book",Slot:8b,Count:1b,tag:{gameMenu:1b}}]}] run function mc:utility/inventory/give_game_menu
-  # execute if score clock Timer matches 2.. as @p[team=Playing] run function mc:timer/scavenge/clear_items
   # Clear Ground Items
   execute as @e[type=item,nbt={Item:{tag:{locked:1b}}}] run kill @s
 
