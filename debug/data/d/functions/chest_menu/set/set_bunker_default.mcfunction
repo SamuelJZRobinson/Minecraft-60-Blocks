@@ -7,6 +7,7 @@ kill @e[tag=BunkerNpc]
 # Set Scores
   # Status
   scoreboard players set started GameStatus 1
+  scoreboard players set state GameStatus 8
   scoreboard players set music GameStatus 5
   scoreboard players set day GameStatus 1
   # Atomic Drill
@@ -32,7 +33,7 @@ function d:chest_menu/set/set_bunker_characters_full
 function d:chest_menu/set/set_bunker_items_full
 
 # Expedition
-scoreboard players set expeditionPrepared ChestMenuExplore 1
+scoreboard players set expeditionPrepared ChestMenuExplore 0
 
 # Place Chest Menu
 function cm:place_chest_menu

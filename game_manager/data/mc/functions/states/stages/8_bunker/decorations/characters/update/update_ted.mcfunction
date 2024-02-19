@@ -89,7 +89,7 @@
 
 # Decorate Bunker
   # Spawn
-  execute if score alive TedStatus matches 1 unless entity @e[x=0,y=54,z=31,dy=4,dz=1,type=minecraft:armor_stand,tag=bunkerTed] run function mc:states/stages/8_bunker/decorations/characters/spawn/spawn_ted
+  execute if score alive TedStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerTed] run function mc:states/stages/8_bunker/decorations/characters/spawn/spawn_ted
   # Simplify Status Text Checks
   execute if score soup TedStatus > HUNGER_MID StatusLevels run scoreboard players set soupLevel TedStatus 0
   execute if score soup TedStatus <= HUNGER_MID StatusLevels if score soup TedStatus > HUNGER_MIN StatusLevels run scoreboard players set soupLevel TedStatus 1
@@ -102,4 +102,4 @@
   execute if score water TedStatus <= THIRST_MIN StatusLevels run scoreboard players set waterLevel TedStatus 2
     # Armor stand visibility managed by tf_raycast:set_name_visibility
   # Update Death
-  execute if score alive TedStatus matches 0 as @e[x=0,y=54,z=31,dy=4,dz=1,type=minecraft:armor_stand,tag=bunkerTed] run function mc:states/stages/8_bunker/decorations/characters/update/update_ted_dead
+  execute if score alive TedStatus matches 0 as @e[type=minecraft:armor_stand,tag=bunkerTed] run function mc:states/stages/8_bunker/decorations/characters/update/update_ted_dead

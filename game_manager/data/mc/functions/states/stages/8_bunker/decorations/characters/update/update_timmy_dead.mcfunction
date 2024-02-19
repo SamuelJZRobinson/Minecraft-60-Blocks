@@ -1,5 +1,5 @@
 # Clear Status Text 
-kill @e[x=2,y=54,z=29,dy=4,type=minecraft:armor_stand,tag=timmyStatus]
+kill @e[type=minecraft:armor_stand,tag=timmyStatus]
 # Standard And Crazy
 kill @s
 function mc:sounds/bunker_door1

@@ -1,5 +1,5 @@
 # Clear Status Text 
-kill @e[x=0,y=54,z=31,dy=4,type=minecraft:armor_stand,tag=tedStatus]
+kill @e[type=minecraft:armor_stand,tag=tedStatus]
 # Standard
 execute if score crazyEscaped TedStatus matches 0 run data modify entity @s ArmorItems[3] set value {id:"minecraft:skeleton_skull",Count:1b}
 execute if score crazyEscaped TedStatus matches 0 run data merge entity @s {Pose:{LeftArm:[280f,-15f,0f],RightArm:[280f,5f,0f],LeftLeg:[55f,25f,0f],RightLeg:[50f,-25f,0f],Head:[10f,-5f,25f]}}

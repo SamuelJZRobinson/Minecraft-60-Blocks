@@ -89,7 +89,7 @@
 
 # Decorate Bunker
   # Spawn
-  execute if score alive DoloresStatus matches 1 unless entity @e[x=-2,y=54,z=31,dy=4,dz=1,type=minecraft:armor_stand,tag=bunkerDolores] run function mc:states/stages/8_bunker/decorations/characters/spawn/spawn_dolores
+  execute if score alive DoloresStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerDolores] run function mc:states/stages/8_bunker/decorations/characters/spawn/spawn_dolores
   # Simplify Status Text Checks
   # Values with single tests include: fatigued, crazy, sick, and tired
   execute if score soup DoloresStatus > HUNGER_MID StatusLevels run scoreboard players set soupLevel DoloresStatus 0
@@ -103,4 +103,4 @@
   execute if score water DoloresStatus <= THIRST_MIN StatusLevels run scoreboard players set waterLevel DoloresStatus 2
     # Armor stand visibility managed by tf_raycast:set_name_visibility
   # Update Death
-  execute if score alive DoloresStatus matches 0 as @e[x=-2,y=54,z=31,dy=4,dz=1,type=minecraft:armor_stand,tag=bunkerDolores] run function mc:states/stages/8_bunker/decorations/characters/update/update_dolores_dead
+  execute if score alive DoloresStatus matches 0 as @e[type=minecraft:armor_stand,tag=bunkerDolores] run function mc:states/stages/8_bunker/decorations/characters/update/update_dolores_dead

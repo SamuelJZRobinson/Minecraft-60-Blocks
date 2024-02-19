@@ -10,13 +10,13 @@
   execute if score soup MaryStatus matches 0 run scoreboard players set alive MaryStatus 0
 
 # Refresh Status Effects
-execute if score mutated MaryStatus matches 1 as @e[x=2,y=54,z=31,dy=4,dz=1,type=minecraft:armor_stand,tag=bunkerMary,tag=!mutantChange] run function mc:states/stages/8_bunker/decorations/characters/update/update_mary_mutated
+execute if score mutated MaryStatus matches 1 as @e[type=minecraft:armor_stand,tag=bunkerMary,tag=!mutantChange] run function mc:states/stages/8_bunker/decorations/characters/update/update_mary_mutated
 
 # Call Normal Status Effects
 execute if score mutated MaryStatus matches 0 run function mc:states/stages/8_bunker/decorations/characters/update/update_mary_normal
 
 # Decorate Bunker
   # Spawn
-  execute if score alive MaryStatus matches 1 unless entity @e[x=2,y=54,z=31,dy=4,dz=1,type=minecraft:armor_stand,tag=bunkerMary] run function mc:states/stages/8_bunker/decorations/characters/spawn/spawn_mary
+  execute if score alive MaryStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerMary] run function mc:states/stages/8_bunker/decorations/characters/spawn/spawn_mary
   # Update Death
-  execute if score alive MaryStatus matches 0 as @e[x=2,y=54,z=31,dy=4,dz=1,type=minecraft:armor_stand,tag=bunkerMary] run function mc:states/stages/8_bunker/decorations/characters/update/update_mary_dead
+  execute if score alive MaryStatus matches 0 as @e[type=minecraft:armor_stand,tag=bunkerMary] run function mc:states/stages/8_bunker/decorations/characters/update/update_mary_dead

@@ -6,7 +6,7 @@ execute if score @s GunType matches 1 run playsound minecraft:block.iron_trapdoo
 execute if score @s GunType matches 1 run playsound minecraft:block.iron_trapdoor.open player @s[scores={GunCooldown=2}] ~ ~ ~ 1 1.7 1
 
 # Detect Bunker Items
-execute unless score gameMode Lobby matches 3 if score clock Timer matches 3 unless score @s GunCooldown matches 1.. at @s run function tf_raycast:start_raycast_bunker
+execute unless score gamemode Settings matches 3 unless score @s GunCooldown matches 1.. at @s run function tf_raycast:start_raycast_bunker
 
 # Adjust Scores
 scoreboard players remove @s[scores={GunCooldown=1..}] GunCooldown 1

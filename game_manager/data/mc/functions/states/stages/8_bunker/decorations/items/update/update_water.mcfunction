@@ -20,8 +20,8 @@ execute if score bottles ItemsBunker >= WATER_MIN RealCount if entity @s[tag=!bu
 execute if score bottles ItemsBunker >= WATER_MIN RealCount if entity @s[tag=bunkerWaterJug,tag=!setModel] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 25
 execute if score bottles ItemsBunker >= WATER_MIN RealCount if entity @s[tag=bunkerWaterJug,tag=!setModel] run summon area_effect_cloud -2.70 54.00 33.50 {Particle:"block air",Radius:0.22f,Duration:2147483647,Tags:["bunkerHitbox","bunkerWater","hitboxWaterJug"]}
 execute if score bottles ItemsBunker >= WATER_MIN RealCount if entity @s[tag=!setModel] run tag @s add setModel
-execute if score bottles ItemsBunker matches 0 run kill @e[x=-3,y=54,z=29,dx=6,dy=4,dz=6,tag=hitboxWaterJug]
+execute if score bottles ItemsBunker matches 0 run kill @e[tag=hitboxWaterJug]
 scoreboard players remove WATER_MIN RealCount 1
 execute if score bottles ItemsBunker <= WATER_MIN RealCount if entity @s[tag=setModel] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 132
-execute if score bottles ItemsBunker <= WATER_MIN RealCount if entity @s[tag=bunkerWaterJug,tag=setModel] run kill @e[x=-3,y=54,z=29,dx=6,dy=4,dz=6,type=area_effect_cloud,tag=hitboxWaterJug]
+execute if score bottles ItemsBunker <= WATER_MIN RealCount if entity @s[tag=bunkerWaterJug,tag=setModel] run kill @e[type=area_effect_cloud,tag=hitboxWaterJug]
 execute if score bottles ItemsBunker <= WATER_MIN RealCount if entity @s[tag=setModel] run tag @s remove setModel
