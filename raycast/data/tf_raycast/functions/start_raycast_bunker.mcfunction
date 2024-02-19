@@ -2,7 +2,7 @@
   # Call this on entities which launch the raycast
 
 # Cooldown
-scoreboard players set @s GunCooldown 10
+scoreboard players set @s GunCooldown 3
 
 # Tag prevents current caster from being detected
 tag @s add raycasting

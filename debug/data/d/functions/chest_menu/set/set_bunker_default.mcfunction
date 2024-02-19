@@ -11,9 +11,9 @@ kill @e[tag=BunkerNpc]
   scoreboard players set music GameStatus 5
   scoreboard players set day GameStatus 1
   # Atomic Drill
-  scoreboard players set task AtomicDrill 12
-  scoreboard players set stage AtomicDrill 0
-  scoreboard players set lockInventory GameStatus 3
+  # scoreboard players set task AtomicDrill 12
+  # scoreboard players set stage AtomicDrill 0
+  # scoreboard players set lockInventory GameStatus 3
 
 # Alerts
 scoreboard players set banditAlert ChestMenuExplore 1

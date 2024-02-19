@@ -18,7 +18,7 @@ execute if score state GameStatus matches 8 as @p[team=Playing] run function cm:
 
 # Raycast
 ### Might need to make 1 tick for faster label rendering
-execute if score state GameStatus matches 8..9 as @p[team=Playing] run function tf_raycast:manage_raycast
+execute if score state GameStatus matches 8..9 unless score gamemode Settings matches 3 as @p[team=Playing] run function tf_raycast:manage_raycast
 
 # Character Death
 execute if score state GameStatus matches 9 as @p[team=Playing,scores={PlayerDeaths=1..}] run function mc:timer/expedition/character_death
