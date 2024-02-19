@@ -1,3 +1,5 @@
+### Fix this with predicates
+
 # Modify Map
 execute if score playerY ChestMenuExplore matches 306..312 run item replace entity @s weapon.mainhand with minecraft:filled_map{itemId:11,map:17}
 execute if score playerY ChestMenuExplore matches 296..305 run item replace entity @s weapon.mainhand with minecraft:filled_map{itemId:11,map:18}

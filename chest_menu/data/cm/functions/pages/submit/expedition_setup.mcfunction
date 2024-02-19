@@ -27,4 +27,4 @@ scoreboard players set expeditionPrepared ChestMenuExplore 0
 
 # Make Character Leave Bunker
 function mc:status/characters/hide_expedition
-function mc:events/sounds/bunker_door1
+function mc:sounds/bunker_door1

@@ -46,20 +46,20 @@
   # Reduce Countdown
   execute if score crazy DoloresStatus matches 1 unless score breakdown DoloresStatus matches ..0 run scoreboard players remove breakdown DoloresStatus 1
   execute unless score crazyRage DoloresStatus matches -1 if score breakdown DoloresStatus = BREAKDOWN_MIN StatusLevels run scoreboard players set crazyRage DoloresStatus 1
-  execute if score breakdown DoloresStatus matches 0 run scoreboard players set escaped DoloresStatus 1
-  execute if score escaped DoloresStatus matches 1 run scoreboard players set alive DoloresStatus 0
+  execute if score breakdown DoloresStatus matches 0 run scoreboard players set crazyEscaped DoloresStatus 1
+  execute if score crazyEscaped DoloresStatus matches 1 run scoreboard players set alive DoloresStatus 0
   # Destroy Item Chance (1 in x, n+1)
   scoreboard players operation memory em = CRAZY_RAGE StatusOdds
   execute if score alive DoloresStatus matches 1 if score crazyRage DoloresStatus matches 0 if score breakdown DoloresStatus <= BREAKDOWN_RAGE_MAX StatusLevels if score breakdown DoloresStatus > BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set crazyRage DoloresStatus 1
-  execute if score crazyRage DoloresStatus matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set escaped DoloresStatus 1
+  execute if score crazyRage DoloresStatus matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set crazyEscaped DoloresStatus 1
   execute if score crazyRage DoloresStatus matches 1 if score itemCount ItemsBunker matches 1.. run function mc:states/stages/8_bunker/decorations/characters/set/set_crazy_dolores
   scoreboard players set math_out em 0
   # Breakdown Chance (1 in x, n+1)
-  scoreboard players operation memory em = DOLORES_RESISTANCE StatusOdds
+  scoreboard players operation memory em = DOLORES_BREAKDOWN_RESISTANCE StatusOdds
   execute if score alive DoloresStatus matches 1 if score breakdown DoloresStatus <= BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
-  execute if score math_out em matches 1 run scoreboard players set escaped DoloresStatus 1
-  execute if score escaped DoloresStatus matches 1 run scoreboard players set alive DoloresStatus 0
+  execute if score math_out em matches 1 run scoreboard players set crazyEscaped DoloresStatus 1
+  execute if score crazyEscaped DoloresStatus matches 1 run scoreboard players set alive DoloresStatus 0
   scoreboard players set math_out em 0
 
 # Sickness

@@ -1,7 +1,7 @@
 # Clear Status Text
 kill @e[x=2,y=54,z=31,dy=4,type=minecraft:armor_stand,tag=maryStatus]
 # Standard
-scoreboard players set escaped MaryStatus 1
+scoreboard players set crazyEscaped MaryStatus 1
 # Crazy
 kill @s
 function mc:sounds/bunker_door1

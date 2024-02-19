@@ -1,3 +1,5 @@
+### Fix this with predicates
+
 # Check Y Level
 execute as @p[team=Playing] store result score playerY ChestMenuExplore run data get entity @s Pos[1]
 

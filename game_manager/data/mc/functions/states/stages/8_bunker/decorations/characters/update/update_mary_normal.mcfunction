@@ -40,20 +40,20 @@
   # Reduce Countdown
   execute if score crazy MaryStatus matches 1 unless score breakdown MaryStatus matches ..0 run scoreboard players remove breakdown MaryStatus 1
   execute unless score crazyRage MaryStatus matches -1 if score breakdown MaryStatus = BREAKDOWN_MIN StatusLevels run scoreboard players set crazyRage MaryStatus 1
-  execute if score breakdown MaryStatus matches 0 run scoreboard players set escaped MaryStatus 1
-  execute if score escaped MaryStatus matches 1 run scoreboard players set alive MaryStatus 0
+  execute if score breakdown MaryStatus matches 0 run scoreboard players set crazyEscaped MaryStatus 1
+  execute if score crazyEscaped MaryStatus matches 1 run scoreboard players set alive MaryStatus 0
   # Destroy Item Chance (1 in x, n+1)
   scoreboard players operation memory em = CRAZY_RAGE StatusOdds
   execute if score alive MaryStatus matches 1 if score crazyRage MaryStatus matches 0 if score breakdown MaryStatus <= BREAKDOWN_RAGE_MAX StatusLevels if score breakdown MaryStatus > BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set crazyRage MaryStatus 1
-  execute if score crazyRage MaryStatus matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set escaped MaryStatus 1
+  execute if score crazyRage MaryStatus matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set crazyEscaped MaryStatus 1
   execute if score crazyRage MaryStatus matches 1 if score itemCount ItemsBunker matches 1.. run function mc:states/stages/8_bunker/decorations/characters/set/set_crazy_mary
   scoreboard players set math_out em 0
   # Breakdown Chance (1 in x, n+1)
-  scoreboard players operation memory em = MARY_RESISTANCE StatusOdds
+  scoreboard players operation memory em = MARY_BREAKDOWN_RESISTANCE StatusOdds
   execute if score alive MaryStatus matches 1 if score breakdown MaryStatus <= BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
-  execute if score math_out em matches 1 run scoreboard players set escaped MaryStatus 1
-  execute if score escaped MaryStatus matches 1 run scoreboard players set alive MaryStatus 0
+  execute if score math_out em matches 1 run scoreboard players set crazyEscaped MaryStatus 1
+  execute if score crazyEscaped MaryStatus matches 1 run scoreboard players set alive MaryStatus 0
   scoreboard players set math_out em 0
 
 # Sickness

@@ -17,6 +17,7 @@ execute if score lockInventory GameStatus matches 2.. run function mc:utility/sc
 execute if score state GameStatus matches 8 as @p[team=Playing] run function cm:manage_chest_menu
 
 # Raycast
+### Might need to make 1 tick for faster label rendering
 execute if score state GameStatus matches 8..9 as @p[team=Playing] run function tf_raycast:manage_raycast
 
 # Character Death

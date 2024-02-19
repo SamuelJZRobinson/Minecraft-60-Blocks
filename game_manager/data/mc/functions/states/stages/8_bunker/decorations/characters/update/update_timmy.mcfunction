@@ -46,20 +46,20 @@
   # Reduce Countdown
   execute if score crazy TimmyStatus matches 1 unless score breakdown TimmyStatus matches ..0 run scoreboard players remove breakdown TimmyStatus 1
   execute unless score crazyRage TimmyStatus matches -1 if score breakdown TimmyStatus = BREAKDOWN_MIN StatusLevels run scoreboard players set crazyRage TimmyStatus 1
-  execute if score breakdown TimmyStatus matches 0 run scoreboard players set escaped TimmyStatus 1
-  execute if score escaped TimmyStatus matches 1 run scoreboard players set alive TimmyStatus 0
+  execute if score breakdown TimmyStatus matches 0 run scoreboard players set crazyEscaped TimmyStatus 1
+  execute if score crazyEscaped TimmyStatus matches 1 run scoreboard players set alive TimmyStatus 0
   # Destroy Item Chance (1 in x, n+1)
   scoreboard players operation memory em = CRAZY_RAGE StatusOdds
   execute if score alive TimmyStatus matches 1 if score crazyRage TimmyStatus matches 0 if score breakdown TimmyStatus <= BREAKDOWN_RAGE_MAX StatusLevels if score breakdown TimmyStatus > BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set crazyRage TimmyStatus 1
-  execute if score crazyRage TimmyStatus matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set escaped TimmyStatus 1
+  execute if score crazyRage TimmyStatus matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set crazyEscaped TimmyStatus 1
   execute if score crazyRage TimmyStatus matches 1 if score itemCount ItemsBunker matches 1.. run function mc:states/stages/8_bunker/decorations/characters/set/set_crazy_timmy
   scoreboard players set math_out em 0
   # Breakdown Chance (1 in x, n+1)
   scoreboard players operation memory em = MENTAL_BREAKDOWN StatusOdds
   execute if score alive TimmyStatus matches 1 if score breakdown TimmyStatus <= BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
-  execute if score math_out em matches 1 run scoreboard players set escaped TimmyStatus 1
-  execute if score escaped TimmyStatus matches 1 run scoreboard players set alive TimmyStatus 0
+  execute if score math_out em matches 1 run scoreboard players set crazyEscaped TimmyStatus 1
+  execute if score crazyEscaped TimmyStatus matches 1 run scoreboard players set alive TimmyStatus 0
   scoreboard players set math_out em 0
 
 # Sickness

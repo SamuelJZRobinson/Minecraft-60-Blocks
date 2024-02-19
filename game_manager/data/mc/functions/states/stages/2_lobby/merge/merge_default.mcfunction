@@ -51,7 +51,7 @@
 # Extra Info
   # Game Goal
   data merge block 22 132 -3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Game Goal","bold":true}',Text2:'{"text":"Collect supplies,"}',Text3:'{"text":"protect family,"}',Text4:'{"text":"find rescue"}'}
-  # Highscore
+  # Highscores
   data merge block 20 132 -3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Highscores","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text4:'{"text":"Click to view","color":"dark_blue","underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_highscores"}}'}
   # Ideal Settings
   data merge block 20 131 -3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Ideal Settings","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text4:'{"text":"Click to view","color":"dark_blue","underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_settings"}}'}
@@ -60,4 +60,4 @@
   # Game Creator
   data merge block 20 132 -8 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Game Creator","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text2:'{"text":"Robot Gentleman","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_store_url"}}',Text4:'{"text":"Click to visit","underlined":true,"color":"dark_blue"}'}
   # Credits
-  data merge block 22 132 -8 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Map Creator","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text2:'{"text":"browneyeI"}',Text4:'{"text":"Click for credits","color":"dark_blue","underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_credits"}}'}
+  data merge block 22 132 -8 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Map Creator","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text2:'{"text":"BlackeyeI"}',Text4:'{"text":"Click for credits","color":"dark_blue","underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_credits"}}'}

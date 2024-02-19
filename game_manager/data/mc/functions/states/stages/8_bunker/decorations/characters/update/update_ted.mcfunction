@@ -46,20 +46,20 @@
   # Reduce Countdown
   execute if score crazy TedStatus matches 1 unless score breakdown TedStatus matches ..0 run scoreboard players remove breakdown TedStatus 1
   execute unless score crazyRage TedStatus matches -1 if score breakdown TedStatus = BREAKDOWN_MIN StatusLevels run scoreboard players set crazyRage TedStatus 1
-  execute if score breakdown TedStatus matches 0 run scoreboard players set escaped TedStatus 1
-  execute if score escaped TedStatus matches 1 run scoreboard players set alive TedStatus 0
+  execute if score breakdown TedStatus matches 0 run scoreboard players set crazyEscaped TedStatus 1
+  execute if score crazyEscaped TedStatus matches 1 run scoreboard players set alive TedStatus 0
   # Destroy Item Chance (1 in x, n+1)
   scoreboard players operation memory em = CRAZY_RAGE StatusOdds
   execute if score alive TedStatus matches 1 if score crazyRage TedStatus matches 0 if score breakdown TedStatus <= BREAKDOWN_RAGE_MAX StatusLevels if score breakdown TedStatus > BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set crazyRage TedStatus 1
-  execute if score crazyRage TedStatus matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set escaped TedStatus 1
+  execute if score crazyRage TedStatus matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set crazyEscaped TedStatus 1
   execute if score crazyRage TedStatus matches 1 if score itemCount ItemsBunker matches 1.. run function mc:states/stages/8_bunker/decorations/characters/set/set_crazy_ted
   scoreboard players set math_out em 0
   # Breakdown Chance (1 in x, n+1)
   scoreboard players operation memory em = MENTAL_BREAKDOWN StatusOdds
   execute if score alive TedStatus matches 1 if score breakdown TedStatus <= BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
-  execute if score math_out em matches 1 run scoreboard players set escaped TedStatus 1
-  execute if score escaped TedStatus matches 1 run scoreboard players set alive TedStatus 0
+  execute if score math_out em matches 1 run scoreboard players set crazyEscaped TedStatus 1
+  execute if score crazyEscaped TedStatus matches 1 run scoreboard players set alive TedStatus 0
   scoreboard players set math_out em 0
 
 # Sickness

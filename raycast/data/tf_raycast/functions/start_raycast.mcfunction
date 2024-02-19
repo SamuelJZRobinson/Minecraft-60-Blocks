@@ -7,12 +7,12 @@ execute if score @s GunType matches 1 run scoreboard players set @s GunCooldown 
 execute if score @s GunType matches 3 run scoreboard players set @s GunCooldown 5
 
 # Set Damage
-execute if score @s GunType matches 1 run scoreboard players set HEAD_DAMAGE MobHealth 140
-execute if score @s GunType matches 1 run scoreboard players set BODY_DAMAGE MobHealth 70
-execute if score @s GunType matches 1 run scoreboard players set LEG_DAMAGE MobHealth 40
-execute if score @s GunType matches 2 run scoreboard players set HEAD_DAMAGE MobHealth 34
-execute if score @s GunType matches 2 run scoreboard players set BODY_DAMAGE MobHealth 17
-execute if score @s GunType matches 2 run scoreboard players set LEG_DAMAGE MobHealth 10
+execute if score @s GunType matches 1 run scoreboard players set headDamage MobHealth 140
+execute if score @s GunType matches 1 run scoreboard players set bodyDamage MobHealth 70
+execute if score @s GunType matches 1 run scoreboard players set legDamage MobHealth 40
+execute if score @s GunType matches 2 run scoreboard players set headDamage MobHealth 34
+execute if score @s GunType matches 2 run scoreboard players set bodyDamage MobHealth 17
+execute if score @s GunType matches 2 run scoreboard players set legDamage MobHealth 10
 
 # Remove Bullet
 execute if score @s GunType matches 1 run clear @s minecraft:iron_nugget{bullet:1b} 1

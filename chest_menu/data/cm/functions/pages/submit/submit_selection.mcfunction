@@ -19,7 +19,7 @@
   execute if score alive TimmyStatus matches 1 run function cm:pages/submit/submit_timmy
 
 # Erase Bundles
-function mc:quit/refresh_bundles
+function mc:states/stages/1_factory_reset/set/set_bundles
 
 # Expedition
 function cm:pages/submit/manage_expedition
@@ -49,6 +49,6 @@ execute if score event ChestMenuEvent matches 1.. as @p[team=Playing] run functi
   scoreboard players set math_out em 0
 
 # Declare New Day
-function mc:events/daily/manage_new_day
+### function mc:events/daily/manage_new_day
 execute if score task AtomicDrill matches 12.. if score expeditionMode Lobby matches 0 run scoreboard players set stage AtomicDrill 2
 execute if score task AtomicDrill matches 12.. if score expeditionMode Lobby matches 1 unless score task AtomicDrill matches 15 run scoreboard players set stage AtomicDrill 2
