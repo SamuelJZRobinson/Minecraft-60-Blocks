@@ -1,7 +1,0 @@
-### Fix this with predicates
-
-# Check Y Level
-execute as @p[team=Playing] store result score playerY ChestMenuExplore run data get entity @s Pos[1]
-
-# Update Map
-execute unless score prePlayerY ChestMenuExplore = playerY ChestMenuExplore as @p[team=Playing] at @s run function mc:timer/expedition/update_map_update
