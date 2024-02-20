@@ -10,5 +10,5 @@ execute if score stage ItemsExpedition matches 2 run function mc:events/random_l
 execute if score stage ItemsExpedition matches 3 run function mc:events/random_loadout/locations/items/set_loot_type
 execute if score stage ItemsExpedition matches 4 run schedule function mc:events/random_loadout/locations/items/set_loot_type_sustenance 1t replace
 execute if score stage ItemsExpedition matches 5 if score doPovExpedition Settings matches 1 run function mc:events/random_loadout/locations/items/set_enemy_count
-execute if score stage ItemsExpedition matches 6 if score doPovExpedition Settings matches 1 run schedule function mc:events/random_loadout/locations/items/spawn_enemies 1t replace
+execute if score stage ItemsExpedition matches 6 if score doPovExpedition Settings matches 1 run schedule function mc:states/stages/9_expedition/mode/pov/mobs/spawn/spawn_enemies 1t replace
 execute if score stage ItemsExpedition matches 7 if score doPovExpedition Settings matches 1 run function mc:events/random_loadout/locations/items/tp_entities

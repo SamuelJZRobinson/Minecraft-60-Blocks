@@ -1,6 +1,6 @@
 # Force Expedition Return
   # Play Bunker Door Sound
-  function mc:sounds/bunker_door1
+  function mc:sounds/bunker_door_1
 
   # Injur The Character On Expedition
     # Dolores

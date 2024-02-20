@@ -6,7 +6,7 @@ execute if score crazyEscaped DoloresStatus matches 0 run data merge entity @s {
 execute if score crazyEscaped DoloresStatus matches 0 run function mc:sounds/character_death
 # Crazy
 execute if score crazyEscaped DoloresStatus matches 1 run kill @s
-execute if score crazyEscaped DoloresStatus matches 1 run function mc:sounds/bunker_door1
+execute if score crazyEscaped DoloresStatus matches 1 run function mc:sounds/bunker_door_1
 # Append Lost Character Bundle
 scoreboard players set stage CheckItems 5
 data modify storage minecraft:checkitem checkId append value 19
