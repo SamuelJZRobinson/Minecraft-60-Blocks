@@ -6,4 +6,4 @@ effect clear @s poison
 effect clear @s wither
 effect clear @s slowness
 effect clear @s hunger
-function mc:events/sounds/open_box
+function mc:sounds/open_box

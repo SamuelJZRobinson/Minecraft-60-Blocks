@@ -49,6 +49,6 @@ execute if score event ChestMenuEvent matches 1.. as @p[team=Playing] run functi
   scoreboard players set math_out em 0
 
 # Declare New Day
-### function mc:events/daily/manage_new_day
-execute if score task AtomicDrill matches 12.. if score expeditionMode Lobby matches 0 run scoreboard players set stage AtomicDrill 2
-execute if score task AtomicDrill matches 12.. if score expeditionMode Lobby matches 1 unless score task AtomicDrill matches 15 run scoreboard players set stage AtomicDrill 2
+function mc:states/stages/8_bunker/daily/manage_new_day
+execute if score task AtomicDrill matches 12.. if score doPovExpedition Settings matches 0 run scoreboard players set stage AtomicDrill 2
+execute if score task AtomicDrill matches 12.. if score doPovExpedition Settings matches 1 unless score task AtomicDrill matches 15 run scoreboard players set stage AtomicDrill 2

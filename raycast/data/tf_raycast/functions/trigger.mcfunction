@@ -6,7 +6,7 @@ execute unless score @s GunCooldown matches 1.. at @s[nbt={SelectedItem:{tag:{ha
 execute at @s[scores={GunType = 1..}] run function tf_raycast:start_raycast
 
 # Open Item
-execute at @s[nbt={SelectedItem:{tag:{ammo:1b}}}] run function cm:menu/submit/items/open_ammo
-execute at @s[nbt={SelectedItem:{tag:{armour:1b}}}] run function cm:menu/submit/items/open_armour
-execute at @s[nbt={SelectedItem:{tag:{medkit:1b}}}] anchored eyes run function cm:menu/submit/items/open_medkit
-execute at @s[nbt={SelectedItem:{tag:{gasMask:1b}}}] run function cm:menu/submit/items/open_gas_mask
+execute at @s[nbt={SelectedItem:{tag:{ammo:1b}}}] run function mc:states/stages/9_expedition/mode/pov/items/open/open_ammo
+execute at @s[nbt={SelectedItem:{tag:{armour:1b}}}] run function mc:states/stages/9_expedition/mode/pov/items/open/open_armour
+execute at @s[nbt={SelectedItem:{tag:{medkit:1b}}}] anchored eyes run function mc:states/stages/9_expedition/mode/pov/items/open/open_medkit
+execute at @s[nbt={SelectedItem:{tag:{gasMask:1b}}}] run function mc:states/stages/9_expedition/mode/pov/items/open/open_gas_mask

@@ -1,6 +1,3 @@
-# Set Score
-scoreboard players set fakeBlindness GameStatus 1
-
 tellraw @a "state 4"
 
 # Protocols

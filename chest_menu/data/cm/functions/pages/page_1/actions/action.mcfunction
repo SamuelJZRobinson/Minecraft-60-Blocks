@@ -39,7 +39,7 @@ execute if score alive TimmyStatus matches 1 unless score characterSent ChestMen
   # Next Page
   execute unless score task AtomicDrill matches 1..12 if score selection ChestMenuMain matches 1 run scoreboard players set @s ChestMenuMain 2
   # Submit
-  execute if score selection ChestMenuMain matches 3 run function cm:pages/submit/submit_selection
+  execute if score selection ChestMenuMain matches 3 run function cm:pages/submit/manage_submit
   # Play Click Sound
   execute if score selection ChestMenuMain matches 1..3 run function mc:sounds/page_turn
   execute if score selection ChestMenuMain matches 4.. run function mc:sounds/menu_click

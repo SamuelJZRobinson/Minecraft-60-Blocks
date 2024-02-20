@@ -1,5 +1,6 @@
 # Set Scores
 scoreboard players set lockInventory GameStatus 1
+scoreboard players set fakeBlindness GameStatus 1
 
 # Randomize House
 function mc:states/stages/4_setup/place/manage_placement

@@ -1,5 +1,5 @@
 # Sync Score
-execute as @e[x=-3,y=54,z=29,dx=6,dy=4,dz=6,type=armor_stand,tag=bunkerTitle] run data modify entity @s CustomNameVisible set value 0b
+execute as @e[type=armor_stand,tag=bunkerTitle] run data modify entity @s CustomNameVisible set value 0b
 scoreboard players operation preBunkerLook GameStatus = bunkerLook GameStatus
 
 # Show Name

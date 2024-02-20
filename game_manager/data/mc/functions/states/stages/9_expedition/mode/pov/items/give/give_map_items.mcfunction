@@ -10,4 +10,3 @@ execute if score locationVisited ChestMenuExplore matches 5 run give @s filled_m
 execute if score locationVisited ChestMenuExplore matches 6 run give @s filled_map{map:27,itemId:11} 1
 execute if score locationVisited ChestMenuExplore matches 7 run give @s filled_map{map:17,itemId:11} 1
 execute if score locationVisited ChestMenuExplore matches 8 run give @s filled_map{map:28,itemId:11} 1
-scoreboard players set map ItemsBunker 0
