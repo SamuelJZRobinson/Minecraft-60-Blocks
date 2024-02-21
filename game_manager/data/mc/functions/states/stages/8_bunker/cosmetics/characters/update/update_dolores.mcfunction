@@ -53,7 +53,7 @@
   execute if score alive DoloresStatus matches 1 if score crazyRage DoloresStatus matches 0 if score breakdown DoloresStatus <= BREAKDOWN_RAGE_MAX StatusLevels if score breakdown DoloresStatus > BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set crazyRage DoloresStatus 1
   execute if score crazyRage DoloresStatus matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set crazyEscaped DoloresStatus 1
-  execute if score crazyRage DoloresStatus matches 1 if score itemCount ItemsBunker matches 1.. run function mc:states/stages/8_bunker/decorations/characters/set/set_crazy_dolores
+  execute if score crazyRage DoloresStatus matches 1 if score itemCount ItemsBunker matches 1.. run function mc:states/stages/8_bunker/cosmetics/characters/set/set_crazy_dolores
   scoreboard players set math_out em 0
   # Breakdown Chance (1 in x, n+1)
   scoreboard players operation memory em = DOLORES_BREAKDOWN_RESISTANCE StatusOdds
@@ -89,7 +89,7 @@
 
 # Decorate Bunker
   # Spawn
-  execute if score alive DoloresStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerDolores] run function mc:states/stages/8_bunker/decorations/characters/spawn/spawn_dolores
+  execute if score alive DoloresStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerDolores] run function mc:states/stages/8_bunker/cosmetics/characters/spawn/spawn_dolores
   # Simplify Status Text Checks
   # Values with single tests include: fatigued, crazy, sick, and tired
   execute if score soup DoloresStatus > HUNGER_MID StatusLevels run scoreboard players set soupLevel DoloresStatus 0
@@ -103,4 +103,4 @@
   execute if score water DoloresStatus <= THIRST_MIN StatusLevels run scoreboard players set waterLevel DoloresStatus 2
     # Armor stand visibility managed by tf_raycast:set_name_visibility
   # Update Death
-  execute if score alive DoloresStatus matches 0 as @e[type=minecraft:armor_stand,tag=bunkerDolores] run function mc:states/stages/8_bunker/decorations/characters/update/update_dolores_dead
+  execute if score alive DoloresStatus matches 0 as @e[type=minecraft:armor_stand,tag=bunkerDolores] run function mc:states/stages/8_bunker/cosmetics/characters/update/update_dolores_dead

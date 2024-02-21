@@ -23,14 +23,14 @@ scoreboard players set bool chest_menu 1
   execute if score selection MenuMain matches 11 run scoreboard players set characterSelect MenuExplore 0
 
 # Map Choice
-execute if score selection MenuMain matches 12 run scoreboard players set locationSelect MenuExplore 1
-execute if score selection MenuMain matches 13 run scoreboard players set locationSelect MenuExplore 2
-execute if score selection MenuMain matches 14 run scoreboard players set locationSelect MenuExplore 3
-execute if score selection MenuMain matches 15 run scoreboard players set locationSelect MenuExplore 4
-execute if score selection MenuMain matches 16 run scoreboard players set locationSelect MenuExplore 5
-execute if score selection MenuMain matches 17 run scoreboard players set locationSelect MenuExplore 6
-execute if score selection MenuMain matches 18 run scoreboard players set locationSelect MenuExplore 7
-execute if score selection MenuMain matches 19 run scoreboard players set locationSelect MenuExplore 8
+execute if score selection MenuMain matches 12 run scoreboard players set mapSelect MenuExplore 1
+execute if score selection MenuMain matches 13 run scoreboard players set mapSelect MenuExplore 2
+execute if score selection MenuMain matches 14 run scoreboard players set mapSelect MenuExplore 3
+execute if score selection MenuMain matches 15 run scoreboard players set mapSelect MenuExplore 4
+execute if score selection MenuMain matches 16 run scoreboard players set mapSelect MenuExplore 5
+execute if score selection MenuMain matches 17 run scoreboard players set mapSelect MenuExplore 6
+execute if score selection MenuMain matches 18 run scoreboard players set mapSelect MenuExplore 7
+execute if score selection MenuMain matches 19 run scoreboard players set mapSelect MenuExplore 8
 
 # Increment Slots
 execute if score selection MenuMain matches 20 run scoreboard players add slotOne MenuExplore 1
@@ -39,8 +39,8 @@ execute if score selection MenuMain matches 22 run scoreboard players add slotTh
 execute if score selection MenuMain matches 23 run scoreboard players add slotFour MenuExplore 1
 
 # Prepare Expedition Toggle
-execute if score selection MenuMain matches 24 run scoreboard players set prepare MenuExplore 0
-execute if score selection MenuMain matches 25 run scoreboard players set prepare MenuExplore 1
+execute if score selection MenuMain matches 24 run scoreboard players set prepareExpedition MenuExplore 0
+execute if score selection MenuMain matches 25 run scoreboard players set prepareExpedition MenuExplore 1
 
 # Page Buttons
   # Previous Page

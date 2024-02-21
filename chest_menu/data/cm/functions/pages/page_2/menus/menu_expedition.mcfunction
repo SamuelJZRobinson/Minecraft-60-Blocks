@@ -3,7 +3,7 @@
   # Each character has a unique number, including: 0 (nobody), 1 (Dolores), 2 (Normal Mary), 3 (Mutant Mary), 4 (Ted), and 5 (Timmy)
   # To avoid duplicate items each slot validates itself for every slot left of it, excluding the first slot
   # Only slotOne can have a suitcase and it is the first item for convenience
-  # Bunker items are counted with mc:status/manage_decorations
+  # Bunker items are counted with mc:status/manage_cosmetics
   # To keep the game fair Mutant Mary cannot carry items to the surface since she has special abilities
 
 # Character Toggle
@@ -23,10 +23,10 @@
 # Map Choice (Mandatory)
   # Neighbourhood
     # Force Without Map
-    execute if score map ItemsBunker matches 0 run scoreboard players set locationSelect MenuExplore 2
+    execute if score map ItemsBunker matches 0 run scoreboard players set mapSelect MenuExplore 2
     # Toggle
-    execute if score locationSelect MenuExplore matches 2 run data modify block 0 54 29 Items insert 0 value {Slot:6b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:36,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Visit neighbourhood","color":"gray","bold":true}'}}}
-    execute if score locationSelect MenuExplore matches 0.. run data modify block 0 54 29 Items insert 0 value {Slot:6b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:85,isMenu:1b,page:2,selection:13,display:{Name:'{"text":"Ignore neighbourhood","color":"gray","bold":true}',Lore:['{"text":"Click to visit","color":"dark_gray","underlined":true}']}}}
+    execute if score mapSelect MenuExplore matches 2 run data modify block 0 54 29 Items insert 0 value {Slot:6b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:36,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Visit neighbourhood","color":"gray","bold":true}'}}}
+    execute if score mapSelect MenuExplore matches 0.. run data modify block 0 54 29 Items insert 0 value {Slot:6b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:85,isMenu:1b,page:2,selection:13,display:{Name:'{"text":"Ignore neighbourhood","color":"gray","bold":true}',Lore:['{"text":"Click to visit","color":"dark_gray","underlined":true}']}}}
     # Lore
     data modify block 0 54 29 Items[{Slot:6b}].tag.display.Lore append value '{"text":"Distance: short","color":"dark_green"}'
   # Load Locations

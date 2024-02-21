@@ -45,9 +45,9 @@ scoreboard players set padlockProtection MenuExplore 0
 scoreboard players set characterSelect MenuExplore 0
 scoreboard players set characterSent MenuExplore 0
 # Map
-scoreboard players set locationSelect MenuExplore 2
-scoreboard players set preLocationVisited MenuExplore 0
-scoreboard players set locationVisited MenuExplore 0
+scoreboard players set mapSelect MenuExplore 2
+scoreboard players set preMap MenuExplore 0
+scoreboard players set mapVisited MenuExplore 0
 # Gear
 scoreboard players set slotOne MenuExplore -1
 scoreboard players set slotTwo MenuExplore -1
@@ -56,8 +56,8 @@ scoreboard players set slotFour MenuExplore -1
 scoreboard players set slotNumber MenuExplore 1
 scoreboard players set slotSelection MenuExplore 0
 # Prepared
-scoreboard players set expeditionPrepared MenuExplore 0
-scoreboard players set prepare MenuExplore 0
+scoreboard players set prepareExpedition MenuExplore 0
+scoreboard players set expeditionActive MenuExplore 0
 # Duration
 scoreboard players set expeditionDuration MenuExplore 0
 

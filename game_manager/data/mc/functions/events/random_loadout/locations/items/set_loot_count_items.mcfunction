@@ -5,14 +5,14 @@
 
 # Loot (Base)
   # Short (1 to 5, n+1)
-  execute if score locationVisited MenuExplore matches 1..4 run scoreboard players set math_in1 em 1
-  execute if score locationVisited MenuExplore matches 1..4 run scoreboard players set math_in2 em 6
+  execute if score mapVisited MenuExplore matches 1..4 run scoreboard players set math_in1 em 1
+  execute if score mapVisited MenuExplore matches 1..4 run scoreboard players set math_in2 em 6
   # Medium (2 to 6, n+1)
-  execute if score locationVisited MenuExplore matches 5..6 run scoreboard players set math_in1 em 2
-  execute if score locationVisited MenuExplore matches 5..6 run scoreboard players set math_in2 em 7
+  execute if score mapVisited MenuExplore matches 5..6 run scoreboard players set math_in1 em 2
+  execute if score mapVisited MenuExplore matches 5..6 run scoreboard players set math_in2 em 7
   # Long (3 to 7, n+1)
-  execute if score locationVisited MenuExplore matches 7..8 run scoreboard players set math_in1 em 3
-  execute if score locationVisited MenuExplore matches 7..8 run scoreboard players set math_in2 em 8
+  execute if score mapVisited MenuExplore matches 7..8 run scoreboard players set math_in1 em 3
+  execute if score mapVisited MenuExplore matches 7..8 run scoreboard players set math_in2 em 8
   # Copy Output
   function em:math/randomp
   scoreboard players operation maxLoot ItemsExpedition = math_out em

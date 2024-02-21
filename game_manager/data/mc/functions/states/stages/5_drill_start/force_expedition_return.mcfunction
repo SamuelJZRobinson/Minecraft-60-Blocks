@@ -18,7 +18,7 @@
 
   # Refresh Memory
   scoreboard players set characterSent MenuExplore 0
-  scoreboard players set locationVisited MenuExplore 0
+  scoreboard players set mapVisited MenuExplore 0
 
   # Give Medkit
   # function mc:utility/scavenge/process/set_temp_item
@@ -30,4 +30,4 @@
   function mc:utility/scavenge/process/bundles/set/set_bundle_details
 
   # Refresh Bunker Decorations
-  schedule function mc:states/stages/8_bunker/decorations/manage_decorations 0.5s replace
+  schedule function mc:states/stages/8_bunker/cosmetics/manage_cosmetics 0.5s replace

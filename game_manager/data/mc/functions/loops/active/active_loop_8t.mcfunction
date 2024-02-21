@@ -1,5 +1,5 @@
 # Cosmetics And Particles
-execute if score state GameStatus matches 8 run function mc:states/stages/8_bunker/cosmetic/bunker_blackout_chance
+execute if score state GameStatus matches 8 run function mc:states/stages/8_bunker/cosmetics/bunker/update/bunker_blackout_chance
 execute if score state GameStatus matches 5..8 run function mc:utility/particles/manage_particles_markers
 execute if score state GameStatus matches 8 run function mc:utility/particles/manage_particles_bunker
 

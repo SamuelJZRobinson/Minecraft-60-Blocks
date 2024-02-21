@@ -20,4 +20,4 @@
   # Custom
   scoreboard players set armour ItemsBunker 3
 
-function mc:states/stages/8_bunker/decorations/items/count/count_items
+function mc:states/stages/8_bunker/cosmetics/items/count/count_items

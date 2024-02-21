@@ -53,7 +53,7 @@
   execute if score alive TedStatus matches 1 if score crazyRage TedStatus matches 0 if score breakdown TedStatus <= BREAKDOWN_RAGE_MAX StatusLevels if score breakdown TedStatus > BREAKDOWN_MIN StatusLevels run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players set crazyRage TedStatus 1
   execute if score crazyRage TedStatus matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set crazyEscaped TedStatus 1
-  execute if score crazyRage TedStatus matches 1 if score itemCount ItemsBunker matches 1.. run function mc:states/stages/8_bunker/decorations/characters/set/set_crazy_ted
+  execute if score crazyRage TedStatus matches 1 if score itemCount ItemsBunker matches 1.. run function mc:states/stages/8_bunker/cosmetics/characters/set/set_crazy_ted
   scoreboard players set math_out em 0
   # Breakdown Chance (1 in x, n+1)
   scoreboard players operation memory em = MENTAL_BREAKDOWN StatusOdds
@@ -89,7 +89,7 @@
 
 # Decorate Bunker
   # Spawn
-  execute if score alive TedStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerTed] run function mc:states/stages/8_bunker/decorations/characters/spawn/spawn_ted
+  execute if score alive TedStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerTed] run function mc:states/stages/8_bunker/cosmetics/characters/spawn/spawn_ted
   # Simplify Status Text Checks
   execute if score soup TedStatus > HUNGER_MID StatusLevels run scoreboard players set soupLevel TedStatus 0
   execute if score soup TedStatus <= HUNGER_MID StatusLevels if score soup TedStatus > HUNGER_MIN StatusLevels run scoreboard players set soupLevel TedStatus 1
@@ -102,4 +102,4 @@
   execute if score water TedStatus <= THIRST_MIN StatusLevels run scoreboard players set waterLevel TedStatus 2
     # Armor stand visibility managed by tf_raycast:set_name_visibility
   # Update Death
-  execute if score alive TedStatus matches 0 as @e[type=minecraft:armor_stand,tag=bunkerTed] run function mc:states/stages/8_bunker/decorations/characters/update/update_ted_dead
+  execute if score alive TedStatus matches 0 as @e[type=minecraft:armor_stand,tag=bunkerTed] run function mc:states/stages/8_bunker/cosmetics/characters/update/update_ted_dead

@@ -2,12 +2,12 @@
   # Since players cannot prepare an expedition on the first day Expedition-Prepared is set to -1
 
 # Show Expedition GUI If Valid
-execute if score expeditionPrepared MenuExplore matches 1 if score characterSent MenuExplore matches 0 run function cm:pages/page_2/menus/menu_expedition
+execute if score expeditionActive MenuExplore matches 1 if score characterSent MenuExplore matches 0 run function cm:pages/page_2/menus/menu_expedition
 
 # Prepare Expedition
   # Toggle
-  execute if score prepare MenuExplore matches 0 if score expeditionPrepared MenuExplore matches 0 unless score characterSent MenuExplore matches 1.. run data modify block 0 54 29 Items insert 0 value {Slot:13b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:113,isMenu:1b,page:2,selection:25,display:{Name:'{"text":"Ignore Expedition","color":"gray","bold":true}',Lore:['{"text":"Click to schedule","color":"dark_gray","underlined":true}']}}}
-  execute if score prepare MenuExplore matches 1 if score expeditionPrepared MenuExplore matches 0 unless score characterSent MenuExplore matches 1.. run data modify block 0 54 29 Items insert 0 value {Slot:13b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:112,isMenu:1b,page:2,selection:24,display:{Name:'{"text":"Schedule Expedition","color":"gray","bold":true}',Lore:['{"text":"Click to ignore","color":"dark_gray","underlined":true}']}}}
+  execute if score prepareExpedition MenuExplore matches 0 if score expeditionActive MenuExplore matches 0 unless score characterSent MenuExplore matches 1.. run data modify block 0 54 29 Items insert 0 value {Slot:13b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:113,isMenu:1b,page:2,selection:25,display:{Name:'{"text":"Ignore Expedition","color":"gray","bold":true}',Lore:['{"text":"Click to schedule","color":"dark_gray","underlined":true}']}}}
+  execute if score prepareExpedition MenuExplore matches 1 if score expeditionActive MenuExplore matches 0 unless score characterSent MenuExplore matches 1.. run data modify block 0 54 29 Items insert 0 value {Slot:13b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:112,isMenu:1b,page:2,selection:24,display:{Name:'{"text":"Schedule Expedition","color":"gray","bold":true}',Lore:['{"text":"Click to ignore","color":"dark_gray","underlined":true}']}}}
 
 # Icons
   # Alert

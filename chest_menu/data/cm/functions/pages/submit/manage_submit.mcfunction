@@ -24,7 +24,7 @@ function mc:states/stages/1_factory_reset/set/set_bundles
   function cm:pages/submit/expedition/manage_expedition
   # Reset Scores
   scoreboard players set characterSelect MenuExplore 0
-  scoreboard players set locationSelect MenuExplore 3
+  scoreboard players set mapSelect MenuExplore 3
 
 # Events
   # Allow Event Outcome

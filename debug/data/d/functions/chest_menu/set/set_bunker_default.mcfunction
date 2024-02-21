@@ -33,7 +33,7 @@ function d:chest_menu/set/set_bunker_characters_full
 function d:chest_menu/set/set_bunker_items_full
 
 # Expedition
-scoreboard players set expeditionPrepared MenuExplore 1
+scoreboard players set expeditionActive MenuExplore 1
 
 # Place Chest Menu
 function cm:place_chest_menu
