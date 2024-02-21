@@ -1,6 +1,6 @@
 # Set Data
   # Datapacks
-  function cm:load/set_scores_chest_menu
+  function cm:load/set_scores_menu
   function em:load/set_scores_math
   function tf_raycast:load/set_scores_raycast
   # Gamemodes
