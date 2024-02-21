@@ -1,5 +1,5 @@
 # Increment Slot For Void Items
-function cm:pages/page_2/increment_slot2
+function cm:pages/page_2/menus/inc_slot_2
 # Keep In Range
 execute if score slotTwo ChestMenuExplore matches 19.. run scoreboard players set slotTwo ChestMenuExplore 0
 # Refresh Cycle If Items Exist And Suitcase Is Active

@@ -1,7 +1,7 @@
 # Increment Slot For Three Slots
-function cm:pages/page_2/increment_slot4
-function cm:pages/page_2/increment_slot4
-function cm:pages/page_2/increment_slot4
+function cm:pages/page_2/menus/inc_slot_4
+function cm:pages/page_2/menus/inc_slot_4
+function cm:pages/page_2/menus/inc_slot_4
 # Keep In Range
 execute if score slotFour ChestMenuExplore matches 19.. run scoreboard players set slotFour ChestMenuExplore 0
 # Refresh Cycle If Items Exist And Suitcase Is Active

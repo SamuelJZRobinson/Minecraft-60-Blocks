@@ -22,7 +22,7 @@ scoreboard players set bool chest_menu 1
   execute if score selection ChestMenuMain matches 10 run scoreboard players set characterSelect ChestMenuExplore 5
   execute if score selection ChestMenuMain matches 11 run scoreboard players set characterSelect ChestMenuExplore 0
 
-# Location Choice
+# Map Choice
 execute if score selection ChestMenuMain matches 12 run scoreboard players set locationSelect ChestMenuExplore 1
 execute if score selection ChestMenuMain matches 13 run scoreboard players set locationSelect ChestMenuExplore 2
 execute if score selection ChestMenuMain matches 14 run scoreboard players set locationSelect ChestMenuExplore 3

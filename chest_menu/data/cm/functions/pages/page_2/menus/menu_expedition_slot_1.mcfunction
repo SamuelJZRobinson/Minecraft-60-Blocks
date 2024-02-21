@@ -1,7 +1,7 @@
 # Keep In Range
 execute if score slotOne ChestMenuExplore matches 0 run scoreboard players set slotOne ChestMenuExplore 1
 # Increment Slot For Void Items
-function cm:pages/page_2/increment_slot1
+function cm:pages/page_2/menus/inc_slot_1
 # Keep In Range
 execute if score slotOne ChestMenuExplore matches 20.. run scoreboard players set slotOne ChestMenuExplore 0
 # Refresh Cycle If Items Exist

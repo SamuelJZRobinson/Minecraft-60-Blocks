@@ -1,6 +1,6 @@
 # Increment Slot For Two Slots
-function cm:pages/page_2/increment_slot3
-function cm:pages/page_2/increment_slot3
+function cm:pages/page_2/menus/inc_slot_3
+function cm:pages/page_2/menus/inc_slot_3
 # Keep In Range
 execute if score slotThree ChestMenuExplore matches 19.. run scoreboard players set slotThree ChestMenuExplore 0
 # Refresh Cycle If Items Exist And Suitcase Is Active

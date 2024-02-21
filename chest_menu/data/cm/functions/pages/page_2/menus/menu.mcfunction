@@ -16,7 +16,7 @@ execute if score expeditionPrepared ChestMenuExplore matches 1 if score characte
   execute if score falloutAlert ChestMenuExplore matches 1 run data modify block 0 54 29 Items insert 0 value {Slot:22b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:41,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Radioactive Fallout","color":"yellow","bold":true}',Lore:['{"text":"Sickness is common","color":"gold"}']}}}
   # Protection
   execute if score mutantProtection ChestMenuExplore matches 1 run data modify block 0 54 29 Items insert 0 value {Slot:23b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:38,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Mutant Promise","color":"aqua","bold":true}',Lore:['{"text":"Prevents a raid","color":"blue"}']}}}
-  execute if score padlock ItemsBunker matches 1 run function cm:pages/page_2/update_padlock_protection
+  execute if score padlock ItemsBunker matches 1 run function cm:pages/page_2/menus/menu_padlock
   execute if score padlockProtection ChestMenuExplore matches 1 run data modify block 0 54 29 Items insert 0 value {Slot:24b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:56,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Tough Padlock","color":"aqua","bold":true}',Lore:['{"text":"Prevents raids during expeditions","color":"blue"}']}}}
 
 # Page Buttons

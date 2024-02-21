@@ -44,7 +44,7 @@ scoreboard players set padlockProtection ChestMenuExplore 0
 # Characters
 scoreboard players set characterSelect ChestMenuExplore 0
 scoreboard players set characterSent ChestMenuExplore 0
-# Location
+# Map
 scoreboard players set locationSelect ChestMenuExplore 2
 scoreboard players set preLocationVisited ChestMenuExplore 0
 scoreboard players set locationVisited ChestMenuExplore 0
