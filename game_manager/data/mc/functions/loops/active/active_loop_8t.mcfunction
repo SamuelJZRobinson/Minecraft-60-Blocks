@@ -8,7 +8,7 @@ execute if score state GameStatus matches 8 run function mc:utility/particles/ma
   effect give @a[scores={PlayerHunger=..19}] minecraft:saturation 1 255 true
   scoreboard players reset @a[scores={PlayerHunger=20..}] PlayerHunger
   # Fake Blindness
-  execute if score fakeBlindness GameStatus matches 1.. as @p[team=Playing] run function mc:utility/vision/fake_blindness
+  execute if score fakeBlindness GameStatus matches 1.. as @p[team=Playing] run function mc:utility/vision/manage_fake_blindness
   # Inventory
   execute if score lockInventory GameStatus matches 1..2 as @p[team=Playing] run function mc:utility/inventory/lock_inventory
   execute as @p[team=Playing,nbt=!{Inventory:[{id:"minecraft:written_book",Slot:8b,Count:1b,tag:{gameMenu:1b}}]}] run function mc:utility/inventory/give_game_menu
