@@ -1,12 +1,16 @@
-# Kill Empty Item Armor Stands
+# Set Scores
 scoreboard players set lockInventory GameStatus 3
-# Disable Natural Regeneration
-gamerule naturalRegeneration false
-# Effects
 scoreboard players set fakeBlindness GameStatus 2
-execute as @p[team=Playing] run function mc:utility/timer/player_effects
+
+# Gamerules
+gamerule naturalRegeneration false
+
 # Enable Item Damage
 execute as @e[team=Item] run data modify entity @s Invulnerable set value 0b
+
+# Effects
+execute as @p[team=Playing] run function mc:states/stages/9_expedition/mode/pov/player/effects/manage_effects
+
 # Titles
 title @a times 10 20 10
 title @a title {"text":"Meanwhile","color":"gold"}
