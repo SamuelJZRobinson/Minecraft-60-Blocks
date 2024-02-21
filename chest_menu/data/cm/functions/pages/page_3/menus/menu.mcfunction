@@ -1,8 +1,5 @@
-# Notes
-  # See event_guide to understand each event
-
-# Setup Events
-execute as @p[team=Playing] run function cm:pages/page_3/events/manage_events
+# Event Selection
+function cm:pages/page_3/menus/menu_events
 
 # Page Buttons
   # Back
