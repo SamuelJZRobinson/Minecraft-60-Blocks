@@ -46,7 +46,7 @@
   execute if score task AtomicDrill matches 6 run scoreboard players set dialogue AtomicDrill 10
   execute if score task AtomicDrill matches 6 run scoreboard players set dialogueMax AtomicDrill 11
   # Create Marker
-  execute if score task AtomicDrill matches 6 run scoreboard players set clock Timer 1
+  ###execute if score task AtomicDrill matches 6 run scoreboard players set clock Timer 1
   execute if score task AtomicDrill matches 6 run function mc:states/stages/4_setup/place/floorplans/spawn/spawn_bunker_indicator
 
 # Task 7 (Find Radio In Living Room Shelf)

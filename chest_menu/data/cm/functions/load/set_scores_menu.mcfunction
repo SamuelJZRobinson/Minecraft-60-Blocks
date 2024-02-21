@@ -46,7 +46,6 @@ scoreboard players set characterSelect MenuExplore 0
 scoreboard players set characterSent MenuExplore 0
 # Map
 scoreboard players set mapSelect MenuExplore 2
-scoreboard players set preMap MenuExplore 0
 scoreboard players set mapVisited MenuExplore 0
 # Gear
 scoreboard players set slotOne MenuExplore -1
@@ -57,7 +56,7 @@ scoreboard players set slotNumber MenuExplore 1
 scoreboard players set slotSelection MenuExplore 0
 # Prepared
 scoreboard players set prepareExpedition MenuExplore 0
-scoreboard players set expeditionActive MenuExplore 0
+scoreboard players set expeditionReady MenuExplore 0
 # Duration
 scoreboard players set expeditionDuration MenuExplore 0
 

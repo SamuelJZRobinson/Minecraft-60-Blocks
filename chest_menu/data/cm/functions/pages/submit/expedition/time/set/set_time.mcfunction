@@ -1,4 +1,4 @@
-# Setup Dice
+# Set Scores
 scoreboard players set mode em 1
 scoreboard players set dynamicDifficulty em 0
 scoreboard players set notRandom em 0
@@ -17,5 +17,3 @@ scoreboard players set startOne em 1
   # Copy Output
   function em:math/randomp
   scoreboard players operation expeditionDuration MenuExplore = math_out em
-
-  execute if score task AtomicDrill matches 13 run scoreboard players set expeditionDuration MenuExplore 3

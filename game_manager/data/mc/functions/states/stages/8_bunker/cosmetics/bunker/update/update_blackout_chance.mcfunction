@@ -9,5 +9,5 @@ scoreboard players operation memory em = BUNKER_BLACKOUT StatusOdds
 function em:math/get_percentage
 execute if score math_out em matches 1 run fill 3 59 31 -3 59 31 air replace minecraft:redstone_block
 execute if score math_out em matches 1 run playsound minecraft:entity.bee.sting block @a 0 59 31 0.75 2 0
-execute if score math_out em matches 1 run schedule function mc:states/stages/8_bunker/cosmetic/bunker_blackout_fix 10t replace
+execute if score math_out em matches 1 run schedule function mc:states/stages/8_bunker/cosmetics/bunker/update/update_blackout_fix 10t replace
 scoreboard players set math_out em 0

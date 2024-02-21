@@ -6,14 +6,14 @@ effect give @s slow_falling 10 0 true
 scoreboard players set fakeBlindness GameStatus 2
 
 # Teleport Locations
-execute if score preMap MenuExplore matches 1 run teleport @s -129.00 302.00 -383.00 0 0
-execute if score preMap MenuExplore matches 2 run teleport @s -0.00 293.00 -383.00 0 0
-execute if score preMap MenuExplore matches 3 run teleport @s 129.00 298.00 -383.00 0 0
-execute if score preMap MenuExplore matches 4 run teleport @s -129.00 296.00 -254.00 0 0
-execute if score preMap MenuExplore matches 5 run teleport @s 0.00 295.00 -254.00 0 0
-execute if score preMap MenuExplore matches 6 run teleport @s 129.00 295.00 -254.00 0 0
-execute if score preMap MenuExplore matches 7 run teleport @s -129.00 300.00 -125.00 0 0
-execute if score preMap MenuExplore matches 8 run teleport @s -0.00 297.00 -125.00 0 0
+execute if score mapVisited MenuExplore matches 1 run teleport @s -129.00 302.00 -383.00 0 0
+execute if score mapVisited MenuExplore matches 2 run teleport @s -0.00 293.00 -383.00 0 0
+execute if score mapVisited MenuExplore matches 3 run teleport @s 129.00 298.00 -383.00 0 0
+execute if score mapVisited MenuExplore matches 4 run teleport @s -129.00 296.00 -254.00 0 0
+execute if score mapVisited MenuExplore matches 5 run teleport @s 0.00 295.00 -254.00 0 0
+execute if score mapVisited MenuExplore matches 6 run teleport @s 129.00 295.00 -254.00 0 0
+execute if score mapVisited MenuExplore matches 7 run teleport @s -129.00 300.00 -125.00 0 0
+execute if score mapVisited MenuExplore matches 8 run teleport @s -0.00 297.00 -125.00 0 0
 
 # Set Centre
 execute at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["locationCentre"]}

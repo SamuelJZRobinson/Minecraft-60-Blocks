@@ -1,5 +1,5 @@
 # Cosmetics And Particles
-execute if score state GameStatus matches 8 run function mc:states/stages/8_bunker/cosmetics/bunker/update/bunker_blackout_chance
+execute if score state GameStatus matches 8 run function mc:states/stages/8_bunker/cosmetics/bunker/update/update_blackout_chance
 execute if score state GameStatus matches 5..8 run function mc:utility/particles/manage_particles_markers
 execute if score state GameStatus matches 8 run function mc:utility/particles/manage_particles_bunker
 
@@ -16,6 +16,6 @@ execute if score state GameStatus matches 8 run function mc:utility/particles/ma
   execute as @e[type=item,nbt={Item:{tag:{locked:1b}}}] run kill @s
 
 # Expedition
-# Location Update
-execute if score state GameStatus matches 9 run function mc:states/stages/9_expedition/mode/pov/items/update/update_items
-execute if score state GameStatus matches 9 as @e[type=slime,team=!Enemy,team=!Item,team=!NoRoom] run team join Enemy @s
+  # Map Update
+  execute if score state GameStatus matches 9 run function mc:states/stages/9_expedition/mode/pov/items/update/update_items
+  execute if score state GameStatus matches 9 as @e[type=slime,team=!Enemy,team=!Item,team=!NoRoom] run team join Enemy @s
