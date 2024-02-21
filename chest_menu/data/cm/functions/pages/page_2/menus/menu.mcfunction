@@ -1,6 +1,5 @@
 # Notes
   # Players cannot prepare an expedition on the first day so expeditionReady is -1
-  ### Should really be prepareExpedition is -1
 
 # Show Menu
 execute if score expeditionReady MenuExplore matches 1 if score characterSent MenuExplore matches 0 run function cm:pages/page_2/menus/menu_expedition

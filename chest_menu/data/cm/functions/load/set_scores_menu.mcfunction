@@ -53,7 +53,7 @@ scoreboard players set slotTwo MenuExplore -1
 scoreboard players set slotThree MenuExplore -1
 scoreboard players set slotFour MenuExplore -1
 scoreboard players set slotNumber MenuExplore 1
-scoreboard players set slotSelection MenuExplore 0
+scoreboard players set slotItem MenuExplore 0
 # Prepared
 scoreboard players set prepareExpedition MenuExplore 0
 scoreboard players set expeditionReady MenuExplore 0

@@ -1,5 +1,3 @@
-### Make all character related armour stands have same name tag to target
-
 # Hide Character And Status
   # Dolores
   execute if score characterSent MenuExplore matches 1 run kill @e[type=armor_stand,tag=dolores]
