@@ -2,7 +2,7 @@
   # Whole cans and bottles work in multiples of 4
 
 # Remove Characters
-kill @e[tag=BunkerNpc]
+### kill @e[tag=BunkerNpc]
 
 # Set Scores
   # Status

@@ -1,5 +1,6 @@
 # NOTES
   # HUNGER_MAX and THIRST_MAX are n+1 since "max-1 = expected duration" (e.g., 11 days - 1 day = 10 days).
+  ### What does survivedNuke refer to?
 
 # CONSTANTS
   # STATUS LEVELS
@@ -76,6 +77,7 @@
   scoreboard players set survivedNuke DoloresStatus 1
   # Sustenance
   scoreboard players operation soup DoloresStatus = HUNGER_MAX StatusLevels
+  ### What is this, is it necessary to have souplevel/waterlevel?
   scoreboard players set soupLevel DoloresStatus 0
   scoreboard players operation water DoloresStatus = THIRST_MAX StatusLevels
   scoreboard players set waterLevel DoloresStatus 0

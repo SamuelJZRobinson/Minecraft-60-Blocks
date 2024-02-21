@@ -4,6 +4,8 @@ scoreboard players set dynamicDifficulty em 0
 scoreboard players set notRandom em 0
 scoreboard players set startOne em 1
 
+### Make it so if characters are dead, do 1 roll to revive random any, this seems repetitive and redundant.
+
 # Revive Chance (1 in x, n+1)
   # Dolores
   scoreboard players operation memory em = REVIVE StatusOdds
