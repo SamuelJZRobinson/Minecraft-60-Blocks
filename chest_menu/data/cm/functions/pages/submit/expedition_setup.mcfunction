@@ -3,15 +3,15 @@
   # Duration must be set before reaching mc:events/daily/show_day to prevent errors
 
 # Remember Values
-scoreboard players operation characterSent ChestMenuExplore = characterSelect ChestMenuExplore
-scoreboard players operation locationVisited ChestMenuExplore = locationSelect ChestMenuExplore
-execute unless score preLocationVisited ChestMenuExplore = locationVisited ChestMenuExplore run scoreboard players operation preLocationVisited ChestMenuExplore = locationVisited ChestMenuExplore
+scoreboard players operation characterSent MenuExplore = characterSelect MenuExplore
+scoreboard players operation locationVisited MenuExplore = locationSelect MenuExplore
+execute unless score preLocationVisited MenuExplore = locationVisited MenuExplore run scoreboard players operation preLocationVisited MenuExplore = locationVisited MenuExplore
 
 # Make Character Tired
-execute if score characterSent ChestMenuExplore matches 1 run scoreboard players operation tired DoloresStatus = expeditionDuration ChestMenuExplore
-execute if score characterSent ChestMenuExplore matches 2 run scoreboard players operation tired MaryStatus = expeditionDuration ChestMenuExplore
-execute if score characterSent ChestMenuExplore matches 4 run scoreboard players operation tired TedStatus = expeditionDuration ChestMenuExplore
-execute if score characterSent ChestMenuExplore matches 5 run scoreboard players operation tired TimmyStatus = expeditionDuration ChestMenuExplore
+execute if score characterSent MenuExplore matches 1 run scoreboard players operation tired DoloresStatus = expeditionDuration MenuExplore
+execute if score characterSent MenuExplore matches 2 run scoreboard players operation tired MaryStatus = expeditionDuration MenuExplore
+execute if score characterSent MenuExplore matches 4 run scoreboard players operation tired TedStatus = expeditionDuration MenuExplore
+execute if score characterSent MenuExplore matches 5 run scoreboard players operation tired TimmyStatus = expeditionDuration MenuExplore
 
 # Set Duration
 function mc:events/random_loadout/locations/items/items/set_duration
@@ -20,7 +20,7 @@ function mc:events/random_loadout/locations/items/items/set_duration
 function cm:pages/submit/manage_slot_give
 
 # Debounce
-scoreboard players set expeditionPrepared ChestMenuExplore 0
+scoreboard players set expeditionPrepared MenuExplore 0
 
 # Manage Gear And Manuel Mode
 # Managed By mc:daily/show_day when the character returns

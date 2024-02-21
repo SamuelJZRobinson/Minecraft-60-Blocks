@@ -1,69 +1,69 @@
 # OPEN CHEST
-scoreboard objectives add OpenChestMenu minecraft.custom:minecraft.open_chest {"bold":true,"color":"white","text":"Open Chest Menu"}
-scoreboard players reset * OpenChestMenu
+scoreboard objectives add OpenMenu minecraft.custom:minecraft.open_chest {"bold":true,"color":"white","text":"Open Menu"}
+scoreboard players reset * OpenMenu
 
 # MAIN
-scoreboard objectives add ChestMenuMain dummy {"bold":true,"color":"white","text":"Chest Menu Main"}
-scoreboard players reset * ChestMenuMain
-scoreboard players set bool ChestMenuMain 0
-scoreboard players set items ChestMenuMain 0
-scoreboard players set selection ChestMenuMain 0
+scoreboard objectives add MenuMain dummy {"bold":true,"color":"white","text":"Menu Main"}
+scoreboard players reset * MenuMain
+scoreboard players set bool MenuMain 0
+scoreboard players set items MenuMain 0
+scoreboard players set selection MenuMain 0
 
 # NOTICES
   # Handled by bundles and books.
 
 # FEEDING
-scoreboard objectives add ChestMenuFeed dummy {"bold":true,"color":"white","text":"Chest Menu Feed"}
+scoreboard objectives add MenuFeed dummy {"bold":true,"color":"white","text":"Menu Feed"}
 # Dolores
-scoreboard players set doloresGiveCan ChestMenuFeed 0
-scoreboard players set doloresGiveBottle ChestMenuFeed 0
+scoreboard players set doloresGiveCan MenuFeed 0
+scoreboard players set doloresGiveBottle MenuFeed 0
 # Mary
-scoreboard players set maryGiveCan ChestMenuFeed 0
-scoreboard players set maryGiveBottle ChestMenuFeed 0
+scoreboard players set maryGiveCan MenuFeed 0
+scoreboard players set maryGiveBottle MenuFeed 0
 # Ted
-scoreboard players set tedGiveCan ChestMenuFeed 0
-scoreboard players set tedGiveBottle ChestMenuFeed 0
+scoreboard players set tedGiveCan MenuFeed 0
+scoreboard players set tedGiveBottle MenuFeed 0
 # Timmy
-scoreboard players set timmyGiveCan ChestMenuFeed 0
-scoreboard players set timmyGiveBottle ChestMenuFeed 0
+scoreboard players set timmyGiveCan MenuFeed 0
+scoreboard players set timmyGiveBottle MenuFeed 0
 # Medkit
-scoreboard players set giveMedkit ChestMenuFeed 0
+scoreboard players set giveMedkit MenuFeed 0
 # Total
 scoreboard players set hasItems ItemsBunker 0
 scoreboard players set itemCount ItemsBunker 0
-scoreboard players set cansGiven ChestMenuFeed 0
-scoreboard players set bottlesGiven ChestMenuFeed 0
+scoreboard players set cansGiven MenuFeed 0
+scoreboard players set bottlesGiven MenuFeed 0
 
 # EXPLORE
-scoreboard objectives add ChestMenuExplore dummy {"bold":true,"color":"white","text":"Chest Menu Explore"}
+scoreboard objectives add MenuExplore dummy {"bold":true,"color":"white","text":"Menu Explore"}
 # Alerts
-scoreboard players set banditAlert ChestMenuExplore 0
-scoreboard players set falloutAlert ChestMenuExplore 1
-scoreboard players set mutantProtection ChestMenuExplore 0
-scoreboard players set padlockProtection ChestMenuExplore 0
+scoreboard players set banditAlert MenuExplore 0
+scoreboard players set falloutAlert MenuExplore 1
+scoreboard players set mutantProtection MenuExplore 0
+scoreboard players set padlockProtection MenuExplore 0
 # Characters
-scoreboard players set characterSelect ChestMenuExplore 0
-scoreboard players set characterSent ChestMenuExplore 0
+scoreboard players set characterSelect MenuExplore 0
+scoreboard players set characterSent MenuExplore 0
 # Map
-scoreboard players set locationSelect ChestMenuExplore 2
-scoreboard players set preLocationVisited ChestMenuExplore 0
-scoreboard players set locationVisited ChestMenuExplore 0
+scoreboard players set locationSelect MenuExplore 2
+scoreboard players set preLocationVisited MenuExplore 0
+scoreboard players set locationVisited MenuExplore 0
 # Gear
-scoreboard players set slotOne ChestMenuExplore -1
-scoreboard players set slotTwo ChestMenuExplore -1
-scoreboard players set slotThree ChestMenuExplore -1
-scoreboard players set slotFour ChestMenuExplore -1
-scoreboard players set slotNumber ChestMenuExplore 1
-scoreboard players set slotSelection ChestMenuExplore 0
+scoreboard players set slotOne MenuExplore -1
+scoreboard players set slotTwo MenuExplore -1
+scoreboard players set slotThree MenuExplore -1
+scoreboard players set slotFour MenuExplore -1
+scoreboard players set slotNumber MenuExplore 1
+scoreboard players set slotSelection MenuExplore 0
 # Prepared
-scoreboard players set expeditionPrepared ChestMenuExplore 0
-scoreboard players set prepare ChestMenuExplore 0
+scoreboard players set expeditionPrepared MenuExplore 0
+scoreboard players set prepare MenuExplore 0
 # Duration
-scoreboard players set expeditionDuration ChestMenuExplore 0
+scoreboard players set expeditionDuration MenuExplore 0
 
 # EVENTS
-scoreboard objectives add ChestMenuEvent dummy {"bold":true,"color":"white","text":"Chest Menu Event"}
-scoreboard players set event ChestMenuEvent 0
-scoreboard players set choice ChestMenuEvent 0
-scoreboard players set submit ChestMenuEvent 0
-scoreboard players set mutateRequest ChestMenuEvent 0
+scoreboard objectives add MenuEvent dummy {"bold":true,"color":"white","text":"Menu Event"}
+scoreboard players set event MenuEvent 0
+scoreboard players set choice MenuEvent 0
+scoreboard players set submit MenuEvent 0
+scoreboard players set mutateRequest MenuEvent 0

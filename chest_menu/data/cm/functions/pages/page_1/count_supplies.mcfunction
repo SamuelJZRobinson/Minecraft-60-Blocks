@@ -1,32 +1,32 @@
 # Refresh Scores
-scoreboard players set cansGiven ChestMenuFeed 0
-scoreboard players set bottlesGiven ChestMenuFeed 0
-scoreboard players set medkitGiven ChestMenuFeed 0
+scoreboard players set cansGiven MenuFeed 0
+scoreboard players set bottlesGiven MenuFeed 0
+scoreboard players set medkitGiven MenuFeed 0
 
 # Soup
-execute if score doloresGiveCan ChestMenuFeed matches 1 run scoreboard players add cansGiven ChestMenuFeed 1
-execute if score maryGiveCan ChestMenuFeed matches 1 run scoreboard players add cansGiven ChestMenuFeed 1
-execute if score tedGiveCan ChestMenuFeed matches 1 run scoreboard players add cansGiven ChestMenuFeed 1
-execute if score timmyGiveCan ChestMenuFeed matches 1 run scoreboard players add cansGiven ChestMenuFeed 1
+execute if score doloresGiveCan MenuFeed matches 1 run scoreboard players add cansGiven MenuFeed 1
+execute if score maryGiveCan MenuFeed matches 1 run scoreboard players add cansGiven MenuFeed 1
+execute if score tedGiveCan MenuFeed matches 1 run scoreboard players add cansGiven MenuFeed 1
+execute if score timmyGiveCan MenuFeed matches 1 run scoreboard players add cansGiven MenuFeed 1
 
 # Water
-execute if score doloresGiveBottle ChestMenuFeed matches 1 run scoreboard players add bottlesGiven ChestMenuFeed 1
-execute if score maryGiveBottle ChestMenuFeed matches 1 run scoreboard players add bottlesGiven ChestMenuFeed 1
-execute if score tedGiveBottle ChestMenuFeed matches 1 run scoreboard players add bottlesGiven ChestMenuFeed 1
-execute if score timmyGiveBottle ChestMenuFeed matches 1 run scoreboard players add bottlesGiven ChestMenuFeed 1
+execute if score doloresGiveBottle MenuFeed matches 1 run scoreboard players add bottlesGiven MenuFeed 1
+execute if score maryGiveBottle MenuFeed matches 1 run scoreboard players add bottlesGiven MenuFeed 1
+execute if score tedGiveBottle MenuFeed matches 1 run scoreboard players add bottlesGiven MenuFeed 1
+execute if score timmyGiveBottle MenuFeed matches 1 run scoreboard players add bottlesGiven MenuFeed 1
 
 # Medkit
-execute if score doloresGiveMedkit ChestMenuFeed matches 1 run scoreboard players add medkitGiven ChestMenuFeed 1
-execute if score maryGiveMedkit ChestMenuFeed matches 1 run scoreboard players add medkitGiven ChestMenuFeed 1
-execute if score tedGiveMedkit ChestMenuFeed matches 1 run scoreboard players add medkitGiven ChestMenuFeed 1
-execute if score timmyGiveMedkit ChestMenuFeed matches 1 run scoreboard players add medkitGiven ChestMenuFeed 1
+execute if score doloresGiveMedkit MenuFeed matches 1 run scoreboard players add medkitGiven MenuFeed 1
+execute if score maryGiveMedkit MenuFeed matches 1 run scoreboard players add medkitGiven MenuFeed 1
+execute if score tedGiveMedkit MenuFeed matches 1 run scoreboard players add medkitGiven MenuFeed 1
+execute if score timmyGiveMedkit MenuFeed matches 1 run scoreboard players add medkitGiven MenuFeed 1
 
 # Set Status
   # Soup, Water
-  execute if score cansGiven ChestMenuFeed <= cans ItemsBunker if score bottlesGiven ChestMenuFeed <= bottles ItemsBunker run scoreboard players set itemStatus ChestMenuFeed 0
+  execute if score cansGiven MenuFeed <= cans ItemsBunker if score bottlesGiven MenuFeed <= bottles ItemsBunker run scoreboard players set itemStatus MenuFeed 0
   # Soup, None
-  execute if score cansGiven ChestMenuFeed <= cans ItemsBunker if score bottlesGiven ChestMenuFeed >= bottles ItemsBunker run scoreboard players set itemStatus ChestMenuFeed 1
+  execute if score cansGiven MenuFeed <= cans ItemsBunker if score bottlesGiven MenuFeed >= bottles ItemsBunker run scoreboard players set itemStatus MenuFeed 1
   # None, Water
-  execute if score cansGiven ChestMenuFeed >= cans ItemsBunker if score bottlesGiven ChestMenuFeed <= bottles ItemsBunker run scoreboard players set itemStatus ChestMenuFeed 2
+  execute if score cansGiven MenuFeed >= cans ItemsBunker if score bottlesGiven MenuFeed <= bottles ItemsBunker run scoreboard players set itemStatus MenuFeed 2
   # None, None
-  execute if score cansGiven ChestMenuFeed >= cans ItemsBunker if score bottlesGiven ChestMenuFeed >= bottles ItemsBunker run scoreboard players set itemStatus ChestMenuFeed 3
+  execute if score cansGiven MenuFeed >= cans ItemsBunker if score bottlesGiven MenuFeed >= bottles ItemsBunker run scoreboard players set itemStatus MenuFeed 3

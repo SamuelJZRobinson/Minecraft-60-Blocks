@@ -23,10 +23,10 @@
 # Map Choice (Mandatory)
   # Neighbourhood
     # Force Without Map
-    execute if score map ItemsBunker matches 0 run scoreboard players set locationSelect ChestMenuExplore 2
+    execute if score map ItemsBunker matches 0 run scoreboard players set locationSelect MenuExplore 2
     # Toggle
-    execute if score locationSelect ChestMenuExplore matches 2 run data modify block 0 54 29 Items insert 0 value {Slot:6b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:36,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Visit neighbourhood","color":"gray","bold":true}'}}}
-    execute if score locationSelect ChestMenuExplore matches 0.. run data modify block 0 54 29 Items insert 0 value {Slot:6b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:85,isMenu:1b,page:2,selection:13,display:{Name:'{"text":"Ignore neighbourhood","color":"gray","bold":true}',Lore:['{"text":"Click to visit","color":"dark_gray","underlined":true}']}}}
+    execute if score locationSelect MenuExplore matches 2 run data modify block 0 54 29 Items insert 0 value {Slot:6b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:36,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Visit neighbourhood","color":"gray","bold":true}'}}}
+    execute if score locationSelect MenuExplore matches 0.. run data modify block 0 54 29 Items insert 0 value {Slot:6b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:85,isMenu:1b,page:2,selection:13,display:{Name:'{"text":"Ignore neighbourhood","color":"gray","bold":true}',Lore:['{"text":"Click to visit","color":"dark_gray","underlined":true}']}}}
     # Lore
     data modify block 0 54 29 Items[{Slot:6b}].tag.display.Lore append value '{"text":"Distance: short","color":"dark_green"}'
   # Load Locations
@@ -36,39 +36,39 @@
 # Gear
   # Slot 1
     # Lock Slot
-    execute if score itemCount ItemsBunker matches 0 run scoreboard players set slotOne ChestMenuExplore -1
-    execute if score characterSelect ChestMenuExplore matches 3 run scoreboard players set slotOne ChestMenuExplore -1
+    execute if score itemCount ItemsBunker matches 0 run scoreboard players set slotOne MenuExplore -1
+    execute if score characterSelect MenuExplore matches 3 run scoreboard players set slotOne MenuExplore -1
     # Refresh Cycle If Items Exist
-    execute unless score characterSelect ChestMenuExplore matches 3 if score itemCount ItemsBunker matches 1.. run function cm:pages/page_2/menus/menu_expedition_slot_1
+    execute unless score characterSelect MenuExplore matches 3 if score itemCount ItemsBunker matches 1.. run function cm:pages/page_2/menus/menu_expedition_slot_1
     # Lock Slots (After Refresh)
-    execute if score slotOne ChestMenuExplore matches -1 run loot replace block 0 54 29 container.9 loot lt_custom:chests/locked_no_items
+    execute if score slotOne MenuExplore matches -1 run loot replace block 0 54 29 container.9 loot lt_custom:chests/locked_no_items
 
   # Slot 2
     # Lock Slot
-    execute if score itemCount ItemsBunker matches ..1 run scoreboard players set slotTwo ChestMenuExplore -1
-    execute if score characterSelect ChestMenuExplore matches 3 run scoreboard players set slotTwo ChestMenuExplore -1
-    execute if score slotTwo ChestMenuExplore matches -1 run loot replace block 0 54 29 container.10 loot lt_custom:chests/locked_no_items
-    execute if score suitcase ItemsBunker matches 0 run scoreboard players set slotTwo ChestMenuExplore 0
-    execute if score slotTwo ChestMenuExplore matches 0 run loot replace block 0 54 29 container.10 loot lt_custom:chests/locked_no_suitcase
+    execute if score itemCount ItemsBunker matches ..1 run scoreboard players set slotTwo MenuExplore -1
+    execute if score characterSelect MenuExplore matches 3 run scoreboard players set slotTwo MenuExplore -1
+    execute if score slotTwo MenuExplore matches -1 run loot replace block 0 54 29 container.10 loot lt_custom:chests/locked_no_items
+    execute if score suitcase ItemsBunker matches 0 run scoreboard players set slotTwo MenuExplore 0
+    execute if score slotTwo MenuExplore matches 0 run loot replace block 0 54 29 container.10 loot lt_custom:chests/locked_no_suitcase
     # Restart Cycle If Items Exist And Suitcase Is Active
-    execute if score itemCount ItemsBunker matches 2.. if score slotOne ChestMenuExplore matches 2 run function cm:pages/page_2/menus/menu_expedition_slot_2
+    execute if score itemCount ItemsBunker matches 2.. if score slotOne MenuExplore matches 2 run function cm:pages/page_2/menus/menu_expedition_slot_2
 
   # Slot 3
     # Lock Slot
-    execute if score itemCount ItemsBunker matches ..2 run scoreboard players set slotThree ChestMenuExplore -1
-    execute if score characterSelect ChestMenuExplore matches 3 run scoreboard players set slotThree ChestMenuExplore -1
-    execute if score slotThree ChestMenuExplore matches -1 run loot replace block 0 54 29 container.11 loot lt_custom:chests/locked_no_items
-    execute if score suitcase ItemsBunker matches 0 run scoreboard players set slotThree ChestMenuExplore 0
-    execute if score slotThree ChestMenuExplore matches 0 run loot replace block 0 54 29 container.11 loot lt_custom:chests/locked_no_suitcase
+    execute if score itemCount ItemsBunker matches ..2 run scoreboard players set slotThree MenuExplore -1
+    execute if score characterSelect MenuExplore matches 3 run scoreboard players set slotThree MenuExplore -1
+    execute if score slotThree MenuExplore matches -1 run loot replace block 0 54 29 container.11 loot lt_custom:chests/locked_no_items
+    execute if score suitcase ItemsBunker matches 0 run scoreboard players set slotThree MenuExplore 0
+    execute if score slotThree MenuExplore matches 0 run loot replace block 0 54 29 container.11 loot lt_custom:chests/locked_no_suitcase
     # Restart Cycle If Items Exist And Suitcase Is Active
-    execute if score itemCount ItemsBunker matches 3.. if score slotOne ChestMenuExplore matches 2 run function cm:pages/page_2/menus/menu_expedition_slot_3
+    execute if score itemCount ItemsBunker matches 3.. if score slotOne MenuExplore matches 2 run function cm:pages/page_2/menus/menu_expedition_slot_3
 
   # Slot 4
     # Lock Slot
-    execute if score itemCount ItemsBunker matches ..3 run scoreboard players set slotFour ChestMenuExplore -1
-    execute if score characterSelect ChestMenuExplore matches 3 run scoreboard players set slotFour ChestMenuExplore -1
-    execute if score slotFour ChestMenuExplore matches -1 run loot replace block 0 54 29 container.12 loot lt_custom:chests/locked_no_items
-    execute if score suitcase ItemsBunker matches 0 run scoreboard players set slotFour ChestMenuExplore 0
-    execute if score slotFour ChestMenuExplore matches 0 run loot replace block 0 54 29 container.12 loot lt_custom:chests/locked_no_suitcase
+    execute if score itemCount ItemsBunker matches ..3 run scoreboard players set slotFour MenuExplore -1
+    execute if score characterSelect MenuExplore matches 3 run scoreboard players set slotFour MenuExplore -1
+    execute if score slotFour MenuExplore matches -1 run loot replace block 0 54 29 container.12 loot lt_custom:chests/locked_no_items
+    execute if score suitcase ItemsBunker matches 0 run scoreboard players set slotFour MenuExplore 0
+    execute if score slotFour MenuExplore matches 0 run loot replace block 0 54 29 container.12 loot lt_custom:chests/locked_no_suitcase
     # Restart Cycle If Items Exist And Suitcase Is Active
-    execute if score itemCount ItemsBunker matches 4.. if score slotOne ChestMenuExplore matches 2 run function cm:pages/page_2/menus/menu_expedition_slot_4
+    execute if score itemCount ItemsBunker matches 4.. if score slotOne MenuExplore matches 2 run function cm:pages/page_2/menus/menu_expedition_slot_4

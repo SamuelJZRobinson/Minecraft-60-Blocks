@@ -16,15 +16,15 @@ kill @e[tag=BunkerNpc]
   # scoreboard players set lockInventory GameStatus 3
 
 # Alerts
-scoreboard players set banditAlert ChestMenuExplore 1
-scoreboard players set falloutAlert ChestMenuExplore 1
-scoreboard players set mutantProtection ChestMenuExplore 1
-scoreboard players set padlockProtection ChestMenuExplore 1
+scoreboard players set banditAlert MenuExplore 1
+scoreboard players set falloutAlert MenuExplore 1
+scoreboard players set mutantProtection MenuExplore 1
+scoreboard players set padlockProtection MenuExplore 1
 
 # Player
 team join Playing @s
 clear @a
-scoreboard players set @s ChestMenuMain 0
+scoreboard players set @s MenuMain 0
 
 # Characters
 function d:chest_menu/set/set_bunker_characters_full
@@ -33,7 +33,7 @@ function d:chest_menu/set/set_bunker_characters_full
 function d:chest_menu/set/set_bunker_items_full
 
 # Expedition
-scoreboard players set expeditionPrepared ChestMenuExplore 1
+scoreboard players set expeditionPrepared MenuExplore 1
 
 # Place Chest Menu
 function cm:place_chest_menu

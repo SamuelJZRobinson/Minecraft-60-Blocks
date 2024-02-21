@@ -9,9 +9,9 @@ scoreboard players set bool chest_menu 1
 
 # Page Buttons
   # Previous Page
-  execute if score selection ChestMenuMain matches 2 run scoreboard players set @s ChestMenuMain 2
+  execute if score selection MenuMain matches 2 run scoreboard players set @s MenuMain 2
   # Submit
-  execute if score selection ChestMenuMain matches 3 run function cm:pages/submit/manage_submit
+  execute if score selection MenuMain matches 3 run function cm:pages/submit/manage_submit
   # Play Click Sound
-  execute if score selection ChestMenuMain matches 1..3 run function mc:sounds/page_turn
-  execute if score selection ChestMenuMain matches 4.. run function mc:sounds/menu_click
+  execute if score selection MenuMain matches 1..3 run function mc:sounds/page_turn
+  execute if score selection MenuMain matches 4.. run function mc:sounds/menu_click

@@ -13,7 +13,7 @@ tellraw @p[team=Playing] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
   effect give @p[team=Playing] instant_health 1 20 true
 
 # Analyse Player Damage and Harm Characters
-execute unless score task AtomicDrill matches 15..16 run scoreboard players set characterSent ChestMenuExplore 0
+execute unless score task AtomicDrill matches 15..16 run scoreboard players set characterSent MenuExplore 0
 
 # Append Inventory Items
 execute if score doPovExpedition Settings matches 1 unless score expeditionDeath AtomicDrill matches 1.. run function mc:timer/expedition/get_player_inventory

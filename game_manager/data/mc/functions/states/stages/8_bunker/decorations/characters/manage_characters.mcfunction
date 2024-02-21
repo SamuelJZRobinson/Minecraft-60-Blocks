@@ -15,10 +15,10 @@ scoreboard players set notRandom em 0
 scoreboard players set startOne em 1
 
 # Update Living Characters
-execute if score alive DoloresStatus matches 1 unless score characterSent ChestMenuExplore matches 1 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run function mc:states/stages/8_bunker/decorations/characters/update/update_dolores
-execute if score alive MaryStatus matches 1 unless score characterSent ChestMenuExplore matches 2..3 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run schedule function mc:states/stages/8_bunker/decorations/characters/update/update_mary_base 1t replace
-execute if score alive TedStatus matches 1 unless score characterSent ChestMenuExplore matches 4 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run schedule function mc:states/stages/8_bunker/decorations/characters/update/update_ted 2t replace
-execute if score alive TimmyStatus matches 1 unless score characterSent ChestMenuExplore matches 5 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run schedule function mc:states/stages/8_bunker/decorations/characters/update/update_timmy 3t replace
+execute if score alive DoloresStatus matches 1 unless score characterSent MenuExplore matches 1 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run function mc:states/stages/8_bunker/decorations/characters/update/update_dolores
+execute if score alive MaryStatus matches 1 unless score characterSent MenuExplore matches 2..3 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run schedule function mc:states/stages/8_bunker/decorations/characters/update/update_mary_base 1t replace
+execute if score alive TedStatus matches 1 unless score characterSent MenuExplore matches 4 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run schedule function mc:states/stages/8_bunker/decorations/characters/update/update_ted 2t replace
+execute if score alive TimmyStatus matches 1 unless score characterSent MenuExplore matches 5 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run schedule function mc:states/stages/8_bunker/decorations/characters/update/update_timmy 3t replace
 
 # Hide Characters During Expedition
-execute if score characterSent ChestMenuExplore matches 1.. run function mc:states/stages/8_bunker/decorations/characters/update/update_expedition_hide
+execute if score characterSent MenuExplore matches 1.. run function mc:states/stages/8_bunker/decorations/characters/update/update_expedition_hide

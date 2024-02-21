@@ -1,5 +1,5 @@
 # Chest Menu
-scoreboard players set @p[team=Playing] ChestMenuMain 0
+scoreboard players set @p[team=Playing] MenuMain 0
 
 # Count
 function mc:states/stages/8_bunker/decorations/characters/count/count_family

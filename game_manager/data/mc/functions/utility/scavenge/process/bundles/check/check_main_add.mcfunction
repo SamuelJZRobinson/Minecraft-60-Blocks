@@ -44,5 +44,5 @@ execute if score stage CheckItems matches 2 if score itemsTotal CheckItems match
 execute if score stage CheckItems matches 2 if score itemsTotal CheckItems matches 0 run function mc:utility/scavenge/process/manage_process
 execute if score stage CheckItems matches 6 if score itemsTotal CheckItems matches 0 run function mc:events/random_loadout/locations/items/get_slot_random
 execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score doPovExpedition Settings matches 0 run schedule function mc:utility/scavenge/process/bundles/set/set_bundle_details 1t replace
-execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score doPovExpedition Settings matches 0 unless score task AtomicDrill matches 16 run scoreboard players set characterSent ChestMenuExplore 0
+execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score doPovExpedition Settings matches 0 unless score task AtomicDrill matches 16 run scoreboard players set characterSent MenuExplore 0
 execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score doPovExpedition Settings matches 1 run schedule function mc:events/random_loadout/locations/items/manage_items 1t replace

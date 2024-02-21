@@ -1,5 +1,5 @@
 # Prepare
-execute if score prepare ChestMenuExplore matches 1 run scoreboard players set expeditionPrepared ChestMenuExplore 1
-scoreboard players set prepare ChestMenuExplore 0
+execute if score prepare MenuExplore matches 1 run scoreboard players set expeditionPrepared MenuExplore 1
+scoreboard players set prepare MenuExplore 0
 # Setup
-execute if score characterSent ChestMenuExplore matches 0 if score expeditionPrepared ChestMenuExplore matches 1 if score characterSelect ChestMenuExplore matches 1.. run function cm:pages/submit/expedition_setup
+execute if score characterSent MenuExplore matches 0 if score expeditionPrepared MenuExplore matches 1 if score characterSelect MenuExplore matches 1.. run function cm:pages/submit/expedition_setup

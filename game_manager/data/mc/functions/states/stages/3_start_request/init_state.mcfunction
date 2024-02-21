@@ -3,7 +3,7 @@
 
 # Setup Players
 team join Playing @s
-scoreboard players set @s ChestMenuMain 1
+scoreboard players set @s MenuMain 1
 clear @a
 
 tellraw @a "state 3"

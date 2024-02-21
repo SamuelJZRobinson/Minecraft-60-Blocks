@@ -2,6 +2,6 @@
   # Page items updates when the chest is opened or an item is clicked.
   # The menu updates when an item is clicked.
 
-execute as @s[scores={OpenChestMenu=1..}] run function cm:root/update/update_menu
-scoreboard players reset @s[scores={OpenChestMenu=1..}] OpenChestMenu
+execute as @s[scores={OpenMenu=1..}] run function cm:root/update/update_menu
+scoreboard players reset @s[scores={OpenMenu=1..}] OpenMenu
 function cm:root/check/check_menu_exists

@@ -5,14 +5,14 @@
 
 # Loot (Base)
   # Short (1 to 5, n+1)
-  execute if score locationVisited ChestMenuExplore matches 1..4 run scoreboard players set math_in1 em 1
-  execute if score locationVisited ChestMenuExplore matches 1..4 run scoreboard players set math_in2 em 6
+  execute if score locationVisited MenuExplore matches 1..4 run scoreboard players set math_in1 em 1
+  execute if score locationVisited MenuExplore matches 1..4 run scoreboard players set math_in2 em 6
   # Medium (2 to 6, n+1)
-  execute if score locationVisited ChestMenuExplore matches 5..6 run scoreboard players set math_in1 em 2
-  execute if score locationVisited ChestMenuExplore matches 5..6 run scoreboard players set math_in2 em 7
+  execute if score locationVisited MenuExplore matches 5..6 run scoreboard players set math_in1 em 2
+  execute if score locationVisited MenuExplore matches 5..6 run scoreboard players set math_in2 em 7
   # Long (3 to 7, n+1)
-  execute if score locationVisited ChestMenuExplore matches 7..8 run scoreboard players set math_in1 em 3
-  execute if score locationVisited ChestMenuExplore matches 7..8 run scoreboard players set math_in2 em 8
+  execute if score locationVisited MenuExplore matches 7..8 run scoreboard players set math_in1 em 3
+  execute if score locationVisited MenuExplore matches 7..8 run scoreboard players set math_in2 em 8
   # Copy Output
   function em:math/randomp
   scoreboard players operation maxLoot ItemsExpedition = math_out em
@@ -34,7 +34,7 @@
   scoreboard players set math_out em 0
   # Timmy (1 in x, n+1)
   scoreboard players operation memory em = TIMMY_BOOST StatusOdds
-  execute if score characterSent ChestMenuExplore matches 5 run function em:math/get_percentage
+  execute if score characterSent MenuExplore matches 5 run function em:math/get_percentage
   execute if score math_out em matches 1 run scoreboard players add maxLoot ItemsExpedition 1
   scoreboard players set math_out em 0
   # Fatigue (1 in x, n+1)

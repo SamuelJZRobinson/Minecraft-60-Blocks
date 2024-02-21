@@ -4,13 +4,13 @@
 
 # Feeding
   # Remove Supplies
-  scoreboard players operation cans ItemsBunker -= cansGiven ChestMenuFeed
-  scoreboard players operation bottles ItemsBunker -= bottlesGiven ChestMenuFeed
-  execute if score giveMedkit ChestMenuFeed matches 1.. run scoreboard players set medkit ItemsBunker -1
+  scoreboard players operation cans ItemsBunker -= cansGiven MenuFeed
+  scoreboard players operation bottles ItemsBunker -= bottlesGiven MenuFeed
+  execute if score giveMedkit MenuFeed matches 1.. run scoreboard players set medkit ItemsBunker -1
 
   # Increment Counters
-  scoreboard players operation soupConsumed GameStatus += cansGiven ChestMenuFeed
-  scoreboard players operation waterConsumed GameStatus += bottlesGiven ChestMenuFeed
+  scoreboard players operation soupConsumed GameStatus += cansGiven MenuFeed
+  scoreboard players operation waterConsumed GameStatus += bottlesGiven MenuFeed
 
   # Nourish Characters
   execute if score alive DoloresStatus matches 1 run function cm:pages/submit/submit_dolores
@@ -25,25 +25,25 @@ function mc:states/stages/1_factory_reset/set/set_bundles
 function cm:pages/submit/manage_expedition
 
 # Events
-scoreboard players set submit ChestMenuEvent 1
+scoreboard players set submit MenuEvent 1
 clear @p[team=Playing] minecraft:written_book{dailyStory:1b}
-execute if score event ChestMenuEvent matches 1.. as @p[team=Playing] run function cm:pages/page_3/events/manage_events
+execute if score event MenuEvent matches 1.. as @p[team=Playing] run function cm:pages/page_3/events/manage_events
 
 # Refresh Scoreboard
   # Feeding
   # Characters handled by submit_<name>
-  scoreboard players set giveMedkit ChestMenuFeed 0
-  scoreboard players set cansGiven ChestMenuFeed 0
-  scoreboard players set bottlesGiven ChestMenuFeed 0
+  scoreboard players set giveMedkit MenuFeed 0
+  scoreboard players set cansGiven MenuFeed 0
+  scoreboard players set bottlesGiven MenuFeed 0
 
   # Expedition (Neighbourhood Default)
-  scoreboard players set characterSelect ChestMenuExplore 0
-  scoreboard players set locationSelect ChestMenuExplore 3
+  scoreboard players set characterSelect MenuExplore 0
+  scoreboard players set locationSelect MenuExplore 3
 
   # Events
-  scoreboard players set event ChestMenuEvent 0
-  scoreboard players set choice ChestMenuEvent 0
-  scoreboard players set submit ChestMenuEvent 0
+  scoreboard players set event MenuEvent 0
+  scoreboard players set choice MenuEvent 0
+  scoreboard players set submit MenuEvent 0
 
   # Math
   scoreboard players set math_out em 0

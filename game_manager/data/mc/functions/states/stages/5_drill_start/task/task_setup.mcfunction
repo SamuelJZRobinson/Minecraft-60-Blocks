@@ -100,7 +100,7 @@
 # Task 13 (Feed Characters And Plan Expedition, Day Two)
   # Give Journal
   execute if score task AtomicDrill matches 13 run give @p[team=Playing] written_book{dailyStory:1b,title:"Journal",author:"BlackeyeI",generation:0,pages:['[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"},"bold":true},{"text":"\\nRise and shine! Hopefully, your beds were comfortable. Either way, you will get accustomed to it. Today we shall start by rationing supplies and move on to crucial obstacles. Each day presents the risk that supplies will run out.","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nDespite everything having a vital purpose, food and water always remain the top priority for survival. In desperate situations, you may need to plan an expedition and send family members to the surface so that they can locate leftover goodies.","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nYou can only send one survivor at a time who is not tired. To keep everyone in top shape, only send healthy individuals with suitable gear to better your odds, such as a gas mask to avoid radioactive fallout and a suitcase to carry three extra items.","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nIf you wish to postpone a trip prepared earlier, do not select anyone when asked. During this demonstration, we will skip preparations and jump straight into sending someone courageous into the forsaken wasteland above.","bold":false}]']} 1
-  execute if score task AtomicDrill matches 13 run scoreboard players set expeditionPrepared ChestMenuExplore 1
+  execute if score task AtomicDrill matches 13 run scoreboard players set expeditionPrepared MenuExplore 1
 
 # Task 14 (Feed Thirsty Characters And Event One, Day Three)
   # Force Thirst
@@ -108,12 +108,12 @@
   # Give Journal
   execute if score task AtomicDrill matches 14 run give @p[team=Playing] written_book{dailyStory:1b,title:"Journal",author:"BlackeyeI",generation:0,pages:['[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"},"bold":true},{"text":"\\nReveille cadets, today things get serious as you address one of many ethical dilemmas destined to arise. As we await the return of your scavenger, we will see how you respond under stress. For now, you will ration food. ","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nWe cannot risk anyone dying of dehydration, especially in a training exercise, so please do not hesitate to have your fair share of water. As a proud army man, I know little about the imagination..., only its destruction. Hence, I will ask you to use yours now.","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nSuppose that food was in low supply and the family hamster snuck into the shelter. Do you pity the cries of your children or cook him out of desperation to quench that inner urge?","bold":false}]']} 1
   # Set Event
-  execute if score task AtomicDrill matches 14 run scoreboard players set event ChestMenuEvent 1
+  execute if score task AtomicDrill matches 14 run scoreboard players set event MenuEvent 1
 
 # Task 15 (Event Two, Day Four)
   # Journal Managed By cm:menu/submit/manage_events
   # Set Event
-  execute if score task AtomicDrill matches 15 run scoreboard players set event ChestMenuEvent 2
+  execute if score task AtomicDrill matches 15 run scoreboard players set event MenuEvent 2
 
 # Task 16 (Character Returns Injured, Day Five)
   # Journal Managed By cm:menu/submit/manage_events
@@ -132,12 +132,12 @@
   # Give Journal
   execute if score task AtomicDrill matches 19 run give @p[team=Playing] written_book{dailyStory:1b,title:"Journal",author:"BlackeyeI",generation:0,pages:['[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nWhile passing the time reminiscing about last summer vacation, the sound of three knocks suddenly began pounding from beyond the hatch. It was clear that someone was adamant about gaining your attention.","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nAfter approaching the door and questioning their intent, the raspy voice of a middle-aged man explained that a rescue squad was here to escort you to a safer location. Do you open the door?","bold":false}]']} 1
   # Set Event
-  execute if score task AtomicDrill matches 19 run scoreboard players set event ChestMenuEvent 3
+  execute if score task AtomicDrill matches 19 run scoreboard players set event MenuEvent 3
 
 # Task 20 (Even Four, Day Nine)
   # Journal Managed By cm:menu/submit/manage_events
   # Set Event
-  execute if score task AtomicDrill matches 20 run scoreboard players set event ChestMenuEvent 4
+  execute if score task AtomicDrill matches 20 run scoreboard players set event MenuEvent 4
 
 # Task 21 (Final Words And Reset, Day Ten)
   # Journal Managed By cm:menu/submit/manage_events

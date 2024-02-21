@@ -7,4 +7,4 @@ execute if score math_out em matches 1 run scoreboard players set mutated MarySt
 
 # Refresh Scores
 scoreboard players set math_out em 0
-scoreboard players set mutateRequest ChestMenuEvent 0
+scoreboard players set mutateRequest MenuEvent 0

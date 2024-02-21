@@ -14,13 +14,13 @@ scoreboard players set deathChance ItemsExpedition 0
 
 # Get Chance
   # Character Health
-  execute if score characterSent ChestMenuExplore matches 1 run function mc:events/random_loadout/locations/items/check_dolores_health
-  execute if score characterSent ChestMenuExplore matches 2 run function mc:events/random_loadout/locations/items/check_mary_health
+  execute if score characterSent MenuExplore matches 1 run function mc:events/random_loadout/locations/items/check_dolores_health
+  execute if score characterSent MenuExplore matches 2 run function mc:events/random_loadout/locations/items/check_mary_health
   # Mutant Mary is immune to status effects
-  execute if score characterSent ChestMenuExplore matches 4 run function mc:events/random_loadout/locations/items/check_ted_health
-  execute if score characterSent ChestMenuExplore matches 5 run function mc:events/random_loadout/locations/items/check_timmy_health
+  execute if score characterSent MenuExplore matches 4 run function mc:events/random_loadout/locations/items/check_ted_health
+  execute if score characterSent MenuExplore matches 5 run function mc:events/random_loadout/locations/items/check_timmy_health
   # General
-  execute if score characterSent ChestMenuExplore matches 1..5 unless score characterSent ChestMenuExplore matches 3 run function mc:events/random_loadout/locations/items/get_general_health
+  execute if score characterSent MenuExplore matches 1..5 unless score characterSent MenuExplore matches 3 run function mc:events/random_loadout/locations/items/get_general_health
 
 # Modify Chance According To Difficulty
 scoreboard players operation memory em = deathChance ItemsExpedition
