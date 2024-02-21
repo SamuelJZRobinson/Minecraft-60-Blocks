@@ -1,0 +1,1 @@
+playsound minecraft:block.end_portal.spawn block @a ~ ~ ~ 128 0 1

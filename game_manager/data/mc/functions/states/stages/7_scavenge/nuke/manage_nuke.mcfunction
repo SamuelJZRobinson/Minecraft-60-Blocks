@@ -1,6 +1,9 @@
 # Notes
   # bunkerSide includes east (0) and west (1)
 
+# Play Nuke Sound
+function mc:sounds/nuke_explosion
+
 # Detect Player At Bunker Door
 execute if score bunkerSide GameStatus matches 0 store success score nukeSurvived GameStatus if entity @s[x=33,y=64,z=-10,dx=6,dy=4,dz=6]
 execute if score bunkerSide GameStatus matches 1 store success score nukeSurvived GameStatus if entity @s[x=8,y=64,z=-10,dx=6,dy=4,dz=6]

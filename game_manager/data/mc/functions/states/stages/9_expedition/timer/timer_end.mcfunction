@@ -1,9 +1,12 @@
+# Playsound
+function mc:sounds/expedition_end
+
 # Adjust Scores
 ### scoreboard players set clock Timer 3
 scoreboard players set music GameStatus 3
 scoreboard objectives setdisplay sidebar
 scoreboard players set showEscape ItemsExpedition 0
-tellraw @p[team=Playing] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+### tellraw @p[team=Playing] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
 # Time Depleted
   # Clear Location Entities
