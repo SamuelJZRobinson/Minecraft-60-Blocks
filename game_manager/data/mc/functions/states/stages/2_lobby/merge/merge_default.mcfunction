@@ -48,7 +48,7 @@
   # Resource Pack
   setblock 22 132 -3 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Resource Pack","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_resource_pack_url"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
   
-# Extra Info 2
+# Developer Info
   # Game Creator
   setblock 20 132 -8 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Original Dev","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_store_url"}}','{"text":"Robot Gentleman"}','{"text":""}','{"text":""}']}} destroy
   # Credits
