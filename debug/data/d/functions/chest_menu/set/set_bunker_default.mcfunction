@@ -4,6 +4,10 @@
 # Remove Characters
 ### kill @e[tag=BunkerNpc]
 
+# Gamemode (Ensure Set Time And Show Warp Days Works)
+scoreboard players set gamemode Settings 3
+scoreboard players set doPovExpedition Settings 1
+
 # Set Scores
   # Status
   scoreboard players set started GameStatus 1
@@ -33,10 +37,10 @@ function d:chest_menu/set/set_bunker_characters_full
 function d:chest_menu/set/set_bunker_items_full
 
 # Expedition
-scoreboard players set expeditionActive MenuExplore 1
+scoreboard players set expeditionReady MenuExplore 1
 
 # Place Chest Menu
 function cm:place_chest_menu
 
 # Start New Day
-function mc:states/stages/8_bunker/daily/manage_new_day
+function mc:states/stages/8_bunker/daily/manage_day

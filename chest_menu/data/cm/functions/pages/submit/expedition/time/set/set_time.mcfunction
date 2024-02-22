@@ -14,6 +14,6 @@ scoreboard players set startOne em 1
   # Long (6 to 8, n+1)
   execute if score mapSelect MenuExplore matches 7..8 run scoreboard players set math_in1 em 6
   execute if score mapSelect MenuExplore matches 7..8 run scoreboard players set math_in2 em 9
-  # Copy Output
+  # Output
   function em:math/randomp
   scoreboard players operation expeditionDuration MenuExplore = math_out em

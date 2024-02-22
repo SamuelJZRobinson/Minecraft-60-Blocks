@@ -8,5 +8,8 @@ function mc:states/stages/8_bunker/cosmetics/items/count/count_items
 # Check Ending
 function mc:states/stages/8_bunker/daily/check_ending
 
-# Start Day
+# Show Day
 execute if score ending GameStatus matches 0 run function mc:states/stages/8_bunker/daily/show_day
+
+# Check Expedition
+execute if score ending GameStatus matches 0 run function mc:states/stages/8_bunker/daily/check_expedition

@@ -17,5 +17,5 @@ execute if score state GameStatus matches 8 run function mc:utility/particles/ma
 
 # Expedition
   # Map Update
-  execute if score state GameStatus matches 9 run function mc:states/stages/9_expedition/mode/pov/items/update/update_items
+  execute if score state GameStatus matches 9 run function mc:states/stages/9_expedition/place/items/update/update_items
   execute if score state GameStatus matches 9 as @e[type=slime,team=!Enemy,team=!Item,team=!NoRoom] run team join Enemy @s

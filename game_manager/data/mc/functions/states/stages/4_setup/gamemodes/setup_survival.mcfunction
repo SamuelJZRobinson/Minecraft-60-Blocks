@@ -44,7 +44,7 @@
 #       execute if score difficulty Settings matches 1..2 run schedule function mc:utility/scavenge/load_bonous_items 0.2s
 
 #     # Declare New Day
-#     schedule function mc:states/stages/8_bunker/daily/manage_new_day 3s
+#     schedule function mc:states/stages/8_bunker/daily/manage_day 3s
 
 #   # Set Music
 #   scoreboard players set music GameStatus 3
