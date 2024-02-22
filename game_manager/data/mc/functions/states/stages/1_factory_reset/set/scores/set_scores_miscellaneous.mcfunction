@@ -7,7 +7,7 @@ scoreboard players set doPovExpedition Settings 0
 
 # EXCEPTION
 scoreboard objectives add Exception food {"bold":true,"color":"white","text":"Exception"}
-scoreboard players set doException Settings 0
+scoreboard players set doException Exception 0
 
 # PLAYER
   # PLAYER HUNGER

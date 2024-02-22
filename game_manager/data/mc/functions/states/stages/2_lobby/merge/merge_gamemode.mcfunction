@@ -1,9 +1,9 @@
 # Notes
   # Nuke cloning is delayed to prevent seizures and unnecessary computations.
 
-execute if score gamemode Settings matches 1 run data merge block 22 131 7 {Text2:'{"text":"Atomic Drill","color":"red"}'}
-execute if score gamemode Settings matches 2 run data merge block 22 131 7 {Text2:'{"text":"Apocalypse","color":"red"}'}
-execute if score gamemode Settings matches 3 run data merge block 22 131 7 {Text2:'{"text":"Scavenge","color":"red"}'}
-execute if score gamemode Settings matches 4 run data merge block 22 131 7 {Text2:'{"text":"Survival","color":"red"}'}
+execute if score gamemode Settings matches 1 run data merge block 22 131 7 {front_text:{color:"brown",has_glowing_text:1b,messages:['{"text":"Gamemode","color":"yellow","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_gamemode"}}','{"text":"Atomic Drill","color":"red","italic":true}','{"text":""}','{"text":""}']}}
+execute if score gamemode Settings matches 2 run data merge block 22 131 7 {front_text:{color:"brown",has_glowing_text:1b,messages:['{"text":"Gamemode","color":"yellow","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_gamemode"}}','{"text":"Apocalypse","color":"red","italic":true}','{"text":""}','{"text":""}']}}
+execute if score gamemode Settings matches 3 run data merge block 22 131 7 {front_text:{color:"brown",has_glowing_text:1b,messages:['{"text":"Gamemode","color":"yellow","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_gamemode"}}','{"text":"Scavenge","color":"red","italic":true}','{"text":""}','{"text":""}']}}
+execute if score gamemode Settings matches 4 run data merge block 22 131 7 {front_text:{color:"brown",has_glowing_text:1b,messages:['{"text":"Gamemode","color":"yellow","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_gamemode"}}','{"text":"Survival","color":"red","italic":true}','{"text":""}','{"text":""}']}}
 schedule function mc:states/stages/2_lobby/clone/clone_nukes 0.3s replace
 function mc:states/stages/2_lobby/merge/merge_difficulty

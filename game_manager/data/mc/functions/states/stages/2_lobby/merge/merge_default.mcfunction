@@ -1,63 +1,55 @@
 # Game Menu
-  # Character
-  data merge block 21 132 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Character","color":"yellow","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_character"},"bold":true}',Text2:'{"text":"#","color":"red"}',Text4:'{"text":"","color":"dark_red","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
-  # Gamemode
-  data merge block 22 131 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Gamemode","color":"yellow","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_gamemode"},"bold":true}',Text2:'{"text":"#","color":"red}',Text4:'{"text":"","color":"dark_red","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
-  # Difficulty
-  data merge block 21 131 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Difficulty","color":"yellow","clickEvent":{"action":"run_command","value":"execute unless score gamemode Settings matches 1 run function mc:states/stages/2_lobby/set/set_difficulty"},"bold":true}',Text2:'{"text":"#","color":"red}',Text4:'{"text":"","clickEvent":{"action":"run_command","value":"execute unless score gamemode Settings matches 1 run function mc:sounds/menu_click"}}'}
-  # Expedition
-  data merge block 20 131 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Expedition","color":"yellow","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_expedition"},"bold":true}',Text2:'{"text":"#","color":"red}',Text4:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
   # Start Game
-  data merge block 21 130 7 {Color:"brown",GlowingText:1b,Text1:'{"text":"Start Game","color":"green","bold":true}',Text2:'{"text":"","clickEvent":{"action":"run_command","value":"scoreboard players set state GameStatus 3"}}',Text3:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:states/stages/manage_states"}}',Text4:'{"text":"","clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}'}
+  setblock 21 130 7 spruce_wall_sign{front_text:{color:"brown",has_glowing_text:1b,messages:['{"text":"Start Game","color":"green","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_start"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
 
 # Items
   # Ammo
-  data merge block 20 130 5 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Ammo","bold":true}',Text2:'{"text":"1 Slot","italic":true}',Text3:'{"text":"Good for refilling"}',Text4:'{"text":"gun & trades"}'}
+  setblock 20 130 5 spruce_wall_sign[facing=east]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Ammo","bold":true}','{"text":"1 Slot","italic":true}','{"text":"Good for refilling"}','{"text":"gun & trades"}']}} destroy
   # Axe
-  data merge block 20 130 4 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Axe","bold":true}',Text2:'{"text":"2 Slots","italic":true}',Text3:'{"text":"Good for defence"}',Text4:'{"text":",rescue, & wounds"}'}
+  setblock 20 130 4 spruce_wall_sign[facing=east]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Axe","bold":true}', '{"text":"2 Slots","italic":true}', '{"text":"Good for defence"}', '{"text":",rescue, & wounds"}']}} destroy
   # Boy Scout Handbook
-  data merge block 20 130 3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Boyscout Book","bold":true}',Text2:'{"text":"1 Slot","italic":true}',Text3:'{"text":"Gives helpful tips"}',Text4:'{"text":"& repairs tools"}'}
+  setblock 20 130 3 spruce_wall_sign[facing=east]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Boyscout Book","bold":true}', '{"text":"1 Slot","italic":true}', '{"text":"Gives helpful tips"}', '{"text":"& repairs tools"}']}} destroy
   # Bug Spray
-  data merge block 20 130 2 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Bug Spray","bold":true}',Text2:'{"text":"1 Slot","italic":true}',Text3:'{"text":"Kills insects &"}',Text4:'{"text":"can make a medkit"}'}
+  setblock 20 130 2 spruce_wall_sign[facing=east]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Bug Spray","bold":true}', '{"text":"1 Slot","italic":true}', '{"text":"Kills insects &"}', '{"text":"can make a medkit"}']}} destroy
   # Cards
-  data merge block 20 130 1 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Cards","bold":true}',Text2:'{"text":"1 Slot","italic":true}',Text3:'{"text":"Good for sanity,"}',Text4:'{"text":"trades, & rescue"}'}
+  setblock 20 130 1 spruce_wall_sign[facing=east]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Cards","bold":true}', '{"text":"1 Slot","italic":true}', '{"text":"Good for sanity,"}', '{"text":"trades, & rescue"}']}} destroy
   # Checkers
-  data merge block 20 130 0 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Checkers","bold":true}',Text2:'{"text":"1 Slot","italic":true}',Text3:'{"text":"Good for sanity"}',Text4:'{"text":"& trades"}'}
+  setblock 20 130 0 spruce_wall_sign[facing=east]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Checkers","bold":true}', '{"text":"1 Slot","italic":true}', '{"text":"Good for sanity"}', '{"text":"& trades"}']}} destroy
   # Flashlight
-  data merge block 20 130 -1 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Flashlight","bold":true}',Text2:'{"text":"1 Slot","italic":true}',Text3:'{"text":"Brightens areas"}',Text4:'{"text":"& finds rescue"}'}
+  setblock 20 130 -1 spruce_wall_sign[facing=east]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Flashlight","bold":true}', '{"text":"1 Slot","italic":true}', '{"text":"Brightens areas"}', '{"text":"& finds rescue"}']}} destroy
   # Gas Mask
-  data merge block 20 130 -2 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Gas Mask","bold":true}',Text2:'{"text":"1 Slot","italic":true}',Text3:'{"text":"Reduces radiation"}',Text4:'{"text":"sickness"}'}
+  setblock 20 130 -2 spruce_wall_sign[facing=east]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Gas Mask","bold":true}', '{"text":"1 Slot","italic":true}', '{"text":"Reduces radiation"}', '{"text":"sickness"}']}} destroy
   # Gun
-  data merge block 20 130 -3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Gun","bold":true}',Text2:'{"text":"2 Slots","italic":true}',Text3:'{"text":"Good for defence"}',Text4:'{"text":"& needs ammo"}'}
+  setblock 20 130 -3 spruce_wall_sign[facing=east]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Gun","bold":true}', '{"text":"2 Slots","italic":true}', '{"text":"Good for defence"}', '{"text":"& needs ammo"}']}} destroy
   # Harmonica
-  data merge block 22 130 -3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Harmonica","bold":true}',Text2:'{"text":"1 Slot","italic":true}',Text3:'{"text":"Adds sanity &"}',Text4:'{"text":"may stop raids"}'}
+  setblock 22 130 -3 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Harmonica","bold":true}', '{"text":"1 Slot","italic":true}', '{"text":"Adds sanity &"}', '{"text":"may stop raids"}']}} destroy
   # Map
-  data merge block 22 130 -2 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Map","bold":true}',Text2:'{"text":"1 Slot","italic":true}',Text3:'{"text":"Adds locations"}',Text4:'{"text":"& finds rescue"}'}
+  setblock 22 130 -2 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Map","bold":true}', '{"text":"1 Slot","italic":true}', '{"text":"Adds locations"}', '{"text":"& finds rescue"}']}} destroy
   # Medkit
-  data merge block 22 130 -1 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Medkit","bold":true}',Text2:'{"text":"2 Slots","italic":true}',Text3:'{"text":"Cures illnesses"}',Text4:'{"text":"& injuries"}'}
+  setblock 22 130 -1 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Medkit","bold":true}', '{"text":"2 Slots","italic":true}', '{"text":"Cures illnesses"}', '{"text":"& injuries"}']}} destroy
   # Padlock
-  data merge block 22 130 0 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Padlock","bold":true}',Text2:'{"text":"1 Slot","italic":true}',Text3:'{"text":"Keeps out"}',Text4:'{"text":"trespassers"}'}
+  setblock 22 130 0 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Padlock","bold":true}', '{"text":"1 Slot","italic":true}', '{"text":"Keeps out"}', '{"text":"trespassers"}']}} destroy
   # Radio
-  data merge block 22 130 1 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Radio","bold":true}',Text2:'{"text":"1 Slot","italic":true}',Text3:'{"text":"Good for sanity"}',Text4:'{"text":"& rescue"}'}
+  setblock 22 130 1 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Radio","bold":true}', '{"text":"1 Slot","italic":true}', '{"text":"Good for sanity"}', '{"text":"& rescue"}']}} destroy
   # Soup Can
-  data merge block 22 130 2 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Soup Can","bold":true}',Text2:'{"text":"1 Slot","italic":true}',Text3:'{"text":"Restores hunger"}',Text4:'{"text":"for 10 days"}'}
+  setblock 22 130 2 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Soup Can","bold":true}', '{"text":"1 Slot","italic":true}', '{"text":"Restores hunger"}', '{"text":"for 10 days"}']}} destroy
   # Suitcase
-  data merge block 22 130 3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Suitcase","bold":true}',Text2:'{"text":"3 Slots","italic":true}',Text3:'{"text":"Takes three items"}',Text4:'{"text":"to the surface"}'}
+  setblock 22 130 3 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Suitcase","bold":true}', '{"text":"3 Slots","italic":true}', '{"text":"Takes three items"}', '{"text":"to the surface"}']}} destroy
   # Water Bottle
-  data merge block 22 130 4 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Water Bottle","bold":true}',Text2:'{"text":"1 Slot","italic":true}',Text3:'{"text":"Restores thirst"}',Text4:'{"text":"for 5 days"}'}
+  setblock 22 130 4 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Water Bottle","bold":true}', '{"text":"1 Slot","italic":true}', '{"text":"Restores thirst"}', '{"text":"for 5 days"}']}} destroy
   # Body Armour
-  data merge block 22 130 5 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Body Armour","bold":true}',Text2:'{"text":"3 Slots","italic":true}',Text3:'{"text":"Protects against"}',Text4:'{"text":"bandit ambushes"}'}
+  setblock 22 130 5 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Body Armour","bold":true}', '{"text":"3 Slots","italic":true}', '{"text":"Protects against"}', '{"text":"bandit ambushes"}']}} destroy
 
 # Extra Info
-  # Game Goal
-  data merge block 22 132 -3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Game Goal","bold":true}',Text2:'{"text":"Collect supplies,"}',Text3:'{"text":"protect family,"}',Text4:'{"text":"find rescue"}'}
   # Highscores
-  data merge block 20 132 -3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Highscores","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text4:'{"text":"Click to view","color":"dark_blue","underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_highscores"}}'}
+  setblock 20 132 -3 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Highscores","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_highscores"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
   # Ideal Settings
-  data merge block 20 131 -3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Ideal Settings","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text4:'{"text":"Click to view","color":"dark_blue","underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_settings"}}'}
+  setblock 21 132 -3 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Ideal Settings","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_settings"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
   # Resource Pack
-  data merge block 22 131 -3 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Resource Pack","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text4:'{"text":"Click to download","color":"dark_blue","underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_resource_pack_url"}}'}
+  setblock 22 132 -3 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Resource Pack","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_resource_pack_url"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
+  
+# Extra Info 2
   # Game Creator
-  data merge block 20 132 -8 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Game Creator","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text2:'{"text":"Robot Gentleman","clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_store_url"}}',Text4:'{"text":"Click to visit","underlined":true,"color":"dark_blue"}'}
+  setblock 20 132 -8 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Original Dev","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_store_url"}}','{"text":"Robot Gentleman"}','{"text":""}','{"text":""}']}} destroy
   # Credits
-  data merge block 22 132 -8 {Color:"light_blue",GlowingText:1b,Text1:'{"text":"Map Creator","bold":true,"clickEvent":{"action":"run_command","value":"function mc:sounds/menu_click"}}',Text2:'{"text":"BlackeyeI"}',Text4:'{"text":"Click for credits","color":"dark_blue","underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_credits"}}'}
+  setblock 22 132 -8 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Credits","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/show/show_credits"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
