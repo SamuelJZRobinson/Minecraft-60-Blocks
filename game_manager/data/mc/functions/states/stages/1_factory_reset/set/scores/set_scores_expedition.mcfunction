@@ -43,10 +43,10 @@ scoreboard players set FATIGUE_PENALTY ExpeditionOdds 10
 # Item
 scoreboard players set ITEM_TIER ExpeditionOdds 6
 scoreboard players set ITEM_BOOST ExpeditionOdds 4
-# Threat
-scoreboard players set THREAT_LEVEL_ONE ExpeditionOdds 3
-scoreboard players set THREAT_LEVEL_TWO ExpeditionOdds 6
-scoreboard players set THREAT_LEVEL_THREE ExpeditionOdds 9
+# Risk
+scoreboard players set RISK_LEVEL_ONE ExpeditionOdds 3
+scoreboard players set RISK_LEVEL_TWO ExpeditionOdds 6
+scoreboard players set RISK_LEVEL_THREE ExpeditionOdds 9
 
 # Mobs Expedition
 scoreboard objectives add MobsExpedition dummy {"bold":true,"color":"white","text":"Mobs Expedition"}

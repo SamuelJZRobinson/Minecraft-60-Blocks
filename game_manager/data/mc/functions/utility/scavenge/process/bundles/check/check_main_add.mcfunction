@@ -1,6 +1,8 @@
 # Notes
   # item duplication occurs when scheduling the loop functions
 
+### This has to be one of the worst scripts ever written in this project. It doesn't feel independent and may scripts want to use it.
+
 # Count Array
 execute store result score itemsTotal CheckItems run data get storage minecraft:checkitem checkId
 
@@ -42,7 +44,7 @@ execute if score itemsTotal CheckItems matches 1.. run function mc:utility/scave
 execute if score stage CheckItems matches 1 if score itemsTotal CheckItems matches 0 run function mc:utility/scavenge/process/bundles/check/check_valid
 execute if score stage CheckItems matches 2 if score itemsTotal CheckItems matches 0 run scoreboard players set stage CheckItems 3
 execute if score stage CheckItems matches 2 if score itemsTotal CheckItems matches 0 run function mc:utility/scavenge/process/manage_process
-execute if score stage CheckItems matches 6 if score itemsTotal CheckItems matches 0 run function mc:events/random_loadout/locations/items/get_slot_random
+execute if score stage CheckItems matches 6 if score itemsTotal CheckItems matches 0 run function mc:states/stages/9_expedition/place/items/get/get_slot_random
 execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score doPovExpedition Settings matches 0 run schedule function mc:utility/scavenge/process/bundles/set/set_bundle_details 1t replace
 execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score doPovExpedition Settings matches 0 unless score task AtomicDrill matches 16 run scoreboard players set characterSent MenuExplore 0
-execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score doPovExpedition Settings matches 1 run schedule function mc:events/random_loadout/locations/items/manage_items 1t replace
+# execute if score stage CheckItems matches 8 if score itemsTotal CheckItems matches 0 if score doPovExpedition Settings matches 1 run schedule function mc:states/stages/9_expedition/place/manage_placement 1t replace
