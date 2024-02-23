@@ -1,5 +1,4 @@
 # Setup Dice
-scoreboard players set mode em 1
 scoreboard players set dynamicDifficulty em 0
 scoreboard players set notRandom em 2
 scoreboard players set startOne em 0

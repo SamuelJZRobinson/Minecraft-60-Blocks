@@ -45,20 +45,28 @@
   scoreboard players set MENTAL_BREAKDOWN StatusOdds 12
   scoreboard players set CRAZY StatusOdds 2
   scoreboard players set CRAZY_RAGE StatusOdds 6
-    # Dolores Crazy Resistance (Mode, n+1)
-    scoreboard players set mode em 2
-    scoreboard players set notRandom em 1
-    scoreboard players operation memory em = MENTAL_BREAKDOWN StatusOdds
-    scoreboard players set math_in1 em 20
-    function em:math/get_percentage
-    scoreboard players operation DOLORES_BREAKDOWN_RESISTANCE StatusOdds = math_out em
-    # Mary Crazy Resistance (Mode, n+1)
-    scoreboard players set mode em 3
-    scoreboard players set notRandom em 1
-    scoreboard players operation memory em = MENTAL_BREAKDOWN StatusOdds
-    scoreboard players set math_in1 em 20
-    function em:math/get_percentage
-    scoreboard players operation MARY_BREAKDOWN_RESISTANCE StatusOdds = math_out em
+  # Dolores Crazy Resistance
+    # Setup Dice
+    scoreboard players set mode Math 1
+    scoreboard players set dynamicDifficulty Math 0
+    # Set Input
+    data modify storage minecraft:math x set value 20
+    execute store result storage minecraft:math y int 1 run scoreboard players get MENTAL_BREAKDOWN StatusOdds
+    # Calculate
+    function mc:utility/math/get_percentage
+    # Store
+    scoreboard players operation DOLORES_BREAKDOWN_RESISTANCE StatusOdds = out Math
+  # Mary Crazy Resistance
+    # Setup Dice
+    scoreboard players set mode Math 2
+    scoreboard players set dynamicDifficulty Math 0
+    # Set Input
+    data modify storage minecraft:math x set value 20
+    execute store result storage minecraft:math y int 1 run scoreboard players get MENTAL_BREAKDOWN StatusOdds
+    # Calculate
+    function mc:utility/math/get_percentage
+    # Store
+    scoreboard players operation MARY_BREAKDOWN_RESISTANCE StatusOdds = out Math
   # Fatigue
   scoreboard players set FATIGUE StatusOdds 8
   # Infection

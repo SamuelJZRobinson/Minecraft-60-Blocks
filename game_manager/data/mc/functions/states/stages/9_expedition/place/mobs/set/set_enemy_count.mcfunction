@@ -5,7 +5,6 @@ execute if score banditAlert MenuExplore matches 1 if score maxLoot ItemsExpedit
 scoreboard players add mobCount MobsExpedition 2
 
 # Setup Dice
-scoreboard players set mode em 1
 scoreboard players set dynamicDifficulty em 0
 scoreboard players set notRandom em 2
 scoreboard players set startOne em 0

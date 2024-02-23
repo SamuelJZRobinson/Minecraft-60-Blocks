@@ -46,14 +46,9 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
   # Reduces table items when space is insufficient.
 
 # Allocate Tables To Room Items
-  # # Set Dice
-  # scoreboard players set mode em 1
-  # scoreboard players set dynamicDifficulty em 0
-  # scoreboard players set notRandom em 0
-  # scoreboard players set startOne em 0
-
   # Set Dice
-  scoreboard players set mode Math 1
+  scoreboard players set mode Math 0
+  scoreboard players set dynamicDifficulty Math 0
   
   # Bathroom
     # Set Input

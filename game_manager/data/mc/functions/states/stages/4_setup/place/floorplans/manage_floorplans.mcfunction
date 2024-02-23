@@ -1,5 +1,5 @@
 # Set Floorplan
-execute store result score out Math run random value 1..6
+function mc:utility/math/get_random_range {x:1,y:6}
 
 # Floorplans
 execute if score out Math matches 1 run function mc:states/stages/4_setup/place/floorplans/clone/clone_fp_1

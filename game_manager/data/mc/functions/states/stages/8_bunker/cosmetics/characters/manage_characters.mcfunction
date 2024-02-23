@@ -7,9 +7,8 @@
   ### Decrease character sanity
 
 # Setup Dice
-execute if score difficulty Settings matches 1 run scoreboard players set mode em 2
-execute if score difficulty Settings matches 2 run scoreboard players set mode em 1
-execute if score difficulty Settings matches 3 run scoreboard players set mode em 3
+execute if score difficulty Settings matches 1 run scoreboard players set mode em 1
+execute if score difficulty Settings matches 3 run scoreboard players set mode em 2
 scoreboard players set dynamicDifficulty em 1
 scoreboard players set notRandom em 0
 scoreboard players set startOne em 1

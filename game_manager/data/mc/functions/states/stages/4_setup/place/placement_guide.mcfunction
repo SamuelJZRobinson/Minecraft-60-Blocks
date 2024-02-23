@@ -1,6 +1,3 @@
-# em PseudoRandom Number Generator:
-  # Chooses an option between math_in1 and math_in2 (n+1).
-
 # Houses Layout:
   # Areas:
     # Hallway: middle of the house attatched to triple rooms and double rooms.

@@ -1,7 +1,7 @@
 # Set Data
   # Datapacks
   function cm:load/set_scores_menu
-  function em:load/set_scores_math
+  function mc:states/stages/1_factory_reset/set/scores/set_scores_math
   function tf_raycast:load/set_scores_raycast
   # Gamemodes
   function mc:states/stages/1_factory_reset/set/scores/set_scores_atomic_drill

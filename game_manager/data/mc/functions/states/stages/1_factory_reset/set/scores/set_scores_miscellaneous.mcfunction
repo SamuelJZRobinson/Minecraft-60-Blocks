@@ -19,15 +19,6 @@ scoreboard players set doException Exception 0
   # PLAYER LEAVE
   scoreboard objectives add PlayerLeave minecraft.custom:minecraft.leave_game {"bold":true,"color":"white","text":"Player Leave"}
 
-# MATH
-scoreboard objectives add Math dummy {"bold":true,"color":"white","text":"Math"}
-scoreboard players set x Math 0
-scoreboard players set y Math 0
-scoreboard players set out Math 0
-scoreboard players set divisor Math 0
-scoreboard players set lastDigit Math 0
-scoreboard players set mode Math 1
-
 # TIMERS
   # ENGINE
   scoreboard objectives add Timer dummy {"bold":true,"color":"white","text":"Timer"}
