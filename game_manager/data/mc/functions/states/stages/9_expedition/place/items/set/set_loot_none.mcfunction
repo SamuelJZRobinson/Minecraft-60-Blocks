@@ -1,15 +1,16 @@
-# Setup Dice
-scoreboard players set dynamicDifficulty em 0
-scoreboard players set notRandom em 0
-scoreboard players set startOne em 1
-
-# Loot Chance
-  # No Loot Chance (% in max, n+1)
-  scoreboard players operation memory em = NO_LOOT ExpeditionOdds
-  function em:math/get_percentage
-  # No Items (Skip Calculations)
-  execute if score math_out em matches 1 run scoreboard players set stage ItemsExpedition 7
-  execute if score math_out em matches 1 run schedule function mc:states/stages/9_expedition/place/manage_placement 1t replace
-  # Have Items
-  execute unless score math_out em matches 1 run scoreboard players add stage ItemsExpedition 1
-  execute unless score math_out em matches 1 run schedule function mc:states/stages/9_expedition/place/manage_placement 1t replace
+# No Loot Chance
+  # Set Dice
+    scoreboard players set mode Math 0
+    scoreboard players set dynamicDifficulty Math 0
+  # Set Input
+  data modify storage minecraft:math x set value 1
+  execute store result storage minecraft:math y int 1 run scoreboard players get NO_LOOT ExpeditionOdds
+  # Calculate
+  function mc:utility/math/get_random_range with storage minecraft:math
+  # Test
+    # No Items (Skip Calculations)
+    execute if score out Math matches 1 run scoreboard players set stage ItemsExpedition 7
+    execute if score out Math matches 1 run schedule function mc:states/stages/9_expedition/place/manage_placement 1t replace
+    # Have Items
+    execute unless score out Math matches 1 run scoreboard players add stage ItemsExpedition 1
+    execute unless score out Math matches 1 run schedule function mc:states/stages/9_expedition/place/manage_placement 1t replace

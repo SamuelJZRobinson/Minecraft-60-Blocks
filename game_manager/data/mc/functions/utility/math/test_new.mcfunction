@@ -1,4 +1,4 @@
-# Setup Dice
+# Set Dice
 scoreboard players set mode Math 2
 scoreboard players set dynamicDifficulty Math 0
 # Set Input

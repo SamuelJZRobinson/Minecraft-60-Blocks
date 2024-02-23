@@ -6,7 +6,7 @@ execute if score day GameStatus matches ..1 run scoreboard players set expeditio
 execute if score day GameStatus matches 2 run scoreboard players set expeditionReady MenuExplore 0
 
 # Character Revive Chance
-execute if score day GameStatus matches 1..7 unless score characterRevived GameStatus matches 1.. run function mc:states/stages/8_bunker/cosmetics/characters/update/revive_chance
+execute if score day GameStatus matches 1..7 if score totalAlive GameStatus matches ..3 if score characterRevived GameStatus matches 0 run function mc:states/stages/8_bunker/cosmetics/characters/update/revive
 
 # Update
 function mc:states/stages/8_bunker/cosmetics/manage_cosmetics

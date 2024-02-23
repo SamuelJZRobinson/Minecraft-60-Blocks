@@ -3,16 +3,15 @@
   # If the character dies stop processing scripts.
 
 # Get Risk
+scoreboard players set deathChance ItemsExpedition 0
 function mc:states/stages/9_expedition/place/characters/get/get_risk
 
-# Set Scores
-scoreboard players set deathChance ItemsExpedition 0
+# Set Dice
 execute if score difficulty Settings matches 1 run scoreboard players set mode em 2
 execute if score difficulty Settings matches 3 run scoreboard players set mode em 1
 scoreboard players set dynamicDifficulty em 1
-scoreboard players set notRandom em 1
-scoreboard players set startOne em 0
 
+### Refactor this
 # Modify Chance According To Difficulty
 scoreboard players operation memory em = deathChance ItemsExpedition
 function em:math/get_percentage

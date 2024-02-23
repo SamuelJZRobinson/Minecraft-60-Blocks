@@ -1,31 +1,32 @@
-# Setup Dice
-scoreboard players set mode em 2
+# Set Dice
+scoreboard players set mode em 1
 scoreboard players set dynamicDifficulty em 0
-scoreboard players set notRandom em 1
-scoreboard players set startOne em 1
 
 # Sustenance And Special
-  # Sustenance (Mode, n+1)
-  scoreboard players operation memory em = maxLoot ItemsExpedition
-  scoreboard players set math_in1 em 30
-  function em:math/get_percentage
-  scoreboard players operation sustenanceCount ItemsExpedition = math_out em
-  scoreboard players set math_out em 0
-  # Special (Leftover)
-  scoreboard players operation specialCount ItemsExpedition = maxLoot ItemsExpedition
-  scoreboard players operation specialCount ItemsExpedition -= sustenanceCount ItemsExpedition
+  # Sustenance
+    # Set Input
+    data modify storage minecraft:math x set value 30
+    execute store result storage minecraft:math y int 1 run scoreboard players get maxLoot ItemsExpedition
+    # Calculate
+    function mc:utility/math/get_percentage
+    # Store
+    scoreboard players operation sustenanceCount ItemsExpedition = out Math
+    # Special (Leftover)
+    scoreboard players operation specialCount ItemsExpedition = maxLoot ItemsExpedition
+    scoreboard players operation specialCount ItemsExpedition -= sustenanceCount ItemsExpedition
 
 # Supress Special
-  # Get Amount (1 in max, n+1)
-  scoreboard players set math_in1 em 0
-  scoreboard players operation math_in2 em = specialCount ItemsExpedition
-  scoreboard players add math_in2 em 1
-  function em:math/randomp
-  scoreboard players operation specialRemove ItemsExpedition = math_out em
-  scoreboard players set math_out em 0
-  # Adjsut Scores
-  scoreboard players operation specialCount ItemsExpedition -= specialRemove ItemsExpedition
-  scoreboard players operation sustenanceCount ItemsExpedition += specialRemove ItemsExpedition
+  # Get Amount
+    # Set Input
+    data modify storage minecraft:math x set value 1
+    execute store result storage minecraft:math y int 1 run scoreboard players get specialCount ItemsExpedition
+    # Calculate
+    function mc:utility/math/get_random_range with storage minecraft:math
+    # Store
+    scoreboard players operation specialRemove ItemsExpedition = out Math
+    # Adjsut Scores
+    scoreboard players operation specialCount ItemsExpedition -= specialRemove ItemsExpedition
+    scoreboard players operation sustenanceCount ItemsExpedition += specialRemove ItemsExpedition
 
 # Calculate Item Slots
 scoreboard players operation specialCountCopy ItemsExpedition = specialCount ItemsExpedition

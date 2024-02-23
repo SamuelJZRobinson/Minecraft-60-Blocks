@@ -1,8 +1,9 @@
-# Setup Dice
+# Set Dice
 scoreboard players set dynamicDifficulty em 0
 scoreboard players set notRandom em 2
 scoreboard players set startOne em 0
 
+### What?
 # Initial Range
 scoreboard players set math_in1 em 40
 scoreboard players set math_in2 em 60

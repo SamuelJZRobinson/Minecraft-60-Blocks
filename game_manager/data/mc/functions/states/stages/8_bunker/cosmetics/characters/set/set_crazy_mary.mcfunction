@@ -1,5 +1,5 @@
 # Notes
-  # Mutant Mary cannot become crazy and break items
+  # Mutant Mary cannot become crazy and break items.
 
 # Set Scores
 scoreboard players set stage CheckItems 4

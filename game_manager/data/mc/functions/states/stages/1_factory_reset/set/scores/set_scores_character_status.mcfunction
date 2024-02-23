@@ -37,16 +37,16 @@
   # Bunker Cosmetic
   scoreboard players set BUNKER_BLACKOUT StatusOdds 70
   # Revive
-  scoreboard players set REVIVE StatusOdds 300
+  scoreboard players set REVIVE StatusOdds 200
   # Mutant Mary Jane
-  scoreboard players set MUTATE StatusOdds 300
+  scoreboard players set MUTATE StatusOdds 200
   scoreboard players set CANNIBALISM StatusOdds 15
   # Crazy
   scoreboard players set MENTAL_BREAKDOWN StatusOdds 12
   scoreboard players set CRAZY StatusOdds 2
   scoreboard players set CRAZY_RAGE StatusOdds 6
   # Dolores Crazy Resistance
-    # Setup Dice
+    # Set Dice
     scoreboard players set mode Math 1
     scoreboard players set dynamicDifficulty Math 0
     # Set Input
@@ -57,7 +57,7 @@
     # Store
     scoreboard players operation DOLORES_BREAKDOWN_RESISTANCE StatusOdds = out Math
   # Mary Crazy Resistance
-    # Setup Dice
+    # Set Dice
     scoreboard players set mode Math 2
     scoreboard players set dynamicDifficulty Math 0
     # Set Input

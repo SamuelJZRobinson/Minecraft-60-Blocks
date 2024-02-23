@@ -6,12 +6,13 @@
   # Atomic Drill task 14 makes everyone thirsty, task 15 fixes thirsty, task 16 character returns from expedition
   ### Decrease character sanity
 
-# Setup Dice
-execute if score difficulty Settings matches 1 run scoreboard players set mode em 1
-execute if score difficulty Settings matches 3 run scoreboard players set mode em 2
-scoreboard players set dynamicDifficulty em 1
-scoreboard players set notRandom em 0
-scoreboard players set startOne em 1
+# Set Dice
+scoreboard players set mode Math 0
+# execute if score difficulty Settings matches 1 run scoreboard players set mode em 1
+# execute if score difficulty Settings matches 3 run scoreboard players set mode em 2
+scoreboard players set dynamicDifficulty Math 1
+scoreboard players set notRandom Math 0
+scoreboard players set startOne Math 1
 
 # Update Living Characters
 execute if score alive DoloresStatus matches 1 unless score characterSent MenuExplore matches 1 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run function mc:states/stages/8_bunker/cosmetics/characters/update/update_dolores

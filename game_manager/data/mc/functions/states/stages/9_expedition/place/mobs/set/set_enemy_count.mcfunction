@@ -4,7 +4,7 @@ scoreboard players operation mobCount MobsExpedition = maxLoot ItemsExpedition
 execute if score banditAlert MenuExplore matches 1 if score maxLoot ItemsExpedition matches ..4 run scoreboard players set mobCount MobsExpedition 5
 scoreboard players add mobCount MobsExpedition 2
 
-# Setup Dice
+# Set Dice
 scoreboard players set dynamicDifficulty em 0
 scoreboard players set notRandom em 2
 scoreboard players set startOne em 0
