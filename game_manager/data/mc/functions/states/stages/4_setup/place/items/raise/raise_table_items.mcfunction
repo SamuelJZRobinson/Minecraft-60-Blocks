@@ -1,14 +1,21 @@
 # Notes
-  # <room>Tables are the spaces where <room>TableItems are placed
+  # <room>Tables are spaces where <room>TableItems are placed.
 
-# Update room
-execute if score room ItemsHouseHigh matches 1 if score bathroomTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
-execute if score room ItemsHouseHigh matches 2 if score hallwayTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
-execute if score room ItemsHouseHigh matches 3 if score kidsBedroomTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
-execute if score room ItemsHouseHigh matches 4 if score kitchenTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
-execute if score room ItemsHouseHigh matches 5 if score loungeTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
-execute if score room ItemsHouseHigh matches 6 if score masterBedroomTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
-execute if score room ItemsHouseHigh matches 7 if score sideBathroomTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
+# Update Room When Table Items Depleted
+  # Bathroom
+  execute if score room ItemsHouseHigh matches 1 if score bathroomTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
+  # Hallway
+  execute if score room ItemsHouseHigh matches 2 if score hallwayTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
+  # Kids Bedroom
+  execute if score room ItemsHouseHigh matches 3 if score kidsBedroomTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
+  # Kitchen
+  execute if score room ItemsHouseHigh matches 4 if score kitchenTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
+  # Lounge
+  execute if score room ItemsHouseHigh matches 5 if score loungeTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
+  # Master Bedroom
+  execute if score room ItemsHouseHigh matches 6 if score masterBedroomTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
+  # Side Bathroom
+  execute if score room ItemsHouseHigh matches 7 if score sideBathroomTableItems ItemsHouseHigh matches ..0 run scoreboard players add room ItemsHouseHigh 1
 
 # Move Items
   # Bathroom

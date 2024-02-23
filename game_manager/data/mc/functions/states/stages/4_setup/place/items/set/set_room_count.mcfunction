@@ -1,62 +1,39 @@
 # Notes
-  # The sum of maximum random room items (except hallway bonous) must equal total house items
-  # After initially dedicating loot to each room the hallway has a second chance to get leftover items
-  # soupLeft and waterLeft allocate leftover food to the hallway and break recursive tag functions
-  # Since loot tables lack support for a base value their output is unreliable when each entry has diffirent weights
-  # Never set hallway size to 0 when debugging because it is intended to receive leftover items
-  # Each room needs at least 9 ground spaces to avoid a teleportation error
-  # killItems determines if armourstands are broken when teleported or host magma cubes are missing
+  # Sum of max random room items (except hallway bonous) equals total house items.
+  # After dedicating loot to each room the hallway has a second chance to get leftover items.
+  # soupLeft and waterLeft allocate leftover food to the hallway and break recursive tag functions.
+  # Never set hallway size to 0 when debugging because it is intended to receive leftover items.
 
-# Count Items
+# Count Total Items
 execute store result score itemCount ItemsHouse if entity @e[type=minecraft:slime,tag=scavengeItem]
 execute store result score soupLeft ItemsHouse if entity @e[type=minecraft:slime,tag=scavengeSoup]
 execute store result score waterLeft ItemsHouse if entity @e[type=minecraft:slime,tag=scavengeWater]
 
 # Set Base Item Count
-  # Bathroom (2 to 3, n+1)
-  scoreboard players set math_in1 em 2
-  scoreboard players set math_in2 em 4
-  function em:math/randomp
-  scoreboard players operation bathroom ItemsHouse = math_out em
+  # Bathroom
+  function mc:utility/math/get_random_range {x:2,y:3}
+  scoreboard players operation bathroom ItemsHouse = out Math
+  # Hallway
+  function mc:utility/math/get_random_range {x:0,y:2}
+  scoreboard players operation hallway ItemsHouse = out Math
+  # Kids Room
+  function mc:utility/math/get_random_range {x:3,y:5}
+  scoreboard players operation kidsBedroom ItemsHouse = out Math
+  # Kitchen
+  function mc:utility/math/get_random_range {x:6,y:8}
+  scoreboard players operation kitchen ItemsHouse = out Math
+  # Lounge
+  function mc:utility/math/get_random_range {x:3,y:5}
+  scoreboard players operation lounge ItemsHouse = out Math
+  # Master Bedroom
+  function mc:utility/math/get_random_range {x:3,y:5}
+  scoreboard players operation masterBedroom ItemsHouse = out Math
+  # Side Bathroom
+  function mc:utility/math/get_random_range {x:2,y:3}
+  scoreboard players operation sideBathroom ItemsHouse = out Math
 
-  # Hallway (0 to 2, n+1)
-  scoreboard players set math_in1 em 0
-  scoreboard players set math_in2 em 3
-  function em:math/randomp
-  scoreboard players operation hallway ItemsHouse = math_out em
-
-  # Kids Room (3 to 5, n+1)
-  scoreboard players set math_in1 em 3
-  scoreboard players set math_in2 em 6
-  function em:math/randomp
-  scoreboard players operation kidsBedroom ItemsHouse = math_out em
-
-  # Kitchen (6 to 8, n+1)
-  scoreboard players set math_in1 em 6
-  scoreboard players set math_in2 em 9
-  function em:math/randomp
-  scoreboard players operation kitchen ItemsHouse = math_out em
-
-  # Lounge (3 to 5, n+1)
-  scoreboard players set math_in1 em 3
-  scoreboard players set math_in2 em 6
-  function em:math/randomp
-  scoreboard players operation lounge ItemsHouse = math_out em
-
-  # Master Bedroom (3 to 5, n+1)
-  scoreboard players set math_in1 em 3
-  scoreboard players set math_in2 em 6
-  function em:math/randomp
-  scoreboard players operation masterBedroom ItemsHouse = math_out em
-
-  # Side Bathroom (2 to 3, n+1)
-  scoreboard players set math_in1 em 2
-  scoreboard players set math_in2 em 4
-  function em:math/randomp
-  scoreboard players operation sideBathroom ItemsHouse = math_out em
-
-# Calculate Remaining Items
-  # Sum Allocated Items
+# Set Remaining Items
+  # Sum Allocations
   scoreboard players set allocated ItemsHouse 0
   scoreboard players operation allocated ItemsHouse += bathroom ItemsHouse
   scoreboard players operation allocated ItemsHouse += hallway ItemsHouse
@@ -65,85 +42,76 @@ execute store result score waterLeft ItemsHouse if entity @e[type=minecraft:slim
   scoreboard players operation allocated ItemsHouse += lounge ItemsHouse
   scoreboard players operation allocated ItemsHouse += masterBedroom ItemsHouse
   scoreboard players operation allocated ItemsHouse += sideBathroom ItemsHouse
-  # Subtract Sum From Total Items
+  # Calculate Remainder
   scoreboard players operation remainder ItemsHouse = itemCount ItemsHouse
   scoreboard players operation remainder ItemsHouse -= allocated ItemsHouse
 
-# Set Random Hallway Bonous Item Count
-  # Generate Number According To Remainder (0 to ?, n+1)
-  scoreboard players set math_in1 em 0
-  execute if score remainder ItemsHouse matches 0 run scoreboard players set math_in2 em 1
-  execute if score remainder ItemsHouse matches 1 run scoreboard players set math_in2 em 2
-  execute if score remainder ItemsHouse matches 2 run scoreboard players set math_in2 em 3
-  execute if score remainder ItemsHouse matches 3.. run scoreboard players set math_in2 em 4
-  function em:math/randomp
-  # Adjust Scores With Output
-  scoreboard players operation hallway ItemsHouse += math_out em
-  scoreboard players operation allocated ItemsHouse += math_out em
-  scoreboard players operation remainder ItemsHouse -= math_out em
+# Set Hallway Bonous Item Count
+  # Set Bonous Count
+  data modify storage minecraft:math x set value 0
+  execute if score remainder ItemsHouse matches ..0 run data modify storage minecraft:math y set value 0
+  execute if score remainder ItemsHouse matches 1 run data modify storage minecraft:math y set value 1
+  execute if score remainder ItemsHouse matches 2 run data modify storage minecraft:math y set value 2
+  execute if score remainder ItemsHouse matches 3.. run data modify storage minecraft:math y set value 3
+  function mc:utility/math/get_random_range with storage minecraft:math
+  # Adjust Scores
+  scoreboard players operation hallway ItemsHouse += out Math
+  scoreboard players operation allocated ItemsHouse += out Math
+  scoreboard players operation remainder ItemsHouse -= out Math
 
 # Compensate Remaining Items
 execute if score remainder ItemsHouse matches 1.. run function mc:states/stages/4_setup/place/items/set/set_room_count_fix_leftovers
 
 # Assign Items For Specific Rooms
-  # Kitchen Soup (3 to 5, n+1)
-  scoreboard players set math_in1 em 3
-  scoreboard players set math_in2 em 6
-  function em:math/randomp
-  # Adjust Scores With Output
-  scoreboard players operation kitchenSoup ItemsHouse = math_out em
+  # Kitchen Soup
+  function mc:utility/math/get_random_range {x:3,y:5}
+  # Adjust Scores
+  scoreboard players operation kitchenSoup ItemsHouse = out Math
   scoreboard players operation soupLeft ItemsHouse -= kitchenSoup ItemsHouse
 
-  # Kitchen Water (1 to 3, n+1)
+  # Kitchen Water
   # Reduce math_in2 If Kitchen Is Smaller
   scoreboard players operation diffirence ItemsHouse = kitchen ItemsHouse
   scoreboard players operation diffirence ItemsHouse -= kitchenSoup ItemsHouse
-  scoreboard players operation math_in2 em = diffirence ItemsHouse
-  scoreboard players add math_in2 em 1
-  scoreboard players set math_in1 em 1
-  function em:math/randomp
-  # Adjust Scores With Output
-  scoreboard players operation kitchenWater ItemsHouse = math_out em
+  data modify storage minecraft:math x set value 1
+  execute store result storage minecraft:math y int 1 run scoreboard players get diffirence ItemsHouse
+  function mc:utility/math/get_random_range with storage minecraft:math
+  # Adjust Scores
+  scoreboard players operation kitchenWater ItemsHouse = out Math
   scoreboard players operation waterLeft ItemsHouse -= kitchenWater ItemsHouse
 
-  # Bathroom Water (1 to 2, n+1)
-  scoreboard players set math_in1 em 1
-  scoreboard players set math_in2 em 3
-  function em:math/randomp
-  # Adjust Scores With Output
-  scoreboard players operation bathroomWater ItemsHouse = math_out em
+  # Bathroom Water
+  function mc:utility/math/get_random_range {x:1,y:2}
+  # Adjust Scores
+  scoreboard players operation bathroomWater ItemsHouse = out Math
   scoreboard players operation waterLeft ItemsHouse -= bathroomWater ItemsHouse
 
-  # Side Bathroom Water (1 to 2, n+1)
-  scoreboard players set math_in1 em 1
-  scoreboard players set math_in2 em 3
-  function em:math/randomp
-  # Adjust Scores With Output
-  scoreboard players operation sideBathroomWater ItemsHouse = math_out em
+  # Side Bathroom Water
+  function mc:utility/math/get_random_range {x:1,y:2}
+  # Adjust Scores
+  scoreboard players operation sideBathroomWater ItemsHouse = out Math
   scoreboard players operation waterLeft ItemsHouse -= sideBathroomWater ItemsHouse
 
-  # Hallway Soup (0 to x, n+1)
+  # Hallway Soup
   # Reduce soupLeft If Hallway Is Smaller
   execute if score hallway ItemsHouse < soupLeft ItemsHouse run scoreboard players operation soupLeft ItemsHouse = hallway ItemsHouse
-  scoreboard players operation math_in2 em = soupLeft ItemsHouse
-  scoreboard players add math_in2 em 1
-  scoreboard players set math_in1 em 0
-  function em:math/randomp
-  # Adjust Scores With Output
-  scoreboard players operation hallwaySoup ItemsHouse = math_out em
+  data modify storage minecraft:math x set value 0
+  execute store result storage minecraft:math y int 1 run scoreboard players get soupLeft ItemsHouse
+  function mc:utility/math/get_random_range with storage minecraft:math
+  # Adjust Scores
+  scoreboard players operation hallwaySoup ItemsHouse = out Math
 
-  # Hallway Water (0 to x, n+1)
+  # Hallway Water
     # Reduce waterLeft If Hallway Is Smaller
     scoreboard players operation diffirence ItemsHouse = hallway ItemsHouse
     scoreboard players operation diffirence ItemsHouse -= hallwaySoup ItemsHouse
     # Reduce Diffirence If waterLeft Is Smaller
     execute if score diffirence ItemsHouse > waterLeft ItemsHouse run scoreboard players operation diffirence ItemsHouse = waterLeft ItemsHouse
-    scoreboard players operation math_in2 em = diffirence ItemsHouse
-    scoreboard players add math_in2 em 1
-    scoreboard players set math_in1 em 0
-    function em:math/randomp
-    # Adjust Scores With Output
-    scoreboard players operation hallwayWater ItemsHouse = math_out em
+    data modify storage minecraft:math x set value 0
+    execute store result storage minecraft:math y int 1 run scoreboard players get diffirence ItemsHouse
+    function mc:utility/math/get_random_range with storage minecraft:math
+    # Adjust Scores
+    scoreboard players operation hallwayWater ItemsHouse = out Math
 
   # Count Allocated Soup
   scoreboard players set soupLeft ItemsHouse 0

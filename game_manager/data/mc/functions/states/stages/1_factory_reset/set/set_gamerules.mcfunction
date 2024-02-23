@@ -8,6 +8,7 @@ worldborder center 0.00 0.00
 gamerule blockExplosionDropDecay true
 gamerule mobExplosionDropDecay true
 gamerule tntExplosionDropDecay true
+gamerule projectilesCanBreakBlocks false
 
 # COMMANDS
 gamerule commandBlockOutput true
@@ -30,6 +31,7 @@ gamerule waterSourceConversion false
 gamerule randomTickSpeed 0
 gamerule snowAccumulationHeight 0
 gamerule spectatorsGenerateChunks false
+gamerule doVinesSpread false
 
 # MOBS
 gamerule disableRaids true
@@ -53,3 +55,4 @@ gamerule doLimitedCrafting true
 gamerule showDeathMessages true
 gamerule keepInventory true
 gamerule spawnRadius 0
+gamerule enderPearlsVanishOnDeath false

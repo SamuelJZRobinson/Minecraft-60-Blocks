@@ -1,20 +1,16 @@
 # Notes
-  # giveItem determines which item a room recieves. 1 is ammo, 2 is axe, and 3 is gun, 4 is bug spray, and 5 is medkit.
+  # Specific items stay within specific room groups.
+  # giveItem determines which item a room recieves including ammo (1), axe (2) gun (3), bug spray (4), and medkit (5).
 
-# Select Random Room (1 to 4, n+1)
-scoreboard players set math_in1 em 1
-scoreboard players set math_in2 em 5
-function em:math/randomp
-scoreboard players operation room ItemsHouse = math_out em
+# Select Room Group (1 to 4)
+function mc:utility/math/get_random_range {x:1,y:4}
+scoreboard players operation room ItemsHouse = out Math
 
-# Update Room
-function mc:states/stages/4_setup/place/items/tag/tag_special_update_room
-
-# Keep In Range
+### Does this actually work, when is giveItem ItemsHouse ever set?
+# Update Room Group
+function mc:states/stages/4_setup/place/items/tag/tag_special_room
 execute if score room ItemsHouse matches 5.. run scoreboard players set room ItemsHouse 1
-
-# Update Room (Repeat)
-function mc:states/stages/4_setup/place/items/tag/tag_special_update_room
+function mc:states/stages/4_setup/place/items/tag/tag_special_room
 
 # Target Item
 execute if score giveItem ItemsHouse matches 1 as @e[type=minecraft:slime,limit=1,x=24,y=69,z=-6,dy=1,tag=scavengeAmmo] run function mc:states/stages/4_setup/place/items/tag/tag_special_item1

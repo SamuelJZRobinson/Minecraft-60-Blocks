@@ -1,3 +1,6 @@
+# Notes
+  # Do not nest math x and y in a path to ensure compatability with macros.
+
 # CHECK ITEMS
 data remove storage minecraft:checkitem checkId
 data remove storage minecraft:checkitem randomId
@@ -25,3 +28,7 @@ data remove storage minecraft:bundles eventLostItems
 data remove storage minecraft:bundles expeditionGearId
 data remove storage minecraft:bundles expeditionLootItems
 data remove storage minecraft:bundles expeditionLostItems
+
+# MATH
+data remove storage minecraft:math x
+data remove storage minecraft:math y

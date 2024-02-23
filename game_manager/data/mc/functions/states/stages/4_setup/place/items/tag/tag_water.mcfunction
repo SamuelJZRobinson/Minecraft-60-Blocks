@@ -4,7 +4,7 @@ execute if score room ItemsHouse matches 2 if score bathroomWater ItemsHouse mat
 execute if score room ItemsHouse matches 3 if score sideBathroomWater ItemsHouse matches ..0 run scoreboard players add room ItemsHouse 1
 execute if score room ItemsHouse matches 4 if score hallwayWater ItemsHouse matches ..0 run scoreboard players add room ItemsHouse 1
 
-# Tag Items For Each Room
+# Tag Room Items
   # Kitchen
   execute if score room ItemsHouse matches 1 run tag @s add kitchen
   execute if score room ItemsHouse matches 1 run teleport @s @e[type=minecraft:marker,limit=1,sort=random,tag=kitchen,tag=floor]
@@ -29,7 +29,7 @@ execute if score room ItemsHouse matches 4 if score hallwayWater ItemsHouse matc
 # Rotate Item
 function mc:states/stages/4_setup/place/items/raise/rotate_items
 
-# Decrease Scores
+# Decrement Scores
 scoreboard players remove itemCount ItemsHouse 1
 scoreboard players remove waterLeft ItemsHouse 1
 

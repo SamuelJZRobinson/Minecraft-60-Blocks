@@ -1,14 +1,10 @@
 # Notes
-  # The hallway is omitted because it is a wild card which can have 0 items
+  # The hallway is omitted since it's a wild card that can have 0 items.
 
-# Randomly Select Room (1 to 6, n+1)
-scoreboard players set math_in1 em 1
-scoreboard players set math_in2 em 7
-function em:math/randomp
- 
-# Copy Output
-scoreboard players operation room ItemsHouse = math_out em
- 
+# Select Room
+function mc:utility/math/get_random_range {x:1,y:6}
+scoreboard players operation room ItemsHouse = out Math
+
 # Add Item To Room
 execute if score room ItemsHouse matches 1 run scoreboard players add bathroom ItemsHouse 1
 execute if score room ItemsHouse matches 2 run scoreboard players add kidsBedroom ItemsHouse 1

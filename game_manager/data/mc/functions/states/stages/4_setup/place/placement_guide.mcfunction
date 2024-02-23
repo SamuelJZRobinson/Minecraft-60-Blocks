@@ -11,6 +11,7 @@
       # Lounge
       # Master bedroom
       # Side bathroom 
+  # Each room needs at least 9 ground spaces to avoid a teleportation error
   # Main markers cover the entire centre of house.
   # West and east markers cover a side room that is not a salvage area.
   # Markers are tagged with their room name.
