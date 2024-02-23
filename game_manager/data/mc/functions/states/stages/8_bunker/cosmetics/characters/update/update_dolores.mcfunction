@@ -2,6 +2,7 @@
   # Version 0.84
   # Perk: 20% resistance to becoming crazy (managed by refresh_scores)
 
+### Maybe it needs a deeper refactor?
 # Fatigue
   # Time Depleted
   execute if score day GameStatus = FATIGUE_MAX StatusLevels run scoreboard players set fatigued DoloresStatus 1

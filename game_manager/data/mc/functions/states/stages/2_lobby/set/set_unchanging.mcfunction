@@ -1,7 +1,3 @@
-# Game Menu
-  # Start Game
-  setblock 21 130 7 spruce_wall_sign{front_text:{color:"brown",has_glowing_text:1b,messages:['{"text":"Start Game","color":"green","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_start"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
-
 # Items
   # Ammo
   setblock 20 130 5 spruce_wall_sign[facing=east]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Ammo","bold":true}','{"text":"1 Slot","italic":true}','{"text":"Good for refilling"}','{"text":"gun & trades"}']}} destroy
