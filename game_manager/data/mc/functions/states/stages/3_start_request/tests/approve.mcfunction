@@ -2,7 +2,7 @@
 scoreboard players set started GameStatus 1
 
 # Remove Lobby Content
-function mc:states/stages/2_lobby/set/place_empty_signs_menu
+function mc:states/stages/2_lobby/clear/clear_menu
 kill @e[type=armor_stand,tag=lobbyItem]
 
 # Set State
