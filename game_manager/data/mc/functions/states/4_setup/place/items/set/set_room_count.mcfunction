@@ -126,5 +126,5 @@ execute if score remainder ItemsHouse matches 1.. run function mc:states/4_setup
   scoreboard players operation waterLeft ItemsHouse += hallwayWater ItemsHouse
 
 # Call Root
-function mc:states/4_setup/place/items/refresh_scores
+function mc:states/4_setup/place/items/inc_step
 schedule function mc:states/4_setup/place/items/manage_items 1t

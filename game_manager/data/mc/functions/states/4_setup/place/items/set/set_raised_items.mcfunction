@@ -129,5 +129,5 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     scoreboard players operation sideBathroomTableItems ItemsHouseHigh = out Math
 
 # Call Root
-function mc:states/4_setup/place/items/refresh_scores
+function mc:states/4_setup/place/items/inc_step
 schedule function mc:states/4_setup/place/items/manage_items 1t replace

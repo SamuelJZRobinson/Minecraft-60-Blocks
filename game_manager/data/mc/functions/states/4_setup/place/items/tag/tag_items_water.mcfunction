@@ -34,5 +34,5 @@ scoreboard players remove itemCount ItemsHouse 1
 scoreboard players remove waterLeft ItemsHouse 1
 
 # Call Root
-execute if score waterLeft ItemsHouse matches 0 run function mc:states/4_setup/place/items/refresh_scores
+execute if score waterLeft ItemsHouse matches 0 run function mc:states/4_setup/place/items/inc_step
 schedule function mc:states/4_setup/place/items/manage_items 1t replace

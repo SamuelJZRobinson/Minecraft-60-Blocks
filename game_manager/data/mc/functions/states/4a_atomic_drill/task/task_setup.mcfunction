@@ -30,7 +30,7 @@
   execute if score task AtomicDrill matches 4 run scoreboard players set dialogue AtomicDrill 8
   execute if score task AtomicDrill matches 4 run scoreboard players set dialogueMax AtomicDrill 8
   # Place Soup
-  execute if score task AtomicDrill matches 4 positioned 22.40 64.00 6.45 run function mc:utility/scavenge/items/spawn/spawn_soup
+  execute if score task AtomicDrill matches 4 positioned 22.40 64.00 6.45 run function mc:states/4_setup/place/items/summon/summon_soup
   execute if score task AtomicDrill matches 4 run data modify entity @e[type=slime,tag=scavengeSoup,limit=1] Invulnerable set value 0b
 
 # Task 5 (Find Water In Kitchen)
@@ -38,7 +38,7 @@
   execute if score task AtomicDrill matches 5 run scoreboard players set dialogue AtomicDrill 9
   execute if score task AtomicDrill matches 5 run scoreboard players set dialogueMax AtomicDrill 9
   # Place Water
-  execute if score task AtomicDrill matches 5 positioned 27.50 65.00 -14.55 run function mc:utility/scavenge/items/spawn/spawn_water
+  execute if score task AtomicDrill matches 5 positioned 27.50 65.00 -14.55 run function mc:states/4_setup/place/items/summon/summon_water
   execute if score task AtomicDrill matches 5 run data modify entity @e[type=slime,tag=scavengeWater,limit=1] Invulnerable set value 0b
 
 # Task 6 (Salvage Items)
@@ -54,7 +54,7 @@
   execute if score task AtomicDrill matches 7 run scoreboard players set dialogue AtomicDrill 12
   execute if score task AtomicDrill matches 7 run scoreboard players set dialogueMax AtomicDrill 12
   # Place Radio
-  execute if score task AtomicDrill matches 7 positioned 19.30 65.00 6.45 run function mc:utility/scavenge/items/spawn/spawn_radio
+  execute if score task AtomicDrill matches 7 positioned 19.30 65.00 6.45 run function mc:states/4_setup/place/items/summon/summon_radio
   execute if score task AtomicDrill matches 7 run data modify entity @e[type=slime,tag=scavengeRadio,limit=1] Invulnerable set value 0b
   execute if score task AtomicDrill matches 7 as @e[type=minecraft:slime,tag=scavengeRadio,limit=1] at @s run teleport @s ~ ~ ~ 90 0
   execute if score task AtomicDrill matches 7 run function mc:states/4_setup/place/items/raise/sync_rotation
@@ -64,7 +64,7 @@
   execute if score task AtomicDrill matches 8 run scoreboard players set dialogue AtomicDrill 13
   execute if score task AtomicDrill matches 8 run scoreboard players set dialogueMax AtomicDrill 13
   # Place Gas Mask
-  execute if score task AtomicDrill matches 8 positioned 28.50 66.50 -3.25 run function mc:utility/scavenge/items/spawn/spawn_gas_mask
+  execute if score task AtomicDrill matches 8 positioned 28.50 66.50 -3.25 run function mc:states/4_setup/place/items/summon/summon_gas_mask
   execute if score task AtomicDrill matches 8 run data modify entity @e[type=slime,tag=scavengeGasMask,limit=1] Invulnerable set value 0b
   execute if score task AtomicDrill matches 8 as @e[type=minecraft:slime,tag=scavengeGasMask,limit=1] at @s run teleport @s ~ ~ ~ -180 0
   execute if score task AtomicDrill matches 8 run function mc:states/4_setup/place/items/raise/sync_rotation

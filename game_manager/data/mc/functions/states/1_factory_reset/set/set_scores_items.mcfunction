@@ -32,7 +32,7 @@ scoreboard objectives add ItemsHouseHigh dummy {"bold":true,"color":"white","tex
   ### ???
   # Check Items
   scoreboard objectives add CheckItems dummy {"bold":true,"color":"white","text":"Check Items"}
-  scoreboard players set stage CheckItems 1
+  scoreboard players set step CheckItems 1
   scoreboard players set itemId CheckItems 0
   scoreboard players set itemsOwed CheckItems 0
   scoreboard players set itemsTotal CheckItems 0
