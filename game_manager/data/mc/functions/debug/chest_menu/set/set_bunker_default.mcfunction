@@ -26,7 +26,7 @@ scoreboard players set mutantProtection MenuExplore 1
 scoreboard players set padlockProtection MenuExplore 1
 
 # Player
-team join Playing @s
+team join Player @s
 clear @a
 scoreboard players set @s MenuMain 0
 

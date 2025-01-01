@@ -1,3 +1,5 @@
+tellraw @a "state 2"
+
 # Place Signs
 function mc:states/2_lobby/place/place_menu_signs
 function mc:states/2_lobby/place/place_unchanging_signs
