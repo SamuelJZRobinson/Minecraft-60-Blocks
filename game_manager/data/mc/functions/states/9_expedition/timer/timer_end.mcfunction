@@ -6,14 +6,14 @@ function mc:sounds/expedition_end
 scoreboard players set music GameStatus 3
 scoreboard objectives setdisplay sidebar
 scoreboard players set showEscape ItemsExpedition 0
-### tellraw @p[team=Playing] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+### tellraw @p[Mobsteam=Player] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
 # Time Depleted
   # Clear Location Entities
-  execute as @p[team=Playing] run function mc:timer/expedition/clear_location_entities
+  execute as @p[Mobsteam=Player] run function mc:timer/expedition/clear_location_entities
   # Enable Natural Regeneration
   gamerule naturalRegeneration true
-  effect give @p[team=Playing] instant_health 1 20 true
+  effect give @p[Mobsteam=Player] instant_health 1 20 true
 
 # Analyse Player Damage and Harm Characters
 execute unless score task AtomicDrill matches 15..16 run scoreboard players set characterSent MenuExplore 0
@@ -24,7 +24,7 @@ scoreboard players set stage CheckItems 9
 execute if score doPovExpedition Settings matches 1 unless score expeditionDeath AtomicDrill matches 1.. run function mc:utility/scavenge/process/bundles/check/check_main_add
 
 # Effects
-# effect give @p[team=Playing] minecraft:blindness 2 0 true
+# effect give @p[Mobsteam=Player] minecraft:blindness 2 0 true
 
 # Bunker Related
   # Teleport

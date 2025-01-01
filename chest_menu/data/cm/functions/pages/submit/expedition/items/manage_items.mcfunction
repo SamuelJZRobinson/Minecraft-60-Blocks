@@ -39,4 +39,4 @@ execute if score slotItem MenuExplore matches 19 run function cm:pages/submit/ex
 scoreboard players add slotNumber MenuExplore 1
 
 # Loop Until slotNumber Is Excessive
-execute unless score slotNumber MenuExplore matches 5.. as @p[team=Playing] run function cm:pages/submit/expedition/items/manage_items
+execute unless score slotNumber MenuExplore matches 5.. as @p[Mobsteam=Player] run function cm:pages/submit/expedition/items/manage_items

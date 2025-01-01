@@ -8,10 +8,10 @@
 scoreboard players set fullSlots GameStatus 0
 
 # Remove Effects
-# execute as @p[team=Playing,nbt={ActiveEffects:[{Id:18b}]}] if score fullSlots GameStatus matches ..3 run effect clear @s weakness
+# execute as @p[Mobsteam=Player,nbt={ActiveEffects:[{Id:18b}]}] if score fullSlots GameStatus matches ..3 run effect clear @s weakness
 
 # Check Hotbar Slots 0 to 3
-execute store result score fullSlots GameStatus run clear @p[team=Playing] minecraft:saddle 0
+execute store result score fullSlots GameStatus run clear @p[Mobsteam=Player] minecraft:saddle 0
 
 # Lock Items
   # Three Slots
@@ -27,4 +27,4 @@ execute store result score fullSlots GameStatus run clear @p[team=Playing] minec
   execute as @e[type=minecraft:armor_stand,tag=scavengeItem,team=!NoRoom] at @s if entity @e[type=minecraft:slime,team=NoRoom,limit=1,sort=nearest,distance=..1] run team join NoRoom @s
 
 # Title
-execute unless score task AtomicDrill matches 1..6 if score fullSlots GameStatus matches 4 run title @p[team=Playing] actionbar {"text":"Inventory full!","color":"red","bold":true}
+execute unless score task AtomicDrill matches 1..6 if score fullSlots GameStatus matches 4 run title @p[Mobsteam=Player] actionbar {"text":"Inventory full!","color":"red","bold":true}

@@ -30,8 +30,8 @@ function mc:states/1_factory_reset/set/set_bundles
   # Allow Event Outcome
   scoreboard players set submit MenuEvent 1
   # Give New Event
-  clear @p[team=Playing] minecraft:written_book{dailyStory:1b}
-  execute if score event MenuEvent matches 1.. as @p[team=Playing] run function cm:pages/page_3/menus/menu_events
+  clear @p[Mobsteam=Player] minecraft:written_book{dailyStory:1b}
+  execute if score event MenuEvent matches 1.. as @p[Mobsteam=Player] run function cm:pages/page_3/menus/menu_events
   # Reset Scores
   scoreboard players set event MenuEvent 0
   scoreboard players set choice MenuEvent 0

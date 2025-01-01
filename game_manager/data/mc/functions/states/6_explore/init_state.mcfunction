@@ -2,7 +2,7 @@
   # Fake blindess must give outfits since it may override what other scripts give with time disparities.
 
 # Effect
-execute as @p[team=Playing] run function mc:utility/effects/effects_default
+execute as @p[Mobsteam=Player] run function mc:utility/effects/effects_default
 tellraw @a "state 6"
 
 # Run Timer

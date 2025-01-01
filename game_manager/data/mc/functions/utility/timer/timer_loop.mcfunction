@@ -5,7 +5,7 @@
 scoreboard players remove seconds TimerCountdown 1
 
 # Alert
-execute as @p[team=Playing] run function mc:utility/timer/alert
+execute as @p[Mobsteam=Player] run function mc:utility/timer/alert
 
 # State Sync
 execute if score state GameStatus matches 9 run function mc:states/9_expedition/timer/timer_loop

@@ -5,4 +5,4 @@ kill @e[type=minecraft:experience_orb]
 # Instant Item Pickup
 execute as @e[type=minecraft:item,tag=!fastPickup] run data modify entity @s PickupDelay set value 0
 tag @e[type=item] add fastPickup
-teleport @e[type=minecraft:item] @p[team=Playing]
+teleport @e[type=minecraft:item] @p[Mobsteam=Player]

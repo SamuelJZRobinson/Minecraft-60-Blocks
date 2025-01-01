@@ -54,4 +54,4 @@
 #   function mc:utility/tp/tp_bunker
 
 #   # Remove Blindness
-#   effect clear @p[team=Playing]
+#   effect clear @p[Mobsteam=Player]

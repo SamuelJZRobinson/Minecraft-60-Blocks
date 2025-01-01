@@ -25,8 +25,8 @@
   execute if score shelterDefences GameStatistics > shelterDefences Highscores run scoreboard players operation shelterDefences Highscores = shelterDefences GameStatistics
 
 # Declare New Highscore
-execute if score newHighscore Highscores matches 1 run tellraw @p[team=Playing] {"text":"New Highscore!","bold":true,"color":"yellow"}
-execute if score newHighscore Highscores matches 1 at @p[team=Playing] run summon firework_rocket ^ ^2 ^1 {LifeTime:0,FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Colors:[I;14602026]}],Flight:1}}}}
+execute if score newHighscore Highscores matches 1 run tellraw @p[Mobsteam=Player] {"text":"New Highscore!","bold":true,"color":"yellow"}
+execute if score newHighscore Highscores matches 1 at @p[Mobsteam=Player] run summon firework_rocket ^ ^2 ^1 {LifeTime:0,FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Colors:[I;14602026]}],Flight:1}}}}
 
 # Set Scores
 scoreboard players set newHighscore Highscores 0

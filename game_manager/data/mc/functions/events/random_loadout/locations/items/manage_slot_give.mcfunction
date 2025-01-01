@@ -43,4 +43,4 @@ execute if score slotNumber MenuExplore matches 5 run scoreboard players add sta
 execute if score slotNumber MenuExplore matches 5 run schedule schedule function mc:states/9_expedition/place/manage_placement 1t replace 1t
 
 # Loop
-execute if score slotNumber MenuExplore matches 1..4 as @p[team=Playing] run function mc:events/random_loadout/locations/items/manage_slot_give
+execute if score slotNumber MenuExplore matches 1..4 as @p[Mobsteam=Player] run function mc:events/random_loadout/locations/items/manage_slot_give

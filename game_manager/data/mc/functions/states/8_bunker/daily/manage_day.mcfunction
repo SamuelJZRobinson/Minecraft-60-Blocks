@@ -1,5 +1,5 @@
 # Chest Menu
-scoreboard players set @p[team=Playing] MenuMain 0
+scoreboard players set @p[Mobsteam=Player] MenuMain 0
 
 # Count Bunker Contents
 function mc:states/8_bunker/cosmetics/characters/count/count_family

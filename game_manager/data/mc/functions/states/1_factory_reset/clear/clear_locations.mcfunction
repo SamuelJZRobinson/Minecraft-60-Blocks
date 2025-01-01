@@ -11,7 +11,7 @@ function mc:states/1_factory_reset/clear/clear_locations_house
 function mc:states/1_factory_reset/clear/clear_locations_bunker
 
 # Expedition
-kill @e[team=Enemy]
+kill @e[Mobs]
 
 # Enable Mob Loot
 gamerule doMobLoot true

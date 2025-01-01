@@ -9,5 +9,5 @@ execute if score mapVisited MenuExplore matches 7 run spreadplayers -129.00 -125
 execute if score mapVisited MenuExplore matches 8 run spreadplayers -0.00 -125.00 7 56 under 298 false @s
 
 # Loop
-execute as @e[team=Enemy] at @s if entity @p[team=Playing,distance=..24] run function mc:events/random_loadout/locations/items/tp_enemy_fix
-execute as @e[team=Item] at @s if entity @p[team=Playing,distance=..24] run function mc:events/random_loadout/locations/items/tp_entity_fix
+execute as @e[Mobs] at @s if entity @p[Mobsteam=Player,distance=..24] run function mc:events/random_loadout/locations/items/tp_enemy_fix
+execute as @e[team=Item] at @s if entity @p[Mobsteam=Player,distance=..24] run function mc:events/random_loadout/locations/items/tp_entity_fix

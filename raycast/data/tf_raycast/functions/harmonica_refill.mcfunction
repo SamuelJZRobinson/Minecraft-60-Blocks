@@ -1,1 +1,1 @@
-loot give @p[team=Playing] loot lt_custom:empty/harmonica_ammo
+loot give @p[Mobsteam=Player] loot lt_custom:empty/harmonica_ammo

@@ -12,7 +12,7 @@ execute as @e[team=Item] run data modify entity @s Invulnerable set value 0b
 # gamerule naturalRegeneration false
 
 # Effects
-# execute as @p[team=Playing] run function mc:states/9_expedition/place/player/effects/manage_effects
+# execute as @p[Mobsteam=Player] run function mc:states/9_expedition/place/player/effects/manage_effects
 
 # Titles
 # title @a times 10 20 10

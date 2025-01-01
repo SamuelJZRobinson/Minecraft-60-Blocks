@@ -1,5 +1,5 @@
 # Give Outfit
-execute as @p[team=Playing] run function mc:utility/outfit/manage_house_outfit
+execute as @p[Mobsteam=Player] run function mc:utility/outfit/manage_house_outfit
 
 # Effects
 effect clear @s slowness
