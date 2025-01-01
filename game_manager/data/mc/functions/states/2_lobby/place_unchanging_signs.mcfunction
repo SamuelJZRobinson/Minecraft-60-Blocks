@@ -12,7 +12,7 @@
   # Checkers
   setblock 20 130 0 spruce_wall_sign[facing=east]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Checkers","bold":true}','{"text":"1 Slot","italic":true}','{"text":"Good for sanity"}','{"text":"& trades"}']}} destroy
   # Flashlight
-  setblock 20 130 -1 spruce_wall_sign[facing=east]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Flashlight","bold":true}','{"text":"1 Slot","italic":true}','{"text":"Brightens areas"}','{"text":"& finds rescue"}']}} destroy
+  setblock 20 130 -1 spruce_wall_sign[facing=east]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"/flashlight","bold":true}','{"text":"1 Slot","italic":true}','{"text":"Brightens areas"}','{"text":"& finds rescue"}']}} destroy
   # Gas Mask
   setblock 20 130 -2 spruce_wall_sign[facing=east]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Gas Mask","bold":true}','{"text":"1 Slot","italic":true}','{"text":"Reduces radiation"}','{"text":"sickness"}']}} destroy
   # Gun
@@ -28,24 +28,24 @@
   # Radio
   setblock 22 130 1 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Radio","bold":true}','{"text":"1 Slot","italic":true}','{"text":"Good for sanity"}','{"text":"& rescue"}']}} destroy
   # Soup Can
-  setblock 22 130 2 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Soup Can","bold":true}','{"text":"1 Slot","italic":true}','{"text":"Restores hunger"}','{"text":"for 10 days"}']}} destroy
+  setblock 22 130 2 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Soup Can","bold":true}','{"text":"1 Slot","italic":true}','{"text":"Restores hunger"}','{"text":"/for 10 days"}']}} destroy
   # Suitcase
   setblock 22 130 3 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Suitcase","bold":true}','{"text":"3 Slots","italic":true}','{"text":"Takes three items"}','{"text":"to the surface"}']}} destroy
   # Water Bottle
-  setblock 22 130 4 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Water Bottle","bold":true}','{"text":"1 Slot","italic":true}','{"text":"Restores thirst"}','{"text":"for 5 days"}']}} destroy
+  setblock 22 130 4 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Water Bottle","bold":true}','{"text":"1 Slot","italic":true}','{"text":"Restores thirst"}','{"text":"/for 5 days"}']}} destroy
   # Body Armour
   setblock 22 130 5 spruce_wall_sign[facing=west]{front_text: {color: "light_blue", has_glowing_text: 1b, messages: ['{"text":"Body Armour","bold":true}','{"text":"3 Slots","italic":true}','{"text":"Protects against"}','{"text":"bandit ambushes"}']}} destroy
 
 # Extra Info
   # Highscores
-  setblock 20 132 -3 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Highscores","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/2_lobby/show/show_highscores"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
+  setblock 20 132 -3 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Highscores","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"/function mc:states/2_lobby/show/show_highscores"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
   # Ideal Settings
-  setblock 21 132 -3 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Ideal Settings","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/2_lobby/show/show_settings"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
+  setblock 21 132 -3 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Ideal Settings","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"/function mc:states/2_lobby/show/show_settings"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
   # Resource Pack
-  setblock 22 132 -3 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Resource Pack","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/2_lobby/show/show_resource_pack_url"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
+  setblock 22 132 -3 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Resource Pack","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"/function mc:states/2_lobby/show/show_resource_pack_url"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
   
 # Developer Info
-  # Game Creator
-  setblock 20 132 -8 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Original Dev","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/2_lobby/show/show_store_url"}}','{"text":"Robot Gentleman"}','{"text":""}','{"text":""}']}} destroy
+  # Based On
+  setblock 20 132 -8 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Based On","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"/function mc:states/2_lobby/show/show_store_url"}}','{"text":"60 Seconds by"}','{"text":"Robot Gentleman"}','{"text":""}']}} destroy
   # Credits
-  setblock 22 132 -8 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Credits","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/2_lobby/show/show_credits"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
+  setblock 22 132 -8 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Credits","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"/function mc:states/2_lobby/show/show_credits"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy

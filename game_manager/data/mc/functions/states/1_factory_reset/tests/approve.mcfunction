@@ -7,9 +7,6 @@ function mc:states/1_factory_reset/set/set_bundles
 function mc:states/1_factory_reset/clear/clear_locations
 function mc:states/1_factory_reset/set/set_players
 
-# Remove Lobby Items
-kill @e[tag=lobbyItem]
-
 # Proceed
 schedule function mc:states/inc_state 1t replace
 

@@ -1,17 +1,11 @@
+# Clone Bunker
+clone 81 8 54 73 1 43 -4 53 25
+
 # Disable Mob Loot
 gamerule doMobLoot false
 
-# Clear Entities
-### CONSIDER HAVING GLOBAL bunkerEntity TAG TO DELETE ALL AT ONCE
-
-# House (Temp)
-function mc:states/1_factory_reset/clear/clear_locations_house
-
-# Bunker (Temp)
-function mc:states/1_factory_reset/clear/clear_locations_bunker
-
-# Expedition
-kill @e[Mobs]
+# Kill Non-Player Entities
+kill @e[type=!player,type=!item_frame]
 
 # Enable Mob Loot
 gamerule doMobLoot true
