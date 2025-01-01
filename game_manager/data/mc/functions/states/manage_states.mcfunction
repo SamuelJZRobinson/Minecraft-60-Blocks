@@ -1,7 +1,7 @@
 execute if score state GameStatus matches 1 run function mc:states/1_factory_reset/init_state
 execute if score state GameStatus matches 2 run function mc:states/2_lobby/init_state
 execute if score state GameStatus matches 3 run function mc:states/3_start_request/init_state
-execute if score state GameStatus matches 4 run function mc:states/4_setup_house/init_state
+execute if score state GameStatus matches 4 run function mc:states/4_setup/init_state
 execute if score state GameStatus matches 5 run function mc:states/4a_atomic_drill/init_state
 execute if score state GameStatus matches 6 run function mc:states/5_grace_period/init_state
 execute if score state GameStatus matches 7 run function mc:states/6_scavenge_house/init_state

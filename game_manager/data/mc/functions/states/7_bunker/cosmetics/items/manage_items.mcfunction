@@ -20,7 +20,7 @@
   execute if score cards ItemsBunker matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerCards] run function mc:states/7_bunker/cosmetics/items/spawn/spawn_cards
   execute as @e[type=minecraft:armor_stand,tag=bunkerCards,limit=1] at @s run function mc:states/7_bunker/cosmetics/items/update/update_cards
   # Checkers
-  execute if score checkers ItemsBunker matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerCheckers] run function mc:states/7_bunker/cosmetics/items/spawn/spawn_checkers
+  execute if score checkers ItemsBunker matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerCheckers] run function mc:states/7_bunker/cosmetics/items/spawn/spawn_markers
   execute as @e[type=minecraft:armor_stand,tag=bunkerCheckers,limit=1] at @s run function mc:states/7_bunker/cosmetics/items/update/update_checkers
   # Flashlight
   execute if score flashlight ItemsBunker matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerFlashlight] run function mc:states/7_bunker/cosmetics/items/spawn/spawn_flashlight

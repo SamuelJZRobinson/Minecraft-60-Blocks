@@ -5,7 +5,7 @@
   execute if score itemId CheckItems matches 3 run function mc:utility/scavenge/items/spawn/spawn_boy_scout_handbook
   execute if score itemId CheckItems matches 4 run function mc:utility/scavenge/items/spawn/spawn_bug_spray
   execute if score itemId CheckItems matches 5 run function mc:utility/scavenge/items/spawn/spawn_cards
-  execute if score itemId CheckItems matches 6 run function mc:utility/scavenge/items/spawn/spawn_checkers
+  execute if score itemId CheckItems matches 6 run function mc:utility/scavenge/items/spawn/spawn_markers
   execute if score itemId CheckItems matches 7 run function mc:utility/scavenge/items/spawn/spawn_flashlight
   execute if score itemId CheckItems matches 8 run function mc:utility/scavenge/items/spawn/spawn_gas_mask
   execute if score itemId CheckItems matches 9 run function mc:utility/scavenge/items/spawn/spawn_gun
