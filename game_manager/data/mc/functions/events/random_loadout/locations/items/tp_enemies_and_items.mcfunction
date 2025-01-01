@@ -17,5 +17,5 @@ execute if score mapVisited MenuExplore matches 8 run spreadplayers -0.00 -125.0
 execute if score mapVisited MenuExplore matches 8 run spreadplayers -0.00 -125.00 12 56 under 298 false @e[type=minecraft:slime,team=Item]
 
 # Remove Nearby Enemies
-execute as @e[Mobs] at @s if entity @p[Mobsteam=Player,distance=..24] run function mc:events/random_loadout/locations/items/tp_entity_fix
-execute as @e[team=Item] at @s if entity @p[Mobsteam=Player,distance=..24] run function mc:events/random_loadout/locations/items/tp_entity_fix
+execute as @e[Mobs] at @s if entity @p[team=Player,distance=..24] run function mc:events/random_loadout/locations/items/tp_entity_fix
+execute as @e[team=Item] at @s if entity @p[team=Player,distance=..24] run function mc:events/random_loadout/locations/items/tp_entity_fix

@@ -12,7 +12,7 @@
   execute if score bunkerSide GameStatus matches 1 run setblock 10 64 -7 red_shulker_box{CustomName:'{"text":"Salvage Crate"}'} destroy
 
 # Copy Hotbar
-execute if score fullSlots GameStatus matches 1.. as @p[Mobsteam=Player] at @s run function mc:utility/scavenge/collect/inventory/get_hotbar
+execute if score fullSlots GameStatus matches 1.. as @p[team=Player] at @s run function mc:utility/scavenge/collect/inventory/get_hotbar
 
 # Hide Inventory Capacity Warning
 title @s actionbar ""

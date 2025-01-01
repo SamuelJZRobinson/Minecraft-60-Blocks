@@ -1,7 +1,7 @@
 # Playing
 execute store result score playingAliveCount PlayerCount run team list Playing
-execute if score playingAliveCount PlayerCount > PLAYER_LIMIT PlayerCount run team leave @r[Mobsteam=Player]
-gamemode adventure @a[name=!"BlackeyeI",gamemode=!adventure,Mobsteam=Player]
+execute if score playingAliveCount PlayerCount > PLAYER_LIMIT PlayerCount run team leave @r[team=Player]
+gamemode adventure @a[name=!"BlackeyeI",gamemode=!adventure,team=Player]
 
 # Lobby
 team join Lobby @a[team=!Lobby,team=!Playing,team=!Enemy]

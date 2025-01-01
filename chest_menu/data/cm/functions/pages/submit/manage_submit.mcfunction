@@ -30,14 +30,14 @@ function mc:states/1_factory_reset/set/set_bundles
   # Allow Event Outcome
   scoreboard players set submit MenuEvent 1
   # Give New Event
-  clear @p[Mobsteam=Player] minecraft:written_book{dailyStory:1b}
-  execute if score event MenuEvent matches 1.. as @p[Mobsteam=Player] run function cm:pages/page_3/menus/menu_events
+  clear @p[team=Player] minecraft:written_book{dailyStory:1b}
+  execute if score event MenuEvent matches 1.. as @p[team=Player] run function cm:pages/page_3/menus/menu_events
   # Reset Scores
   scoreboard players set event MenuEvent 0
   scoreboard players set choice MenuEvent 0
   scoreboard players set submit MenuEvent 0
 
 # Declare New Day
-schedule function mc:states/8_bunker/daily/manage_day 1t replace
+schedule function mc:states/7_bunker/daily/manage_day 1t replace
 execute if score task AtomicDrill matches 12.. if score doPovExpedition Settings matches 0 run scoreboard players set stage AtomicDrill 2
 execute if score task AtomicDrill matches 12.. if score doPovExpedition Settings matches 1 unless score task AtomicDrill matches 15 run scoreboard players set stage AtomicDrill 2
