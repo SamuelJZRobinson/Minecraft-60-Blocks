@@ -2,7 +2,7 @@
   # State Sync loop will create a chain reaction with incrementing states unless call order is reversed.
 
 # Decrease Time
-scoreboard players remove seconds Timer 1
+scoreboard players remove seconds TimerCountdown 1
 
 # Alert
 execute as @p[team=Playing] run function mc:utility/timer/alert
@@ -13,4 +13,4 @@ execute if score state GameStatus matches 7 run function mc:states/7_scavenge/ti
 execute if score state GameStatus matches 6 run function mc:states/6_explore/timer/timer_loop
 
 # Loop
-execute unless score seconds Timer matches -1 run schedule function mc:utility/timer/timer_loop 1s
+execute unless score seconds TimerCountdown matches -1 run schedule function mc:utility/timer/timer_loop 1s

@@ -1,7 +1,7 @@
 # Set Time
-scoreboard players set seconds Timer 60
-scoreboard players set alertInterval Timer 0
-scoreboard players set hornInterval Timer 9
+scoreboard players set seconds TimerCountdown 60
+scoreboard players set alertInterval TimerCountdown 0
+scoreboard players set hornInterval TimerCountdown 9
 
 # Set Objective
 scoreboard objectives setdisplay sidebar Scavenge

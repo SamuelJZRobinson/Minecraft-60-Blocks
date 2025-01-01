@@ -1,12 +1,12 @@
-# OPEN SHULKER
+# Salvage Chest
 scoreboard objectives add OpenShulkerBox minecraft.custom:minecraft.open_shulker_box {"bold":true,"color":"white","text":"Open Shulker Box"}
 scoreboard players reset * OpenShulkerBox
 
-# HOUSE
+# House
 scoreboard objectives add ItemsHouse dummy {"bold":true,"color":"white","text":"Items House"}
 scoreboard objectives add ItemsHouseHigh dummy {"bold":true,"color":"white","text":"Items House High"}
 
-# BUNKER
+# Bunker
   scoreboard objectives add ItemsBunker dummy {"bold":true,"color":"white","text":"Items Bunker"}
   # Official
   scoreboard players set ammo ItemsBunker 0
@@ -38,8 +38,7 @@ scoreboard objectives add ItemsHouseHigh dummy {"bold":true,"color":"white","tex
   scoreboard players set itemsTotal CheckItems 0
   scoreboard players set destroyItemFails CheckItems 0
 
-### Is this still necessary?
-# REAL COUNT
+# Real Count
 scoreboard objectives add RealCount dummy {"bold":true,"color":"white","text":"Real Count"}
 # Math
 scoreboard players set MULTIPLIER RealCount 25

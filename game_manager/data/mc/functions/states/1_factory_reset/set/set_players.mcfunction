@@ -1,16 +1,14 @@
-# Inventory
+# Clear Stuff
 clear @a
 xp set @a 0 levels
-
-# Advancements
 advancement revoke @a everything
-
-# Teams
-team empty Playing
 
 # Titles
 title @a clear
 title @a actionbar ""
+
+# Teams
+team empty Playing
 
 # Scoreboards
 scoreboard objectives setdisplay sidebar
