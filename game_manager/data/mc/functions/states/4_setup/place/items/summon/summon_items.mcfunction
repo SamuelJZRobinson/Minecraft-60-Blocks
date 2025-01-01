@@ -25,6 +25,9 @@ function mc:states/4_setup/place/items/summon/summon_waters
 # Custom Items
 function mc:states/4_setup/place/items/summon/summon_armour
 
+# Tag Items
+tag @e[type=slime,team=Items] add unassigned
+
 # Step
 function mc:states/4_setup/place/items/inc_step
 schedule function mc:states/4_setup/place/items/manage_items 1t

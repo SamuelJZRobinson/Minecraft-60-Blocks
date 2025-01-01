@@ -1,4 +1,4 @@
-# Notes
+s# Notes
   # The time delay for subsequent scripts is equal to the schedule multiplied by 6
 
 # Increment Score
@@ -14,7 +14,7 @@ execute if score rotate MenuExplore matches 5 at @e[type=minecraft:armor_stand,t
 # Kill Entities
 execute as @e[type=minecraft:slime] run data modify entity @s Size set value 0
 kill @e[Mobs]
-kill @e[team=Item]
+kill @e[team=Items]
 kill @e[type=slime]
 
 # Final

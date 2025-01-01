@@ -6,6 +6,7 @@ gamerule doMobLoot false
 
 # Kill Non-Player Entities
 kill @e[type=!player,type=!item_frame]
+kill @e[type=item_frame,tag=prop]
 
 # Enable Mob Loot
 gamerule doMobLoot true

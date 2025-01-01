@@ -13,11 +13,11 @@ execute if score room ItemsHouse matches 5.. run scoreboard players set room Ite
 function mc:states/4_setup/place/items/tag/tag_rooms_special
 
 # Target Item
-execute if score giveItem ItemsHouse matches 1 as @e[type=minecraft:slime,limit=1,x=24,y=69,z=-6,dy=1,tag=scavengeAmmo] run function mc:states/4_setup/place/items/tag/tag_items_special_1
-execute if score giveItem ItemsHouse matches 2 as @e[type=minecraft:slime,limit=1,x=24,y=69,z=-6,dy=1,tag=scavengeAxe] run function mc:states/4_setup/place/items/tag/tag_items_special_1
-execute if score giveItem ItemsHouse matches 3 as @e[type=minecraft:slime,limit=1,x=24,y=69,z=-6,dy=1,tag=scavengeGun] run function mc:states/4_setup/place/items/tag/tag_items_special_1
-execute if score giveItem ItemsHouse matches 4 as @e[type=minecraft:slime,limit=1,x=24,y=69,z=-6,dy=1,tag=scavengeBugSpray] run function mc:states/4_setup/place/items/tag/tag_items_special_2
-execute if score giveItem ItemsHouse matches 5 as @e[type=minecraft:slime,limit=1,x=24,y=69,z=-6,dy=1,tag=scavengeMedkit] run function mc:states/4_setup/place/items/tag/tag_items_special_2
+execute if score giveItem ItemsHouse matches 1 as @e[type=minecraft:slime,limit=1,team=Items,tag=scavengeAmmo,tag=unassigned] run function mc:states/4_setup/place/items/tag/tag_items_special_1
+execute if score giveItem ItemsHouse matches 2 as @e[type=minecraft:slime,limit=1,team=Items,tag=scavengeAxe,tag=unassigned] run function mc:states/4_setup/place/items/tag/tag_items_special_1
+execute if score giveItem ItemsHouse matches 3 as @e[type=minecraft:slime,limit=1,team=Items,tag=scavengeGun,tag=unassigned] run function mc:states/4_setup/place/items/tag/tag_items_special_1
+execute if score giveItem ItemsHouse matches 4 as @e[type=minecraft:slime,limit=1,team=Items,tag=scavengeBugSpray,tag=unassigned] run function mc:states/4_setup/place/items/tag/tag_items_special_2
+execute if score giveItem ItemsHouse matches 5 as @e[type=minecraft:slime,limit=1,team=Items,tag=scavengeMedkit,tag=unassigned] run function mc:states/4_setup/place/items/tag/tag_items_special_2
 
 # Adjust Scores
 scoreboard players remove itemCount ItemsHouse 1

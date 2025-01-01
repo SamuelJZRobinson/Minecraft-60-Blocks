@@ -5,11 +5,13 @@ execute if score room ItemsHouse matches 2 if score hallwaySoup ItemsHouse match
 # Tag Room Items
   # Kitchen
   execute if score room ItemsHouse matches 1 run tag @s add kitchen
+  execute if score room ItemsHouse matches 1 run tag @s remove unassigned
   execute if score room ItemsHouse matches 1 run teleport @s @e[type=marker,limit=1,sort=random,tag=kitchen,tag=floor]
   execute if score room ItemsHouse matches 1 run scoreboard players remove kitchenSoup ItemsHouse 1
   execute if score room ItemsHouse matches 1 run scoreboard players remove kitchen ItemsHouse 1
   # Hallway
   execute if score room ItemsHouse matches 2 run tag @s add hallway
+  execute if score room ItemsHouse matches 2 run tag @s remove unassigned
   execute if score room ItemsHouse matches 2 run teleport @s @e[type=marker,limit=1,sort=random,tag=hallway,tag=floor]
   execute if score room ItemsHouse matches 2 run scoreboard players remove hallwaySoup ItemsHouse 1
   execute if score room ItemsHouse matches 2 run scoreboard players remove hallway ItemsHouse 1

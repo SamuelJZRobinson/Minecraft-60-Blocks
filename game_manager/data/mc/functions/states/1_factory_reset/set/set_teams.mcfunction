@@ -1,15 +1,16 @@
 # Player
   # Lobby
-  team add Lobby "Lobby"
+  team empty Lobby
+  team add Lobby
   team modify Lobby collisionRule never
   team modify Lobby color gray
   team modify Lobby deathMessageVisibility never
   team modify Lobby friendlyFire false
   team modify Lobby nametagVisibility always
   team modify Lobby seeFriendlyInvisibles true
-  team join Lobby @a
   # Player
-  team add Player "Player"
+  team empty Player
+  team add Player
   team modify Player collisionRule always
   team modify Player color green
   team modify Player deathMessageVisibility always
@@ -18,24 +19,17 @@
   team modify Player seeFriendlyInvisibles false
 
 # Item
-  # Item Unassigned
-  team add Item "ItemUnassigned"
-  team modify Item collisionRule never
-  team modify Item color white
-  team modify Item deathMessageVisibility never
-  team modify Item friendlyFire false
-  team modify Item nametagVisibility always
-  team modify Item seeFriendlyInvisibles false
-  # Item
-  team add Item "Item"
-  team modify Item collisionRule never
-  team modify Item color white
-  team modify Item deathMessageVisibility never
-  team modify Item friendlyFire false
-  team modify Item nametagVisibility always
-  team modify Item seeFriendlyInvisibles false
+  # Items
+  team empty Items
+  team add Items
+  team modify Items collisionRule never
+  team modify Items color white
+  team modify Items deathMessageVisibility never
+  team modify Items friendlyFire false
+  team modify Items nametagVisibility always
+  team modify Items seeFriendlyInvisibles false
   # Item NoRoom
-  team add NoRoom "NoRoom"
+  team add NoRoom
   team modify NoRoom collisionRule never
   team modify NoRoom color red
   team modify NoRoom deathMessageVisibility never
@@ -44,7 +38,8 @@
   team modify NoRoom seeFriendlyInvisibles true
 
 # Markers
-team add Marker "Marker"
+team empty Marker
+team add Marker
 team modify Marker collisionRule never
 team modify Marker color yellow
 team modify Marker deathMessageVisibility never
@@ -53,7 +48,8 @@ team modify Marker nametagVisibility always
 team modify Marker seeFriendlyInvisibles false
 
 # Mobs
-team add Mobs "Mobs"
+team empty Mobs
+team add Mobs
 team modify Mobs collisionRule always
 team modify Mobs color black
 team modify Mobs deathMessageVisibility never
