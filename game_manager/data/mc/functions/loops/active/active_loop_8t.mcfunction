@@ -1,6 +1,6 @@
 # Cosmetics And Particles
 ### Enable when random revamp is implemented to avoid annoyance
-# execute if score state GameStatus matches 8 run function mc:states/stages/8_bunker/cosmetics/bunker/update/update_blackout
+# execute if score state GameStatus matches 8 run function mc:states/8_bunker/cosmetics/bunker/update/update_blackout
 execute if score state GameStatus matches 5..8 run function mc:utility/particles/manage_particles_markers
 execute if score state GameStatus matches 8 run function mc:utility/particles/manage_particles_bunker
 
@@ -18,5 +18,5 @@ execute if score state GameStatus matches 8 run function mc:utility/particles/ma
 
 # Expedition
   # Map Update
-  execute if score state GameStatus matches 9 run function mc:states/stages/9_expedition/place/items/update/update_items
+  execute if score state GameStatus matches 9 run function mc:states/9_expedition/place/items/update/update_items
   execute if score state GameStatus matches 9 as @e[type=slime,team=!Enemy,team=!Item,team=!NoRoom] run team join Enemy @s

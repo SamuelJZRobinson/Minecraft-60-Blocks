@@ -1,1 +1,0 @@
-data merge block 21 130 7 {front_text:{color:"brown",has_glowing_text:1b,messages:['{"text":"Start Game","color":"green","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"function mc:states/stages/2_lobby/set/set_start"}}','{"text":""}','{"text":""}','{"text":""}']}}
