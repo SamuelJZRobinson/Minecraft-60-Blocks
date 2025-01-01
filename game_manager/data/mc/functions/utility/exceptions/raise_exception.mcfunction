@@ -6,4 +6,4 @@ function mc:sounds/error
 scoreboard players set testsFailed Exception 1
 scoreboard players set doException Exception 1
 scoreboard players set started GameStatus 0
-schedule function mc:error_handling/reset_exception 5t replace
+schedule function mc:utility/exceptions/reset_exception 5t replace

@@ -1,2 +1,2 @@
 execute if score gamemode Settings matches 1 run data modify storage minecraft:messages message set value "Cannot restart scavenge, running atomic drill!"
-execute if score gamemode Settings matches 1 run function mc:error_handling/raise_warning
+execute if score gamemode Settings matches 1 run function mc:utility/exceptions/raise_warning
