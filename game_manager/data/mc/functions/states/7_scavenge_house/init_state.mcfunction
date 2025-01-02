@@ -4,7 +4,8 @@ tellraw @a "state 7"
 scoreboard players set music GameStatus 1
 
 # Enable Item Damage
-execute as @e[team=Items] run data modify entity @s Invulnerable set value 0b
+execute as @e[type=slime,tag=scavengeItem] run data modify entity @s Invulnerable set value 0b
+execute as @e[type=zombie,tag=character] run data modify entity @s Invulnerable set value 0b
 
 # Titles
 title @a times 10t 20t 10t
