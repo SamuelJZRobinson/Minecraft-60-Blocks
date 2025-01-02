@@ -1,5 +1,5 @@
 # Set Scores
-scoreboard players set lockInventory GameStatus 1
+scoreboard players set mode PlayerLockInventory 1
 
 # Load Floorplan 1
 function mc:states/4_setup/place/floorplans/clone/clone_fp_1

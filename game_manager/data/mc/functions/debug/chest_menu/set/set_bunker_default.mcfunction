@@ -17,7 +17,7 @@ scoreboard players set doPovExpedition Settings 1
   # Atomic Drill
   # scoreboard players set task AtomicDrill 12
   # scoreboard players set stage AtomicDrill 0
-  # scoreboard players set lockInventory GameStatus 3
+  # scoreboard players set mode PlayerLockInventory 3
 
 # Alerts
 scoreboard players set banditAlert MenuExplore 1

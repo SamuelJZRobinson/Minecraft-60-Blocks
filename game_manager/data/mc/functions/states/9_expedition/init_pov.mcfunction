@@ -1,5 +1,5 @@
 # Set Scores
-scoreboard players set lockInventory GameStatus 2
+scoreboard players set mode PlayerLockInventory 2
 scoreboard players set music GameStatus 2
 scoreboard players reset * PlayerDeaths
 

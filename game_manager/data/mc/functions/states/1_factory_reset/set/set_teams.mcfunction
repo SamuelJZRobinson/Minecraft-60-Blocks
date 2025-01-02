@@ -3,7 +3,7 @@
   team empty Lobby
   team add Lobby
   team modify Lobby collisionRule never
-  team modify Lobby color gray
+  team modify Lobby color dark_purple
   team modify Lobby deathMessageVisibility never
   team modify Lobby friendlyFire false
   team modify Lobby nametagVisibility always

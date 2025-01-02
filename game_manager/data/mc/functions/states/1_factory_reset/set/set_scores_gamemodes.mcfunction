@@ -7,8 +7,7 @@
 
 # Player Count
 scoreboard objectives add PlayerCount dummy {"bold":true,"color":"white","text":"Player Count"}
-scoreboard players set PLAYER_LIMIT PlayerCount 1
-scoreboard players set playingAliveCount PlayerCount 0
+scoreboard players set playerAliveCount PlayerCount 0
 scoreboard players set lobbyAliveCount PlayerCount 0
 
 # Timers

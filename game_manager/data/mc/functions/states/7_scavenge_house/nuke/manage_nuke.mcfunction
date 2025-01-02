@@ -18,4 +18,4 @@ execute if score nukeSurvived GameStatus matches 1 run function mc:states/7_scav
 execute if score nukeSurvived GameStatus matches 0 run function mc:states/7_scavenge_house/nuke/nuke_dead
 
 # Unlock Inventory
-scoreboard players set lockInventory GameStatus 0
+scoreboard players set mode PlayerLockInventory 0

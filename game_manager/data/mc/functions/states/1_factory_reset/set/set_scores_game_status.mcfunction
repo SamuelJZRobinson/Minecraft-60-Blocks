@@ -5,9 +5,11 @@ scoreboard players set started GameStatus 0
 scoreboard players set state GameStatus 1
 # Player
 scoreboard players set music GameStatus 0
-scoreboard players set lockedSlots GameStatus 0
-scoreboard players set lockedSlotsMax GameStatus 0
-scoreboard players set lockInventory GameStatus 0
+# Lock Inventory
+scoreboard objectives add PlayerLockInventory dummy {"bold":true,"color":"white","text":"Player Lock Inventory"}
+scoreboard players set lockedSlots PlayerLockInventory 0
+scoreboard players set lockedSlotsMax PlayerLockInventory 0
+scoreboard players set mode PlayerLockInventory 0
 # Scavenge Nuke
 scoreboard players set nukeSurvived GameStatus 0
 # Character
