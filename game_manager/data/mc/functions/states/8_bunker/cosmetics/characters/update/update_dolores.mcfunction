@@ -90,7 +90,7 @@
 
 # Decorate Bunker
   # Spawn
-  execute if score alive DoloresStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerDolores] run function mc:states/8_bunker/cosmetics/characters/spawn/spawn_dolores
+  execute if score alive DoloresStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerDolores] run function mc:states/8_bunker/cosmetics/characters/summon/summon_dolores
   # Simplify Status Text Checks
   # Values with single tests include: fatigued, crazy, sick, and tired
   execute if score soup DoloresStatus > HUNGER_MID StatusLevels run scoreboard players set soupLevel DoloresStatus 0

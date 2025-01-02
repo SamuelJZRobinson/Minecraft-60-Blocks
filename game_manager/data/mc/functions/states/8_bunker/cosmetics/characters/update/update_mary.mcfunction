@@ -17,6 +17,6 @@ execute if score mutated MaryStatus matches 0 run function mc:states/8_bunker/co
 
 # Decorate Bunker
   # Spawn
-  execute if score alive MaryStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerMary] run function mc:states/8_bunker/cosmetics/characters/spawn/spawn_mary
+  execute if score alive MaryStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerMary] run function mc:states/8_bunker/cosmetics/characters/summon/summon_mary
   # Update Death
   execute if score alive MaryStatus matches 0 as @e[type=minecraft:armor_stand,tag=bunkerMary] run function mc:states/8_bunker/cosmetics/characters/update/update_mary_dead

@@ -1,0 +1,1 @@
+particle smoke ~ ~ ~ 0 0.25 0 0.02 2 normal @a

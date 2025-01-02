@@ -89,7 +89,7 @@
 
 # Decorate Bunker
   # Spawn
-  execute if score alive TedStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerTed] run function mc:states/8_bunker/cosmetics/characters/spawn/spawn_ted
+  execute if score alive TedStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerTed] run function mc:states/8_bunker/cosmetics/characters/summon/summon_ted
   # Simplify Status Text Checks
   execute if score soup TedStatus > HUNGER_MID StatusLevels run scoreboard players set soupLevel TedStatus 0
   execute if score soup TedStatus <= HUNGER_MID StatusLevels if score soup TedStatus > HUNGER_MIN StatusLevels run scoreboard players set soupLevel TedStatus 1

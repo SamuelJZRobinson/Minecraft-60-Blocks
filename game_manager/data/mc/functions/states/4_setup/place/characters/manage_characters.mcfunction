@@ -9,7 +9,7 @@
   # Mary Jane
   summon minecraft:zombie 24.00 64.00 -6.50 {Silent:1b,Invulnerable:1b,Glowing:1b,CustomNameVisible:1b,DeathTime:19,DeathLootTable:"lt_custom:entities/mary",PersistenceRequired:1b,Health:1f,Tags:["houseMary","3Slot"],CustomName:'{"text":"Mary Jane"}',ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:4208422}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:2501178}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:13488091}}},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:12}}],ArmorDropChances:[0.000F,0.000F,0.000F,0.000F],Attributes:[{Name:"generic.movement_speed",Base:0},{Name:"generic.attack_damage",Base:0}]}
   # Timmy
-  function mc:states/4_setup/place/characters/spawn/spawn_timmy
+  function mc:states/4_setup/place/characters/summon/summon_timmy
 
 # Teleport Characters
   # Ted

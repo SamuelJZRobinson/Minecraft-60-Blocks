@@ -17,5 +17,5 @@
 # Extended POV
   # Mobs
   execute if score stage ItemsExpedition matches 7 if score expeditionMode Lobby matches 1 run function mc:states/9_expedition/place/mobs/set/set_enemy_count
-  execute if score stage ItemsExpedition matches 8 if score expeditionMode Lobby matches 1 run schedule function mc:states/9_expedition/place/mobs/spawn/spawn_enemies 1t replace
+  execute if score stage ItemsExpedition matches 8 if score expeditionMode Lobby matches 1 run schedule function mc:states/9_expedition/place/mobs/summon/summon_enemies 1t replace
   execute if score stage ItemsExpedition matches 9 if score expeditionMode Lobby matches 1 run function mc:events/random_loadout/locations/items/tp_entities

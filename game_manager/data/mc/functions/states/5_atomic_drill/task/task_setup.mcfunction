@@ -4,8 +4,8 @@
   execute if score task AtomicDrill matches 1 run scoreboard players set dialogue AtomicDrill 1
   execute if score task AtomicDrill matches 1 run scoreboard players set dialogueMax AtomicDrill 2
   # Create Marker
-  execute if score task AtomicDrill matches 1 positioned 22.50 64.00 -6.50 run function mc:utility/particles/spawn/spawn_marker_cross
-  execute if score task AtomicDrill matches 1 positioned 22.50 66.00 -6.50 run function mc:utility/particles/spawn/spawn_marker_arrow
+  execute if score task AtomicDrill matches 1 positioned 22.50 64.00 -6.50 run function mc:states/5_atomic_drill/summon_waypoint_cross
+  execute if score task AtomicDrill matches 1 positioned 22.50 66.00 -6.50 run function mc:states/4_setup/place/floorplans/general/summon_waypoint_arrow
   # Effects
   execute if score task AtomicDrill matches 1 run effect give @p[team=Player] speed 999999 1 true
 
@@ -14,15 +14,15 @@
   execute if score task AtomicDrill matches 2 run scoreboard players set dialogue AtomicDrill 3
   execute if score task AtomicDrill matches 2 run scoreboard players set dialogueMax AtomicDrill 4
   # Create Marker
-  execute if score task AtomicDrill matches 2 positioned 13.50 64.00 5.50 run function mc:utility/particles/spawn/spawn_marker_cross
-  execute if score task AtomicDrill matches 2 positioned 13.50 66.00 5.50 run function mc:utility/particles/spawn/spawn_marker_arrow
+  execute if score task AtomicDrill matches 2 positioned 13.50 64.00 5.50 run function mc:states/5_atomic_drill/summon_waypoint_cross
+  execute if score task AtomicDrill matches 2 positioned 13.50 66.00 5.50 run function mc:states/4_setup/place/floorplans/general/summon_waypoint_arrow
 
 # Task 3 (Find Timmy)
   # Set Dialogue
   execute if score task AtomicDrill matches 3 run scoreboard players set dialogue AtomicDrill 5
   execute if score task AtomicDrill matches 3 run scoreboard players set dialogueMax AtomicDrill 7
   # Spawn Timmy
-  execute if score task AtomicDrill matches 3 run function mc:states/4_setup/place/characters/spawn/spawn_timmy
+  execute if score task AtomicDrill matches 3 run function mc:states/4_setup/place/characters/summon/summon_timmy
   execute if score task AtomicDrill matches 3 run data modify entity @e[type=zombie,tag=houseTimmy,limit=1] Invulnerable set value 0b
 
 # Task 4 (Find Soup In Bathtub)
@@ -47,7 +47,7 @@
   execute if score task AtomicDrill matches 6 run scoreboard players set dialogueMax AtomicDrill 11
   # Create Marker
   ###execute if score task AtomicDrill matches 6 run scoreboard players set clock Timer 1
-  execute if score task AtomicDrill matches 6 run function mc:states/4_setup/place/floorplans/general/spawn_bunker_indicator
+  execute if score task AtomicDrill matches 6 run function mc:states/4_setup/place/floorplans/general/summon_bunker_indicator
 
 # Task 7 (Find Radio In Living Room Shelf)
   # Set Dialogue
@@ -74,7 +74,7 @@
   execute if score task AtomicDrill matches 9 run scoreboard players set dialogue AtomicDrill 14
   execute if score task AtomicDrill matches 9 run scoreboard players set dialogueMax AtomicDrill 14
   # Create Marker
-  execute if score task AtomicDrill matches 9 run function mc:states/4_setup/place/floorplans/general/spawn_bunker_indicator
+  execute if score task AtomicDrill matches 9 run function mc:states/4_setup/place/floorplans/general/summon_bunker_indicator
 
 # Task 10 (Scavenge House)
   # Set Dialogue
