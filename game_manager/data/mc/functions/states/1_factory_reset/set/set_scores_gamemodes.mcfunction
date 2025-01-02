@@ -15,10 +15,8 @@ scoreboard players set lobbyAliveCount PlayerCount 0
   # Countdown
   scoreboard objectives add TimerCountdown dummy {"bold":true,"color":"white","text":"Timer"}
   scoreboard players set seconds TimerCountdown 0
-  scoreboard players set COUNTDOWN_SECONDS_START TimerCountdown 5
-  scoreboard players set alertInterval TimerCountdown 0
-  scoreboard players set hornInterval TimerCountdown 8
-  scoreboard players set modulo TimerCountdown 0
+  scoreboard objectives add TimerCountdownSettings dummy {"bold":true,"color":"white","text":"Timer Countdown Settings"}
+  scoreboard players set COUNTDOWN_SECONDS_START TimerCountdownSettings 5
 
 # Atomic Drill
 scoreboard objectives add AtomicDrill dummy {"bold":true,"color":"white","text":"Atomic Drill"}

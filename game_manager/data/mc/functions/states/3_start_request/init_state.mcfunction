@@ -3,7 +3,7 @@
 
 tellraw @a "state 3"
 
-# Setup Players
+# Setup Teams
 team join Player @s
 
 # Run Tests

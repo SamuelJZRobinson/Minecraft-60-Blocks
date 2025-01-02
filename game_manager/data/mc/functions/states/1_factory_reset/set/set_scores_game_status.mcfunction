@@ -5,7 +5,6 @@ scoreboard players set started GameStatus 0
 scoreboard players set state GameStatus 1
 # Player
 scoreboard players set music GameStatus 0
-scoreboard players set fakeBlindness GameStatus 0
 scoreboard players set lockedSlots GameStatus 0
 scoreboard players set lockedSlotsMax GameStatus 0
 scoreboard players set lockInventory GameStatus 0

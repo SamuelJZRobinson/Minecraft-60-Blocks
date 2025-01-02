@@ -38,6 +38,6 @@ function mc:states/1_factory_reset/set/set_bundles
   scoreboard players set submit MenuEvent 0
 
 # Declare New Day
-schedule function mc:states/7_bunker/daily/manage_day 1t replace
+schedule function mc:states/8_bunker/daily/manage_day 1t replace
 execute if score task AtomicDrill matches 12.. if score doPovExpedition Settings matches 0 run scoreboard players set stage AtomicDrill 2
 execute if score task AtomicDrill matches 12.. if score doPovExpedition Settings matches 1 unless score task AtomicDrill matches 15 run scoreboard players set stage AtomicDrill 2

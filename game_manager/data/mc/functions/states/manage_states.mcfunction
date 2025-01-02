@@ -2,9 +2,9 @@ execute if score state GameStatus matches 1 run function mc:states/1_factory_res
 execute if score state GameStatus matches 2 run function mc:states/2_lobby/init_state
 execute if score state GameStatus matches 3 run function mc:states/3_start_request/init_state
 execute if score state GameStatus matches 4 run function mc:states/4_setup/init_state
-execute if score state GameStatus matches 5 run function mc:states/4a_atomic_drill/init_state
-execute if score state GameStatus matches 6 run function mc:states/5_grace_period/init_state
-execute if score state GameStatus matches 7 run function mc:states/6_scavenge_house/init_state
-execute if score state GameStatus matches 8 run function mc:states/7_bunker/init_state
-execute if score state GameStatus matches 9 run function mc:states/8_expedition/init_state
-execute if score state GameStatus matches 10 run function mc:states/9_gameover/init_state
+execute if score state GameStatus matches 5 run function mc:states/5_atomic_drill/init_state
+execute if score state GameStatus matches 6 run function mc:states/6_grace_period/init_state
+execute if score state GameStatus matches 7 run function mc:states/7_scavenge_house/init_state
+execute if score state GameStatus matches 8 run function mc:states/8_bunker/init_state
+execute if score state GameStatus matches 9 run function mc:states/9_expedition/init_state
+execute if score state GameStatus matches 10 run function mc:states/10_gameover/init_state
