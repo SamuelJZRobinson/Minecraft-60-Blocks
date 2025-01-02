@@ -16,4 +16,4 @@
 # Expedition
   # Map Update
   # execute if score state GameStatus matches 9 run function mc:states/9_expedition/place/items/update/update_items
-  # execute if score state GameStatus matches 9 as @e[type=slime,team=!Enemy,team=!Item,team=!NoRoom] run team join Enemy @s
+  # execute if score state GameStatus matches 9 as @e[type=slime,team=!Enemy,team=!Item,team=!ItemsLocked] run team join Enemy @s

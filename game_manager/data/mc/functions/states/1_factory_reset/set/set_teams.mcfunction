@@ -28,14 +28,14 @@
   team modify Items friendlyFire false
   team modify Items nametagVisibility always
   team modify Items seeFriendlyInvisibles false
-  # Item NoRoom
-  team add NoRoom
-  team modify NoRoom collisionRule never
-  team modify NoRoom color red
-  team modify NoRoom deathMessageVisibility never
-  team modify NoRoom friendlyFire false
-  team modify NoRoom nametagVisibility always
-  team modify NoRoom seeFriendlyInvisibles true
+  # ItemsLocked
+  team add ItemsLocked
+  team modify ItemsLocked collisionRule never
+  team modify ItemsLocked color red
+  team modify ItemsLocked deathMessageVisibility never
+  team modify ItemsLocked friendlyFire false
+  team modify ItemsLocked nametagVisibility always
+  team modify ItemsLocked seeFriendlyInvisibles true
 
 # Markers
 team empty Marker

@@ -1,9 +1,9 @@
 execute if score state GameStatus matches 5..7 as @e[type=armor_stand,tag=spin] at @s run tp @s ~ ~ ~ ~3 ~
 
-# Salvage Crate
-execute if score mode PlayerLockInventory matches 2.. run function mc:utility/scavenge/collect/manage_collect
-
-execute if score state GameStatus matches 7 as @e[type=armor_stand,tag=deathDetector] at @s unless entity @e[type=minecraft:slime,distance=..0.6,tag=scavengeItem] run kill @s
+# Scavenge
+execute if score state GameStatus matches 7 run function mc:states/7_scavenge_house/items/collect/manage_collect
+execute if score state GameStatus matches 9 run function mc:states/7_scavenge_house/items/collect/manage_collect
+execute if score state GameStatus matches 7 run function mc:states/7_scavenge_house/process_items/manage_process
 
 # Chest Menu
 execute if score state GameStatus matches 8 as @p[team=Player] run function cm:manage_chest_menu
