@@ -1,3 +1,5 @@
+tellraw @a "state 7"
+
 # Set Scores
 scoreboard players set music GameStatus 1
 
@@ -10,9 +12,7 @@ title @a title {"text":"Nuke Sighted!","bold":true,"color":"gold"}
 title @a subtitle {"text":"Collect Supplies","color":"red"}
 playsound minecraft:entity.skeleton_horse.death hostile @a ~ ~ ~ 128 1
 
-tellraw @a "state 7"
-
 # Setup Timer
-scoreboard players set seconds TimerCountdown 20
+scoreboard players set seconds TimerCountdown 60
 scoreboard objectives setdisplay sidebar TimerCountdown
 function mc:utility/timers/countdown/tick
