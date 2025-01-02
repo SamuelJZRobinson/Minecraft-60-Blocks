@@ -6,7 +6,7 @@
 
 # Count Total Items
 execute store result score itemCount ItemsHouse if entity @e[type=minecraft:slime,tag=scavengeItem]
-execute store result score soupLeft ItemsHouse if entity @e[type=minecraft:slime,tag=scavengeSoup]
+execute store result score soupLeft ItemsHouse if entity @e[type=minecraft:slime,tag=soup]
 execute store result score waterLeft ItemsHouse if entity @e[type=minecraft:slime,tag=scavengeWater]
 
 # Set Base Item Count

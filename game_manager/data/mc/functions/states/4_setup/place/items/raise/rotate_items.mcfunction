@@ -9,7 +9,7 @@ execute at @s if entity @e[type=minecraft:marker,sort=nearest,distance=..1,tag=w
 execute at @s if entity @e[type=minecraft:marker,sort=nearest,distance=..1,tag=northWest] run teleport @s ~ ~ ~ 145 0
 
 # Axe Item Adjustment
-execute at @s[tag=scavengeAxe,tag=!wall] if entity @e[type=minecraft:marker,sort=nearest,distance=..1] run teleport @s ~ ~0.375 ~
+execute at @s[tag=axe,tag=!wall] if entity @e[type=minecraft:marker,sort=nearest,distance=..1] run teleport @s ~ ~0.375 ~
 
 # Remove Marker
 execute at @s run kill @e[type=minecraft:marker,limit=1,sort=nearest,distance=..1]
