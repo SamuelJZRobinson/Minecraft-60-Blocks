@@ -1,6 +1,7 @@
 execute if score state GameStatus matches 5..7 as @e[type=armor_stand,tag=spin] at @s run tp @s ~ ~ ~ ~3 ~
 
 # Scavenge
+execute if score state GameStatus matches 4 as @p[team=Player] run function mc:utility/tp/tp_house
 execute if score state GameStatus matches 6..7 run function mc:states/7_scavenge_house/items/collect/manage_collect
 execute if score state GameStatus matches 9 run function mc:states/7_scavenge_house/items/collect/manage_collect
 execute if score state GameStatus matches 7 run function mc:states/7_scavenge_house/process_items/manage_process

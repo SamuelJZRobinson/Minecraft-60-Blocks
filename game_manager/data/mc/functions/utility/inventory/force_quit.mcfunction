@@ -1,2 +1,3 @@
-data modify storage minecraft:messages message set value "Force quitting game"
-function mc:utility/exceptions/raise_exception
+scoreboard players set started GameStatus 0
+scoreboard players set state GameStatus 1
+schedule function mc:states/manage_states 1t replace

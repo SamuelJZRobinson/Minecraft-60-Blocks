@@ -1,7 +1,7 @@
 # Set Scores
 scoreboard players set music GameStatus 2
 
-# Destroy Bunker Labels
+# Clear Locations
 kill @e[type=armor_stand,tag=bunkerMarker]
 kill @e[type=armor_stand,tag=bunkerStatus]
 kill @e[type=armor_stand,tag=bunkerCount]

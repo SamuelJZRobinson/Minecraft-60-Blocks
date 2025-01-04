@@ -1,1 +1,1 @@
-teleport @a 15 64 -6.5 -90 0
+teleport @a 15 64 -6.5

@@ -1,3 +1,3 @@
 scoreboard players set started GameStatus 0
 scoreboard players set state GameStatus 1
-function mc:states/manage_states
+schedule function mc:states/manage_states 1t replace

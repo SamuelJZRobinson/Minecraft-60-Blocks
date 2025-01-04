@@ -31,10 +31,10 @@ clear @a
 scoreboard players set @s MenuMain 0
 
 # Characters
-function d:chest_menu/set/set_bunker_characters_full
+function mc:debug/chest_menu/set/set_bunker_characters_full
 
 # Items
-function d:chest_menu/set/set_bunker_items_full
+function mc:debug/chest_menu/set/set_bunker_items_full
 
 # Expedition
 scoreboard players set expeditionReady MenuExplore 1
@@ -42,5 +42,5 @@ scoreboard players set expeditionReady MenuExplore 1
 # Place Chest Menu
 function cm:place_chest_menu
 
-# Start New Day
-function mc:states/8_bunker/manage_day
+# # Start New Day
+# function mc:states/8_bunker/manage_day
