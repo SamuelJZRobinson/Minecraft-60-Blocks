@@ -40,4 +40,4 @@ item replace entity @s hotbar.7 with red_stained_glass_pane{display:{Name:'{"tex
 item replace entity @s hotbar.8 with red_stained_glass_pane{display:{Name:'{"text":"Locked","color":"red"}'},locked:1b} 1
 
 # Offhand
-item replace entity @s weapon.offhand with red_stained_glass_pane{display:{Name:'{"text":"Locked","color":"red"}'},CustomModelData:5,locked:1b} 1
+item replace entity @s weapon.offhand with red_stained_glass_pane{display:{Name:'{"text":"Locked","color":"red"}'},CustomModelData:1,locked:1b} 1
