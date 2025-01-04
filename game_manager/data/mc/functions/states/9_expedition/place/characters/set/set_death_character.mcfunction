@@ -12,5 +12,5 @@
 scoreboard players set characterSent MenuExplore 0
 
 # Set Bundle
-scoreboard players set stage scavenges 5
-function mc:utility/scavenge/process/bundles/check/check_main_remove
+scoreboard players set stage ItemsBundles 5
+function mc:states/8_bunker/items/process/bundles/check/check_main_remove

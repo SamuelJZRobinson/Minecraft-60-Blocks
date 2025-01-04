@@ -20,8 +20,8 @@ execute unless score task AtomicDrill matches 15..16 run scoreboard players set 
 
 # Append Inventory Items
 execute if score doPovExpedition Settings matches 1 unless score expeditionDeath AtomicDrill matches 1.. run function mc:timer/expedition/get_player_inventory
-scoreboard players set stage scavenges 9
-execute if score doPovExpedition Settings matches 1 unless score expeditionDeath AtomicDrill matches 1.. run function mc:utility/scavenge/process/bundles/check/check_main_add
+scoreboard players set stage ItemsBundles 9
+execute if score doPovExpedition Settings matches 1 unless score expeditionDeath AtomicDrill matches 1.. run function mc:states/8_bunker/items/process/bundles/check/check_main_add
 
 # Effects
 # effect give @p[team=Player] minecraft:blindness 2 0 true
@@ -34,7 +34,7 @@ execute if score doPovExpedition Settings matches 1 unless score expeditionDeath
   title @a title {"text":"Meanwhile","color":"gold"}
   title @a subtitle {"text":"In the bunker","color":"red"}
   # Update Items
-  schedule function mc:states/8_bunker/daily/update_bunker 20t replace
+  schedule function mc:states/8_bunker/update_bunker 20t replace
 
 # Atomic Drill
 execute if score doPovExpedition Settings matches 1 if score task AtomicDrill matches 15..16 run schedule function cm:menu/page3/events/event2_return 21t replace

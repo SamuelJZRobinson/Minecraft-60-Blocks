@@ -21,13 +21,13 @@
   scoreboard players set mapVisited MenuExplore 0
 
   # Give Medkit
-  # function mc:utility/scavenge/process/set_temp_item
+  # function mc:states/8_bunker/items/process/set_temp_item
   # execute if score medkit ItemsBunker matches 0 run data modify storage minecraft:bundles bunkerItems.tag.Items append from storage minecraft:tempitem Items
   execute if score medkit ItemsBunker matches 0 run scoreboard players set medkit ItemsBunker 2
   data modify storage minecraft:scavenge savedItemIds append value 12
-  scoreboard players set stage scavenges 9
-  function mc:utility/scavenge/process/bundles/check/check_main_add
-  function mc:utility/scavenge/process/bundles/set/set_bundle_details
+  scoreboard players set stage ItemsBundles 9
+  function mc:states/8_bunker/items/process/bundles/check/check_main_add
+  function mc:states/8_bunker/items/process/bundles/set/set_bundle_details
 
   # Refresh Bunker Decorations
   schedule function mc:states/8_bunker/cosmetics/manage_cosmetics 0.5s replace

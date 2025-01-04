@@ -8,7 +8,7 @@ title @a clear
 title @a actionbar ""
 
 # Teams
-team empty Playing
+team join Lobby
 
 # Scoreboards
 scoreboard objectives setdisplay sidebar

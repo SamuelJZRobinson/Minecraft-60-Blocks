@@ -23,7 +23,7 @@
   execute if score task AtomicDrill matches 3 run scoreboard players set dialogueMax AtomicDrill 7
   # Spawn Timmy
   execute if score task AtomicDrill matches 3 run function mc:states/4_setup/place/characters/summon/summon_timmy
-  execute if score task AtomicDrill matches 3 run data modify entity @e[type=zombie,tag=houseTimmy,limit=1] Invulnerable set value 0b
+  execute if score task AtomicDrill matches 3 run data modify entity @e[type=zombie,tag=timmy,limit=1] Invulnerable set value 0b
 
 # Task 4 (Find Soup In Bathtub)
   # Set Dialogue

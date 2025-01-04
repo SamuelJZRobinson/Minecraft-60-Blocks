@@ -3,9 +3,9 @@
   # Do not place the next function call below the loop to avoid running it for each item owed
 
 # Get Random Item Index (n in max)
-execute store result score itemsTotal scavenges run data get storage minecraft:scavenge randomId
+execute store result score itemsLeft ItemsBundles run data get storage minecraft:scavenge randomId
 scoreboard players set math_in1 em 0
-scoreboard players operation math_in2 em = itemsTotal scavenges
+scoreboard players operation math_in2 em = itemsLeft ItemsBundles
 function em:math/randomp
 
 # Append Item To CheckId
@@ -55,16 +55,16 @@ execute if score math_out em matches 21 run data modify storage minecraft:scaven
 execute if score math_out em matches 21 run data remove storage minecraft:scavenge randomId[21]
 
 # Adjust Scores
-execute if score stage scavenges matches 7 run scoreboard players operation gearIndexRemove ItemsExpedition = math_out em
+execute if score stage ItemsBundles matches 7 run scoreboard players operation gearIndexRemove ItemsExpedition = math_out em
 scoreboard players set math_out em 0
-scoreboard players remove itemsOwed scavenges 1
+scoreboard players remove itemsOwed ItemsBundles 1
 
 # Call Next Function
-execute if score itemsOwed scavenges matches 0 run data remove storage minecraft:scavenge randomId
-execute if score stage scavenges matches 2 if score itemsOwed scavenges matches 0 run function mc:utility/scavenge/process/bundles/check/check_main_add
-execute if score stage scavenges matches 6 if score itemsOwed scavenges matches 0 run function mc:utility/scavenge/process/bundles/check/check_main_add
-execute if score stage scavenges matches 4 if score itemsOwed scavenges matches 0 run function mc:utility/scavenge/process/bundles/check/check_main_remove
-execute if score stage scavenges matches 7 if score itemsOwed scavenges matches 0 run function mc:utility/scavenge/process/bundles/check/check_main_remove
+execute if score itemsOwed ItemsBundles matches 0 run data remove storage minecraft:scavenge randomId
+execute if score stage ItemsBundles matches 2 if score itemsOwed ItemsBundles matches 0 run function mc:states/8_bunker/items/process/bundles/check/check_main_add
+execute if score stage ItemsBundles matches 6 if score itemsOwed ItemsBundles matches 0 run function mc:states/8_bunker/items/process/bundles/check/check_main_add
+execute if score stage ItemsBundles matches 4 if score itemsOwed ItemsBundles matches 0 run function mc:states/8_bunker/items/process/bundles/check/check_main_remove
+execute if score stage ItemsBundles matches 7 if score itemsOwed ItemsBundles matches 0 run function mc:states/8_bunker/items/process/bundles/check/check_main_remove
 
 # Loop
-execute if score itemsOwed scavenges matches 1.. run function mc:utility/scavenge/process/bundles/check/check_random
+execute if score itemsOwed ItemsBundles matches 1.. run function mc:states/8_bunker/items/process/bundles/check/check_random

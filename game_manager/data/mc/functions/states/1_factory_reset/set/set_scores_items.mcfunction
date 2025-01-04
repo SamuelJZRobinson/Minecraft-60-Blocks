@@ -29,14 +29,15 @@ scoreboard objectives add ItemsHouseHigh dummy {"bold":true,"color":"white","tex
   # Custom
   scoreboard players set armour ItemsBunker 0
 
-  ### ???
-  # Check Items
-  scoreboard objectives add scavenges dummy {"bold":true,"color":"white","text":"Check Items"}
-  scoreboard players set step scavenges 1
-  scoreboard players set itemId scavenges 0
-  scoreboard players set itemsOwed scavenges 0
-  scoreboard players set itemsTotal scavenges 0
-  scoreboard players set destroyItemFails scavenges 0
+# Items Bundles
+scoreboard objectives add ItemsBundles dummy {"bold":true,"color":"white","text":"Items Bundles"}
+scoreboard players set mode ItemsBundles 1
+scoreboard players set setBundle ItemsBundles 1
+scoreboard players set step ItemsBundles 1
+scoreboard players set itemId ItemsBundles 0
+scoreboard players set itemsOwed ItemsBundles 0
+scoreboard players set itemsLeft ItemsBundles 0
+scoreboard players set destroyItemFails ItemsBundles 0
 
 # Real Count
 scoreboard objectives add RealCount dummy {"bold":true,"color":"white","text":"Real Count"}

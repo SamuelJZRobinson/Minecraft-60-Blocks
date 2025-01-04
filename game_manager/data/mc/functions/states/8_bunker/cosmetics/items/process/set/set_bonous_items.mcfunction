@@ -4,11 +4,11 @@
 
 # Set Items Awarded
   # Easy
-  execute if score difficulty Settings matches 1 run scoreboard players add itemsOwed scavenges 3
-  execute if score difficulty Settings matches 1 if score suitcase ItemsBunker matches 3 run scoreboard players add itemsOwed scavenges 2
+  execute if score difficulty Settings matches 1 run scoreboard players add itemsOwed ItemsBundles 3
+  execute if score difficulty Settings matches 1 if score suitcase ItemsBunker matches 3 run scoreboard players add itemsOwed ItemsBundles 2
   # Medium
-  execute if score difficulty Settings matches 2 run scoreboard players add itemsOwed scavenges 1
-  execute if score difficulty Settings matches 2 if score suitcase ItemsBunker matches 3 run scoreboard players add itemsOwed scavenges 1
+  execute if score difficulty Settings matches 2 run scoreboard players add itemsOwed ItemsBundles 1
+  execute if score difficulty Settings matches 2 if score suitcase ItemsBunker matches 3 run scoreboard players add itemsOwed ItemsBundles 1
 
 # Append Unsalvaged Items
   # Official
@@ -36,4 +36,4 @@
   execute if score armour ItemsBunker matches ..0 run data modify storage minecraft:scavenge randomId append value 18
 
 # Choose Items
-function mc:utility/scavenge/process/bundles/check/check_random
+function mc:states/8_bunker/items/process/bundles/check/check_random

@@ -1,3 +1,5 @@
-summon minecraft:armor_stand -2.87 55.39 30.50 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunker","bunkerItem","bunkerArmour","bunkerTitle"],DisabledSlots:4144959,Rotation:[-90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:54}}],CustomName:'{"text":"Body Armour"}'}
-summon area_effect_cloud -2.925 55.00 30.50 {Particle:"block air",Radius:0.25f,Duration:2147483647,Tags:["bunker","bunkerHitbox","bunkerArmour","hitboxArmour"]}
-summon area_effect_cloud -2.925 55.26 30.50 {Particle:"block air",Radius:0.25f,Duration:2147483647,Tags:["bunker","bunkerHitbox","bunkerArmour","hitboxArmour"]}
+# Item
+summon minecraft:armor_stand -2.87 55.39 30.50 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerItem","armour","bunkerTitle"],DisabledSlots:4144959,Rotation:[-90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:54}}],CustomName:'{"text":"Body Armour"}'}
+# Hitbox
+summon area_effect_cloud -2.925 55.00 30.50 {Particle:"block air",Radius:0.25f,Duration:2147483647,Tags:["bunkerHitbox","armour","hitboxArmour"]}
+summon area_effect_cloud -2.925 55.26 30.50 {Particle:"block air",Radius:0.25f,Duration:2147483647,Tags:["bunkerHitbox","armour","hitboxArmour"]}

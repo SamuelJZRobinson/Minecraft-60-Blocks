@@ -4,4 +4,4 @@ execute if score gamemode Settings matches 1 run scoreboard players set stage At
 # Set Music
 execute if score gamemode Settings matches 1 run scoreboard players set music GameStatus 3
 # Check Items
-execute if score gamemode Settings matches 1 run function mc:utility/scavenge/process/manage_process
+execute if score gamemode Settings matches 1 run function mc:states/8_bunker/items/process/manage_process

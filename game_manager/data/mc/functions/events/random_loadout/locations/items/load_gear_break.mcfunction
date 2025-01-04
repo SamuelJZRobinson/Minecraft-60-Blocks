@@ -1,9 +1,9 @@
 # Set Scores
-scoreboard players set stage scavenges 7
-scoreboard players set itemsOwed scavenges 1
+scoreboard players set stage ItemsBundles 7
+scoreboard players set itemsOwed ItemsBundles 1
 
 # Copy Items
 data modify storage minecraft:scavenge randomId set from storage minecraft:bundles expeditionGearId
 
 # Remove Items
-function mc:utility/scavenge/process/bundles/check/check_random
+function mc:states/8_bunker/items/process/bundles/check/check_random

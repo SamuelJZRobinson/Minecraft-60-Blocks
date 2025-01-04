@@ -43,4 +43,4 @@ scoreboard players set expeditionReady MenuExplore 1
 function cm:place_chest_menu
 
 # Start New Day
-function mc:states/8_bunker/daily/manage_day
+function mc:states/8_bunker/manage_day

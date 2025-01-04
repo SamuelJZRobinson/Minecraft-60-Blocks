@@ -1,5 +1,5 @@
 # Check Items Spawned
-execute if score step ItemsHouse matches 1 positioned 24.50 70.00 -5.50 run function mc:states/4_setup/place/items/summon/summon_items
+execute if score step ItemsHouse matches 1 run function mc:states/4_setup/place/items/summon/summon_items
 # Set Room Item Count
 execute if score step ItemsHouse matches 2 run function mc:states/4_setup/place/items/set/set_room_count
 # Tag Items
