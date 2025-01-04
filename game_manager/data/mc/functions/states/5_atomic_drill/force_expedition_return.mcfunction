@@ -24,8 +24,8 @@
   # function mc:utility/scavenge/process/set_temp_item
   # execute if score medkit ItemsBunker matches 0 run data modify storage minecraft:bundles bunkerItems.tag.Items append from storage minecraft:tempitem Items
   execute if score medkit ItemsBunker matches 0 run scoreboard players set medkit ItemsBunker 2
-  data modify storage minecraft:checkitem checkId append value 12
-  scoreboard players set stage CheckItems 9
+  data modify storage minecraft:scavenge savedItemIds append value 12
+  scoreboard players set stage scavenges 9
   function mc:utility/scavenge/process/bundles/check/check_main_add
   function mc:utility/scavenge/process/bundles/set/set_bundle_details
 

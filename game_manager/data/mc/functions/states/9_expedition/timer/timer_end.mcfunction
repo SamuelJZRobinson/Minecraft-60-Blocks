@@ -20,7 +20,7 @@ execute unless score task AtomicDrill matches 15..16 run scoreboard players set 
 
 # Append Inventory Items
 execute if score doPovExpedition Settings matches 1 unless score expeditionDeath AtomicDrill matches 1.. run function mc:timer/expedition/get_player_inventory
-scoreboard players set stage CheckItems 9
+scoreboard players set stage scavenges 9
 execute if score doPovExpedition Settings matches 1 unless score expeditionDeath AtomicDrill matches 1.. run function mc:utility/scavenge/process/bundles/check/check_main_add
 
 # Effects

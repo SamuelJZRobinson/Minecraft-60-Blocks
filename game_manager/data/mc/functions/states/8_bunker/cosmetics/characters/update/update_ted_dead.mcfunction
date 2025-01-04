@@ -9,6 +9,6 @@ execute if score crazyEscaped TedStatus matches 0 run function mc:sounds/charact
 execute if score crazyEscaped TedStatus matches 1 run kill @s
 execute if score crazyEscaped TedStatus matches 1 run function mc:sounds/bunker_door_1
 # Append Lost Character Bundle
-scoreboard players set stage CheckItems 5
-data modify storage minecraft:checkitem checkId append value 21
+scoreboard players set stage scavenges 5
+data modify storage minecraft:scavenge savedItemIds append value 21
 function mc:utility/scavenge/process/bundles/check/check_main_remove

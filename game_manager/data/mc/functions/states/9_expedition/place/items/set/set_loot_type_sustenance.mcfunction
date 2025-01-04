@@ -17,6 +17,6 @@ scoreboard players operation waterCount ItemsExpedition = sustenanceCount ItemsE
 scoreboard players operation waterCount ItemsExpedition -= soupCount ItemsExpedition
 
 # Append Sustenance
-scoreboard players set stage CheckItems 8
+scoreboard players set stage scavenges 8
 scoreboard players set loadItem ItemsExpedition 1
 function mc:states/9_expedition/place/items/get/get_sustenance

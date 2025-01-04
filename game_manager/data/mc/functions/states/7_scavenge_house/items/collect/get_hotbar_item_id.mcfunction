@@ -1,8 +1,8 @@
 # Copy Hotbar Item IDs
-data modify storage minecraft:checkitem checkId append from entity @s Inventory[{Slot:0b}].tag.itemId
-data modify storage minecraft:checkitem checkId append from entity @s Inventory[{Slot:1b}].tag.itemId
-data modify storage minecraft:checkitem checkId append from entity @s Inventory[{Slot:2b}].tag.itemId
-data modify storage minecraft:checkitem checkId append from entity @s Inventory[{Slot:3b}].tag.itemId
+data modify storage minecraft:scavenge savedItemIds append from entity @s Inventory[{Slot:0b}].tag.itemId
+data modify storage minecraft:scavenge savedItemIds append from entity @s Inventory[{Slot:1b}].tag.itemId
+data modify storage minecraft:scavenge savedItemIds append from entity @s Inventory[{Slot:2b}].tag.itemId
+data modify storage minecraft:scavenge savedItemIds append from entity @s Inventory[{Slot:3b}].tag.itemId
 
 # Count Items Collected
 execute if score gamemode Settings matches 1 run function mc:states/7_scavenge_house/items/collect/set_item_count

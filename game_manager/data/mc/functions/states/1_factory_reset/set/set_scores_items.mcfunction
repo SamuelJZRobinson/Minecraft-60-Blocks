@@ -31,12 +31,12 @@ scoreboard objectives add ItemsHouseHigh dummy {"bold":true,"color":"white","tex
 
   ### ???
   # Check Items
-  scoreboard objectives add CheckItems dummy {"bold":true,"color":"white","text":"Check Items"}
-  scoreboard players set step CheckItems 1
-  scoreboard players set itemId CheckItems 0
-  scoreboard players set itemsOwed CheckItems 0
-  scoreboard players set itemsTotal CheckItems 0
-  scoreboard players set destroyItemFails CheckItems 0
+  scoreboard objectives add scavenges dummy {"bold":true,"color":"white","text":"Check Items"}
+  scoreboard players set step scavenges 1
+  scoreboard players set itemId scavenges 0
+  scoreboard players set itemsOwed scavenges 0
+  scoreboard players set itemsTotal scavenges 0
+  scoreboard players set destroyItemFails scavenges 0
 
 # Real Count
 scoreboard objectives add RealCount dummy {"bold":true,"color":"white","text":"Real Count"}

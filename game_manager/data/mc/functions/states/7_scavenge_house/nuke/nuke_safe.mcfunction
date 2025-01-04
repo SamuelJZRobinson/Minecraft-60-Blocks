@@ -2,9 +2,6 @@
   # Container values start at 4 to avoid conflict with other items
   # The item checker ensures items are processed, manages bonous items, and starts the first day
 
-# Copy Hotbar From Player
-execute as @p[team=Player] run function mc:utility/scavenge/collect/inventory/get_hotbar
-
 # Clear
 function mc:states/7_scavenge_house/nuke/clear_players
 

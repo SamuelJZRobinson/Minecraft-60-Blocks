@@ -2,11 +2,11 @@
   # Do not nest math x and y in a path to ensure compatability with macros.
 
 # Check Items
-data remove storage minecraft:checkitem checkId
-data remove storage minecraft:checkitem randomId
-data remove storage minecraft:checkitem slotOneFree
-data remove storage minecraft:checkitem slotTwoFree
-data remove storage minecraft:checkitem slotThreeFree
+data remove storage minecraft:scavenge savedItemIds
+data remove storage minecraft:scavenge randomId
+data remove storage minecraft:scavenge slotOneFree
+data remove storage minecraft:scavenge slotTwoFree
+data remove storage minecraft:scavenge slotThreeFree
 
 # Templates
 data modify storage tempitem Items set value {id:"minecraft:saddle",Count:1b,tag:{CustomModelData:0}}

@@ -29,5 +29,5 @@
   execute if score armour ItemsBunker matches 1..2 run scoreboard players set armour ItemsBunker 0
 
 # Increment Stage
-scoreboard players set stage CheckItems 2
+scoreboard players set stage scavenges 2
 function mc:utility/scavenge/process/manage_process

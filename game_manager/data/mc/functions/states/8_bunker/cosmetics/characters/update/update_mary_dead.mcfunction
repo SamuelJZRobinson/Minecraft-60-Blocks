@@ -6,6 +6,6 @@ scoreboard players set crazyEscaped MaryStatus 1
 kill @s
 function mc:sounds/bunker_door_1
 # Append Lost Character Bundle
-scoreboard players set stage CheckItems 5
-data modify storage minecraft:checkitem checkId append value 20
+scoreboard players set stage scavenges 5
+data modify storage minecraft:scavenge savedItemIds append value 20
 function mc:utility/scavenge/process/bundles/check/check_main_remove

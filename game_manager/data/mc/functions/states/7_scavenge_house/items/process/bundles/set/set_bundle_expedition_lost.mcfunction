@@ -14,10 +14,10 @@ execute if score gearIndexRemove ItemsExpedition matches 2 run data remove stora
 execute if score gearIndexRemove ItemsExpedition matches 3 run data remove storage minecraft:bundles expeditionGearId[3]
 
 # Append Remaining Items
-execute store result score tempCount CheckItems run data get storage minecraft:bundles expeditionGearId
-execute if score tempCount CheckItems matches 1.. run data modify storage minecraft:checkitem checkId set from storage minecraft:bundles expeditionGearId
-execute if score tempCount CheckItems matches 1.. run scoreboard players set stage CheckItems 6
-execute if score tempCount CheckItems matches 1.. run function mc:utility/scavenge/process/bundles/check/check_main_add
+execute store result score tempCount scavenges run data get storage minecraft:bundles expeditionGearId
+execute if score tempCount scavenges matches 1.. run data modify storage minecraft:scavenge savedItemIds set from storage minecraft:bundles expeditionGearId
+execute if score tempCount scavenges matches 1.. run scoreboard players set stage scavenges 6
+execute if score tempCount scavenges matches 1.. run function mc:utility/scavenge/process/bundles/check/check_main_add
 
 # Refresh Scores
 scoreboard players reset gearIndexRemove ItemsExpedition

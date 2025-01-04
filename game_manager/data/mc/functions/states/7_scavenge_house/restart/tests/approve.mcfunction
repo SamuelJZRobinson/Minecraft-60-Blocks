@@ -1,10 +1,10 @@
-# Kill Non-Player Characters
-gamerule doMobLoot false
-kill @e[type=!player,type=!item_frame]
-kill @e[type=item_frame,tag=prop]
-gamerule doMobLoot true
+# Clear Data
+data remove storage minecraft:scavenge savedItemIds
 
-# Clear Stuff
+# Clear Locations
+function mc:states/1_factory_reset/clear/clear_locations
+
+# Clear Player
 clear @a
 scoreboard objectives setdisplay sidebar
 # function mc:states/1_factory_reset/clear/clear_schedules
