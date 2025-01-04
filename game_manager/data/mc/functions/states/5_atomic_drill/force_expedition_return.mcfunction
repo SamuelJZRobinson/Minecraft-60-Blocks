@@ -30,4 +30,4 @@
   function mc:states/8_bunker/items/process/bundles/set/set_bundle_details
 
   # Refresh Bunker Decorations
-  schedule function mc:states/8_bunker/cosmetics/manage_cosmetics 0.5s replace
+  schedule function mc:states/8_bunker/manage_cosmetics 0.5s replace

@@ -16,8 +16,3 @@ execute if score expeditionDuration MenuExplore matches 1.. if score adultsAlive
 # Start POV Expedition
 execute if score doPovExpedition Settings matches 1 if score expeditionDuration MenuExplore matches 0 if score characterSent MenuExplore matches 1.. run scoreboard players set state GameStatus 9
 execute if score doPovExpedition Settings matches 1 if score expeditionDuration MenuExplore matches 0 if score characterSent MenuExplore matches 1.. run function mc:states/manage_states
-
-# Update Bunker
-execute unless score state GameStatus matches 9 run function mc:states/8_bunker/update_bunker
-### execute if score expeditionDuration MenuExplore matches 0 if score characterSent MenuExplore matches 0 run function mc:states/8_bunker/update_bunker
-### execute if score expeditionDuration MenuExplore matches 1.. if score characterSent MenuExplore matches 1.. run schedule function mc:states/8_bunker/update_bunker 1t replace

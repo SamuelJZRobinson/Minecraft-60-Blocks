@@ -1,6 +1,6 @@
 # Count Bunker Contents
-function mc:states/8_bunker/cosmetics/characters/count/count_family
-function mc:states/8_bunker/cosmetics/items/count/count_items
+function mc:states/8_bunker/characters/count/count_family
+function mc:states/8_bunker/items/count/count_items
 
 # Check Ending
 function mc:states/8_bunker/check_ending
@@ -13,3 +13,6 @@ execute if score ending GameStatus matches 0 run function mc:states/8_bunker/sho
 
 # Check Expedition
 execute if score ending GameStatus matches 0 run function mc:states/8_bunker/check_expedition
+
+# Update Cosmetics
+function mc:states/8_bunker/manage_cosmetics

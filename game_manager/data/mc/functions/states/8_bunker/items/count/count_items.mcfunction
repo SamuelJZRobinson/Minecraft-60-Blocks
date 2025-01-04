@@ -1,10 +1,10 @@
 # Calculate Real Count
   # Soup
-  execute if score cans ItemsBunker matches 1.. run function mc:states/8_bunker/cosmetics/items/count/count_items_soup
+  execute if score cans ItemsBunker matches 1.. run function mc:states/8_bunker/items/count/count_items_soup
   execute if score cans ItemsBunker matches ..0 run scoreboard players set cansInt RealCount 0
   execute if score cans ItemsBunker matches ..0 run scoreboard players set cansFloat RealCount 0
   # Water
-  execute if score bottles ItemsBunker matches 1.. run function mc:states/8_bunker/cosmetics/items/count/count_items_water
+  execute if score bottles ItemsBunker matches 1.. run function mc:states/8_bunker/items/count/count_items_water
   execute if score bottles ItemsBunker matches ..0 run scoreboard players set bottlesInt RealCount 0
   execute if score bottles ItemsBunker matches ..0 run scoreboard players set bottlesFloat RealCount 0
 

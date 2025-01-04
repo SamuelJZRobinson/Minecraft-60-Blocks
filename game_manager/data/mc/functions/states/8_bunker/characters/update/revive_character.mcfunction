@@ -20,4 +20,4 @@ execute if score out Math matches 5.. run scoreboard players set out Math 1
 ### Ensure this only loops when valid, some characters died during nuke, to avoid a memory leak
 
 # Cycle
-execute unless score characterRevived GameStatus matches 1 run function mc:states/8_bunker/cosmetics/characters/update/revive_character
+execute unless score characterRevived GameStatus matches 1 run function mc:states/8_bunker/characters/update/revive_character
