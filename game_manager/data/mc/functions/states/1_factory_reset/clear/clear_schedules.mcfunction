@@ -8,15 +8,6 @@
 
 # # Apocalypse And Scavenge
 #   # Stage 1
-#   schedule clear mc:states/4_setup/place/floorplans/general/summon_main_checkers
-#   schedule clear mc:states/4_setup/place/floorplans/general/summon_fp_1_checkers
-#   schedule clear mc:states/4_setup/place/floorplans/general/summon_fp_2_checkers
-#   schedule clear mc:states/4_setup/place/floorplans/general/summon_fp_3_checkers
-#   schedule clear mc:states/4_setup/place/floorplans/general/summon_fp_4_checkers
-#   schedule clear mc:states/4_setup/place/floorplans/general/summon_fp_5_checkers
-#   schedule clear mc:states/4_setup/place/floorplans/general/summon_fp_6_checkers
-#   schedule clear mc:states/4_setup/place/floorplans/general/summon_west_checkers
-#   schedule clear mc:states/4_setup/place/floorplans/general/summon_east_checkers
 #   schedule clear mc:states/4_setup/place/floorplans/general/check_for_block
 #   schedule clear mc:states/4_setup/place/floorplans/general/count_high_spots
 #   # Stage 2
