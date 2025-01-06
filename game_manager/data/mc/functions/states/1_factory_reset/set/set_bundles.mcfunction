@@ -1,6 +1,9 @@
 # Notes
   # Do not nest math x and y in a path to ensure compatability with macros.
 
+# Atomic Drill
+data remove storage minecraft:atomicdrill dialogue
+
 # Check Items
 data remove storage minecraft:scavenge savedItemIds
 data remove storage minecraft:scavenge randomId

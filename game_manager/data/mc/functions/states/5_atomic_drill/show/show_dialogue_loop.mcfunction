@@ -1,5 +1,3 @@
-tellraw @a "loop dialogue"
-
 # Title Times
 title @a times 0 80 0
 

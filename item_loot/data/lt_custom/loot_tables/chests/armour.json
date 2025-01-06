@@ -11,7 +11,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "Armour",
+                "text": "bodyArmour",
                 "color": "gray",
                 "bold": true
               }

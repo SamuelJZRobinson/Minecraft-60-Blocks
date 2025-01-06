@@ -23,7 +23,7 @@
   execute if entity @s[tag=hitboxSuitcase] run scoreboard players set bunkerLook GameStatus 16
   execute if entity @s[tag=hitboxWater] run scoreboard players set bunkerLook GameStatus 17
   execute if entity @s[tag=hitboxWaterJug] run scoreboard players set bunkerLook GameStatus 17
-  execute if entity @s[tag=hitboxArmour] run scoreboard players set bunkerLook GameStatus 18
+  execute if entity @s[tag=hitboxBodyArmour] run scoreboard players set bunkerLook GameStatus 18
   # Characters
   execute if entity @s[tag=bunkerDolores] run scoreboard players set bunkerLook GameStatus 19
   execute if entity @s[tag=bunkerMary] run scoreboard players set bunkerLook GameStatus 20

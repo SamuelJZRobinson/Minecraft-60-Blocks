@@ -1,6 +1,7 @@
+schedule clear mc:states/5_atomic_drill/show/show_dialogue_loop
+schedule clear mc:states/5_atomic_drill/task/force_task_done
+
 # Probably only run during certain states to avoid this
-
-
 
 
 # # Timer Engine
