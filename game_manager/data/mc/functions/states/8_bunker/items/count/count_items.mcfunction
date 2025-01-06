@@ -1,12 +1,12 @@
 # Calculate Real Count
   # Soup
-  execute if score cans ItemsBunker matches 1.. run function mc:states/8_bunker/items/count/count_items_soup
-  execute if score cans ItemsBunker matches ..0 run scoreboard players set cansInt RealCount 0
-  execute if score cans ItemsBunker matches ..0 run scoreboard players set cansFloat RealCount 0
+  execute if score soups ItemsBunker matches 1.. run function mc:states/8_bunker/items/count/count_soups
+  execute if score soups ItemsBunker matches ..0 run scoreboard players set soupsInt RealContainerCount 0
+  execute if score soups ItemsBunker matches ..0 run scoreboard players set soupsFloat RealContainerCount 0
   # Water
-  execute if score bottles ItemsBunker matches 1.. run function mc:states/8_bunker/items/count/count_items_water
-  execute if score bottles ItemsBunker matches ..0 run scoreboard players set bottlesInt RealCount 0
-  execute if score bottles ItemsBunker matches ..0 run scoreboard players set bottlesFloat RealCount 0
+  execute if score waters ItemsBunker matches 1.. run function mc:states/8_bunker/items/count/count_waters
+  execute if score waters ItemsBunker matches ..0 run scoreboard players set watersInt RealContainerCount 0
+  execute if score waters ItemsBunker matches ..0 run scoreboard players set watersFloat RealContainerCount 0
 
 # Set Score
 scoreboard players set itemCount ItemsBunker 0
@@ -27,8 +27,8 @@ scoreboard players set itemCount ItemsBunker 0
   execute if score medkit ItemsBunker matches 2 run scoreboard players add itemCount ItemsBunker 1
   execute if score padlock ItemsBunker matches 1 run scoreboard players add itemCount ItemsBunker 1
   execute if score radio ItemsBunker matches 1 run scoreboard players add itemCount ItemsBunker 1
-  scoreboard players operation itemCount ItemsBunker += cansInt RealCount
+  scoreboard players operation itemCount ItemsBunker += soupsInt RealContainerCount
   execute if score suitcase ItemsBunker matches 3 run scoreboard players add itemCount ItemsBunker 1
-  scoreboard players operation itemCount ItemsBunker += bottlesInt RealCount
+  scoreboard players operation itemCount ItemsBunker += watersInt RealContainerCount
   # Custom
   execute if score armour ItemsBunker matches 3 run scoreboard players add itemCount ItemsBunker 1

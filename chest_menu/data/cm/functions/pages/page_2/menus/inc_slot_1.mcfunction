@@ -15,5 +15,5 @@ execute if score slotOne MenuExplore matches 14 if score map ItemsBunker matches
 execute if score slotOne MenuExplore matches 15 if score medkit ItemsBunker matches 0 run scoreboard players add slotOne MenuExplore 1
 execute if score slotOne MenuExplore matches 16 if score padlock ItemsBunker matches 0 run scoreboard players add slotOne MenuExplore 1
 execute if score slotOne MenuExplore matches 17 if score radio ItemsBunker matches 0 run scoreboard players add slotOne MenuExplore 1
-execute if score slotOne MenuExplore matches 18 if score cans ItemsBunker matches ..3 run scoreboard players add slotOne MenuExplore 1
-execute if score slotOne MenuExplore matches 19 if score bottles ItemsBunker matches ..3 run scoreboard players add slotOne MenuExplore 1
+execute if score slotOne MenuExplore matches 18 if score soups ItemsBunker matches ..3 run scoreboard players add slotOne MenuExplore 1
+execute if score slotOne MenuExplore matches 19 if score waters ItemsBunker matches ..3 run scoreboard players add slotOne MenuExplore 1

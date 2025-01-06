@@ -6,18 +6,18 @@ function mc:states/1_factory_reset/set/set_bundles
 
 # Feeding
   # Remove Supplies
-  scoreboard players operation cans ItemsBunker -= cansGiven MenuFeed
-  scoreboard players operation bottles ItemsBunker -= bottlesGiven MenuFeed
+  scoreboard players operation soups ItemsBunker -= soupGiven MenuFeed
+  scoreboard players operation waters ItemsBunker -= waterGiven MenuFeed
   execute if score giveMedkit MenuFeed matches 1.. run scoreboard players set medkit ItemsBunker -1
   # Statistics
-  scoreboard players operation soupConsumed GameStatus += cansGiven MenuFeed
-  scoreboard players operation waterConsumed GameStatus += bottlesGiven MenuFeed
+  scoreboard players operation soupConsumed GameStatus += soupGiven MenuFeed
+  scoreboard players operation waterConsumed GameStatus += waterGiven MenuFeed
   # Nourish Characters
   function cm:pages/submit/characters/manage_characters
   # Reset Scores
   scoreboard players set giveMedkit MenuFeed 0
-  scoreboard players set cansGiven MenuFeed 0
-  scoreboard players set bottlesGiven MenuFeed 0
+  scoreboard players set soupGiven MenuFeed 0
+  scoreboard players set waterGiven MenuFeed 0
 
 # Expedition
   # Run 

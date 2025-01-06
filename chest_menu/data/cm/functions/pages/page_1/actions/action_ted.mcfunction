@@ -1,9 +1,9 @@
 # Soup
-execute if score selection MenuMain matches 23 run scoreboard players set tedGiveCan MenuFeed 1
-execute if score selection MenuMain matches 24 run scoreboard players set tedGiveCan MenuFeed 0
+execute if score selection MenuMain matches 23 run scoreboard players set tedGiveSoup MenuFeed 1
+execute if score selection MenuMain matches 24 run scoreboard players set tedGiveSoup MenuFeed 0
 # Water
-execute if score selection MenuMain matches 25 run scoreboard players set tedGiveBottle MenuFeed 1
-execute if score selection MenuMain matches 26 run scoreboard players set tedGiveBottle MenuFeed 0
+execute if score selection MenuMain matches 25 run scoreboard players set tedGiveWater MenuFeed 1
+execute if score selection MenuMain matches 26 run scoreboard players set tedGiveWater MenuFeed 0
 # Medkit
 execute if score selection MenuMain matches 27 run scoreboard players set giveMedkit MenuFeed 3
 execute if score selection MenuMain matches 28 run scoreboard players set giveMedkit MenuFeed 0

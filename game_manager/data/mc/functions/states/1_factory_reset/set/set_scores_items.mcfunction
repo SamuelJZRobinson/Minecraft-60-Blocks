@@ -11,10 +11,10 @@ scoreboard objectives add ItemsHouseHigh dummy {"bold":true,"color":"white","tex
   # Official
   scoreboard players set ammo ItemsBunker 0
   scoreboard players set axe ItemsBunker 0
-  scoreboard players set bottles ItemsBunker 0
+  scoreboard players set waters ItemsBunker 0
   scoreboard players set boyScoutHandbook ItemsBunker 0
   scoreboard players set bugSpray ItemsBunker 0
-  scoreboard players set cans ItemsBunker 0
+  scoreboard players set soups ItemsBunker 0
   scoreboard players set cards ItemsBunker 0
   scoreboard players set checkers ItemsBunker 0
   scoreboard players set flashlight ItemsBunker 0
@@ -40,15 +40,15 @@ scoreboard players set itemsLeft ItemsBundles 0
 scoreboard players set destroyItemFails ItemsBundles 0
 
 # Real Count
-scoreboard objectives add RealCount dummy {"bold":true,"color":"white","text":"Real Count"}
+scoreboard objectives add RealContainerCount dummy {"bold":true,"color":"white","text":"Real Container Count"}
 # Math
-scoreboard players set MULTIPLIER RealCount 25
-scoreboard players set DIVISOR RealCount 4
+scoreboard players set MULTIPLIER RealContainerCount 25
+scoreboard players set DIVISOR RealContainerCount 4
 # Water Bottles
-scoreboard players set bottlesInt RealCount 0
-scoreboard players set bottlesFloat RealCount 0
+scoreboard players set watersInt RealContainerCount 0
+scoreboard players set watersFloat RealContainerCount 0
 # Soup
-scoreboard players set SOUP_MIN RealCount 0
-scoreboard players set SOUP_MAX RealCount 0
-scoreboard players set cansInt RealCount 0
-scoreboard players set cansFloats RealCount 0
+scoreboard players set SOUP_MIN RealContainerCount 0
+scoreboard players set SOUP_MAX RealContainerCount 0
+scoreboard players set soupsInt RealContainerCount 0
+scoreboard players set soupsFloat RealContainerCount 0

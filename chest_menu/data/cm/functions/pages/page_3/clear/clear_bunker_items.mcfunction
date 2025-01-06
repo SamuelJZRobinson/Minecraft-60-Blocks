@@ -2,10 +2,10 @@
   # Standard
   scoreboard players set ammo ItemsBunker 0
   scoreboard players set axe ItemsBunker 0
-  scoreboard players set bottles ItemsBunker 0
+  scoreboard players set waters ItemsBunker 0
   scoreboard players set boyScoutHandbook ItemsBunker 0
   scoreboard players set bugSpray ItemsBunker 0
-  scoreboard players set cans ItemsBunker 0
+  scoreboard players set soups ItemsBunker 0
   scoreboard players set cards ItemsBunker 0
   scoreboard players set checkers ItemsBunker 0
   scoreboard players set flashlight ItemsBunker 0

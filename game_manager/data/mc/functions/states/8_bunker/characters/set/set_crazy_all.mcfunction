@@ -14,9 +14,9 @@
   execute if score medkit ItemsBunker matches 2 run data modify storage minecraft:scavenge randomId append value 12
   execute if score padlock ItemsBunker matches 1 run data modify storage minecraft:scavenge randomId append value 13
   execute if score radio ItemsBunker matches 1 run data modify storage minecraft:scavenge randomId append value 14
-  execute if score cans ItemsBunker matches 1.. run data modify storage minecraft:scavenge randomId append value 15
+  execute if score soups ItemsBunker matches 1.. run data modify storage minecraft:scavenge randomId append value 15
   execute if score suitcase ItemsBunker matches 3 run data modify storage minecraft:scavenge randomId append value 16
-  execute if score bottles ItemsBunker matches 1.. run data modify storage minecraft:scavenge randomId append value 17
+  execute if score waters ItemsBunker matches 1.. run data modify storage minecraft:scavenge randomId append value 17
   # Custom
   execute if score armour ItemsBunker matches 3 run data modify storage minecraft:scavenge randomId append value 18
 

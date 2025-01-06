@@ -8,3 +8,6 @@ summon minecraft:armor_stand -0.25 57.38 35.50 {Team:Items,NoGravity:1b,Invulner
 summon minecraft:armor_stand -2.70 54.43 33.50 {Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerItem","water","waterJug"],DisabledSlots:4144959,Rotation:[-180F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:132}}]}
 # Hitbox
 summon area_effect_cloud -1.50 57.00 36.50 {Particle:"block air",Radius:1.5f,Duration:2147483647,Tags:["bunkerHitbox","water","hitboxWater"]}
+# Label
+summon minecraft:armor_stand -1.50 57.50 34.50 {CustomNameVisible:0b,Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerTitle","watersTitle"],DisabledSlots:4144959,CustomName:'{"text":"Water supply:","color":"white"}'}
+summon minecraft:armor_stand -1.50 57.25 34.50 {CustomNameVisible:0b,Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerTitle","watersTitle","watersCount"],DisabledSlots:4144959,CustomName:'{"text":"#"}'}

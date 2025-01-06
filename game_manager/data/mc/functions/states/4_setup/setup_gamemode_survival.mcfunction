@@ -21,15 +21,15 @@
 #         # Generate Random Number
 #         function em:math/randomp
 #         # Increase Total
-#         scoreboard players operation math_out em *= divisor RealCount
-#         scoreboard players operation cans ItemsBunker = math_out em
+#         scoreboard players operation math_out em *= divisor RealContainerCount
+#         scoreboard players operation soups ItemsBunker = math_out em
 
 #       # Water Bottles
 #         # Generate Random Number
 #         function em:math/randomp
 #         # Increase Total
-#         scoreboard players operation math_out em *= divisor RealCount
-#         scoreboard players operation bottles ItemsBunker = math_out em
+#         scoreboard players operation math_out em *= divisor RealContainerCount
+#         scoreboard players operation waters ItemsBunker = math_out em
 
 #     # Character
 #       # Easy

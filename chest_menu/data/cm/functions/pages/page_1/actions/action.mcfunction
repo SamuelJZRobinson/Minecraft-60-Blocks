@@ -9,23 +9,23 @@ scoreboard players set bool MenuMain 1
 
 # Mass Items
   # Soup
-  execute if score selection MenuMain matches 37 if score alive DoloresStatus matches 1 unless score characterSent MenuExplore matches 1 run scoreboard players set doloresGiveCan MenuFeed 1
-  execute if score selection MenuMain matches 37 if score alive MaryStatus matches 1 unless score characterSent MenuExplore matches 2..3 run scoreboard players set maryGiveCan MenuFeed 1
-  execute if score selection MenuMain matches 37 if score alive TedStatus matches 1 unless score characterSent MenuExplore matches 4 run scoreboard players set tedGiveCan MenuFeed 1
-  execute if score selection MenuMain matches 37 if score alive TimmyStatus matches 1 unless score characterSent MenuExplore matches 5 run scoreboard players set timmyGiveCan MenuFeed 1
-  execute if score selection MenuMain matches 38 run scoreboard players set doloresGiveCan MenuFeed 0
-  execute if score selection MenuMain matches 38 run scoreboard players set maryGiveCan MenuFeed 0
-  execute if score selection MenuMain matches 38 run scoreboard players set tedGiveCan MenuFeed 0
-  execute if score selection MenuMain matches 38 run scoreboard players set timmyGiveCan MenuFeed 0
+  execute if score selection MenuMain matches 37 if score alive DoloresStatus matches 1 unless score characterSent MenuExplore matches 1 run scoreboard players set doloresGiveSoup MenuFeed 1
+  execute if score selection MenuMain matches 37 if score alive MaryStatus matches 1 unless score characterSent MenuExplore matches 2..3 run scoreboard players set maryGiveSoup MenuFeed 1
+  execute if score selection MenuMain matches 37 if score alive TedStatus matches 1 unless score characterSent MenuExplore matches 4 run scoreboard players set tedGiveSoup MenuFeed 1
+  execute if score selection MenuMain matches 37 if score alive TimmyStatus matches 1 unless score characterSent MenuExplore matches 5 run scoreboard players set timmyGiveSoup MenuFeed 1
+  execute if score selection MenuMain matches 38 run scoreboard players set doloresGiveSoup MenuFeed 0
+  execute if score selection MenuMain matches 38 run scoreboard players set maryGiveSoup MenuFeed 0
+  execute if score selection MenuMain matches 38 run scoreboard players set tedGiveSoup MenuFeed 0
+  execute if score selection MenuMain matches 38 run scoreboard players set timmyGiveSoup MenuFeed 0
   # Water
-  execute if score selection MenuMain matches 39 if score alive DoloresStatus matches 1 unless score characterSent MenuExplore matches 1 run scoreboard players set doloresGiveBottle MenuFeed 1
-  execute if score selection MenuMain matches 39 if score alive MaryStatus matches 1 unless score characterSent MenuExplore matches 2..3 run scoreboard players set maryGiveBottle MenuFeed 1
-  execute if score selection MenuMain matches 39 if score alive TedStatus matches 1 unless score characterSent MenuExplore matches 4 run scoreboard players set tedGiveBottle MenuFeed 1
-  execute if score selection MenuMain matches 39 if score alive TimmyStatus matches 1 unless score characterSent MenuExplore matches 5 run scoreboard players set timmyGiveBottle MenuFeed 1
-  execute if score selection MenuMain matches 40 run scoreboard players set doloresGiveBottle MenuFeed 0
-  execute if score selection MenuMain matches 40 run scoreboard players set maryGiveBottle MenuFeed 0
-  execute if score selection MenuMain matches 40 run scoreboard players set tedGiveBottle MenuFeed 0
-  execute if score selection MenuMain matches 40 run scoreboard players set timmyGiveBottle MenuFeed 0
+  execute if score selection MenuMain matches 39 if score alive DoloresStatus matches 1 unless score characterSent MenuExplore matches 1 run scoreboard players set doloresGiveWater MenuFeed 1
+  execute if score selection MenuMain matches 39 if score alive MaryStatus matches 1 unless score characterSent MenuExplore matches 2..3 run scoreboard players set maryGiveWater MenuFeed 1
+  execute if score selection MenuMain matches 39 if score alive TedStatus matches 1 unless score characterSent MenuExplore matches 4 run scoreboard players set tedGiveWater MenuFeed 1
+  execute if score selection MenuMain matches 39 if score alive TimmyStatus matches 1 unless score characterSent MenuExplore matches 5 run scoreboard players set timmyGiveWater MenuFeed 1
+  execute if score selection MenuMain matches 40 run scoreboard players set doloresGiveWater MenuFeed 0
+  execute if score selection MenuMain matches 40 run scoreboard players set maryGiveWater MenuFeed 0
+  execute if score selection MenuMain matches 40 run scoreboard players set tedGiveWater MenuFeed 0
+  execute if score selection MenuMain matches 40 run scoreboard players set timmyGiveWater MenuFeed 0
 
 # Character Selection
 execute if score alive DoloresStatus matches 1 unless score characterSent MenuExplore matches 1 run function cm:pages/page_1/actions/action_dolores

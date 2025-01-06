@@ -15,24 +15,24 @@ scoreboard players set selection MenuMain 0
 # FEEDING
 scoreboard objectives add MenuFeed dummy {"bold":true,"color":"white","text":"Menu Feed"}
 # Dolores
-scoreboard players set doloresGiveCan MenuFeed 0
-scoreboard players set doloresGiveBottle MenuFeed 0
+scoreboard players set doloresGiveSoup MenuFeed 0
+scoreboard players set doloresGiveWater MenuFeed 0
 # Mary
-scoreboard players set maryGiveCan MenuFeed 0
-scoreboard players set maryGiveBottle MenuFeed 0
+scoreboard players set maryGiveSoup MenuFeed 0
+scoreboard players set maryGiveWater MenuFeed 0
 # Ted
-scoreboard players set tedGiveCan MenuFeed 0
-scoreboard players set tedGiveBottle MenuFeed 0
+scoreboard players set tedGiveSoup MenuFeed 0
+scoreboard players set tedGiveWater MenuFeed 0
 # Timmy
-scoreboard players set timmyGiveCan MenuFeed 0
-scoreboard players set timmyGiveBottle MenuFeed 0
+scoreboard players set timmyGiveSoup MenuFeed 0
+scoreboard players set timmyGiveWater MenuFeed 0
 # Medkit
 scoreboard players set giveMedkit MenuFeed 0
 # Total
 scoreboard players set hasItems ItemsBunker 0
 scoreboard players set itemCount ItemsBunker 0
-scoreboard players set cansGiven MenuFeed 0
-scoreboard players set bottlesGiven MenuFeed 0
+scoreboard players set soupGiven MenuFeed 0
+scoreboard players set waterGiven MenuFeed 0
 
 # EXPLORE
 scoreboard objectives add MenuExplore dummy {"bold":true,"color":"white","text":"Menu Explore"}

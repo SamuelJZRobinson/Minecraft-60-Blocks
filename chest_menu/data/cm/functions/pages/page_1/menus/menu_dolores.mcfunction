@@ -5,23 +5,23 @@
   data modify block 0 54 29 Items insert 0 value {Slot:0b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:7,isMenu:1b,page:1,selection:4,display:{Name:'{"text":"Dolores","color":"gray","bold":true}'}}}
   # Set Action
     # 1 soup (w/none), 1 water (w/none)
-    execute if score itemStatus MenuFeed matches 0..3 if score doloresGiveCan MenuFeed matches 1 if score doloresGiveBottle MenuFeed matches 1 run scoreboard players set doloresHead MenuFeed 1
+    execute if score itemStatus MenuFeed matches 0..3 if score doloresGiveSoup MenuFeed matches 1 if score doloresGiveWater MenuFeed matches 1 run scoreboard players set doloresHead MenuFeed 1
     # 1 soup, 0 water
-    execute unless score itemStatus MenuFeed matches 1..3 if score doloresGiveCan MenuFeed matches 1 if score doloresGiveBottle MenuFeed matches 0 run scoreboard players set doloresHead MenuFeed 2
+    execute unless score itemStatus MenuFeed matches 1..3 if score doloresGiveSoup MenuFeed matches 1 if score doloresGiveWater MenuFeed matches 0 run scoreboard players set doloresHead MenuFeed 2
     # 0 to 1 soup (w/none), 0 water
-    execute if score itemStatus MenuFeed matches 2 if score doloresGiveCan MenuFeed matches 0..1 if score doloresGiveBottle MenuFeed matches 0 run scoreboard players set doloresHead MenuFeed 3
+    execute if score itemStatus MenuFeed matches 2 if score doloresGiveSoup MenuFeed matches 0..1 if score doloresGiveWater MenuFeed matches 0 run scoreboard players set doloresHead MenuFeed 3
     # 0 soup (w/none), 1 water
-    execute if score itemStatus MenuFeed matches 2..3 if score doloresGiveCan MenuFeed matches 0 if score doloresGiveBottle MenuFeed matches 1 run scoreboard players set doloresHead MenuFeed 4
+    execute if score itemStatus MenuFeed matches 2..3 if score doloresGiveSoup MenuFeed matches 0 if score doloresGiveWater MenuFeed matches 1 run scoreboard players set doloresHead MenuFeed 4
     # 0 soup, 1 water
-    execute unless score itemStatus MenuFeed matches 1..3 if score doloresGiveCan MenuFeed matches 0 if score doloresGiveBottle MenuFeed matches 1 run scoreboard players set doloresHead MenuFeed 5
+    execute unless score itemStatus MenuFeed matches 1..3 if score doloresGiveSoup MenuFeed matches 0 if score doloresGiveWater MenuFeed matches 1 run scoreboard players set doloresHead MenuFeed 5
     # 0 soup, 0 to 1 water (w/none)
-    execute if score itemStatus MenuFeed matches 1 if score doloresGiveCan MenuFeed matches 0 if score doloresGiveBottle MenuFeed matches 0..1 run scoreboard players set doloresHead MenuFeed 6
+    execute if score itemStatus MenuFeed matches 1 if score doloresGiveSoup MenuFeed matches 0 if score doloresGiveWater MenuFeed matches 0..1 run scoreboard players set doloresHead MenuFeed 6
     # 1 soup, 0 water (w/none)
-    execute unless score itemStatus MenuFeed matches 2 if score itemStatus MenuFeed matches 1..3 if score doloresGiveCan MenuFeed matches 1 if score doloresGiveBottle MenuFeed matches 0 run scoreboard players set doloresHead MenuFeed 7
+    execute unless score itemStatus MenuFeed matches 2 if score itemStatus MenuFeed matches 1..3 if score doloresGiveSoup MenuFeed matches 1 if score doloresGiveWater MenuFeed matches 0 run scoreboard players set doloresHead MenuFeed 7
     # 0 soup, 0 water
-    execute if score itemStatus MenuFeed matches 0 if score doloresGiveCan MenuFeed matches 0 if score doloresGiveBottle MenuFeed matches 0 run scoreboard players set doloresHead MenuFeed 8
+    execute if score itemStatus MenuFeed matches 0 if score doloresGiveSoup MenuFeed matches 0 if score doloresGiveWater MenuFeed matches 0 run scoreboard players set doloresHead MenuFeed 8
     # 0 soup (w/none), 0 water none (w/none)
-    execute if score itemStatus MenuFeed matches 3 if score doloresGiveCan MenuFeed matches 0 if score doloresGiveBottle MenuFeed matches 0 run scoreboard players set doloresHead MenuFeed 9
+    execute if score itemStatus MenuFeed matches 3 if score doloresGiveSoup MenuFeed matches 0 if score doloresGiveWater MenuFeed matches 0 run scoreboard players set doloresHead MenuFeed 9
   # Action Lore
   execute if score doloresHead MenuFeed matches 1 run data modify block 0 54 29 Items[{Slot:0b}].tag.display.Lore append value '{"text":"Click to remove both","color":"dark_gray","underlined":true}'
   execute if score doloresHead MenuFeed matches 2 run data modify block 0 54 29 Items[{Slot:0b}].tag.display.Lore append value '{"text":"Click to add water","color":"dark_gray","underlined":true}'
@@ -46,17 +46,17 @@
 
 # Soup
   # Toggle
-  execute if score doloresGiveCan MenuFeed matches 0 unless score cansGiven MenuFeed >= cans ItemsBunker run data modify block 0 54 29 Items insert 0 value {Slot:1b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:76,isMenu:1b,page:1,selection:5,display:{Name:'{"text":"Keep soup","color":"gray","bold":true}',Lore:['{"text":"Click to add","color":"dark_gray","underlined":true}']}}}
-  execute if score doloresGiveCan MenuFeed matches 1 run data modify block 0 54 29 Items insert 0 value {Slot:1b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:16,isMenu:1b,page:1,selection:6,display:{Name:'{"text":"Give soup","color":"gray","bold":true}',Lore:['{"text":"Click to remove","color":"dark_gray","underlined":true}']}}}
+  execute if score doloresGiveSoup MenuFeed matches 0 unless score soupGiven MenuFeed >= soups ItemsBunker run data modify block 0 54 29 Items insert 0 value {Slot:1b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:76,isMenu:1b,page:1,selection:5,display:{Name:'{"text":"Keep soup","color":"gray","bold":true}',Lore:['{"text":"Click to add","color":"dark_gray","underlined":true}']}}}
+  execute if score doloresGiveSoup MenuFeed matches 1 run data modify block 0 54 29 Items insert 0 value {Slot:1b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:16,isMenu:1b,page:1,selection:6,display:{Name:'{"text":"Give soup","color":"gray","bold":true}',Lore:['{"text":"Click to remove","color":"dark_gray","underlined":true}']}}}
   # Lock
-  execute if score doloresGiveCan MenuFeed matches 0 if score cansGiven MenuFeed >= cans ItemsBunker run data modify block 0 54 29 Items insert 0 value {Slot:1b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:102,isMenu:1b,page:1,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Requires more soup","color":"dark_red"}']}}}
+  execute if score doloresGiveSoup MenuFeed matches 0 if score soupGiven MenuFeed >= soups ItemsBunker run data modify block 0 54 29 Items insert 0 value {Slot:1b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:102,isMenu:1b,page:1,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Requires more soup","color":"dark_red"}']}}}
 
 # Water
   # Toggle
-  execute if score doloresGiveBottle MenuFeed matches 0 unless score bottlesGiven MenuFeed >= bottles ItemsBunker run data modify block 0 54 29 Items insert 0 value {Slot:2b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:79,isMenu:1b,page:1,selection:7,display:{Name:'{"text":"Keep water","color":"gray","bold":true}',Lore:['{"text":"Click to add","color":"dark_gray","underlined":true}']}}}
-  execute if score doloresGiveBottle MenuFeed matches 1 run data modify block 0 54 29 Items insert 0 value {Slot:2b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:19,isMenu:1b,page:1,selection:8,display:{Name:'{"text":"Give water","color":"gray","bold":true}',Lore:['{"text":"Click to remove","color":"dark_gray","underlined":true}']}}}
+  execute if score doloresGiveWater MenuFeed matches 0 unless score waterGiven MenuFeed >= waters ItemsBunker run data modify block 0 54 29 Items insert 0 value {Slot:2b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:79,isMenu:1b,page:1,selection:7,display:{Name:'{"text":"Keep water","color":"gray","bold":true}',Lore:['{"text":"Click to add","color":"dark_gray","underlined":true}']}}}
+  execute if score doloresGiveWater MenuFeed matches 1 run data modify block 0 54 29 Items insert 0 value {Slot:2b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:19,isMenu:1b,page:1,selection:8,display:{Name:'{"text":"Give water","color":"gray","bold":true}',Lore:['{"text":"Click to remove","color":"dark_gray","underlined":true}']}}}
   # Lock
-  execute if score doloresGiveBottle MenuFeed matches 0 if score bottlesGiven MenuFeed >= bottles ItemsBunker run data modify block 0 54 29 Items insert 0 value {Slot:2b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:105,isMenu:1b,page:1,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Requires more water","color":"dark_red"}']}}}
+  execute if score doloresGiveWater MenuFeed matches 0 if score waterGiven MenuFeed >= waters ItemsBunker run data modify block 0 54 29 Items insert 0 value {Slot:2b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:105,isMenu:1b,page:1,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Requires more water","color":"dark_red"}']}}}
 
 # Medkit
   # Toggle

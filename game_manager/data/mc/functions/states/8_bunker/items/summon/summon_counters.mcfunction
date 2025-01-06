@@ -1,6 +1,0 @@
-# Bottle Labels
-summon minecraft:armor_stand -1.50 57.50 34.50 {CustomNameVisible:0b,Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerStatus","bottleCount","bottleTitle","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Water supply:","color":"white"}'}
-summon minecraft:armor_stand -1.50 57.25 34.50 {CustomNameVisible:0b,Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerStatus","bottleCount","bottleCount","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"#"}'}
-# Can Labels
-summon minecraft:armor_stand -1.50 56.50 34.50 {CustomNameVisible:0b,Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerStatus","canCount","canTitle","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Food supply:","color":"white"}'}
-summon minecraft:armor_stand -1.50 56.25 34.50 {CustomNameVisible:0b,Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerStatus","canCount","canCount","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"#"}'}

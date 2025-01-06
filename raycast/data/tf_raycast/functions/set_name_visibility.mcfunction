@@ -17,9 +17,9 @@ execute if score bunkerLook GameStatus matches 11 as @e[type=armor_stand,tag=map
 execute if score bunkerLook GameStatus matches 12 as @e[type=armor_stand,tag=medkit,limit=1] run data modify entity @s CustomNameVisible set value 1b
 execute if score bunkerLook GameStatus matches 13 as @e[type=armor_stand,tag=padlock,limit=1] run data modify entity @s CustomNameVisible set value 1b
 execute if score bunkerLook GameStatus matches 14 as @e[type=armor_stand,tag=radio,limit=1] run data modify entity @s CustomNameVisible set value 1b
-execute if score bunkerLook GameStatus matches 15 as @e[type=armor_stand,tag=canCount] at @s run data modify entity @s CustomNameVisible set value 1b
+execute if score bunkerLook GameStatus matches 15 as @e[type=armor_stand,tag=soupsTitle] at @s run data modify entity @s CustomNameVisible set value 1b
 execute if score bunkerLook GameStatus matches 16 as @e[type=armor_stand,tag=suitcase,limit=1] run data modify entity @s CustomNameVisible set value 1b
-execute if score bunkerLook GameStatus matches 17 as @e[type=armor_stand,tag=bottleCount] at @s run data modify entity @s CustomNameVisible set value 1b
+execute if score bunkerLook GameStatus matches 17 as @e[type=armor_stand,tag=watersTitle] at @s run data modify entity @s CustomNameVisible set value 1b
 execute if score bunkerLook GameStatus matches 18 as @e[type=armor_stand,tag=armour,limit=1] run data modify entity @s CustomNameVisible set value 1b
 execute if score bunkerLook GameStatus matches 19 if score alive DoloresStatus matches 1 run function tf_raycast:show_dolores_status
 execute if score bunkerLook GameStatus matches 20 if score alive MaryStatus matches 1 run function tf_raycast:show_mary_status

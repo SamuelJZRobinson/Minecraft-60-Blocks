@@ -1,9 +1,9 @@
 # Soup
-execute if score selection MenuMain matches 5 run scoreboard players set doloresGiveCan MenuFeed 1
-execute if score selection MenuMain matches 6 run scoreboard players set doloresGiveCan MenuFeed 0
+execute if score selection MenuMain matches 5 run scoreboard players set doloresGiveSoup MenuFeed 1
+execute if score selection MenuMain matches 6 run scoreboard players set doloresGiveSoup MenuFeed 0
 # Water
-execute if score selection MenuMain matches 7 run scoreboard players set doloresGiveBottle MenuFeed 1
-execute if score selection MenuMain matches 8 run scoreboard players set doloresGiveBottle MenuFeed 0
+execute if score selection MenuMain matches 7 run scoreboard players set doloresGiveWater MenuFeed 1
+execute if score selection MenuMain matches 8 run scoreboard players set doloresGiveWater MenuFeed 0
 # Medkit
 execute if score selection MenuMain matches 9 run scoreboard players set giveMedkit MenuFeed 1
 execute if score selection MenuMain matches 10 run scoreboard players set giveMedkit MenuFeed 0

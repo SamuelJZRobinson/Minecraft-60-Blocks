@@ -14,15 +14,15 @@
   execute if score itemId ItemsBundles matches 12 run scoreboard players set medkit ItemsBunker -1
   execute if score itemId ItemsBundles matches 13 run scoreboard players set padlock ItemsBunker -1
   execute if score itemId ItemsBundles matches 14 run scoreboard players set radio ItemsBunker -1
-  execute if score itemId ItemsBundles matches 15 run scoreboard players remove cans ItemsBunker 4
+  execute if score itemId ItemsBundles matches 15 run scoreboard players remove soups ItemsBunker 4
   execute if score itemId ItemsBundles matches 16 run scoreboard players set suitcase ItemsBunker -1
-  execute if score itemId ItemsBundles matches 17 run scoreboard players remove bottles ItemsBunker 4
+  execute if score itemId ItemsBundles matches 17 run scoreboard players remove waters ItemsBunker 4
   # Custom
   execute if score itemId ItemsBundles matches 18 run scoreboard players set armour ItemsBunker -1
 
 # Keep Items In Range
-execute if score cans ItemsBunker matches ..-1 run scoreboard players set cans ItemsBunker 0
-execute if score bottles ItemsBunker matches ..-1 run scoreboard players set bottles ItemsBunker 0
+execute if score soups ItemsBunker matches ..-1 run scoreboard players set soups ItemsBunker 0
+execute if score waters ItemsBunker matches ..-1 run scoreboard players set waters ItemsBunker 0
 
 # Check Character ID
   # Dolores
