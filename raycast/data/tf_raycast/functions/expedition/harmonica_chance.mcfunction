@@ -14,4 +14,4 @@ execute if score math_out em matches 3..5 run particle angry_villager ^ ^ ^1 0.6
 execute if score math_out em matches 3..5 as @e[Mobs,distance=..16] run effect give @s speed 15 1 false
 
 # Refill Harmonica
-schedule function tf_raycast:harmonica_refill 20s replace
+schedule function tf_raycast:expedition/harmonica_refill 20s replace

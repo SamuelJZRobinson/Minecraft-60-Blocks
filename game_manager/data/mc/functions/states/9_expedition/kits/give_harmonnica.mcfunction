@@ -1,2 +1,2 @@
 give @s carrot_on_a_stick{display:{Name:'{"text":"Harmonica"}',Lore:['{"text":"Click to fire","color":"dark_gray","underlined":true}','{"text":"Range: 16","color":"gold"}','{"text":"Odds: 60% stun | 40% anger","color":"gold"}','{"text":"Requires harmonica ammo","color":"red"}']},CustomModelData:6,itemId:10,harmonica:1b} 1
-give @s minecraft:bone_meal{display:{Name:'{"text":"Harmonica Ammo"}'},breathe:1b} 1
+give @s minecraft:bone_meal{display:{Name:'{"text":"Harmonica Ammo"}'},harmonicaAmmo:1b} 1

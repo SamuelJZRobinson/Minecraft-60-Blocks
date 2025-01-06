@@ -83,7 +83,7 @@
 
 # Decorate Bunker
   # Simplify Status Text Checks
-    # Armor stand visibility managed by tf_raycast:set_name_visibility
+    # Armor stand visibility managed by tf_raycast:bunker/set_item_name_visibility
   execute if score soup MaryStatus > HUNGER_MID StatusLevels run scoreboard players set soupLevel MaryStatus 0
   execute if score soup MaryStatus <= HUNGER_MID StatusLevels if score soup MaryStatus > HUNGER_MIN StatusLevels run scoreboard players set soupLevel MaryStatus 1
   execute if score soup MaryStatus <= HUNGER_MIN StatusLevels run scoreboard players set soupLevel MaryStatus 2

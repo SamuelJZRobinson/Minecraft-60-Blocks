@@ -1,9 +1,9 @@
 # Create Projectile
 scoreboard players reset @s GunType
-execute unless score @s GunCooldown matches 1.. at @s[nbt={SelectedItem:{tag:{gun:1b}},Inventory:[{id:"minecraft:iron_nugget",tag:{bullet:1b}}]}] run scoreboard players set @s GunType 1
-execute unless score @s GunCooldown matches 1.. at @s[nbt={SelectedItem:{tag:{bugSpray:1b}},Inventory:[{id:"minecraft:white_dye",tag:{gas:1b}}]}] run scoreboard players set @s GunType 2
-execute unless score @s GunCooldown matches 1.. at @s[nbt={SelectedItem:{tag:{harmonica:1b}},Inventory:[{id:"minecraft:bone_meal",tag:{breathe:1b}}]}] run scoreboard players set @s GunType 3
-execute at @s[scores={GunType = 1..}] run function tf_raycast:start_raycast
+execute unless score @s GunCooldownTick matches 1.. at @s[nbt={SelectedItem:{tag:{gun:1b}},Inventory:[{id:"minecraft:iron_nugget",tag:{gunAmmo:1b}}]}] run scoreboard players set @s GunType 1
+execute unless score @s GunCooldownTick matches 1.. at @s[nbt={SelectedItem:{tag:{bugSpray:1b}},Inventory:[{id:"minecraft:white_dye",tag:{bugSprayAmmo:1b}}]}] run scoreboard players set @s GunType 2
+execute unless score @s GunCooldownTick matches 1.. at @s[nbt={SelectedItem:{tag:{harmonica:1b}},Inventory:[{id:"minecraft:bone_meal",tag:{harmonicaAmmo:1b}}]}] run scoreboard players set @s GunType 3
+
 
 # Open Item
 execute at @s[nbt={SelectedItem:{tag:{ammo:1b}}}] run function mc:states/9_expedition/place/items/open/open_ammo

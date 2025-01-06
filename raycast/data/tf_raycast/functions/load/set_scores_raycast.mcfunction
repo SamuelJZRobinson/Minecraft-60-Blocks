@@ -3,8 +3,8 @@ scoreboard objectives add GunType dummy {"bold":true,"color":"white","text":"Gun
 scoreboard players reset * GunType
 
 # GUN COOLDOWN
-scoreboard objectives add GunCooldown dummy {"bold":true,"color":"white","text":"Gun Cooldown"}
-scoreboard players reset * GunCooldown
+scoreboard objectives add GunCooldownTick dummy {"bold":true,"color":"white","text":"Gun Cooldown Tick"}
+scoreboard players reset * GunCooldownTick
 
 # CLICK DETECTION
 scoreboard objectives add UseCarrotStick minecraft.used:minecraft.carrot_on_a_stick {"bold":true,"color":"white","text":"Use Carrot Stick"}
