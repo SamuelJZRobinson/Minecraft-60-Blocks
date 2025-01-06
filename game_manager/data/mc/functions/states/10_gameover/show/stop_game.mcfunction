@@ -1,1 +1,0 @@
-scoreboard players set started GameStatus 0

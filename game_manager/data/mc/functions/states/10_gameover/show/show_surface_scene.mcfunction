@@ -1,5 +1,5 @@
 # Notes
-  # Driven away endings are randomly chosen when nobody is inside the bunker
+  # Driven away endings are randomly chosen when nobody is inside the bunker.
 
 # Goto House Ruins
 function mc:utility/tp/tp_house_ruins
@@ -44,6 +44,5 @@ title @a times 20 80 20
 schedule function mc:states/10_gameover/show/show_statistics 2s replace
 
 # Set State
-schedule function mc:states/10_gameover/show/stop_game 7s replace
 scoreboard players set state GameStatus 1
 schedule function mc:states/manage_states 7s replace

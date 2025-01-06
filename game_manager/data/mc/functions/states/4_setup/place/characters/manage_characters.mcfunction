@@ -1,7 +1,3 @@
-# Give Outfits
-execute if score doTed Settings matches 0 as @p[team=Player] run function mc:utility/outfit/give_outfit_dolores
-execute if score doTed Settings matches 1 as @p[team=Player] run function mc:utility/outfit/give_outfit_ted
-
 # Declare Alive
 execute if score doTed Settings matches 0 run scoreboard players set alive DoloresStatus 1
 execute if score doTed Settings matches 1 run scoreboard players set alive TedStatus 1

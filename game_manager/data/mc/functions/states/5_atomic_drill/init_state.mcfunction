@@ -1,7 +1,9 @@
+tellraw @a "state 5"
+
+# Notes
+  # Atomic drill task loop handled by loop_1t.
+
 # Set Scores
-scoreboard players set difficulty Settings 2
 scoreboard players set mode PlayerLockInventory 2
 scoreboard players set task AtomicDrill 1
-
-# Start Task Loop
-function mc:states/5_atomic_drill/task/task_loop
+scoreboard players set stage AtomicDrill 0

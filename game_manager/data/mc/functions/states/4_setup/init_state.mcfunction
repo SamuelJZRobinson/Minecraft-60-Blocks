@@ -1,5 +1,9 @@
 tellraw @a "state 4"
 
+# Give Outfits
+execute if score doTed Settings matches 0 as @p[team=Player] run function mc:utility/outfit/give_outfit_dolores
+execute if score doTed Settings matches 1 as @p[team=Player] run function mc:utility/outfit/give_outfit_ted
+
 # Teleport To House
 function mc:utility/tp/tp_house
 

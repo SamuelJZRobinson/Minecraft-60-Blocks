@@ -36,7 +36,7 @@ execute if score dialogue AtomicDrill matches 16 run title @s actionbar {"text":
 execute if score dialogue AtomicDrill matches 17 run title @s actionbar {"text":"Our warning system provides sixty seconds to gather items and family.","color":"white"}
 execute if score dialogue AtomicDrill matches 18 run title @s actionbar {"text":"Remember to stand beside the shelter when your time is up!","color":"white"}
 execute if score dialogue AtomicDrill matches 19 run scoreboard players set state GameStatus 4
-execute if score dialogue AtomicDrill matches 19 run function mc:states/4_setup/gamemodes/setup_scavenge
+execute if score dialogue AtomicDrill matches 19 run function mc:states/4_setup/setup_gamemode_scavenge
 
 # Task Eleven (Failed To Enter Bunker)
 execute if score dialogue AtomicDrill matches 20 run title @s actionbar {"text":"Even hares can sprint faster than you recruit!","color":"white"}

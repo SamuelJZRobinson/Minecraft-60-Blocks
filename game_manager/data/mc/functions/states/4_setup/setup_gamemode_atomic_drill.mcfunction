@@ -1,11 +1,5 @@
-# Set Scores
-scoreboard players set mode PlayerLockInventory 1
-
 # Load Floorplan 1
-function mc:states/4_setup/place/floorplans/clone/clone_fp_1
-
-# Goto House
-function mc:utility/tp/tp_house
+function mc:states/4_setup/place/floorplans/1/manage_floorplan
 
 # Proceed
 scoreboard players set state GameStatus 5

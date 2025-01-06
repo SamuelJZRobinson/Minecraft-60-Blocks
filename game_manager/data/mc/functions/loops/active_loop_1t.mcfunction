@@ -4,8 +4,12 @@ execute if score state GameStatus matches 5..7 as @e[type=armor_stand,tag=spin] 
   # Stop Movement
   execute if score state GameStatus matches 4 as @p[team=Player] run function mc:utility/tp/tp_house
   # Collect Items
-  execute if score state GameStatus matches 6..7 run function mc:states/7_scavenge_house/items/collect/manage_collect
+  execute if score state GameStatus matches 5..7 run function mc:states/7_scavenge_house/items/collect/manage_collect
   execute if score state GameStatus matches 9 run function mc:states/7_scavenge_house/items/collect/manage_collect
+
+# Gamemodes
+  # Atomic Drill
+  function mc:states/5_atomic_drill/task/manage_tasks
 
 # Chest Menu
 execute if score state GameStatus matches 8 as @p[team=Player] run function cm:manage_chest_menu

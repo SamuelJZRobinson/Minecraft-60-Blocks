@@ -5,7 +5,7 @@
   # Setup
   execute if score state GameStatus matches 4 run function mc:utility/inventory/lock_inventory
   # Atomic Drill
-  execute if score state GameStatus matches 5 run function mc:utility/inventory/lock_inventory
+  # execute if score state GameStatus matches 5 run function mc:utility/inventory/lock_inventory
   # Grace Period
   execute if score state GameStatus matches 6 run function mc:utility/inventory/lock_inventory
   # Scavenge House
@@ -15,7 +15,7 @@
   # Setup
   execute if score state GameStatus matches 4 run function mc:utility/inventory/lock_hotbar
   # Atomic Drill
-  execute if score state GameStatus matches 5 run function mc:utility/inventory/lock_hotbar
+  # execute if score state GameStatus matches 5 run function mc:utility/inventory/lock_hotbar
   # Grace Period
   execute if score state GameStatus matches 6 run function mc:utility/inventory/lock_hotbar
   # Scavenge House
