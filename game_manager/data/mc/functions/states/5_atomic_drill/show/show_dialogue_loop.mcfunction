@@ -1,9 +1,13 @@
-# Notes
-  # Since scheduling removes the identity of the player a separate execution is needed
+tellraw @a "loop dialogue"
+
+# Title Times
+title @a times 0 80 0
 
 # Show Dialogue
-execute as @p[team=Player] run function mc:states/5_atomic_drill/show/show_dialogue
+title @a actionbar {"nbt":"dialogue[0]","storage":"atomicdrill"}
+
+# Remove Array Item
+data remove storage minecraft:atomicdrill dialogue[0]
 
 # Loop
-execute unless score dialogue AtomicDrill = dialogueMax AtomicDrill run schedule function mc:states/5_atomic_drill/show/show_dialogue_loop 70t replace
-execute unless score dialogue AtomicDrill = dialogueMax AtomicDrill run scoreboard players add dialogue AtomicDrill 1
+execute if data storage minecraft:atomicdrill dialogue[] run schedule function mc:states/5_atomic_drill/show/show_dialogue_loop 70t replace

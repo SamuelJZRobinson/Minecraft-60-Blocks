@@ -1,3 +1,7 @@
+# Reset Dialogue
+data remove storage minecraft:atomicdrill dialogue
+schedule clear mc:states/5_atomic_drill/task/force_task_done
+
 # House
   # Goto Hallway Marker
   execute if score task AtomicDrill matches 1 run function mc:states/5_atomic_drill/task/setup_task_1
@@ -46,6 +50,7 @@
 
 # Request Dialogue
 execute unless score task AtomicDrill matches 13.. run function mc:states/5_atomic_drill/show/show_dialogue_loop
+function mc:states/5_atomic_drill/show/manage_dialogue
 
 # Debounce Stage
 scoreboard players set stage AtomicDrill 1

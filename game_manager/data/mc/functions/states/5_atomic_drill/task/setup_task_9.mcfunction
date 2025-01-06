@@ -1,5 +1,5 @@
 # Set Dialogue
-scoreboard players set dialogue AtomicDrill 14
-scoreboard players set dialogueMax AtomicDrill 14
+data modify storage atomicdrill dialogue append value "Your enthusiasm is what save lives. Now salvage that equipment, pronto!"
+
 # Create Marker
 function mc:states/4_setup/place/floorplans/general/summon_bunker_indicator

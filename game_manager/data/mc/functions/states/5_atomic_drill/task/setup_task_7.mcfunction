@@ -1,6 +1,5 @@
 # Set Dialogue
-scoreboard players set dialogue AtomicDrill 12
-scoreboard players set dialogueMax AtomicDrill 12
+data modify storage atomicdrill dialogue append value "Nobody knows when the apocalypse ends so find a radio to take with you."
 # Place Radio
 execute positioned 19.30 65.00 6.45 run function mc:states/4_setup/place/items/summon/summon_radio
 execute as @e[type=minecraft:slime,tag=radio,limit=1] at @s run teleport @s ~ ~ ~ 90 0

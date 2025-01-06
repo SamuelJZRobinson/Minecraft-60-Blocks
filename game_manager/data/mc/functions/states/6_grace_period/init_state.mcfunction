@@ -4,8 +4,14 @@ tellraw @a "state 6"
 execute as @p[team=Player] run function mc:utility/effects/effects_scavenge_default
 
 # Setup Timer
-execute if score difficulty Settings matches 1 run scoreboard players set seconds TimerCountdown 20
-execute if score difficulty Settings matches 2 run scoreboard players set seconds TimerCountdown 10
-execute if score difficulty Settings matches 3 run scoreboard players set seconds TimerCountdown 0
+  # Difficulties
+    # Easy
+    execute if score difficulty Settings matches 1 run scoreboard players set seconds TimerCountdown 20
+    # Medium
+    execute if score difficulty Settings matches 2 run scoreboard players set seconds TimerCountdown 10
+    # Hard
+    execute if score difficulty Settings matches 3 run scoreboard players set seconds TimerCountdown 0
+  # Gamemodes
+  execute if score gamemode Settings matches 1 run scoreboard players set seconds TimerCountdown 10
 scoreboard objectives setdisplay sidebar TimerCountdown
 function mc:utility/timers/countdown/tick

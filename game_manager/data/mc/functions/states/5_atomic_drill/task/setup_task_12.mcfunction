@@ -1,6 +1,6 @@
 # Set Dialogue
-scoreboard players set dialogue AtomicDrill 25
-scoreboard players set dialogueMax AtomicDrill 26
+data modify storage atomicdrill dialogue append value "Although you understand how to scavenge your training is far from over."
+data modify storage atomicdrill dialogue append value "Meet me downstairs for extended survival training, at ease!"
 # Goto Bunker
 function mc:utility/tp/tp_bunker
 # Give Journal
