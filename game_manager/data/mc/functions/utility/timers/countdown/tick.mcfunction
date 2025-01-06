@@ -3,7 +3,10 @@
   execute if score seconds TimerCountdown matches 0.. run scoreboard players remove seconds TimerCountdown 1
 
 # Final Countdown
-execute if score seconds TimerCountdown <= COUNTDOWN_SECONDS_START TimerCountdownSettings if score seconds TimerCountdown matches 0.. run function mc:utility/timers/countdown/final_countdown
+  # Scavenge House
+  execute if score state GameStatus matches 7 if score seconds TimerCountdown <= COUNTDOWN_SECONDS_START TimerCountdownSettings if score seconds TimerCountdown matches 0.. run function mc:utility/timers/countdown/final_countdown
+  # Expedition
+  execute if score state GameStatus matches 9 if score seconds TimerCountdown <= COUNTDOWN_SECONDS_START TimerCountdownSettings if score seconds TimerCountdown matches 0.. run function mc:utility/timers/countdown/final_countdown
 
 # Loop Tick
 execute if score seconds TimerCountdown matches 1.. run schedule function mc:utility/timers/countdown/tick 1s replace
