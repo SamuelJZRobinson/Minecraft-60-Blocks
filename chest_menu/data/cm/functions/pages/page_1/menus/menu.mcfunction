@@ -1,11 +1,11 @@
 # Notes
   # If only one can or bottle is active when a character portrait is selected both will become active, but if the other slot is void it will deactivate
   # Slots are locked if there are insufficient characters or items
-  # count_supplies is kept in items to ensure values change when the chest opens
+  # count/count_supplies is kept in items to ensure values change when the chest opens
   # Head set actions are performed in menu_<character> instead of directory_<character> to avoid miscalculations due to delayed updates
 
 # Count Supplies
-function cm:pages/page_1/count_supplies
+function cm:pages/page_1/count/count_supplies
 
 # Character Selection
   # Dolores

@@ -1,3 +1,6 @@
+# Notes
+  # Intended for a robbery.
+
 # Set Items
   # Standard
   scoreboard players set ammo ItemsBunker 0
