@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"Radio"}',Lore:['{"text":"Click to use","color":"gold","underlined":true}']},CustomModelData:15,itemId:14} 1

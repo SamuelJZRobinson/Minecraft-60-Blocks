@@ -33,11 +33,11 @@
 
 #     # Character
 #       # Easy
-#       execute if score difficulty Settings matches 1 run loot insert 32 58 -7 loot lt_custom:chests/survival_easy_characters
+#       execute if score difficulty Settings matches 1 run loot insert 32 58 -7 loot cm:chests/survival_easy_characters
 #       # Medium
-#       execute if score difficulty Settings matches 2 run loot insert 32 58 -7 loot lt_custom:chests/survival_normal_characters
+#       execute if score difficulty Settings matches 2 run loot insert 32 58 -7 loot cm:chests/survival_normal_characters
 #       # Hard
-#       execute if score difficulty Settings matches 3 run loot insert 32 58 -7 loot lt_custom:chests/survival_hard_characters
+#       execute if score difficulty Settings matches 3 run loot insert 32 58 -7 loot cm:chests/survival_hard_characters
 
 #     # Bonous Bunker Stock
 #       # Easy And Medium

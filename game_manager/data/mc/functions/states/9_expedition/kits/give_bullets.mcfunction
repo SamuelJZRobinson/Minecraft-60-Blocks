@@ -1,0 +1,1 @@
+give @p minecraft:iron_nugget{display:{Name:'{"text":"Bullet"}'},CustomModelData:1,bullet:1b} 8

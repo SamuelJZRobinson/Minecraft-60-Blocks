@@ -1,0 +1,1 @@
+give @s saddle{display:{Name:'{"text":"Flashlight"}',Lore:['{"text":"Hold to use","color":"gold"}']},CustomModelData:8,itemId:7} 1

@@ -24,10 +24,10 @@ scoreboard players set mutantProtection MenuExplore 1
 scoreboard players set padlockProtection MenuExplore 1
 
 # Characters
-function mc:debug/bunker/set_bunker_characters_full
+function mc:debug/bunker/set_bunker_full_characters
 
 # Items
-function mc:debug/bunker/set_bunker_items_full
+function mc:debug/bunker/set_bunker_full_items
 
 # Expedition
 scoreboard players set expeditionReady MenuExplore 1
