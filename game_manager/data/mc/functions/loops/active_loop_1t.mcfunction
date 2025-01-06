@@ -15,7 +15,6 @@ execute if score state GameStatus matches 5..7 as @e[type=armor_stand,tag=spin] 
 execute if score state GameStatus matches 8 as @p[team=Player] run function cm:manage_chest_menu
 
 # Raycast
-### Might need to make 1 tick for faster label rendering
 execute if score state GameStatus matches 8..9 unless score gamemode Settings matches 3 as @p[team=Player] run function tf_raycast:manage_raycast
 
 # Character Death

@@ -1,1 +1,0 @@
-scoreboard players set seconds TimerCountdown 1
