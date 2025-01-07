@@ -1,0 +1,49 @@
+Lobby
+  Exterior
+  /tp @p 52.50 146.00 31.50 -212 24
+  Interior
+  /tp @p 21.50 130.00 -2.50 0 0
+
+Normal Neighbourhood
+/tp @p 46.50 67.00 28.50 152.5 -0.5
+
+Bunker
+/tp @p 0.50 55.00 28.50 0 14
+
+Maps
+  Retail Strip 1
+    Exterior
+    /tp @p -88.50 295.00 -424.50 46.5 -6
+    Interior
+    /tp @p -116.50 297.00 -364.50 -555.25 -0
+  Nuked Neighbourhood
+    Exterior
+    /tp @p -47.50 299.00 -383.50 -90 5
+  Highschool
+    Exterior
+    /tp @p 187.50 300.00 -433.50 50.75 0
+    Interior
+    /tp @p 143.00 303.00 -382.00 135.25 2
+  Retail Strip 2
+    Exterior
+    /tp @p -68.50 298.00 -245.00 90 0
+    Interior
+    /tp @p -96.50 300.00 -240.50 63 2
+  Bowling Alley
+    Exterior
+    /tp @p -49.50 297.00 -316.50 -49 -8
+    Interior
+    /tp @p -17.50 299.00 -295.5 -57 2
+  Hospital
+    Exterior
+    /tp @p 160.50 303.50 -207.50 155 5
+    Interior
+    /tp @p 127.44 295.00 -253.43 -400.75 0
+  Subway
+    Interior
+    /tp @p -86.50 285.00 -111.50 90 0
+  Warehouse
+    Exterior
+    /tp @p -55.50 301.50 -164.00 326 5
+    Interior
+    /tp @p -26.00 305.50 -118.00 -450.0 4.5
