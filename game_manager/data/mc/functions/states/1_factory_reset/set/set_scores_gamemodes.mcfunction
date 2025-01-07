@@ -3,7 +3,7 @@
   scoreboard objectives add PlayerDeaths deathCount {"bold":true,"color":"white","text":"Player Deaths"}
   scoreboard players reset * PlayerDeaths
   # Player Leave
-  scoreboard objectives add PlayerLeave minecraft.custom:minecraft.leave_game {"bold":true,"color":"white","text":"Player Leave"}
+  scoreboard objectives add PlayerLeaves minecraft.custom:minecraft.leave_game {"bold":true,"color":"white","text":"Player Leave"}
 
 # Player Count
 scoreboard objectives add PlayerCount dummy {"bold":true,"color":"white","text":"Player Count"}
