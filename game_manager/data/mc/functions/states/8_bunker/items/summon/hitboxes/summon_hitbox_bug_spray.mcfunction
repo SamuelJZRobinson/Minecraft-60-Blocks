@@ -1,0 +1,1 @@
+summon interaction -1.00 54.00 35.50 {width:0.3f,height:0.6f,Tags:["bunkerHitbox","bugSpray","hitboxBugSpray"]}

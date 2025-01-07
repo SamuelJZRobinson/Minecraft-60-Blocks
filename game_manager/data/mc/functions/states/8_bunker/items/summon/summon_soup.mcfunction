@@ -7,7 +7,7 @@ summon minecraft:armor_stand -0.75 56.38 35.50 {Team:Items,NoGravity:1b,Invulner
 summon minecraft:armor_stand -0.25 56.38 35.50 {Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerItem","soup","soup6"],DisabledSlots:4144959,Rotation:[-180F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:132}}]}
 summon minecraft:armor_stand -2.50 54.22 34.50 {Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerItem","soup","soupBox"],DisabledSlots:4144959,Rotation:[-180F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:132}}]}
 # Hitbox
-summon area_effect_cloud -1.50 56.00 36.50 {Particle:"block air",Radius:1.5f,Duration:2147483647,Tags:["bunkerHitbox","soup","hitboxSoup"]}
+function mc:states/8_bunker/items/summon/hitboxes/summon_hitbox_soup
 # Label
 summon minecraft:armor_stand -1.50 56.50 34.50 {CustomNameVisible:0b,Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerTitle","soupsTitle"],DisabledSlots:4144959,CustomName:'{"text":"Food supply:","color":"white"}'}
 summon minecraft:armor_stand -1.50 56.25 34.50 {CustomNameVisible:0b,Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerTitle","soupsTitle","soupsCount"],DisabledSlots:4144959,CustomName:'{"text":"#"}'}

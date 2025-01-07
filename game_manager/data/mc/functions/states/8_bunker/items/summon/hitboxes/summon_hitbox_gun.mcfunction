@@ -1,0 +1,1 @@
+summon interaction 1.1 55.32 36.00 {width:1.4f,height:1.65f,Tags:["bunkerHitbox","gun","hitboxGun"]}

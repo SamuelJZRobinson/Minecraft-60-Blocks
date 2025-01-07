@@ -1,13 +1,12 @@
 # Exists
 execute if score axe ItemsBunker matches 2 if entity @s[tag=!setModel] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 21
 execute if score axe ItemsBunker matches 2 if entity @s[tag=!setModel] run kill @e[type=minecraft:area_effect_cloud,tag=hitboxAxe]
-execute if score axe ItemsBunker matches 2 if entity @s[tag=!setModel] run summon area_effect_cloud 3.70 54.00 31.60 {Particle:"block air",Radius:0.3f,Duration:2147483647,Tags:["bunkerHitbox","axe","hitboxAxe"]}
-execute if score axe ItemsBunker matches 2 if entity @s[tag=!setModel] run summon area_effect_cloud 3.70 54.60 31.60 {Particle:"block air",Radius:0.3f,Duration:2147483647,Tags:["bunkerHitbox","axe","hitboxAxe"]}
+execute if score axe ItemsBunker matches 2 if entity @s[tag=!setModel] run function mc:states/8_bunker/items/summon/hitboxes/summon_hitbox_axe
 execute if score axe ItemsBunker matches 2 if entity @s[tag=!setModel] run tag @s add setModel
 # Empty
 execute if score axe ItemsBunker matches 0 run kill @e[tag=axe]
 # Broken
 execute if score axe ItemsBunker matches -1 if entity @s[tag=setModel] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 49
 execute if score axe ItemsBunker matches -1 if entity @s[tag=setModel] run kill @e[type=minecraft:area_effect_cloud,tag=hitboxAxe]
-execute if score axe ItemsBunker matches -1 if entity @s[tag=setModel] run summon area_effect_cloud 3.58 53.58 31.32 {Particle:"block air",Radius:0.48f,Duration:2147483647,Tags:["bunkerHitbox","axe","hitboxAxe"]}
+execute if score axe ItemsBunker matches -1 if entity @s[tag=setModel] run function mc:states/8_bunker/items/summon/hitboxes/summon_hitbox_axe_broken
 execute if score axe ItemsBunker matches -1 if entity @s[tag=setModel] run tag @s remove setModel

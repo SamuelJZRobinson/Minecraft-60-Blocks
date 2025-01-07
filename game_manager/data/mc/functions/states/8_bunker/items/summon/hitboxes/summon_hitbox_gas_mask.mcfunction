@@ -1,0 +1,1 @@
+summon interaction -2.70 55.00 33.49 {width:0.6f,height:0.75f,Tags:["bunkerHitbox","gasMask","hitboxGasMask"]}

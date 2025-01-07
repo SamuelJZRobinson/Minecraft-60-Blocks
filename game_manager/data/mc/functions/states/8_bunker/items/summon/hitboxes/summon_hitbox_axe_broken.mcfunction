@@ -1,0 +1,1 @@
+summon interaction 3.58 54.00 31.32 {width:1f,height:0.1f,Tags:["bunkerHitbox","axe","hitboxAxe"]}

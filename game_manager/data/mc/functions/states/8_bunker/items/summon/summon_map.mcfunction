@@ -5,7 +5,4 @@ summon minecraft:item_frame 2 56 35 {Facing:2b,Invulnerable:1b,Fixed:1b,Tags:["d
 summon minecraft:item_frame 3 55 35 {Facing:2b,Invulnerable:1b,Fixed:1b,Tags:["deleteItemFrame","bunkerItem","map","mapCorner3","mapBreak"],Item:{id:"minecraft:filled_map",Count:1b,tag:{map:2}}}
 summon minecraft:item_frame 2 55 35 {Facing:2b,Invulnerable:1b,Fixed:1b,Tags:["deleteItemFrame","bunkerItem","map","mapCorner4"],Item:{id:"minecraft:filled_map",Count:1b,tag:{map:3}}}
 # Hitbox
-summon area_effect_cloud 3.00 55.19 36.85 {Particle:"block air",Radius:1f,Duration:2147483647,Tags:["bunkerHitbox","map","hitboxMap"]}
-summon area_effect_cloud 3.00 55.69 36.85 {Particle:"block air",Radius:1f,Duration:2147483647,Tags:["bunkerHitbox","map","hitboxMap"]}
-summon area_effect_cloud 3.00 56.19 36.85 {Particle:"block air",Radius:1f,Duration:2147483647,Tags:["bunkerHitbox","map","hitboxMap"]}
-summon area_effect_cloud 3.00 56.50 36.85 {Particle:"block air",Radius:1f,Duration:2147483647,Tags:["bunkerHitbox","map","hitboxMap"]}
+function mc:states/8_bunker/items/summon/hitboxes/summon_hitbox_map
