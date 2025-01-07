@@ -1,0 +1,12 @@
+summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0f,Duration:19999980,Tags:["floor","north"]}
+summon minecraft:area_effect_cloud ~2 ~ ~ {Radius:0f,Duration:19999980,Tags:["floor","north"]}
+summon minecraft:area_effect_cloud ~4 ~ ~ {Radius:0f,Duration:19999980,Tags:["floor","south"]}
+summon minecraft:area_effect_cloud ~6 ~ ~ {Radius:0f,Duration:19999980,Tags:["floor","south"]}
+summon minecraft:area_effect_cloud ~8 ~ ~ {Radius:0f,Duration:19999980,Tags:["floor","north"]}
+summon minecraft:area_effect_cloud ~10 ~ ~ {Radius:0f,Duration:19999980,Tags:["floor","north"]}
+summon minecraft:area_effect_cloud ~12 ~ ~ {Radius:0f,Duration:19999980,Tags:["floor","south"]}
+summon minecraft:area_effect_cloud ~14 ~ ~ {Radius:0f,Duration:19999980,Tags:["floor","south"]}
+summon minecraft:area_effect_cloud ~16 ~ ~ {Radius:0f,Duration:19999980,Tags:["floor","south"]}
+summon minecraft:area_effect_cloud ~18 ~ ~ {Radius:0f,Duration:19999980,Tags:["floor","south"]}
+summon minecraft:area_effect_cloud ~20 ~ ~ {Radius:0f,Duration:19999980,Tags:["floor","south"]}
+summon minecraft:area_effect_cloud ~22 ~ ~ {Radius:0f,Duration:19999980,Tags:["floor","south"]}

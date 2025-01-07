@@ -14,6 +14,6 @@ execute unless entity @e[type=minecraft:item_frame,tag=deleteItemFrame] run summ
 
 # Spawn Markers
 function mc:states/4_setup/place/floorplans/general/summon_bunker_indicator
-function mc:states/4_setup/place/floorplans/general/summon_markers
-function mc:states/4_setup/place/floorplans/5/summon_room_markers
+function mc:states/4_setup/place/floorplans/general/manage_markers
+function mc:states/4_setup/place/floorplans/5/summon_markers_room
 schedule function mc:states/4_setup/place/floorplans/5/tag_room_markers 1t replace
