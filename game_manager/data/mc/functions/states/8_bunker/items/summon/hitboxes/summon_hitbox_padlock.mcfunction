@@ -1,1 +1,0 @@
-summon interaction -3.05 54.96 31.50 {width:0.4f,height:0.8f,Tags:["bunkerHitbox","padlock","hitboxPadlock"]}

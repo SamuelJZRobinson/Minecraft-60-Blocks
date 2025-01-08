@@ -1,6 +1,6 @@
 # Increment Slot For Void Items
 execute if score slotTwo MenuExplore matches 2 if score ammo ItemsBunker matches 0 run scoreboard players add slotTwo MenuExplore 1
-execute if score slotTwo MenuExplore matches 3 if score armour ItemsBunker matches 0 run scoreboard players add slotTwo MenuExplore 1
+execute if score slotTwo MenuExplore matches 3 if score bodyArmour ItemsBunker matches 0 run scoreboard players add slotTwo MenuExplore 1
 execute if score slotTwo MenuExplore matches 4 if score axe ItemsBunker matches 0 run scoreboard players add slotTwo MenuExplore 1
 execute if score slotTwo MenuExplore matches 5 if score boyScoutHandbook ItemsBunker matches 0 run scoreboard players add slotTwo MenuExplore 1
 execute if score slotTwo MenuExplore matches 6 if score bugSpray ItemsBunker matches 0 run scoreboard players add slotTwo MenuExplore 1

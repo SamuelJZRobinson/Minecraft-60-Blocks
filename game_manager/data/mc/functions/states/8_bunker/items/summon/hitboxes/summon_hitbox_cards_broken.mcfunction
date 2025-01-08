@@ -1,1 +1,0 @@
-summon interaction -0.55 55.07 30.48 {width:0.85f,height:0.02f,Tags:["bunkerHitbox","cards","hitboxCards"]}

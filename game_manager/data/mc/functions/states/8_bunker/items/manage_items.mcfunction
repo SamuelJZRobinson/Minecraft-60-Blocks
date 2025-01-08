@@ -1,9 +1,6 @@
 # Summon Items
 function mc:states/8_bunker/items/summon/summon_items
 
-# Update Items
-function mc:states/8_bunker/items/update/update_items
-
 # Decorations
   # Bloody Hand Print
   execute if score isEvil GameStatus matches 0 as @e[type=minecraft:armor_stand,tag=bunkerHandprint] at @s run kill @s

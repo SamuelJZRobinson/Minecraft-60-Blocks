@@ -27,7 +27,14 @@ scoreboard objectives add ItemsHouseHigh dummy {"bold":true,"color":"white","tex
   scoreboard players set radio ItemsBunker 0
   scoreboard players set suitcase ItemsBunker 0
   # Custom
-  scoreboard players set armour ItemsBunker 0
+  scoreboard players set bodyArmour ItemsBunker 0
+  # Real Soup And Water Count
+  scoreboard players set MULTIPLIER ItemsBunker 25
+  scoreboard players set DIVISOR ItemsBunker 4
+  scoreboard players set watersInt ItemsBunker 0
+  scoreboard players set watersFloat ItemsBunker 0
+  scoreboard players set soupsInt ItemsBunker 0
+  scoreboard players set soupsFloat ItemsBunker 0
 
 # Items Bundles
 scoreboard objectives add ItemsBundles dummy {"bold":true,"color":"white","text":"Items Bundles"}
@@ -38,17 +45,3 @@ scoreboard players set itemId ItemsBundles 0
 scoreboard players set itemsOwed ItemsBundles 0
 scoreboard players set itemsLeft ItemsBundles 0
 scoreboard players set destroyItemFails ItemsBundles 0
-
-# Real Count
-scoreboard objectives add RealContainerCount dummy {"bold":true,"color":"white","text":"Real Container Count"}
-# Math
-scoreboard players set MULTIPLIER RealContainerCount 25
-scoreboard players set DIVISOR RealContainerCount 4
-# Water Bottles
-scoreboard players set watersInt RealContainerCount 0
-scoreboard players set watersFloat RealContainerCount 0
-# Soup
-scoreboard players set SOUP_MIN RealContainerCount 0
-scoreboard players set SOUP_MAX RealContainerCount 0
-scoreboard players set soupsInt RealContainerCount 0
-scoreboard players set soupsFloat RealContainerCount 0

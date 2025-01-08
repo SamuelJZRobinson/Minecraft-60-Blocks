@@ -1,6 +1,3 @@
-# Clear Locations
-function mc:states/1_factory_reset/clear/clear_locations
-
 # Player
 team join Player @s
 clear @a
@@ -61,7 +58,7 @@ scoreboard players set padlockProtection MenuExplore 1
   scoreboard players set suitcase ItemsBunker 3
   scoreboard players set waters ItemsBunker 100
   # Custom
-  scoreboard players set armour ItemsBunker 3
+  scoreboard players set bodyArmour ItemsBunker 3
 
 # Expedition
 scoreboard players set expeditionReady MenuExplore 1

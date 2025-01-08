@@ -18,7 +18,7 @@
   execute if score itemId ItemsBundles matches 16 run scoreboard players set suitcase ItemsBunker -1
   execute if score itemId ItemsBundles matches 17 run scoreboard players remove waters ItemsBunker 4
   # Custom
-  execute if score itemId ItemsBundles matches 18 run scoreboard players set armour ItemsBunker -1
+  execute if score itemId ItemsBundles matches 18 run scoreboard players set bodyArmour ItemsBunker -1
 
 # Keep Items In Range
 execute if score soups ItemsBunker matches ..-1 run scoreboard players set soups ItemsBunker 0

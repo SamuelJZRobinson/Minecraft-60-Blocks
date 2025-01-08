@@ -21,7 +21,7 @@
     execute if score itemId ItemsBundles matches 16 run scoreboard players add suitcase ItemsBunker 1
   # Custom
     # Multi Slot
-    execute if score itemId ItemsBundles matches 18 run scoreboard players add armour ItemsBunker 1
+    execute if score itemId ItemsBundles matches 18 run scoreboard players add bodyArmour ItemsBunker 1
 
   # Check Character ID
     # Dolores

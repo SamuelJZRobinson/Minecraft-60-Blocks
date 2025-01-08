@@ -1,1 +1,0 @@
-summon interaction -2.95 54.70 32.49 {width:0.6f,height:1.25f,Tags:["bunkerHitbox","medkit","hitboxMedkit"]}

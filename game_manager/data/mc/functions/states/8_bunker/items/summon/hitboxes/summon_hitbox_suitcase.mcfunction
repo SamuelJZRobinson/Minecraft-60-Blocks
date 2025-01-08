@@ -1,1 +1,0 @@
-summon interaction 3.70 54.00 34.25 {width:0.85f,height:0.7f,Tags:["bunkerHitbox","suitcase","hitboxSuitcase"]}

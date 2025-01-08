@@ -1,7 +1,7 @@
 # Official Items
 summon armor_stand 19.50 131.39 5.50 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyAmmo"],DisabledSlots:4144959,Rotation:[-90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:1}}]}
 summon armor_stand 19.25 131.64 4.50 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyAxe"],DisabledSlots:4144959,Rotation:[90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:21}}]}
-summon armor_stand 19.50 131.38 3.50 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyBoyScoutHandbook"],DisabledSlots:4144959,Rotation:[-90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:3}}]}
+summon armor_stand 19.50 131.38 3.50 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyhandbook"],DisabledSlots:4144959,Rotation:[-90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:3}}]}
 summon armor_stand 19.50 131.40 2.50 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyBugSpray"],DisabledSlots:4144959,Rotation:[-90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:4}}]}
 summon armor_stand 19.50 131.38 1.50 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyCards"],DisabledSlots:4144959,Rotation:[90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:5}}]}
 summon armor_stand 19.50 131.40 0.50 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyCheckers"],DisabledSlots:4144959,Rotation:[90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:6}}]}

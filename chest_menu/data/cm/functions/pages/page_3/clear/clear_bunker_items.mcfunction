@@ -21,7 +21,7 @@
   scoreboard players set radio ItemsBunker 0
   scoreboard players set suitcase ItemsBunker 0
   # Custom
-  scoreboard players set armour ItemsBunker 0
+  scoreboard players set bodyArmour ItemsBunker 0
 
 # Set Count
 scoreboard players set itemCount ItemsBunker 0

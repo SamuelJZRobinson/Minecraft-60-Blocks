@@ -1,1 +1,0 @@
-summon interaction -1.50 56.00 36.50 {width:3f,height:0.5f,Tags:["bunkerHitbox","soup","hitboxSoup"]}

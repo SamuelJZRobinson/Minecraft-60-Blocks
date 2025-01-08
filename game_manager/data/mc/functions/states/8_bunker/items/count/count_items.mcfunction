@@ -1,12 +1,12 @@
 # Calculate Real Count
   # Soup
   execute if score soups ItemsBunker matches 1.. run function mc:states/8_bunker/items/count/count_soups
-  execute if score soups ItemsBunker matches ..0 run scoreboard players set soupsInt RealContainerCount 0
-  execute if score soups ItemsBunker matches ..0 run scoreboard players set soupsFloat RealContainerCount 0
+  execute if score soups ItemsBunker matches ..0 run scoreboard players set soupsInt ItemsBunker 0
+  execute if score soups ItemsBunker matches ..0 run scoreboard players set soupsFloat ItemsBunker 0
   # Water
   execute if score waters ItemsBunker matches 1.. run function mc:states/8_bunker/items/count/count_waters
-  execute if score waters ItemsBunker matches ..0 run scoreboard players set watersInt RealContainerCount 0
-  execute if score waters ItemsBunker matches ..0 run scoreboard players set watersFloat RealContainerCount 0
+  execute if score waters ItemsBunker matches ..0 run scoreboard players set watersInt ItemsBunker 0
+  execute if score waters ItemsBunker matches ..0 run scoreboard players set watersFloat ItemsBunker 0
 
 # Set Score
 scoreboard players set itemCount ItemsBunker 0
@@ -27,8 +27,8 @@ scoreboard players set itemCount ItemsBunker 0
   execute if score medkit ItemsBunker matches 2 run scoreboard players add itemCount ItemsBunker 1
   execute if score padlock ItemsBunker matches 1 run scoreboard players add itemCount ItemsBunker 1
   execute if score radio ItemsBunker matches 1 run scoreboard players add itemCount ItemsBunker 1
-  scoreboard players operation itemCount ItemsBunker += soupsInt RealContainerCount
+  scoreboard players operation itemCount ItemsBunker += soupsInt ItemsBunker
   execute if score suitcase ItemsBunker matches 3 run scoreboard players add itemCount ItemsBunker 1
-  scoreboard players operation itemCount ItemsBunker += watersInt RealContainerCount
+  scoreboard players operation itemCount ItemsBunker += watersInt ItemsBunker
   # Custom
-  execute if score armour ItemsBunker matches 3 run scoreboard players add itemCount ItemsBunker 1
+  execute if score bodyArmour ItemsBunker matches 3 run scoreboard players add itemCount ItemsBunker 1

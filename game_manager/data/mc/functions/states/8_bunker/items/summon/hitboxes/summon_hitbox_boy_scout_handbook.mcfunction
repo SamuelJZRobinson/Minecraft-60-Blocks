@@ -1,1 +1,0 @@
-summon interaction 3.93 56.00 31.50 {width:0.4f,height:0.52f,Tags:["bunkerHitbox","boyScoutHandbook","hitboxHandbook"]}

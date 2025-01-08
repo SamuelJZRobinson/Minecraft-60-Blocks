@@ -33,7 +33,7 @@
   data modify storage minecraft:scavenge randomId append value 17
   data modify storage minecraft:scavenge randomId append value 17
   # Custom
-  execute if score armour ItemsBunker matches ..0 run data modify storage minecraft:scavenge randomId append value 18
+  execute if score bodyArmour ItemsBunker matches ..0 run data modify storage minecraft:scavenge randomId append value 18
 
 # Choose Items
 function mc:states/8_bunker/items/process/bundles/check/check_random

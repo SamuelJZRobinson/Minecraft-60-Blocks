@@ -1,1 +1,0 @@
-summon interaction 3.24 55.19 34.74 {width:0.6f,height:0.47f,Tags:["bunkerHitbox","radio","hitboxRadio"]}

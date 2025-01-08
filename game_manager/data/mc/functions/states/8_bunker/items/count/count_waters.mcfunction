@@ -1,7 +1,9 @@
 # Integer
-scoreboard players operation watersInt RealContainerCount = waters ItemsBunker
-scoreboard players operation watersInt RealContainerCount /= DIVISOR RealContainerCount
+scoreboard players operation watersInt ItemsBunker = waters ItemsBunker
+scoreboard players operation watersInt ItemsBunker /= DIVISOR ItemsBunker
 # Float
-scoreboard players operation watersFloat RealContainerCount = waters ItemsBunker
-scoreboard players operation watersFloat RealContainerCount %= DIVISOR RealContainerCount
-scoreboard players operation watersFloat RealContainerCount *= MULTIPLIER RealContainerCount
+scoreboard players operation watersFloat ItemsBunker = waters ItemsBunker
+scoreboard players operation watersFloat ItemsBunker %= DIVISOR ItemsBunker
+scoreboard players operation watersFloat ItemsBunker *= MULTIPLIER ItemsBunker
+# Keep In Range
+execute if score waters ItemsBunker matches ..-1 run scoreboard players set waters ItemsBunker 0

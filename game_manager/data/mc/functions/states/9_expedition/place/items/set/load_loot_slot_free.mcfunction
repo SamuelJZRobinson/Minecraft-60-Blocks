@@ -24,7 +24,7 @@ scoreboard players set slotThreeFree ItemsExpedition 0
   execute if score radio ItemsBunker matches ..0 run data modify storage minecraft:scavenge slotOneFree append value 14
   execute if score suitcase ItemsBunker matches ..0 run data modify storage minecraft:scavenge slotThreeFree append value 16
   # Custom
-  execute if score armour ItemsBunker matches ..0 run data modify storage minecraft:scavenge slotThreeFree append value 18
+  execute if score bodyArmour ItemsBunker matches ..0 run data modify storage minecraft:scavenge slotThreeFree append value 18
 
 # Count Free Slots
 execute store result score slotOneFree ItemsExpedition run data get storage minecraft:scavenge slotOneFree

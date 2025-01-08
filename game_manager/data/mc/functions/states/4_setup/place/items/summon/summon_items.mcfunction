@@ -8,7 +8,7 @@ scoreboard players set waterCount ItemsHouse 8
 # Official Items
 execute unless entity @e[team=Items,type=slime,tag=ammo] positioned 24.50 70.00 -5.50 run function mc:states/4_setup/place/items/summon/summon_ammo
 execute unless entity @e[team=Items,type=slime,tag=axe] positioned 24.50 70.00 -5.50 run function mc:states/4_setup/place/items/summon/summon_axe
-execute unless entity @e[team=Items,type=slime,tag=boyScoutHandbook] positioned 24.50 70.00 -5.50 run function mc:states/4_setup/place/items/summon/summon_boy_scout_handbook
+execute unless entity @e[team=Items,type=slime,tag=handbook] positioned 24.50 70.00 -5.50 run function mc:states/4_setup/place/items/summon/summon_boy_scout_handbook
 execute unless entity @e[team=Items,type=slime,tag=bugSpray] positioned 24.50 70.00 -5.50 run function mc:states/4_setup/place/items/summon/summon_bug_spray
 execute unless entity @e[team=Items,type=slime,tag=cards] positioned 24.50 70.00 -5.50 run function mc:states/4_setup/place/items/summon/summon_cards
 execute unless entity @e[team=Items,type=slime,tag=flashlight] positioned 24.50 70.00 -5.50 run function mc:states/4_setup/place/items/summon/summon_flashlight

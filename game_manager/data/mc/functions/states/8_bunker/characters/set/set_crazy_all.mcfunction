@@ -18,7 +18,7 @@
   execute if score suitcase ItemsBunker matches 3 run data modify storage minecraft:scavenge randomId append value 16
   execute if score waters ItemsBunker matches 1.. run data modify storage minecraft:scavenge randomId append value 17
   # Custom
-  execute if score armour ItemsBunker matches 3 run data modify storage minecraft:scavenge randomId append value 18
+  execute if score bodyArmour ItemsBunker matches 3 run data modify storage minecraft:scavenge randomId append value 18
 
 # Choose Items
 function mc:states/8_bunker/items/process/bundles/check/check_random

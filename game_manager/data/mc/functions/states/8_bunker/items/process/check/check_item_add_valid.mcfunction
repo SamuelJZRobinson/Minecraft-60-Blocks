@@ -26,4 +26,4 @@
   # Suitcase (3 Slots)
   execute if score suitcase ItemsBunker matches 1..2 run scoreboard players set suitcase ItemsBunker 0
   # Armour (3 Slots)
-  execute if score armour ItemsBunker matches 1..2 run scoreboard players set armour ItemsBunker 0
+  execute if score bodyArmour ItemsBunker matches 1..2 run scoreboard players set bodyArmour ItemsBunker 0
