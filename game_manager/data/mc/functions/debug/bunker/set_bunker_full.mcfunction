@@ -56,7 +56,7 @@ scoreboard players set padlockProtection MenuExplore 1
   scoreboard players set radio ItemsBunker 1
   scoreboard players set soups ItemsBunker 100
   scoreboard players set suitcase ItemsBunker 3
-  scoreboard players set waters ItemsBunker 100
+  scoreboard players set waters ItemsBunker 99
   # Custom
   scoreboard players set bodyArmour ItemsBunker 3
 
