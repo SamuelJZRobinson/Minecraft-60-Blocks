@@ -18,7 +18,7 @@ scoreboard players add SOUP_MIN RealContainerCount 1
 # Apply Model
 execute if score soups ItemsBunker >= SOUP_MIN RealContainerCount if entity @s[tag=!soupBox,tag=!setModel] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 16
 execute if score soups ItemsBunker >= SOUP_MIN RealContainerCount if entity @s[tag=soupBox,tag=!setModel] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 24
-execute if score soups ItemsBunker >= SOUP_MIN RealContainerCount if entity @s[tag=soupBox,tag=!setModel] run summon area_effect_cloud -2.49 54.00 34.68 {Particle:"block air",Radius:0.51f,Duration:2147483647,Tags:["bunkerHitbox","soup","hitboxSoupBox"]}
+execute if score soups ItemsBunker >= SOUP_MIN RealContainerCount if entity @s[tag=soupBox,tag=!setModel] run function mc:states/8_bunker/items/summon/hitboxes/summon_hitbox_soup_box
 execute if score soups ItemsBunker >= SOUP_MIN RealContainerCount if entity @s[tag=!setModel] run tag @s add setModel
 execute if score soups ItemsBunker matches 0 run kill @e[tag=hitboxSoupBox]
 scoreboard players remove SOUP_MIN RealContainerCount 1

@@ -1,0 +1,1 @@
+summon interaction -2.70 54.00 33.50 {width:0.45f,height:0.65f,Tags:["bunkerHitbox","water","hitboxWaterJug"]}

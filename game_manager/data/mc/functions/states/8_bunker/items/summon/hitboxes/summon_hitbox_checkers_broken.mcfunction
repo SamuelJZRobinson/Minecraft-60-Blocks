@@ -1,0 +1,1 @@
+summon interaction 0.50 55.07 30.50 {width:1f,height:0.3f,Tags:["bunkerHitbox","checkers","hitboxCheckers"]}

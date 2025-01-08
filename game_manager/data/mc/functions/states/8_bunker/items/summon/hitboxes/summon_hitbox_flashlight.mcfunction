@@ -1,0 +1,1 @@
+summon interaction 3.50 56.00 32.50 {width:0.25f,height:0.6f,Tags:["bunkerHitbox","flashlight","hitboxFlashlight"]}

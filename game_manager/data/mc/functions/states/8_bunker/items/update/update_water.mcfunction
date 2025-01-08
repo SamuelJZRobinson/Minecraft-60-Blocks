@@ -18,7 +18,7 @@ scoreboard players add WATER_MIN RealContainerCount 1
 # Apply Model
 execute if score waters ItemsBunker >= WATER_MIN RealContainerCount if entity @s[tag=!waterJug,tag=!setModel] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 19
 execute if score waters ItemsBunker >= WATER_MIN RealContainerCount if entity @s[tag=waterJug,tag=!setModel] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 25
-execute if score waters ItemsBunker >= WATER_MIN RealContainerCount if entity @s[tag=waterJug,tag=!setModel] run summon area_effect_cloud -2.70 54.00 33.50 {Particle:"block air",Radius:0.22f,Duration:2147483647,Tags:["bunkerHitbox","water","hitboxWaterJug"]}
+execute if score waters ItemsBunker >= WATER_MIN RealContainerCount if entity @s[tag=waterJug,tag=!setModel] run function mc:states/8_bunker/items/summon/hitboxes/summon_hitbox_water_jug
 execute if score waters ItemsBunker >= WATER_MIN RealContainerCount if entity @s[tag=!setModel] run tag @s add setModel
 execute if score waters ItemsBunker matches 0 run kill @e[tag=hitboxWaterJug]
 scoreboard players remove WATER_MIN RealContainerCount 1
