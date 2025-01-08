@@ -1,1 +1,1 @@
-summon interaction -2.925 55.00 30.50 {width:0.5f,height:0.75f,Tags:["bunkerHitbox","bodyArmour","hitboxBodyArmour"]}
+summon interaction -2.925 55.00 30.50 {width:0.55f,height:0.75f,Tags:["bunkerHitbox","bodyArmour","hitboxBodyArmour"]}
