@@ -1,5 +1,5 @@
 # Empty Chest
-data remove block 0 54 29 Items
+data remove block -8 -48 -9 Items
 
 # Set Page Items
   # Page 0

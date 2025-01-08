@@ -6,6 +6,9 @@
   # Atomic Drill task 14 makes everyone thirsty, task 15 fixes thirsty, task 16 character returns from expedition
   ### Decrease character sanity
 
+# Spawn Characters
+execute positioned -11 -48 -15 run function mc:states/8_bunker/characters/summon/summon_characters
+
 # Set Dice
 scoreboard players set mode Math 0
 # execute if score difficulty Settings matches 1 run scoreboard players set mode em 1

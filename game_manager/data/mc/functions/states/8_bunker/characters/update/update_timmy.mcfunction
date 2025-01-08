@@ -88,8 +88,6 @@
   # Add later
 
 # Decorate Bunker
-  # Spawn
-  execute if score alive TimmyStatus matches 1 unless entity @e[type=minecraft:armor_stand,tag=bunkerTimmy] run function mc:states/8_bunker/characters/summon/summon_timmy
   # Simplify Status Text Checks
   execute if score soup TimmyStatus > HUNGER_MID StatusLevels run scoreboard players set soupLevel TimmyStatus 0
   execute if score soup TimmyStatus <= HUNGER_MID StatusLevels if score soup TimmyStatus > HUNGER_MIN StatusLevels run scoreboard players set soupLevel TimmyStatus 1
