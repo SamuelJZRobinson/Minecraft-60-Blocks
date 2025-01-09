@@ -12,8 +12,5 @@ execute if score randomFloorplan ItemsHouse matches 4 run function mc:states/4_s
 execute if score randomFloorplan ItemsHouse matches 5 run function mc:states/4_setup/place/floorplans/5/manage_floorplan
 execute if score randomFloorplan ItemsHouse matches 6 run function mc:states/4_setup/place/floorplans/6/manage_floorplan
 
-# Remember Floorplan
-scoreboard players operation preFloorplan GameStatus = randomFloorplan ItemsHouse
-
 # Reset Scores
 scoreboard players reset randomFloorplan ItemsHouse

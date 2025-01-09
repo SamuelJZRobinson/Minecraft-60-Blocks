@@ -1,18 +1,18 @@
 # Rooms
   # Master Bedroom
-  tag @e[type=minecraft:marker,x=10,y=63,z=-22,dx=8,dy=4,dz=9] add masterBedroom
+  tag @e[type=minecraft:marker,x=10,z=-15,dx=8,dz=9] add masterBedroom
   # Kitchen
-  tag @e[type=minecraft:marker,x=21,y=63,z=-22,dx=6,dy=4,dz=9] add kitchen
+  tag @e[type=minecraft:marker,x=21,z=-15,dx=6,dz=9] add kitchen
   # Kid Bedroom
-  tag @e[type=minecraft:marker,x=30,y=63,z=-22,dx=3,dy=4,dz=9] add kidsBedroom
+  tag @e[type=minecraft:marker,x=30,z=-15,dx=3,dz=9] add kidsBedroom
   # Side Bathroom
-  tag @e[type=minecraft:marker,x=36,y=63,z=-10,dx=5,dy=4,dz=6] add sideBathroom
+  tag @e[type=minecraft:marker,x=36,z=-3,dx=5,dz=6] add sideBathroom
   # Bathroom
-  tag @e[type=minecraft:marker,x=22,y=63,z=-1,dx=7,dy=4,dz=9] add bathroom
+  tag @e[type=minecraft:marker,x=22,z=6,dx=7,dz=9] add bathroom
   # Lounge Room
-  tag @e[type=minecraft:marker,x=10,y=63,z=-1,dx=9,dy=4,dz=9] add lounge
+  tag @e[type=minecraft:marker,x=10,z=6,dx=9,dz=9] add lounge
   # Hallway
-  tag @e[type=minecraft:marker,x=14,y=63,z=-10,dx=19,dy=4,dz=6] add hallway
+  tag @e[type=minecraft:marker,x=14,z=-3,dx=19,dz=6] add hallway
 
 # Count High Spots
 function mc:states/4_setup/place/floorplans/general/count_high_spots

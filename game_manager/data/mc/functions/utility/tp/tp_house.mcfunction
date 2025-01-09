@@ -1,1 +1,1 @@
-teleport @a 15 64 -6.5
+teleport @a 15.50 -30.00 0.50

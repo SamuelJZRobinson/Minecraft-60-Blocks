@@ -3,17 +3,20 @@ scoreboard players set bunkerSide GameStatus 0
 
 # Clone Structures
   # Triple Rooms
-  execute unless score preFloorplan GameStatus matches 5 run clone 3 -58 2 -23 -63 -9 9 63 -23 replace normal
+  setblock 10 -31 -15 structure_block{name:"minecraft:floorplans/5/triple_rooms",posX:0,posY:0,posZ:0,rotation:"NONE",mirror:"NONE",mode:"LOAD"}
+  setblock 10 -30 -15 redstone_block
   # Hallway
-  execute unless score preFloorplan GameStatus matches 5 run clone 42 -58 2 5 -63 -6 5 63 -11 replace normal
+  setblock 6 -31 -4 structure_block{name:"minecraft:floorplans/5/hallway",posX:0,posY:0,posZ:0,rotation:"NONE",mirror:"NONE",mode:"LOAD"}
+  setblock 6 -30 -4 redstone_block
   # Double Rooms
-  execute unless score preFloorplan GameStatus matches 5 run clone 65 -58 2 44 -63 -9 9 63 -2 replace normal
+  setblock 10 -31 5 structure_block{name:"minecraft:floorplans/5/double_rooms",posX:0,posY:0,posZ:0,rotation:"NONE",mirror:"NONE",mode:"LOAD"}
+  setblock 10 -30 5 redstone_block
 
 # Props
-execute unless entity @e[type=minecraft:item_frame,tag=deleteItemFrame] run summon item_frame 28.00 65.50 3.50 {Facing:4b,Invulnerable:1b,Fixed:1b,Tags:["house","deleteItemFrame"],Item:{id:"minecraft:filled_map",Count:1b,tag:{map:4}}}
+execute unless entity @e[type=minecraft:item_frame,tag=deleteItemFrame] run summon item_frame 28.00 -28.50 10.50 {Facing:4b,Invulnerable:1b,Fixed:1b,Tags:["house","deleteItemFrame"],Item:{id:"minecraft:filled_map",Count:1b,tag:{map:4}}}
 
 # Spawn Markers
 function mc:states/4_setup/place/floorplans/general/summon_bunker_indicator
 function mc:states/4_setup/place/floorplans/general/manage_markers
-function mc:states/4_setup/place/floorplans/5/summon_markers_room
+function mc:states/4_setup/place/floorplans/5/summon_markers
 schedule function mc:states/4_setup/place/floorplans/5/tag_room_markers 1t replace

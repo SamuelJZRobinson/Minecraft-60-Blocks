@@ -1,10 +1,13 @@
 # Atomic Drill
-execute if score gamemode Settings matches 1 run clone -25 -61 54 -27 -63 50 20 130 8 masked
+execute if score gamemode Settings matches 1 run setblock 20 36 15 structure_block{name:"minecraft:nukes/nuke-atomic-drill",posX:0,posY:0,posZ:0,rotation:"NONE",mirror:"NONE",mode:"LOAD"} replace
 
 # Standard Gamemodes
   # Easy
-  execute if score gamemode Settings matches 2..4 if score difficulty Settings matches 1 run clone -25 -61 48 -27 -63 44 20 130 8 masked
+  execute if score gamemode Settings matches 2..4 if score difficulty Settings matches 1 run setblock 20 36 15 structure_block{name:"minecraft:nukes/nuke-easy",posX:0,posY:0,posZ:0,rotation:"NONE",mirror:"NONE",mode:"LOAD"} replace
   # Normal
-  execute if score gamemode Settings matches 2..4 if score difficulty Settings matches 2 run clone -25 -61 42 -27 -63 38 20 130 8 masked
+  execute if score gamemode Settings matches 2..4 if score difficulty Settings matches 2 run setblock 20 36 15 structure_block{name:"minecraft:nukes/nuke-medium",posX:0,posY:0,posZ:0,rotation:"NONE",mirror:"NONE",mode:"LOAD"} replace
   # Hard
-  execute if score gamemode Settings matches 2..4 if score difficulty Settings matches 3 run clone -25 -61 36 -27 -63 32 20 130 8 masked
+  execute if score gamemode Settings matches 2..4 if score difficulty Settings matches 3 run setblock 20 36 15 structure_block{name:"minecraft:nukes/nuke-hard",posX:0,posY:0,posZ:0,rotation:"NONE",mirror:"NONE",mode:"LOAD"} replace
+
+# Place Redstome
+setblock 20 37 15 redstone_block
