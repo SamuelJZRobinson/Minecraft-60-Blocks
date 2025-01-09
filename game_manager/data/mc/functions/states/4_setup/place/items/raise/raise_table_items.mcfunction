@@ -44,7 +44,7 @@ execute if score sumTableItems ItemsHouseHigh matches 1.. run schedule function 
 execute if score sumTableItems ItemsHouseHigh matches 0 run function mc:states/4_setup/place/items/raise/sync_rotation
 
 # Cleanup Leftover Markers
-execute if score sumTableItems ItemsHouseHigh matches 0 run kill @e[type=minecraft:marker]
+# execute if score sumTableItems ItemsHouseHigh matches 0 run kill @e[type=minecraft:marker]
 
 # Declare House Loaded
 execute if score sumTableItems ItemsHouseHigh matches 0 run function mc:states/4_setup/place/setup_house_done
