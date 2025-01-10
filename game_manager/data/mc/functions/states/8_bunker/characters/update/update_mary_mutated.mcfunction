@@ -1,13 +1,13 @@
 # Refresh Scores
-scoreboard players set fatigued MaryStatus 0
-scoreboard players set injured MaryStatus 0
+scoreboard players set isFatigued MaryStatus 0
+scoreboard players set isInjured MaryStatus 0
 scoreboard players set injuredLevel MaryStatus 0
 scoreboard players operation infection MaryStatus = INFECTION_MAX StatusLevels
-scoreboard players set crazy MaryStatus 0
-scoreboard players set sick MaryStatus 0
+scoreboard players set isCrazy MaryStatus 0
+scoreboard players set isSick MaryStatus 0
 scoreboard players operation water MaryStatus = THIRST_MAX StatusLevels
 scoreboard players set waterLevel MaryStatus 0
-scoreboard players set tired MaryStatus 0
+scoreboard players set isTired MaryStatus 0
 
 # Constants
 data modify storage minecraft:math x set value 1

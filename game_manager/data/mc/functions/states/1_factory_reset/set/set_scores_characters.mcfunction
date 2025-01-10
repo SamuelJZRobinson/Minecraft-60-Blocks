@@ -10,18 +10,19 @@
   # Crazy
   scoreboard players operation breakdown TedStatus = BREAKDOWN_MAX StatusLevels
   scoreboard players operation sanity TedStatus = SANITY_MAX StatusLevels
-  scoreboard players set crazy TedStatus 0
+  scoreboard players set isCrazy TedStatus 0
   scoreboard players set crazyRage TedStatus 0
   scoreboard players set crazyEscaped TedStatus 0
   # Fatigue
-  scoreboard players set tired TedStatus 0
-  scoreboard players set fatigued TedStatus 0
+  scoreboard players set isFatigued TedStatus 0
   # Injury
-  scoreboard players set injured TedStatus 0
+  scoreboard players set isInjured TedStatus 0
   scoreboard players operation infection TedStatus = INFECTION_MAX StatusLevels
   # Sickness
-  scoreboard players set sick TedStatus 0
+  scoreboard players set isSick TedStatus 0
   scoreboard players operation sickness TedStatus = SICKNESS_MAX StatusLevels
+  # Energy
+  scoreboard players set isTired TedStatus 0
 
 # Dolores
   # Objective
@@ -35,18 +36,19 @@
   # Crazy
   scoreboard players operation breakdown DoloresStatus = BREAKDOWN_MAX StatusLevels
   scoreboard players operation sanity DoloresStatus = SANITY_MAX StatusLevels
-  scoreboard players set crazy DoloresStatus 0
+  scoreboard players set isCrazy DoloresStatus 0
   scoreboard players set crazyRage DoloresStatus 0
   scoreboard players set crazyEscaped DoloresStatus 0
   # Injury
-  scoreboard players set injured DoloresStatus 0
+  scoreboard players set isInjured DoloresStatus 0
   scoreboard players operation infection DoloresStatus = INFECTION_MAX StatusLevels
   # Fatigue
-  scoreboard players set tired DoloresStatus 0
-  scoreboard players set fatigued DoloresStatus 0
+  scoreboard players set isFatigued DoloresStatus 0
   # Sickness
-  scoreboard players set sick DoloresStatus 0
+  scoreboard players set isSick DoloresStatus 0
   scoreboard players operation sickness DoloresStatus = SICKNESS_MAX StatusLevels
+  # Energy
+  scoreboard players set isTired DoloresStatus 0
 
 # Mary Jane
   # Objective
@@ -60,20 +62,21 @@
   # Crazy
   scoreboard players operation breakdown MaryStatus = BREAKDOWN_MAX StatusLevels
   scoreboard players operation sanity MaryStatus = SANITY_MAX StatusLevels
-  scoreboard players set crazy MaryStatus 0
+  scoreboard players set isCrazy MaryStatus 0
   scoreboard players set crazyRage MaryStatus 0
   scoreboard players set crazyEscaped MaryStatus 0
   # Fatigue
-  scoreboard players set tired MaryStatus 0
-  scoreboard players set fatigued MaryStatus 0
+  scoreboard players set isFatigued MaryStatus 0
   # Injury
-  scoreboard players set injured MaryStatus 0
+  scoreboard players set isInjured MaryStatus 0
   scoreboard players operation infection MaryStatus = INFECTION_MAX StatusLevels
   # Sickness
-  scoreboard players set sick MaryStatus 0
+  scoreboard players set isSick MaryStatus 0
   scoreboard players operation sickness MaryStatus = SICKNESS_MAX StatusLevels
   # Mutant
-  scoreboard players set mutant MaryStatus 0
+  scoreboard players set isMutant MaryStatus 0
+  # Energy
+  scoreboard players set isTired MaryStatus 0
 
 # Timmy
   # Objective
@@ -87,15 +90,16 @@
   # Crazy
   scoreboard players operation breakdown TimmyStatus = BREAKDOWN_MAX StatusLevels
   scoreboard players operation sanity TimmyStatus = SANITY_MAX StatusLevels
-  scoreboard players set crazy TimmyStatus 0
+  scoreboard players set isCrazy TimmyStatus 0
   scoreboard players set crazyRage TimmyStatus 0
   scoreboard players set crazyEscaped TimmyStatus 0
   # Fatigue
-  scoreboard players set tired TimmyStatus 0
-  scoreboard players set fatigued TimmyStatus 0
+  scoreboard players set isFatigued TimmyStatus 0
   # Injury
-  scoreboard players set injured TimmyStatus 0
+  scoreboard players set isInjured TimmyStatus 0
   scoreboard players operation infection TimmyStatus = INFECTION_MAX StatusLevels
   # Sickness
-  scoreboard players set sick TimmyStatus 0
+  scoreboard players set isSick TimmyStatus 0
   scoreboard players operation sickness TimmyStatus = SICKNESS_MAX StatusLevels
+  # Energy
+  scoreboard players set isTired TimmyStatus 0

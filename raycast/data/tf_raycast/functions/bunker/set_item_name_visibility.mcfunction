@@ -22,7 +22,7 @@ execute as @e[type=armor_stand,tag=bunkerTitle] run data modify entity @s Custom
   execute if score bunkerLook GameStatus matches 17 as @e[type=armor_stand,tag=watersTitle] at @s run data modify entity @s CustomNameVisible set value 1b
   execute if score bunkerLook GameStatus matches 18 as @e[type=armor_stand,tag=bodyArmour] run data modify entity @s CustomNameVisible set value 1b
   # Characters
-  execute if score bunkerLook GameStatus matches 19 if score alive DoloresStatus matches 1 run function tf_raycast:bunker/show_dolores_status
-  execute if score bunkerLook GameStatus matches 20 if score alive MaryStatus matches 1 run function tf_raycast:bunker/show_mary_status
-  execute if score bunkerLook GameStatus matches 21 if score alive TedStatus matches 1 run function tf_raycast:bunker/show_ted_status
-  execute if score bunkerLook GameStatus matches 22 if score alive TimmyStatus matches 1 run function tf_raycast:bunker/show_timmy_status
+  execute if score bunkerLook GameStatus matches 19 if score alive DoloresStatus matches 1 run function tf_raycast:bunker/show/show_dolores_status
+  execute if score bunkerLook GameStatus matches 20 if score alive MaryStatus matches 1 run function tf_raycast:bunker/show/show_mary_status
+  execute if score bunkerLook GameStatus matches 21 if score alive TedStatus matches 1 run function tf_raycast:bunker/show/show_ted_status
+  execute if score bunkerLook GameStatus matches 22 if score alive TimmyStatus matches 1 run function tf_raycast:bunker/show/show_timmy_status

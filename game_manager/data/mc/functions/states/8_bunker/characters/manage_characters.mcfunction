@@ -21,8 +21,8 @@
   # execute if score alive DoloresStatus matches 1 unless score characterSent MenuExplore matches 2 run function mc:states/8_bunker/characters/update/update_character
   # # Mary Jane
   # execute if score alive MaryStatus matches 1 unless score characterSent MenuExplore matches 3 run data modify storage updatecharacters objective set value {"objective":MaryStatus}
-  # execute if score alive MaryStatus matches 1 unless score characterSent MenuExplore matches 3 if score mutant MaryStatus matches 0 run function mc:states/8_bunker/characters/update/update_character
-  # execute if score mutant MaryStatus matches 1 unless score characterSent MenuExplore matches 3 if score mutant MaryStatus matches 1 run function mc:states/8_bunker/characters/update/update_mary_mutated
+  # execute if score alive MaryStatus matches 1 unless score characterSent MenuExplore matches 3 if score isMutant MaryStatus matches 0 run function mc:states/8_bunker/characters/update/update_character
+  # execute if score isMutant MaryStatus matches 1 unless score characterSent MenuExplore matches 3 if score isMutant MaryStatus matches 1 run function mc:states/8_bunker/characters/update/update_mary_mutated
   # # Timmy
   # execute if score alive TimmyStatus matches 1 unless score characterSent MenuExplore matches 4 run data modify storage updatecharacters objective set value {"objective":TimmyStatus}
   # execute if score alive TimmyStatus matches 1 unless score characterSent MenuExplore matches 4 run function mc:states/8_bunker/characters/update/update_character
