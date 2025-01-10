@@ -10,9 +10,9 @@ gamerule reducedDebugInfo false
 gamerule sendCommandFeedback true
 
 # Damage Types
-gamerule fallDamage true
+gamerule fallDamage false
 gamerule fireDamage true
-gamerule freezeDamage true
+gamerule freezeDamage false
 gamerule drowningDamage true
 
 # Environment

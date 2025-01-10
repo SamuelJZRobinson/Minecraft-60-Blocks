@@ -48,7 +48,6 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
 # Allocate Tables To Room Items
   # Set Dice
   scoreboard players set mode Math 0
-  scoreboard players set dynamicDifficulty Math 0
   
   # Bathroom
     # Set Input

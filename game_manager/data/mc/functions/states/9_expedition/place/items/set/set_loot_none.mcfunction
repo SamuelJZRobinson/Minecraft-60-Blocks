@@ -1,7 +1,6 @@
 # No Loot Chance
   # Set Dice
     scoreboard players set mode Math 0
-    scoreboard players set dynamicDifficulty Math 0
   # Set Input
   data modify storage minecraft:math x set value 1
   execute store result storage minecraft:math y int 1 run scoreboard players get NO_LOOT ExpeditionOdds

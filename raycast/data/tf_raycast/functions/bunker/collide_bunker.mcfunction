@@ -31,7 +31,7 @@
   execute if entity @s[tag=bunkerTimmy] run scoreboard players set bunkerLook GameStatus 22
 
 # Set Name Visibility
-execute unless score preBunkerLook GameStatus = bunkerLook GameStatus run function tf_raycast:bunker/set_item_name_visibility
+function tf_raycast:bunker/set_item_name_visibility
 
 # End raycast at max range (outside map)
 scoreboard players set .distance tf_rc 90

@@ -7,5 +7,3 @@ scoreboard players set out Math 0
 # Support
 scoreboard players set divisor Math 0
 scoreboard players set lastDigit Math 0
-# Settings
-scoreboard players set dynamicDifficulty Math 0

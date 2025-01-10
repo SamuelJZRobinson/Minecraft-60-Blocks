@@ -7,7 +7,9 @@ function tf_raycast:load/set_scores_raycast
 function mc:states/1_factory_reset/set/set_scores_gamemodes
 # Gameplay
 function mc:states/1_factory_reset/set/set_scores_items
-function mc:states/1_factory_reset/set/set_scores_character_status
+function mc:states/1_factory_reset/set/set_scores_characters_status_levels
+function mc:states/1_factory_reset/set/set_scores_characters_status_odds
+function mc:states/1_factory_reset/set/set_scores_characters
 function mc:states/1_factory_reset/set/set_scores_expedition
 # Game Metrics
 function mc:states/1_factory_reset/set/set_scores_game_status

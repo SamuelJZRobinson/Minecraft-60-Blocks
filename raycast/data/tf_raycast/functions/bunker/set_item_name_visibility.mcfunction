@@ -1,9 +1,6 @@
 # Reset Name Visibility
 execute as @e[type=armor_stand,tag=bunkerTitle] run data modify entity @s CustomNameVisible set value 0b
 
-# Update Name Visibility
-scoreboard players operation preBunkerLook GameStatus = bunkerLook GameStatus
-
 # Show Name
   # Items
   execute if score bunkerLook GameStatus matches 1 as @e[type=armor_stand,tag=ammo] run data modify entity @s CustomNameVisible set value 1b

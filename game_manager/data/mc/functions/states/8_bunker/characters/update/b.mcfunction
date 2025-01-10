@@ -1,0 +1,1 @@
+$scoreboard players add soup $(objective) 1
