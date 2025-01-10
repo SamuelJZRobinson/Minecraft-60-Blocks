@@ -32,14 +32,14 @@
   execute if score maryHead MenuFeed matches 9 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Requires more items","color":"dark_red"}'
   # Status Effects Lore
   execute if score isFatigued MaryStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Fatigued","color":"gold"}'
-  execute if score soupLevel MaryStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Hungry","color":"gold"}'
-  execute if score soupLevel MaryStatus matches 2 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Starvation","color":"gold"}'
-  execute if score injuredLevel MaryStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Hurt","color":"gold"}'
-  execute if score injuredLevel MaryStatus matches 2 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Agony","color":"gold"}'
+  execute if score soup MaryStatus > HUNGER_MIN StatusLevels if score soup MaryStatus <= HUNGER_MID StatusLevels run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Hungry","color":"gold"}'
+  execute if score soup MaryStatus <= HUNGER_MIN StatusLevels run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Starvation","color":"gold"}'
+  execute if score infection MaryStatus > INFECTION_MIN StatusLevels if score infection MaryStatus < INFECTION_MAX StatusLevels run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Hurt","color":"gold"}'
+  execute if score infection MaryStatus <= INFECTION_MIN StatusLevels run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Agony","color":"gold"}'
   execute if score isCrazy MaryStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Crazy","color":"gold"}'
   execute if score isSick MaryStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Sick","color":"gold"}'
-  execute if score waterLevel MaryStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Thirsty","color":"gold"}'
-  execute if score waterLevel MaryStatus matches 2 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Dehydration","color":"gold"}'
+  execute if score water MaryStatus > THIRST_MIN StatusLevels if score water MaryStatus <= THIRST_MID StatusLevels run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Thirsty","color":"gold"}'
+  execute if score water MaryStatus <= THIRST_MIN StatusLevels run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Dehydration","color":"gold"}'
   execute if score isTired MaryStatus matches 1.. run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Tired","color":"gold"}'
 
 # Soup
