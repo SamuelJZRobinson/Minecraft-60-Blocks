@@ -1,2 +1,2 @@
 give @s carrot_on_a_stick{display:{Name:'{"text":"Bug Spray"}',Lore:['{"text":"Click to fire","color":"gold","underlined":true}','{"text":"Range: 8","color":"gold"}','{"text":"Requires bug spray ammo","color":"red"}']},CustomModelData:5,itemId:4,bugSpray:1b} 1
-give @s minecraft:white_dye{display:{Name:'{"text":"Bug Spray Ammo"}'},bugSprayAmmo:1b} 32
+give @s minecraft:white_dye{display:{Name:'{"text":"Bug Spray Ammo"}'},bugSprayAmmo:1b} 40

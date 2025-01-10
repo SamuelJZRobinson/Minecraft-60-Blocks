@@ -11,6 +11,7 @@ function mc:states/1_factory_reset/set/set_scores_characters_status_levels
 function mc:states/1_factory_reset/set/set_scores_characters_status_odds
 function mc:states/1_factory_reset/set/set_scores_characters
 function mc:states/1_factory_reset/set/set_scores_expedition
+function mc:states/1_factory_reset/set/set_data_stores
 # Game Metrics
 function mc:states/1_factory_reset/set/set_scores_game_status
 function mc:states/1_factory_reset/set/set_scores_game_statistics

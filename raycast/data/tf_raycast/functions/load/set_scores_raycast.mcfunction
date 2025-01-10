@@ -13,9 +13,7 @@ scoreboard players reset * UseCarrotStick
 # RANGE COUNT
 scoreboard objectives add tf_rc dummy {"bold":true,"color":"white","text":"tf_rc"}
 
-# MOB HEALTH
-scoreboard objectives add MobHealth dummy {"bold":true,"color":"white","text":"Mob Health"}
-scoreboard players set headDamage MobHealth 0
-scoreboard players set bodyDamage MobHealth 0
-scoreboard players set legDamage MobHealth 0
-scoreboard players set health MobHealth 0
+# Gun Damage
+data remove storage minecraft:gundamage headDamage
+data remove storage minecraft:gundamage bodyDamage
+data remove storage minecraft:gundamage legDamage
