@@ -5,7 +5,7 @@
   execute if score state GameStatus matches 6..7 run function mc:utility/particles/scavenge/manage_particles
   # Bunker
   execute if score state GameStatus matches 8 run function mc:utility/particles/bunker/manage_particles
-  ### execute if score state GameStatus matches 8 run function mc:states/8_bunker/lights/manage_blackout
+  ### execute if score state GameStatus matches 8 run function mc:states/8_bunker/bunker/lights/manage_blackout
 
 # Player
   # Lock Slots

@@ -1,17 +1,13 @@
 # Calculate Real Count
-  # Soup
+  # Soups
   execute if score soups ItemsBunker matches 1.. run function mc:states/8_bunker/items/count/count_soups
-  execute if score soups ItemsBunker matches ..0 run scoreboard players set soupsInt ItemsBunker 0
-  execute if score soups ItemsBunker matches ..0 run scoreboard players set soupsFloat ItemsBunker 0
-  # Water
+  # Waters
   execute if score waters ItemsBunker matches 1.. run function mc:states/8_bunker/items/count/count_waters
-  execute if score waters ItemsBunker matches ..0 run scoreboard players set watersInt ItemsBunker 0
-  execute if score waters ItemsBunker matches ..0 run scoreboard players set watersFloat ItemsBunker 0
 
-# Set Score
+# Reset Scores
 scoreboard players set itemCount ItemsBunker 0
 
-# Count Bunker Items
+# Sum Items
   # Official
   execute if score ammo ItemsBunker matches 1 run scoreboard players add itemCount ItemsBunker 1
   execute if score axe ItemsBunker matches 2 run scoreboard players add itemCount ItemsBunker 1

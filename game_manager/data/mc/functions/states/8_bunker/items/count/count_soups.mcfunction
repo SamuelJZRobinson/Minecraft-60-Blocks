@@ -7,3 +7,5 @@ scoreboard players operation soupsFloat ItemsBunker %= DIVISOR ItemsBunker
 scoreboard players operation soupsFloat ItemsBunker *= MULTIPLIER ItemsBunker
 # Keep In Range
 execute if score soups ItemsBunker matches ..-1 run scoreboard players set soups ItemsBunker 0
+execute if score soups ItemsBunker matches ..0 run scoreboard players set soupsInt ItemsBunker 0
+execute if score soups ItemsBunker matches ..0 run scoreboard players set soupsFloat ItemsBunker 0

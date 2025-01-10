@@ -2,7 +2,6 @@
 summon minecraft:armor_stand ~5 ~2.25 ~1 {CustomNameVisible:0b,Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerTitle","soupsTitle"],DisabledSlots:4144959,CustomName:'{"text":"Food supply:","color":"white"}'}
 summon minecraft:armor_stand ~5 ~2.00 ~1 {CustomNameVisible:0b,Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerTitle","soupsTitle","soupsCount"],DisabledSlots:4144959,CustomName:'{"text":"#"}'}
 # Merge Soup Count
-function mc:states/8_bunker/items/count/count_soups
 setblock -9 -42 -11 oak_wall_sign[facing=east]{front_text:{messages:['{"text":"Soup Supply:"}','[{"score":{"name":"soupsInt","objective":"ItemsBunker"}},{"text":"."},{"score":{"name":"soupsFloat","objective":"ItemsBunker"}}]','{"text":""}','{"text":""}']}} destroy
 execute as @e[type=minecraft:armor_stand,tag=soupsCount] run data modify entity @s CustomName set from block -9 -42 -11 front_text.messages[1]
 # Item

@@ -15,4 +15,4 @@ execute if score ending GameStatus matches 0 run function mc:states/8_bunker/sho
 execute if score ending GameStatus matches 0 run function mc:states/8_bunker/check_expedition
 
 # Update Cosmetics
-function mc:states/8_bunker/manage_cosmetics
+execute if score ending GameStatus matches 0 run function mc:states/8_bunker/manage_cosmetics

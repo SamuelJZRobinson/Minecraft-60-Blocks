@@ -1,4 +1,4 @@
-# Set Scores
+# Increment Scores
 scoreboard players add day GameStatus 1
 
 # Titles
