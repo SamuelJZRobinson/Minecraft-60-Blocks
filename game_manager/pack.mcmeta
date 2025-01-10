@@ -1,7 +1,7 @@
 {
   "pack":
   {
-    "pack_format": 10,
-    "description": "Vital functions to run the 60 Seconds map"
+    "pack_format": 22,
+    "description": "Game logic for the 60 blocks map."
   }
 }
