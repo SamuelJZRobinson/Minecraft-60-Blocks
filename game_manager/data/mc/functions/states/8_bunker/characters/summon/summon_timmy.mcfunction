@@ -4,17 +4,19 @@ summon armor_stand ~1 ~0.72 ~5 {NoGravity:1b,Invulnerable:1b,ShowArms:1b,Small:1
 # Status
   # Name
   summon armor_stand ~1 ~2.50 ~6 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["timmy","bunkerStatus","timmyStatus","timmyNametag","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Timmy","color":"white"}'}
-  # Stayed For 20 days
+  # Fatigue
   summon armor_stand ~1 ~2.25 ~6 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["timmy","bunkerStatus","timmyStatus","timmyfatigued","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Fatigued","color":"gold"}'}
-  # Food
+  # Soup
   summon armor_stand ~1 ~2.00 ~6 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["timmy","bunkerStatus","timmyStatus","timmyHungry","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Hungry","color":"gold"}'}
   summon armor_stand ~1 ~2.00 ~6 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["timmy","bunkerStatus","timmyStatus","timmyStarvation","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Starvation","color":"gold"}'}
-  # Illnesses
+  # Injuries
   summon armor_stand ~1 ~1.75 ~6 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["timmy","bunkerStatus","timmyStatus","timmyHurt","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Hurt","color":"gold"}'}
   summon armor_stand ~1 ~1.75 ~6 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["timmy","bunkerStatus","timmyStatus","timmyAgony","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Agony","color":"gold"}'}
+  # Crazy
   summon armor_stand ~1 ~1.5 ~6 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["timmy","bunkerStatus","timmyStatus","timmyCrazy","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Crazy","color":"gold"}'}
+  # Sick
   summon armor_stand ~1 ~1.25 ~6 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["timmy","bunkerStatus","timmyStatus","timmySick","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Sick","color":"gold"}'}
-  # Drink
+  # Water
   summon armor_stand ~1 ~1.00 ~6 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["timmy","bunkerStatus","timmyStatus","timmyThirsty","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Thirsty","color":"gold"}'}
   summon armor_stand ~1 ~1.00 ~6 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["timmy","bunkerStatus","timmyStatus","timmyDehydration","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Dehydration","color":"gold"}'}
   # Energy

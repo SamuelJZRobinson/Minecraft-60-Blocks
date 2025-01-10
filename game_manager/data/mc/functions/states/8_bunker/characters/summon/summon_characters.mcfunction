@@ -1,3 +1,6 @@
+# Notes
+  # Status name visiblity is handled by raycast.
+
 # Summon Characters
   # Dolores
   execute if score alive DoloresStatus matches 1 unless score characterSent MenuExplore matches 1 run function mc:states/8_bunker/characters/summon/summon_dolores

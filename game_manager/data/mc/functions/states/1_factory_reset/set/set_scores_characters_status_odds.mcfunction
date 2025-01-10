@@ -5,10 +5,10 @@ scoreboard players set DIFFICULTY_PERCENTAGE StatusOdds 20
 # Bunker Cosmetic
 scoreboard players set BUNKER_BLACKOUT StatusOdds 70
 # Mutant Mary Jane
-scoreboard players set MUTATE StatusOdds 200
+scoreboard players set MUTANT StatusOdds 200
 scoreboard players set CANNIBALISM StatusOdds 15
 # Crazy
-scoreboard players set MENTAL_BREAKDOWN StatusOdds 12
+scoreboard players set CRAZY_ESCAPE StatusOdds 12
 scoreboard players set CRAZY StatusOdds 2
 scoreboard players set CRAZY_RAGE StatusOdds 6
 # Dolores Crazy Resistance
@@ -16,7 +16,7 @@ scoreboard players set CRAZY_RAGE StatusOdds 6
   scoreboard players set mode Math 1
   # Set Input
   data modify storage minecraft:math x set value 20
-  execute store result storage minecraft:math y int 1 run scoreboard players get MENTAL_BREAKDOWN StatusOdds
+  execute store result storage minecraft:math y int 1 run scoreboard players get CRAZY_ESCAPE StatusOdds
   # Calculate
   function mc:utility/math/get_percentage
   # Store
@@ -26,7 +26,7 @@ scoreboard players set CRAZY_RAGE StatusOdds 6
   scoreboard players set mode Math 2
   # Set Input
   data modify storage minecraft:math x set value 20
-  execute store result storage minecraft:math y int 1 run scoreboard players get MENTAL_BREAKDOWN StatusOdds
+  execute store result storage minecraft:math y int 1 run scoreboard players get CRAZY_ESCAPE StatusOdds
   # Calculate
   function mc:utility/math/get_percentage
   # Store

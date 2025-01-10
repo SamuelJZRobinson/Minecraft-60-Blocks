@@ -4,15 +4,17 @@ summon minecraft:armor_stand ~5 ~0.40 ~3 {NoGravity:1b,Invulnerable:1b,ShowArms:
 # Status
   # Name
   summon armor_stand ~5 ~2.50 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["dolores","bunkerStatus","doloresStatus","doloresName","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Dolores","color":"white"}'}
-  # Stayed For 20 days
+  # Fatigue
   summon armor_stand ~5 ~2.25 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["dolores","bunkerStatus","doloresStatus","doloresFatigued","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Fatigued","color":"gold"}'}
-  # Food
+  # Soup
   summon armor_stand ~5 ~2.00 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["dolores","bunkerStatus","doloresStatus","doloresHungry","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Hungry","color":"gold"}'}
   summon armor_stand ~5 ~2.00 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["dolores","bunkerStatus","doloresStatus","doloresStarvation","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Starvation","color":"gold"}'}
-  # Illnesses
+  # Injuries
   summon armor_stand ~5 ~1.75 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["dolores","bunkerStatus","doloresStatus","doloresHurt","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Hurt","color":"gold"}'}
   summon armor_stand ~5 ~1.75 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["dolores","bunkerStatus","doloresStatus","doloresAgony","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Agony","color":"gold"}'}
+  # Crazy
   summon armor_stand ~5 ~1.50 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["dolores","bunkerStatus","doloresStatus","doloresCrazy","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Crazy","color":"gold"}'}
+  # Sick
   summon armor_stand ~5 ~1.25 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["dolores","bunkerStatus","doloresStatus","doloresSick","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Sick","color":"gold"}'}
   # Water
   summon armor_stand ~5 ~1.00 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["dolores","bunkerStatus","doloresStatus","doloresThirsty","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Thirsty","color":"gold"}'}

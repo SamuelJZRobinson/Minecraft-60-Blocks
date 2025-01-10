@@ -4,16 +4,19 @@ summon minecraft:armor_stand ~1 ~0.40 ~3 {NoGravity:1b,Invulnerable:1b,ShowArms:
 # Status
   # Name
   summon armor_stand ~1 ~2.50 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["mary","bunkerStatus","maryStatus","maryNametag","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Mary","color":"white"}'}
-  # Stayed For 20 days
+  # Fatigue
   summon armor_stand ~1 ~2.25 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["mary","bunkerStatus","maryStatus","maryfatigued","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Fatigued","color":"gold"}'}
-  # Food
+  # Soup
   summon armor_stand ~1 ~2.00 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["mary","bunkerStatus","maryStatus","maryHungry","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Hungry","color":"gold"}'}
   summon armor_stand ~1 ~2.00 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["mary","bunkerStatus","maryStatus","maryStarvation","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Starvation","color":"gold"}'}
-  # Illnesses
+  # Mutant
   summon armor_stand ~1 ~1.75 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["mary","bunkerStatus","maryStatus","maryMutated","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Mutated","color":"gold"}'}
+  # Injuries
   summon armor_stand ~1 ~1.75 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["mary","bunkerStatus","maryStatus","maryHurt","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Hurt","color":"gold"}'}
   summon armor_stand ~1 ~1.75 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["mary","bunkerStatus","maryStatus","maryAgony","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Agony","color":"gold"}'}
+  # Crazy
   summon armor_stand ~1 ~1.50 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["mary","bunkerStatus","maryStatus","maryCrazy","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Crazy","color":"gold"}'}
+  # Sick
   summon armor_stand ~1 ~1.25 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["mary","bunkerStatus","maryStatus","marySick","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Sick","color":"gold"}'}
   # Water
   summon armor_stand ~1 ~1.00 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["mary","bunkerStatus","maryStatus","maryThirsty","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Thirsty","color":"gold"}'}

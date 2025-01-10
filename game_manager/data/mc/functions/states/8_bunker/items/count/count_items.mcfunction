@@ -1,8 +1,8 @@
 # Calculate Real Count
   # Soups
-  execute if score soups ItemsBunker matches 1.. run function mc:states/8_bunker/items/count/count_soups
+  execute if score soups ItemsBunker matches 0.. run function mc:states/8_bunker/items/count/count_soups
   # Waters
-  execute if score waters ItemsBunker matches 1.. run function mc:states/8_bunker/items/count/count_waters
+  execute if score waters ItemsBunker matches 0.. run function mc:states/8_bunker/items/count/count_waters
 
 # Reset Scores
 scoreboard players set itemCount ItemsBunker 0
