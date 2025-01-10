@@ -10,10 +10,10 @@
   execute if score soup MaryStatus matches 0 run scoreboard players set alive MaryStatus 0
 
 # Refresh Status Effects
-execute if score mutated MaryStatus matches 1 as @e[type=minecraft:armor_stand,tag=bunkerMary,tag=!mutantChange] run function mc:states/8_bunker/characters/update/update_mary_mutated
+execute if score mutant MaryStatus matches 1 as @e[type=minecraft:armor_stand,tag=bunkerMary,tag=!mutantChange] run function mc:states/8_bunker/characters/update/update_mary_mutated
 
 # Call Normal Status Effects
-execute if score mutated MaryStatus matches 0 run function mc:states/8_bunker/characters/update/update_mary_normal
+execute if score mutant MaryStatus matches 0 run function mc:states/8_bunker/characters/update/update_mary_normal
 
 # Decorate Bunker
   # Update Death

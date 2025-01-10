@@ -134,7 +134,7 @@
   scoreboard players set sick MaryStatus 0
   scoreboard players operation sickness MaryStatus = SICKNESS_MAX StatusLevels
   # Mutant
-  scoreboard players set mutated MaryStatus 0
+  scoreboard players set mutant MaryStatus 0
 
   # TED STATUS
   scoreboard objectives add TedStatus dummy {"bold":true,"color":"white","text":"Ted Status"}

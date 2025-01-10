@@ -13,9 +13,9 @@
   scoreboard players operation water MaryStatus = THIRST_MAX StatusLevels
   scoreboard players set waterLevel MaryStatus 0
   scoreboard players set tired MaryStatus 0
-  # Kill Text
-  kill @e[type=minecraft:armor_stand,tag=!maryMutated,tag=!maryNametag]
+#   # Kill Text
+#   kill @e[type=minecraft:armor_stand,tag=!maryMutated,tag=!maryNametag]
 
-# Set Mutant Head
-data modify entity @s ArmorItems[3] set value {id:"minecraft:saddle",Count:1b,tag:{CustomModelData:28}}
-tag @s add mutantChange
+# # Set Mutant Head
+# data modify entity @s ArmorItems[3] set value {id:"minecraft:saddle",Count:1b,tag:{CustomModelData:}}
+# tag @s add mutantChange

@@ -9,14 +9,6 @@
 # Spawn Characters
 execute positioned -11 -48 -15 run function mc:states/8_bunker/characters/summon/summon_characters
 
-# Set Dice
-scoreboard players set mode Math 0
-# execute if score difficulty Settings matches 1 run scoreboard players set mode em 1
-# execute if score difficulty Settings matches 3 run scoreboard players set mode em 2
-scoreboard players set dynamicDifficulty Math 1
-scoreboard players set notRandom Math 0
-scoreboard players set startOne Math 1
-
 # Update Living Characters
 execute if score alive DoloresStatus matches 1 unless score characterSent MenuExplore matches 1 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run function mc:states/8_bunker/characters/update/update_dolores
 execute if score alive MaryStatus matches 1 unless score characterSent MenuExplore matches 2..3 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run function mc:states/8_bunker/characters/update/update_mary

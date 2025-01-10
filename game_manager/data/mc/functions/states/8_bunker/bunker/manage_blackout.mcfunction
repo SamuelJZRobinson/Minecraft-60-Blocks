@@ -8,4 +8,4 @@
   # Calculate
   function mc:utility/math/get_random_range with storage minecraft:math
   # Test
-  execute if score out Math matches 1 run function mc:states/8_bunker/bunker/update/blackout_break
+  execute if score out Math matches 1 run function mc:states/8_bunker/bunker/set/set_blackout_break

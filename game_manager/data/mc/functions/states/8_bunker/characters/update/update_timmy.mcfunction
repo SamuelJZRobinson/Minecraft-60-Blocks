@@ -98,6 +98,3 @@
   execute if score water TimmyStatus > THIRST_MID StatusLevels run scoreboard players set waterLevel TimmyStatus 0
   execute if score water TimmyStatus <= THIRST_MID StatusLevels if score water TimmyStatus > THIRST_MIN StatusLevels run scoreboard players set waterLevel TimmyStatus 1
   execute if score water TimmyStatus <= THIRST_MIN StatusLevels run scoreboard players set waterLevel TimmyStatus 2
-    # Armor stand visibility managed by tf_raycast:bunker/set_item_name_visibility
-  # Update Death
-  execute if score alive TimmyStatus matches 0 as @e[type=minecraft:armor_stand,tag=bunkerTimmy] run function mc:states/8_bunker/characters/update/update_timmy_dead

@@ -100,6 +100,3 @@
   execute if score water DoloresStatus > THIRST_MID StatusLevels run scoreboard players set waterLevel DoloresStatus 0
   execute if score water DoloresStatus <= THIRST_MID StatusLevels if score water DoloresStatus > THIRST_MIN StatusLevels run scoreboard players set waterLevel DoloresStatus 1
   execute if score water DoloresStatus <= THIRST_MIN StatusLevels run scoreboard players set waterLevel DoloresStatus 2
-    # Armor stand visibility managed by tf_raycast:bunker/set_item_name_visibility
-  # Update Death
-  execute if score alive DoloresStatus matches 0 as @e[type=minecraft:armor_stand,tag=bunkerDolores] run function mc:states/8_bunker/characters/update/update_dolores_dead

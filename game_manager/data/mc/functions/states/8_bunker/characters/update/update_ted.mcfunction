@@ -98,6 +98,3 @@
   execute if score water TedStatus > THIRST_MID StatusLevels run scoreboard players set waterLevel TedStatus 0
   execute if score water TedStatus <= THIRST_MID StatusLevels if score water TedStatus > THIRST_MIN StatusLevels run scoreboard players set waterLevel TedStatus 1
   execute if score water TedStatus <= THIRST_MIN StatusLevels run scoreboard players set waterLevel TedStatus 2
-    # Armor stand visibility managed by tf_raycast:bunker/set_item_name_visibility
-  # Update Death
-  execute if score alive TedStatus matches 0 as @e[type=minecraft:armor_stand,tag=bunkerTed] run function mc:states/8_bunker/characters/update/update_ted_dead

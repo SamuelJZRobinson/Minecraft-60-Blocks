@@ -10,11 +10,11 @@ scoreboard players set bool chest_menu 1
   execute if score selection MenuMain matches 5 run scoreboard players set characterSelect MenuExplore 0
   # Mary
     # Normal
-    execute if score selection MenuMain matches 6 if score mutated MaryStatus matches 0 run scoreboard players set characterSelect MenuExplore 2
-    execute if score selection MenuMain matches 7 if score mutated MaryStatus matches 0 run scoreboard players set characterSelect MenuExplore 0
+    execute if score selection MenuMain matches 6 if score mutant MaryStatus matches 0 run scoreboard players set characterSelect MenuExplore 2
+    execute if score selection MenuMain matches 7 if score mutant MaryStatus matches 0 run scoreboard players set characterSelect MenuExplore 0
     # Mutant
-    execute if score selection MenuMain matches 6 if score mutated MaryStatus matches 1 run scoreboard players set characterSelect MenuExplore 3
-    execute if score selection MenuMain matches 7 if score mutated MaryStatus matches 1 run scoreboard players set characterSelect MenuExplore 0
+    execute if score selection MenuMain matches 6 if score mutant MaryStatus matches 1 run scoreboard players set characterSelect MenuExplore 3
+    execute if score selection MenuMain matches 7 if score mutant MaryStatus matches 1 run scoreboard players set characterSelect MenuExplore 0
   # Ted
   execute if score selection MenuMain matches 8 run scoreboard players set characterSelect MenuExplore 4
   execute if score selection MenuMain matches 9 run scoreboard players set characterSelect MenuExplore 0
