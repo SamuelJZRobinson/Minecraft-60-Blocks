@@ -1,6 +1,9 @@
 # Reset Scores
 function mc:states/1_factory_reset/set/set_scores_characters
 
+# Set Chest Menu
+function cm:place_chest_menu
+
 # Set Settings
   # Player
   team join Player @s

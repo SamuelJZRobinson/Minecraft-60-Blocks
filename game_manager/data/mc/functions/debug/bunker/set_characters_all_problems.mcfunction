@@ -1,12 +1,16 @@
 # Reset Scores
 function mc:states/1_factory_reset/set/set_scores_characters
 
+# Set Chest Menu
+function cm:place_chest_menu
+
 # Set Settings
   # Player
   team join Player @s
   # Gamemode (Ensure Set Time And Show Warp Days Works)
   scoreboard players set gamemode Settings 2
   scoreboard players set doPovExpedition Settings 1
+  
   # Set Scores
     # Status
     scoreboard players set started GameStatus 1
@@ -67,7 +71,6 @@ function mc:states/1_factory_reset/set/set_scores_characters
   scoreboard players set isFatigued MaryStatus 1
   # Sickness
   scoreboard players set isSick MaryStatus 1
-
 
 # Timmy
   # Alive

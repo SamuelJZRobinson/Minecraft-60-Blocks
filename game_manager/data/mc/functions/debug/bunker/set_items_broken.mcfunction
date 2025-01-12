@@ -1,3 +1,6 @@
+# Set Chest Menu
+function cm:place_chest_menu
+
 # Set Settings
   # Player
   team join Player @s

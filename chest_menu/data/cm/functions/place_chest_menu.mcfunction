@@ -1,5 +1,5 @@
 # Init Menu
-scoreboard players set @p[team=Player] MenuMain 1
+scoreboard players set @p[team=Player] MenuMain 0
 
 # Place Chest
 setblock -8 -48 -9 air replace

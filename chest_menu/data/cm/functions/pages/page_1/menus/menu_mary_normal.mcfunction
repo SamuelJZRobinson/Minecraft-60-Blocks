@@ -37,8 +37,8 @@
     execute if score soup MaryStatus > HUNGER_AMOUNT_CRITICAL StatusLevels if score soup MaryStatus <= HUNGER_AMOUNT_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Hungry","color":"gold"}'
     execute if score soup MaryStatus <= HUNGER_AMOUNT_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Starvation","color":"gold"}'
     # Injured
-    execute if score injuredDays MaryStatus > INJURED_DAYS_DEATH StatusLevels if score injuredDays MaryStatus < INJURED_DAYS_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Hurt","color":"gold"}'
-    execute if score injuredDays MaryStatus <= INJURED_DAYS_DEATH StatusLevels run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Agony","color":"gold"}'
+    execute if score isInjured MaryStatus matches 1 if score injuredDays MaryStatus < INJURED_DAYS_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Hurt","color":"gold"}'
+    execute if score isInjured MaryStatus matches 1 if score injuredDays MaryStatus >= INJURED_DAYS_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Agony","color":"gold"}'
     # Crazy
     execute if score isCrazy MaryStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Crazy","color":"gold"}'
     # Sick
