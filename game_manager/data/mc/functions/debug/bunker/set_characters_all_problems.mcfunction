@@ -21,6 +21,7 @@ function mc:states/1_factory_reset/set/set_scores_characters
   scoreboard players set soup TedStatus 2
   scoreboard players set water TedStatus 2
   # Crazy
+  scoreboard players operation sanity TedStatus = SANITY_AMOUNT_MIN StatusLevels
   scoreboard players set isCrazy TedStatus 1
   # Injury
   scoreboard players set isInjured TedStatus 1
@@ -38,6 +39,7 @@ function mc:states/1_factory_reset/set/set_scores_characters
   scoreboard players set soup DoloresStatus 2
   scoreboard players set water DoloresStatus 2
   # Crazy
+  scoreboard players operation sanity DoloresStatus = SANITY_AMOUNT_MIN StatusLevels
   scoreboard players set isCrazy DoloresStatus 1
   # Injury
   scoreboard players set isInjured DoloresStatus 1
@@ -55,6 +57,7 @@ function mc:states/1_factory_reset/set/set_scores_characters
   scoreboard players set soup MaryStatus 2
   scoreboard players set water MaryStatus 2
   # Crazy
+  scoreboard players operation sanity MaryStatus = SANITY_AMOUNT_MIN StatusLevels
   scoreboard players set isCrazy MaryStatus 1
   # Injury
   scoreboard players set isInjured MaryStatus 1
@@ -73,6 +76,7 @@ function mc:states/1_factory_reset/set/set_scores_characters
   scoreboard players set soup TimmyStatus 2
   scoreboard players set water TimmyStatus 2
   # Crazy
+  scoreboard players operation sanity TimmyStatus = SANITY_AMOUNT_MIN StatusLevels
   scoreboard players set isCrazy TimmyStatus 1
   # Injury
   scoreboard players set isInjured TimmyStatus 1

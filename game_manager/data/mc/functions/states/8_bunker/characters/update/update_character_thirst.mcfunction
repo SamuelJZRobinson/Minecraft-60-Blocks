@@ -1,5 +1,5 @@
 # Decrement Score
-scoreboard players remove water TedStatus 1
+$scoreboard players remove water $(objective) 1
 
 # Death
-execute if score water TedStatus matches ..0 run scoreboard players set alive TedStatus 0
+$execute if score water $(objective) matches ..0 run scoreboard players set alive $(objective) 0
