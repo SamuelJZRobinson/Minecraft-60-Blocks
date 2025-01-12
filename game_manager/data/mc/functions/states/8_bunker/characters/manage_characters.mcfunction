@@ -5,7 +5,7 @@
   # Atomic Drill task 14 makes everyone thirsty, task 15 fixes thirsty, task 16 character returns from expedition
 
 # Character Perks
-  # Mary Jane
+  # Mary
     # 20% less resistance to becoming crazy (managed by refresh_scores).
     # Scares away raiders.
     # Never crazy, sick, thirsty, tired, or injured.
@@ -13,19 +13,7 @@
     # Mutant Mary can only defend once and leaves after defending the second time.
 
 # Update Characters
-  # Ted
-  execute if score alive TedStatus matches 1 unless score characterSent MenuExplore matches 1 run data modify storage updatecharacters objective set value {"objective":TedStatus}
-  execute if score alive TedStatus matches 1 unless score characterSent MenuExplore matches 1 run function mc:states/8_bunker/characters/update/update_character
-  # # Dolores
-  # execute if score alive DoloresStatus matches 1 unless score characterSent MenuExplore matches 2 run data modify storage updatecharacters objective set value {"objective":DoloresStatus}
-  # execute if score alive DoloresStatus matches 1 unless score characterSent MenuExplore matches 2 run function mc:states/8_bunker/characters/update/update_character
-  # # Mary Jane
-  # execute if score alive MaryStatus matches 1 unless score characterSent MenuExplore matches 3 run data modify storage updatecharacters objective set value {"objective":MaryStatus}
-  # execute if score alive MaryStatus matches 1 unless score characterSent MenuExplore matches 3 if score isMutant MaryStatus matches 0 run function mc:states/8_bunker/characters/update/update_character
-  # execute if score isMutant MaryStatus matches 1 unless score characterSent MenuExplore matches 3 if score isMutant MaryStatus matches 1 run function mc:states/8_bunker/characters/update/update_mary_mutated
-  # # Timmy
-  # execute if score alive TimmyStatus matches 1 unless score characterSent MenuExplore matches 4 run data modify storage updatecharacters objective set value {"objective":TimmyStatus}
-  # execute if score alive TimmyStatus matches 1 unless score characterSent MenuExplore matches 4 run function mc:states/8_bunker/characters/update/update_character
+function mc:states/8_bunker/characters/update/manage_characters_update
 
 # Spawn Characters
 execute positioned -11 -48 -15 run function mc:states/8_bunker/characters/summon/summon_characters

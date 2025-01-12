@@ -5,9 +5,9 @@
   execute if score timmyGiveWater MenuFeed matches 1 run scoreboard players operation water TimmyStatus = THIRST_AMOUNT_MAX StatusLevels
   # Medkit
   execute if score giveMedkit MenuFeed matches 4 run scoreboard players set isSick TimmyStatus 0
-  execute if score giveMedkit MenuFeed matches 4 run scoreboard players operation terminalIllness TimmyStatus = SICK_DAYS_DEATH StatusLevels
+  execute if score giveMedkit MenuFeed matches 4 run scoreboard players set sickDays TimmyStatus 0
   execute if score giveMedkit MenuFeed matches 4 run scoreboard players set isInjured TimmyStatus 0
-  execute if score giveMedkit MenuFeed matches 4 run scoreboard players operation injuryInfectionCountdown TimmyStatus = INJURY_INFECTION_COUNTDOWN_MAX StatusLevels
+  execute if score giveMedkit MenuFeed matches 4 run scoreboard players set injuredDays TimmyStatus 0
 
 # Refresh Scores
 scoreboard players set timmyGiveSoup MenuFeed 0

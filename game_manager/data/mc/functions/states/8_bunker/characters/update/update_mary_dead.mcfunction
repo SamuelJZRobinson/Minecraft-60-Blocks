@@ -1,5 +1,5 @@
 # Standard
-scoreboard players set crazyEscaped MaryStatus 1
+scoreboard players set isCrazyEscaped MaryStatus 1
 # Crazy
 function mc:sounds/bunker_door_1
 # Append Lost Character Bundle

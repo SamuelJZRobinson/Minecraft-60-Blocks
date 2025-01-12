@@ -12,7 +12,7 @@ function mc:states/1_factory_reset/set/set_scores_characters
     scoreboard players set started GameStatus 1
     scoreboard players set state GameStatus 8
     scoreboard players set music GameStatus 5
-    scoreboard players operation day GameStatus = FATIGUE_DAYS_END StatusLevels
+    scoreboard players set day GameStatus 1
 
 # Characters
   # Ted

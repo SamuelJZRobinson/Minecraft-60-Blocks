@@ -28,7 +28,7 @@
     execute if score itemId ItemsBundles matches 19 run scoreboard players add build DoloresStatus 1
     # Ted
     execute if score itemId ItemsBundles matches 21 run scoreboard players add build TedStatus 1
-    # Mary Jane
+    # Mary
     execute if score itemId ItemsBundles matches 20 run scoreboard players add build MaryStatus 1
     # Timmy
     execute if score itemId ItemsBundles matches 22 run scoreboard players add build TimmyStatus 1

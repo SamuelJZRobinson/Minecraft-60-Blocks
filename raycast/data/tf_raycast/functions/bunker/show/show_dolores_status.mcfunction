@@ -8,9 +8,9 @@ execute if score isFatigued DoloresStatus matches 1 as @e[type=minecraft:armor_s
 # Soup
 execute if score soup DoloresStatus > HUNGER_AMOUNT_CRITICAL StatusLevels if score soup DoloresStatus <= HUNGER_AMOUNT_DANGER StatusLevels as @e[type=minecraft:armor_stand,tag=doloresHungry] run data modify entity @s CustomNameVisible set value 1b
 execute if score soup DoloresStatus <= HUNGER_AMOUNT_CRITICAL StatusLevels as @e[type=minecraft:armor_stand,tag=doloresStarvation] run data modify entity @s CustomNameVisible set value 1b
-# Injuries
-execute if score injuryInfectionCountdown DoloresStatus > INJURY_INFECTION_COUNTDOWN_MIN StatusLevels if score injuryInfectionCountdown DoloresStatus < INJURY_INFECTION_COUNTDOWN_MAX StatusLevels as @e[type=minecraft:armor_stand,tag=doloresHurt] run data modify entity @s CustomNameVisible set value 1b
-execute if score injuryInfectionCountdown DoloresStatus <= INJURY_INFECTION_COUNTDOWN_MIN StatusLevels as @e[type=minecraft:armor_stand,tag=doloresAgony] run data modify entity @s CustomNameVisible set value 1b
+# Injured
+execute if score isInjured DoloresStatus matches 1 if score injuredDays DoloresStatus < INJURED_DAYS_DANGER StatusLevels as @e[type=minecraft:armor_stand,tag=doloresHurt] run data modify entity @s CustomNameVisible set value 1b
+execute if score isInjured DoloresStatus matches 1 if score injuredDays DoloresStatus >= INJURED_DAYS_DANGER StatusLevels as @e[type=minecraft:armor_stand,tag=doloresAgony] run data modify entity @s CustomNameVisible set value 1b
 # Crazy
 execute if score isCrazy DoloresStatus matches 1 as @e[type=minecraft:armor_stand,tag=doloresCrazy] run data modify entity @s CustomNameVisible set value 1b
 # Sick

@@ -1,8 +1,10 @@
-# GAMESTATUS
+# Objective
 scoreboard objectives add GameStatus dummy {"bold":true,"color":"white","text":"Game Status"}
-# 
+# States
 scoreboard players set started GameStatus 0
 scoreboard players set state GameStatus 1
+# Items
+scoreboard players set characterItemBreak GameStatus 0
 # Player
 scoreboard players set music GameStatus 0
 # Lock Inventory

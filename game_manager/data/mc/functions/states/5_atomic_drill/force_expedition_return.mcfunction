@@ -6,7 +6,7 @@
     # Dolores
     execute if score characterSent MenuExplore matches 1 run scoreboard players set isInjured DoloresStatus 1
     execute if score characterSent MenuExplore matches 1 run scoreboard players set isTired DoloresStatus 1
-    # Mary Jane
+    # Mary
     execute if score characterSent MenuExplore matches 2 run scoreboard players set isInjured MaryStatus 1
     execute if score characterSent MenuExplore matches 2 run scoreboard players set isTired MaryStatus 1
     # Ted

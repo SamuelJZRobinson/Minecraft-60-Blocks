@@ -1,5 +1,5 @@
 # Decrement Score
-$scoreboard players remove soup $(objective) 1
+scoreboard players remove soup $(objective) 1
 
 # Death
-$execute if score soup $(objective) matches ..0 run scoreboard players set alive $(objective) 0
+execute if score soup $(objective) matches ..0 run scoreboard players set alive $(objective) 0

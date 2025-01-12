@@ -1,27 +1,30 @@
+# Notes
+  # Characters who can't break an item are forced to escape early.
+  # Characters only break one item each time they become crazy.
+
 # Crazy
-  # Stop Craziness
-  $execute if score crazySanity $(objective) = CRAZY_SANITY_AMOUNT_MAX StatusLevels run scoreboard players set isCrazy $(objective) 0
-  $execute if score crazySanity $(objective) = CRAZY_SANITY_AMOUNT_MAX StatusLevels run scoreboard players operation crazyEscapeCountdown $(objective) = CRAZY_ESCAPE_COUNTDOWN_MAX StatusLevels
-  $execute if score crazySanity $(objective) = CRAZY_SANITY_AMOUNT_MAX StatusLevels run scoreboard players set crazyRage $(objective) 0
+  # Restore Sanity
+  execute if score sanity TedStatus >= SANITY_AMOUNT_MAX StatusLevels run scoreboard players set isCrazy TedStatus 0
+  execute if score sanity TedStatus >= SANITY_AMOUNT_MAX StatusLevels run scoreboard players set crazyDays TedStatus 0
+  execute if score sanity TedStatus >= SANITY_AMOUNT_MAX StatusLevels run scoreboard players set isCrazyRage TedStatus 0
   # Crazy Chance
   execute store result storage minecraft:math y int 1 run scoreboard players get CRAZY StatusOdds
-  $execute if score isCrazy $(objective) matches 0 if score crazySanity $(objective) = CRAZY_SANITY_AMOUNT_MIN StatusLevels run function mc:utility/math/get_random_range with storage minecraft:math
-  $execute if score isCrazy $(objective) matches 0 if score crazySanity $(objective) = CRAZY_SANITY_AMOUNT_MIN StatusLevels if score out Math matches 1 run scoreboard players set isCrazy $(objective) 1
+  execute if score isCrazy TedStatus matches 0 if score sanity TedStatus = SANITY_AMOUNT_MIN StatusLevels run function mc:utility/math/get_random_range with storage minecraft:math
+  execute if score isCrazy TedStatus matches 0 if score sanity TedStatus = SANITY_AMOUNT_MIN StatusLevels if score out Math matches 1 run scoreboard players set isCrazy TedStatus 1
 
 # Crazy Escape
-  # Decrement Countdown
-  $execute unless score crazyEscapeCountdown $(objective) matches ..0 run scoreboard players remove crazyEscapeCountdown $(objective) 1
-  $execute unless score crazyRage $(objective) matches -1 if score crazyEscapeCountdown $(objective) = CRAZY_ESCAPE_COUNTDOWN_MIN StatusLevels run scoreboard players set crazyRage $(objective) 1
-  $execute if score crazyEscapeCountdown $(objective) matches 0 run scoreboard players set crazyEscaped $(objective) 1
+  # Increment Days
+  execute if score isCrazy TedStatus matches 1 run scoreboard players add crazyDays TedStatus 1
   # Destroy Item Chance
   execute store result storage minecraft:math y int 1 run scoreboard players get CRAZY_RAGE StatusOdds
-  $execute if score crazyRage $(objective) matches 0 if score crazyEscapeCountdown $(objective) <= CRAZY_ESCAPE_COUNTDOWN_MID StatusLevels if score crazyEscapeCountdown $(objective) > CRAZY_ESCAPE_COUNTDOWN_MIN StatusLevels run function mc:utility/math/get_random_range with storage minecraft:math
-  $execute if score crazyRage $(objective) matches 0 if score crazyEscapeCountdown $(objective) <= CRAZY_ESCAPE_COUNTDOWN_MID StatusLevels if score crazyEscapeCountdown $(objective) > CRAZY_ESCAPE_COUNTDOWN_MIN StatusLevels if score out Math matches 1 run scoreboard players set crazyRage $(objective) 1
-  $execute if score crazyRage $(objective) matches 1 if score itemCount ItemsBunker matches ..0 run scoreboard players set crazyEscaped $(objective) 1
-  $execute if score crazyRage $(objective) matches 1 if score itemCount ItemsBunker matches 1.. run function mc:states/8_bunker/characters/set_crazy_ted
+  execute if score isCrazyRage TedStatus matches 0 if score crazyDays TedStatus >= CRAZY_ESCAPE_DAYS_CRITICAL StatusLevels run function mc:utility/math/get_random_range with storage minecraft:math
+  execute if score isCrazyRage TedStatus matches 0 if score crazyDays TedStatus >= CRAZY_ESCAPE_DAYS_CRITICAL StatusLevels if score itemCount ItemsBunker matches ..0 if score out Math matches 1 run scoreboard players set isCrazyEscaped TedStatus 1
+  execute if score isCrazyRage TedStatus matches 0 if score crazyDays TedStatus >= CRAZY_ESCAPE_DAYS_CRITICAL StatusLevels if score itemCount ItemsBunker matches 1.. if score out Math matches 1 run function mc:states/8_bunker/characters/update/manage_break_item
+  execute if score isCrazyRage TedStatus matches 0 if score crazyDays TedStatus >= CRAZY_ESCAPE_DAYS_CRITICAL StatusLevels if score out Math matches 1 run scoreboard players set isCrazyRage TedStatus 1
   # Escape Chance
   execute store result storage minecraft:math y int 1 run scoreboard players get CRAZY_ESCAPE StatusOdds
-  $execute if score crazyEscapeCountdown $(objective) <= CRAZY_ESCAPE_COUNTDOWN_MIN StatusLevels run function mc:utility/math/get_random_range with storage minecraft:math
-  $execute if score crazyEscapeCountdown $(objective) <= CRAZY_ESCAPE_COUNTDOWN_MIN StatusLevels if score out Math matches 1 run scoreboard players set crazyEscaped $(objective) 1
+  execute if score crazyDays TedStatus >= CRAZY_ESCAPE_DAYS_CRITICAL StatusLevels run function mc:utility/math/get_random_range with storage minecraft:math
+  execute if score crazyDays TedStatus >= CRAZY_ESCAPE_DAYS_CRITICAL StatusLevels if score out Math matches 1 run scoreboard players set isCrazyEscaped TedStatus 1
   # Guaranteed Death
-  $execute if score crazyEscaped $(objective) matches 1 run scoreboard players set alive $(objective) 0
+  execute if score crazyDays TedStatus >= CRAZY_ESCAPE_DAYS_DEATH StatusLevels run scoreboard players set isCrazyEscaped TedStatus 1
+  execute if score isCrazyEscaped TedStatus matches 1 run scoreboard players set alive TedStatus 0

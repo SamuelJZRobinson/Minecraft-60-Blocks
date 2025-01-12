@@ -1,7 +1,7 @@
 # Standard
-execute if score crazyEscaped DoloresStatus matches 0 run function mc:sounds/character_death
+execute if score isCrazyEscaped DoloresStatus matches 0 run function mc:sounds/character_death
 # Crazy
-execute if score crazyEscaped DoloresStatus matches 1 run function mc:sounds/bunker_door_1
+execute if score isCrazyEscaped DoloresStatus matches 1 run function mc:sounds/bunker_door_1
 # Append Lost Character Bundle
 # scoreboard players set stage ItemsBundles 5
 data modify storage minecraft:scavenge savedItemIds append value 19

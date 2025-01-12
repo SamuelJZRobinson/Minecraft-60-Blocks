@@ -6,17 +6,17 @@ scoreboard objectives add StatusLevels dummy {"bold":true,"color":"white","text"
 
 # Day Range
   # Breakdown
-  scoreboard players set CRAZY_ESCAPE_COUNTDOWN_MAX StatusLevels 35
-  scoreboard players set CRAZY_ESCAPE_COUNTDOWN_MID StatusLevels 18
-  scoreboard players set CRAZY_ESCAPE_COUNTDOWN_MIN StatusLevels 12
+  scoreboard players set CRAZY_ESCAPE_DAYS_CRITICAL StatusLevels 20
+  scoreboard players set CRAZY_ESCAPE_DAYS_DEATH StatusLevels 35
   # Fatigue
-  scoreboard players set FATIGUE_DAYS_START StatusLevels 24
-  scoreboard players set FATIGUE_DAYS_END StatusLevels 16
+  scoreboard players set FATIGUE_DAYS_START StatusLevels 16
+  scoreboard players set FATIGUE_DAYS_END StatusLevels 24
   # Infection
-  scoreboard players set INJURY_INFECTION_COUNTDOWN_MAX StatusLevels 28
-  scoreboard players set INJURY_INFECTION_COUNTDOWN_MIN StatusLevels 14
+  scoreboard players set INJURED_DAYS_DANGER StatusLevels 3
+  scoreboard players set INJURED_DAYS_CRITICAL StatusLevels 8
+  scoreboard players set INJURED_DAYS_DEATH StatusLevels 10
   # Sickness
-  scoreboard players set SICK_DAYS_CRITICAL StatusLevels 5
+  scoreboard players set SICK_DAYS_CRITICAL StatusLevels 20
   scoreboard players set SICK_DAYS_DEATH StatusLevels 40
 
 # Amount
@@ -29,5 +29,5 @@ scoreboard objectives add StatusLevels dummy {"bold":true,"color":"white","text"
   scoreboard players set THIRST_AMOUNT_DANGER StatusLevels 4
   scoreboard players set THIRST_AMOUNT_CRITICAL StatusLevels 2
   # Sanity
-  scoreboard players set CRAZY_SANITY_AMOUNT_MAX StatusLevels 7
-  scoreboard players set CRAZY_SANITY_AMOUNT_MIN StatusLevels 0
+  scoreboard players set SANITY_AMOUNT_MAX StatusLevels 7
+  scoreboard players set SANITY_AMOUNT_MIN StatusLevels 0

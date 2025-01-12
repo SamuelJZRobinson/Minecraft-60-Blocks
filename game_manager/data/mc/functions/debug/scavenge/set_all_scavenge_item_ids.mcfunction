@@ -65,7 +65,7 @@ data remove storage minecraft:scavenge savedItemIds
     data modify storage minecraft:scavenge savedItemIds append value 19
     data modify storage minecraft:scavenge savedItemIds append value 19
     data modify storage minecraft:scavenge savedItemIds append value 19
-    # Mary Jane
+    # Mary
     data modify storage minecraft:scavenge savedItemIds append value 20
     data modify storage minecraft:scavenge savedItemIds append value 20
     data modify storage minecraft:scavenge savedItemIds append value 20

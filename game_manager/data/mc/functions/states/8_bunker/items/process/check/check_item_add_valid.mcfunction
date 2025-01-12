@@ -3,7 +3,7 @@
   execute if score build DoloresStatus matches ..1 run scoreboard players set survivedNuke DoloresStatus 0
   # execute if score build DoloresStatus matches 2 run scoreboard players set alive DoloresStatus 1
   scoreboard players set build DoloresStatus 0
-  # Mary Jane (3 Slots)
+  # Mary (3 Slots)
   execute if score build MaryStatus matches ..2 run scoreboard players set survivedNuke MaryStatus 0
   execute if score build MaryStatus matches 3 run scoreboard players set alive MaryStatus 1
   scoreboard players set build MaryStatus 0

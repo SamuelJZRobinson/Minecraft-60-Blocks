@@ -1,7 +1,7 @@
 # Set Scores
 scoreboard players set stage ItemsBundles 4
 scoreboard players set itemsOwed ItemsBundles 1
-scoreboard players set crazyRage TedStatus -1
+scoreboard players set isCrazyRage TedStatus -1
 
 # Priority Items
   # Ted

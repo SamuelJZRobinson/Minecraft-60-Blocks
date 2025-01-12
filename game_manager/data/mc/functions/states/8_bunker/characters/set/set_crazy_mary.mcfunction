@@ -4,7 +4,7 @@
 # Set Scores
 scoreboard players set stage ItemsBundles 4
 scoreboard players set itemsOwed ItemsBundles 1
-scoreboard players set crazyRage MaryStatus -1
+scoreboard players set isCrazyRage MaryStatus -1
 
 # Priority Items
   # Mary

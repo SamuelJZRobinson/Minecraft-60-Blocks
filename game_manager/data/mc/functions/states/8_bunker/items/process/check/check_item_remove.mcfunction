@@ -29,7 +29,7 @@ execute if score waters ItemsBunker matches ..-1 run scoreboard players set wate
   execute if score itemId ItemsBundles matches 19 run scoreboard players set alive DoloresStatus 0
   # Ted
   execute if score itemId ItemsBundles matches 21 run scoreboard players set alive TedStatus 0
-  # Mary Jane
+  # Mary
   execute if score itemId ItemsBundles matches 20 run scoreboard players set alive MaryStatus 0
   # Timmy
   execute if score itemId ItemsBundles matches 22 run scoreboard players set alive TimmyStatus 0

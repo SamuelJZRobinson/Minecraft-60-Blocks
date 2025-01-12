@@ -11,9 +11,9 @@ scoreboard players set BUNKER_BLACKOUT StatusOdds 70
 scoreboard players set MUTANT StatusOdds 20
 scoreboard players set CANNIBALISM StatusOdds 20
 # Crazy
-scoreboard players set CRAZY_ESCAPE StatusOdds 12
 scoreboard players set CRAZY StatusOdds 2
-scoreboard players set CRAZY_RAGE StatusOdds 6
+scoreboard players set CRAZY_RAGE StatusOdds 7
+scoreboard players set CRAZY_ESCAPE StatusOdds 15
 # Dolores Crazy Resistance
   # Set Dice
   scoreboard players set mode Math 1
@@ -36,9 +36,9 @@ scoreboard players set CRAZY_RAGE StatusOdds 6
   scoreboard players operation MARY_CRAZY_ESCAPE_RESISTANCE StatusOdds = out Math
 # Fatigue
 scoreboard players set FATIGUE StatusOdds 8
-# Infection
-scoreboard players set INFECTION StatusOdds 14
+# Injured
+scoreboard players set INJURED_DEATH StatusOdds 5
 # Sickness
 scoreboard players set SICK_STARVATION StatusOdds 10
 scoreboard players set SICK_DEHYDRATION StatusOdds 5
-scoreboard players set SICK_DEATH StatusOdds 5
+scoreboard players set SICK_DEATH StatusOdds 20

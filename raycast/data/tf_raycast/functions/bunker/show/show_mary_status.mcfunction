@@ -7,9 +7,9 @@ execute if score soup MaryStatus > HUNGER_AMOUNT_CRITICAL StatusLevels if score 
 execute if score soup MaryStatus <= HUNGER_AMOUNT_CRITICAL StatusLevels as @e[type=minecraft:armor_stand,tag=maryStarvation] run data modify entity @s CustomNameVisible set value 1b
 # Mutant
 execute if score isMutant MaryStatus matches 1 as @e[type=minecraft:armor_stand,tag=maryMutated] run data modify entity @s CustomNameVisible set value 1b
-# Injuries
-execute if score injuryInfectionCountdown MaryStatus > INJURY_INFECTION_COUNTDOWN_MIN StatusLevels if score injuryInfectionCountdown MaryStatus < INJURY_INFECTION_COUNTDOWN_MAX StatusLevels as @e[type=minecraft:armor_stand,tag=maryHurt] run data modify entity @s CustomNameVisible set value 1b
-execute if score injuryInfectionCountdown MaryStatus <= INJURY_INFECTION_COUNTDOWN_MIN StatusLevels as @e[type=minecraft:armor_stand,tag=maryAgony] run data modify entity @s CustomNameVisible set value 1b
+# Injured
+execute if score isInjured MaryStatus matches 1 if score injuredDays MaryStatus < INJURED_DAYS_DANGER StatusLevels as @e[type=minecraft:armor_stand,tag=maryHurt] run data modify entity @s CustomNameVisible set value 1b
+execute if score isInjured MaryStatus matches 1 if score injuredDays MaryStatus >= INJURED_DAYS_DANGER StatusLevels as @e[type=minecraft:armor_stand,tag=maryAgony] run data modify entity @s CustomNameVisible set value 1b
 # Crazy
 execute if score isCrazy MaryStatus matches 1 as @e[type=minecraft:armor_stand,tag=maryCrazy] run data modify entity @s CustomNameVisible set value 1b
 # Sick
