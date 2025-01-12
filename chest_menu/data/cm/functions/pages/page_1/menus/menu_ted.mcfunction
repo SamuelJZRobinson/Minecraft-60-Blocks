@@ -31,16 +31,23 @@
   execute if score tedHead MenuFeed matches 8 run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Click to add both","color":"dark_gray","underlined":true}'
   execute if score tedHead MenuFeed matches 9 run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Requires more items","color":"dark_red"}'
   # Status Effects Lore
-  execute if score isFatigued TedStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Fatigued","color":"gold"}'
-  execute if score soup TedStatus > HUNGER_AMOUNT_CRITICAL StatusLevels if score soup TedStatus <= HUNGER_AMOUNT_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Hungry","color":"gold"}'
-  execute if score soup TedStatus <= HUNGER_AMOUNT_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Starvation","color":"gold"}'
-  execute if score injuredDays TedStatus > INJURED_DAYS_DEATH StatusLevels if score injuredDays TedStatus < INJURED_DAYS_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Hurt","color":"gold"}'
-  execute if score injuredDays TedStatus <= INJURED_DAYS_DEATH StatusLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Agony","color":"gold"}'
-  execute if score isCrazy TedStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Crazy","color":"gold"}'
-  execute if score isSick TedStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Sick","color":"gold"}'
-  execute if score water TedStatus > THIRST_AMOUNT_CRITICAL StatusLevels if score water TedStatus <= THIRST_AMOUNT_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Thirsty","color":"gold"}'
-  execute if score water TedStatus <= THIRST_AMOUNT_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Dehydration","color":"gold"}'
-  execute if score isTired TedStatus matches 1.. run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Tired","color":"gold"}'
+    # Fatigued
+    execute if score isFatigued TedStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Fatigued","color":"gold"}'
+    # Soup
+    execute if score soup TedStatus > HUNGER_AMOUNT_CRITICAL StatusLevels if score soup TedStatus <= HUNGER_AMOUNT_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Hungry","color":"gold"}'
+    execute if score soup TedStatus <= HUNGER_AMOUNT_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Starvation","color":"gold"}'
+    # Injured
+    execute if score isInjured MaryStatus matches 1 if score injuredDays MaryStatus < INJURED_DAYS_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Hurt","color":"gold"}'
+    execute if score isInjured TedStatus matches 1 if score injuredDays TedStatus >= INJURED_DAYS_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Agony","color":"gold"}'
+    # Crazy
+    execute if score isCrazy TedStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Crazy","color":"gold"}'
+    # Sick
+    execute if score isSick TedStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Sick","color":"gold"}'
+    # Water
+    execute if score water TedStatus > THIRST_AMOUNT_CRITICAL StatusLevels if score water TedStatus <= THIRST_AMOUNT_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Thirsty","color":"gold"}'
+    execute if score water TedStatus <= THIRST_AMOUNT_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Dehydration","color":"gold"}'
+    # Tired
+    execute if score isTired TedStatus matches 1.. run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Tired","color":"gold"}'
 
 # Soup
   # Toggle

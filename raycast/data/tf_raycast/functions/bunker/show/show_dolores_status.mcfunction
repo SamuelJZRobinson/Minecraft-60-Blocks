@@ -18,5 +18,5 @@ execute if score isSick DoloresStatus matches 1 as @e[type=minecraft:armor_stand
 # Water
 execute if score water DoloresStatus > THIRST_AMOUNT_CRITICAL StatusLevels if score water DoloresStatus <= THIRST_AMOUNT_DANGER StatusLevels as @e[type=minecraft:armor_stand,tag=doloresThirsty] run data modify entity @s CustomNameVisible set value 1b
 execute if score water DoloresStatus <= THIRST_AMOUNT_CRITICAL StatusLevels as @e[type=minecraft:armor_stand,tag=doloresDehydration] run data modify entity @s CustomNameVisible set value 1b
-# Energy
+# Tired
 execute if score isTired DoloresStatus matches 1.. as @e[type=minecraft:armor_stand,tag=doloresTired] run data modify entity @s CustomNameVisible set value 1b

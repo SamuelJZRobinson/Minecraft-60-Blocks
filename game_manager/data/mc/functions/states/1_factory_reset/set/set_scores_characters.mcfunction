@@ -21,7 +21,7 @@
   # Sickness
   scoreboard players set isSick TedStatus 0
   scoreboard players set sickDays TedStatus 0
-  # Energy
+  # Tired
   scoreboard players set isTired TedStatus 0
 
 # Dolores
@@ -47,7 +47,7 @@
   # Sickness
   scoreboard players set isSick DoloresStatus 0
   scoreboard players set sickDays DoloresStatus 0
-  # Energy
+  # Tired
   scoreboard players set isTired DoloresStatus 0
 
 # Mary
@@ -75,7 +75,7 @@
   scoreboard players set sickDays MaryStatus 0
   # Mutant
   scoreboard players set isMutant MaryStatus 0
-  # Energy
+  # Tired
   scoreboard players set isTired MaryStatus 0
 
 # Timmy
@@ -101,5 +101,5 @@
   # Sickness
   scoreboard players set isSick TimmyStatus 0
   scoreboard players set sickDays TimmyStatus 0
-  # Energy
+  # Tired
   scoreboard players set isTired TimmyStatus 0

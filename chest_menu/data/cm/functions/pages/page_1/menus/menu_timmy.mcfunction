@@ -31,16 +31,23 @@
   execute if score timmyHead MenuFeed matches 8 run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Click to add both","color":"dark_gray","underlined":true}'
   execute if score timmyHead MenuFeed matches 9 run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Requires more items","color":"dark_red"}'
   # Status Effects Lore
-  execute if score isFatigued TimmyStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Fatigued","color":"gold"}'
-  execute if score soup TimmyStatus > HUNGER_AMOUNT_CRITICAL StatusLevels if score soup TimmyStatus <= HUNGER_AMOUNT_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Hungry","color":"gold"}'
-  execute if score soup TimmyStatus <= HUNGER_AMOUNT_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Starvation","color":"gold"}'
-  execute if score injuredDays TimmyStatus > INJURED_DAYS_DEATH StatusLevels if score injuredDays TimmyStatus < INJURED_DAYS_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Hurt","color":"gold"}'
-  execute if score injuredDays TimmyStatus <= INJURED_DAYS_DEATH StatusLevels run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Agony","color":"gold"}'
-  execute if score isCrazy TimmyStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Crazy","color":"gold"}'
-  execute if score isSick TimmyStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Sick","color":"gold"}'
-  execute if score water TimmyStatus > THIRST_AMOUNT_CRITICAL StatusLevels if score water TimmyStatus <= THIRST_AMOUNT_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Thirsty","color":"gold"}'
-  execute if score water TimmyStatus <= THIRST_AMOUNT_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Dehydration","color":"gold"}'
-  execute if score isTired TimmyStatus matches 1.. run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Tired","color":"gold"}'
+    # Fatigued
+    execute if score isFatigued TimmyStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Fatigued","color":"gold"}'
+    # Soup
+    execute if score soup TimmyStatus > HUNGER_AMOUNT_CRITICAL StatusLevels if score soup TimmyStatus <= HUNGER_AMOUNT_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Hungry","color":"gold"}'
+    execute if score soup TimmyStatus <= HUNGER_AMOUNT_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Starvation","color":"gold"}'
+    # Injured
+    execute if score isInjured TimmyStatus matches 1 if score injuredDays TimmyStatus < INJURED_DAYS_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Hurt","color":"gold"}'
+    execute if score isInjured TimmyStatus matches 1 if score injuredDays TimmyStatus >= INJURED_DAYS_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Agony","color":"gold"}'
+    # Crazy
+    execute if score isCrazy TimmyStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Crazy","color":"gold"}'
+    # Sick
+    execute if score isSick TimmyStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Sick","color":"gold"}'
+    # Water
+    execute if score water TimmyStatus > THIRST_AMOUNT_CRITICAL StatusLevels if score water TimmyStatus <= THIRST_AMOUNT_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Thirsty","color":"gold"}'
+    execute if score water TimmyStatus <= THIRST_AMOUNT_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Dehydration","color":"gold"}'
+    # Tired
+    execute if score isTired TimmyStatus matches 1.. run data modify block ~ ~ ~ Items[{Slot:14b}].tag.display.Lore append value '{"text":"Tired","color":"gold"}'
 
 # Soup
   # Toggle

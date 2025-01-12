@@ -19,5 +19,5 @@ summon armor_stand ~1 ~0.72 ~5 {NoGravity:1b,Invulnerable:1b,ShowArms:1b,Small:1
   # Water
   summon armor_stand ~1 ~1.00 ~6 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerStatus","timmyStatus","timmyThirsty","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Thirsty","color":"gold"}'}
   summon armor_stand ~1 ~1.00 ~6 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerStatus","timmyStatus","timmyDehydration","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Dehydration","color":"gold"}'}
-  # Energy
+  # Tired
   summon armor_stand ~1 ~0.75 ~6 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerStatus","timmyStatus","timmyTired","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Tired","color":"gold"}'}

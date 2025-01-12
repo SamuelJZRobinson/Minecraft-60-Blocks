@@ -19,5 +19,5 @@ summon minecraft:armor_stand ~5 ~0.40 ~3 {NoGravity:1b,Invulnerable:1b,ShowArms:
   # Water
   summon armor_stand ~5 ~1.00 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerStatus","doloresStatus","doloresThirsty","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Thirsty","color":"gold"}'}
   summon armor_stand ~5 ~1.00 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerStatus","doloresStatus","doloresDehydration","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Dehydration","color":"gold"}'}
-  # Energy
+  # Tired
   summon armor_stand ~5 ~0.75 ~4 {CustomNameVisible:0b,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerStatus","doloresStatus","doloresTired","bunkerTitle"],DisabledSlots:4144959,CustomName:'{"text":"Tired","color":"gold"}'}
