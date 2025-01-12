@@ -1,5 +1,5 @@
 # Auto
-execute if score doPovExpedition Settings matches 0 if data storage minecraft:bundles expeditionGearId run function mc:states/9_expedition/place/items/set/set_gear_break
+execute if score doPovExpedition Settings matches 0 if data storage minecraft:bundles expeditionGearId run function mc:states/9_expedition/place/items/set_gear_break
 
 # POV
 execute if score doPovExpedition Settings matches 1 run data remove storage minecraft:bundles expeditionGearId

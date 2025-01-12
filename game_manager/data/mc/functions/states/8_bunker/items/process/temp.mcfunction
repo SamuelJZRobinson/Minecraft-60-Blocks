@@ -5,7 +5,7 @@
 
 # Count Items Accordingly
 execute if score stage ItemsBundles matches 1 run function mc:states/8_bunker/items/process/bundles/check/check_main_add
-# execute if score stage ItemsBundles matches 2 if score difficulty Settings matches 1..2 run function mc:states/8_bunker/items/process/bundles/set/set_bonous_items
+# execute if score stage ItemsBundles matches 2 if score difficulty Settings matches 1..2 run function mc:states/8_bunker/items/process/bundles/set_bonous_items
 # execute if score stage ItemsBundles matches 2 if score difficulty Settings matches 3 run scoreboard players set stage ItemsBundles 3
 # execute if score stage ItemsBundles matches 3 run schedule function mc:states/8_bunker/manage_day 1t replace
 # execute if score stage ItemsBundles matches 4 run function mc:states/8_bunker/items/process/bundles/check/check_main_remove

@@ -2,22 +2,10 @@
   # giveMedkit MenuFeed is used instead of <name>GiveMedkit <Name>Status since only one medkit exists.
 
 # Clear Bundles
-function mc:states/1_factory_reset/set/set_bundles
+function mc:states/1_factory_reset/set/set_data_stores
 
 # Feeding
-  # Remove Supplies
-  scoreboard players operation soups ItemsBunker -= soupGiven MenuFeed
-  scoreboard players operation waters ItemsBunker -= waterGiven MenuFeed
-  execute if score giveMedkit MenuFeed matches 1.. run scoreboard players set medkit ItemsBunker -1
-  # Statistics
-  scoreboard players operation soupConsumed GameStatus += soupGiven MenuFeed
-  scoreboard players operation waterConsumed GameStatus += waterGiven MenuFeed
-  # Nourish Characters
-  function cm:pages/submit/characters/manage_characters
-  # Reset Scores
-  scoreboard players set giveMedkit MenuFeed 0
-  scoreboard players set soupGiven MenuFeed 0
-  scoreboard players set waterGiven MenuFeed 0
+function cm:pages/submit/feed/submit_feed
 
 # Expedition
   # Run 
@@ -35,7 +23,9 @@ function mc:states/1_factory_reset/set/set_bundles
   # Reset Scores
   scoreboard players set event MenuEvent 0
   scoreboard players set choice MenuEvent 0
-  scoreboard players set submit MenuEvent 0
+
+# Reset Scores
+scoreboard players set submit MenuEvent 0
 
 # Declare New Day
 schedule function mc:states/8_bunker/manage_day 1t replace

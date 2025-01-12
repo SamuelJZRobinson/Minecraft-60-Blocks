@@ -5,11 +5,11 @@
   scoreboard players set build TedStatus 0
   scoreboard players set alive TedStatus 0
   # Sustenance
-  scoreboard players operation soup TedStatus = HUNGER_MAX StatusLevels
-  scoreboard players operation water TedStatus = THIRST_MAX StatusLevels
+  scoreboard players operation soup TedStatus = HUNGER_AMOUNT_MAX StatusLevels
+  scoreboard players operation water TedStatus = THIRST_AMOUNT_MAX StatusLevels
   # Crazy
-  scoreboard players operation breakdown TedStatus = BREAKDOWN_MAX StatusLevels
-  scoreboard players operation sanity TedStatus = SANITY_MAX StatusLevels
+  scoreboard players operation crazyEscapeCountdown TedStatus = CRAZY_ESCAPE_COUNTDOWN_MAX StatusLevels
+  scoreboard players operation crazySanity TedStatus = CRAZY_SANITY_AMOUNT_MAX StatusLevels
   scoreboard players set isCrazy TedStatus 0
   scoreboard players set crazyRage TedStatus 0
   scoreboard players set crazyEscaped TedStatus 0
@@ -17,10 +17,10 @@
   scoreboard players set isFatigued TedStatus 0
   # Injury
   scoreboard players set isInjured TedStatus 0
-  scoreboard players operation infection TedStatus = INFECTION_MAX StatusLevels
+  scoreboard players operation injuryInfectionCountdown TedStatus = INJURY_INFECTION_COUNTDOWN_MAX StatusLevels
   # Sickness
   scoreboard players set isSick TedStatus 0
-  scoreboard players operation sickness TedStatus = SICKNESS_MAX StatusLevels
+  scoreboard players operation sickDays TedStatus = SICK_DAYS_DEATH StatusLevels
   # Energy
   scoreboard players set isTired TedStatus 0
 
@@ -31,22 +31,22 @@
   scoreboard players set build DoloresStatus 0
   scoreboard players set alive DoloresStatus 0
   # Sustenance
-  scoreboard players operation soup DoloresStatus = HUNGER_MAX StatusLevels
-  scoreboard players operation water DoloresStatus = THIRST_MAX StatusLevels
+  scoreboard players operation soup DoloresStatus = HUNGER_AMOUNT_MAX StatusLevels
+  scoreboard players operation water DoloresStatus = THIRST_AMOUNT_MAX StatusLevels
   # Crazy
-  scoreboard players operation breakdown DoloresStatus = BREAKDOWN_MAX StatusLevels
-  scoreboard players operation sanity DoloresStatus = SANITY_MAX StatusLevels
+  scoreboard players operation crazyEscapeCountdown DoloresStatus = CRAZY_ESCAPE_COUNTDOWN_MAX StatusLevels
+  scoreboard players operation crazySanity DoloresStatus = CRAZY_SANITY_AMOUNT_MAX StatusLevels
   scoreboard players set isCrazy DoloresStatus 0
   scoreboard players set crazyRage DoloresStatus 0
   scoreboard players set crazyEscaped DoloresStatus 0
   # Injury
   scoreboard players set isInjured DoloresStatus 0
-  scoreboard players operation infection DoloresStatus = INFECTION_MAX StatusLevels
+  scoreboard players operation injuryInfectionCountdown DoloresStatus = INJURY_INFECTION_COUNTDOWN_MAX StatusLevels
   # Fatigue
   scoreboard players set isFatigued DoloresStatus 0
   # Sickness
   scoreboard players set isSick DoloresStatus 0
-  scoreboard players operation sickness DoloresStatus = SICKNESS_MAX StatusLevels
+  scoreboard players operation sickDays DoloresStatus = SICK_DAYS_DEATH StatusLevels
   # Energy
   scoreboard players set isTired DoloresStatus 0
 
@@ -57,11 +57,11 @@
   scoreboard players set build MaryStatus 0
   scoreboard players set alive MaryStatus 0
   # Sustenance
-  scoreboard players operation soup MaryStatus = HUNGER_MAX StatusLevels
-  scoreboard players operation water MaryStatus = THIRST_MAX StatusLevels
+  scoreboard players operation soup MaryStatus = HUNGER_AMOUNT_MAX StatusLevels
+  scoreboard players operation water MaryStatus = THIRST_AMOUNT_MAX StatusLevels
   # Crazy
-  scoreboard players operation breakdown MaryStatus = BREAKDOWN_MAX StatusLevels
-  scoreboard players operation sanity MaryStatus = SANITY_MAX StatusLevels
+  scoreboard players operation crazyEscapeCountdown MaryStatus = CRAZY_ESCAPE_COUNTDOWN_MAX StatusLevels
+  scoreboard players operation crazySanity MaryStatus = CRAZY_SANITY_AMOUNT_MAX StatusLevels
   scoreboard players set isCrazy MaryStatus 0
   scoreboard players set crazyRage MaryStatus 0
   scoreboard players set crazyEscaped MaryStatus 0
@@ -69,10 +69,10 @@
   scoreboard players set isFatigued MaryStatus 0
   # Injury
   scoreboard players set isInjured MaryStatus 0
-  scoreboard players operation infection MaryStatus = INFECTION_MAX StatusLevels
+  scoreboard players operation injuryInfectionCountdown MaryStatus = INJURY_INFECTION_COUNTDOWN_MAX StatusLevels
   # Sickness
   scoreboard players set isSick MaryStatus 0
-  scoreboard players operation sickness MaryStatus = SICKNESS_MAX StatusLevels
+  scoreboard players operation sickDays MaryStatus = SICK_DAYS_DEATH StatusLevels
   # Mutant
   scoreboard players set isMutant MaryStatus 0
   # Energy
@@ -85,11 +85,11 @@
   scoreboard players set build TimmyStatus 0
   scoreboard players set alive TimmyStatus 0
   # Sustenance
-  scoreboard players operation soup TimmyStatus = HUNGER_MAX StatusLevels
-  scoreboard players operation water TimmyStatus = THIRST_MAX StatusLevels
+  scoreboard players operation soup TimmyStatus = HUNGER_AMOUNT_MAX StatusLevels
+  scoreboard players operation water TimmyStatus = THIRST_AMOUNT_MAX StatusLevels
   # Crazy
-  scoreboard players operation breakdown TimmyStatus = BREAKDOWN_MAX StatusLevels
-  scoreboard players operation sanity TimmyStatus = SANITY_MAX StatusLevels
+  scoreboard players operation crazyEscapeCountdown TimmyStatus = CRAZY_ESCAPE_COUNTDOWN_MAX StatusLevels
+  scoreboard players operation crazySanity TimmyStatus = CRAZY_SANITY_AMOUNT_MAX StatusLevels
   scoreboard players set isCrazy TimmyStatus 0
   scoreboard players set crazyRage TimmyStatus 0
   scoreboard players set crazyEscaped TimmyStatus 0
@@ -97,9 +97,9 @@
   scoreboard players set isFatigued TimmyStatus 0
   # Injury
   scoreboard players set isInjured TimmyStatus 0
-  scoreboard players operation infection TimmyStatus = INFECTION_MAX StatusLevels
+  scoreboard players operation injuryInfectionCountdown TimmyStatus = INJURY_INFECTION_COUNTDOWN_MAX StatusLevels
   # Sickness
   scoreboard players set isSick TimmyStatus 0
-  scoreboard players operation sickness TimmyStatus = SICKNESS_MAX StatusLevels
+  scoreboard players operation sickDays TimmyStatus = SICK_DAYS_DEATH StatusLevels
   # Energy
   scoreboard players set isTired TimmyStatus 0

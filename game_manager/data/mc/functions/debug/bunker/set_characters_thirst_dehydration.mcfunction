@@ -16,21 +16,21 @@ function mc:states/1_factory_reset/set/set_scores_characters
 
 # Characters
   # Ted
-  scoreboard players set alive TedStatus 0
+  scoreboard players set alive TedStatus 1
   scoreboard players set soup TedStatus 100
-  scoreboard players set water TedStatus 100
+  scoreboard players operation water TedStatus = THIRST_AMOUNT_CRITICAL StatusLevels
   # Dolores
-  scoreboard players set alive DoloresStatus 0
+  scoreboard players set alive DoloresStatus 1
   scoreboard players set soup DoloresStatus 100
-  scoreboard players set water DoloresStatus 100
+  scoreboard players operation water DoloresStatus = THIRST_AMOUNT_CRITICAL StatusLevels
   # Mary
-  scoreboard players set alive MaryStatus 0
+  scoreboard players set alive MaryStatus 1
   scoreboard players set soup MaryStatus 100
-  scoreboard players set water MaryStatus 100
+  scoreboard players operation water MaryStatus = THIRST_AMOUNT_CRITICAL StatusLevels
   # Timmy
-  scoreboard players set alive TimmyStatus 0
+  scoreboard players set alive TimmyStatus 1
   scoreboard players set soup TimmyStatus 100
-  scoreboard players set water TimmyStatus 100
+  scoreboard players operation water TimmyStatus = THIRST_AMOUNT_CRITICAL StatusLevels
 
 # Update Bunker
 function mc:states/8_bunker/manage_cosmetics

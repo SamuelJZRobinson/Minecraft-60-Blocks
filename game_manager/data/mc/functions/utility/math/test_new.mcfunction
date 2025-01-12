@@ -6,4 +6,4 @@ data modify storage minecraft:math y set value 12
 # Calculate
 function mc:utility/math/get_percentage
 # Store
-scoreboard players operation DOLORES_BREAKDOWN_RESISTANCE StatusOdds = out Math
+scoreboard players operation DOLORES_CRAZY_ESCAPE_RESISTANCE StatusOdds = out Math

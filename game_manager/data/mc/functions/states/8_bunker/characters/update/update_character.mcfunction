@@ -8,13 +8,11 @@ data modify storage minecraft:math x set value 1
   function mc:states/8_bunker/characters/update/update_character_hunger with storage updatecharacters objective
   # Thirst
   function mc:states/8_bunker/characters/update/update_character_thirst with storage updatecharacters objective
-  # Injuries
-  function mc:states/8_bunker/characters/update/update_character_injuries with storage updatecharacters objective
+  # # Injured
+  # function mc:states/8_bunker/characters/update/update_character_injured with storage updatecharacters objective
   # Crazy
-  function mc:states/8_bunker/characters/update/update_character_crazy with storage updatecharacters objective
-  # Crazy Escape
-  function mc:states/8_bunker/characters/update/update_character_crazy_escape with storage updatecharacters objective
-  # Sickness
-  function mc:states/8_bunker/characters/update/update_character_sickness with storage updatecharacters objective
+  # function mc:states/8_bunker/characters/update/update_character_crazy with storage updatecharacters objective
+  # # Sickness
+  # function mc:states/8_bunker/characters/update/update_character_sickness with storage updatecharacters objective
   # Tiredness
   function mc:states/8_bunker/characters/update/update_character_tiredness with storage updatecharacters objective

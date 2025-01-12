@@ -10,8 +10,6 @@ scoreboard players set music GameStatus 0
 # scoreboard players set lockedSlots PlayerLockInventory 0
 # scoreboard players set lockedSlotsMax PlayerLockInventory 0
 # scoreboard players set mode PlayerLockInventory 0
-# Scavenge Nuke
-scoreboard players set nukeSurvived GameStatus 0
 # Character
 scoreboard players set adultsAlive GameStatus 0
 scoreboard players set childrenAlive GameStatus 0

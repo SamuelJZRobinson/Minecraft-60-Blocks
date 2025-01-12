@@ -19,7 +19,7 @@ scoreboard players set crazyRage TimmyStatus -1
   execute if score destroyItemFails ItemsBundles matches ..2 run function mc:states/8_bunker/items/process/bundles/check/check_random
 
   # Failed To Load Items
-  execute if score destroyItemFails ItemsBundles matches 3 run function mc:states/8_bunker/characters/set/set_crazy_all
+  execute if score destroyItemFails ItemsBundles matches 3 run function mc:states/8_bunker/characters/set_crazy_all
 
   # Refresh Score
   scoreboard players set destroyItemFails ItemsBundles 0

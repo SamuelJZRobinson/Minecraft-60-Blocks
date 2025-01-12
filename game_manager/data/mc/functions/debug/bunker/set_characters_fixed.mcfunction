@@ -15,6 +15,10 @@ function mc:states/1_factory_reset/set/set_scores_characters
     scoreboard players set day GameStatus 1
 
 # Characters
+  # Ted
+  scoreboard players set alive TedStatus 1
+  scoreboard players set soup TedStatus 100
+  scoreboard players set water TedStatus 100
   # Dolores
   scoreboard players set alive DoloresStatus 1
   scoreboard players set soup DoloresStatus 100
@@ -23,10 +27,6 @@ function mc:states/1_factory_reset/set/set_scores_characters
   scoreboard players set alive MaryStatus 1
   scoreboard players set soup MaryStatus 100
   scoreboard players set water MaryStatus 100
-  # Ted
-  scoreboard players set alive TedStatus 1
-  scoreboard players set soup TedStatus 100
-  scoreboard players set water TedStatus 100
   # Timmy
   scoreboard players set alive TimmyStatus 1
   scoreboard players set soup TimmyStatus 100

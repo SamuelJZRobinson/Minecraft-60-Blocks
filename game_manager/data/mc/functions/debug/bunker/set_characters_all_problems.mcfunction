@@ -23,7 +23,7 @@ function mc:states/1_factory_reset/set/set_scores_characters
   # Crazy
   scoreboard players set isCrazy DoloresStatus 1
   # Injury
-  scoreboard players set infection DoloresStatus 5
+  scoreboard players set injuryInfectionCountdown DoloresStatus 5
   # Fatigue
   scoreboard players set isTired DoloresStatus 1
   scoreboard players set isFatigued DoloresStatus 1
@@ -39,7 +39,7 @@ function mc:states/1_factory_reset/set/set_scores_characters
   # Crazy
   scoreboard players set isCrazy MaryStatus 1
   # Injury
-  scoreboard players set infection MaryStatus 5
+  scoreboard players set injuryInfectionCountdown MaryStatus 5
   # Fatigue
   scoreboard players set isTired MaryStatus 1
   scoreboard players set isFatigued MaryStatus 1
@@ -55,7 +55,7 @@ function mc:states/1_factory_reset/set/set_scores_characters
   # Crazy
   scoreboard players set isCrazy TedStatus 1
   # Injury
-  scoreboard players set infection TedStatus 5
+  scoreboard players set injuryInfectionCountdown TedStatus 5
   # Fatigue
   scoreboard players set isTired TedStatus 1
   scoreboard players set isFatigued TedStatus 1
@@ -71,7 +71,7 @@ function mc:states/1_factory_reset/set/set_scores_characters
   # Crazy
   scoreboard players set isCrazy TimmyStatus 1
   # Injury
-  scoreboard players set infection TimmyStatus 5
+  scoreboard players set injuryInfectionCountdown TimmyStatus 5
   # Fatigue
   scoreboard players set isTired TimmyStatus 1
   scoreboard players set isFatigued TimmyStatus 1

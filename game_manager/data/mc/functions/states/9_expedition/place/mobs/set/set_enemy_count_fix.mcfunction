@@ -13,4 +13,4 @@ execute if score diffirence MobsExpedition matches 1.. run scoreboard players re
 execute if score diffirence MobsExpedition matches ..-1 run scoreboard players add diffirence MobsExpedition 1
 
 # Loop
-execute unless score diffirence MobsExpedition matches 0 run function mc:states/9_expedition/place/items/set/enemy_count_fix
+execute unless score diffirence MobsExpedition matches 0 run function mc:states/9_expedition/place/items/set/set/enemy_count_fix

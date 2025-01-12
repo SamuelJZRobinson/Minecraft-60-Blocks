@@ -8,14 +8,13 @@ scoreboard players operation characterSent MenuExplore = characterSelect MenuExp
 scoreboard players operation mapVisited MenuExplore = mapSelect MenuExplore
 
 # Characters
-function cm:pages/submit/expedition/characters/set/set_hide
-function cm:pages/submit/expedition/characters/set/set_tired
+function cm:pages/submit/expedition/set_tired
 
 # Items
 function cm:pages/submit/expedition/items/manage_items
 
 # Time
-execute unless score gamemode Settings matches 1 run function cm:pages/submit/expedition/time/set/set_time
+execute unless score gamemode Settings matches 1 run function cm:pages/submit/expedition/set_expedition_days
 execute if score task AtomicDrill matches 13 run scoreboard players set expeditionDuration MenuExplore 3
 
 # Debounce

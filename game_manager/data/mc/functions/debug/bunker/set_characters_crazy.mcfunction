@@ -16,21 +16,25 @@ function mc:states/1_factory_reset/set/set_scores_characters
 
 # Characters
   # Ted
-  scoreboard players set alive TedStatus 0
+  scoreboard players set alive TedStatus 1
   scoreboard players set soup TedStatus 100
   scoreboard players set water TedStatus 100
+  scoreboard players operation crazySanity TedStatus = CRAZY_SANITY_AMOUNT_MIN StatusLevels
   # Dolores
-  scoreboard players set alive DoloresStatus 0
+  scoreboard players set alive DoloresStatus 1
   scoreboard players set soup DoloresStatus 100
   scoreboard players set water DoloresStatus 100
+  scoreboard players operation crazySanity DoloresStatus = CRAZY_SANITY_AMOUNT_MIN StatusLevels
   # Mary
-  scoreboard players set alive MaryStatus 0
+  scoreboard players set alive MaryStatus 1
   scoreboard players set soup MaryStatus 100
   scoreboard players set water MaryStatus 100
+  scoreboard players operation crazySanity MaryStatus = CRAZY_SANITY_AMOUNT_MIN StatusLevels
   # Timmy
-  scoreboard players set alive TimmyStatus 0
+  scoreboard players set alive TimmyStatus 1
   scoreboard players set soup TimmyStatus 100
   scoreboard players set water TimmyStatus 100
+  scoreboard players operation crazySanity TimmyStatus = CRAZY_SANITY_AMOUNT_MIN StatusLevels
 
 # Update Bunker
 function mc:states/8_bunker/manage_cosmetics

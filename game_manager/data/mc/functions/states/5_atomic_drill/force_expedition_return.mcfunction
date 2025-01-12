@@ -27,7 +27,7 @@
   data modify storage minecraft:scavenge savedItemIds append value 12
   scoreboard players set stage ItemsBundles 9
   function mc:states/8_bunker/items/process/bundles/check/check_main_add
-  function mc:states/8_bunker/items/process/bundles/set/set_bundle_details
+  function mc:states/8_bunker/items/process/bundles/set_bundle_details
 
   # Refresh Bunker Decorations
   schedule function mc:states/8_bunker/manage_cosmetics 0.5s replace

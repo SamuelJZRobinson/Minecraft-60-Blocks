@@ -23,7 +23,7 @@ function em:math/get_percentage
   function em:math/randomp
   # Outcome
     # Dead
-    execute unless score math_out em matches 0 if score math_out em <= memory em run function mc:states/9_expedition/place/characters/set/set_death_character
+    execute unless score math_out em matches 0 if score math_out em <= memory em run function mc:states/9_expedition/place/characters/set_death_character
     # Alive
     execute unless score math_out em matches 0 if score math_out em > memory em run scoreboard players add stage ItemsExpedition 1
     execute unless score math_out em matches 0 if score math_out em > memory em run schedule function mc:states/9_expedition/place/manage_placement 1t replace

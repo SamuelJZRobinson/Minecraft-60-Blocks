@@ -1,10 +1,10 @@
 # Refresh Scores
 scoreboard players set isFatigued MaryStatus 0
 scoreboard players set isInjured MaryStatus 0
-scoreboard players operation infection MaryStatus = INFECTION_MAX StatusLevels
+scoreboard players operation injuryInfectionCountdown MaryStatus = INJURY_INFECTION_COUNTDOWN_MAX StatusLevels
 scoreboard players set isCrazy MaryStatus 0
 scoreboard players set isSick MaryStatus 0
-scoreboard players operation water MaryStatus = THIRST_MAX StatusLevels
+scoreboard players operation water MaryStatus = THIRST_AMOUNT_MAX StatusLevels
 scoreboard players set isTired MaryStatus 0
 
 # Constants
