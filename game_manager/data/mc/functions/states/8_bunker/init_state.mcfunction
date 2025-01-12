@@ -1,5 +1,8 @@
 tellraw @a "state 8"
 
+# Stop Mob Loot
+gamerule doMobLoot false
+
 # Check Item
 scoreboard players set mode ItemsBundles 1
 function mc:states/8_bunker/items/process/check/check_item

@@ -7,7 +7,7 @@ summon armor_stand ~ ~0.38 ~4 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:
 summon armor_stand ~ ~0.40 ~3 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyCheckers"],DisabledSlots:4144959,Rotation:[90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:6}}]}
 summon armor_stand ~ ~0.40 ~2 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyFlashlight"],DisabledSlots:4144959,Rotation:[-90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:8}}]}
 summon armor_stand ~ ~0.68 ~1 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyGasMask"],DisabledSlots:4144959,Rotation:[-90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:9}}]}
-summon armor_stand ~ ~-0.45 ~-0.07 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyGun"],DisabledSlots:4144959,Rotation:[90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:26}}]}
+summon armor_stand ~0.15 ~-0.45 ~-0.07 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyGun"],DisabledSlots:4144959,Rotation:[90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:26}}]}
 # East
 summon armor_stand ~4 ~0.39 ~8 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyBodyArmour"],DisabledSlots:4144959,Rotation:[90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:20}}]}
 summon armor_stand ~4 ~0.38 ~7 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["lobbyItem","lobbyBottle"],DisabledSlots:4144959,Rotation:[90F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:19}}]}

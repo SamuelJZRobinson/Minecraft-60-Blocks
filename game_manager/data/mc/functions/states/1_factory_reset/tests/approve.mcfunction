@@ -1,7 +1,7 @@
 # Set Data
+function mc:states/1_factory_reset/set/set_gamerules
 function mc:states/1_factory_reset/clear/clear_schedules
 function mc:states/1_factory_reset/clear/clear_locations
-function mc:states/1_factory_reset/set/set_gamerules
 function mc:states/1_factory_reset/set/set_teams
 function mc:states/1_factory_reset/set/set_scores
 function mc:states/1_factory_reset/set/set_data_stores

@@ -3,6 +3,9 @@ tellraw @a "state 7"
 # Set Scores
 scoreboard players set music GameStatus 1
 
+# Allow Mob Loot
+gamerule doMobLoot true
+
 # Make Items Collectable
 execute as @e[type=slime,tag=scavengeItem] run data modify entity @s Invulnerable set value 0b
 execute as @e[type=zombie,tag=character] run data modify entity @s Invulnerable set value 0b

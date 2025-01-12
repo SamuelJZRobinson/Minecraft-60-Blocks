@@ -4,13 +4,13 @@ execute if score doTed Settings matches 1 run scoreboard players set alive TedSt
 
 # Spawn Characters
   # Ted
-  execute unless score doTed Settings matches 1 unless entity @e[type=zombie,tag=ted] positioned 24.00 -30.00 0.50 run function mc:states/4_setup/place/characters/summon/summon_ted
+  execute unless score doTed Settings matches 1 unless entity @e[type=zombie,tag=ted] positioned 21.00 -30.00 0.50 run function mc:states/4_setup/place/characters/summon/summon_ted
   # Dolores
-  execute unless score doTed Settings matches 0 unless entity @e[type=zombie,tag=dolores] positioned 24.00 -30.00 0.50 run function mc:states/4_setup/place/characters/summon/summon_dolores
+  execute unless score doTed Settings matches 0 unless entity @e[type=zombie,tag=dolores] positioned 21.00 -30.00 0.50 run function mc:states/4_setup/place/characters/summon/summon_dolores
   # Mary
-  execute unless entity @e[type=zombie,tag=mary] positioned 24.00 -30.00 0.50 run function mc:states/4_setup/place/characters/summon/summon_mary
+  execute unless entity @e[type=zombie,tag=mary] positioned 21.00 -30.00 0.50 run function mc:states/4_setup/place/characters/summon/summon_mary
   # Timmy
-  execute unless entity @e[type=zombie,tag=timmy] positioned 24.00 -30.00 0.50 run function mc:states/4_setup/place/characters/summon/summon_timmy
+  execute unless entity @e[type=zombie,tag=timmy] positioned 21.00 -30.00 0.50 run function mc:states/4_setup/place/characters/summon/summon_timmy
 
 # Teleport Characters
   # Ted
