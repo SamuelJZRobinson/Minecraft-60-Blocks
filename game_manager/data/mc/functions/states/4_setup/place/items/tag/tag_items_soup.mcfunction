@@ -1,19 +1,19 @@
 # Update Room
-execute if score room ItemsHouse matches 1 if score kitchenSoup ItemsHouse matches ..0 run scoreboard players add room ItemsHouse 1
-execute if score room ItemsHouse matches 2 if score hallwaySoup ItemsHouse matches ..0 run scoreboard players add room ItemsHouse 1
+execute if score room ItemsHouse matches 1 if score kitchenSoupItemsLeft ItemsHouse matches ..0 run scoreboard players add room ItemsHouse 1
+execute if score room ItemsHouse matches 2 if score hallwaySoupItemsLeft ItemsHouse matches ..0 run scoreboard players add room ItemsHouse 1
 
 # Tag Room Items
   # Kitchen
   execute if score room ItemsHouse matches 1 run tag @s add kitchen
   execute if score room ItemsHouse matches 1 run tag @s remove unassigned
   execute if score room ItemsHouse matches 1 run teleport @s @e[type=marker,limit=1,sort=random,tag=kitchen,tag=floor]
-  execute if score room ItemsHouse matches 1 run scoreboard players remove kitchenSoup ItemsHouse 1
+  execute if score room ItemsHouse matches 1 run scoreboard players remove kitchenSoupItemsLeft ItemsHouse 1
   execute if score room ItemsHouse matches 1 run scoreboard players remove kitchenItemsLeft ItemsHouse 1
   # Hallway
   execute if score room ItemsHouse matches 2 run tag @s add hallway
   execute if score room ItemsHouse matches 2 run tag @s remove unassigned
   execute if score room ItemsHouse matches 2 run teleport @s @e[type=marker,limit=1,sort=random,tag=hallway,tag=floor]
-  execute if score room ItemsHouse matches 2 run scoreboard players remove hallwaySoup ItemsHouse 1
+  execute if score room ItemsHouse matches 2 run scoreboard players remove hallwaySoupItemsLeft ItemsHouse 1
   execute if score room ItemsHouse matches 2 run scoreboard players remove hallwayItemsLeft ItemsHouse 1
 
 # Rotate Item
