@@ -14,4 +14,4 @@ execute if score room ItemsHouse matches 7 run scoreboard players add sideBathro
 scoreboard players remove remainder ItemsHouse 1
 
 # Loop
-execute if score remainder ItemsHouse matches 1.. run function mc:states/4_setup/place/items/set/set_room_count_remainder_all
+execute if score remainder ItemsHouse matches 1.. run function mc:states/4_setup/place/items/set/set_room_item_count_all
