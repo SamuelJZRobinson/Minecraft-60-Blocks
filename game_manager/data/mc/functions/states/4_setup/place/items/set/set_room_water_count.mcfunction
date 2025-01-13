@@ -2,14 +2,9 @@
 execute store result score waterLeft ItemsHouse if entity @e[type=minecraft:slime,team=Items,tag=water]
 
 # Kitchen
-# Reduce math_in2 If Kitchen Is Smaller
 scoreboard players operation remainder ItemsHouse = kitchenItemsLeft ItemsHouse
 scoreboard players operation remainder ItemsHouse -= kitchenSoupItemsLeft ItemsHouse
-data modify storage minecraft:math x set value 1
-execute store result storage minecraft:math y int 1 run scoreboard players get remainder ItemsHouse
-function mc:utility/math/get_random_range with storage minecraft:math
-# Adjust Scores
-scoreboard players operation kitchenWaterItemsLeft ItemsHouse = out Math
+execute store result score kitchenWaterItemsLeft ItemsHouse run function mc:utility/math/get_random_value_amt_obj {"x":1,"score":remainder,"objective":ItemsHouse}
 scoreboard players operation waterLeft ItemsHouse -= kitchenWaterItemsLeft ItemsHouse
 
 # Bathroom
@@ -26,11 +21,7 @@ scoreboard players operation waterLeft ItemsHouse -= sideBathroomWaterItemsLeft 
   scoreboard players operation remainder ItemsHouse -= hallwaySoupItemsLeft ItemsHouse
   # Reduce Diffirence If waterLeft Is Smaller
   execute if score remainder ItemsHouse > waterLeft ItemsHouse run scoreboard players operation remainder ItemsHouse = waterLeft ItemsHouse
-  data modify storage minecraft:math x set value 0
-  execute store result storage minecraft:math y int 1 run scoreboard players get remainder ItemsHouse
-  function mc:utility/math/get_random_range with storage minecraft:math
-  # Adjust Scores
-  scoreboard players operation hallwayWaterItemsLeft ItemsHouse = out Math
+  execute store result score hallwayWaterItemsLeft ItemsHouse run function mc:utility/math/get_random_value_amt_obj {"x":0,"score":remainder,"objective":ItemsHouse}
 
 # Count Allocated Water
 scoreboard players set waterLeft ItemsHouse 0
