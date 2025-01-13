@@ -14,8 +14,8 @@ execute if score room ItemsHouse matches 5 run scoreboard players add masterBedr
 execute if score room ItemsHouse matches 6 run scoreboard players add sideBathroom ItemsHouse 1
 
 # Adjust Scores
-scoreboard players add allocated ItemsHouse 1
+# scoreboard players add allocated ItemsHouse 1
 scoreboard players remove remainder ItemsHouse 1
 
 # Loop Function If Items Are Owed
-execute if score remainder ItemsHouse matches 1.. run function mc:states/4_setup/place/items/set_room_count_fix_leftovers
+execute if score remainder ItemsHouse matches 1.. run function mc:states/4_setup/place/items/set/set_room_count_fix_leftovers
