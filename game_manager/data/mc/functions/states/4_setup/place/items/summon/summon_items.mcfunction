@@ -6,24 +6,24 @@ scoreboard players set soupCount ItemsHouse 7
 scoreboard players set waterCount ItemsHouse 8
 
 # Official Items
-execute unless entity @e[team=Items,type=slime,tag=ammo] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_ammo
-execute unless entity @e[team=Items,type=slime,tag=axe] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_axe
-execute unless entity @e[team=Items,type=slime,tag=handbook] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_boy_scout_handbook
-execute unless entity @e[team=Items,type=slime,tag=bugSpray] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_bug_spray
-execute unless entity @e[team=Items,type=slime,tag=cards] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_cards
-execute unless entity @e[team=Items,type=slime,tag=flashlight] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_flashlight
-execute unless entity @e[team=Items,type=slime,tag=gasMask] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_gas_mask
-execute unless entity @e[team=Items,type=slime,tag=gun] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_gun
-execute unless entity @e[team=Items,type=slime,tag=harmonica] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_harmonica
-execute unless entity @e[team=Items,type=slime,tag=map] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_map
-execute unless entity @e[team=Items,type=slime,tag=medkit] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_medkit
-execute unless entity @e[team=Items,type=slime,tag=padlock] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_padlock
-execute unless entity @e[team=Items,type=slime,tag=radio] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_radio
-execute unless entity @e[team=Items,type=slime,tag=soup] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_soups
-execute unless entity @e[team=Items,type=slime,tag=suitcase] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_suitcase
-execute unless entity @e[team=Items,type=slime,tag=water] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_waters
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_ammo
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_axe
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_boy_scout_handbook
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_bug_spray
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_cards
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_flashlight
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_gas_mask
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_gun
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_harmonica
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_map
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_medkit
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_padlock
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_radio
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_soups
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_suitcase
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_waters
 # Custom Items
-execute unless entity @e[team=Items,type=slime,tag=bodyArmour] positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_body_armour
+execute positioned 21.50 -24.00 1.50 run function mc:states/4_setup/place/items/summon/summon_body_armour
 
 # Tag Items
 tag @e[type=slime,team=Items] add unassigned

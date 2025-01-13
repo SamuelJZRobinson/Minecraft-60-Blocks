@@ -1,0 +1,1 @@
+execute if score started GameStatus matches 0 run team join Player @s

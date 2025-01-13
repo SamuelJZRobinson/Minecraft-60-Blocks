@@ -5,9 +5,9 @@
   # Never set hallway size to 0 when debugging because it is intended to receive leftover items.
 
 # Count Total Items
-execute store result score itemCount ItemsHouse if entity @e[type=minecraft:slime,tag=scavengeItem]
-execute store result score soupLeft ItemsHouse if entity @e[type=minecraft:slime,tag=soup]
-execute store result score waterLeft ItemsHouse if entity @e[type=minecraft:slime,tag=scavengeWater]
+execute store result score itemCount ItemsHouse if entity @e[type=minecraft:slime,team=Items,tag=scavengeItem]
+execute store result score soupLeft ItemsHouse if entity @e[type=minecraft:slime,team=Items,tag=soup]
+execute store result score waterLeft ItemsHouse if entity @e[type=minecraft:slime,team=Items,tag=water]
 
 # Set Base Item Count
   # Bathroom
