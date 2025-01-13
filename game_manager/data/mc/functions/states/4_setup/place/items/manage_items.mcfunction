@@ -1,3 +1,6 @@
+# Notes
+  # Looping via manage_items maintains the @s selector for entities since schedules will break it.
+
 # Check Items Spawned
 execute if score step ItemsHouse matches 1 run function mc:states/4_setup/place/items/summon/summon_items
 # Set Room Item Count

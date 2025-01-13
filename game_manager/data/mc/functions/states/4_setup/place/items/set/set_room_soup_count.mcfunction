@@ -7,7 +7,7 @@ scoreboard players operation soupLeft ItemsHouse -= kitchenSoup ItemsHouse
 
 # Hallway
 # Reduce soupLeft If Hallway Is Smaller
-execute if score hallway ItemsHouse < soupLeft ItemsHouse run scoreboard players operation soupLeft ItemsHouse = hallway ItemsHouse
+execute if score hallwayItemsLeft ItemsHouse < soupLeft ItemsHouse run scoreboard players operation soupLeft ItemsHouse = hallwayItemsLeft ItemsHouse
 data modify storage minecraft:math x set value 0
 execute store result storage minecraft:math y int 1 run scoreboard players get soupLeft ItemsHouse
 function mc:utility/math/get_random_range with storage minecraft:math
