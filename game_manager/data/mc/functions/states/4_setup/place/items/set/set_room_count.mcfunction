@@ -6,8 +6,6 @@
 
 # Count Total Items
 execute store result score itemCount ItemsHouse if entity @e[type=minecraft:slime,team=Items,tag=scavengeItem]
-execute store result score soupLeft ItemsHouse if entity @e[type=minecraft:slime,team=Items,tag=soup]
-execute store result score waterLeft ItemsHouse if entity @e[type=minecraft:slime,team=Items,tag=water]
 
 # Set Base Item Count
 execute store result score bathroom ItemsHouse run random value 2..3
@@ -29,21 +27,18 @@ execute store result score sideBathroom ItemsHouse run random value 1..2
   scoreboard players operation remainder ItemsHouse -= masterBedroom ItemsHouse
   scoreboard players operation remainder ItemsHouse -= sideBathroom ItemsHouse
 
-# Set Hallway Bonous Item Count
-  # Set Bonous Count
-  data modify storage minecraft:math x set value 0
-  execute if score remainder ItemsHouse matches ..0 run data modify storage minecraft:math y set value 0
-  execute if score remainder ItemsHouse matches 1 run data modify storage minecraft:math y set value 1
-  execute if score remainder ItemsHouse matches 2 run data modify storage minecraft:math y set value 2
-  execute if score remainder ItemsHouse matches 3.. run data modify storage minecraft:math y set value 3
-  function mc:utility/math/get_random_range with storage minecraft:math
-  # Adjust Scores
-  scoreboard players operation hallway ItemsHouse += out Math
-  scoreboard players operation allocated ItemsHouse += out Math
-  scoreboard players operation remainder ItemsHouse -= out Math
 
-# Compensate Remaining Items
-execute if score remainder ItemsHouse matches 1.. run function mc:states/4_setup/place/items/set/set_room_count_fix_leftovers
+# Allocate Remainder (Hallway Only)
+execute if score remainder ItemsHouse matches 1.. run function mc:states/4_setup/place/items/set/set_room_count_remainder_hallway
+
+# Allocate Remainder (All Rooms)
+execute if score remainder ItemsHouse matches 1.. run function mc:states/4_setup/place/items/set/set_room_count_remainder_all
+
+
+
+execute store result score soupLeft ItemsHouse if entity @e[type=minecraft:slime,team=Items,tag=soup]
+execute store result score waterLeft ItemsHouse if entity @e[type=minecraft:slime,team=Items,tag=water]
+
 
 # Assign Items For Specific Rooms
   # Kitchen Soup
