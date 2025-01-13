@@ -2,9 +2,9 @@
   # Countertops
   summon minecraft:marker 15.50 -29.00 -5.50 {Tags:["table","west"]}
   summon minecraft:marker 15.50 -29.00 -6.50 {Tags:["table","west"]}
+  summon minecraft:marker 8.50 -29.00 -12.50 {Tags:["table","west"]}
   # Shower
-  summon minecraft:marker 8.5 -28.00 -5.5 {Tags:["wall","north"]}
-  summon minecraft:marker 9.5 -30.00 -5.5 {Tags:["floor","west"]}
+  summon minecraft:marker 8.5 -28.00 -5.25 {Tags:["wall","north"]}
   # Window
   summon minecraft:marker 8.00 -29.00 -8.00 {Tags:["table","antiWall","east"]}
   summon minecraft:marker 11.00 -29.00 -14.00 {Tags:["table","antiWall","south"]}
@@ -13,7 +13,8 @@
 # Kid's Bedroom
   # Shelves
   summon minecraft:marker 21.50 -29.00 -9.50 {Tags:["table","west"]}
-  summon minecraft:marker 21.50 -29.00 -10.50 {Tags:["table","west"]}
+  summon minecraft:marker 24.50 -29.00 -10.50 {Tags:["table","west"]}
+  summon minecraft:marker 24.50 -29.00 -9.50 {Tags:["table","west"]}
   summon minecraft:marker 18.50 -29.00 -8.50 {Tags:["table","east"]}
   summon minecraft:marker 18.50 -29.00 -9.50 {Tags:["table","east"]}
   # Beds

@@ -8,8 +8,8 @@
   # Chair
   summon minecraft:marker 22.50 -29.00 12.50 {Tags:["table","south"]}
   # Shelves
-  summon minecraft:marker 25.50 -29.00 -3.50 {Tags:["table","south"]}
-  summon minecraft:marker 21.50 -29.00 -3.50 {Tags:["table","south"]}
+  summon minecraft:marker 24.50 -29.00 6.50 {Tags:["table","south"]}
+  summon minecraft:marker 25.50 -29.00 6.50 {Tags:["table","south"]}
   # Rocking Horse
   summon minecraft:marker 23.50 -28.94 8.50 {Tags:["table","north"]}
   # Windows
@@ -28,6 +28,9 @@
   summon minecraft:marker 11.50 -28.94 15.50 {Tags:["table","north"]}
   summon minecraft:marker 15.75 -29.00 15.30 {Tags:["table","north"]}
   summon minecraft:marker 16.45 -29.00 15.60 {Tags:["table","north"]}
+  summon minecraft:marker 15.46 -28.94 14.46 {Tags:["table","north"]}
+  # Sink
+  summon minecraft:marker 10.49 -29.75 14.45 {Tags:["table","north"]}
   # Fridge
   summon minecraft:marker 8.78 -28.00 12.82 {Tags:["table","antiWall","east"]}
   summon minecraft:marker 8.61 -28.00 12.16 {Tags:["table","antiWall","east"]}

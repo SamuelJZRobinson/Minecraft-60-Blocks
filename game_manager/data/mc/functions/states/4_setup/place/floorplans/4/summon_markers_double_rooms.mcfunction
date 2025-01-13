@@ -4,7 +4,7 @@
   summon minecraft:marker 26.13 -29.00 8.00 {Tags:["table","antiWall","south"]}
   summon minecraft:marker 23.00 -29.00 15.13 {Tags:["table","antiWall","north"]}
   # Makeup Chair
-  summon minecraft:marker 21.50 -28.94 13.50 {Tags:["table","North-West"]}
+  summon minecraft:marker 24.50 -28.94 13.50 {Tags:["table","North-West"]}
   # Shelves
   summon minecraft:marker 19.50 -29.00 14.50 {Tags:["table","east"]}
   summon minecraft:marker 19.50 -29.00 13.50 {Tags:["table","east"]}

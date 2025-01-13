@@ -1,13 +1,17 @@
 # Bathroom
   # Countertop
-  summon minecraft:marker 21.50 -29.00 6.50 {Tags:["table","south"]}
+  summon minecraft:marker 24.50 -29.00 6.50 {Tags:["table","south"]}
   # Toilet
-  summon minecraft:marker 21.50 -28.81 13.50 {Tags:["table","North-West"]}
+  summon minecraft:marker 24.50 -28.81 13.50 {Tags:["table","North-West"]}
+  # Bathtub
+  summon minecraft:marker 19.25 -27.75 7.50 {Tags:["wall","east"]}
   # Shower
-  summon minecraft:marker 20.50 -28.75 14.75 {Tags:["wall","north"]}
+  summon minecraft:marker 20.50 -27.75 14.75 {Tags:["wall","north"]}
   # Windows
   summon minecraft:marker 26.13 -29.00 8.00 {Tags:["table","antiWall","west"]}
   summon minecraft:marker 23.00 -29.00 15.13 {Tags:["table","antiWall","north"]}
+  # Sink
+  summon minecraft:marker 25.50 -29.75 10.50 {Tags:["table","north"]}
 
 # Kitchen
   # Central Table

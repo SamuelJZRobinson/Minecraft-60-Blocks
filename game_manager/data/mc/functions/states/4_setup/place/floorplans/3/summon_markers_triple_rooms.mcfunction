@@ -24,9 +24,11 @@
 
 # Bathroom
   # Countertops
-  summon minecraft:marker 21.50 -29.00 -12.50 {Tags:["table","west"]}
-  summon minecraft:marker 21.50 -29.00 -13.50 {Tags:["table","west"]}
+  summon minecraft:marker 24.50 -29.00 -12.50 {Tags:["table","west"]}
+  summon minecraft:marker 24.50 -29.00 -13.50 {Tags:["table","west"]}
   summon minecraft:marker 18.50 -29.00 -12.50 {Tags:["table","east"]}
+  # Sink
+  summon minecraft:marker 24.50 -29.75 -7.50 {Tags:["table","east"]}
   # Table
   summon minecraft:marker 20.30 -29.00 -5.30 {Tags:["table","east"]}
   summon minecraft:marker 20.70 -29.00 -5.70 {Tags:["table","east"]}

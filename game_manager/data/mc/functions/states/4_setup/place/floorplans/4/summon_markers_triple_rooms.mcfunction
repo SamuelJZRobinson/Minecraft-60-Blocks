@@ -6,6 +6,8 @@
   summon minecraft:marker 15.50 -28.94 -7.86 {Tags:["table","west"]}
   summon minecraft:marker 15.31 -28.94 -7.29 {Tags:["table","west"]}
   summon minecraft:marker 15.60 -29.00 -6.73 {Tags:["table","west"]}
+  # Sink
+  summon minecraft:marker 8.50 -29.75 -9.50 {Tags:["table","west"]}
   # Fridge
   summon minecraft:marker 15.25 -28.00 -11.62 {Tags:["table","west"]}
   summon minecraft:marker 15.44 -28.00 -11.17 {Tags:["table","west"]}
@@ -37,6 +39,7 @@
   # Tables
   summon minecraft:marker 21.50 -29.00 -11.50 {Tags:["table","west"]}
   summon minecraft:marker 18.50 -29.00 -12.50 {Tags:["table","east"]}
+  summon minecraft:marker 24.46 -29.00 -11.43 {Tags:["table","east"]}
   # Chairs
   summon minecraft:marker 21.50 -29.50 -9.50 {Tags:["table","antiWall","south"]}
   summon minecraft:marker 21.50 -29.50 -7.50 {Tags:["table","antiWall","east"]}
@@ -51,6 +54,8 @@
 # Bathroom
   # Tables
   summon minecraft:marker 30.50 -29.00 -13.50 {Tags:["table","west"]}
+  # Sink
+  summon minecraft:marker 30.50 -29.75 -12.50 {Tags:["table","west"]}
   # Shower
   summon minecraft:marker 27.50 -27.75 -9.50 {Tags:["wall","north"]}
   # Window

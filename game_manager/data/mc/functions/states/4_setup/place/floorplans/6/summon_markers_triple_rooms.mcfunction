@@ -12,6 +12,9 @@
   # Makeup Chair
   summon minecraft:marker 9.50 -28.94 -9.50 {Tags:["table","east"]}
   summon minecraft:marker 9.50 -28.94 -10.50 {Tags:["table","east"]}
+  # Wooden Chairs
+  summon minecraft:marker 9.50 -29.50 -12.50 {Tags:["table","east"]}
+  summon minecraft:marker 13.50 -29.50 -12.50 {Tags:["table","east"]}
   # Windows
   summon minecraft:marker 14.00 -29.00 -14.19 {Tags:["table","antiWall","south"]}
   summon minecraft:marker 11.00 -29.00 -14.19 {Tags:["table","antiWall","south"]}
@@ -31,7 +34,10 @@
   summon minecraft:marker 18.50 -29.00 -5.50 {Tags:["table","east"]}
   # East Tables
   summon minecraft:marker 21.50 -29.00 -12.50 {Tags:["table","west"]}
-  summon minecraft:marker 21.50 -29.00 -6.50 {Tags:["table","west"]}
+  summon minecraft:marker 24.50 -29.00 -6.50 {Tags:["table","west"]}
+  # East Benches
+  summon minecraft:marker 24.50 -29.00 -12.50 {Tags:["table","west"]}
+  summon minecraft:marker 24.50 -29.00 -12.50 {Tags:["table","west"]}
   # Chairs
   summon minecraft:marker 18.50 -29.50 -9.50 {Tags:["table","east"]}
   summon minecraft:marker 20.50 -29.00 -12.50 {Tags:["table","south"]}
@@ -42,6 +48,8 @@
   summon minecraft:marker 21.50 -29.00 -14.19 {Tags:["table","antiWall","south"]}
 
 # Kid's Bedroom
+  # Beds
+  summon minecraft:marker 27.50 -29.44 -8.50 {Tags:["table","south"]}
   # Tables
   summon minecraft:marker 28.50 -29.00 -13.50 {Tags:["table","south"]}
   summon minecraft:marker 30.50 -29.00 -8.50 {Tags:["table","west"]}

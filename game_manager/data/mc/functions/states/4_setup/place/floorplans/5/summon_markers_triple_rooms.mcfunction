@@ -21,8 +21,8 @@
 
 # Master Bedroom
   # Shelves
-  summon minecraft:marker 21.50 -29.00 -7.50 {Tags:["table","west"]}
-  summon minecraft:marker 21.50 -29.00 -8.50 {Tags:["table","west"]}
+  summon minecraft:marker 24.50 -29.00 -7.50 {Tags:["table","west"]}
+  summon minecraft:marker 24.50 -29.00 -8.50 {Tags:["table","west"]}
   # Chair
   summon minecraft:marker 22.50 -28.94 -11.50 {Tags:["table","south"]}
   # Beds

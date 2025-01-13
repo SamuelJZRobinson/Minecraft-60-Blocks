@@ -6,11 +6,11 @@
   summon minecraft:marker 23.50 -29.00 14.50 {Tags:["table","south"]}
   summon minecraft:marker 22.50 -29.00 14.50 {Tags:["table","south"]}
   # Chairs
-  summon minecraft:marker 21.50 -29.50 9.50 {Tags:["table","antiWall","west"]}
-  summon minecraft:marker 21.50 -29.50 12.50 {Tags:["table","antiWall","north"]}
+  summon minecraft:marker 24.50 -29.50 9.50 {Tags:["table","antiWall","west"]}
+  summon minecraft:marker 24.50 -29.50 12.50 {Tags:["table","antiWall","north"]}
   # Shelves
   summon minecraft:marker 25.50 -29.00 6.50 {Tags:["table","south"]}
-  summon minecraft:marker 21.50 -29.00 6.50 {Tags:["table","south"]}
+  summon minecraft:marker 24.50 -29.00 6.50 {Tags:["table","south"]}
   # Wall
   summon minecraft:marker 19.25 -28.00 10.50 {Tags:["wall","east"]}
   # Couch

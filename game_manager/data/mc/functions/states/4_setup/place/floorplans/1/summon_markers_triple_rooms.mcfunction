@@ -24,17 +24,16 @@
 # Kitchen
   # Countertops
   summon minecraft:marker 21.50 -29.00 -8.65 {Tags:["table","west"]}
-  summon minecraft:marker 21.50 -28.94 -7.35 {Tags:["table","west"]}
-  summon minecraft:marker 21.50 -28.94 -6.65 {Tags:["table","west"]}
   summon minecraft:marker 24.00 -28.75 -13.25 {Tags:["table","south"]}
   summon minecraft:marker 20.00 -28.75 -13.25 {Tags:["table","south"]}
+  summon minecraft:marker 24.53 -28.94 -8.55 {Tags:["table","south"]}
+  summon minecraft:marker 24.25 -28.94 -9.00 {Tags:["table","south"]}
   # Fridge
   summon minecraft:marker 24.30 -28.00 -11.30 {Tags:["table","antiWall","west"]}
   summon minecraft:marker 24.70 -28.00 -11.70 {Tags:["table","antiWall","west"]}
   # Sink
   summon minecraft:marker 21.60 -29.75 -13.60 {Tags:["table","antiWall","south"]}
   # Dining Table
-  summon minecraft:marker 21.50 -28.94 -8.50 {Tags:["table","southEast"]}
   summon minecraft:marker 21.35 -28.94 -7.35 {Tags:["table","west"]}
   summon minecraft:marker 20.75 -28.94 -8.80 {Tags:["table","southEast"]}
   summon minecraft:marker 19.75 -28.94 -7.35 {Tags:["table","south"]}
