@@ -2,8 +2,8 @@
 summon minecraft:armor_stand ~5 ~2.25 ~1 {CustomNameVisible:0b,Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerTitle","soupsTitle"],DisabledSlots:4144959,CustomName:'{"text":"Food supply:","color":"white"}'}
 summon minecraft:armor_stand ~5 ~2.00 ~1 {CustomNameVisible:0b,Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerTitle","soupsTitle","soupsCount"],DisabledSlots:4144959,CustomName:'{"text":"#"}'}
 # Merge Soup Count
-setblock -9 -42 -11 oak_wall_sign[facing=east]{front_text:{messages:['{"text":"Soup Supply:"}','[{"score":{"name":"soupsInt","objective":"ItemsBunker"}},{"text":"."},{"score":{"name":"soupsFloat","objective":"ItemsBunker"}}]','{"text":""}','{"text":""}']}} destroy
-execute as @e[type=minecraft:armor_stand,tag=soupsCount] run data modify entity @s CustomName set from block -9 -42 -11 front_text.messages[1]
+setblock 3 -42 -11 oak_wall_sign[facing=east]{front_text:{messages:['{"text":"Soup Supply:"}','[{"score":{"name":"soupsInt","objective":"ItemsBunker"}},{"text":"."},{"score":{"name":"soupsFloat","objective":"ItemsBunker"}}]','{"text":""}','{"text":""}']}} destroy
+execute as @e[type=minecraft:armor_stand,tag=soupsCount] run data modify entity @s CustomName set from block 3 -42 -11 front_text.messages[1]
 # Item
 execute if score soupsInt ItemsBunker matches 1.. run summon minecraft:armor_stand ~3.75 ~2.38 ~ {Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerItem","soup","soup1"],DisabledSlots:4144959,Rotation:[0F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:16}}]}
 execute if score soupsInt ItemsBunker matches 5.. run summon minecraft:armor_stand ~4.25 ~2.38 ~ {Team:Items,NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["bunkerItem","soup","soup2"],DisabledSlots:4144959,Rotation:[0F,0F],ArmorItems:[{},{},{},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:16}}]}

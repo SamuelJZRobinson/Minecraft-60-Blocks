@@ -1,5 +1,5 @@
 # Summon Items
-execute positioned -11 -48 -15 run function mc:states/8_bunker/items/summon/summon_items
+execute positioned 1 -48 -15 run function mc:states/8_bunker/items/summon/summon_items
 
 # Decorations
   # Bloody Hand Print
