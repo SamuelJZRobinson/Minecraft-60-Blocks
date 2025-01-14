@@ -1,5 +1,5 @@
 # Settings
-scoreboard players set doBundle ItemsBundles 1
+scoreboard players set doBundle ItemsBundles 0
 
 # Copy Item Ids For Processing
 data modify storage minecraft:itemsprocess processItemIds set from storage minecraft:itemsprocess scavengeGainedItemIds

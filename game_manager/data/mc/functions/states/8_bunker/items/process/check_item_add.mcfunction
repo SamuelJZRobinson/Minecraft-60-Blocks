@@ -17,11 +17,8 @@
   execute if score itemId ItemsBundles matches 15 run scoreboard players add soups ItemsBunker 4
   execute if score itemId ItemsBundles matches 17 run scoreboard players add waters ItemsBunker 4
   # Multi Slot
-  execute if score itemId ItemsBundles matches 2 run scoreboard players add axe ItemsBunker 1
-  execute if score itemId ItemsBundles matches 9 run scoreboard players add gun ItemsBunker 1
-  execute if score itemId ItemsBundles matches 12 run scoreboard players add medkit ItemsBunker 1
-  execute if score itemId ItemsBundles matches 16 run scoreboard players add suitcase ItemsBunker 1
-  execute if score itemId ItemsBundles matches 18 run scoreboard players add bodyArmour ItemsBunker 1
+  execute if score doInstantAdd ItemsBundles matches 0 run function mc:states/8_bunker/items/process/check_item_add_normal
+  execute if score doInstantAdd ItemsBundles matches 1 run function mc:states/8_bunker/items/process/check_item_add_instant
 
   # Check Character ID
     # Dolores

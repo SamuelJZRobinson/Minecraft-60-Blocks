@@ -22,18 +22,11 @@ data remove storage minecraft:atomicdrill dialogue
   data remove storage minecraft:itemsprocess charactersLostIds
 
 # Bundles
-  # Templates
-  
-  # data modify storage minecraft:bundles itemTemplate set value {id:"minecraft:saddle",Count:1b,tag:{CustomModelData:0}}
   # Items
   data remove storage minecraft:bundles itemsGained
   data remove storage minecraft:bundles itemsLost
   # Characters
   data remove storage minecraft:bundles charactersLost
-
-
-  # Expedition
-  # data remove storage minecraft:bundles expeditionGearId
 
 
 

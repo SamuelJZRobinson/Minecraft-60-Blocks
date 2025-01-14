@@ -1,7 +1,9 @@
 # Reset Scores
 scoreboard players set bundleCount ItemsBundles 0
+scoreboard players set doBundle ItemsBundles 1
+scoreboard players set doInstantAdd ItemsBundles 0
 
-# Reset Data
+# Reset Bundle Data
   # Items
   data remove storage minecraft:bundles itemsGained
   data remove storage minecraft:bundles itemsLost
@@ -15,6 +17,8 @@ scoreboard players set bundleCount ItemsBundles 0
   execute store result score bundleCount ItemsBundles run data get storage minecraft:itemsprocess scavengeGainedItemIds
   execute if score bundleCount ItemsBundles matches 1.. run function mc:states/8_bunker/items/process/get_items_scavenge
   # Suitcase
+  execute store result score bundleCount ItemsBundles run data get storage minecraft:itemsprocess suitcaseGainedItemIds
+  execute if score bundleCount ItemsBundles matches 1.. run function mc:states/8_bunker/items/process/get_items_suitcase
 
 # Get Item Ids (Subtraction)
   # Settings
@@ -26,8 +30,9 @@ scoreboard players set bundleCount ItemsBundles 0
   execute store result score bundleCount ItemsBundles run data get storage minecraft:itemsprocess charactersLostIds
   execute if score bundleCount ItemsBundles matches 1.. run function mc:states/8_bunker/items/process/get_characters
 
-# Reset Data
+# Reset Item ID Data
 data remove storage minecraft:itemsprocess processItemIds
 data remove storage minecraft:itemsprocess scavengeGainedItemIds
+data remove storage minecraft:itemsprocess suitcaseGainedItemIds
 data remove storage minecraft:itemsprocess crazyLostItemIds
 data remove storage minecraft:itemsprocess charactersLostIds

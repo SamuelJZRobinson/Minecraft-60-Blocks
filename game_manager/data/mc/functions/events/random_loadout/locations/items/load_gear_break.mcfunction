@@ -1,6 +1,6 @@
 # Set Scores
 scoreboard players set stage ItemsBundles 7
-scoreboard players set itemsOwed ItemsBundles 1
+scoreboard players set suitcaseItemsLeft ItemsBundles 1
 
 # Copy Items
 data modify storage minecraft:itemsprocess randomItemIds set from storage minecraft:bundles expeditionGearId
