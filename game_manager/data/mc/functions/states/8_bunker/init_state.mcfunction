@@ -4,8 +4,8 @@ tellraw @a "state 8"
 gamerule doMobLoot false
 
 # Check Item
-scoreboard players set mode ItemsBundles 1
-function mc:states/8_bunker/items/process/check/check_item
+scoreboard players set isAddition ItemsBundles 1
+function mc:states/8_bunker/items/process/check_item
 
 # Goto Bunker
 function mc:utility/tp/tp_bunker

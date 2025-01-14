@@ -8,7 +8,7 @@
   data modify storage minecraft:math x set value 1
   execute store result storage minecraft:math y int 1 run scoreboard players get ITEM_TIER ExpeditionOdds
   # Calculate
-  function mc:utility/math/get_random_range with storage minecraft:math
+  function mc:utility/math/get_random_value with storage minecraft:math
   # Test
   execute if score out Math matches 1..3 run scoreboard players add slotOneTry ItemsExpedition 1
   execute if score out Math matches 4..5 run scoreboard players add slotTwoTry ItemsExpedition 1

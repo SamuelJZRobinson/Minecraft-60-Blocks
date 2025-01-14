@@ -1,3 +1,5 @@
+### Please put on update pages and make sure it's correct
+
 # Fatigue
   # Fatigue occurs after spending more than 20 days in the bunker and decreases the loot awarded from expeditions.
 
@@ -26,9 +28,3 @@
 # Tiredness
   # Tiredness occurs when a character returns from an expedition and needs persistent feeding to remove.
   # This effect prevents characters from being sent on expeditions.
-
-# Mutation
-  # Mary has a small chance to mutate from nuclear waste or returning from the surface.
-  
-# Ressurection
-  # There is a chance that a single character will return to the bunker 7 days after the nuclear blast.

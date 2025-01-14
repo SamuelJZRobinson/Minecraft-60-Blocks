@@ -22,9 +22,9 @@
 
   # Give Medkit
   # function mc:states/8_bunker/items/process/set_temp_item
-  # execute if score medkit ItemsBunker matches 0 run data modify storage minecraft:bundles bunkerItems.tag.Items append from storage minecraft:tempitem Items
+  # execute if score medkit ItemsBunker matches 0 run data modify storage minecraft:bundles bunkerItems.tag.Items append from storage minecraft:bundles itemTemplate
   execute if score medkit ItemsBunker matches 0 run scoreboard players set medkit ItemsBunker 2
-  data modify storage minecraft:scavenge savedItemIds append value 12
+  data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 12
   scoreboard players set stage ItemsBundles 9
   function mc:states/8_bunker/items/process/bundles/check/check_main_add
   function mc:states/8_bunker/items/process/bundles/set_bundle_details

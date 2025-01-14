@@ -1,1 +1,0 @@
-tellraw @a "Mary break item"

@@ -1,5 +1,5 @@
 # Set Floorplan
-function mc:utility/math/get_random_range {x:1,y:6}
+function mc:utility/math/get_random_value {x:1,y:6}
 
 # Get Random Floor
 execute store result score randomFloorplan ItemsHouse run random value 1..6

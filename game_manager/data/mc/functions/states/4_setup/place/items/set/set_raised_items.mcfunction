@@ -57,7 +57,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Calculate
     function mc:utility/math/get_percentage
     execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_range with storage minecraft:math
+    function mc:utility/math/get_random_value with storage minecraft:math
     # Store
     scoreboard players operation bathroomTableItems ItemsHouseHigh = out Math
   # Hallway
@@ -68,7 +68,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Calculate
     function mc:utility/math/get_percentage
     execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_range with storage minecraft:math
+    function mc:utility/math/get_random_value with storage minecraft:math
     # Store
     scoreboard players operation hallwayTableItems ItemsHouseHigh = out Math
   # Kids Bedroom
@@ -79,7 +79,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Calculate
     function mc:utility/math/get_percentage
     execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_range with storage minecraft:math
+    function mc:utility/math/get_random_value with storage minecraft:math
     # Store
     scoreboard players operation kidsBedroomTableItems ItemsHouseHigh = out Math
   # Kitchen
@@ -90,7 +90,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Calculate
     function mc:utility/math/get_percentage
     execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_range with storage minecraft:math
+    function mc:utility/math/get_random_value with storage minecraft:math
     # Store
     scoreboard players operation kitchenTableItems ItemsHouseHigh = out Math
   # Lounge
@@ -101,7 +101,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Calculate
     function mc:utility/math/get_percentage
     execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_range with storage minecraft:math
+    function mc:utility/math/get_random_value with storage minecraft:math
     # Store
     scoreboard players operation loungeTableItems ItemsHouseHigh = out Math
   # Master Bedroom
@@ -112,7 +112,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Calculate
     function mc:utility/math/get_percentage
     execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_range with storage minecraft:math
+    function mc:utility/math/get_random_value with storage minecraft:math
     # Store
     scoreboard players operation masterBedroomTableItems ItemsHouseHigh = out Math
   # Side Bathroom
@@ -123,7 +123,7 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
     # Calculate
     function mc:utility/math/get_percentage
     execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_range with storage minecraft:math
+    function mc:utility/math/get_random_value with storage minecraft:math
     # Store
     scoreboard players operation sideBathroomTableItems ItemsHouseHigh = out Math
 

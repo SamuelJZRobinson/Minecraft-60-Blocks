@@ -3,7 +3,7 @@
   # giveItem determines which item a room recieves including ammo (1), axe (2) gun (3), bug spray (4), and medkit (5).
 
 # Select Room Group (1 to 4)
-function mc:utility/math/get_random_range {x:1,y:4}
+function mc:utility/math/get_random_value {x:1,y:4}
 scoreboard players operation room ItemsHouse = out Math
 
 ### Does this actually work, when is giveItem ItemsHouse ever set?

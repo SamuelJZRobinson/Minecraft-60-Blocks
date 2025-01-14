@@ -1,4 +1,4 @@
-# Get y Value
+# Get y
 $data modify storage minecraft:math x set value $(x)
 $execute store result storage minecraft:math y int 1 run scoreboard players get $(score) $(objective)
 

@@ -21,7 +21,7 @@ scoreboard players set dynamicDifficulty em 0
     data modify storage minecraft:math x set value 1
     execute store result storage minecraft:math y int 1 run scoreboard players get specialCount ItemsExpedition
     # Calculate
-    function mc:utility/math/get_random_range with storage minecraft:math
+    function mc:utility/math/get_random_value with storage minecraft:math
     # Store
     scoreboard players operation specialRemove ItemsExpedition = out Math
     # Adjsut Scores

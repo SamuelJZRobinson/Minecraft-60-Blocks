@@ -56,10 +56,9 @@ scoreboard objectives add ItemsHouseHigh dummy {"bold":true,"color":"white","tex
 
 # Items Bundles
 scoreboard objectives add ItemsBundles dummy {"bold":true,"color":"white","text":"Items Bundles"}
-scoreboard players set mode ItemsBundles 1
-scoreboard players set setBundle ItemsBundles 1
-scoreboard players set step ItemsBundles 1
-scoreboard players set itemId ItemsBundles 0
-scoreboard players set itemsOwed ItemsBundles 0
-scoreboard players set itemsLeft ItemsBundles 0
-scoreboard players set destroyItemFails ItemsBundles 0
+scoreboard players set isAddition ItemsBundles 1
+scoreboard players set bundleCount ItemsBundles 0
+scoreboard players set doBundle ItemsBundles 0
+# scoreboard players set itemId ItemsBundles 0
+# scoreboard players set itemsOwed ItemsBundles 0
+# scoreboard players set itemsLeft ItemsBundles 0

@@ -1,5 +1,5 @@
 # Clear Data
-data remove storage minecraft:scavenge savedItemIds
+data remove storage minecraft:itemsprocess scavengeGainedItemIds
 
 # Clear Locations
 function mc:states/1_factory_reset/clear/clear_locations

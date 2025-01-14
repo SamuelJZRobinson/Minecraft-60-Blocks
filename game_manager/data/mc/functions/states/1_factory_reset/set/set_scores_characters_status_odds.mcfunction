@@ -12,7 +12,7 @@ scoreboard players set MUTANT StatusOdds 20
 scoreboard players set CANNIBALISM StatusOdds 20
 # Crazy
 scoreboard players set CRAZY StatusOdds 2
-scoreboard players set CRAZY_RAGE StatusOdds 7
+scoreboard players set CRAZY_RAGE StatusOdds 6
 scoreboard players set CRAZY_ESCAPE StatusOdds 15
 # Dolores Crazy Resistance
   # Set Dice
