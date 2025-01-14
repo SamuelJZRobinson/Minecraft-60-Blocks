@@ -27,4 +27,4 @@
   $execute if score crazyDays $(objective) >= CRAZY_ESCAPE_DAYS_CRITICAL StatusLevels if score out Math matches 1 run scoreboard players set isCrazyEscaped $(objective) 1
   # Guaranteed Death
   $execute if score crazyDays $(objective) >= CRAZY_ESCAPE_DAYS_DEATH StatusLevels run scoreboard players set isCrazyEscaped $(objective) 1
-  $execute if score isCrazyEscaped $(objective) matches 1 run scoreboard players set alive $(objective) 0
+  $execute if score isCrazyEscaped $(objective) matches 1 run scoreboard players set alive $(objective) -1

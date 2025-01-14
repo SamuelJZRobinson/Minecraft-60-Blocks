@@ -1,3 +1,6 @@
+# Notes
+  # <character> alive is set to -1 to easily perform a death event before it's set to 0.
+
 # Constants
 data modify storage minecraft:math x set value 1
 
@@ -16,3 +19,6 @@ data modify storage minecraft:math x set value 1
   function mc:states/8_bunker/characters/update/update_character_sick with storage updatecharacters objective
   # Tiredness
   function mc:states/8_bunker/characters/update/update_character_tired with storage updatecharacters objective
+
+# Death Event
+function mc:states/8_bunker/characters/update/update_character_dead with storage updatecharacters objective

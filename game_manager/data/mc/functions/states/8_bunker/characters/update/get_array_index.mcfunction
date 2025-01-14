@@ -1,1 +1,1 @@
-$data modify storage minecraft:itemsprocess crazyLostItemIds set from storage minecraft:itemsprocess randomItemIds[$(output)]
+$data modify storage minecraft:itemsprocess crazyLostItemIds append from storage minecraft:itemsprocess randomItemIds[$(output)]

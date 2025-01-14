@@ -3,10 +3,10 @@ execute unless data storage minecraft:bundles charactersLost run data modify sto
 
 # Characters
   # Dolores
-  execute if score itemId ItemsBundles matches 19 run data modify storage minecraft:bundles itemsLost.tag.Items append value {id:"minecraft:saddle",Count:1b,tag:{CustomModelData:7}}
+  execute if score itemId ItemsBundles matches 19 run data modify storage minecraft:bundles charactersLost.tag.Items append value {id:"minecraft:saddle",Count:1b,tag:{CustomModelData:7}}
   # Ted
-  execute if score itemId ItemsBundles matches 21 run data modify storage minecraft:bundles itemsLost.tag.Items append value {id:"minecraft:saddle",Count:1b,tag:{CustomModelData:12}}
+  execute if score itemId ItemsBundles matches 21 run data modify storage minecraft:bundles charactersLost.tag.Items append value {id:"minecraft:saddle",Count:1b,tag:{CustomModelData:27}}
   # Mary
-  execute if score itemId ItemsBundles matches 20 run data modify storage minecraft:bundles itemsLost.tag.Items append value {id:"minecraft:saddle",Count:1b,tag:{CustomModelData:27}}
+  execute if score itemId ItemsBundles matches 20 run data modify storage minecraft:bundles charactersLost.tag.Items append value {id:"minecraft:saddle",Count:1b,tag:{CustomModelData:12}}
   # Timmy
-  execute if score itemId ItemsBundles matches 22 run data modify storage minecraft:bundles itemsLost.tag.Items append value {id:"minecraft:saddle",Count:1b,tag:{CustomModelData:18}}
+  execute if score itemId ItemsBundles matches 22 run data modify storage minecraft:bundles charactersLost.tag.Items append value {id:"minecraft:saddle",Count:1b,tag:{CustomModelData:18}}

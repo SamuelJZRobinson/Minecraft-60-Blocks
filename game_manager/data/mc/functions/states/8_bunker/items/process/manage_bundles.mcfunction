@@ -26,7 +26,8 @@ scoreboard players set bundleCount ItemsBundles 0
   execute store result score bundleCount ItemsBundles run data get storage minecraft:itemsprocess charactersLostIds
   execute if score bundleCount ItemsBundles matches 1.. run function mc:states/8_bunker/items/process/get_characters
 
-# Clear Data
+# Reset Data
+data remove storage minecraft:itemsprocess processItemIds
 data remove storage minecraft:itemsprocess scavengeGainedItemIds
 data remove storage minecraft:itemsprocess crazyLostItemIds
 data remove storage minecraft:itemsprocess charactersLostIds
