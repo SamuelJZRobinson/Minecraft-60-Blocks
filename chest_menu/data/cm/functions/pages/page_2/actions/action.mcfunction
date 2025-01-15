@@ -2,35 +2,39 @@
   # Page 2 is expedition menu
 
 # Debounce Menu
-scoreboard players set bool chest_menu 1
+scoreboard players set bool MenuMain 1
 
 # Character Toggle
+  # Ted
+  execute if score selection MenuMain matches 8 run scoreboard players set characterSelect MenuExplore 1
+  execute if score selection MenuMain matches 9 run scoreboard players set characterSelect MenuExplore 0
   # Dolores
-  execute if score selection MenuMain matches 4 run scoreboard players set characterSelect MenuExplore 1
+  execute if score selection MenuMain matches 4 run scoreboard players set characterSelect MenuExplore 2
   execute if score selection MenuMain matches 5 run scoreboard players set characterSelect MenuExplore 0
   # Mary
-    # Normal
-    execute if score selection MenuMain matches 6 if score isMutant MaryStatus matches 0 run scoreboard players set characterSelect MenuExplore 2
-    execute if score selection MenuMain matches 7 if score isMutant MaryStatus matches 0 run scoreboard players set characterSelect MenuExplore 0
-    # Mutant
-    execute if score selection MenuMain matches 6 if score isMutant MaryStatus matches 1 run scoreboard players set characterSelect MenuExplore 3
-    execute if score selection MenuMain matches 7 if score isMutant MaryStatus matches 1 run scoreboard players set characterSelect MenuExplore 0
-  # Ted
-  execute if score selection MenuMain matches 8 run scoreboard players set characterSelect MenuExplore 4
-  execute if score selection MenuMain matches 9 run scoreboard players set characterSelect MenuExplore 0
+  execute if score selection MenuMain matches 6 run scoreboard players set characterSelect MenuExplore 3
+  execute if score selection MenuMain matches 7 run scoreboard players set characterSelect MenuExplore 0
   # Timmy
-  execute if score selection MenuMain matches 10 run scoreboard players set characterSelect MenuExplore 5
+  execute if score selection MenuMain matches 10 run scoreboard players set characterSelect MenuExplore 4
   execute if score selection MenuMain matches 11 run scoreboard players set characterSelect MenuExplore 0
 
 # Map Choice
-execute if score selection MenuMain matches 12 run scoreboard players set mapSelect MenuExplore 1
-execute if score selection MenuMain matches 13 run scoreboard players set mapSelect MenuExplore 2
-execute if score selection MenuMain matches 14 run scoreboard players set mapSelect MenuExplore 3
-execute if score selection MenuMain matches 15 run scoreboard players set mapSelect MenuExplore 4
-execute if score selection MenuMain matches 16 run scoreboard players set mapSelect MenuExplore 5
-execute if score selection MenuMain matches 17 run scoreboard players set mapSelect MenuExplore 6
-execute if score selection MenuMain matches 18 run scoreboard players set mapSelect MenuExplore 7
-execute if score selection MenuMain matches 19 run scoreboard players set mapSelect MenuExplore 8
+  # Neighbourhood
+  execute if score selection MenuMain matches 12 run scoreboard players set mapSelect MenuExplore 1
+  # Retail Strip 1
+  execute if score selection MenuMain matches 13 run scoreboard players set mapSelect MenuExplore 2
+  # Retail Strip 2
+  execute if score selection MenuMain matches 14 run scoreboard players set mapSelect MenuExplore 3
+  # School
+  execute if score selection MenuMain matches 15 run scoreboard players set mapSelect MenuExplore 4
+  # Bowling Alley
+  execute if score selection MenuMain matches 16 run scoreboard players set mapSelect MenuExplore 5
+  # Hospital
+  execute if score selection MenuMain matches 17 run scoreboard players set mapSelect MenuExplore 6
+  # Metro
+  execute if score selection MenuMain matches 18 run scoreboard players set mapSelect MenuExplore 7
+  # Warehouse
+  execute if score selection MenuMain matches 19 run scoreboard players set mapSelect MenuExplore 8
 
 # Increment Slots
 execute if score selection MenuMain matches 20 run scoreboard players add slotOne MenuExplore 1
