@@ -12,28 +12,9 @@
               "function": "minecraft:set_name",
               "name": {
                 "text": "Bug Spray",
-                "color": "gray",
+                "color": "gold",
                 "bold": true
               }
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "Click to cycle",
-                  "color": "dark_gray",
-                  "underlined": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "Kills mutant insects quickly",
-                  "color": "dark_green"
-                }
-              ]
             },
             {
               "function": "minecraft:set_nbt",

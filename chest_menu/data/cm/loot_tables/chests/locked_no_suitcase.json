@@ -20,7 +20,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Requires suitcase",
+                  "text": "Need suitcase",
                   "color": "dark_red"
                 }
               ]

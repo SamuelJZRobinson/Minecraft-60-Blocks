@@ -12,7 +12,7 @@
               "function": "minecraft:set_name",
               "name": {
                 "text": "Suitcase",
-                "color": "gray",
+                "color": "gold",
                 "bold": true
               }
             },
@@ -20,18 +20,8 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Click to cycle",
-                  "color": "dark_gray",
-                  "underlined": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "Carries three items",
-                  "color": "dark_green"
+                  "text": "Unlocked slots",
+                  "color": "gray"
                 }
               ]
             },

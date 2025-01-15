@@ -1,0 +1,2 @@
+execute if score selection MenuMain matches 24 run scoreboard players set prepareExpedition MenuExplore 0
+execute if score selection MenuMain matches 25 run scoreboard players set prepareExpedition MenuExplore 1

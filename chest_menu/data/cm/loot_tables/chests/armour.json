@@ -11,29 +11,10 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "bodyArmour",
-                "color": "gray",
+                "text": "Body Armour",
+                "color": "gold",
                 "bold": true
               }
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "Click to cycle",
-                  "color": "dark_gray",
-                  "underlined": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "Protects against bandit amubsh",
-                  "color": "dark_green"
-                }
-              ]
             },
             {
               "function": "minecraft:set_nbt",

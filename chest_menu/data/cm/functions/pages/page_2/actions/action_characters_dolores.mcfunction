@@ -1,0 +1,2 @@
+execute if score selection MenuMain matches 4 run scoreboard players set characterSelect MenuExplore 2
+execute if score selection MenuMain matches 5 run scoreboard players set characterSelect MenuExplore 0

@@ -20,7 +20,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "Requires items",
+                  "text": "Need items",
                   "color": "dark_red"
                 }
               ]

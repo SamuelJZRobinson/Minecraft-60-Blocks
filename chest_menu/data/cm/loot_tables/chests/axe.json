@@ -12,28 +12,9 @@
               "function": "minecraft:set_name",
               "name": {
                 "text": "Axe",
-                "color": "gray",
+                "color": "gold",
                 "bold": true
               }
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "Click to cycle",
-                  "color": "dark_gray",
-                  "underlined": true
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "Melee weapon with hardened steel",
-                  "color": "dark_green"
-                }
-              ]
             },
             {
               "function": "minecraft:set_nbt",
