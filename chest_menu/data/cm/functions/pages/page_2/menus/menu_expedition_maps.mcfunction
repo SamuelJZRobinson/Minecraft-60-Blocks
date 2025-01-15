@@ -1,22 +1,22 @@
 # Short
   # Retail Strip 1
     # Toggle
-    execute if score mapSelect MenuExplore matches 1 run data modify block ~ ~ ~ Items insert 0 value {Slot:5b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:34,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Visit bank","color":"gray","bold":true}'}}}
-    execute if score mapSelect MenuExplore matches 0.. run data modify block ~ ~ ~ Items insert 0 value {Slot:5b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:83,isMenu:1b,page:2,selection:12,display:{Name:'{"text":"Ignore bank","color":"gray","bold":true}',Lore:['{"text":"Click to visit","color":"dark_gray","underlined":true}']}}}
+    execute if score mapSelect MenuExplore matches 1 run data modify block ~ ~ ~ Items insert 0 value {Slot:6b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:34,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Visit bank","color":"gray","bold":true}'}}}
+    execute if score mapSelect MenuExplore matches 0.. run data modify block ~ ~ ~ Items insert 0 value {Slot:6b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:83,isMenu:1b,page:2,selection:12,display:{Name:'{"text":"Ignore bank","color":"gray","bold":true}',Lore:['{"text":"Click to visit","color":"dark_gray","underlined":true}']}}}
     # Lore
-    data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Distance: short","color":"dark_green"}'
+    data modify block ~ ~ ~ Items[{Slot:6b}].tag.display.Lore append value '{"text":"Distance: short","color":"dark_green"}'
   # Retail Strip 2
     # Toggle
-    execute if score mapSelect MenuExplore matches 4 run data modify block ~ ~ ~ Items insert 0 value {Slot:8b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:37,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Visit supermarket","color":"gray","bold":true}'}}}
-    execute if score mapSelect MenuExplore matches 0.. run data modify block ~ ~ ~ Items insert 0 value {Slot:8b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:86,isMenu:1b,page:2,selection:15,display:{Name:'{"text":"Ignore supermarket","color":"gray","bold":true}',Lore:['{"text":"Click to visit","color":"dark_gray","underlined":true}']}}}
-    # Lore
-    data modify block ~ ~ ~ Items[{Slot:8b}].tag.display.Lore append value '{"text":"Distance: short","color":"dark_green"}'
-  # High School
-    # Toggle
-    execute if score mapSelect MenuExplore matches 3 run data modify block ~ ~ ~ Items insert 0 value {Slot:7b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:121,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Visit school","color":"gray","bold":true}'}}}
-    execute if score mapSelect MenuExplore matches 0.. run data modify block ~ ~ ~ Items insert 0 value {Slot:7b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:122,isMenu:1b,page:2,selection:14,display:{Name:'{"text":"Ignore school","color":"gray","bold":true}',Lore:['{"text":"Click to visit","color":"dark_gray","underlined":true}']}}}
+    execute if score mapSelect MenuExplore matches 4 run data modify block ~ ~ ~ Items insert 0 value {Slot:7b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:37,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Visit supermarket","color":"gray","bold":true}'}}}
+    execute if score mapSelect MenuExplore matches 0.. run data modify block ~ ~ ~ Items insert 0 value {Slot:7b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:86,isMenu:1b,page:2,selection:15,display:{Name:'{"text":"Ignore supermarket","color":"gray","bold":true}',Lore:['{"text":"Click to visit","color":"dark_gray","underlined":true}']}}}
     # Lore
     data modify block ~ ~ ~ Items[{Slot:7b}].tag.display.Lore append value '{"text":"Distance: short","color":"dark_green"}'
+  # High School
+    # Toggle
+    execute if score mapSelect MenuExplore matches 3 run data modify block ~ ~ ~ Items insert 0 value {Slot:8b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:121,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Visit school","color":"gray","bold":true}'}}}
+    execute if score mapSelect MenuExplore matches 0.. run data modify block ~ ~ ~ Items insert 0 value {Slot:8b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:122,isMenu:1b,page:2,selection:14,display:{Name:'{"text":"Ignore school","color":"gray","bold":true}',Lore:['{"text":"Click to visit","color":"dark_gray","underlined":true}']}}}
+    # Lore
+    data modify block ~ ~ ~ Items[{Slot:8b}].tag.display.Lore append value '{"text":"Distance: short","color":"dark_green"}'
 
 # Medium
   # Bowling Alley
