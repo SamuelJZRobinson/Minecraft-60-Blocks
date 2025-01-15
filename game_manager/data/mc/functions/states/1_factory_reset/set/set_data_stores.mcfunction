@@ -4,6 +4,9 @@
 # Atomic Drill
 data remove storage minecraft:atomicdrill dialogue
 
+# Exceptions
+data remove storage minecraft:exceptions message
+
 # Item Process
   # Processing
   data remove storage minecraft:itemsprocess processItemIds
@@ -28,11 +31,10 @@ data remove storage minecraft:atomicdrill dialogue
   # Characters
   data remove storage minecraft:bundles charactersLost
 
-
-
-
-
+# Update Characters
+data remove storage minecraft:updatecharacters objective
 
 # Math
 data remove storage minecraft:math x
 data remove storage minecraft:math y
+data remove storage minecraft:math out

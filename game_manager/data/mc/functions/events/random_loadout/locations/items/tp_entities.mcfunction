@@ -9,8 +9,8 @@ effect give @p[team=Player] invisibility 4 0 true
 execute if score doPovExpedition Settings matches 1 as @p[team=Player] run function mc:events/random_loadout/locations/items/copy_player_items
 
 # Teleport Entities
-execute unless score mapVisited MenuExplore matches 0 run function mc:events/random_loadout/locations/items/tp_players
-execute unless score mapVisited MenuExplore matches 0 run function mc:events/random_loadout/locations/items/tp_enemies_and_items
+execute unless score mapVisited MenuExpedition matches 0 run function mc:events/random_loadout/locations/items/tp_players
+execute unless score mapVisited MenuExpedition matches 0 run function mc:events/random_loadout/locations/items/tp_enemies_and_items
 
 # Call Root
 schedule function mc:timer/expedition/timer_init 4s replace

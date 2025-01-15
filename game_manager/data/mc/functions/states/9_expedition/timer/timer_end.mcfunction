@@ -16,7 +16,7 @@ scoreboard players set showEscape ItemsExpedition 0
   effect give @p[team=Player] instant_health 1 20 true
 
 # Analyse Player Damage and Harm Characters
-execute unless score task AtomicDrill matches 15..16 run scoreboard players set characterSent MenuExplore 0
+execute unless score task AtomicDrill matches 15..16 run scoreboard players set characterSent MenuExpedition 0
 
 # Append Inventory Items
 execute if score doPovExpedition Settings matches 1 unless score expeditionDeath AtomicDrill matches 1.. run function mc:timer/expedition/get_player_inventory

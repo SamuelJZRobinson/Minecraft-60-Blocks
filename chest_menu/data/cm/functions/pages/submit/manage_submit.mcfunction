@@ -11,8 +11,8 @@ function cm:pages/submit/feed/submit_feed
   # Run 
   function cm:pages/submit/expedition/check_expedition
   # Reset Scores
-  scoreboard players set characterSelect MenuExplore 0
-  scoreboard players set mapSelect MenuExplore 3
+  scoreboard players set characterSelect MenuExpedition 0
+  scoreboard players set mapSelect MenuExpedition 3
 
 # Events
   # Allow Event Outcome

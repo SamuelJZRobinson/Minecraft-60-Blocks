@@ -1,15 +1,15 @@
 # Append Bundles
   # Dolores
-  execute if score characterSent MenuExplore matches 1 run data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 19
+  execute if score characterSent MenuExpedition matches 1 run data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 19
   # Mary
-  execute if score characterSent MenuExplore matches 2..3 run data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 20
+  execute if score characterSent MenuExpedition matches 2..3 run data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 20
   # Ted
-  execute if score characterSent MenuExplore matches 4 run data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 21
+  execute if score characterSent MenuExpedition matches 4 run data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 21
   # Timmy
-  execute if score characterSent MenuExplore matches 5 run data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 22
+  execute if score characterSent MenuExpedition matches 5 run data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 22
 
 # Set Score
-scoreboard players set characterSent MenuExplore 0
+scoreboard players set characterSent MenuExpedition 0
 
 # Set Bundle
 scoreboard players set stage ItemsBundles 5

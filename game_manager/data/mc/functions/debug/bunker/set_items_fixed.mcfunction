@@ -14,12 +14,12 @@ function cm:place_chest_menu
     scoreboard players set music GameStatus 5
     scoreboard players set day GameStatus 1
   # Alerts
-  scoreboard players set banditAlert MenuExplore 1
-  scoreboard players set falloutAlert MenuExplore 1
-  scoreboard players set mutantProtection MenuExplore 1
-  scoreboard players set padlockProtection MenuExplore 1
+  scoreboard players set banditAlert MenuExpedition 1
+  scoreboard players set falloutAlert MenuExpedition 1
+  scoreboard players set mutantProtection MenuExpedition 1
+  scoreboard players set padlockProtection MenuExpedition 1
   # Expedition
-  scoreboard players set expeditionReady MenuExplore 1
+  scoreboard players set expeditionReady MenuExpedition 1
 
 # Items
   # Standard

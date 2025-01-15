@@ -19,7 +19,7 @@ function mc:states/8_bunker/characters/update/manage_characters_update
 execute positioned 1 -48 -15 run function mc:states/8_bunker/characters/summon/summon_characters
 
 # Update Living Characters
-# execute if score alive DoloresStatus matches 1 unless score characterSent MenuExplore matches 1 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run function mc:states/8_bunker/characters/update/update_dolores
-# execute if score alive MaryStatus matches 1 unless score characterSent MenuExplore matches 2..3 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run function mc:states/8_bunker/characters/update/update_mary
-# execute if score alive TedStatus matches 1 unless score characterSent MenuExplore matches 4 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run function mc:states/8_bunker/characters/update/update_ted
-# execute if score alive TimmyStatus matches 1 unless score characterSent MenuExplore matches 5 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run function mc:states/8_bunker/characters/update/update_timmy
+# execute if score alive DoloresStatus matches 1 unless score characterSent MenuExpedition matches 1 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run function mc:states/8_bunker/characters/update/update_dolores
+# execute if score alive MaryStatus matches 1 unless score characterSent MenuExpedition matches 2..3 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run function mc:states/8_bunker/characters/update/update_mary
+# execute if score alive TedStatus matches 1 unless score characterSent MenuExpedition matches 4 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run function mc:states/8_bunker/characters/update/update_ted
+# execute if score alive TimmyStatus matches 1 unless score characterSent MenuExpedition matches 5 unless score task AtomicDrill matches 13 unless score task AtomicDrill matches 18.. run function mc:states/8_bunker/characters/update/update_timmy

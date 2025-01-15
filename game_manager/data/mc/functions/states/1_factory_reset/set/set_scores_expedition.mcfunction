@@ -1,7 +1,5 @@
 # EXPEDITION ITEMS
 scoreboard objectives add ItemsExpedition dummy {"bold":true,"color":"white","text":"Items Expedition"}
-# Emtpy Expedition Gear Chest
-setblock -10 -42 -14 chest
 ### What does this do?
 scoreboard players set showEscape ItemsExpedition 0
 # Load

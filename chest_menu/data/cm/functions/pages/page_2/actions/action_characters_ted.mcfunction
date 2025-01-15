@@ -1,2 +1,2 @@
-execute if score selection MenuMain matches 8 run scoreboard players set characterSelect MenuExplore 1
-execute if score selection MenuMain matches 9 run scoreboard players set characterSelect MenuExplore 0
+execute if score selection MenuMain matches 8 run scoreboard players set characterSelect MenuExpedition 1
+execute if score selection MenuMain matches 9 run scoreboard players set characterSelect MenuExpedition 0

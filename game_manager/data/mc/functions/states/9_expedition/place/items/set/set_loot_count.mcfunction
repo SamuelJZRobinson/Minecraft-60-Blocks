@@ -1,10 +1,10 @@
 # Loot (Base)
   # Short
-  execute if score mapVisited MenuExplore matches 1..4 run function mc:utility/math/get_random_value {x:1,y:5}
+  execute if score mapVisited MenuExpedition matches 1..4 run function mc:utility/math/get_random_value {x:1,y:5}
   # Medium
-  execute if score mapVisited MenuExplore matches 5..6 run function mc:utility/math/get_random_value {x:2,y:6}
+  execute if score mapVisited MenuExpedition matches 5..6 run function mc:utility/math/get_random_value {x:2,y:6}
   # Long
-  execute if score mapVisited MenuExplore matches 7..8 run function mc:utility/math/get_random_value {x:3,y:7}
+  execute if score mapVisited MenuExpedition matches 7..8 run function mc:utility/math/get_random_value {x:3,y:7}
   # Copy Output
   scoreboard players operation maxLoot ItemsExpedition = out Math
 
@@ -19,12 +19,12 @@
     execute if score out Math matches 1 run scoreboard players add maxLoot ItemsExpedition 4
   # Timmy Skills
     # Set Input
-    execute if score characterSent MenuExplore matches 5 run data modify storage minecraft:math x set value 1
-    execute if score characterSent MenuExplore matches 5 store result storage minecraft:math y int 1 run scoreboard players get TIMMY_BOOST StatusOdds
+    execute if score characterSent MenuExpedition matches 5 run data modify storage minecraft:math x set value 1
+    execute if score characterSent MenuExpedition matches 5 store result storage minecraft:math y int 1 run scoreboard players get TIMMY_BOOST StatusOdds
     # Calculate
-    execute if score characterSent MenuExplore matches 5 run function mc:utility/math/get_random_value with storage minecraft:math
+    execute if score characterSent MenuExpedition matches 5 run function mc:utility/math/get_random_value with storage minecraft:math
     # Test
-    execute if score characterSent MenuExplore matches 5 if score out Math matches 1 run scoreboard players add maxLoot ItemsExpedition 1
+    execute if score characterSent MenuExpedition matches 5 if score out Math matches 1 run scoreboard players add maxLoot ItemsExpedition 1
 
 # Nerf Loot
   # Fatigue

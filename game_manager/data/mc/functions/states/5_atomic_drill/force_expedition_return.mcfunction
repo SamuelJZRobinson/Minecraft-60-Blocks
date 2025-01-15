@@ -4,21 +4,21 @@
 
   # Injur The Character On Expedition
     # Dolores
-    execute if score characterSent MenuExplore matches 1 run scoreboard players set isInjured DoloresStatus 1
-    execute if score characterSent MenuExplore matches 1 run scoreboard players set isTired DoloresStatus 1
+    execute if score characterSent MenuExpedition matches 1 run scoreboard players set isInjured DoloresStatus 1
+    execute if score characterSent MenuExpedition matches 1 run scoreboard players set isTired DoloresStatus 1
     # Mary
-    execute if score characterSent MenuExplore matches 2 run scoreboard players set isInjured MaryStatus 1
-    execute if score characterSent MenuExplore matches 2 run scoreboard players set isTired MaryStatus 1
+    execute if score characterSent MenuExpedition matches 2 run scoreboard players set isInjured MaryStatus 1
+    execute if score characterSent MenuExpedition matches 2 run scoreboard players set isTired MaryStatus 1
     # Ted
-    execute if score characterSent MenuExplore matches 4 run scoreboard players set isInjured TedStatus 1
-    execute if score characterSent MenuExplore matches 4 run scoreboard players set isTired TedStatus 1
+    execute if score characterSent MenuExpedition matches 4 run scoreboard players set isInjured TedStatus 1
+    execute if score characterSent MenuExpedition matches 4 run scoreboard players set isTired TedStatus 1
     # Timmy
-    execute if score characterSent MenuExplore matches 5 run scoreboard players set isInjured TimmyStatus 1
-    execute if score characterSent MenuExplore matches 5 run scoreboard players set isTired TedStatus 1
+    execute if score characterSent MenuExpedition matches 5 run scoreboard players set isInjured TimmyStatus 1
+    execute if score characterSent MenuExpedition matches 5 run scoreboard players set isTired TedStatus 1
 
   # Refresh Memory
-  scoreboard players set characterSent MenuExplore 0
-  scoreboard players set mapVisited MenuExplore 0
+  scoreboard players set characterSent MenuExpedition 0
+  scoreboard players set mapVisited MenuExpedition 0
 
   # Give Medkit
   # function mc:states/8_bunker/items/process/set_temp_item
