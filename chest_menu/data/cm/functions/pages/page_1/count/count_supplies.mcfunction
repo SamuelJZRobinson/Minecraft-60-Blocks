@@ -20,16 +20,6 @@ scoreboard players set medkitGiven MenuFeed 0
   execute if score tedGiveMedkit MenuFeed matches 1 run scoreboard players add medkitGiven MenuFeed 1
   execute if score timmyGiveMedkit MenuFeed matches 1 run scoreboard players add medkitGiven MenuFeed 1
 
-# Set Status
-  # # Soup, Water
-  # execute if score soupGiven MenuFeed <= soups ItemsBunker if score waterGiven MenuFeed <= waters ItemsBunker run scoreboard players set itemStatus MenuFeed 0
-  # # Soup, None
-  # execute if score soupGiven MenuFeed <= soups ItemsBunker if score waterGiven MenuFeed >= waters ItemsBunker run scoreboard players set itemStatus MenuFeed 1
-  # # None, Water
-  # execute if score soupGiven MenuFeed >= soups ItemsBunker if score waterGiven MenuFeed <= waters ItemsBunker run scoreboard players set itemStatus MenuFeed 2
-  # # None, None
-  # execute if score soupGiven MenuFeed >= soups ItemsBunker if score waterGiven MenuFeed >= waters ItemsBunker run scoreboard players set itemStatus MenuFeed 3
-
 # Count Remaining Food
   # Soup
   scoreboard players operation soupNotGiven MenuFeed = soups ItemsBunker
