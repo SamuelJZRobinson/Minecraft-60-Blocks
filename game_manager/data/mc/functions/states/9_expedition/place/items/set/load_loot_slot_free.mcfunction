@@ -1,4 +1,4 @@
-# Refresh Scores
+# Reset Scores
 scoreboard players set slotOneCount ItemsExpedition 0
 scoreboard players set slotTwoCount ItemsExpedition 0
 scoreboard players set slotThreeCount ItemsExpedition 0

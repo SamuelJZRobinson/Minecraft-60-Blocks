@@ -15,5 +15,5 @@ execute if score music GameStatus matches 3 run playsound minecraft:music_disc.m
 execute if score music GameStatus matches 4 run playsound minecraft:music_disc.chirp record @s 0.5 54.5 30.0 1 1 1
 execute if score music GameStatus matches 5 run playsound minecraft:music_disc.otherside record @s 0.5 54.5 30.0 1 1 1
 
-# Refresh Scores
+# Reset Scores
 scoreboard players reset @s[scores={PlayerLeaves=1..}] PlayerLeaves

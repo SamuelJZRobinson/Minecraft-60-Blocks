@@ -1,4 +1,4 @@
-# Refresh Scores
+# Reset Scores
 scoreboard players set isFatigued MaryStatus 0
 scoreboard players set isInjured MaryStatus 0
 scoreboard players operation injuredDays MaryStatus = INJURY_INFECTION_COUNTDOWN_MAX StatusLevels

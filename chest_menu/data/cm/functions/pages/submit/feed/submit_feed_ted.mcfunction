@@ -9,6 +9,6 @@
   execute if score giveMedkit MenuFeed matches 3 run scoreboard players set isInjured TedStatus 0
   execute if score giveMedkit MenuFeed matches 3 run scoreboard players set injuredDays TedStatus 0
 
-# Refresh Scores
+# Reset Scores
 scoreboard players set tedGiveSoup MenuFeed 0
 scoreboard players set tedGiveWater MenuFeed 0

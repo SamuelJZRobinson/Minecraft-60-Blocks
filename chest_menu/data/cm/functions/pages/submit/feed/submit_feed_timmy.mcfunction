@@ -9,6 +9,6 @@
   execute if score giveMedkit MenuFeed matches 4 run scoreboard players set isInjured TimmyStatus 0
   execute if score giveMedkit MenuFeed matches 4 run scoreboard players set injuredDays TimmyStatus 0
 
-# Refresh Scores
+# Reset Scores
 scoreboard players set timmyGiveSoup MenuFeed 0
 scoreboard players set timmyGiveWater MenuFeed 0

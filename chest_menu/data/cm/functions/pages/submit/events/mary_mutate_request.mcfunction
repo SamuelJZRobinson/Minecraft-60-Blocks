@@ -5,6 +5,6 @@ scoreboard players add math_in2 em 1
 execute if score isMutant MaryStatus matches 0 run function em:math/randomp
 execute if score math_out em matches 1 run scoreboard players set isMutant MaryStatus 1
 
-# Refresh Scores
+# Reset Scores
 scoreboard players set math_out em 0
 scoreboard players set mutateRequest MenuEvent 0

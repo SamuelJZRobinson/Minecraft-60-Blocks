@@ -9,6 +9,6 @@
   execute if score giveMedkit MenuFeed matches 1 run scoreboard players set isInjured DoloresStatus 0
   execute if score giveMedkit MenuFeed matches 1 run scoreboard players set injuredDays DoloresStatus 0
 
-# Refresh Scores
+# Reset Scores
 scoreboard players set doloresGiveSoup MenuFeed 0
 scoreboard players set doloresGiveWater MenuFeed 0

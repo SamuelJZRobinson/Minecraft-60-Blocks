@@ -4,6 +4,6 @@
   # Mutant
   execute if score isMutant MaryStatus matches 1 run function cm:pages/submit/feed/submit_feed_mary_mutant
 
-# Refresh Scores
+# Reset Scores
 scoreboard players set maryGiveSoup MenuFeed 0
 scoreboard players set maryGiveWater MenuFeed 0
