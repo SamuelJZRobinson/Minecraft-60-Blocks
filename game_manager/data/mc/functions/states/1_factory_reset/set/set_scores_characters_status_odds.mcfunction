@@ -20,26 +20,8 @@ scoreboard players set DIFFICULTY_PERCENTAGE StatusOdds 20
     scoreboard players set CRAZY StatusOdds 2
     scoreboard players set CRAZY_RAGE StatusOdds 6
     scoreboard players set CRAZY_ESCAPE StatusOdds 15
-    # Dolores Crazy Resistance
-      # Set Dice
-      scoreboard players set mode Math 1
-      # Set Input
-      data modify storage minecraft:math x set value 20
-      execute store result storage minecraft:math y int 1 run scoreboard players get CRAZY_ESCAPE StatusOdds
-      # Calculate
-      function mc:utility/math/get_percentage
-      # Store
-      scoreboard players operation DOLORES_CRAZY_ESCAPE_RESISTANCE StatusOdds = out Math
-    # Mary Crazy Resistance
-      # Set Dice
-      scoreboard players set mode Math 2
-      # Set Input
-      data modify storage minecraft:math x set value 20
-      execute store result storage minecraft:math y int 1 run scoreboard players get CRAZY_ESCAPE StatusOdds
-      # Calculate
-      function mc:utility/math/get_percentage
-      # Store
-      scoreboard players operation MARY_CRAZY_ESCAPE_RESISTANCE StatusOdds = out Math
+    execute store result score DOLORES_CRAZY_ESCAPE_RESISTANCE StatusOdds run function mc:utility/math/get_percentage_of_value_via_score {"percentage":120,"score":CRAZY_ESCAPE,"objective":StatusOdds}
+    execute store result score MARY_CRAZY_ESCAPE_RESISTANCE StatusOdds run function mc:utility/math/get_percentage_of_value_via_score {"percentage":80,"score":CRAZY_ESCAPE,"objective":StatusOdds}
     # Fatigue
     scoreboard players set FATIGUE StatusOdds 8
     # Injured

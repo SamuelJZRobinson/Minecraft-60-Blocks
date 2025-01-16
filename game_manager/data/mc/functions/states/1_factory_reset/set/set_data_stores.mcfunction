@@ -37,4 +37,4 @@ data remove storage minecraft:updatecharacters objective
 # Math
 data remove storage minecraft:math x
 data remove storage minecraft:math y
-data remove storage minecraft:math out
+data remove storage minecraft:math output

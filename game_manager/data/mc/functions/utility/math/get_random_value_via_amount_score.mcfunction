@@ -1,6 +1,11 @@
-# Get y
-$data modify storage minecraft:math x set value $(x)
-$execute store result storage minecraft:math y int 1 run scoreboard players get $(score) $(objective)
+# Set Inputs
+$scoreboard players set x Math $(x)
+execute store result storage minecraft:math x int 1 run scoreboard players get x Math
+$execute store result score y Math run scoreboard players get $(score) $(objective)
+execute store result storage minecraft:math y int 1 run scoreboard players get y Math
+
+# Early Return
+execute if score y Math matches ..1 run return run scoreboard players get y Math
 
 # Get Random Range
-function mc:utility/math/get_random_value with storage minecraft:math
+execute if score y Math matches 1.. run function mc:utility/math/get_random_value with storage minecraft:math

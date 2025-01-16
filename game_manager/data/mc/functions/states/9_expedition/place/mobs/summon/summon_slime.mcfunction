@@ -1,1 +1,0 @@
-summon minecraft:slime ~ ~ ~ {Glowing:0b,DeathTime:19,DeathLootTable:"minecraft:empty",Team:"Enemy",PersistenceRequired:1b,NoAI:0b,Health:25f,Size:4,Attributes:[{Name:"generic.max_health",Base:25},{Name:"generic.follow_range",Base:40}]}

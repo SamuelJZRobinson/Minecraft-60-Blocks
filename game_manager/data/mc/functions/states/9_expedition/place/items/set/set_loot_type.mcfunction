@@ -10,7 +10,7 @@ scoreboard players set dynamicDifficulty em 0
     # Calculate
     function mc:utility/math/get_percentage
     # Store
-    scoreboard players operation sustenanceCount ItemsExpedition = out Math
+    scoreboard players operation sustenanceCount ItemsExpedition = output Math
     # Special (Leftover)
     scoreboard players operation specialCount ItemsExpedition = lootLeft ItemsExpedition
     scoreboard players operation specialCount ItemsExpedition -= sustenanceCount ItemsExpedition
@@ -23,7 +23,7 @@ scoreboard players set dynamicDifficulty em 0
     # Calculate
     function mc:utility/math/get_random_value with storage minecraft:math
     # Store
-    scoreboard players operation specialRemove ItemsExpedition = out Math
+    scoreboard players operation specialRemove ItemsExpedition = output Math
     # Adjsut Scores
     scoreboard players operation specialCount ItemsExpedition -= specialRemove ItemsExpedition
     scoreboard players operation sustenanceCount ItemsExpedition += specialRemove ItemsExpedition

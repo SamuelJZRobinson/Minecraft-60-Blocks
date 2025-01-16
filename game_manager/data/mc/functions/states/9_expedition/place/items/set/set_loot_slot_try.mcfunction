@@ -10,9 +10,9 @@
   # Calculate
   function mc:utility/math/get_random_value with storage minecraft:math
   # Test
-  execute if score out Math matches 1..3 run scoreboard players add slotOneTry ItemsExpedition 1
-  execute if score out Math matches 4..5 run scoreboard players add slotTwoTry ItemsExpedition 1
-  execute if score out Math matches 6 run scoreboard players add slotThreeTry ItemsExpedition 1
+  execute if score output Math matches 1..3 run scoreboard players add slotOneTry ItemsExpedition 1
+  execute if score output Math matches 4..5 run scoreboard players add slotTwoTry ItemsExpedition 1
+  execute if score output Math matches 6 run scoreboard players add slotThreeTry ItemsExpedition 1
 
 # Decrease Count
 execute if score specialCount ItemsExpedition matches 1.. run scoreboard players remove specialCount ItemsExpedition 1

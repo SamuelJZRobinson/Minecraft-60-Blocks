@@ -45,87 +45,35 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
   # x is the percentage of total items (y) moved from the floor to high places.
   # Reduces table items when space is insufficient.
 
-# Allocate Tables To Room Items
-  # Set Dice
-  scoreboard players set mode Math 0
-  
+# Allocate Tables To Room Items 
   # Bathroom
-    # Set Input
-    data modify storage minecraft:math x set value 65
-    execute store result storage minecraft:math y int 1 run scoreboard players get bathroomTableItems ItemsHouseHigh
-    execute if score bathroomTableItems ItemsHouseHigh > bathroomTables ItemsHouseHigh store result storage minecraft:math y int 1 run scoreboard players get bathroomTables ItemsHouseHigh
-    # Calculate
-    function mc:utility/math/get_percentage
-    execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_value with storage minecraft:math
-    # Store
-    scoreboard players operation bathroomTableItems ItemsHouseHigh = out Math
+  execute store result score bathroomTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":65,"score":bathroomTableItems,"objective":ItemsHouseHigh}
+  execute if score bathroomTableItems ItemsHouseHigh > bathroomTables ItemsHouseHigh store result score bathroomTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":65,"score":bathroomTables,"objective":ItemsHouseHigh}
+  function mc:utility/math/get_random_value_via_amount_score {"x":1,"score":"bathroomTableItems","objective":"ItemsHouseHigh"}
   # Hallway
-    # Set Input
-    data modify storage minecraft:math x set value 65
-    execute store result storage minecraft:math y int 1 run scoreboard players get hallwayTableItems ItemsHouseHigh
-    execute if score hallwayTableItems ItemsHouseHigh > hallwayTables ItemsHouseHigh store result storage minecraft:math y int 1 run scoreboard players get hallwayTables ItemsHouseHigh
-    # Calculate
-    function mc:utility/math/get_percentage
-    execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_value with storage minecraft:math
-    # Store
-    scoreboard players operation hallwayTableItems ItemsHouseHigh = out Math
+  execute store result score hallwayTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":65,"score":hallwayTableItems,"objective":ItemsHouseHigh}
+  execute if score hallwayTableItems ItemsHouseHigh > hallwayTables ItemsHouseHigh store result score hallwayTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":65,"score":hallwayTables,"objective":ItemsHouseHigh}
+  function mc:utility/math/get_random_value_via_amount_score {"x":1,"score":"hallwayTableItems","objective":"ItemsHouseHigh"}
   # Kids Bedroom
-    # Set Input
-    data modify storage minecraft:math x set value 50
-    execute store result storage minecraft:math y int 1 run scoreboard players get kidsBedroomTableItems ItemsHouseHigh
-    execute if score kidsBedroomTableItems ItemsHouseHigh > kidsBedroomTables ItemsHouseHigh store result storage minecraft:math y int 1 run scoreboard players get kidsBedroomTables ItemsHouseHigh
-    # Calculate
-    function mc:utility/math/get_percentage
-    execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_value with storage minecraft:math
-    # Store
-    scoreboard players operation kidsBedroomTableItems ItemsHouseHigh = out Math
+  execute store result score kidsBedroomTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":50,"score":kidsBedroomTableItems,"objective":ItemsHouseHigh}
+  execute if score kidsBedroomTableItems ItemsHouseHigh > kidsBedroomTables ItemsHouseHigh store result score kidsBedroomTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":50,"score":kidsBedroomTables,"objective":ItemsHouseHigh}
+  function mc:utility/math/get_random_value_via_amount_score {"x":1,"score":"kidsBedroomTableItems","objective":"ItemsHouseHigh"}
   # Kitchen
-    # Set Input
-    data modify storage minecraft:math x set value 80
-    execute store result storage minecraft:math y int 1 run scoreboard players get kitchenTableItems ItemsHouseHigh
-    execute if score kitchenTableItems ItemsHouseHigh > kitchenTables ItemsHouseHigh store result storage minecraft:math y int 1 run scoreboard players get kitchenTables ItemsHouseHigh
-    # Calculate
-    function mc:utility/math/get_percentage
-    execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_value with storage minecraft:math
-    # Store
-    scoreboard players operation kitchenTableItems ItemsHouseHigh = out Math
+  execute store result score kitchenTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":80,"score":kitchenTableItems,"objective":ItemsHouseHigh}
+  execute if score kitchenTableItems ItemsHouseHigh > kitchenTables ItemsHouseHigh store result score kitchenTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":80,"score":kitchenTables,"objective":ItemsHouseHigh}
+  function mc:utility/math/get_random_value_via_amount_score {"x":1,"score":"kitchenTableItems","objective":"ItemsHouseHigh"}
   # Lounge
-    # Set Input
-    data modify storage minecraft:math x set value 65
-    execute store result storage minecraft:math y int 1 run scoreboard players get loungeTableItems ItemsHouseHigh
-    execute if score loungeTableItems ItemsHouseHigh > loungeTables ItemsHouseHigh store result storage minecraft:math y int 1 run scoreboard players get loungeTables ItemsHouseHigh
-    # Calculate
-    function mc:utility/math/get_percentage
-    execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_value with storage minecraft:math
-    # Store
-    scoreboard players operation loungeTableItems ItemsHouseHigh = out Math
+  execute store result score loungeTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":65,"score":loungeTableItems,"objective":ItemsHouseHigh}
+  execute if score loungeTableItems ItemsHouseHigh > loungeTables ItemsHouseHigh store result score loungeTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":65,"score":loungeTables,"objective":ItemsHouseHigh}
+  function mc:utility/math/get_random_value_via_amount_score {"x":1,"score":"loungeTableItems","objective":"ItemsHouseHigh"}
   # Master Bedroom
-    # Set Input
-    data modify storage minecraft:math x set value 80
-    execute store result storage minecraft:math y int 1 run scoreboard players get masterBedroomTableItems ItemsHouseHigh
-    execute if score masterBedroomTableItems ItemsHouseHigh > masterBedroomTables ItemsHouseHigh store result storage minecraft:math y int 1 run scoreboard players get masterBedroomTables ItemsHouseHigh
-    # Calculate
-    function mc:utility/math/get_percentage
-    execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_value with storage minecraft:math
-    # Store
-    scoreboard players operation masterBedroomTableItems ItemsHouseHigh = out Math
+  execute store result score masterBedroomTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":80,"score":masterBedroomTableItems,"objective":ItemsHouseHigh}
+  execute if score masterBedroomTableItems ItemsHouseHigh > masterBedroomTables ItemsHouseHigh store result score masterBedroomTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":80,"score":masterBedroomTables,"objective":ItemsHouseHigh}
+  function mc:utility/math/get_random_value_via_amount_score {"x":1,"score":"masterBedroomTableItems","objective":"ItemsHouseHigh"}
   # Side Bathroom
-    # Set Input
-    data modify storage minecraft:math x set value 50
-    execute store result storage minecraft:math y int 1 run scoreboard players get sideBathroomTableItems ItemsHouseHigh
-    execute if score sideBathroomTableItems ItemsHouseHigh > sideBathroomTables ItemsHouseHigh store result storage minecraft:math y int 1 run scoreboard players get sideBathroomTables ItemsHouseHigh
-    # Calculate
-    function mc:utility/math/get_percentage
-    execute store result storage minecraft:math x int 1 run scoreboard players get out Math
-    function mc:utility/math/get_random_value with storage minecraft:math
-    # Store
-    scoreboard players operation sideBathroomTableItems ItemsHouseHigh = out Math
+  execute store result score sideBathroomTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":50,"score":sideBathroomTableItems,"objective":ItemsHouseHigh}
+  execute if score sideBathroomTableItems ItemsHouseHigh > sideBathroomTables ItemsHouseHigh store result score sideBathroomTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":50,"score":sideBathroomTables,"objective":ItemsHouseHigh}
+  function mc:utility/math/get_random_value_via_amount_score {"x":1,"score":"sideBathroomTableItems","objective":"ItemsHouseHigh"}
 
 # Call Root
 function mc:states/4_setup/place/items/inc_step

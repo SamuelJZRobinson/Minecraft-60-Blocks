@@ -3,11 +3,11 @@
 
 # Base Loot
   # Short
-  execute if score mapVisited MenuExpedition matches 1..4 store result score lootLeft ItemsExpedition run function mc:utility/math/get_random_value {x:1,y:5}
+  execute if score mapVisited MenuExpedition matches 1..4 store result score lootLeft ItemsExpedition run random value 1..5
   # Medium
-  execute if score mapVisited MenuExpedition matches 5..7 store result score lootLeft ItemsExpedition run function mc:utility/math/get_random_value {x:2,y:6}
+  execute if score mapVisited MenuExpedition matches 5..7 store result score lootLeft ItemsExpedition run random value 2..6
   # Long
-  execute if score mapVisited MenuExpedition matches 8 store result score lootLeft ItemsExpedition run function mc:utility/math/get_random_value {x:3,y:7}
+  execute if score mapVisited MenuExpedition matches 8 store result score lootLeft ItemsExpedition run random value 3..7
 
 # Boost Loot
   # Supply Drop

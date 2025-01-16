@@ -49,9 +49,9 @@ scoreboard objectives add MobsExpedition dummy {"bold":true,"color":"white","tex
 scoreboard players set mobCount MobsExpedition 0
 scoreboard players set DOUBLE ItemsExpedition 2
 scoreboard players set loadMob MobsExpedition 0
-scoreboard players set diffirence MobsExpedition 0
+scoreboard players set tierOneMobsLeft MobsExpedition 0
 # Danger Tiers
-scoreboard players set tierOne MobsExpedition 0
-scoreboard players set tierTwo MobsExpedition 0
-scoreboard players set tierTwoBandit MobsExpedition 0
-scoreboard players set tierThree MobsExpedition 0
+scoreboard players set tierOneMobsLeft MobsExpedition 0
+scoreboard players set tierTwoMobsLeft MobsExpedition 0
+scoreboard players set tierTwoMobsLeftBandit MobsExpedition 0
+scoreboard players set tierThreeMobsLeft MobsExpedition 0

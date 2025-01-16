@@ -9,5 +9,5 @@ execute if score step ItemsExpedition matches 5 run function mc:states/9_expedit
 execute if score step ItemsExpedition matches 6 run function mc:states/9_expedition/place/items/set/set_loot_type_sustenance
 # Mobs
 execute if score step ItemsExpedition matches 7 if score doPovExpedition Settings matches 1 run function mc:states/9_expedition/place/mobs/set/set_enemy_count
-execute if score step ItemsExpedition matches 8 if score doPovExpedition Settings matches 1 run schedule function mc:states/9_expedition/place/mobs/summon/summon_enemies 1t replace
+execute if score step ItemsExpedition matches 8 if score doPovExpedition Settings matches 1 run schedule function mc:states/9_expedition/place/mobs/summon/manage_summon_enemies 1t replace
 execute if score step ItemsExpedition matches 9 if score doPovExpedition Settings matches 1 run function mc:events/random_loadout/locations/items/tp_entities

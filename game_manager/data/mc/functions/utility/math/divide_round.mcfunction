@@ -1,10 +1,10 @@
 # Get Last Digit
-scoreboard players operation lastDigit Math = out Math
+scoreboard players operation lastDigit Math = output Math
 scoreboard players operation lastDigit Math %= divisor Math
 
 # Shift Decimal Left And Carry
-scoreboard players operation out Math /= divisor Math
-execute if score lastDigit Math matches 5.. run scoreboard players add out Math 1
+scoreboard players operation output Math /= divisor Math
+execute if score lastDigit Math matches 5.. run scoreboard players add output Math 1
 
 # Loop
 scoreboard players remove placesLeft Math 1
