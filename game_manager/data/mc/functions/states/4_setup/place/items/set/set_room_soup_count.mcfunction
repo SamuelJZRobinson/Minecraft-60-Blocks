@@ -9,7 +9,7 @@ scoreboard players operation soupLeft ItemsHouse -= kitchenSoupItemsLeft ItemsHo
 # Keep In Range
 execute if score hallwayItemsLeft ItemsHouse < soupLeft ItemsHouse run scoreboard players operation soupLeft ItemsHouse = hallwayItemsLeft ItemsHouse
 # Roll
-execute store result score hallwaySoupItemsLeft ItemsHouse run function mc:utility/math/get_random_value_amt_obj {"x":0,"score":soupLeft,"objective":ItemsHouse}
+execute store result score hallwaySoupItemsLeft ItemsHouse run function mc:utility/math/get_random_value_via_amount_score {"x":0,"score":soupLeft,"objective":ItemsHouse}
 
 # Count Allocated Soup
 scoreboard players set soupLeft ItemsHouse 0
