@@ -15,7 +15,7 @@ execute unless score preMusic GameStatus = music GameStatus run function mc:util
     execute store result score playerAliveCount PlayerCount run team list Player
     execute if score playerAliveCount PlayerCount matches 2.. run team join Lobby @r[team=Player]
   # Rejoins
-  execute as @a[scores={PlayerLeaves=1..}] run function mc:utility/music/music_loop_player
+  execute as @a[scores={PlayerLeaves=1..}] run function mc:loops/player_rejoins
 
 # Loop
 schedule function mc:loops/loop_10t 10t replace

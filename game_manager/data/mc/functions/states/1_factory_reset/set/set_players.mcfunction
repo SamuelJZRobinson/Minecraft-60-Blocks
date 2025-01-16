@@ -20,4 +20,4 @@ effect give @a minecraft:saturation 1 10 true
 gamerule naturalRegeneration true
 
 # Goto Lobby
-function mc:utility/tp/tp_lobby
+execute as @a run function mc:utility/tp/tp_lobby
