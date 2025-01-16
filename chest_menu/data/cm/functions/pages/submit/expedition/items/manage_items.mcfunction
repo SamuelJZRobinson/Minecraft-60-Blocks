@@ -1,8 +1,3 @@
-# Note
-  # Cycle through slots and addresses items if the player designated them for the expedition.
-  # Auto expedition removes items.
-  # POV expedition stores items in a chest then gives it to the player during warp day.
-
 # Keep In Range
 execute if score slotNumber MenuExpedition matches 5 run scoreboard players set slotNumber MenuExpedition 1
 
@@ -18,7 +13,7 @@ execute if score slotNumber MenuExpedition matches 2..4 if score slotItem MenuEx
 # Address slotItem
 execute if score slotItem MenuExpedition matches 2 run function cm:pages/submit/expedition/items/set_suitcase
 execute if score slotItem MenuExpedition matches 3 run function cm:pages/submit/expedition/items/set_ammo
-execute if score slotItem MenuExpedition matches 4 run function cm:pages/submit/expedition/items/set_armour
+execute if score slotItem MenuExpedition matches 4 run function cm:pages/submit/expedition/items/set_body_armour
 execute if score slotItem MenuExpedition matches 5 run function cm:pages/submit/expedition/items/set_axe
 execute if score slotItem MenuExpedition matches 6 run function cm:pages/submit/expedition/items/set_boy_scout_handbook
 execute if score slotItem MenuExpedition matches 7 run function cm:pages/submit/expedition/items/set_bug_spray
@@ -39,4 +34,4 @@ execute if score slotItem MenuExpedition matches 19 run function cm:pages/submit
 scoreboard players add slotNumber MenuExpedition 1
 
 # Loop Until slotNumber Is Excessive
-execute unless score slotNumber MenuExpedition matches 5.. as @p[team=Player] run function cm:pages/submit/expedition/items/manage_items
+execute unless score slotNumber MenuExpedition matches 5.. run function cm:pages/submit/expedition/items/manage_items

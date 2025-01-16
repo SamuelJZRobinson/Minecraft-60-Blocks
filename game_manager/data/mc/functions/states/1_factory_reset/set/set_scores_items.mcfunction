@@ -25,8 +25,9 @@ scoreboard players reset * OpenShulkerBox
 scoreboard objectives add ItemsHouseHigh dummy {"bold":true,"color":"white","text":"Items House High"}
 
 # Bunker
+  # Objective
   scoreboard objectives add ItemsBunker dummy {"bold":true,"color":"white","text":"Items Bunker"}
-  # Official
+  # Items
   scoreboard players set ammo ItemsBunker 0
   scoreboard players set axe ItemsBunker 0
   scoreboard players set waters ItemsBunker 0
@@ -44,7 +45,6 @@ scoreboard objectives add ItemsHouseHigh dummy {"bold":true,"color":"white","tex
   scoreboard players set padlock ItemsBunker 0
   scoreboard players set radio ItemsBunker 0
   scoreboard players set suitcase ItemsBunker 0
-  # Custom
   scoreboard players set bodyArmour ItemsBunker 0
   # Real Soup And Water Count
   scoreboard players set MULTIPLIER ItemsBunker 25
@@ -54,7 +54,30 @@ scoreboard objectives add ItemsHouseHigh dummy {"bold":true,"color":"white","tex
   scoreboard players set soupsInt ItemsBunker 0
   scoreboard players set soupsFloat ItemsBunker 0
 
-# Items Bundles
+# Expedition
+  # Objective
+  scoreboard objectives add ItemsExpedition dummy {"bold":true,"color":"white","text":"Items Expedition"}
+  # Items
+  scoreboard players set hasAmmo ItemsExpedition 0
+  scoreboard players set hasAxe ItemsExpedition 0
+  scoreboard players set hasWater ItemsExpedition 0
+  scoreboard players set hasBoyScoutHandbook ItemsExpedition 0
+  scoreboard players set hasBugSpray ItemsExpedition 0
+  scoreboard players set hasSoup ItemsExpedition 0
+  scoreboard players set hasCards ItemsExpedition 0
+  scoreboard players set hasCheckers ItemsExpedition 0
+  scoreboard players set hasFlashlight ItemsExpedition 0
+  scoreboard players set hasGasMask ItemsExpedition 0
+  scoreboard players set hasGun ItemsExpedition 0
+  scoreboard players set hasHarmonica ItemsExpedition 0
+  scoreboard players set hasMap ItemsExpedition 0
+  scoreboard players set hasMedkit ItemsExpedition 0
+  scoreboard players set hasPadlock ItemsExpedition 0
+  scoreboard players set hasRadio ItemsExpedition 0
+  scoreboard players set hasSuitcase ItemsExpedition 0
+  scoreboard players set hasBodyArmour ItemsExpedition 0
+
+# Bundles
 scoreboard objectives add ItemsBundles dummy {"bold":true,"color":"white","text":"Items Bundles"}
 scoreboard players set itemId ItemsBundles 0
 scoreboard players set itemsLeft ItemsBundles 0

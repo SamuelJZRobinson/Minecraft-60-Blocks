@@ -17,8 +17,8 @@
   execute if score loadMob MobsExpedition matches 4 if score tierThree MobsExpedition matches 0 run scoreboard players add loadMob MobsExpedition 1
 
 # Call Root
-execute if score loadMob MobsExpedition matches 5 run scoreboard players add stage ItemsExpedition 1
-execute if score loadMob MobsExpedition matches 5 run schedule schedule function mc:states/9_expedition/place/manage_placement 1t replace 1t replace
+execute if score loadMob MobsExpedition matches 5 run scoreboard players add step ItemsExpedition 1
+execute if score loadMob MobsExpedition matches 5 run schedule schedule function mc:states/9_expedition/place/manage_expedition 1t replace 1t replace
 
 # Loop
 execute if score loadMob MobsExpedition matches 1..4 run function mc:states/9_expedition/place/mobs/summon/summon_enemies

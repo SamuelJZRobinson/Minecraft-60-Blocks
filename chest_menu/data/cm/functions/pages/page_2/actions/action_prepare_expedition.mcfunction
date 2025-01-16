@@ -1,2 +1,2 @@
-execute if score selection MenuMain matches 24 run scoreboard players set prepareExpedition MenuExpedition 0
-execute if score selection MenuMain matches 25 run scoreboard players set prepareExpedition MenuExpedition 1
+execute if score selection MenuMain matches 24 run scoreboard players set expeditionPrepared MenuExpedition 0
+execute if score selection MenuMain matches 25 run scoreboard players set expeditionPrepared MenuExpedition 1

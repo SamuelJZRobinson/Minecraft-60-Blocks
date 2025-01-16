@@ -1,6 +1,3 @@
-# Set Data
-data modify storage minecraft:bundles expeditionGearId append value 3
+data modify storage minecraft:itemsprocess expeditionLostItemIds append value 3
+scoreboard players set hasBoyScoutHandbook ItemsExpedition 1
 scoreboard players set boyScoutHandbook ItemsBunker 0
-
-# Insert POV Item
-execute if score doPovExpedition Settings matches 1 run loot insert 2 60 34 loot lt_custom:empty/boy_scout_handbook_tool

@@ -24,7 +24,7 @@ scoreboard players set slotThreeCount ItemsExpedition 0
 scoreboard players set slotThreeFree ItemsExpedition 0
 scoreboard players set slotThreeTry ItemsExpedition 0
 # Loot
-scoreboard players set maxLoot ItemsExpedition 0
+scoreboard players set lootLeft ItemsExpedition 0
 scoreboard players set sustenanceCount ItemsExpedition 0
 scoreboard players set soupCount ItemsExpedition 0
 scoreboard players set waterCount ItemsExpedition 0
@@ -32,12 +32,9 @@ scoreboard players set waterCount ItemsExpedition 0
 # EXPEDITION ODDS
 scoreboard objectives add ExpeditionOdds dummy {"bold":true,"color":"white","text":"Expedition Odds"}
 # Boost
-scoreboard players set SUPPLY_BOOST ExpeditionOdds 8
-scoreboard players set TIMMY_BOOST ExpeditionOdds 5
+scoreboard players set SUPPLY_DROP ExpeditionOdds 8
 # Loot
 scoreboard players set NO_LOOT ExpeditionOdds 14
-# Fatigue
-scoreboard players set FATIGUE_PENALTY ExpeditionOdds 10
 # Item
 scoreboard players set ITEM_TIER ExpeditionOdds 6
 scoreboard players set ITEM_BOOST ExpeditionOdds 4
@@ -50,6 +47,7 @@ scoreboard players set RISK_LEVEL_THREE ExpeditionOdds 9
 scoreboard objectives add MobsExpedition dummy {"bold":true,"color":"white","text":"Mobs Expedition"}
 # Load
 scoreboard players set mobCount MobsExpedition 0
+scoreboard players set DOUBLE ItemsExpedition 2
 scoreboard players set loadMob MobsExpedition 0
 scoreboard players set diffirence MobsExpedition 0
 # Danger Tiers

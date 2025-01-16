@@ -39,8 +39,8 @@ execute if score slotItem MenuExpedition matches 19 run function cm:menu/submit/
 scoreboard players add slotNumber MenuExpedition 1
 
 # Item Break Chance
-execute if score slotNumber MenuExpedition matches 5 run scoreboard players add stage ItemsExpedition 1
-execute if score slotNumber MenuExpedition matches 5 run schedule schedule function mc:states/9_expedition/place/manage_placement 1t replace 1t
+execute if score slotNumber MenuExpedition matches 5 run scoreboard players add step ItemsExpedition 1
+execute if score slotNumber MenuExpedition matches 5 run schedule schedule function mc:states/9_expedition/place/manage_expedition 1t replace 1t
 
 # Loop
 execute if score slotNumber MenuExpedition matches 1..4 as @p[team=Player] run function mc:events/random_loadout/locations/items/manage_slot_give

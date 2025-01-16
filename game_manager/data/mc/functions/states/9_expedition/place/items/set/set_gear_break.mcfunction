@@ -23,9 +23,9 @@ function em:math/get_percentage
     execute if score math_out em <= memory em run function mc:events/random_loadout/locations/items/load_gear_break
     # Keep
     execute if score math_out em > memory em run scoreboard players set stage ItemsBundles 9
-    execute if score math_out em > memory em run data modify storage minecraft:itemsprocess scavengeGainedItemIds set from storage minecraft:bundles expeditionGearId
+    execute if score math_out em > memory em run data modify storage minecraft:itemsprocess scavengeGainedItemIds set from storage minecraft:itemsprocess expeditionLostItemIds
     execute if score math_out em > memory em run function mc:states/8_bunker/items/process/bundles/check/check_main_add
 
 # Set Stage
-scoreboard players add stage ItemsExpedition 1
-schedule function mc:states/9_expedition/place/manage_placement 1t replace
+scoreboard players add step ItemsExpedition 1
+schedule function mc:states/9_expedition/place/manage_expedition 1t replace

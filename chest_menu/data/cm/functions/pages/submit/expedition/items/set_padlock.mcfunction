@@ -1,6 +1,3 @@
-# Set Data
-data modify storage minecraft:bundles expeditionGearId append value 13
+data modify storage minecraft:itemsprocess expeditionLostItemIds append value 13
+scoreboard players set hasPadlock ItemsExpedition 1
 scoreboard players set padlock ItemsBunker 0
-
-# Insert POV Item
-execute if score doPovExpedition Settings matches 1 run loot insert 2 60 34 loot mc:entities/padlock

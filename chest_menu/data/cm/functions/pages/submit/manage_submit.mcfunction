@@ -5,14 +5,10 @@
 function mc:states/1_factory_reset/set/set_data_stores
 
 # Feeding
-function cm:pages/submit/feed/submit_feed
+function cm:pages/submit/feed/manage_feed
 
 # Expedition
-  # Run 
-  function cm:pages/submit/expedition/check_expedition
-  # Reset Scores
-  scoreboard players set characterSelect MenuExpedition 0
-  scoreboard players set mapSelect MenuExpedition 3
+function cm:pages/submit/expedition/manage_expedition
 
 # Events
   # Allow Event Outcome
@@ -28,6 +24,6 @@ function cm:pages/submit/feed/submit_feed
 scoreboard players set submit MenuEvent 0
 
 # Declare New Day
-schedule function mc:states/8_bunker/manage_day 1t replace
+function mc:states/8_bunker/manage_day
 execute if score task AtomicDrill matches 12.. if score doPovExpedition Settings matches 0 run scoreboard players set stage AtomicDrill 2
 execute if score task AtomicDrill matches 12.. if score doPovExpedition Settings matches 1 unless score task AtomicDrill matches 15 run scoreboard players set stage AtomicDrill 2

@@ -6,13 +6,13 @@ scoreboard players set dynamicDifficulty em 0
   # Sustenance
     # Set Input
     data modify storage minecraft:math x set value 30
-    execute store result storage minecraft:math y int 1 run scoreboard players get maxLoot ItemsExpedition
+    execute store result storage minecraft:math y int 1 run scoreboard players get lootLeft ItemsExpedition
     # Calculate
     function mc:utility/math/get_percentage
     # Store
     scoreboard players operation sustenanceCount ItemsExpedition = out Math
     # Special (Leftover)
-    scoreboard players operation specialCount ItemsExpedition = maxLoot ItemsExpedition
+    scoreboard players operation specialCount ItemsExpedition = lootLeft ItemsExpedition
     scoreboard players operation specialCount ItemsExpedition -= sustenanceCount ItemsExpedition
 
 # Supress Special

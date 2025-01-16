@@ -19,8 +19,8 @@ scoreboard players add loadItem ItemsExpedition 1
   execute if score loadItem ItemsExpedition matches 3 if score slotThreeCount ItemsExpedition matches 1.. run scoreboard players set slotThreeCount ItemsExpedition 0
 
 # Call Root
-execute if score loadItem ItemsExpedition matches 4 run scoreboard players add stage ItemsExpedition 1
-execute if score loadItem ItemsExpedition matches 4 run schedule function mc:states/9_expedition/place/manage_placement 1t replace
+execute if score loadItem ItemsExpedition matches 4 run scoreboard players add step ItemsExpedition 1
+execute if score loadItem ItemsExpedition matches 4 run schedule function mc:states/9_expedition/place/manage_expedition 1t replace
 
 # Loop
 execute if score loadItem ItemsExpedition matches 1..3 if score suitcaseItemsLeft ItemsBundles matches 1.. run function mc:states/8_bunker/items/process/bundles/check/check_random

@@ -1,9 +1,15 @@
-# Notes
-  # In auto expeditions characters may get 0 items but this would be unfun for players in POV.
-
-# Auto
-execute if score doPovExpedition Settings matches 0 run function mc:states/9_expedition/place/items/set_loot_none
-
-# POV
-execute if score doPovExpedition Settings matches 1 run scoreboard players add stage ItemsExpedition 1
-execute if score doPovExpedition Settings matches 1 run schedule function mc:states/9_expedition/place/manage_placement 1t replace
+# No Loot Chance
+  # Set Dice
+    scoreboard players set mode Math 0
+  # Set Input
+  data modify storage minecraft:math x set value 1
+  execute store result storage minecraft:math y int 1 run scoreboard players get NO_LOOT ExpeditionOdds
+  # Calculate
+  function mc:utility/math/get_random_value with storage minecraft:math
+  # Test
+    # No Items (Skip Calculations)
+    execute if score out Math matches 1 run scoreboard players set step ItemsExpedition 7
+    execute if score out Math matches 1 run schedule function mc:states/9_expedition/place/manage_expedition 1t replace
+    # Have Items
+    execute unless score out Math matches 1 run scoreboard players add step ItemsExpedition 1
+    execute unless score out Math matches 1 run schedule function mc:states/9_expedition/place/manage_expedition 1t replace

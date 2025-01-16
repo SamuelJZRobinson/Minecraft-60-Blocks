@@ -1,13 +1,14 @@
-# Set Scores
-scoreboard players set music GameStatus 2
+# Reset Scores
 scoreboard players reset * PlayerDeaths
 
-# Enable Item Damage
-execute as @e[team=Items] run data modify entity @s Invulnerable set value 0b
+# Set Music
+scoreboard players set music GameStatus 2
 
-### Delay Until Ready
 # Gamerules
-# gamerule naturalRegeneration false
+gamerule naturalRegeneration false
+
+# # Enable Item Damage
+# execute as @e[team=Items] run data modify entity @s Invulnerable set value 0b
 
 # Effects
 # execute as @p[team=Player] run function mc:states/9_expedition/place/player/effects/manage_effects
@@ -17,7 +18,6 @@ execute as @e[team=Items] run data modify entity @s Invulnerable set value 0b
 # title @a title {"text":"Meanwhile","color":"gold"}
 # title @a subtitle {"text":"Outside","color":"red"}
 
-### This is ok
-# Set Stage
-scoreboard players set stage ItemsExpedition 1
-schedule function mc:states/9_expedition/place/manage_placement 1t replace
+# Setup Expedition
+scoreboard players set step ItemsExpedition 4
+function mc:states/9_expedition/place/manage_expedition_pov

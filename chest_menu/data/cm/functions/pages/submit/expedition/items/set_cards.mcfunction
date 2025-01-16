@@ -1,6 +1,4 @@
 # Set Data
-data modify storage minecraft:bundles expeditionGearId append value 5
+data modify storage minecraft:itemsprocess expeditionLostItemIds append value 5
+scoreboard players set hasCards ItemsExpedition 1
 scoreboard players set cards ItemsBunker 0
-
-# Insert POV Item
-execute if score doPovExpedition Settings matches 1 run loot insert 2 60 34 loot mc:entities/cards

@@ -57,7 +57,7 @@ scoreboard players set slotFour MenuExpedition -1
 scoreboard players set slotNumber MenuExpedition 1
 scoreboard players set slotItem MenuExpedition 0
 # Prepared
-scoreboard players set prepareExpedition MenuExpedition 0
+scoreboard players set expeditionPrepared MenuExpedition 0
 scoreboard players set expeditionReady MenuExpedition 0
 # Duration
 scoreboard players set expeditionDuration MenuExpedition 0

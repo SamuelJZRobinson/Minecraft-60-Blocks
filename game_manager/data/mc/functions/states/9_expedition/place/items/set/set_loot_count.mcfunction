@@ -1,44 +1,18 @@
-# Loot (Base)
+# Notes
+  # Base loot corresponds to expedition duration.
+
+# Base Loot
   # Short
-  execute if score mapVisited MenuExpedition matches 1..4 run function mc:utility/math/get_random_value {x:1,y:5}
+  execute if score mapVisited MenuExpedition matches 1..4 store result score lootLeft ItemsExpedition run function mc:utility/math/get_random_value {x:1,y:5}
   # Medium
-  execute if score mapVisited MenuExpedition matches 5..6 run function mc:utility/math/get_random_value {x:2,y:6}
+  execute if score mapVisited MenuExpedition matches 5..7 store result score lootLeft ItemsExpedition run function mc:utility/math/get_random_value {x:2,y:6}
   # Long
-  execute if score mapVisited MenuExpedition matches 7..8 run function mc:utility/math/get_random_value {x:3,y:7}
-  # Copy Output
-  scoreboard players operation maxLoot ItemsExpedition = out Math
+  execute if score mapVisited MenuExpedition matches 8 store result score lootLeft ItemsExpedition run function mc:utility/math/get_random_value {x:3,y:7}
 
 # Boost Loot
   # Supply Drop
-    # Set Input
-    data modify storage minecraft:math x set value 1
-    execute store result storage minecraft:math y int 1 run scoreboard players get SUPPLY_BOOST StatusOdds
-    # Calculate
-    function mc:utility/math/get_random_value with storage minecraft:math
-    # Test
-    execute if score out Math matches 1 run scoreboard players add maxLoot ItemsExpedition 4
-  # Timmy Skills
-    # Set Input
-    execute if score characterSent MenuExpedition matches 5 run data modify storage minecraft:math x set value 1
-    execute if score characterSent MenuExpedition matches 5 store result storage minecraft:math y int 1 run scoreboard players get TIMMY_BOOST StatusOdds
-    # Calculate
-    execute if score characterSent MenuExpedition matches 5 run function mc:utility/math/get_random_value with storage minecraft:math
-    # Test
-    execute if score characterSent MenuExpedition matches 5 if score out Math matches 1 run scoreboard players add maxLoot ItemsExpedition 1
-
-# Nerf Loot
-  # Fatigue
-    # Set Input
-    execute if score isFatigued ItemsExpedition matches 1 run data modify storage minecraft:math x set value 1
-    execute if score isFatigued ItemsExpedition matches 1 store result storage minecraft:math y int 1 run scoreboard players get FATIGUE_PENALTY StatusOdds
-    # Calculate
-    execute if score isFatigued ItemsExpedition matches 1 run function mc:utility/math/get_random_value with storage minecraft:math
-    # Test
-    execute if score isFatigued ItemsExpedition matches 1 if score out Math matches 1 run scoreboard players remove maxLoot ItemsExpedition 1
-
-# Keep In Range
-execute if score maxLoot ItemsExpedition matches ..-1 run scoreboard players set maxLoot ItemsExpedition 0
+  function mc:states/9_expedition/place/items/set/set_loot_count_supply_drop
 
 # Set Stage
-scoreboard players add stage ItemsExpedition 1
-schedule function mc:states/9_expedition/place/manage_placement 1t replace
+scoreboard players add step ItemsExpedition 1
+schedule function mc:states/9_expedition/place/manage_expedition 1t replace

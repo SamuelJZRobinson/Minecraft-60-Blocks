@@ -14,7 +14,7 @@ execute if score loadItem ItemsExpedition matches 2 if score waterCount ItemsExp
 execute if score loadItem ItemsExpedition matches 3 run function mc:states/8_bunker/items/process/bundles/check/check_main_add
 
 # Set Stage
-execute if score loadItem ItemsExpedition matches 3 run scoreboard players add stage ItemsExpedition 1
+execute if score loadItem ItemsExpedition matches 3 run scoreboard players add step ItemsExpedition 1
 
 # Loop
 execute if score loadItem ItemsExpedition matches 1..2 run function mc:states/9_expedition/place/items/get/get_sustenance
