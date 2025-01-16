@@ -1,10 +1,9 @@
 # Set Scores
-scoreboard players set mode PlayerLockInventory 2
 scoreboard players set music GameStatus 2
 scoreboard players reset * PlayerDeaths
 
 # Enable Item Damage
-execute as @e[team=Item] run data modify entity @s Invulnerable set value 0b
+execute as @e[team=Items] run data modify entity @s Invulnerable set value 0b
 
 ### Delay Until Ready
 # Gamerules

@@ -7,6 +7,5 @@ tellraw @a "state 5"
 gamerule doMobLoot true
 
 # Set Scores
-scoreboard players set mode PlayerLockInventory 2
 scoreboard players set task AtomicDrill 1
 scoreboard players set stage AtomicDrill 0
