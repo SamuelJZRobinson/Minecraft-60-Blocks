@@ -14,7 +14,7 @@ execute if score started GameStatus matches 1 run gamemode spectator @s
   execute if score started GameStatus matches 0 run function mc:utility/tp/tp_lobby
   execute if score started GameStatus matches 0 run title @s actionbar {"text":"Teleported to the lobby","bold":true,"color":"red"}
   # Player
-  execute if score started GameStatus matches 1 run teleport @a[team=Lobby] @p[team=Player]
+  execute if score started GameStatus matches 1 run teleport @s[team=Lobby] @p[team=Player]
   execute if score started GameStatus matches 1 run title @s actionbar {"text":"Teleported to the player","bold":true,"color":"red"}
 
 # Music
