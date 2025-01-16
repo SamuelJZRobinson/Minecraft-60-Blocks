@@ -37,6 +37,6 @@
 # Adjust Scores
 scoreboard players remove sumWallItems ItemsHouseHigh 1
 
-# Call Root
+# Proceed
 execute if score sumWallItems ItemsHouseHigh matches 0 run function mc:states/4_setup/place/items/inc_step
 schedule function mc:states/4_setup/place/items/manage_items 1t

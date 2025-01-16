@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{display:{Name:'{"text":"gunAmmo:1bproof Vest"}',Lore:['{"text":"Click to use","color":"gold","underlined":true}']},CustomModelData:7,armour:1b,itemId:18} 1

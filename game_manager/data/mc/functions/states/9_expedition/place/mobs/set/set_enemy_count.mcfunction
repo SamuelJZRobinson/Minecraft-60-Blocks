@@ -20,6 +20,5 @@ scoreboard players operation remainder MobsExpedition -= tierTwoMobsLeft MobsExp
 scoreboard players operation remainder MobsExpedition -= tierThreeMobsLeft MobsExpedition
 execute if score remainder MobsExpedition matches 1.. run function mc:states/9_expedition/place/mobs/set/set_enemy_count_fix
 
-# Call Root
-scoreboard players add step ItemsExpedition 1
-schedule function mc:states/9_expedition/place/manage_expedition 1t replace
+# Proceed
+schedule function mc:states/9_expedition/place/inc_step 1t replace

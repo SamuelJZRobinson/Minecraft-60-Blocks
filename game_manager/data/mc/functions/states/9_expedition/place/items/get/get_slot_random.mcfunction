@@ -18,7 +18,7 @@ scoreboard players add loadItem ItemsExpedition 1
   execute if score loadItem ItemsExpedition matches 3 if score slotThreeCount ItemsExpedition matches 0 run scoreboard players add loadItem ItemsExpedition 1
   execute if score loadItem ItemsExpedition matches 3 if score slotThreeCount ItemsExpedition matches 1.. run scoreboard players set slotThreeCount ItemsExpedition 0
 
-# Call Root
+# Proceed
 execute if score loadItem ItemsExpedition matches 4 run scoreboard players add step ItemsExpedition 1
 execute if score loadItem ItemsExpedition matches 4 run schedule function mc:states/9_expedition/place/manage_expedition 1t replace
 

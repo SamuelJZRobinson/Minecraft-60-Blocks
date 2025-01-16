@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"Ammo","bold":true}',Lore:['{"text":"Click to use","color":"gray"}']},CustomModelData:1,ammo:1b,itemId:1} 1

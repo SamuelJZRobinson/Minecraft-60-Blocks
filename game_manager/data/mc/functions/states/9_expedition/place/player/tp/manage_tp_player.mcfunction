@@ -10,3 +10,6 @@ execute if score mapVisited MenuExpedition matches 5 run function mc:states/9_ex
 execute if score mapVisited MenuExpedition matches 6 run function mc:states/9_expedition/place/player/tp/tp_hospital
 execute if score mapVisited MenuExpedition matches 7 run function mc:states/9_expedition/place/player/tp/tp_bowling_alley
 execute if score mapVisited MenuExpedition matches 8 run function mc:states/9_expedition/place/player/tp/tp_warehouse
+
+# Proceed
+schedule function mc:states/9_expedition/place/inc_step 1t replace

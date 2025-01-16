@@ -75,6 +75,6 @@ scoreboard players operation sumWallItems ItemsHouseHigh += sideBathroomWallItem
   execute if score sideBathroomTableItems ItemsHouseHigh > sideBathroomTables ItemsHouseHigh store result score sideBathroomTableItems ItemsHouseHigh run function mc:utility/math/get_percentage_of_value_via_score {"percentage":50,"score":sideBathroomTables,"objective":ItemsHouseHigh}
   function mc:utility/math/get_random_value_via_amount_score {"x":1,"score":"sideBathroomTableItems","objective":"ItemsHouseHigh"}
 
-# Call Root
+# Proceed
 function mc:states/4_setup/place/items/inc_step
 schedule function mc:states/4_setup/place/items/manage_items 1t replace

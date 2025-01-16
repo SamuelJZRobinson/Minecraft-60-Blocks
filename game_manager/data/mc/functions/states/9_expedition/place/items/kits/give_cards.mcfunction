@@ -1,0 +1,1 @@
+give @s minecraft:saddle{display:{Name:'{"text":"Cards","bold":true}'},CustomModelData:5,itemId:5} 1

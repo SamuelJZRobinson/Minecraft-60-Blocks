@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{display:{Name:'{"text":"Medkit"}',Lore:['{"text":"Click to use","color":"gold","underlined":true}']},CustomModelData:3,itemId:12,medkit:1b} 1

@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"Bulletproof Vest","bold":true}',Lore:['{"text":"Click to use","color":"gray"}']},CustomModelData:7,armour:1b,itemId:18} 1

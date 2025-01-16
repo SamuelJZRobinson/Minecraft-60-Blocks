@@ -1,1 +1,0 @@
-give @s minecraft:iron_axe{display:{Name:'{"text":"Axe"}'},Damage:202,CustomModelData:1,itemId:2} 1

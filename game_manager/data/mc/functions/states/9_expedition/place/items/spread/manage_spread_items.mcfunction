@@ -7,3 +7,6 @@ execute if score mapVisited MenuExpedition matches 5 as @e[team=Items] run funct
 execute if score mapVisited MenuExpedition matches 6 as @e[team=Items] run function mc:states/9_expedition/place/mobs/spread/spread_hospital
 execute if score mapVisited MenuExpedition matches 7 as @e[team=Items] run function mc:states/9_expedition/place/mobs/spread/spread_metro
 execute if score mapVisited MenuExpedition matches 8 as @e[team=Items] run function mc:states/9_expedition/place/mobs/spread/spread_warehouse
+
+# Proceed
+schedule function mc:states/9_expedition/place/inc_step 1t replace

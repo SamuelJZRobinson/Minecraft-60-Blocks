@@ -22,6 +22,7 @@
     "#minecraft:banners",
     "minecraft:lever",
     "#minecraft:slabs",
-    "#minecraft:stairs"
+    "#minecraft:stairs",
+    "minecraft:tripwire_hook"
   ]
 }

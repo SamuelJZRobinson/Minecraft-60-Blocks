@@ -10,3 +10,6 @@ execute if score mapVisited MenuExpedition matches 8 as @e[team=Mobs] run functi
 
 # Remove Nearby Entities
 execute if score mapVisited MenuExpedition matches 1..8 as @e[team=Mobs] at @s if entity @p[team=Player,distance=..16] run function mc:states/9_expedition/place/mobs/spread/spread_mobs_clear_near
+
+# Proceed
+schedule function mc:states/9_expedition/place/inc_step 1t replace

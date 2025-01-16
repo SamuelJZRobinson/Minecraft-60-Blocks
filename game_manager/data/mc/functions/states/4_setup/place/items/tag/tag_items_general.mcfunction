@@ -50,6 +50,6 @@ function mc:states/4_setup/place/items/raise/rotate_items
 # Decrease itemCount
 scoreboard players remove itemCount ItemsHouse 1
 
-# Call Root
+# Proceed
 execute if score itemCount ItemsHouse matches 0 run function mc:states/4_setup/place/items/inc_step
 schedule function mc:states/4_setup/place/items/manage_items 1t replace

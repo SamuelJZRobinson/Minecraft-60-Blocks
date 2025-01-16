@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"Boy Scout Handbook","bold":true}',Lore:['{"text":"Click to use","color":"gray"}']},CustomModelData:8,handbook:1b,itemId:3} 1

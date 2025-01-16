@@ -1,0 +1,1 @@
+give @s potion{display:{Name:'{"text":"Water","bold":true}'},CustomModelData:1,itemId:17,custom_potion_effects:[{id:"minecraft:fire_resistance",amplifier:0b,duration:400},{id:"minecraft:saturation",amplifier:5b,duration:1}]} 1

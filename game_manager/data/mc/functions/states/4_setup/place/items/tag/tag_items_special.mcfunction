@@ -22,6 +22,6 @@ execute if score giveItem ItemsHouse matches 5 as @e[type=minecraft:slime,limit=
 scoreboard players remove itemCount ItemsHouse 1
 scoreboard players add giveItem ItemsHouse 1
 
-# Call Root
+# Proceed
 execute if score giveItem ItemsHouse matches 6.. run function mc:states/4_setup/place/items/inc_step
 schedule function mc:states/4_setup/place/items/manage_items 1t replace

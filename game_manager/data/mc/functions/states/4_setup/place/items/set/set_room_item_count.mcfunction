@@ -34,6 +34,6 @@ function mc:states/4_setup/place/items/set/set_room_soup_count
 # Water
 function mc:states/4_setup/place/items/set/set_room_water_count
 
-# Call Root
+# Proceed
 function mc:states/4_setup/place/items/inc_step
 schedule function mc:states/4_setup/place/items/manage_items 1t

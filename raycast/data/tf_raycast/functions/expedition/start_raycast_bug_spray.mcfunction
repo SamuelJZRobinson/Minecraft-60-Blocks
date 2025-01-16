@@ -1,10 +1,10 @@
 # Set Cooldown
-scoreboard players set @s GunCooldownTick 5
+scoreboard players set @s GunCooldownTick 9
 
 # Set Damage
-data modify storage minecraft:gundamage headDamage set value 4
-data modify storage minecraft:gundamage bodyDamage set value 4
-data modify storage minecraft:gundamage legDamage set value 3
+data modify storage minecraft:gundamage headDamage set value 5
+data modify storage minecraft:gundamage bodyDamage set value 5
+data modify storage minecraft:gundamage legDamage set value 5
 
 # Sound
 playsound minecraft:entity.silverfish.hurt master @p ~ ~ ~ 1 2 1
