@@ -5,7 +5,6 @@ function mc:sounds/expedition_end
 ### scoreboard players set clock Timer 3
 scoreboard players set music GameStatus 3
 scoreboard objectives setdisplay sidebar
-scoreboard players set showEscape ItemsExpedition 0
 ### tellraw @p[team=Player] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 
 # Time Depleted

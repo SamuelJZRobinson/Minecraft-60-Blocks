@@ -1,28 +1,11 @@
 # EXPEDITION ITEMS
 scoreboard objectives add ItemsExpedition dummy {"bold":true,"color":"white","text":"Items Expedition"}
-### What does this do?
-scoreboard players set showEscape ItemsExpedition 0
+
 # Load
 ### What does this do?
 scoreboard players set loadItem ItemsExpedition 0
 # Character
 scoreboard players set deathChance ItemsExpedition 0
-# Special
-scoreboard players set specialCount ItemsExpedition 0
-scoreboard players set specialCountCopy ItemsExpedition 0
-scoreboard players set specialRemove ItemsExpedition 0
-# Slot One
-scoreboard players set slotOneCount ItemsExpedition 0
-scoreboard players set slotOneFree ItemsExpedition 0
-scoreboard players set slotOneTry ItemsExpedition 0
-# Slot Two
-scoreboard players set slotTwoCount ItemsExpedition 0
-scoreboard players set slotTwoFree ItemsExpedition 0
-scoreboard players set slotTwoTry ItemsExpedition 0
-# Slot Three
-scoreboard players set slotThreeCount ItemsExpedition 0
-scoreboard players set slotThreeFree ItemsExpedition 0
-scoreboard players set slotThreeTry ItemsExpedition 0
 # Loot
 scoreboard players set lootLeft ItemsExpedition 0
 scoreboard players set sustenanceCount ItemsExpedition 0

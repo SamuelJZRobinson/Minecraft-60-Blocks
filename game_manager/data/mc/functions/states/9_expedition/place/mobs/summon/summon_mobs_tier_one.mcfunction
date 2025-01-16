@@ -11,4 +11,4 @@ execute if score output Math matches 4 run function mc:states/9_expedition/place
 scoreboard players remove tierOneMobsLeft MobsExpedition 1
 
 # Loop
-execute if score tierOneMobsLeft MobsExpedition matches 1.. run function mc:states/9_expedition/place/mobs/summon/summon_enemies_tier_one
+execute if score tierOneMobsLeft MobsExpedition matches 1.. run function mc:states/9_expedition/place/mobs/summon/summon_mobs_tier_one
