@@ -7,7 +7,7 @@ team join Lobby @s
 
 # Set Gamemode
 execute if score started GameStatus matches 0 run gamemode adventure @s
-execute if score started GameStatus matches 1 run gamemode spectator @s
+execute if score started GameStatus matches 1 run gamemode spectator @s[team=!Player]
 
 # Teleport
   # Lobby
