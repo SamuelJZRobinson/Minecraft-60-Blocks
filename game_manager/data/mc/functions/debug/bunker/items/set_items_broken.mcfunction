@@ -4,7 +4,7 @@ function cm:place_chest_menu
 # Set Settings
   # Player
   team join Player @s
-  # Gamemode (Ensure Set Time And Show Warp Days Works)
+  # Gamemode
   scoreboard players set gamemode Settings 2
   scoreboard players set doPovExpedition Settings 1
   # Set Scores

@@ -1,3 +1,6 @@
+# Notes
+  # Output is stored as a score and storage since some scripts use scores and others like the get random array can only use storage.
+
 # Set Inputs
 $scoreboard players set x Math $(x)
 execute store result storage minecraft:math x int 1 run scoreboard players get x Math
@@ -8,6 +11,7 @@ execute store result storage minecraft:math y int 1 run scoreboard players get y
 scoreboard players remove y Math 1
 
 # Early Return
+execute if score y Math matches ..1 store result storage minecraft:math output int 1 run scoreboard players get y Math
 execute if score y Math matches ..1 run return run scoreboard players get y Math
 
 # Get Random Range
