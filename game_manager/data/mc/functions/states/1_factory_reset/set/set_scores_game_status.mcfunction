@@ -7,11 +7,6 @@ scoreboard players set gameState GameStatus 1
 scoreboard players set characterItemBreak GameStatus 0
 # Player
 scoreboard players set music GameStatus 0
-# Character
-scoreboard players set adultsAlive GameStatus 0
-scoreboard players set childrenAlive GameStatus 0
-scoreboard players set totalAlive GameStatus 0
-scoreboard players set totalPresent GameStatus 0
 # Day
 scoreboard players set day GameStatus 0
 # Ending
