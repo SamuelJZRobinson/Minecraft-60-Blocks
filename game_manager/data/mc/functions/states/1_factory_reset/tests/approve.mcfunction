@@ -4,7 +4,6 @@ function mc:states/1_factory_reset/clear/clear_schedules
 function mc:states/1_factory_reset/clear/clear_locations
 function mc:states/1_factory_reset/set/set_teams
 function mc:states/1_factory_reset/set/set_scores
-function mc:states/1_factory_reset/set/set_data_stores
 function mc:states/1_factory_reset/set/set_players
 time set day
 

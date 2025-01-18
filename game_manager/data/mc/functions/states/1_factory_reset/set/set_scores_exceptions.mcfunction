@@ -1,3 +1,7 @@
+# Objective
 scoreboard objectives add Exception dummy {"bold":true,"color":"white","text":"Exception"}
-scoreboard players set doException Exception 0
+# Tests
 scoreboard players set testsFailed Exception 0
+
+# Data
+data remove storage minecraft:exceptions message

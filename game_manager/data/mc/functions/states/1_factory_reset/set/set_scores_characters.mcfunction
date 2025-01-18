@@ -103,3 +103,6 @@
   scoreboard players set sickDays TimmyStatus 0
   # Tired
   scoreboard players set isTired TimmyStatus 0
+
+# Data
+data remove storage minecraft:updatecharacters objective

@@ -28,3 +28,5 @@ scoreboard players set stage AtomicDrill 0
 # Events
 scoreboard players set expeditionDeath AtomicDrill 0
 scoreboard players set event15Choice AtomicDrill 0
+# Data
+data remove storage minecraft:atomicdrill dialogue
