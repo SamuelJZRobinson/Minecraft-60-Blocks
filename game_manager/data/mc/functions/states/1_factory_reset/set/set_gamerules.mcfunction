@@ -49,7 +49,7 @@ gamerule keepInventory true
 gamerule spawnRadius 0
 
 # World Border
-worldborder set 1024
+worldborder center 123.00 -258.00
+worldborder set 768
 worldborder damage amount 1
 worldborder damage buffer 0
-worldborder center 0.00 0.00

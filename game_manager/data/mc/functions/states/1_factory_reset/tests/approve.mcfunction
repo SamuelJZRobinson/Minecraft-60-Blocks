@@ -6,6 +6,7 @@ function mc:states/1_factory_reset/set/set_teams
 function mc:states/1_factory_reset/set/set_scores
 function mc:states/1_factory_reset/set/set_data_stores
 function mc:states/1_factory_reset/set/set_players
+time set day
 
 # Status
 tellraw @a ["",{"text":"60 ","bold":true,"color":"yellow"},{"text":"Seconds ","bold":true,"color":"red"},{"text":"datapack loaded!","color":"white"}]
