@@ -10,5 +10,5 @@ execute if score expeditionDuration MenuExpedition matches 1.. if score adultsAl
 execute if score expeditionDuration MenuExpedition matches 1.. if score adultsAlive GameStatus matches 1 if score childrenAlive GameStatus matches 0 run schedule function mc:states/8_bunker/manage_day 1s
 
 # Start Expedition
-execute if score expeditionDuration MenuExpedition matches 0 if score characterSent MenuExpedition matches 1.. run scoreboard players set state GameStatus 9
+execute if score expeditionDuration MenuExpedition matches 0 if score characterSent MenuExpedition matches 1.. run scoreboard players set gameState GameStatus 9
 execute if score expeditionDuration MenuExpedition matches 0 if score characterSent MenuExpedition matches 1.. run schedule function mc:states/manage_states 1t replace

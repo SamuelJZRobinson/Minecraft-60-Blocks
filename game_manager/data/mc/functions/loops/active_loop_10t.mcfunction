@@ -1,11 +1,11 @@
 # Particles
   # Atomic Drill
-  execute if score state GameStatus matches 5 run function mc:utility/particles/atomic_drill/manage_particles
+  execute if score gameState GameStatus matches 5 run function mc:utility/particles/atomic_drill/manage_particles
   # Scavenge
-  execute if score state GameStatus matches 6..7 run function mc:utility/particles/scavenge/manage_particles
+  execute if score gameState GameStatus matches 6..7 run function mc:utility/particles/scavenge/manage_particles
   # Bunker
-  execute if score state GameStatus matches 8 run function mc:utility/particles/bunker/manage_particles
-  ### execute if score state GameStatus matches 8 run function mc:states/8_bunker/bunker/lights/manage_blackout
+  execute if score gameState GameStatus matches 8 run function mc:utility/particles/bunker/manage_particles
+  ### execute if score gameState GameStatus matches 8 run function mc:states/8_bunker/bunker/lights/manage_blackout
 
 # Player
   # Lock Slots
@@ -15,5 +15,5 @@
 
 # Expedition
   # Map Update
-  # execute if score state GameStatus matches 9 run function mc:states/9_expedition/place/items/update/update_items
-  # execute if score state GameStatus matches 9 as @e[type=slime,team=!Enemy,team=!Item,team=!ItemsLocked] run team join Enemy @s
+  # execute if score gameState GameStatus matches 9 run function mc:states/9_expedition/place/items/update/update_items
+  # execute if score gameState GameStatus matches 9 as @e[type=slime,team=!Enemy,team=!Item,team=!ItemsLocked] run team join Enemy @s

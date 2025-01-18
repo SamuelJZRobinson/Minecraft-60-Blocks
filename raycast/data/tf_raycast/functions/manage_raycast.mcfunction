@@ -3,9 +3,9 @@ execute as @s[scores={UseCarrotStick=1..}] run function tf_raycast:trigger
 
 # Start Raycast
   # Buker
-  execute if score state GameStatus matches 8 unless score @s GunCooldownTick matches 1.. at @s run function tf_raycast:bunker/start_raycast
+  execute if score gameState GameStatus matches 8 unless score @s GunCooldownTick matches 1.. at @s run function tf_raycast:bunker/start_raycast
   # Expedition
-  # execute if score state GameStatus matches 9 at @s[scores={GunType = 1..}] run function tf_raycast:expedition/start_raycast
+  # execute if score gameState GameStatus matches 9 at @s[scores={GunType = 1..}] run function tf_raycast:expedition/start_raycast
   execute at @s[scores={GunType=1..,UseCarrotStick=1..}] unless score @s GunCooldownTick matches 1.. run function tf_raycast:expedition/start_raycast
 
 # Play Reload Sound

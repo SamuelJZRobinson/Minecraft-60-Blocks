@@ -14,5 +14,5 @@ function mc:states/1_factory_reset/set/set_scores_items
 scoreboard players set music GameStatus 0
 
 # Set State
-scoreboard players set state GameStatus 4
+scoreboard players set gameState GameStatus 4
 schedule function mc:states/manage_states 1t replace

@@ -17,8 +17,8 @@ function mc:states/8_bunker/items/count/count_items
   scoreboard players set doPovExpedition Settings 1
   # Set Scores
     # Status
-    scoreboard players set started GameStatus 1
-    scoreboard players set state GameStatus 8
+    scoreboard players set isGameStarted GameStatus 1
+    scoreboard players set gameState GameStatus 8
     scoreboard players set music GameStatus 5
     scoreboard players set day GameStatus 1
 

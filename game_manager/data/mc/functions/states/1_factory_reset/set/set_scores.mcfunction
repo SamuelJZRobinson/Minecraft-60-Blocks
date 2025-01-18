@@ -10,7 +10,11 @@ function tf_raycast:load/set_scores_raycast
 # Gamemodes
 function mc:states/1_factory_reset/set/set_scores_gamemodes
 # Gameplay
-function mc:states/1_factory_reset/set/set_scores_items
+function mc:states/1_factory_reset/set/set_scores_items_house
+function mc:states/1_factory_reset/set/set_scores_items_bunker
+function mc:states/1_factory_reset/set/set_scores_items_bundles
+function mc:states/1_factory_reset/set/set_scores_items_expedition
+function mc:states/1_factory_reset/set/set_scores_expedition_odds
 function mc:states/1_factory_reset/set/set_scores_characters_status_levels
 function mc:states/1_factory_reset/set/set_scores_characters_status_odds
 function mc:states/1_factory_reset/set/set_scores_characters

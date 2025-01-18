@@ -1,5 +1,5 @@
 # Declare Started
-scoreboard players set started GameStatus 1
+scoreboard players set isGameStarted GameStatus 1
 
 # Clear Signs
 function mc:states/2_lobby/place/place_menu_signs

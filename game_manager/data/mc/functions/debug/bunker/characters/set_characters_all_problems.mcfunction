@@ -13,8 +13,8 @@ function cm:place_chest_menu
   
   # Set Scores
     # Status
-    scoreboard players set started GameStatus 1
-    scoreboard players set state GameStatus 8
+    scoreboard players set isGameStarted GameStatus 1
+    scoreboard players set gameState GameStatus 8
     scoreboard players set music GameStatus 5
     scoreboard players set day GameStatus 1
 

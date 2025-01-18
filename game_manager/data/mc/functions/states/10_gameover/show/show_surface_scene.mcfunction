@@ -44,5 +44,5 @@ title @a times 20 80 20
 schedule function mc:states/10_gameover/show/show_statistics 2s replace
 
 # Set State
-scoreboard players set state GameStatus 1
+scoreboard players set gameState GameStatus 1
 schedule function mc:states/manage_states 7s replace

@@ -40,5 +40,5 @@ execute if score doPovExpedition Settings matches 1 if score task AtomicDrill ma
 execute unless score task AtomicDrill matches 15..16 run scoreboard players set expeditionDeath AtomicDrill 0
 
 # Set State
-scoreboard players set state GameStatus 8
+scoreboard players set gameState GameStatus 8
 schedule function mc:states/manage_states 1t replace

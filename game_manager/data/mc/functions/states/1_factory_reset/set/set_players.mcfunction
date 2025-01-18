@@ -5,7 +5,6 @@ advancement revoke @a everything
 
 # Titles
 title @a clear
-title @a actionbar ""
 
 # Teams
 team join Lobby

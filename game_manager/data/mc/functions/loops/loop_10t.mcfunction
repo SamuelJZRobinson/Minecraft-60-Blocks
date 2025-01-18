@@ -1,13 +1,13 @@
 # Start
-execute if score started GameStatus matches 1 run function mc:loops/active_loop_10t
+execute if score isGameStarted GameStatus matches 1 run function mc:loops/active_loop_10t
 
 # Music
 execute unless score preMusic GameStatus = music GameStatus run function mc:utility/music/music_loop
 
 # Player
   # Gamemode
-  # execute if score started GameStatus matches 0 run gamemode adventure @a[team=Lobby,gamemode=!adventure]
-  # execute if score started GameStatus matches 1 run gamemode spectator @a[team=Lobby,gamemode=!spectator]
+  # execute if score isGameStarted GameStatus matches 0 run gamemode adventure @a[team=Lobby,gamemode=!adventure]
+  # execute if score isGameStarted GameStatus matches 1 run gamemode spectator @a[team=Lobby,gamemode=!spectator]
   # Team Validation
     # Lobby
     team join Lobby @a[team=!Lobby,team=!Player]

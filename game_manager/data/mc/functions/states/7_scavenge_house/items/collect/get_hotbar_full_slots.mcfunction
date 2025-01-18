@@ -16,4 +16,4 @@ execute store result score fullSlots GameStatus run clear @p[team=Player] minecr
   execute as @e[type=#mc:mob_collectable,team=ItemsLocked,tag=1Slot] at @s run data modify entity @s Invulnerable set value 1b
 
 # Title (Skip Atomic Drill Dialogue)
-execute unless score state GameStatus matches 5 if score fullSlots GameStatus matches 4 run title @p[team=Player] actionbar {"text":"Inventory full!","color":"red","bold":true}
+execute unless score gameState GameStatus matches 5 if score fullSlots GameStatus matches 4 run title @p[team=Player] actionbar {"text":"Inventory full!","color":"red","bold":true}

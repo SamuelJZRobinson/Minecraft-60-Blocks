@@ -1,21 +1,21 @@
-execute if score state GameStatus matches 5..7 as @e[type=armor_stand,tag=spin] at @s run tp @s ~ ~ ~ ~3 ~
+execute if score gameState GameStatus matches 5..7 as @e[type=armor_stand,tag=spin] at @s run tp @s ~ ~ ~ ~3 ~
 
 # Scavenge
   # Stop Movement
-  execute if score state GameStatus matches 4 as @p[team=Player] run function mc:utility/tp/tp_house
+  execute if score gameState GameStatus matches 4 as @p[team=Player] run function mc:utility/tp/tp_house
   # Collect Items
-  execute if score state GameStatus matches 5..7 run function mc:states/7_scavenge_house/items/collect/manage_collect
-  execute if score state GameStatus matches 9 run function mc:states/7_scavenge_house/items/collect/manage_collect
+  execute if score gameState GameStatus matches 5..7 run function mc:states/7_scavenge_house/items/collect/manage_collect
+  execute if score gameState GameStatus matches 9 run function mc:states/7_scavenge_house/items/collect/manage_collect
 
 # Gamemodes
   # Atomic Drill
   function mc:states/5_atomic_drill/task/manage_tasks
 
 # Chest Menu
-execute if score state GameStatus matches 8 as @p[team=Player] run function cm:manage_chest_menu
+execute if score gameState GameStatus matches 8 as @p[team=Player] run function cm:manage_chest_menu
 
 # Raycast
-execute if score state GameStatus matches 8..9 unless score gamemode Settings matches 3 as @p[team=Player] run function tf_raycast:manage_raycast
+execute if score gameState GameStatus matches 8..9 unless score gamemode Settings matches 3 as @p[team=Player] run function tf_raycast:manage_raycast
 
 # Character Death
-execute if score state GameStatus matches 9 as @p[team=Player,scores={PlayerDeaths=1..}] run function mc:timer/expedition/character_death
+execute if score gameState GameStatus matches 9 as @p[team=Player,scores={PlayerDeaths=1..}] run function mc:timer/expedition/character_death
