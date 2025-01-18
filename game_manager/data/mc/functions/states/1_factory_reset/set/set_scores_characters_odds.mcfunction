@@ -17,8 +17,6 @@ scoreboard objectives add CharactersOdds dummy {"bold":true,"color":"white","tex
     scoreboard players set CRAZY CharactersOdds 2
     scoreboard players set CRAZY_RAGE CharactersOdds 5
     scoreboard players set CRAZY_ESCAPE CharactersOdds 15
-    execute store result score DOLORES_CRAZY_ESCAPE CharactersOdds run function mc:utility/math/get_percentage_of_value_via_score {"percentage":120,"score":CRAZY_ESCAPE,"objective":CharactersOdds}
-    execute store result score MARY_CRAZY_ESCAPE CharactersOdds run function mc:utility/math/get_percentage_of_value_via_score {"percentage":80,"score":CRAZY_ESCAPE,"objective":CharactersOdds}
     # Fatigue
     scoreboard players set FATIGUE CharactersOdds 8
     # Injured
