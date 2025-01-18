@@ -19,3 +19,14 @@ scoreboard players set hasPadlock ItemsExpedition 0
 scoreboard players set hasRadio ItemsExpedition 0
 scoreboard players set hasSuitcase ItemsExpedition 0
 scoreboard players set hasBodyArmour ItemsExpedition 0
+
+# Load
+### What does this do?
+scoreboard players set loadItem ItemsExpedition 0
+# Character
+scoreboard players set deathChance ItemsExpedition 0
+# Loot
+scoreboard players set lootLeft ItemsExpedition 0
+scoreboard players set sustenanceCount ItemsExpedition 0
+scoreboard players set soupCount ItemsExpedition 0
+scoreboard players set waterCount ItemsExpedition 0
