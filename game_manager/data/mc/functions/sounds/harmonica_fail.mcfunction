@@ -1,0 +1,1 @@
+playsound minecraft:item.goat_horn.sound.4 record @a ~ ~ ~ 1 1 1

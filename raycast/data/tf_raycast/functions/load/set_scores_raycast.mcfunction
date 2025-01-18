@@ -1,7 +1,3 @@
-# Gun Type
-scoreboard objectives add GunType dummy {"bold":true,"color":"white","text":"Gun Type"}
-scoreboard players reset * GunType
-
 # Gun Cooldown
 scoreboard objectives add GunCooldownTick dummy {"bold":true,"color":"white","text":"Gun Cooldown Tick"}
 scoreboard players reset * GunCooldownTick
@@ -13,7 +9,7 @@ scoreboard players reset * UseCarrotStick
 # Raycast Range
 scoreboard objectives add tf_rc dummy {"bold":true,"color":"white","text":"tf_rc"}
 
-# Gun Damage
+# Gun Damage Data
 data remove storage minecraft:gundamage headDamage
 data remove storage minecraft:gundamage bodyDamage
 data remove storage minecraft:gundamage legDamage

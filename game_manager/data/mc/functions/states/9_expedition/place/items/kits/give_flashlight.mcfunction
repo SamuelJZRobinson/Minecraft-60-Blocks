@@ -1,1 +1,1 @@
-give @s saddle{display:{Name:'{"text":"Flashlight","bold":true}',Lore:['{"text":"Hold to use","color":"gray"}']},CustomModelData:8,itemId:7} 1
+give @s saddle{display:{Name:'{"text":"Flashlight","bold":true}',Lore:['{"text":"Hold to use","color":"gray"}']},CustomModelData:8,itemId:7,flashlight:1b} 1

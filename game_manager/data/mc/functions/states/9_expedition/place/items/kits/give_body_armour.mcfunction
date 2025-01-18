@@ -1,1 +1,1 @@
-give @s carrot_on_a_stick{display:{Name:'{"text":"Bulletproof Vest","bold":true}',Lore:['{"text":"Click to use","color":"gray"}']},CustomModelData:7,armour:1b,itemId:18} 1
+item replace entity @s armor.chest with leather_chestplate{display:{Name:'{"text":"Bulletproof Vest"}',color:1315860},Damage:56,CustomModelData:1,itemId:18,Enchantments:[{id:"minecraft:projectile_protection",lvl:6s},{id:"minecraft:binding_curse",lvl:1s}]} 1

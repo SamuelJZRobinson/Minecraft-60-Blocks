@@ -1,5 +1,5 @@
 # Set Cooldown
-scoreboard players set @s GunCooldownTick 25
+scoreboard players set @s GunCooldownTick 18
 
 # Set Damage
 data modify storage minecraft:gundamage headDamage set value 20

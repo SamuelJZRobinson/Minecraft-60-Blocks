@@ -1,6 +1,5 @@
 # Notes
   # Called from tf_raycast:raycast upon any targets whose hitbox collides with the raycast
-  # Setting the max range according to the GunType will apply damage multiple times
 
 # Set Scores
   # Items

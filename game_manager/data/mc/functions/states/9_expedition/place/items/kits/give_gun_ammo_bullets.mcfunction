@@ -1,1 +1,0 @@
-give @p iron_nugget{display:{Name:'{"text":"Bullet","bold":true}'},CustomModelData:1,gunAmmo:1b} 8

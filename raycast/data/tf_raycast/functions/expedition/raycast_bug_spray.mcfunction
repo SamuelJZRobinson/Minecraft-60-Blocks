@@ -10,7 +10,7 @@ execute as @e[tag=!raycasting,type=!#tf_raycast:not_mob,dx=0] positioned ~-0.99 
 scoreboard players add .distance tf_rc 1
 
 # Make raycast visible
-particle dust 0.827 0.827 0.827 0.25 ~ ~ ~ 0 0 0 0 0 normal
+function tf_raycast:utility/particles/expedition/bug_spray_tracer
 
 # Repeat the raycast if certain conditions are met (distance is float with scale 10)
 # Parameters:

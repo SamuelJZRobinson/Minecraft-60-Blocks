@@ -13,7 +13,5 @@
   # Game Menu
   execute as @p[team=Player,nbt=!{Inventory:[{id:"minecraft:written_book",Slot:8b,Count:1b,tag:{gameMenu:1b}}]}] run function mc:utility/inventory/give_game_menu
 
-# Expedition
-  # Map Update
-  # execute if score gameState GameStatus matches 9 run function mc:states/9_expedition/place/items/update/update_items
-  # execute if score gameState GameStatus matches 9 as @e[type=slime,team=!Enemy,team=!Item,team=!ItemsLocked] run team join Enemy @s
+# Update Expedition Items
+execute if score gameState GameStatus matches 9 run function mc:states/9_expedition/place/items/update/update_items

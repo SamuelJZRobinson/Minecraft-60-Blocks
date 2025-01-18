@@ -1,18 +1,15 @@
-# Trigger Item
-execute as @s[scores={UseCarrotStick=1..}] run function tf_raycast:trigger
+# Open Medkit
+execute as @s[scores={UseCarrotStick=1..},nbt={SelectedItem:{tag:{medkit:1b}}}] at @s run function mc:states/9_expedition/place/items/open/open_medkit
 
 # Start Raycast
   # Buker
   execute if score gameState GameStatus matches 8 unless score @s GunCooldownTick matches 1.. at @s run function tf_raycast:bunker/start_raycast
   # Expedition
-  # execute if score gameState GameStatus matches 9 at @s[scores={GunType = 1..}] run function tf_raycast:expedition/start_raycast
-  execute at @s[scores={GunType=1..,UseCarrotStick=1..}] unless score @s GunCooldownTick matches 1.. run function tf_raycast:expedition/start_raycast
+  execute if score gameState GameStatus matches 9 unless score @s GunCooldownTick matches 1.. at @s[scores={UseCarrotStick=1..}] run function tf_raycast:expedition/start_raycast
 
-# Play Reload Sound
-execute as @s[scores={GunType=1,GunCooldownTick=6}] run playsound minecraft:block.iron_trapdoor.open player @s ~ ~ ~ 1 1.2 1
-execute as @s[scores={GunType=1,GunCooldownTick=2}] run playsound minecraft:block.iron_trapdoor.open player @s ~ ~ ~ 1 1.7 1
-
-# Adjust Scores
+# Decrement Cooldown
 scoreboard players remove @a[scores={GunCooldownTick=1..}] GunCooldownTick 1
+
+# Reset Scores
 scoreboard players reset @a[scores={GunCooldownTick=..0}] GunCooldownTick
 scoreboard players reset @a[scores={UseCarrotStick=1..}] UseCarrotStick

@@ -1,0 +1,1 @@
+give @s minecraft:bone_meal{display:{Name:'{"text":"Harmonica Ammo","bold":true}'},harmonicaAmmo:1b} 1
