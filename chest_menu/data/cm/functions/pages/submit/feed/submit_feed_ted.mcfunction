@@ -1,8 +1,8 @@
 # Give Supplies
   # Soup
-  execute if score tedGiveSoup MenuFeed matches 1 run scoreboard players operation soup TedStatus = HUNGER_AMOUNT_MAX StatusLevels
+  execute if score tedGiveSoup MenuFeed matches 1 run scoreboard players operation soup TedStatus = HUNGER_AMOUNT_MAX CharactersLevels
   # Water
-  execute if score tedGiveWater MenuFeed matches 1 run scoreboard players operation water TedStatus = THIRST_AMOUNT_MAX StatusLevels
+  execute if score tedGiveWater MenuFeed matches 1 run scoreboard players operation water TedStatus = THIRST_AMOUNT_MAX CharactersLevels
   # Medkit
   execute if score giveMedkit MenuFeed matches 3 run scoreboard players set isSick TedStatus 0
   execute if score giveMedkit MenuFeed matches 3 run scoreboard players set sickDays TedStatus 0

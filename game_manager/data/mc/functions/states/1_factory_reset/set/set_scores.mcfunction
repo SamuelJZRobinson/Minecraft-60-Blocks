@@ -16,8 +16,8 @@ function mc:states/1_factory_reset/set/set_scores_items_bunker
 function mc:states/1_factory_reset/set/set_scores_items_bundles
 function mc:states/1_factory_reset/set/set_scores_items_expedition
 function mc:states/1_factory_reset/set/set_scores_expedition_odds
-function mc:states/1_factory_reset/set/set_scores_characters_status_levels
-function mc:states/1_factory_reset/set/set_scores_characters_status_odds
+function mc:states/1_factory_reset/set/set_scores_characters_levels
+function mc:states/1_factory_reset/set/set_scores_characters_odds
 function mc:states/1_factory_reset/set/set_scores_characters
 function mc:states/1_factory_reset/set/set_scores_characters_count
 function mc:states/1_factory_reset/set/set_scores_expedition

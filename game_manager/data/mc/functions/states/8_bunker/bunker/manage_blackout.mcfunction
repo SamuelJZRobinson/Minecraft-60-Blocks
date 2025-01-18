@@ -1,2 +1,2 @@
-execute store result score output Math run function mc:utility/math/get_random_value_via_amount_score {"x":1,"score":BUNKER_BLACKOUT,"objective":StatusOdds}
+execute store result score output Math run function mc:utility/math/get_random_value_via_amount_score {"x":1,"score":BUNKER_BLACKOUT,"objective":CharactersOdds}
 execute if score output Math matches 1 run function mc:states/8_bunker/bunker/set/set_blackout_break

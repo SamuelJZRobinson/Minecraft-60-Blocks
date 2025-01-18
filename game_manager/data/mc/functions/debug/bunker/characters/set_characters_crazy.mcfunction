@@ -27,22 +27,22 @@ function mc:states/8_bunker/items/count/count_items
   scoreboard players set alive TedStatus 1
   scoreboard players set soup TedStatus 100
   scoreboard players set water TedStatus 100
-  scoreboard players operation sanity TedStatus = SANITY_AMOUNT_MIN StatusLevels
+  scoreboard players operation sanity TedStatus = SANITY_AMOUNT_MIN CharactersLevels
   # Dolores
   scoreboard players set alive DoloresStatus 1
   scoreboard players set soup DoloresStatus 100
   scoreboard players set water DoloresStatus 100
-  scoreboard players operation sanity DoloresStatus = SANITY_AMOUNT_MIN StatusLevels
+  scoreboard players operation sanity DoloresStatus = SANITY_AMOUNT_MIN CharactersLevels
   # Mary
   scoreboard players set alive MaryStatus 1
   scoreboard players set soup MaryStatus 100
   scoreboard players set water MaryStatus 100
-  scoreboard players operation sanity MaryStatus = SANITY_AMOUNT_MIN StatusLevels
+  scoreboard players operation sanity MaryStatus = SANITY_AMOUNT_MIN CharactersLevels
   # Timmy
   scoreboard players set alive TimmyStatus 1
   scoreboard players set soup TimmyStatus 100
   scoreboard players set water TimmyStatus 100
-  scoreboard players operation sanity TimmyStatus = SANITY_AMOUNT_MIN StatusLevels
+  scoreboard players operation sanity TimmyStatus = SANITY_AMOUNT_MIN CharactersLevels
 
 # Update Bunker
 function mc:states/8_bunker/manage_cosmetics

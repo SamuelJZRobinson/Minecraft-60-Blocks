@@ -15,7 +15,7 @@ function cm:place_chest_menu
     scoreboard players set isGameStarted GameStatus 1
     scoreboard players set gameState GameStatus 8
     scoreboard players set music GameStatus 5
-    scoreboard players operation day GameStatus = FATIGUE_DAYS_START StatusLevels
+    scoreboard players operation day GameStatus = FATIGUE_DAYS_START CharactersLevels
 
 # Characters
   # Ted

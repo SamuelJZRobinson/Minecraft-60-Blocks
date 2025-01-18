@@ -49,17 +49,17 @@ data modify block ~ ~ ~ Items insert 0 value {Slot:0b,id:"minecraft:saddle",Coun
   # Fatigued
   execute if score isFatigued DoloresStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Fatigued","color":"gold"}'
   # Soup
-  execute if score soup DoloresStatus > HUNGER_AMOUNT_CRITICAL StatusLevels if score soup DoloresStatus <= HUNGER_AMOUNT_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Hungry","color":"gold"}'
-  execute if score soup DoloresStatus <= HUNGER_AMOUNT_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Starvation","color":"gold"}'
+  execute if score soup DoloresStatus > HUNGER_AMOUNT_CRITICAL CharactersLevels if score soup DoloresStatus <= HUNGER_AMOUNT_DANGER CharactersLevels run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Hungry","color":"gold"}'
+  execute if score soup DoloresStatus <= HUNGER_AMOUNT_CRITICAL CharactersLevels run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Starvation","color":"gold"}'
   # Injured
-  execute if score isInjured DoloresStatus matches 1 if score injuredDays DoloresStatus < INJURED_DAYS_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Hurt","color":"gold"}'
-  execute if score isInjured DoloresStatus matches 1 if score injuredDays DoloresStatus >= INJURED_DAYS_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Agony","color":"gold"}'
+  execute if score isInjured DoloresStatus matches 1 if score injuredDays DoloresStatus < INJURED_DAYS_DANGER CharactersLevels run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Hurt","color":"gold"}'
+  execute if score isInjured DoloresStatus matches 1 if score injuredDays DoloresStatus >= INJURED_DAYS_DANGER CharactersLevels run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Agony","color":"gold"}'
   # Crazy
   execute if score isCrazy DoloresStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Crazy","color":"gold"}'
   # Sick
   execute if score isSick DoloresStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Sick","color":"gold"}'
   # Water
-  execute if score water DoloresStatus > THIRST_AMOUNT_CRITICAL StatusLevels if score water DoloresStatus <= THIRST_AMOUNT_DANGER StatusLevels run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Thirsty","color":"gold"}'
-  execute if score water DoloresStatus <= THIRST_AMOUNT_CRITICAL StatusLevels run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Dehydration","color":"gold"}'
+  execute if score water DoloresStatus > THIRST_AMOUNT_CRITICAL CharactersLevels if score water DoloresStatus <= THIRST_AMOUNT_DANGER CharactersLevels run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Thirsty","color":"gold"}'
+  execute if score water DoloresStatus <= THIRST_AMOUNT_CRITICAL CharactersLevels run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Dehydration","color":"gold"}'
   # Tired
   execute if score isTired DoloresStatus matches 1.. run data modify block ~ ~ ~ Items[{Slot:0b}].tag.display.Lore append value '{"text":"Tired","color":"gold"}'

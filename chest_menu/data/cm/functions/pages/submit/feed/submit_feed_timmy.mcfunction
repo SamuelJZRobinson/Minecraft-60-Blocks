@@ -1,8 +1,8 @@
 # Give Supplies
   # Soup
-  execute if score timmyGiveSoup MenuFeed matches 1 run scoreboard players operation soup TimmyStatus = HUNGER_AMOUNT_MAX StatusLevels
+  execute if score timmyGiveSoup MenuFeed matches 1 run scoreboard players operation soup TimmyStatus = HUNGER_AMOUNT_MAX CharactersLevels
   # Water
-  execute if score timmyGiveWater MenuFeed matches 1 run scoreboard players operation water TimmyStatus = THIRST_AMOUNT_MAX StatusLevels
+  execute if score timmyGiveWater MenuFeed matches 1 run scoreboard players operation water TimmyStatus = THIRST_AMOUNT_MAX CharactersLevels
   # Medkit
   execute if score giveMedkit MenuFeed matches 4 run scoreboard players set isSick TimmyStatus 0
   execute if score giveMedkit MenuFeed matches 4 run scoreboard players set sickDays TimmyStatus 0

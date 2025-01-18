@@ -15,3 +15,6 @@ scoreboard players set ending GameStatus 0
 scoreboard players set isEvil GameStatus 0
 # Raycast
 scoreboard players set bunkerLook GameStatus 0
+# Difficulty (%)
+scoreboard players set EASY_MODIFIER GameStatus 125
+scoreboard players set HARD_MODIFIER GameStatus 75

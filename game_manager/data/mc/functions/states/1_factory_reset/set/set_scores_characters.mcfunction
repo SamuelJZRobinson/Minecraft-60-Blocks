@@ -5,11 +5,11 @@
   scoreboard players set build TedStatus 0
   scoreboard players set alive TedStatus 0
   # Sustenance
-  scoreboard players operation soup TedStatus = HUNGER_AMOUNT_MAX StatusLevels
-  scoreboard players operation water TedStatus = THIRST_AMOUNT_MAX StatusLevels
+  scoreboard players operation soup TedStatus = HUNGER_AMOUNT_MAX CharactersLevels
+  scoreboard players operation water TedStatus = THIRST_AMOUNT_MAX CharactersLevels
   # Crazy
   scoreboard players set crazyDays TedStatus 0
-  scoreboard players operation sanity TedStatus = SANITY_AMOUNT_MAX StatusLevels
+  scoreboard players operation sanity TedStatus = SANITY_AMOUNT_MAX CharactersLevels
   scoreboard players set isCrazy TedStatus 0
   scoreboard players set isCrazyRage TedStatus 0
   scoreboard players set isCrazyEscaped TedStatus 0
@@ -31,11 +31,11 @@
   scoreboard players set build DoloresStatus 0
   scoreboard players set alive DoloresStatus 0
   # Sustenance
-  scoreboard players operation soup DoloresStatus = HUNGER_AMOUNT_MAX StatusLevels
-  scoreboard players operation water DoloresStatus = THIRST_AMOUNT_MAX StatusLevels
+  scoreboard players operation soup DoloresStatus = HUNGER_AMOUNT_MAX CharactersLevels
+  scoreboard players operation water DoloresStatus = THIRST_AMOUNT_MAX CharactersLevels
   # Crazy
   scoreboard players set crazyDays DoloresStatus 0
-  scoreboard players operation sanity DoloresStatus = SANITY_AMOUNT_MAX StatusLevels
+  scoreboard players operation sanity DoloresStatus = SANITY_AMOUNT_MAX CharactersLevels
   scoreboard players set isCrazy DoloresStatus 0
   scoreboard players set isCrazyRage DoloresStatus 0
   scoreboard players set isCrazyEscaped DoloresStatus 0
@@ -57,11 +57,11 @@
   scoreboard players set build MaryStatus 0
   scoreboard players set alive MaryStatus 0
   # Sustenance
-  scoreboard players operation soup MaryStatus = HUNGER_AMOUNT_MAX StatusLevels
-  scoreboard players operation water MaryStatus = THIRST_AMOUNT_MAX StatusLevels
+  scoreboard players operation soup MaryStatus = HUNGER_AMOUNT_MAX CharactersLevels
+  scoreboard players operation water MaryStatus = THIRST_AMOUNT_MAX CharactersLevels
   # Crazy
   scoreboard players set crazyDays MaryStatus 0
-  scoreboard players operation sanity MaryStatus = SANITY_AMOUNT_MAX StatusLevels
+  scoreboard players operation sanity MaryStatus = SANITY_AMOUNT_MAX CharactersLevels
   scoreboard players set isCrazy MaryStatus 0
   scoreboard players set isCrazyRage MaryStatus 0
   scoreboard players set isCrazyEscaped MaryStatus 0
@@ -85,11 +85,11 @@
   scoreboard players set build TimmyStatus 0
   scoreboard players set alive TimmyStatus 0
   # Sustenance
-  scoreboard players operation soup TimmyStatus = HUNGER_AMOUNT_MAX StatusLevels
-  scoreboard players operation water TimmyStatus = THIRST_AMOUNT_MAX StatusLevels
+  scoreboard players operation soup TimmyStatus = HUNGER_AMOUNT_MAX CharactersLevels
+  scoreboard players operation water TimmyStatus = THIRST_AMOUNT_MAX CharactersLevels
   # Crazy
   scoreboard players set crazyDays TimmyStatus 0
-  scoreboard players operation sanity TimmyStatus = SANITY_AMOUNT_MAX StatusLevels
+  scoreboard players operation sanity TimmyStatus = SANITY_AMOUNT_MAX CharactersLevels
   scoreboard players set isCrazy TimmyStatus 0
   scoreboard players set isCrazyRage TimmyStatus 0
   scoreboard players set isCrazyEscaped TimmyStatus 0
