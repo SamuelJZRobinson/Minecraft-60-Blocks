@@ -6,7 +6,7 @@
 #     Edit not_mob.json in tags/entities to change which entities will not be targetted
 #     Change the "positioned" offsets to change projectile size
 #       - If > 1 block, just use one dx detection
-execute as @e[tag=!raycasting,type=!#tf_raycast:not_mob,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[type=#tf_raycast:bunker_detect,tag=bunkerHitbox,dx=0] positioned ~0.99 ~0.99 ~0.99 run function tf_raycast:bunker/collide_bunker
+execute as @e[tag=!raycasting,type=!#tf_raycast:not_mob,dx=0] positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[type=#tf_raycast:entities_bunker,tag=bunkerHitbox,dx=0] positioned ~0.99 ~0.99 ~0.99 run function tf_raycast:bunker/collide_bunker
 scoreboard players add .distance tf_rc 1
 
 # Make raycast visible
@@ -16,6 +16,6 @@ scoreboard players add .distance tf_rc 1
 # Parameters:
 #    (score after "matches") * (accuracy increment) = range
 #    The "positioned" value specifies the precision
-#    Edit raycast_pass.json in tags/blocks to change which blocks the raycast ignores
+#    Edit blocks_raycast_pass.json in tags/blocks to change which blocks the raycast ignores
 #    "rotated" controls arc/curve of raycast path
-execute if score .distance tf_rc matches ..90 positioned ^ ^ ^0.1 rotated ~ ~ if block ~ ~ ~ #tf_raycast:raycast_pass run function tf_raycast:bunker/raycast_bunker
+execute if score .distance tf_rc matches ..90 positioned ^ ^ ^0.1 rotated ~ ~ if block ~ ~ ~ #tf_raycast:blocks_raycast_pass run function tf_raycast:bunker/raycast_bunker

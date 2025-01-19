@@ -2,7 +2,7 @@
   # Called from tf_raycast:raycast upon any targets whose hitbox collides with the raycast
   # bodyshot starts from the minimum headshot y level and uses the formula: legshot maxY - headshot minY = bodyshot maxY
 
-execute if entity @s[type=!#tf_raycast:other_hitbox] run function tf_raycast:expedition/hitboxes/hitbox_player with storage minecraft:gundamage
+execute if entity @s[type=!#tf_raycast:mobs_normal] run function tf_raycast:expedition/hitboxes/hitbox_player with storage minecraft:gundamage
 execute if entity @s[type=minecraft:spider] run function tf_raycast:expedition/hitboxes/hitbox_spider with storage minecraft:gundamage
 execute if entity @s[type=minecraft:cave_spider] run function tf_raycast:expedition/hitboxes/hitbox_cave_spider with storage minecraft:gundamage
 execute if entity @s[type=minecraft:endermite] run function tf_raycast:expedition/hitboxes/hitbox_endermite with storage minecraft:gundamage

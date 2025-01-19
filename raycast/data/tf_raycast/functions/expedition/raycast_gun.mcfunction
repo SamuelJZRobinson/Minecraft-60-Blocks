@@ -16,6 +16,6 @@ function tf_raycast:utility/particles/expedition/gun_tracer
 # Parameters:
 #    (score after "matches") * (accuracy increment) = range
 #    The "positioned" value specifies the precision
-#    Edit raycast_pass.json in tags/blocks to change which blocks the raycast ignores
+#    Edit blocks_raycast_pass.json in tags/blocks to change which blocks the raycast ignores
 #    "rotated" controls arc/curve of raycast path
-execute if score .distance tf_rc matches ..1280 positioned ^ ^ ^0.1 rotated ~ ~ if block ~ ~ ~ #tf_raycast:raycast_pass run function tf_raycast:expedition/raycast_gun
+execute if score .distance tf_rc matches ..1280 positioned ^ ^ ^0.1 rotated ~ ~ if block ~ ~ ~ #tf_raycast:blocks_raycast_pass run function tf_raycast:expedition/raycast_gun
