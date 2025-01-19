@@ -10,6 +10,8 @@ function mc:states/1_factory_reset/set/set_scores_settings
 # Gameplay
   # Gamemodes
   function mc:states/1_factory_reset/set/set_scores_gamemodes
+  # Bunker
+  function mc:states/1_factory_reset/set/set_scores_bunker_odds
   # Items
   function mc:states/1_factory_reset/set/set_scores_items_house
   function mc:states/1_factory_reset/set/set_scores_items_bunker

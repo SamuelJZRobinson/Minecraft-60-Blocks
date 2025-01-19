@@ -1,1 +1,1 @@
-playsound minecraft:entity.bee.sting block @a 0 59 31 0.75 2 0
+playsound minecraft:entity.bee.sting block @a 0 59 31 0.25 2 0.25
