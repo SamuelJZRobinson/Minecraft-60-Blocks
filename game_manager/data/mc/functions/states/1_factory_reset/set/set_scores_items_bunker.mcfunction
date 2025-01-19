@@ -26,3 +26,7 @@ scoreboard players set watersInt ItemsBunker 0
 scoreboard players set watersFloat ItemsBunker 0
 scoreboard players set soupsInt ItemsBunker 0
 scoreboard players set soupsFloat ItemsBunker 0
+data remove storage minecraft:itemsrealcount soupsInt
+data remove storage minecraft:itemsrealcount soupsFloat
+data remove storage minecraft:itemsrealcount watersInt
+data remove storage minecraft:itemsrealcount watersFloat
