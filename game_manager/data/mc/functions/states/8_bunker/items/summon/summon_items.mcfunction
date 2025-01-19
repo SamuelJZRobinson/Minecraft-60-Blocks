@@ -59,13 +59,13 @@
   execute if score radio ItemsBunker matches 0 run kill @e[tag=radio]
   execute if score radio ItemsBunker matches -1 run function mc:states/8_bunker/items/summon/summon_radio_broken
   # Soup
-  function mc:states/8_bunker/items/summon/summon_soup
+  function mc:states/8_bunker/items/summon/summon_soup with storage minecraft:itemsrealcount
   # Suitcase
   execute if score suitcase ItemsBunker matches 3 run function mc:states/8_bunker/items/summon/summon_suitcase
   execute if score suitcase ItemsBunker matches 0 run kill @e[tag=suitcase]
   execute if score suitcase ItemsBunker matches -1 run function mc:states/8_bunker/items/summon/summon_suitcase_broken
   # Water
-  function mc:states/8_bunker/items/summon/summon_water
+  function mc:states/8_bunker/items/summon/summon_water with storage minecraft:itemsrealcount
 
 # Custom Items
   # Body Armour
