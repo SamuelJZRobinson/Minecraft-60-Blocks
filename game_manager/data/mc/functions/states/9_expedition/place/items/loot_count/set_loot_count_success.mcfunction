@@ -6,8 +6,8 @@ function mc:states/9_expedition/place/items/loot_count/set_loot_count_base
   function mc:utility/math/get_random_value_via_amount_score {"x":1,"score":SUPPLY_DROP,"objective":ExpeditionOdds}
   execute if score output Math matches 1 run scoreboard players add lootLeft ItemsExpedition 4
 
-# Non-Food Count
-function mc:states/9_expedition/place/items/loot_count/set_loot_count_non_food
+# Item Count
+function mc:states/9_expedition/place/items/loot_count/set_loot_count_items
 
 # Food Count For Remainder
 function mc:states/9_expedition/place/items/loot_count/set_loot_count_food
