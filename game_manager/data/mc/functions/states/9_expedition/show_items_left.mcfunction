@@ -1,0 +1,2 @@
+execute store result score itemsLeft ItemsExpedition run team list Items
+title @a actionbar [{"score":{"name":"itemsLeft","objective":"ItemsExpedition"},"color":"red"},{"text":" items left","color":"white"}]

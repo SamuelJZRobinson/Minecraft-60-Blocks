@@ -22,6 +22,7 @@ function mc:states/1_factory_reset/set/set_scores_settings
   function mc:states/1_factory_reset/set/set_scores_characters_odds
   function mc:states/1_factory_reset/set/set_scores_characters
   function mc:states/1_factory_reset/set/set_scores_characters_count
+  function mc:states/1_factory_reset/set/set_scores_characters_expedition
   # Expedition
   function mc:states/1_factory_reset/set/set_scores_expedition_odds
   function mc:states/1_factory_reset/set/set_scores_mobs_expedition

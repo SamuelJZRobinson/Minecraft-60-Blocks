@@ -7,3 +7,7 @@ scoreboard objectives add ExpeditionOdds dummy {"bold":true,"color":"white","tex
 scoreboard players set SUPPLY_DROP ExpeditionOdds 8
 # No Loot
 scoreboard players set NO_LOOT ExpeditionOdds 14
+# Character Death Chance (%)
+scoreboard players set DEATH_CHANCE_LEVEL_1 ExpeditionOdds 5
+scoreboard players set DEATH_CHANCE_LEVEL_2 ExpeditionOdds 10
+scoreboard players set DEATH_CHANCE_BANDIT ExpeditionOdds 30

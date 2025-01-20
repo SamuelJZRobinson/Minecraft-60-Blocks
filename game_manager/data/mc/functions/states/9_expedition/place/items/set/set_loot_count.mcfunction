@@ -14,5 +14,4 @@
   function mc:states/9_expedition/place/items/set/set_loot_count_supply_drop
 
 # Set Stage
-scoreboard players add step ItemsExpedition 1
-schedule function mc:states/9_expedition/place/manage_expedition 1t replace
+schedule function mc:states/9_expedition/place/inc_step 1t replace

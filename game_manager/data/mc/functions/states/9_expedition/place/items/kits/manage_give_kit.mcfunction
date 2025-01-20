@@ -6,7 +6,7 @@ execute if score hasCards ItemsExpedition matches 1 run function mc:states/9_exp
 execute if score hasCheckers ItemsExpedition matches 1 run function mc:states/9_expedition/place/items/kits/give_checkers
 execute if score hasFlashlight ItemsExpedition matches 1 run function mc:states/9_expedition/place/items/kits/give_flashlight
 execute if score hasGasMask ItemsExpedition matches 1 run function mc:states/9_expedition/place/items/kits/give_gas_mask
-execute if score hasHarmonica ItemsExpedition matches 1 run function mc:states/9_expedition/place/items/kits/give_harmonnica
+execute if score hasHarmonica ItemsExpedition matches 1 run function mc:states/9_expedition/place/items/kits/give_harmonica
 execute if score hasMap ItemsExpedition matches 1 run function mc:states/9_expedition/place/items/kits/give_map
 execute if score hasPadlock ItemsExpedition matches 1 run function mc:states/9_expedition/place/items/kits/give_padlock
 execute if score hasRadio ItemsExpedition matches 1 run function mc:states/9_expedition/place/items/kits/give_radio
@@ -37,3 +37,6 @@ scoreboard players set hasGun ItemsExpedition 0
 scoreboard players set hasMedkit ItemsExpedition 0
 scoreboard players set hasSuitcase ItemsExpedition 0
 scoreboard players set hasBodyArmour ItemsExpedition 0
+
+# Proceed
+schedule function mc:states/9_expedition/place/inc_step 1t replace

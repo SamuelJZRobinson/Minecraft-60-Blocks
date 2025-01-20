@@ -5,5 +5,4 @@ execute store result score output Math run function mc:utility/math/get_random_v
   # No Items
     # Do Nothing
   # Have Items
-  execute unless score output Math matches 1 run scoreboard players add step ItemsExpedition 1
-  execute unless score output Math matches 1 run schedule function mc:states/9_expedition/place/manage_expedition 1t replace
+  schedule function mc:states/9_expedition/place/inc_step 1t replace

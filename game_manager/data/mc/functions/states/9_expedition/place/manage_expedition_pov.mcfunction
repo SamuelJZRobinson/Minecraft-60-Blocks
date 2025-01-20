@@ -8,3 +8,5 @@ execute if score step ItemsExpedition matches 11 run function mc:states/9_expedi
 execute if score step ItemsExpedition matches 12 run function mc:states/9_expedition/place/items/spread/manage_spread_items
 # Gear
 execute if score step ItemsExpedition matches 13 run function mc:states/9_expedition/place/items/kits/manage_give_kit
+# Start
+execute if score step ItemsExpedition matches 14 run function mc:states/9_expedition/place/start_pov_expedition
