@@ -26,7 +26,6 @@
 
 # Declare New Highscore
 execute if score newHighscore Highscores matches 1 run tellraw @p[team=Player] {"text":"New Highscore!","bold":true,"color":"yellow"}
-execute if score newHighscore Highscores matches 1 at @p[team=Player] run summon firework_rocket ^ ^2 ^1 {LifeTime:0,FireworksItem:{id:"firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Type:0,Flicker:1,Colors:[I;14602026]}],Flight:1}}}}
 
 # Set Scores
 scoreboard players set newHighscore Highscores 0
