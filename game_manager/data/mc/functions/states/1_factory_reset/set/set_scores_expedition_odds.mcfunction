@@ -5,7 +5,7 @@
 scoreboard objectives add ExpeditionOdds dummy {"bold":true,"color":"white","text":"Expedition Odds"}
 # Items
   # Supply Drop
-  scoreboard players set SUPPLY_DROP ExpeditionOdds 8
+  scoreboard players set SUPPLY_DROP ExpeditionOdds 10
   # No Loot
   scoreboard players set NO_LOOT ExpeditionOdds 14
   # Item Break

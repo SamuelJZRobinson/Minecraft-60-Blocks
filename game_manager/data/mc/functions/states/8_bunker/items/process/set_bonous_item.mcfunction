@@ -1,4 +1,4 @@
-# Count Array Size
+# Count Array Length
 execute store result score randomItemCount ItemsBundles run data get storage minecraft:itemsprocess randomItemIds
 # One Array Item
 execute if score randomItemCount ItemsBundles matches 1 run data modify storage minecraft:itemsprocess suitcaseGainedItemIds append from storage minecraft:itemsprocess randomItemIds[0]

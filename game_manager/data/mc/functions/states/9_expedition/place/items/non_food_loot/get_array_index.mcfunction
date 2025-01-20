@@ -1,0 +1,2 @@
+$data modify storage minecraft:itemsprocess expeditionGainedItemIds append from storage minecraft:itemsprocess randomItemIds[$(output)]
+$data remove storage minecraft:itemsprocess randomItemIds[$(output)]

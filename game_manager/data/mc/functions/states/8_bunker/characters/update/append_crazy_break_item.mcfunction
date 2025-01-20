@@ -1,4 +1,4 @@
-# Second Count
+# Count Array Length
 execute store result score randomItemCount ItemsBundles run data get storage minecraft:itemsprocess randomItemIds
 
 # One Array Item
