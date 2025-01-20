@@ -6,6 +6,7 @@ execute if score step ItemsExpedition matches 1 run function mc:states/9_expedit
 # function mc:states/9_expedition/place/items/item_break/check_item_break
 # Loot
 execute if score step ItemsExpedition matches 2 run function mc:states/9_expedition/place/items/loot_count/manage_loot_count
-execute if score step ItemsExpedition matches 3 run function mc:states/9_expedition/place/items/non_food_loot/manage_non_food_loot
+execute if score step ItemsExpedition matches 3 run function mc:states/9_expedition/place/items/non_food_loot/manage_loot
+execute if score step ItemsExpedition matches 4 run function mc:states/9_expedition/place/items/food_loot/manage_loot
 # POV Extra Steps
 execute if score doPovExpedition Settings matches 1 run function mc:states/9_expedition/place/manage_expedition_pov
