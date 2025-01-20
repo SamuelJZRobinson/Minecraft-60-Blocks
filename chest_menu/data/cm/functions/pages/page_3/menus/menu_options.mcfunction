@@ -1,0 +1,2 @@
+execute if score totalOptions MenuEvent matches 2 run function cm:pages/page_3/menus/menu_options_two
+execute if score totalOptions MenuEvent matches 3 run function cm:pages/page_3/menus/menu_options_three

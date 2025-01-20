@@ -66,4 +66,4 @@ scoreboard players set expeditionDuration MenuExpedition 0
 scoreboard objectives add MenuEvent dummy {"bold":true,"color":"white","text":"Menu Event"}
 scoreboard players set event MenuEvent 0
 scoreboard players set choice MenuEvent 0
-scoreboard players set submit MenuEvent 0
+scoreboard players set totalOptions MenuEvent 0

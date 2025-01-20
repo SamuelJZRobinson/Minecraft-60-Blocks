@@ -1,6 +1,9 @@
 # Event Selection
 function cm:pages/page_3/menus/menu_events
 
+# Event Generic Options
+function cm:pages/page_3/menus/menu_options
+
 # Page Buttons
   # Back
   data modify block ~ ~ ~ Items insert 0 value {Slot:18b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:29,isMenu:1b,page:3,selection:2,display:{Name:'{"text":"Goto expedition menu","color":"gray","bold":true}'}}}

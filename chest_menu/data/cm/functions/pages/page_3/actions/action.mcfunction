@@ -2,7 +2,7 @@
   # Page 3 is event menu
 
 # Debounce Menu
-scoreboard players set bool chest_menu 1
+scoreboard players set bool MenuMain 1
 
 # Event List
   # Managed by pages/page_3/story/manage_events

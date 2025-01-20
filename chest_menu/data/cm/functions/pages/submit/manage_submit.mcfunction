@@ -11,17 +11,7 @@ function cm:pages/submit/feed/manage_feed
 function cm:pages/submit/expedition/manage_expedition
 
 # Events
-  # Allow Event Outcome
-  scoreboard players set submit MenuEvent 1
-  # Give New Event
-  clear @p[team=Player] minecraft:written_book{dailyStory:1b}
-  execute if score event MenuEvent matches 1.. as @p[team=Player] run function cm:pages/page_3/menus/menu_events
-  # Reset Scores
-  scoreboard players set event MenuEvent 0
-  scoreboard players set choice MenuEvent 0
-
-# Reset Scores
-scoreboard players set submit MenuEvent 0
+function cm:pages/submit/events/manage_events
 
 # Declare New Day
 function mc:states/8_bunker/manage_day
