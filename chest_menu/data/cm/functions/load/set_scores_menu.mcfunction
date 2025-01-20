@@ -67,4 +67,3 @@ scoreboard objectives add MenuEvent dummy {"bold":true,"color":"white","text":"M
 scoreboard players set event MenuEvent 0
 scoreboard players set choice MenuEvent 0
 scoreboard players set submit MenuEvent 0
-scoreboard players set mutateRequest MenuEvent 0

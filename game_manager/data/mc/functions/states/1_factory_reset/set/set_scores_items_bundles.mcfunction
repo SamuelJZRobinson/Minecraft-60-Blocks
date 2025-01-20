@@ -25,6 +25,8 @@ scoreboard players set suitcaseItemsLeft ItemsBundles 0
     # Scavenge
     data remove storage minecraft:itemsprocess scavengeGainedItemIds
     data remove storage minecraft:itemsprocess suitcaseGainedItemIds
+    # Expedition
+    data remove storage minecraft:itemsprocess expeditionLostItemIds
     # Crazy
     data remove storage minecraft:itemsprocess crazyLostItemIds
     # Characters

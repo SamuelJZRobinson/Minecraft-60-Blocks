@@ -1,6 +1,9 @@
+# Set Data
 data modify storage minecraft:itemsprocess expeditionLostItemIds append value 18
+
+# Set Scores
 scoreboard players set hasBodyArmour ItemsExpedition 1
 scoreboard players set bodyArmour ItemsBunker 0
 
-# Insert POV Item
-execute if score doPovExpedition Settings matches 1 run loot insert 2 60 34 loot lt_custom:empty/body_armour_tool
+# Increment Count
+scoreboard players add itemCount ItemsExpedition 1

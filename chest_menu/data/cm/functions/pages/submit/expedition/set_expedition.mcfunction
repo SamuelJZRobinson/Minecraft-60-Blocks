@@ -6,6 +6,7 @@ scoreboard players operation mapVisited MenuExpedition = mapSelect MenuExpeditio
 function cm:pages/submit/expedition/set_characters
 
 # Items
+scoreboard players set itemCount ItemsExpedition 0
 function cm:pages/submit/expedition/items/manage_items
 
 # Duration

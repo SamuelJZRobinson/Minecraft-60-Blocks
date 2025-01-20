@@ -1,1 +1,0 @@
-execute if data storage minecraft:itemsprocess expeditionLostItemIds run function mc:states/9_expedition/place/items/check/check_gear_break

@@ -2,7 +2,7 @@
   # giveMedkit MenuFeed is used instead of <name>GiveMedkit <Name>Status since only one medkit exists.
 
 # Clear Bundles
-function mc:states/1_factory_reset/set/set_data_stores
+function mc:states/1_factory_reset/set/set_scores_items_bundles
 
 # Feeding
 function cm:pages/submit/feed/manage_feed

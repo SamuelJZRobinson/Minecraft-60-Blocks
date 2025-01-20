@@ -5,7 +5,8 @@
 data remove storage minecraft:itemsprocess scavengeGainedItemIds
 
 # Clear Bunker Items
-function mc:states/1_factory_reset/set/set_scores_items
+function mc:states/1_factory_reset/set/set_scores_items_bunker
+function mc:states/1_factory_reset/set/set_scores_items_bundles
 
 # Set Data
   # Ammo
@@ -61,7 +62,7 @@ function mc:states/1_factory_reset/set/set_scores_items
   data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 17
   data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 17
   data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 17
-  # Armour
+  # Body Armour
   data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 18
   data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 18
   data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 18
