@@ -1,5 +1,5 @@
 # Character Health
-execute if score step ItemsExpedition matches 1 run function mc:states/9_expedition/place/characters/check/check_character_death
+execute if score step ItemsExpedition matches 1 run function mc:states/9_expedition/place/characters/death/check_character_death
 # Sick chance (do later)
 # Injury chance (do later)
 # # Gear Break
