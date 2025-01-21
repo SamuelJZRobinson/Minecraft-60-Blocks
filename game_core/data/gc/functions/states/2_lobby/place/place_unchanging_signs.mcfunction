@@ -38,14 +38,14 @@
 
 # Extra Info
   # Highscores
-  setblock 17 38 4 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Highscores","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"/function gc:states/2_lobby/show/show_highscores"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
+  setblock 17 38 4 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Highscores","bold":true,"underlined":true}','{"text":""}','{"text":"","clickEvent":{"action":"run_command","value":"/function gc:states/2_lobby/show/show_highscores"}}','{"text":"","clickEvent":{"action":"run_command","value":"/function gc:sounds/menu_click"}}']}} destroy
   # Ideal Settings
-  setblock 18 38 4 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Ideal Settings","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"/function gc:states/2_lobby/show/show_settings"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
+  setblock 18 38 4 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Ideal Settings","bold":true,"underlined":true}','{"text":""}','{"text":"","clickEvent":{"action":"run_command","value":"/function gc:states/2_lobby/show/show_settings"}}','{"text":"","clickEvent":{"action":"run_command","value":"/function gc:sounds/menu_click"}}']}} destroy
   # Resource Pack
-  setblock 19 38 4 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Resource Pack","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"/function gc:states/2_lobby/show/show_resource_pack_url"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
+  setblock 19 38 4 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Resource Pack","bold":true,"underlined":true}','{"text":""}','{"text":"","clickEvent":{"action":"run_command","value":"/function gc:states/2_lobby/show/show_resource_pack_url"}}','{"text":"","clickEvent":{"action":"run_command","value":"/function gc:sounds/menu_click"}}']}} destroy
   
 # Developer Info
   # Based On
-  setblock 17 38 -1 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Based On","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"/function gc:states/2_lobby/show/show_store_url"}}','{"text":"60 Seconds by"}','{"text":"Robot Gentleman"}','{"text":""}']}} destroy
+  setblock 17 38 -1 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Based On","bold":true,"underlined":true}','{"text":"60 Seconds by"}','{"text":"Robot Gentleman","clickEvent":{"action":"run_command","value":"/function gc:states/2_lobby/show/show_store_url"}}','{"text":"","clickEvent":{"action":"run_command","value":"/function gc:sounds/menu_click"}}']}} destroy
   # Credits
-  setblock 19 38 -1 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Credits","bold":true,"underlined":true,"clickEvent":{"action":"run_command","value":"/function gc:states/2_lobby/show/show_credits"}}','{"text":""}','{"text":""}','{"text":""}']}} destroy
+  setblock 19 38 -1 spruce_wall_sign[facing=south]{front_text:{color:"light_blue",has_glowing_text:1b,messages:['{"text":"Credits","bold":true,"underlined":true}','{"text":""}','{"text":"","clickEvent":{"action":"run_command","value":"/function gc:states/2_lobby/show/show_credits"}}','{"text":"","clickEvent":{"action":"run_command","value":"/function gc:sounds/menu_click"}}']}} destroy
