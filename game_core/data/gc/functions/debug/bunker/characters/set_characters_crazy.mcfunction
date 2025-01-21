@@ -2,6 +2,7 @@
 function gc:states/1_factory_reset/set/set_scores_characters
 
 # Set Chest Menu
+team join Player @p
 function cm:place_chest_menu
 
 scoreboard players set checkers ItemsBunker 1
@@ -10,8 +11,6 @@ scoreboard players set checkers ItemsBunker 1
 function gc:states/8_bunker/items/count/count_items
 
 # Set Settings
-  # Player
-  team join Player @s
   # Gamemode (Ensure Set Time And Show Warp Days Works)
   scoreboard players set gamemode Settings 2
   scoreboard players set doInPersonExpedition Settings 1

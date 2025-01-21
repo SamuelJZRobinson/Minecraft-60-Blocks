@@ -41,6 +41,7 @@ scoreboard players set doSpawn ItemsBundles 0
 data remove storage minecraft:itemsprocess processItemIds
 data remove storage minecraft:itemsprocess scavengeGainedItemIds
 data remove storage minecraft:itemsprocess suitcaseGainedItemIds
+data remove storage minecraft:itemsprocess expeditionGainedItemIds
 data remove storage minecraft:itemsprocess expeditionLostItemIds
 data remove storage minecraft:itemsprocess crazyLostItemIds
 data remove storage minecraft:itemsprocess charactersLostIds

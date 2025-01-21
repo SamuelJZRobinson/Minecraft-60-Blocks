@@ -6,8 +6,9 @@ scoreboard players operation mapVisited MenuExpedition = mapSelect MenuExpeditio
 function cm:pages/submit/expedition/set_characters
 
 # Items
-scoreboard players set itemCount ItemsExpedition 0
+scoreboard players set itemsTakenCount ItemsExpedition 0
 function cm:pages/submit/expedition/items/manage_items
+execute store result score itemsTakenCount ItemsExpedition run data get storage minecraft:itemsprocess expeditionLostItemIds
 
 # Duration
 execute unless score gamemode Settings matches 1 run function cm:pages/submit/expedition/set_expedition_days

@@ -1,9 +1,8 @@
 # Set Chest Menu
+team join Player @p
 function cm:place_chest_menu
 
 # Set Settings
-  # Player
-  team join Player @s
   # Gamemode (Ensure Set Time And Show Warp Days Works)
   scoreboard players set gamemode Settings 2
   scoreboard players set doInPersonExpedition Settings 1
@@ -14,10 +13,10 @@ function cm:place_chest_menu
     scoreboard players set music GameStatus 5
     scoreboard players set day GameStatus 1
   # Alerts
-  scoreboard players set banditAlert MenuExpedition 1
-  scoreboard players set falloutAlert MenuExpedition 1
-  scoreboard players set mutantProtection MenuExpedition 1
-  scoreboard players set padlockProtection MenuExpedition 1
+  scoreboard players set banditAlert MenuExpedition 0
+  scoreboard players set falloutAlert MenuExpedition 0
+  scoreboard players set mutantProtection MenuExpedition 0
+  scoreboard players set padlockProtection MenuExpedition 0
   # Expedition
   scoreboard players set expeditionReady MenuExpedition 1
 

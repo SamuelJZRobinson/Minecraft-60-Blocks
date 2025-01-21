@@ -2,11 +2,10 @@
 function gc:states/1_factory_reset/set/set_scores_characters
 
 # Set Chest Menu
+team join Player @p
 function cm:place_chest_menu
 
 # Set Settings
-  # Player
-  team join Player @s
   # Gamemode (Ensure Set Time And Show Warp Days Works)
   scoreboard players set gamemode Settings 2
   scoreboard players set doInPersonExpedition Settings 1

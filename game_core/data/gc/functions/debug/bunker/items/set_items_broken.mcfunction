@@ -1,9 +1,8 @@
 # Set Chest Menu
+team join Player @p
 function cm:place_chest_menu
 
 # Set Settings
-  # Player
-  team join Player @s
   # Gamemode
   scoreboard players set gamemode Settings 2
   scoreboard players set doInPersonExpedition Settings 1

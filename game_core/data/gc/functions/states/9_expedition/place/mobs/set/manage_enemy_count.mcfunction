@@ -3,7 +3,7 @@
 
 # Set Base Mob Count
 scoreboard players operation mobCount MobsExpedition = lootLeft ItemsExpedition
-scoreboard players operation mobCount MobsExpedition *= DOUBLE ItemsExpedition
+scoreboard players operation mobCount MobsExpedition *= DOUBLE MobsExpedition
 scoreboard players operation remainder MobsExpedition = mobCount MobsExpedition
 
 # Set Mob Tiers
