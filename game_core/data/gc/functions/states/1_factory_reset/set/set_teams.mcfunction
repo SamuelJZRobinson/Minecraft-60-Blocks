@@ -28,7 +28,7 @@ team modify Items friendlyFire false
 team modify Items nametagVisibility always
 team modify Items seeFriendlyInvisibles false
 
-# ItemsLocked
+# Items Locked
 team add ItemsLocked
 team modify ItemsLocked collisionRule never
 team modify ItemsLocked color red
@@ -36,6 +36,15 @@ team modify ItemsLocked deathMessageVisibility never
 team modify ItemsLocked friendlyFire false
 team modify ItemsLocked nametagVisibility always
 team modify ItemsLocked seeFriendlyInvisibles true
+
+# Items Display
+team add ItemsDisplay
+team modify ItemsDisplay collisionRule never
+team modify ItemsDisplay color white
+team modify ItemsDisplay deathMessageVisibility never
+team modify ItemsDisplay friendlyFire false
+team modify ItemsDisplay nametagVisibility always
+team modify ItemsDisplay seeFriendlyInvisibles true
 
 # Markers
 team empty Marker

@@ -17,8 +17,8 @@
   execute if score itemId ItemsBundles matches 15 run scoreboard players add soups ItemsBunker 4
   execute if score itemId ItemsBundles matches 17 run scoreboard players add waters ItemsBunker 4
   # Multi Slot
-  execute if score doInstantAdd ItemsBundles matches 0 run function gc:states/8_bunker/items/process/check_item_add_normal
-  execute if score doInstantAdd ItemsBundles matches 1 run function gc:states/8_bunker/items/process/check_item_add_instant
+  execute if score doInstantAdd ItemsBundles matches 0 run function gc:states/8_bunker/items/process/check_item_add_multi_normal
+  execute if score doInstantAdd ItemsBundles matches 1 run function gc:states/8_bunker/items/process/check_item_add_multi_instant
 
   # Check Character ID
     # Dolores
