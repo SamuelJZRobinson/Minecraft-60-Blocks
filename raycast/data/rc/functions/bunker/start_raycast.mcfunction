@@ -8,7 +8,7 @@ scoreboard players set @s GunCooldownTick 3
 tag @s add raycasting
 
 # Anchor to the eyes and position with vector coordinates (Remove if not running from eyes of entity)
-execute anchored eyes positioned ^ ^ ^ run function tf_raycast:bunker/raycast_bunker
+execute anchored eyes positioned ^ ^ ^ run function rc:bunker/raycast_bunker
 
 # Remove the raycasting tag after raycast completion to prepare for the next player
 tag @s remove raycasting

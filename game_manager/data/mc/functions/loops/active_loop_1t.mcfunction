@@ -15,7 +15,7 @@ execute if score gameState GameStatus matches 5..7 as @e[type=armor_stand,tag=sp
 execute if score gameState GameStatus matches 8 as @p[team=Player] run function cm:manage_chest_menu
 
 # Raycast
-execute if score gameState GameStatus matches 8..9 unless score gamemode Settings matches 3 as @p[team=Player] run function tf_raycast:manage_raycast
+execute if score gameState GameStatus matches 8..9 unless score gamemode Settings matches 3 as @p[team=Player] run function rc:manage_raycast
 
 # Character Death
 execute if score gameState GameStatus matches 9 as @p[team=Player,scores={PlayerDeaths=1..}] run function mc:timer/expedition/character_death

@@ -1,1 +1,1 @@
-# Minecraft-60-Seconds
+# Minecraft-60-Blocks

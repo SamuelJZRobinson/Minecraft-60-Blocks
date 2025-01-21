@@ -13,4 +13,4 @@ playsound minecraft:entity.silverfish.hurt master @p ~ ~ ~ 1 2 1
 clear @s minecraft:white_dye{bugSprayAmmo:1b} 1
 
 # Anchor to the eyes and position with vector coordinates (Remove if not running from eyes of entity)
-execute anchored eyes positioned ^ ^ ^ run function tf_raycast:expedition/raycast_bug_spray
+execute anchored eyes positioned ^ ^ ^ run function rc:expedition/raycast_bug_spray

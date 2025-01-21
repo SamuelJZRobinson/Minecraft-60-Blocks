@@ -1,5 +1,5 @@
 # Notes
-  # Called from tf_raycast:raycast upon any targets whose hitbox collides with the raycast
+  # Called from rc:raycast upon any targets whose hitbox collides with the raycast
 
 # Set Scores
   # Items
@@ -30,7 +30,7 @@
   execute if entity @s[tag=bunkerTimmy] run scoreboard players set bunkerLook GameStatus 22
 
 # Set Name Visibility
-function tf_raycast:bunker/set_item_name_visibility
+function rc:bunker/set_item_name_visibility
 
 # End raycast at max range (outside map)
 scoreboard players set .distance tf_rc 90

@@ -13,4 +13,4 @@ playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 0 0
 clear @s minecraft:iron_nugget{gunAmmo:1b} 1
 
 # Anchor to the eyes and position with vector coordinates (Remove if not running from eyes of entity)
-execute anchored eyes positioned ^ ^ ^ run function tf_raycast:expedition/raycast_gun
+execute anchored eyes positioned ^ ^ ^ run function rc:expedition/raycast_gun
