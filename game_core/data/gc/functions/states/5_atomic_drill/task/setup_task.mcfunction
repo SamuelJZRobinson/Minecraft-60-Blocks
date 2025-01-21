@@ -1,6 +1,5 @@
 # Reset Dialogue
 data remove storage minecraft:atomicdrill dialogue
-schedule clear gc:states/5_atomic_drill/task/force_task_done
 
 # House
   # Goto Hallway Marker
@@ -48,9 +47,8 @@ schedule clear gc:states/5_atomic_drill/task/force_task_done
   # Final Words And Reset, Day Ten
   execute if score task AtomicDrill matches 21 run function gc:states/5_atomic_drill/task/setup_task_21
 
-# Request Dialogue
+# Dialogue
 execute unless score task AtomicDrill matches 13.. run function gc:states/5_atomic_drill/show/show_dialogue_loop
-function gc:states/5_atomic_drill/show/manage_dialogue
 
 # Debounce Stage
 scoreboard players set stage AtomicDrill 1

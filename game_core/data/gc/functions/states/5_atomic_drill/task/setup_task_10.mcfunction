@@ -1,8 +1,7 @@
 # Set Dialogue
-data modify storage atomicdrill dialogue append value "Bravo! Now it's time to apply your skills in a full simulation."
-data modify storage atomicdrill dialogue append value "Sometimes you have extra time to wander, but you must pack after the siren!"
-data modify storage atomicdrill dialogue append value "Our warning system provides sixty seconds to gather items and family."
-data modify storage atomicdrill dialogue append value "Remember to stand beside the shelter when your time is up!"
+data modify storage atomicdrill dialogue append value "Bravo! Now it's time for a full simulation."
+data modify storage atomicdrill dialogue append value "National sirens offer 60 seconds to prepare the shelter."
+data modify storage atomicdrill dialogue append value "Stand beside the shelter when your time is up or you're toast!"
 # Start House Scavenge
 scoreboard players set gameState GameStatus 4
-schedule function gc:states/4_setup/setup_gamemode_scavenge 280t replace
+schedule function gc:states/4_setup/setup_gamemode_scavenge 210t replace

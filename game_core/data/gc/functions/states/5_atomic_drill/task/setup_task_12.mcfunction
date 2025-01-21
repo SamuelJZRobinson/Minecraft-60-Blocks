@@ -1,5 +1,5 @@
 # Set Dialogue
-data modify storage atomicdrill dialogue append value "Although you understand how to scavenge your training is far from over."
+data modify storage atomicdrill dialogue append value "Now you know how to scavenge but training is far from over."
 data modify storage atomicdrill dialogue append value "Meet me downstairs for extended survival training, at ease!"
 # Goto Bunker
 function gc:utility/tp/tp_bunker

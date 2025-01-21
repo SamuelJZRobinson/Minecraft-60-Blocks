@@ -1,8 +1,8 @@
 # Cosmetics
   # Particles
-  execute if score bunkerSide GameStatus matches 0 positioned 37.50 65.00 -6.50 run function gc:utility/particles/scavenge/salvage_crate_open
-  execute if score bunkerSide GameStatus matches 1 positioned 10.65 65.00 -6.50 run function gc:utility/particles/scavenge/salvage_crate_open
-  # Sounds
+  execute if score bunkerSide GameStatus matches 0 at @e[type=armor_stand,tag=markerArrow] positioned ~ ~-1 ~ run function gc:utility/particles/scavenge/salvage_crate_open
+  execute if score bunkerSide GameStatus matches 1 at @e[type=armor_stand,tag=markerArrow] positioned ~ ~-1 ~ run function gc:utility/particles/scavenge/salvage_crate_open
+  # Sound
   playsound minecraft:item.armor.equip_netherite player @s ~ ~ ~ 1 0.5 1
   # Force Shut
   function gc:states/7_scavenge_house/items/collect/close_salvage_crate

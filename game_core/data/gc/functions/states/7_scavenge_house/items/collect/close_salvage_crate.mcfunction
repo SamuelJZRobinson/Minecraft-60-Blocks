@@ -1,2 +1,2 @@
-execute if score bunkerSide GameStatus matches 0 run setblock 34 -30 0 red_shulker_box destroy
-execute if score bunkerSide GameStatus matches 1 run setblock 7 -30 0 red_shulker_box destroy
+execute if score bunkerSide GameStatus matches 0 at @e[type=armor_stand,tag=markerArrow] positioned ~ ~-2 ~ run setblock ~ ~ ~ red_shulker_box destroy
+execute if score bunkerSide GameStatus matches 1 at @e[type=armor_stand,tag=markerArrow] positioned ~ ~-2 ~ run setblock ~ ~ ~ red_shulker_box destroy

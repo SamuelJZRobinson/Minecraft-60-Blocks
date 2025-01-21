@@ -1,5 +1,6 @@
 schedule clear gc:states/5_atomic_drill/show/show_dialogue_loop
 schedule clear gc:states/5_atomic_drill/task/force_task_done
+schedule clear gc:utility/timers/countdown/tick
 
 # Probably only run during certain states to avoid this
 

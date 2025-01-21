@@ -1,5 +1,5 @@
 # Set Dialogue
-data modify storage atomicdrill dialogue append value "Excellent, but without water you will melt away! Hunt for some bottles!"
+data modify storage atomicdrill dialogue append value "Excellent, but without water you'll melt away!"
 # Place Water
 execute positioned 24.50 -29.00 -7.55 run function gc:states/4_setup/place/items/summon/summon_water
 data modify entity @e[type=slime,tag=water,limit=1] Invulnerable set value 0b
