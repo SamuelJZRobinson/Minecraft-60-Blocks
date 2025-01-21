@@ -1,5 +1,5 @@
 # Open Medkit
-execute as @s[scores={UseCarrotStick=1..},nbt={SelectedItem:{tag:{medkit:1b}}}] at @s run function mc:states/9_expedition/place/items/open/open_medkit
+execute as @s[scores={UseCarrotStick=1..},nbt={SelectedItem:{tag:{medkit:1b}}}] at @s run function gc:states/9_expedition/place/items/open/open_medkit
 
 # Start Raycast
   # Buker

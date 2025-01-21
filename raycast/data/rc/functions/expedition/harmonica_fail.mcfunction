@@ -1,5 +1,5 @@
 # Sounds
-function mc:sounds/harmonica_fail
+function gc:sounds/harmonica_fail
 
 # Particles
 function rc:utility/particles/expedition/mob_hit

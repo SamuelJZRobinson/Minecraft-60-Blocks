@@ -1,1 +1,0 @@
-execute at @e[type=minecraft:armor_stand,tag=markerCross,limit=1] run function mc:utility/particles/atomic_drill/marker_cross

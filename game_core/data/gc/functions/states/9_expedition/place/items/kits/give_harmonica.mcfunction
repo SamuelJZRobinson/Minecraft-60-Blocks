@@ -1,0 +1,2 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"Harmonica","bold":true}',Lore:['{"text":"Click to sound","color":"gray"}','{"text":"Range: 32","color":"gray"}','{"text":"Odds: 75% stun | 25% anger","color":"gray"}','{"text":"Cooldown: 30 seconds","color":"gray"}','{"text":"Need harmonica ammo","color":"gray"}']},CustomModelData:6,itemId:10,harmonica:1b} 1
+function gc:states/9_expedition/place/items/kits/give_harmonica_ammo

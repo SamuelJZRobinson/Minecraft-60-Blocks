@@ -1,2 +1,0 @@
-give @s carrot_on_a_stick{display:{Name:'{"text":"Gun","bold":true}',Lore:['{"text":"Click to fire","color":"gray"}','{"text":"Range: 128","color":"gray"}','{"text":"Headshots","color":"gray"}','{"text":"Uses gun ammo","color":"gray"}']},CustomModelData:2,itemId:9,gun:1b} 1
-function mc:states/9_expedition/place/items/kits/give_gun_ammo

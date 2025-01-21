@@ -1,0 +1,2 @@
+execute store result score output Math run function gc:utility/math/get_random_value_via_amount_score {"x":1,"score":BUNKER_BLACKOUT,"objective":BunkerOdds}
+execute if score output Math matches 1 run function gc:states/8_bunker/bunker/set/set_blackout_break

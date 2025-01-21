@@ -1,1 +1,1 @@
-execute as @p[team=Player] run function mc:states/9_expedition/place/items/kits/give_harmonica_ammo
+execute as @p[team=Player] run function gc:states/9_expedition/place/items/kits/give_harmonica_ammo

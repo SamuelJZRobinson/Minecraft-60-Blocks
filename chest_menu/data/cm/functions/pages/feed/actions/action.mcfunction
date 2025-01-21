@@ -15,5 +15,5 @@ function cm:pages/feed/actions/action_characters
   # Submit
   execute if score selection MenuMain matches 3 run function cm:pages/submit/manage_submit
   # Play Click Sound
-  execute if score selection MenuMain matches 1..3 run function mc:sounds/page_turn
-  execute if score selection MenuMain matches 4.. run function mc:sounds/menu_click
+  execute if score selection MenuMain matches 1..3 run function gc:sounds/page_turn
+  execute if score selection MenuMain matches 4.. run function gc:sounds/menu_click

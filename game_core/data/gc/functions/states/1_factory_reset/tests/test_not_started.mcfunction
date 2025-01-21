@@ -1,0 +1,2 @@
+execute if score isGameStarted GameStatus matches 1 run data modify storage minecraft:exceptions message set value "Cannot reset, game already running!"
+execute if score isGameStarted GameStatus matches 1 run function gc:utility/exceptions/raise_warning

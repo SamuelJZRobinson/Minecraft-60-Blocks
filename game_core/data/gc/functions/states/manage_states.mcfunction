@@ -1,0 +1,10 @@
+execute if score gameState GameStatus matches 1 run function gc:states/1_factory_reset/init_state
+execute if score gameState GameStatus matches 2 run function gc:states/2_lobby/init_state
+execute if score gameState GameStatus matches 3 run function gc:states/3_start_request/init_state
+execute if score gameState GameStatus matches 4 run function gc:states/4_setup/init_state
+execute if score gameState GameStatus matches 5 run function gc:states/5_atomic_drill/init_state
+execute if score gameState GameStatus matches 6 run function gc:states/6_grace_period/init_state
+execute if score gameState GameStatus matches 7 run function gc:states/7_scavenge_house/init_state
+execute if score gameState GameStatus matches 8 run function gc:states/8_bunker/init_state
+execute if score gameState GameStatus matches 9 run function gc:states/9_expedition/init_state
+execute if score gameState GameStatus matches 10 run function gc:states/10_gameover/init_state

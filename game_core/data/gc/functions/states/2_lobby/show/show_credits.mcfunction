@@ -1,0 +1,5 @@
+# Sound
+function gc:sounds/menu_click
+
+# Show
+tellraw @s {"text":"Map credits (hover)","color":"blue","hoverEvent":{"action":"show_text","contents":[{"text":"Map Creator: ","color":"dark_aqua"},{"text":"BlackeyeI","color":"aqua"},"\n",{"text":"Buildings: ","color":"dark_aqua"},{"text":"GARRETT2BY4 (Boeing B-29 exterior), Spazza27YT (forklift)","color":"aqua"},"\n",{"text":"Research: ","color":"dark_aqua"},{"text":"60 Seconds Fandom","color":"aqua"},"\n",{"text":"Data Packs: ","color":"dark_aqua"},{"text":"Cloud Wolf (chest menu), Dominexis (benchmark), emeraldfyr3 (math), Timber Forge (raycast)","color":"aqua"},"\n",{"text":"Icons: ","color":"dark_aqua"},{"text":"fjstudio, Freepik, Kiranshastry, Siarhei Nosyreu","color":"aqua"},"\n",{"text":"Software: ","color":"dark_aqua"},{"text":"Amulet, Blockbench, blocky.tools, MapartCraft, McStacker, MinecraftHeads, MinecraftJSON, Misode, Photopea, PixelMe, Turbosquid, Vectr, Visual Studio Code", "color":"aqua"},"\n",{"text":"Fabric Mods: ","color":"dark_aqua"},{"text":"Carpet Mod, Complementary Shaders, Iris Shaders, WorldEdit","color":"aqua"}]}}

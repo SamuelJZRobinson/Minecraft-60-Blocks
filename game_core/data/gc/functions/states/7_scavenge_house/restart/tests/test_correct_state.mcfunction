@@ -1,0 +1,2 @@
+execute unless score gameState GameStatus matches 6..7 run data modify storage minecraft:exceptions message set value "Cannot restart scavenge, it's not scavenge!"
+execute unless score gameState GameStatus matches 6..7 run function gc:utility/exceptions/raise_warning
