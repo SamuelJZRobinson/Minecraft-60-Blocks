@@ -27,9 +27,8 @@ function mc:states/1_factory_reset/set/set_scores_settings
   function mc:states/1_factory_reset/set/set_scores_expedition_odds
   function mc:states/1_factory_reset/set/set_scores_mobs_expedition
 
-# Complimentary Datapacks
-function cm:load/set_scores_menu
-function tf_raycast:load/set_scores_raycast
+# Other Datapacks
+function mc:states/1_factory_reset/set/set_scores_datapacks
 
 # Math
 function mc:states/1_factory_reset/set/set_scores_math
