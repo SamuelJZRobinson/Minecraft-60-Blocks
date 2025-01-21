@@ -2,8 +2,8 @@
 execute if score expeditionDuration MenuExpedition matches 1.. run scoreboard players remove expeditionDuration MenuExpedition 1
 
 # Titles
-execute if score doPovExpedition Settings matches 0 run title @a subtitle ""
-execute if score doPovExpedition Settings matches 1 if score characterSent MenuExpedition matches 1.. run title @a subtitle [{"text":"Warp in ","color":"white"},{"score":{"name":"expeditionDuration","objective":"MenuExpedition"},"color":"red"},{"text":" days","color":"red"}]
+execute if score doInPersonExpedition Settings matches 0 run title @a subtitle ""
+execute if score doInPersonExpedition Settings matches 1 if score characterSent MenuExpedition matches 1.. run title @a subtitle [{"text":"Warp in ","color":"white"},{"score":{"name":"expeditionDuration","objective":"MenuExpedition"},"color":"red"},{"text":" days","color":"red"}]
 
 # Loop Day For Last Adult
 execute if score expeditionDuration MenuExpedition matches 1.. if score adultsAlive CharactersCount matches 1 if score childrenAlive CharactersCount matches 0 run playsound minecraft:block.note_block.hat record @p[team=Player] ~ ~ ~ 16 0 1

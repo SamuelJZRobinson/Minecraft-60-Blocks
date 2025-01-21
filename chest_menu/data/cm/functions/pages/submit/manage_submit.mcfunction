@@ -15,5 +15,5 @@ function cm:pages/submit/events/manage_events
 
 # Declare New Day
 function gc:states/8_bunker/manage_day
-execute if score task AtomicDrill matches 12.. if score doPovExpedition Settings matches 0 run scoreboard players set stage AtomicDrill 2
-execute if score task AtomicDrill matches 12.. if score doPovExpedition Settings matches 1 unless score task AtomicDrill matches 15 run scoreboard players set stage AtomicDrill 2
+execute if score task AtomicDrill matches 12.. if score doInPersonExpedition Settings matches 0 run scoreboard players set stage AtomicDrill 2
+execute if score task AtomicDrill matches 12.. if score doInPersonExpedition Settings matches 1 unless score task AtomicDrill matches 15 run scoreboard players set stage AtomicDrill 2

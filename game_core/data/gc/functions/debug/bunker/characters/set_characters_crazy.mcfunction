@@ -14,7 +14,7 @@ function gc:states/8_bunker/items/count/count_items
   team join Player @s
   # Gamemode (Ensure Set Time And Show Warp Days Works)
   scoreboard players set gamemode Settings 2
-  scoreboard players set doPovExpedition Settings 1
+  scoreboard players set doInPersonExpedition Settings 1
   # Set Scores
     # Status
     scoreboard players set isGameStarted GameStatus 1
