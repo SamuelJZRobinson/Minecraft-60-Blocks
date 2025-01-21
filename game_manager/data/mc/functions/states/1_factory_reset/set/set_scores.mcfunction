@@ -2,6 +2,9 @@
 scoreboard objectives setdisplay sidebar
 scoreboard objectives setdisplay below_name
 
+# Other Datapacks
+function mc:states/1_factory_reset/set/set_scores_datapacks
+
 # Game Status
 function mc:states/1_factory_reset/set/set_scores_game_status
 function mc:states/1_factory_reset/set/set_scores_game_statistics
@@ -26,9 +29,6 @@ function mc:states/1_factory_reset/set/set_scores_settings
   # Expedition
   function mc:states/1_factory_reset/set/set_scores_expedition_odds
   function mc:states/1_factory_reset/set/set_scores_mobs_expedition
-
-# Other Datapacks
-function mc:states/1_factory_reset/set/set_scores_datapacks
 
 # Math
 function mc:states/1_factory_reset/set/set_scores_math
