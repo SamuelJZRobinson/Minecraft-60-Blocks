@@ -17,7 +17,7 @@ schedule clear mc:states/5_atomic_drill/task/force_task_done
 #   # Stage 3
 #   schedule clear mc:states/4_setup/place/items/manage_items
 #   # Ending
-#   schedule clear mc:events/endings/surface_scene
+#   schedule clear mc:event/endings/surface_scene
 
 # # Atomic Drill
 # execute if score gamemode Settings matches 1 run function mc:states/1_factory_reset/clear/clear_schedules_atomic_drill

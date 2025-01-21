@@ -11,7 +11,7 @@ function cm:pages/submit/feed/manage_feed
 function cm:pages/submit/expedition/manage_expedition
 
 # Events
-function cm:pages/submit/events/manage_events
+function cm:pages/submit/event/manage_events
 
 # Declare New Day
 function mc:states/8_bunker/manage_day

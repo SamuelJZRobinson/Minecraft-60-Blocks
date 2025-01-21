@@ -7,13 +7,13 @@ scoreboard players set bool MenuMain 0
 
 # Run Page menu
   # Page 0
-  execute if score bool MenuMain matches 0 if score @s MenuMain matches 0 run function cm:pages/page_0/actions/action
+  execute if score bool MenuMain matches 0 if score @s MenuMain matches 0 run function cm:pages/notices/actions/action
   # Page 1
-  execute if score bool MenuMain matches 0 if score @s MenuMain matches 1 run function cm:pages/page_1/actions/action
+  execute if score bool MenuMain matches 0 if score @s MenuMain matches 1 run function cm:pages/feed/actions/action
   # Page 2
-  execute if score bool MenuMain matches 0 if score @s MenuMain matches 2 run function cm:pages/page_2/actions/action
+  execute if score bool MenuMain matches 0 if score @s MenuMain matches 2 run function cm:pages/expedition/actions/action
   # Page 3
-  execute if score bool MenuMain matches 0 if score @s MenuMain matches 3 run function cm:pages/page_3/actions/action
+  execute if score bool MenuMain matches 0 if score @s MenuMain matches 3 run function cm:pages/event/actions/action
 
 # Refresh Chest
 function cm:root/update/update_menu

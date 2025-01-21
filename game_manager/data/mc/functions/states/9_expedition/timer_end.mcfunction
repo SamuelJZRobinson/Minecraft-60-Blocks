@@ -35,7 +35,7 @@ execute if score doPovExpedition Settings matches 1 unless score expeditionDeath
   schedule function mc:states/8_bunker/update_bunker 20t replace
 
 # Atomic Drill
-execute if score doPovExpedition Settings matches 1 if score task AtomicDrill matches 15..16 run schedule function cm:menu/page3/events/event2_return 21t replace
+execute if score doPovExpedition Settings matches 1 if score task AtomicDrill matches 15..16 run schedule function cm:menu/page3/event/event2_return 21t replace
 execute unless score task AtomicDrill matches 15..16 run scoreboard players set expeditionDeath AtomicDrill 0
 
 # Set State
