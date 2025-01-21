@@ -1,0 +1,1 @@
+title @p[team=Player] subtitle [{"text":"Items Collected: "},{"score":{"name":"itemCount","objective":"AtomicDrill"}}]

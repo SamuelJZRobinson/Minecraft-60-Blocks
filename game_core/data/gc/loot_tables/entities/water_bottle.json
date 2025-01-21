@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": "Water Bottle"
+              "name": "Water"
             },
             {
               "function": "minecraft:set_nbt",

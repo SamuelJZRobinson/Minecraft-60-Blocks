@@ -8,3 +8,6 @@ execute if score gamemode Settings matches 3 run scoreboard players set ending G
 
 # Set Music
 scoreboard players set music GameStatus 3
+
+# Proceed
+schedule function gc:states/inc_state 1t replace
