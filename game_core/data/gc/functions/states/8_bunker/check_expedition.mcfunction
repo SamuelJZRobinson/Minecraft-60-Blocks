@@ -1,3 +1,7 @@
+# Lock Expedition
+execute if score day GameStatus matches ..1 run scoreboard players set expeditionReady MenuExpedition -1
+execute if score day GameStatus matches 2 run scoreboard players set expeditionReady MenuExpedition 0
+
 # Decrement Time
 execute if score expeditionDuration MenuExpedition matches 1.. run scoreboard players remove expeditionDuration MenuExpedition 1
 

@@ -22,5 +22,8 @@
   execute if score gameState GameStatus matches 7 if entity @s[nbt={Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:2b,tag:{locked:1b}}]}] run item replace entity @s hotbar.2 with minecraft:air
   execute if score gameState GameStatus matches 7 if entity @s[nbt={Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:3b,tag:{locked:1b}}]}] run item replace entity @s hotbar.3 with minecraft:air
 
+# Clear
+execute if score gameState GameStatus matches 8.. run clear @s red_stained_glass_pane
+
 # Klll Locked Items On The Floor
 kill @e[type=item,nbt={Item:{id:"minecraft:red_stained_glass_pane",Count:1b,tag:{locked:1b}}}]

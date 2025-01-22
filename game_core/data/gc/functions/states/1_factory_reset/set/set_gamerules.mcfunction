@@ -28,7 +28,7 @@ gamerule spectatorsGenerateChunks false
 # Mobs
 gamerule disableRaids true
 gamerule doEntityDrops false
-gamerule doMobLoot false
+gamerule doMobLoot true
 gamerule doMobSpawning false
 gamerule doPatrolSpawning false
 gamerule doWardenSpawning false
