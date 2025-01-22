@@ -13,6 +13,6 @@ function cm:pages/feed/menus/menu_mass_food
   # Next
   execute unless score task AtomicDrill matches 12 unless score task AtomicDrill matches 14 unless score task AtomicDrill matches 16 run data modify block ~ ~ ~ Items insert 0 value {Slot:26b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:30,isMenu:1b,page:1,selection:1,display:{Name:'{"text":"Goto expedition menu","color":"gray","bold":true}'}}}
   execute if score task AtomicDrill matches 14 if score waterGiven MenuFeed >= totalPresent CharactersCount run data modify block ~ ~ ~ Items insert 0 value {Slot:26b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:30,isMenu:1b,page:1,selection:1,display:{Name:'{"text":"Goto expedition menu","color":"gray","bold":true}'}}}
-  # Submit
+  # Atomic Drill Submit
   execute if score task AtomicDrill matches 12 run data modify block ~ ~ ~ Items insert 0 value {Slot:26b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:31,isMenu:1b,page:1,selection:3,display:{Name:'{"text":"Submit","color":"gray","bold":true}'}}}
   execute if score task AtomicDrill matches 16 if score giveMedkit MenuFeed matches 1.. run data modify block ~ ~ ~ Items insert 0 value {Slot:26b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:31,isMenu:1b,page:1,selection:3,display:{Name:'{"text":"Submit","color":"gray","bold":true}'}}}

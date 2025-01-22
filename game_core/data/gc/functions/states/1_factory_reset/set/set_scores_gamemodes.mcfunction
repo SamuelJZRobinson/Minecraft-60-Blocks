@@ -21,7 +21,6 @@ scoreboard players set lobbyAliveCount PlayerCount 0
 scoreboard objectives add AtomicDrill dummy {"bold":true,"color":"white","text":"Atomic Drill"}
 # Item Count
 scoreboard players set itemCount AtomicDrill 0
-scoreboard players set tempItemCount AtomicDrill 0
 # Tasks
 scoreboard players set task AtomicDrill 0
 scoreboard players set stage AtomicDrill 0
