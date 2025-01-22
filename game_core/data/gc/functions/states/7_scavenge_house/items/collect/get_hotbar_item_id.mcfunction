@@ -6,7 +6,6 @@ data modify storage minecraft:itemsprocess scavengeGainedItemIds append from ent
 
 # Count Items Collected
 execute if score gamemode Settings matches 1 run function gc:states/7_scavenge_house/items/collect/set_item_count
-execute if score gamemode Settings matches 3 run function gc:states/7_scavenge_house/items/collect/set_item_count
 
 # Clear Inventory
 clear @s minecraft:saddle

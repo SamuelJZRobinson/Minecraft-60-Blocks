@@ -43,14 +43,14 @@ function gc:states/10_gameover/tp/tp_house_ruins
   # 15 - Contraption Invasion
   # 16 - Marlon Invasion
 
+# Check Highscores
+function gc:utility/highscore/update_highscores
+
 # Scavenge Item Count
 execute if score gamemode Settings matches 3 run schedule function gc:states/10_gameover/show/show_items_collected 2s replace
 # Apocalypse And Survival Statistics
 execute if score gamemode Settings matches 2 run schedule function gc:states/10_gameover/show/show_statistics 2s replace
 execute if score gamemode Settings matches 4 run schedule function gc:states/10_gameover/show/show_statistics 2s replace
-
-# Check Highscores
-function gc:utility/highscore/update_highscores
 
 # Set State
 scoreboard players set gameState GameStatus 1

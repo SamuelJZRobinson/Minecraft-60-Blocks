@@ -19,6 +19,9 @@ scoreboard players set padlock ItemsBunker 0
 scoreboard players set radio ItemsBunker 0
 scoreboard players set suitcase ItemsBunker 0
 scoreboard players set bodyArmour ItemsBunker 0
+# Count
+scoreboard players set itemCount ItemsBunker 0
+scoreboard players set totalCount ItemsBunker 0
 # Real Soup And Water Count
 scoreboard players set MULTIPLIER ItemsBunker 25
 scoreboard players set DIVISOR ItemsBunker 4
