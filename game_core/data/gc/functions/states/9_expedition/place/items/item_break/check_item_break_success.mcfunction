@@ -22,7 +22,7 @@ execute if score hasBodyArmour ItemsExpedition matches 1 run data modify storage
   # Count
   execute store result score randomItemCount ItemsBundles run data get storage minecraft:itemsprocess randomItemIds
   # One Array Item
-  execute if score randomItemCount ItemsBundles matches 1 run data modify storage minecraft:itemsprocess expeditionLostItemIds append from storage minecraft:itemsprocess randomItemIds[0]
+  execute if score randomItemCount ItemsBundles matches 1 run data modify storage minecraft:itemsprocess expeditionTakenItemIds append from storage minecraft:itemsprocess randomItemIds[0]
   # Two Or More Array Items
   execute if score randomItemCount ItemsBundles matches 2.. run function gc:utility/math/get_random_value_via_amount_score_m1 {"x":0,"score":randomItemCount,"objective":ItemsBundles}
   execute if score randomItemCount ItemsBundles matches 2.. run function gc:states/9_expedition/place/items/item_break/get_array_index with storage minecraft:math

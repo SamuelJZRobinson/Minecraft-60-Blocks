@@ -1,4 +1,5 @@
 # Settings
+scoreboard players set isAddition ItemsBundles 1
 scoreboard players set doBundle ItemsBundles 0
 
 # Copy Item Ids For Processing

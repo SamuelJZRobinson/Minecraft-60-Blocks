@@ -14,28 +14,25 @@ scoreboard players set randomItemCount ItemsBundles 0
 scoreboard players set suitcaseItemsLeft ItemsBundles 0
 
 # Data
-  # Item Process
-    # Processing
-    data remove storage minecraft:itemsprocess processItemIds
-    # Check Items
-    data remove storage minecraft:itemsprocess slotOneFree
-    data remove storage minecraft:itemsprocess slotTwoFree
-    data remove storage minecraft:itemsprocess slotThreeFree
-    # Random
-    data remove storage minecraft:itemsprocess randomItemIds
-    # Scavenge
-    data remove storage minecraft:itemsprocess scavengeGainedItemIds
-    data remove storage minecraft:itemsprocess suitcaseGainedItemIds
-    # Expedition
-    data remove storage minecraft:itemsprocess expeditionGainedItemIds
-    data remove storage minecraft:itemsprocess expeditionLostItemIds
-    # Crazy
-    data remove storage minecraft:itemsprocess crazyLostItemIds
-    # Characters
-    data remove storage minecraft:itemsprocess charactersLostIds
+  # Processing
+  data remove storage minecraft:itemsprocess processItemIds
+  data remove storage minecraft:itemsprocess randomItemIds
+  # Item ID
+  data remove storage minecraft:itemsprocess scavengeGainedItemIds
+  data remove storage minecraft:itemsprocess suitcaseGainedItemIds
+  data remove storage minecraft:itemsprocess crazyLostItemIds
+  data remove storage minecraft:itemsprocess expeditionGainedItemIds
+  data remove storage minecraft:itemsprocess expeditionTakenItemIds
+  data remove storage minecraft:itemsprocess expeditionLostItemIds
+  # Character ID
+  data remove storage minecraft:itemsprocess charactersGainedIds
+  data remove storage minecraft:itemsprocess charactersMovedIds
+  data remove storage minecraft:itemsprocess charactersLostIds
+
   # Bundles
     # Items
     data remove storage minecraft:bundles itemsGained
     data remove storage minecraft:bundles itemsLost
     # Characters
+    data remove storage minecraft:bundles charactersGained
     data remove storage minecraft:bundles charactersLost

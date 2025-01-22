@@ -1,5 +1,5 @@
 # Set Data
-data modify storage minecraft:itemsprocess expeditionLostItemIds append value 5
+data modify storage minecraft:itemsprocess expeditionTakenItemIds append value 5
 
 # Set Scores
 scoreboard players set hasCards ItemsExpedition 1
