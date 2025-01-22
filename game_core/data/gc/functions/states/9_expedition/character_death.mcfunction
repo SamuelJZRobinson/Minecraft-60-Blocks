@@ -8,18 +8,23 @@ scoreboard objectives setdisplay sidebar
 function gc:states/1_factory_reset/clear/clear_locations
 
 # Append Player Inventory
-data modify storage minecraft:itemsprocess expeditionLostItemIds append from entity @s Inventory[].tag.itemId
+execute unless score gamemode Settings matches 1 run data modify storage minecraft:itemsprocess expeditionLostItemIds append from entity @s Inventory[].tag.itemId
+execute if score gamemode Settings matches 1 run data modify storage minecraft:itemsprocess suitcaseGainedItemIds append from entity @s Inventory[].tag.itemId
 clear @s
 
 # Append Dead Character
   # Ted
-  execute if score characterSent MenuExpedition matches 1 run data modify storage minecraft:itemsprocess charactersLostIds append value 21
+  execute unless score gamemode Settings matches 1 if score characterSent MenuExpedition matches 1 run data modify storage minecraft:itemsprocess charactersLostIds append value 21
   # Dolores
-  execute if score characterSent MenuExpedition matches 2 run data modify storage minecraft:itemsprocess charactersLostIds append value 19
+  execute unless score gamemode Settings matches 1 if score characterSent MenuExpedition matches 2 run data modify storage minecraft:itemsprocess charactersLostIds append value 19
   # Mary
-  execute if score characterSent MenuExpedition matches 3 run data modify storage minecraft:itemsprocess charactersLostIds append value 20
+  execute unless score gamemode Settings matches 1 if score characterSent MenuExpedition matches 3 run data modify storage minecraft:itemsprocess charactersLostIds append value 20
   # Timmy
-  execute if score characterSent MenuExpedition matches 4 run data modify storage minecraft:itemsprocess charactersLostIds append value 22
+  execute unless score gamemode Settings matches 1 if score characterSent MenuExpedition matches 4 run data modify storage minecraft:itemsprocess charactersLostIds append value 22
+
+# Dialogue
+execute if score gamemode Settings matches 1 run data modify storage atomicdrill dialogue append value "Be more careful! If this were real you would be dead!"
+execute if score gamemode Settings matches 1 run function gc:states/5_atomic_drill/show/show_dialogue_loop
 
 # Set State
 scoreboard players set gameState GameStatus 8
@@ -27,4 +32,4 @@ schedule function gc:states/manage_states 1t replace
 
 # Reset Scores
 scoreboard players reset @s PlayerDeaths
-scoreboard players set characterSent MenuExpedition 0
+execute unless score gamemode Settings matches 1 run scoreboard players set characterSent MenuExpedition 0

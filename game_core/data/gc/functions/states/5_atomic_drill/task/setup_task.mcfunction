@@ -48,7 +48,7 @@ data remove storage minecraft:atomicdrill dialogue
   execute if score task AtomicDrill matches 21 run function gc:states/5_atomic_drill/task/setup_task_21
 
 # Dialogue
-execute unless score task AtomicDrill matches 13.. run function gc:states/5_atomic_drill/show/show_dialogue_loop
+function gc:states/5_atomic_drill/show/show_dialogue_loop
 
 # Debounce Stage
 scoreboard players set stage AtomicDrill 1

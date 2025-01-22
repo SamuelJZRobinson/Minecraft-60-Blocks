@@ -1,12 +1,8 @@
 # Notes
   # Mandatory items to run the atomic drill tutorial.
 
-# Append Items
-  # Flashlight
-  data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 7
-  # Soup
-  data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 15
-  data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 15
-  # Water
-  data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 17
-  data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 17
+# Items
+scoreboard players set flashlight ItemsBunker 1
+scoreboard players set medkit ItemsBunker 2
+scoreboard players add soup ItemsBunker 8
+scoreboard players add waters ItemsBunker 8

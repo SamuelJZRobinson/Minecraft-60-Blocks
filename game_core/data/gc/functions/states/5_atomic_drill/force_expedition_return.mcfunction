@@ -1,33 +1,31 @@
 # Force Expedition Return
   # Play Bunker Door Sound
-  function gc:sounds/bunker_door_1
+  function gc:sounds/bunker_door
 
   # Injur The Character On Expedition
-    # Dolores
-    execute if score characterSent MenuExpedition matches 1 run scoreboard players set isInjured DoloresStatus 1
-    execute if score characterSent MenuExpedition matches 1 run scoreboard players set isTired DoloresStatus 1
-    # Mary
-    execute if score characterSent MenuExpedition matches 2 run scoreboard players set isInjured MaryStatus 1
-    execute if score characterSent MenuExpedition matches 2 run scoreboard players set isTired MaryStatus 1
     # Ted
-    execute if score characterSent MenuExpedition matches 4 run scoreboard players set isInjured TedStatus 1
-    execute if score characterSent MenuExpedition matches 4 run scoreboard players set isTired TedStatus 1
+    execute if score characterSent MenuExpedition matches 1 run scoreboard players set isInjured TedStatus 1
+    execute if score characterSent MenuExpedition matches 1 run scoreboard players set isTired TedStatus 1
+    # Dolores
+    execute if score characterSent MenuExpedition matches 2 run scoreboard players set isInjured DoloresStatus 1
+    execute if score characterSent MenuExpedition matches 2 run scoreboard players set isTired DoloresStatus 1
+    # Mary
+    execute if score characterSent MenuExpedition matches 3 run scoreboard players set isInjured MaryStatus 1
+    execute if score characterSent MenuExpedition matches 3 run scoreboard players set isTired MaryStatus 1
     # Timmy
-    execute if score characterSent MenuExpedition matches 5 run scoreboard players set isInjured TimmyStatus 1
-    execute if score characterSent MenuExpedition matches 5 run scoreboard players set isTired TedStatus 1
+    execute if score characterSent MenuExpedition matches 4 run scoreboard players set isInjured TimmyStatus 1
+    execute if score characterSent MenuExpedition matches 4 run scoreboard players set isTired TedStatus 1
 
-  # Refresh Memory
+  # Reset Scores
   scoreboard players set characterSent MenuExpedition 0
   scoreboard players set mapVisited MenuExpedition 0
 
-  # Give Medkit
-  # function gc:states/8_bunker/items/process/set_temp_item
-  # execute if score medkit ItemsBunker matches 0 run data modify storage minecraft:bundles bunkerItems.tag.Items append from storage minecraft:bundles itemTemplate
-  execute if score medkit ItemsBunker matches 0 run scoreboard players set medkit ItemsBunker 2
-  data modify storage minecraft:itemsprocess scavengeGainedItemIds append value 12
-  scoreboard players set stage ItemsBundles 9
-  function gc:states/8_bunker/items/process/bundles/check/check_main_add
-  function gc:states/8_bunker/items/process/bundles/set_bundle_details
-
   # Refresh Bunker Decorations
-  schedule function gc:states/8_bunker/manage_cosmetics 0.5s replace
+    # Kill Entities
+    function gc:states/1_factory_reset/clear/clear_locations
+    # Characters
+    function gc:states/8_bunker/characters/manage_characters
+    # Bundles
+    function gc:states/8_bunker/items/process/manage_bundles
+    # Items
+    function gc:states/8_bunker/items/manage_items
