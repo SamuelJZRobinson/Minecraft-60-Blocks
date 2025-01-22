@@ -33,7 +33,7 @@ gamerule doMobSpawning false
 gamerule doPatrolSpawning false
 gamerule doWardenSpawning false
 gamerule doTraderSpawning false
-gamerule maxEntityCramming 24
+gamerule maxEntityCramming 100
 gamerule mobGriefing false
 gamerule universalAnger true
 gamerule forgiveDeadPlayers true
