@@ -2,14 +2,7 @@
   # Locked slots only apply to atomic drill and the house.
 
 # Lock Inventory
-  # Setup
-  execute if score gameState GameStatus matches 4 run function gc:utility/inventory/lock_inventory
-  # Atomic Drill
-  execute if score gameState GameStatus matches 5 run function gc:utility/inventory/lock_inventory
-  # Grace Period
-  execute if score gameState GameStatus matches 6 run function gc:utility/inventory/lock_inventory
-  # Scavenge House
-  execute if score gameState GameStatus matches 7 run function gc:utility/inventory/lock_inventory
+execute if score gameState GameStatus matches 4..7 run function gc:utility/inventory/lock_inventory
 
 # Lock Hotbar
   # Setup

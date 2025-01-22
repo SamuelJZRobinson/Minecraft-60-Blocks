@@ -1,3 +1,4 @@
+# Spin
 execute if score gameState GameStatus matches 5..7 as @e[type=armor_stand,tag=spin] at @s run tp @s ~ ~ ~ ~3 ~
 
 # Scavenge

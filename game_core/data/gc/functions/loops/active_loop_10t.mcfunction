@@ -2,7 +2,7 @@
   # Atomic Drill
   execute if score gameState GameStatus matches 5 run function gc:utility/particles/atomic_drill/manage_particles
   # Scavenge
-  execute if score gameState GameStatus matches 6..7 run function gc:utility/particles/scavenge/manage_particles
+  execute if score gameState GameStatus matches 5..7 run function gc:utility/particles/scavenge/manage_particles
   # Bunker
   execute if score gameState GameStatus matches 8 run function gc:utility/particles/bunker/manage_particles
 
