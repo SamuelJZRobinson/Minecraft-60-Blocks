@@ -17,5 +17,5 @@ execute if score gameState GameStatus matches 8 as @p[team=Player] run function 
 # Raycast
 execute if score gameState GameStatus matches 8..9 unless score gamemode Settings matches 3 as @p[team=Player] run function rc:manage_raycast
 
-# Character Death
-execute if score gameState GameStatus matches 9 as @p[team=Player,scores={PlayerDeaths=1..}] run function gc:timer/expedition/character_death
+# In-Person Expedition Death
+execute if score gameState GameStatus matches 9 if score doInPersonExpedition Settings matches 1 as @p[team=Player,scores={PlayerDeaths=1..}] run function gc:states/9_expedition/character_death

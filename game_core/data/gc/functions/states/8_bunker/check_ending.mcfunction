@@ -3,4 +3,4 @@ execute unless score gamemode Settings matches 1 unless score ending GameStatus 
 
 # Load Ending
 execute unless score gamemode Settings matches 1 if score ending GameStatus matches 1.. run scoreboard players set gameState GameStatus 10
-execute unless score gamemode Settings matches 1 if score ending GameStatus matches 1.. run function gc:states/manage_states
+execute unless score gamemode Settings matches 1 if score ending GameStatus matches 1.. run schedule function gc:states/manage_states 1t replace

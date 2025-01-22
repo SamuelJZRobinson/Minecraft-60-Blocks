@@ -6,6 +6,14 @@
 # Bonous Items
 execute if score ending GameStatus matches 0 if score day GameStatus matches 1 if score difficulty Settings matches 1..2 run function gc:states/8_bunker/items/process/manage_bonous_items
 
+# Reset Bundle Data
+  # Items
+  data remove storage minecraft:bundles itemsGained
+  data remove storage minecraft:bundles itemsLost
+  # Characters
+  data remove storage minecraft:bundles charactersGained
+  data remove storage minecraft:bundles charactersLost
+
 # Update Cosmetics
   # Kill Entities
   function gc:states/1_factory_reset/clear/clear_locations

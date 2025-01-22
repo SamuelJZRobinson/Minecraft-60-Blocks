@@ -2,7 +2,8 @@
   # Needs a single ID detection to destroy an item.
 
 # Check Item ID
-execute if score doDisplayOnly ItemsBundles matches 0 run function gc:states/8_bunker/items/process/check_item_remove_normal
+execute if score doDisplayOnly ItemsBundles matches 0 if score doBreak ItemsBundles matches 0 run function gc:states/8_bunker/items/process/check_item_remove_normal
+execute if score doDisplayOnly ItemsBundles matches 0 if score doBreak ItemsBundles matches 1 run function gc:states/8_bunker/items/process/check_item_remove_break
 
 # Append Bundles
   # Items

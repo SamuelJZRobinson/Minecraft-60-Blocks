@@ -5,16 +5,9 @@ scoreboard players set doBundle ItemsBundles 1
 scoreboard players set doInstantAdd ItemsBundles 0
 scoreboard players set doSpawn ItemsBundles 0
 scoreboard players set doDisplayOnly ItemsBundles 0
+scoreboard players set doBreak ItemsBundles 0
 
-# Reset Bundle Data
-  # Items
-  data remove storage minecraft:bundles itemsGained
-  data remove storage minecraft:bundles itemsLost
-  # Characters
-  data remove storage minecraft:bundles charactersGained
-  data remove storage minecraft:bundles charactersLost
-
-# Get Item Ids (Addition) 
+# Get Item Ids (Addition)
   # Scavenge
   execute store result score bundleCount ItemsBundles run data get storage minecraft:itemsprocess scavengeGainedItemIds
   execute if score bundleCount ItemsBundles matches 1.. run function gc:states/8_bunker/items/process/get_scavenge_gained_items
@@ -32,7 +25,10 @@ scoreboard players set doDisplayOnly ItemsBundles 0
   # Crazy Broken Items
   execute store result score bundleCount ItemsBundles run data get storage minecraft:itemsprocess crazyLostItemIds
   execute if score bundleCount ItemsBundles matches 1.. run function gc:states/8_bunker/items/process/get_crazy_lost_items
-  # Dead
+  # Expedition
+  execute store result score bundleCount ItemsBundles run data get storage minecraft:itemsprocess expeditionLostItemIds
+  execute if score bundleCount ItemsBundles matches 1.. run function gc:states/8_bunker/items/process/get_expedition_lost_items
+  # Characters
   execute store result score bundleCount ItemsBundles run data get storage minecraft:itemsprocess charactersLostIds
   execute if score bundleCount ItemsBundles matches 1.. run function gc:states/8_bunker/items/process/get_characters_lost
 
