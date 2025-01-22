@@ -4,6 +4,7 @@
   # Build
   scoreboard players set build TedStatus 0
   scoreboard players set alive TedStatus 0
+  scoreboard players set isInside TedStatus 0
   # Sustenance
   scoreboard players operation soup TedStatus = HUNGER_AMOUNT_MAX CharactersLevels
   scoreboard players operation water TedStatus = THIRST_AMOUNT_MAX CharactersLevels
@@ -30,6 +31,7 @@
   # Build
   scoreboard players set build DoloresStatus 0
   scoreboard players set alive DoloresStatus 0
+  scoreboard players set isInside DoloresStatus 0
   # Sustenance
   scoreboard players operation soup DoloresStatus = HUNGER_AMOUNT_MAX CharactersLevels
   scoreboard players operation water DoloresStatus = THIRST_AMOUNT_MAX CharactersLevels
@@ -56,6 +58,7 @@
   # Build
   scoreboard players set build MaryStatus 0
   scoreboard players set alive MaryStatus 0
+  scoreboard players set isInside MaryStatus 0
   # Sustenance
   scoreboard players operation soup MaryStatus = HUNGER_AMOUNT_MAX CharactersLevels
   scoreboard players operation water MaryStatus = THIRST_AMOUNT_MAX CharactersLevels
@@ -84,6 +87,7 @@
   # Build
   scoreboard players set build TimmyStatus 0
   scoreboard players set alive TimmyStatus 0
+  scoreboard players set isInside TimmyStatus 0
   # Sustenance
   scoreboard players operation soup TimmyStatus = HUNGER_AMOUNT_MAX CharactersLevels
   scoreboard players operation water TimmyStatus = THIRST_AMOUNT_MAX CharactersLevels

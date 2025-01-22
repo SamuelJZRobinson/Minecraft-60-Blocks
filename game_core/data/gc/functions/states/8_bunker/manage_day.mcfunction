@@ -1,9 +1,25 @@
-# Initial Bundle Check
-execute if score day GameStatus matches ..1 run function gc:states/8_bunker/items/process/manage_bundles
+# Notes
+  # manage_bundles is before characters to ensure they spawn.
+  # manage_bundles is before items to ensure crazy item break changes items.
+  # count is after bundles to ensure soup and water spawn after knowing their count.
 
-# Count
-function gc:states/8_bunker/characters/count/count_family
-function gc:states/8_bunker/items/count/count_items
+# Bonous Items
+execute if score ending GameStatus matches 0 if score day GameStatus matches 1 if score difficulty Settings matches 1..2 run function gc:states/8_bunker/items/process/manage_bonous_items
+
+# Update Cosmetics
+  # Kill Entities
+  function gc:states/1_factory_reset/clear/clear_locations
+  # Bundles
+  function gc:states/8_bunker/items/process/manage_bundles
+  # Count
+  function gc:states/8_bunker/characters/count/count_family
+  function gc:states/8_bunker/items/count/count_items
+  # Characters
+  function gc:states/8_bunker/characters/manage_characters
+  # Bundles
+  function gc:states/8_bunker/items/process/manage_bundles
+  # Items
+  function gc:states/8_bunker/items/manage_items
 
 # Check Ending
 function gc:states/8_bunker/check_ending

@@ -1,16 +1,5 @@
 # Notes
-  # Characters are immune to status effects during an atomic drill or expedition
-  # escape tracks when insane characters leave the bunker since it can occur at any time and is difficult to determine with breakdown
-  # Since characters do not update while on expedition thier model and status text needs external checking
   # Atomic Drill task 14 makes everyone thirsty, task 15 fixes thirsty, task 16 character returns from expedition
-
-# Character Perks
-  # Mary
-    # 20% less resistance to becoming crazy (managed by refresh_scores).
-    # Scares away raiders.
-    # Never crazy, sick, thirsty, tired, or injured.
-    # Eats family members while starving.
-    # Mutant Mary can only defend once and leaves after defending the second time.
 
 # Update Characters
 function gc:states/8_bunker/characters/update/manage_characters_update

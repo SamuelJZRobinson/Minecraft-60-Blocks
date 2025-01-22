@@ -8,6 +8,10 @@ effect give @p minecraft:blindness 3
 # Ending
 execute unless score gamemode Settings matches 1 run scoreboard players set ending GameStatus 1
 
+# Character Inside
+execute if score gamemode Settings matches 1 if score doTed Settings matches 1 run scoreboard players set isInside TedStatus 1
+execute if score gamemode Settings matches 1 if score doTed Settings matches 0 run scoreboard players set isInside DoloresStatus 1
+
 # Set State
   # Normal
   execute unless score gamemode Settings matches 1 run scoreboard players set gameState GameStatus 10
