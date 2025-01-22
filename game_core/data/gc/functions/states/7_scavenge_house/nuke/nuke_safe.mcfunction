@@ -7,8 +7,5 @@ execute if score gamemode Settings matches 3 run scoreboard players set ending G
 execute if score doTed Settings matches 1 run scoreboard players set isInside TedStatus 1
 execute if score doTed Settings matches 0 run scoreboard players set isInside DoloresStatus 1
 
-# Set Music
-scoreboard players set music GameStatus 3
-
 # Proceed
 schedule function gc:states/inc_state 1t replace
