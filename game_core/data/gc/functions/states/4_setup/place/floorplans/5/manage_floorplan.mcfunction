@@ -19,4 +19,4 @@ execute unless entity @e[type=minecraft:item_frame,tag=deleteItemFrame] run summ
 function gc:states/4_setup/place/floorplans/general/summon_bunker_indicator
 function gc:states/4_setup/place/floorplans/general/manage_markers
 function gc:states/4_setup/place/floorplans/5/summon_markers
-schedule function gc:states/4_setup/place/floorplans/5/tag_room_markers 1t replace
+function gc:states/4_setup/place/floorplans/5/tag_room_markers

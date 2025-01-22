@@ -35,7 +35,7 @@
   # Floorplans
   function gc:states/4_setup/place/floorplans/manage_floorplans
   # Characters
-  schedule function gc:states/4_setup/place/characters/manage_characters 5t replace
+  function gc:states/4_setup/place/characters/manage_characters
   # Items
   scoreboard players set step ItemsHouse 1
-  schedule function gc:states/4_setup/place/items/manage_items 6t replace
+  function gc:states/4_setup/place/items/manage_items

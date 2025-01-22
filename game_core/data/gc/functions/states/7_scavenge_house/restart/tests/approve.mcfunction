@@ -7,8 +7,9 @@ function gc:states/1_factory_reset/clear/clear_locations
 # Clear Player
 clear @a
 scoreboard objectives setdisplay sidebar
-# function gc:states/1_factory_reset/clear/clear_schedules
-function gc:states/1_factory_reset/set/set_scores_items
+
+# Clear Schedules
+function gc:states/1_factory_reset/clear/clear_schedules
 
 # Set Music
 scoreboard players set music GameStatus 0

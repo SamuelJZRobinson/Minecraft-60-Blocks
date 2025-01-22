@@ -11,7 +11,7 @@ execute if score gamemode Settings matches 3 run data merge block 19 37 14 {fron
 execute if score gamemode Settings matches 4 run data merge block 19 37 14 {front_text:{color:"brown",has_glowing_text:1b,messages:['{"text":"Gamemode","color":"yellow","bold":true,"underlined":true}','{"text":"Survival","color":"red","italic":true}','{"text":"","clickEvent":{"action":"run_command","value":"/function gc:states/2_lobby/set/set_gamemode"}}','{"text":"","clickEvent":{"action":"run_command","value":"/function gc:sounds/menu_click"}}']}}
 
 # Clone Nukes
-schedule function gc:states/2_lobby/clone/clone_nukes 0.3s replace
+schedule function gc:states/2_lobby/clone/clone_nukes 0.1s replace
 
 # Render Other Signs
 function gc:states/2_lobby/merge/merge_difficulty

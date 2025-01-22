@@ -19,4 +19,4 @@ execute unless entity @e[type=minecraft:item_frame,tag=deleteItemFrame] run summ
 execute unless score gamemode Settings matches 1 run function gc:states/4_setup/place/floorplans/general/summon_bunker_indicator
 execute unless score gamemode Settings matches 1 run function gc:states/4_setup/place/floorplans/general/manage_markers
 execute unless score gamemode Settings matches 1 run function gc:states/4_setup/place/floorplans/1/summon_markers
-execute unless score gamemode Settings matches 1 run schedule function gc:states/4_setup/place/floorplans/1/tag_room_markers 1t replace
+execute unless score gamemode Settings matches 1 run function gc:states/4_setup/place/floorplans/1/tag_room_markers
