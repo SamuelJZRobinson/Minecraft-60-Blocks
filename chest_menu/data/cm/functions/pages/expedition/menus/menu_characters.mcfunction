@@ -1,3 +1,7 @@
+# 1 Adult Alive And Children Alive
+execute if score adultsAlive CharactersCount matches 1 if score childrenAlive CharactersCount matches 1.. if score alive TedStatus matches 1 run data modify block ~ ~ ~ Items insert 0 value {Slot:0b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:107,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Last adult must watch the bunker","color":"dark_red"}']}}}
+execute if score adultsAlive CharactersCount matches 1 if score childrenAlive CharactersCount matches 1.. if score alive DoloresStatus matches 1 run data modify block ~ ~ ~ Items insert 0 value {Slot:1b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:93,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Last adult must watch the bunker","color":"dark_red"}']}}}
+
 # Ted
 execute if score alive TedStatus matches 1 run function cm:pages/expedition/menus/menu_characters_ted
 execute if score alive TedStatus matches 0 run data modify block ~ ~ ~ Items insert 0 value {Slot:0b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:107,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Need Ted","color":"dark_red"}']}}}
