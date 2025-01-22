@@ -5,4 +5,4 @@
 effect give @a blindness infinite
 
 # Randomize House
-function gc:states/4_setup/place/manage_placement
+function gc:states/4_setup/manage_placement

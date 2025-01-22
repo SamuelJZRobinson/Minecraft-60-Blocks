@@ -5,7 +5,7 @@ schedule clear gc:states/5_atomic_drill/show/show_dialogue_loop
 schedule clear gc:states/5_atomic_drill/task/force_task_done
 schedule clear gc:states/4_setup/setup_gamemode_scavenge
 # Scavenge
-schedule clear gc:states/4_setup/place/items/manage_items
+schedule clear gc:states/4_setup/items/manage_items
 # Bunker
 schedule clear gc:states/8_bunker/manage_day
 # Expedition

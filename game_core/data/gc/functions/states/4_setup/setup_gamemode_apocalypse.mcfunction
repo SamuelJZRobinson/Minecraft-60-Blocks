@@ -1,5 +1,5 @@
 # # Randomize House
-# function gc:states/4_setup/place/manage_placement
+# function gc:states/4_setup/manage_placement
 
 # # Proceed
 # scoreboard players set gameState GameStatus 6
