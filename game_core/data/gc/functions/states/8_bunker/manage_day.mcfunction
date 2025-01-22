@@ -3,6 +3,9 @@
   # manage_bundles is before items to ensure crazy item break changes items.
   # count is after bundles to ensure soup and water spawn after knowing their count.
 
+# Effect
+# effect give @p[team=Player] minecraft:blindness 4
+
 # Bonous Items
 execute if score ending GameStatus matches 0 if score day GameStatus matches 1 if score difficulty Settings matches 1..2 run function gc:states/8_bunker/items/process/manage_bonous_items
 
