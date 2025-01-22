@@ -13,4 +13,4 @@
   execute as @p[team=Player,nbt=!{Inventory:[{id:"minecraft:written_book",Slot:8b,Count:1b,tag:{gameMenu:1b}}]}] run function gc:utility/inventory/give_game_menu
 
 # Update Expedition Items
-execute if score gameState GameStatus matches 9 run function gc:states/9_expedition/place/items/update/update_items
+execute if score gameState GameStatus matches 9 run function gc:states/9_expedition/items/update/update_items

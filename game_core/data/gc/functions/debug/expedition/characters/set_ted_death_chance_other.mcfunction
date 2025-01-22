@@ -14,4 +14,4 @@ scoreboard players set hasGun ItemsExpedition 0
 scoreboard players set hasBodyArmour ItemsExpedition 0
 
 # Death Chance
-function gc:states/9_expedition/place/characters/death/get_death_other
+function gc:states/9_expedition/characters/death/get_death_other

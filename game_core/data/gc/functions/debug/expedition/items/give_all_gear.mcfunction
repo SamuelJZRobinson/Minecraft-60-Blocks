@@ -22,4 +22,4 @@ scoreboard players set hasSuitcase ItemsExpedition 1
 scoreboard players set hasBodyArmour ItemsExpedition 1
 
 # Get Gear
-function gc:states/9_expedition/place/items/kits/manage_give_kit
+function gc:states/9_expedition/items/kits/manage_give_kit

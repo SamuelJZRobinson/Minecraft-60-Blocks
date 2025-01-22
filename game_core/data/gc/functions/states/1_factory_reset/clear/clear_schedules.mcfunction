@@ -9,6 +9,6 @@ schedule clear gc:states/4_setup/items/manage_items
 # Bunker
 schedule clear gc:states/8_bunker/manage_day
 # Expedition
-schedule clear gc:states/9_expedition/place/inc_step
+schedule clear gc:states/9_expedition/inc_step
 # Timer
 schedule clear gc:utility/timers/countdown/tick

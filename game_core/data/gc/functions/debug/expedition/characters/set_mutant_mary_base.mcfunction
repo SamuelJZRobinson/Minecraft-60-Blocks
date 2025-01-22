@@ -8,4 +8,4 @@ scoreboard players set deathChance CharactersExpedition 0
 scoreboard players set isMutant MaryStatus 1
 
 # Death Chance
-function gc:states/9_expedition/place/characters/death/get_death_characters_mary_mutant
+function gc:states/9_expedition/characters/death/get_death_characters_mary_mutant

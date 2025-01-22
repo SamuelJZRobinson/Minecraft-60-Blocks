@@ -10,4 +10,4 @@ tellraw @a "state 9"
 
 # Setup Expedition
 scoreboard players set step ItemsExpedition 1
-schedule function gc:states/9_expedition/place/manage_expedition 1t replace
+schedule function gc:states/9_expedition/manage_expedition 1t replace
