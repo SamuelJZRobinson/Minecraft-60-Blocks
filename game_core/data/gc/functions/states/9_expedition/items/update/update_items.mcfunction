@@ -3,3 +3,5 @@ execute if score mapVisited MenuExpedition matches 7 as @p[team=Player,nbt={Sele
 # Flashlight Night Vision
 execute as @p[team=Player,nbt={SelectedItem:{tag:{flashlight:1b}}}] run effect give @s night_vision infinite 0 true
 execute as @p[team=Player,nbt=!{SelectedItem:{tag:{flashlight:1b}}}] run effect clear @s night_vision
+# No Items Left
+execute if score itemsLeft ItemsExpedition

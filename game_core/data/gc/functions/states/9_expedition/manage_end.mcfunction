@@ -1,6 +1,9 @@
 # Notes
   # Addresses in-person expeditinos only.
 
+# Timer
+schedule clear gc:utility/timers/countdown/tick
+
 # Sound
 function gc:sounds/expedition_end
 

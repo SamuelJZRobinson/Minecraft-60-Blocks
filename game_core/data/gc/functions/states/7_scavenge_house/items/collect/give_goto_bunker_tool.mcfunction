@@ -1,0 +1,1 @@
+give @p carrot_on_a_stick{display:{Name:'{"text":"Goto Bunker","color":"gray","bold":true}'},CustomModelData:10,gotoBunker:1b} 1
