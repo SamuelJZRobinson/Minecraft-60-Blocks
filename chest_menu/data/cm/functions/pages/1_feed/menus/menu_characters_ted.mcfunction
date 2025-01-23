@@ -52,7 +52,7 @@ data modify block ~ ~ ~ Items insert 0 value {Slot:9b,id:"minecraft:saddle",Coun
   execute if score soup TedStatus > HUNGER_AMOUNT_CRITICAL CharactersLevels if score soup TedStatus <= HUNGER_AMOUNT_DANGER CharactersLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Hungry","color":"gold"}'
   execute if score soup TedStatus <= HUNGER_AMOUNT_CRITICAL CharactersLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Starvation","color":"gold"}'
   # Injured
-  execute if score isInjured MaryStatus matches 1 if score injuredDays MaryStatus < INJURED_DAYS_DANGER CharactersLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Hurt","color":"gold"}'
+  execute if score isInjured TedStatus matches 1 if score injuredDays TedStatus < INJURED_DAYS_DANGER CharactersLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Hurt","color":"gold"}'
   execute if score isInjured TedStatus matches 1 if score injuredDays TedStatus >= INJURED_DAYS_DANGER CharactersLevels run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Agony","color":"gold"}'
   # Crazy
   execute if score isCrazy TedStatus matches 1 run data modify block ~ ~ ~ Items[{Slot:9b}].tag.display.Lore append value '{"text":"Crazy","color":"gold"}'

@@ -1,5 +1,6 @@
 # Save Scores
 scoreboard players operation characterSent MenuExpedition = characterSelect MenuExpedition
+scoreboard players operation characterSent AtomicDrill = characterSelect MenuExpedition
 scoreboard players operation mapVisited MenuExpedition = mapSelect MenuExpedition
 
 # Characters

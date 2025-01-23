@@ -32,4 +32,4 @@ schedule function gc:states/manage_states 1t replace
 
 # Reset Scores
 scoreboard players reset @s PlayerDeaths
-execute unless score gamemode Settings matches 1 run scoreboard players set characterSent MenuExpedition 0
+scoreboard players set characterSent MenuExpedition 0
