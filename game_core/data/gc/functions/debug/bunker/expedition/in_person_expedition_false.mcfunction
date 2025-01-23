@@ -1,0 +1,1 @@
+scoreboard players set doInPersonExpedition Settings 0
