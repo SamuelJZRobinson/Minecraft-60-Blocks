@@ -2,7 +2,7 @@
 scoreboard players set isGameStarted GameStatus 1
 
 # Clear Signs
-function gc:states/2_lobby/place/place_menu_signs
+execute positioned 17 36 15 run function gc:states/2_lobby/place/place_menu_signs
 
 # Modify Odds Difficulties
   # Easy
