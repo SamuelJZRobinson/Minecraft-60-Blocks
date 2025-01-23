@@ -51,4 +51,4 @@ data remove storage minecraft:atomicdrill dialogue
 function gc:states/5_atomic_drill/show/show_dialogue_loop
 
 # Debounce Stage
-scoreboard players set stage AtomicDrill 1
+scoreboard players set step AtomicDrill 1

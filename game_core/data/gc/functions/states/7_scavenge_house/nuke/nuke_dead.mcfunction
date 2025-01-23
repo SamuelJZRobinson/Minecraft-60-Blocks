@@ -1,6 +1,6 @@
 # Atomic Drill Task
 execute if score gamemode Settings matches 1 run scoreboard players set task AtomicDrill 11
-execute if score gamemode Settings matches 1 run scoreboard players set stage AtomicDrill 0
+execute if score gamemode Settings matches 1 run scoreboard players set step AtomicDrill 0
 
 # Effects
 effect give @p minecraft:blindness 3

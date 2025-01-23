@@ -1,1 +1,1 @@
-scoreboard players set stage AtomicDrill 2
+scoreboard players set step AtomicDrill 2

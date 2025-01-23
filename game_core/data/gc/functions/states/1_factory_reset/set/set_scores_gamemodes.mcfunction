@@ -23,7 +23,7 @@ scoreboard objectives add AtomicDrill dummy {"bold":true,"color":"white","text":
 scoreboard players set itemCount AtomicDrill 0
 # Tasks
 scoreboard players set task AtomicDrill 0
-scoreboard players set stage AtomicDrill 0
+scoreboard players set step AtomicDrill 0
 # Events
 scoreboard players set expeditionDeath AtomicDrill 0
 scoreboard players set event15Choice AtomicDrill 0

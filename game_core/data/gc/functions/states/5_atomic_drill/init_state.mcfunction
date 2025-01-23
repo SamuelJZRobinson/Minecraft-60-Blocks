@@ -5,4 +5,4 @@ tellraw @a "state 5"
 
 # Set Scores
 scoreboard players set task AtomicDrill 1
-scoreboard players set stage AtomicDrill 0
+scoreboard players set step AtomicDrill 0

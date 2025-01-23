@@ -2,5 +2,3 @@
 # Remove Chest Menu
 setblock 4 -48 -9 minecraft:air
 kill @e[type=minecraft:armor_stand,tag=menuText]
-# Break The Script
-schedule clear gc:states/5_atomic_drill/task/task_loop

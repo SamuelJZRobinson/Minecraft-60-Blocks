@@ -34,10 +34,6 @@ kill @e[team=Items]
   data modify storage minecraft:itemsprocess scavengeGainedItemIds append from entity @s Inventory[].tag.itemId
   clear @s
 
-# Atomic Drill
-execute if score doInPersonExpedition Settings matches 1 if score task AtomicDrill matches 15..16 run schedule function cm:menu/page3/event/event2_return 21t replace
-execute unless score task AtomicDrill matches 15..16 run scoreboard players set expeditionDeath AtomicDrill 0
-
 # Reset Scores
 scoreboard players set characterSent MenuExpedition 0
 

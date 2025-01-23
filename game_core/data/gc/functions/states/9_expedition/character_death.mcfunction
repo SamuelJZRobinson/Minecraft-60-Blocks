@@ -23,7 +23,7 @@ clear @s
   execute unless score gamemode Settings matches 1 if score characterSent MenuExpedition matches 4 run data modify storage minecraft:itemsprocess charactersLostIds append value 22
 
 # Dialogue
-execute if score gamemode Settings matches 1 run data modify storage atomicdrill dialogue append value "Be more careful! If this were real you would be dead!"
+execute if score gamemode Settings matches 1 run data modify storage minecraft:atomicdrill dialogue append value "Be more careful! If this were real you would be dead!"
 execute if score gamemode Settings matches 1 run function gc:states/5_atomic_drill/show/show_dialogue_loop
 
 # Set State
