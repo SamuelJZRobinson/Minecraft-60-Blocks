@@ -18,7 +18,7 @@ function gc:states/8_bunker/items/count/count_items
     scoreboard players set isGameStarted GameStatus 1
     scoreboard players set gameState GameStatus 8
     scoreboard players set music GameStatus 5
-    scoreboard players set day GameStatus 1
+    scoreboard players set day GameStatus 0
 
 # Characters
   # Ted

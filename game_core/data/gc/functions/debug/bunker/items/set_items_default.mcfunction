@@ -10,7 +10,7 @@ function cm:place_chest_menu
     scoreboard players set isGameStarted GameStatus 1
     scoreboard players set gameState GameStatus 8
     scoreboard players set music GameStatus 5
-    scoreboard players set day GameStatus 1
+    scoreboard players set day GameStatus 0
   # Alerts
   scoreboard players set banditAlert MenuExpedition 0
   scoreboard players set falloutAlert MenuExpedition 0
