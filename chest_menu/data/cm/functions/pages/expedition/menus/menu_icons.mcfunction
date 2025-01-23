@@ -1,8 +1,0 @@
-# Alert
-execute if score characterSent MenuExpedition matches 1.. run data modify block ~ ~ ~ Items insert 0 value {Slot:20b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:40,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Expedition In Progress","color":"red","bold":true}'}}}
-execute if score banditAlert MenuExpedition matches 1 run data modify block ~ ~ ~ Items insert 0 value {Slot:21b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:39,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Bandits","color":"yellow","bold":true}'}}}
-execute if score falloutAlert MenuExpedition matches 1 run data modify block ~ ~ ~ Items insert 0 value {Slot:22b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:41,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Radioactive Fallout","color":"yellow","bold":true}'}}}
-# Protection
-execute if score mutantProtection MenuExpedition matches 1 run data modify block ~ ~ ~ Items insert 0 value {Slot:23b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:38,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Mutant Protection","color":"aqua","bold":true}'}}}
-function cm:pages/expedition/menus/menu_icons_padlock
-execute if score padlockProtection MenuExpedition matches 1 run data modify block ~ ~ ~ Items insert 0 value {Slot:24b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:56,isMenu:1b,page:2,selection:0,display:{Name:'{"text":"Padlock Protection","color":"aqua","bold":true}'}}}

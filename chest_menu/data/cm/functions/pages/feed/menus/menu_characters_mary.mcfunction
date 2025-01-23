@@ -1,2 +1,0 @@
-execute if score isMutant MaryStatus matches 0 run function cm:pages/feed/menus/menu_characters_mary_normal
-execute if score isMutant MaryStatus matches 1 run function cm:pages/feed/menus/menu_characters_mary_mutant
