@@ -1,8 +1,9 @@
 # Notes
   # Players cannot prepare an expedition on the first day so expeditionReady is -1
+  # Expeditions after the first one after task 15 break the code and they are not necessary so it's best to avoid them.
 
 # Prepare Expedition
-execute if score expeditionReady MenuExpedition matches 0 run function cm:pages/2_expedition/menus/menu_expedition_prepare
+execute unless score task AtomicDrill matches 15.. if score expeditionReady MenuExpedition matches 0 run function cm:pages/2_expedition/menus/menu_expedition_prepare
 
 # Expedition Ready
 execute if score expeditionReady MenuExpedition matches 1 if score characterSent MenuExpedition matches 0 run function cm:pages/2_expedition/menus/menu_expedition_ready
