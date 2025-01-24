@@ -13,8 +13,12 @@
               "name": "Padlock"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:14,itemId:13}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{itemId:13}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 14
             }
           ]
         }

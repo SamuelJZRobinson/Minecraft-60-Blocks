@@ -13,7 +13,7 @@ scoreboard players set bunkerSide GameStatus 1
   setblock 7 -30 5 redstone_block
 
 # Props
-execute unless entity @e[type=minecraft:item_frame,tag=deleteItemFrame] run summon item_frame 18.00 -28.50 -12.50 {Facing:5b,Invulnerable:1b,Fixed:1b,Tags:["house","deleteItemFrame"],Item:{id:"minecraft:filled_map",Count:1b,tag:{map:4}}}
+execute unless entity @e[type=minecraft:item_frame,tag=deleteItemFrame] run summon item_frame 18.00 -28.50 -12.50 {Facing:5b,Invulnerable:1b,Fixed:1b,Tags:["house","deleteItemFrame"],Item:{id:"minecraft:filled_map",count:1,tag:{map:4}}}
 
 # Spawn Markers
 execute unless score gamemode Settings matches 1 run function gc:states/4_setup/floorplans/general/summon_bunker_indicator

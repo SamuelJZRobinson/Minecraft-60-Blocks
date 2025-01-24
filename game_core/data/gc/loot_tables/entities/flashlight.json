@@ -13,8 +13,12 @@
               "name": "Flashlight"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:8,itemId:7}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{itemId:7}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 8
             }
           ]
         }

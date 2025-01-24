@@ -13,8 +13,12 @@
               "name": "Timmy"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:18,itemId:22}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{itemId:22}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 18
             }
           ]
         }

@@ -13,8 +13,12 @@
               "name": "Gun"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:10,itemId:9}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{itemId:9}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 10
             }
           ]
         }

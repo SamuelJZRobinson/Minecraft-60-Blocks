@@ -1,3 +1,3 @@
-summon minecraft:marker ~ ~ ~ {Tags:["floor","north"]}
-summon minecraft:marker ~2 ~ ~ {Tags:["floor","north"]}
-summon minecraft:marker ~4 ~ ~ {Tags:["floor","south"]}
+summon marker ~ ~ ~ {Tags:["floor","north"]}
+summon marker ~2 ~ ~ {Tags:["floor","north"]}
+summon marker ~4 ~ ~ {Tags:["floor","south"]}

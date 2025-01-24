@@ -10,11 +10,15 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": "bodyArmour"
+              "name": "Body Armour"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:20,itemId:18}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{itemId:18}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 20
             }
           ]
         }

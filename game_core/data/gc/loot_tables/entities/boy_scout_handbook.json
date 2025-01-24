@@ -13,8 +13,12 @@
               "name": "Boy Scout Handbook"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:3,itemId:3}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{itemId:3}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 3
             }
           ]
         }

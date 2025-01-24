@@ -1,1 +1,1 @@
-give @s potion{display:{Name:'{"text":"Water","bold":true}'},CustomModelData:1,itemId:17,custom_potion_effects:[{id:"minecraft:absorption",amplifier:0b,duration:1800},{id:"minecraft:saturation",amplifier:20b,duration:1}]} 1
+give @s potion[custom_name='{"bold":true,"text":"Water"}',custom_model_data=1,custom_data={itemId:17},potion_contents={custom_effects:[{id:"minecraft:absorption",amplifier:0,duration:1800},{id:"minecraft:saturation",amplifier:20,duration:1}]}] 1

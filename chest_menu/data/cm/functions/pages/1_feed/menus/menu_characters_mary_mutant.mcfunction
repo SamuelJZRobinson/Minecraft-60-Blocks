@@ -1,5 +1,6 @@
 # Set Head
-data modify block ~ ~ ~ Items insert 0 value {Slot:5b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:28,isMenu:1b,page:1,selection:11,display:{Name:'{"text":"Mutant Mary","color":"gray","bold":true}'}}}
+data modify block ~ ~ ~ Items insert 0 value {Slot:5b,id:"minecraft:saddle",count:1,components:{"minecraft:custom_name":'{"color":"gray","bold":true,"text":"Mutant Mary"}',"minecraft:custom_model_data":28,"minecraft:custom_data":{isMenu:1b,page:1,selection:11}}}
+
 # Multi Soup And Water
   # Enable
     # Soup off
@@ -11,14 +12,14 @@ data modify block ~ ~ ~ Items insert 0 value {Slot:5b,id:"minecraft:saddle",Coun
     # No Soup
     execute if score maryGiveSoup MenuFeed matches 0 if score soupNotGiven MenuFeed matches 0 run scoreboard players set maryMultiAction MenuFeed -1
   # Multi Lore
-  execute if score maryMultiAction MenuFeed matches -1 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Need more supplies","color":"dark_red"}'
-  execute if score maryMultiAction MenuFeed matches 1 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Add soup","color":"dark_gray"}'
-  execute if score maryMultiAction MenuFeed matches 2 run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Click to remove soup","color":"dark_gray","underlined":true}'
+  execute if score maryMultiAction MenuFeed matches -1 run data modify block ~ ~ ~ Items[{Slot:5b}].components.minecraft:lore append value '{"text":"Need more supplies","color":"dark_red"}'
+  execute if score maryMultiAction MenuFeed matches 1 run data modify block ~ ~ ~ Items[{Slot:5b}].components.minecraft:lore append value '{"text":"Add soup","color":"dark_gray"}'
+  execute if score maryMultiAction MenuFeed matches 2 run data modify block ~ ~ ~ Items[{Slot:5b}].components.minecraft:lore append value '{"text":"Click to remove soup","color":"dark_gray","underlined":true}'
 # Soup
   # Toggle
-  execute if score maryGiveSoup MenuFeed matches 0 unless score soupGiven MenuFeed >= soups ItemsBunker run data modify block ~ ~ ~ Items insert 0 value {Slot:6b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:76,isMenu:1b,page:1,selection:13,display:{Name:'{"text":"Soup","color":"gray","bold":true}'}}}
-  execute if score maryGiveSoup MenuFeed matches 1 run data modify block ~ ~ ~ Items insert 0 value {Slot:6b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:16,isMenu:1b,page:1,selection:14,display:{Name:'{"text":"Soup","color":"gold","bold":true}',Lore:['{"text":"Selected","color":"gold"}']}}}
+  execute if score maryGiveSoup MenuFeed matches 0 unless score soupGiven MenuFeed >= soups ItemsBunker run data modify block ~ ~ ~ Items insert 0 value {Slot:6b,id:"minecraft:saddle",count:1,components:{"minecraft:custom_name":'{"color":"gray","bold":true,"text":"Soup"}',"minecraft:custom_model_data":76,"minecraft:custom_data":{isMenu:1b,page:1,selection:13}}}
+  execute if score maryGiveSoup MenuFeed matches 1 run data modify block ~ ~ ~ Items insert 0 value {Slot:6b,id:"minecraft:saddle",count:1,components:{"minecraft:custom_name":'{"color":"gold","bold":true,"text":"Soup"}',"minecraft:lore":['{"color":"gold","text":"Selected"}'],"minecraft:custom_model_data":16,"minecraft:custom_data":{isMenu:1b,page:1,selection:14}}}
   # Lock
-  execute if score maryGiveSoup MenuFeed matches 0 if score soupGiven MenuFeed >= soups ItemsBunker run data modify block ~ ~ ~ Items insert 0 value {Slot:6b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:102,isMenu:1b,page:1,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Need more soup","color":"dark_red"}']}}}
+  execute if score maryGiveSoup MenuFeed matches 0 if score soupGiven MenuFeed >= soups ItemsBunker run data modify block ~ ~ ~ Items insert 0 value {Slot:6b,id:"minecraft:saddle",count:1,components:{"minecraft:custom_name":'{"color":"red","bold":true,"text":"Locked"}',"minecraft:lore":['{"color":"dark_red","text":"Need more soup"}'],"minecraft:custom_model_data":102,"minecraft:custom_data":{isMenu:1b,page:1,selection:0}}}
 # Status Lore
-data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.Lore append value '{"text":"Mutated","color":"gold"}'
+data modify block ~ ~ ~ Items[{Slot:5b}].components.minecraft:lore append value '{"text":"Mutated","color":"gold"}'

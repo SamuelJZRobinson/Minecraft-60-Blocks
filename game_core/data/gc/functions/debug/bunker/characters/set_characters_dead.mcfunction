@@ -20,18 +20,22 @@ function cm:place_chest_menu
   scoreboard players set alive TedStatus 0
   scoreboard players set soup TedStatus 100
   scoreboard players set water TedStatus 100
+  scoreboard players set isInside TedStatus 1
   # Dolores
   scoreboard players set alive DoloresStatus 0
   scoreboard players set soup DoloresStatus 100
   scoreboard players set water DoloresStatus 100
+  scoreboard players set isInside DoloresStatus 1
   # Mary
   scoreboard players set alive MaryStatus 0
   scoreboard players set soup MaryStatus 100
   scoreboard players set water MaryStatus 100
+  scoreboard players set isInside MaryStatus 1
   # Timmy
   scoreboard players set alive TimmyStatus 0
   scoreboard players set soup TimmyStatus 100
   scoreboard players set water TimmyStatus 100
+  scoreboard players set isInside TimmyStatus 1
 
 # Update Bunker
 # Kill Entities

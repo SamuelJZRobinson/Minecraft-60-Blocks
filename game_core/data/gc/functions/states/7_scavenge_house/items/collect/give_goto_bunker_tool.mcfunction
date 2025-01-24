@@ -1,1 +1,1 @@
-give @p carrot_on_a_stick{display:{Name:'{"text":"Goto Bunker","color":"gray","bold":true}'},CustomModelData:10,gotoBunker:1b} 1
+give @s carrot_on_a_stick[custom_name='{"bold":true,"color":"gray","text":"Goto Bunker"}',custom_model_data=10,custom_data={gotoBunker:1b}] 1

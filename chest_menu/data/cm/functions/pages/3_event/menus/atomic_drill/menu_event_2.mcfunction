@@ -4,19 +4,19 @@ scoreboard players set totalOptions MenuEvent 3
 # Update GUI
   # Clean Gun
     # Toggle
-    data modify block ~ ~ ~ Items insert 0 value {Slot:3b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:10,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Clean gun","color":"gray","bold":true}'}}}
+    data modify block ~ ~ ~ Items insert 0 value {Slot:3b,id:"minecraft:saddle",count:1,tag:{CustomModelData:10,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Clean gun","color":"gray","bold":true}'}}}
     # Lock
-    execute if score gun ItemsBunker matches 0 run data modify block ~ ~ ~ Items insert 0 value {Slot:12b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:114,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Need gun","color":"dark_red"}']}}}
+    execute if score gun ItemsBunker matches 0 run data modify block ~ ~ ~ Items insert 0 value {Slot:12b,id:"minecraft:saddle",count:1,tag:{CustomModelData:114,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Need gun","color":"dark_red"}']}}}
   # Flashlight Shadow Bunnies
     # Toggle
-    data modify block ~ ~ ~ Items insert 0 value {Slot:4b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:8,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Play shadow bunnies","color":"gray","bold":true}'}}}
+    data modify block ~ ~ ~ Items insert 0 value {Slot:4b,id:"minecraft:saddle",count:1,tag:{CustomModelData:8,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Play shadow bunnies","color":"gray","bold":true}'}}}
     # Lock
-    execute if score flashlight ItemsBunker matches 0 run data modify block ~ ~ ~ Items insert 0 value {Slot:13b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:114,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Need flashlight","color":"dark_red"}']}}}
+    execute if score flashlight ItemsBunker matches 0 run data modify block ~ ~ ~ Items insert 0 value {Slot:13b,id:"minecraft:saddle",count:1,tag:{CustomModelData:114,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Need flashlight","color":"dark_red"}']}}}
   # Listen To Radio
     # Toggle
-    data modify block ~ ~ ~ Items insert 0 value {Slot:5b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:15,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Listen to the radio","color":"gray","bold":true}'}}}
+    data modify block ~ ~ ~ Items insert 0 value {Slot:5b,id:"minecraft:saddle",count:1,tag:{CustomModelData:15,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Listen to the radio","color":"gray","bold":true}'}}}
     # Lock
-    execute if score radio ItemsBunker matches 0 run data modify block ~ ~ ~ Items insert 0 value {Slot:14b,id:"minecraft:saddle",Count:1b,tag:{CustomModelData:114,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Need radio","color":"dark_red"}']}}}
+    execute if score radio ItemsBunker matches 0 run data modify block ~ ~ ~ Items insert 0 value {Slot:14b,id:"minecraft:saddle",count:1,tag:{CustomModelData:114,isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Locked","color":"red","bold":true}',Lore:['{"text":"Need radio","color":"dark_red"}']}}}
 
 # Output
 scoreboard players operation event15Choice AtomicDrill = choice MenuEvent

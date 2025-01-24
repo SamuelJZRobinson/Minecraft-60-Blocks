@@ -1,5 +1,5 @@
 # Place Character
-summon minecraft:armor_stand ~1 ~0.40 ~3 {Team:ItemsDisplay,NoGravity:1b,Invulnerable:1b,ShowArms:1b,NoBasePlate:1b,Tags:["bunkerHitbox","bunkerItem","bunkerMary"],Pose:{LeftArm:[-40f,20f,5f],RightArm:[-40f,-20f,-5f],LeftLeg:[-90f,-20f,0f],RightLeg:[-90f,20f,0f]},DisabledSlots:4144959,Rotation:[325F,0F],ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:4208422}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:2501178}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:13488091}}},{id:"minecraft:saddle",Count:1b,tag:{CustomModelData:12}}]}
+summon armor_stand ~1 ~0.40 ~3 {Team:"ItemsDisplay",NoGravity:1b,Invulnerable:1b,ShowArms:1b,NoBasePlate:1b,Tags:["bunkerHitbox","bunkerItem","bunkerMary"],Pose:{LeftArm:[-40f,20f,5f],RightArm:[-40f,-20f,-5f],LeftLeg:[-90f,-20f,0f],RightLeg:[-90f,20f,0f]},DisabledSlots:4144959,Rotation:[325F,0F],ArmorItems:[{id:"minecraft:leather_boots",count:1,components:{"minecraft:dyed_color":4208422}},{id:"minecraft:leather_leggings",count:1,components:{"minecraft:dyed_color":2501178}},{id:"minecraft:leather_chestplate",count:1,components:{"minecraft:dyed_color":13488091}},{id:"minecraft:saddle",count:1,components:{"minecraft:custom_model_data":12}}]}
 
 # Status
   # Name

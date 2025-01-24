@@ -13,8 +13,12 @@
               "name": "Medkit"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:13,itemId:12}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{itemId:12}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 13
             }
           ]
         }

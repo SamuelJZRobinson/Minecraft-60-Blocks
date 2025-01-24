@@ -33,6 +33,8 @@ function cm:place_chest_menu
   scoreboard players set soup TimmyStatus 100
   scoreboard players set water TimmyStatus 100
 
+function gc:states/8_bunker/characters/count/count_family
+
 # Update Bunker
 # Kill Entities
 function gc:states/1_factory_reset/clear/clear_locations

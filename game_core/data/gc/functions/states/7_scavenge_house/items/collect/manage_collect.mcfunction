@@ -11,8 +11,8 @@ execute if score gameState GameStatus matches 5..7 run function gc:states/7_scav
 
 # Items Left
 execute if score gameState GameStatus matches 9 unless score seconds TimerCountdown <= COUNTDOWN_SECONDS_START TimerCountdownSettings if score seconds TimerCountdown matches 0.. run function gc:states/9_expedition/items/show/show_items_left
-execute if score gameState GameStatus matches 9 if score itemsLeft ItemsExpedition matches 0 if score step ItemsExpedition matches 12.. if entity @p[team=Player,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{gotoBunker:1b}}]}] run function gc:states/7_scavenge_house/items/collect/give_goto_bunker_tool
-execute if score gameState GameStatus matches 9 if score itemsLeft ItemsExpedition matches 1.. if score step ItemsExpedition matches 12.. run clear @p[team=Player] carrot_on_a_stick{gotoBunker:1b}
+execute if score gameState GameStatus matches 9 if score itemsLeft ItemsExpedition matches 0 if score step ItemsExpedition matches 12.. as @p[team=Player,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{gotoBunker:1b}}}]}] run function gc:states/7_scavenge_house/items/collect/give_goto_bunker_tool
+execute if score gameState GameStatus matches 9 if score itemsLeft ItemsExpedition matches 1.. if score step ItemsExpedition matches 12.. run clear @p[team=Player] carrot_on_a_stick[minecraft:custom_data={gotoBunker:1b}]
 
 # Open Salvage Crate
   # Has Items

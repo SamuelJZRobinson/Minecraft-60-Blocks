@@ -1,1 +1,1 @@
-give @s minecraft:saddle{display:{Name:'{"text":"Checkers","bold":true}'},CustomModelData:6,itemId:6} 1
+give @s saddle[custom_name='{"bold":true,"text":"Checkers"}',custom_model_data=6,custom_data={itemId:6}] 1

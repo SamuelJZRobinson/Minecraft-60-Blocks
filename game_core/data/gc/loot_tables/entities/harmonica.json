@@ -13,8 +13,12 @@
               "name": "Harmonica"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:52,itemId:10}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{itemId:10}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 52
             }
           ]
         }

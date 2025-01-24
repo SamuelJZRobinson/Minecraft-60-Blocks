@@ -17,4 +17,4 @@ scoreboard players set bool MenuMain 0
 
 # Refresh Chest
 function cm:root/update/update_menu
-clear @s #cm:chest_menu{isMenu:1b}
+clear @s #cm:chest_menu[custom_data~{isMenu:1b}]

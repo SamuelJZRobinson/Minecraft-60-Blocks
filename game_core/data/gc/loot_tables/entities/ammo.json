@@ -13,8 +13,12 @@
               "name": "Ammo"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:1,itemId:1}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{itemId:1}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 1
             }
           ]
         }

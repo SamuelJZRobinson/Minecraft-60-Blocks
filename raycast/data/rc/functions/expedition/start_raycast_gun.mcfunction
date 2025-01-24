@@ -10,7 +10,7 @@ data modify storage minecraft:gundamage legDamage set value 5
 playsound minecraft:entity.firework_rocket.blast player @a ~ ~ ~ 1 0 0
 
 # Decrement Ammo
-clear @s minecraft:iron_nugget{gunAmmo:1b} 1
+clear @s minecraft:iron_nugget[custom_data={gunAmmo:1b}] 1
 
 # Anchor to the eyes and position with vector coordinates (Remove if not running from eyes of entity)
 execute anchored eyes positioned ^ ^ ^ run function rc:expedition/raycast_gun

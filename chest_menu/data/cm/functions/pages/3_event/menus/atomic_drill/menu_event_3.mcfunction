@@ -2,7 +2,7 @@
 scoreboard players set totalOptions MenuEvent 2
 
 # Question
-data modify block ~ ~ ~ Items insert 0 value {Slot:4b,id:"minecraft:gold_block",Count:1b,tag:{isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Let the visitor inside?","color":"gray","bold":true}'}}}
+data modify block ~ ~ ~ Items insert 0 value {Slot:4b,id:"minecraft:gold_block",count:1,tag:{isMenu:1b,page:3,selection:0,display:{Name:'{"text":"Let the visitor inside?","color":"gray","bold":true}'}}}
 
 # Output
 execute if score submit MenuEvent matches 1 if score choice MenuEvent matches 0 run give @s written_book{dailyStory:1b,title:"Journal",author:"BlackeyeI",generation:0,pages:['[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nIt is good to see that you are heeding my instructions. The person you heard before was an imposter with malicious intent. If you invited them inside, they would have seized your possessions or even your lives! While counting sheep in your head, the sudden","bold":false}]','[{"text":"Day ","bold":true},{"score":{"name":"day","objective":"GameStatus"}},{"text":"\\nsound of two knocks from beyond the door startled your concentration. After questioning the intent of whoever was outside, the voice of a young man explained that a rescue team had arrived to escort you. Do you open the door?","bold":false}]']} 1

@@ -1,1 +1,1 @@
-give @s potion{display:{Name:'{"text":"Soup","bold":true}'},CustomModelData:2,itemId:15,custom_potion_effects:[{id:"minecraft:strength",amplifier:0b,duration:1800},{id:"minecraft:saturation",amplifier:20b,duration:1}]} 1
+give @s potion[custom_name='{"bold":true,"text":"Soup"}',custom_model_data=2,custom_data={itemId:15},potion_contents={custom_effects:[{id:"minecraft:strength",amplifier:0,duration:1800},{id:"minecraft:saturation",amplifier:20,duration:1}]}] 1

@@ -10,13 +10,13 @@ execute if score gameState GameStatus matches 4..7 run function gc:utility/inven
   # Grace Period
   execute if score gameState GameStatus matches 6 run function gc:utility/inventory/lock_hotbar
   # Scavenge House
-  execute if score gameState GameStatus matches 7 if entity @s[nbt={Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:0b,tag:{locked:1b}}]}] run item replace entity @s hotbar.0 with minecraft:air
-  execute if score gameState GameStatus matches 7 if entity @s[nbt={Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:1b,tag:{locked:1b}}]}] run item replace entity @s hotbar.1 with minecraft:air
-  execute if score gameState GameStatus matches 7 if entity @s[nbt={Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:2b,tag:{locked:1b}}]}] run item replace entity @s hotbar.2 with minecraft:air
-  execute if score gameState GameStatus matches 7 if entity @s[nbt={Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:3b,tag:{locked:1b}}]}] run item replace entity @s hotbar.3 with minecraft:air
+  execute if score gameState GameStatus matches 7 if entity @s[nbt={Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:0b,components:{"minecraft:custom_data":{locked:1b}}}]}] run item replace entity @s hotbar.0 with minecraft:air
+  execute if score gameState GameStatus matches 7 if entity @s[nbt={Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:1b,components:{"minecraft:custom_data":{locked:1b}}}]}] run item replace entity @s hotbar.1 with minecraft:air
+  execute if score gameState GameStatus matches 7 if entity @s[nbt={Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:2b,components:{"minecraft:custom_data":{locked:1b}}}]}] run item replace entity @s hotbar.2 with minecraft:air
+  execute if score gameState GameStatus matches 7 if entity @s[nbt={Inventory:[{id:"minecraft:red_stained_glass_pane",Slot:3b,components:{"minecraft:custom_data":{locked:1b}}}]}] run item replace entity @s hotbar.3 with minecraft:air
 
 # Clear
 execute if score gameState GameStatus matches 8.. run clear @s red_stained_glass_pane
 
 # Klll Locked Items On The Floor
-kill @e[type=item,nbt={Item:{id:"minecraft:red_stained_glass_pane",Count:1b,tag:{locked:1b}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:red_stained_glass_pane",count:1,components:{"minecraft:custom_data":{locked:1b}}}}]
