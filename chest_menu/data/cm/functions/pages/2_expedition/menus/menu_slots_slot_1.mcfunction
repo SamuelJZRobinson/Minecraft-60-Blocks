@@ -27,7 +27,7 @@ execute if score slotOne MenuExpedition matches 17 run loot replace block ~ ~ ~ 
 execute if score slotOne MenuExpedition matches 18 run loot replace block ~ ~ ~ container.9 loot cm:chests/soup
 execute if score slotOne MenuExpedition matches 19 run loot replace block ~ ~ ~ container.9 loot cm:chests/water
 # Set Selection
-data modify block ~ ~ ~ Items[{Slot:9b}].tag.selection set value 20
+data modify block ~ ~ ~ Items[{Slot:9b}].components.minecraft:custom_data.selection set value 20
 
 # Extend Slots With Suitcase
 execute unless score slotTwo MenuExpedition matches 2.. if score slotOne MenuExpedition matches 2 run scoreboard players set slotTwo MenuExpedition 1

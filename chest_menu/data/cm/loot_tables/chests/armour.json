@@ -18,7 +18,11 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{custom_model_data:20,isMenu:1b,page:2}"
+              "tag": "{isMenu:1b,page:2}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 20
             }
           ]
         }

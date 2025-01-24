@@ -24,4 +24,4 @@ execute if score slotTwo MenuExpedition matches 16 run loot replace block ~ ~ ~ 
 execute if score slotTwo MenuExpedition matches 17 run loot replace block ~ ~ ~ container.10 loot cm:chests/soup
 execute if score slotTwo MenuExpedition matches 18 run loot replace block ~ ~ ~ container.10 loot cm:chests/water
 # Set Selection
-data modify block ~ ~ ~ Items[{Slot:10b}].tag.selection set value 21
+data modify block ~ ~ ~ Items[{Slot:10b}].components.minecraft:custom_data.selection set value 21
