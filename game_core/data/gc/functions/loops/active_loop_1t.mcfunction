@@ -10,7 +10,7 @@ execute if score gameState GameStatus matches 5..7 as @e[type=armor_stand,tag=sp
 
 # Gamemodes
   # Atomic Drill
-  function gc:states/5_atomic_drill/task/manage_tasks
+  execute if score gamemode Settings matches 1 run function gc:states/5_atomic_drill/task/manage_tasks
 
 # Chest Menu
 execute if score gameState GameStatus matches 8 as @p[team=Player] run function cm:manage_chest_menu
