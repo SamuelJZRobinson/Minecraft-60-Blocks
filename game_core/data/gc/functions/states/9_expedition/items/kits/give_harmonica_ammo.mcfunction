@@ -1,1 +1,1 @@
-give @s bone_meal[custom_name='{"bold":true,"text":"Harmonica Ammo"}',custom_data={harmonicaAmmo:1b}] 1
+give @s bone_meal[custom_name='{"color":"gray","bold":true,"text":"Harmonica Ammo"}',custom_data={harmonicaAmmo:1b}] 1

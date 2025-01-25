@@ -1,2 +1,2 @@
-give @s carrot_on_a_stick[custom_name='{"bold":true,"text":"Gun"}',lore=['{"color":"gray","text":"Click to fire"}','{"color":"gray","text":"Range: 128"}','{"color":"gray","text":"Headshots"}','{"color":"gray","text":"Uses gun ammo"}'],custom_model_data=2,custom_data={itemId:9,gun:1b}] 1
+give @s carrot_on_a_stick[custom_name='{"color":"gray","bold":true,"text":"Gun"}',lore=['{"color":"gray","text":"Click to fire"}','{"color":"gray","text":"Range: 128"}','{"color":"gray","text":"Headshots"}','{"color":"gray","text":"Uses gun ammo"}'],custom_model_data=2,custom_data={itemId:9,gun:1b}] 1
 function gc:states/9_expedition/items/kits/give_gun_ammo

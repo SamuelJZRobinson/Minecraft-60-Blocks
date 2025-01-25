@@ -1,1 +1,1 @@
-give @s iron_axe[custom_name='{"bold":true,"text":"Axe"}',damage=210,custom_model_data=1,custom_data={itemId:2}] 1
+give @s iron_axe[custom_name='{"color":"gray","bold":true,"text":"Axe"}',damage=210,custom_model_data=1,custom_data={itemId:2}] 1

@@ -10,7 +10,11 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": "Gas Mask"
+              "name": {
+                "text": "Gas Mask",
+                "color": "gray",
+                "bold": true
+              }
             },
             {
               "function": "minecraft:set_custom_data",

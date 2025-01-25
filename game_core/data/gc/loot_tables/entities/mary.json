@@ -10,7 +10,11 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": "Mary"
+              "name": {
+                "text": "Mary",
+                "color": "gray",
+                "bold": true
+              }
             },
             {
               "function": "minecraft:set_custom_data",

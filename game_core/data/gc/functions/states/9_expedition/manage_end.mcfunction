@@ -1,8 +1,9 @@
 # Notes
   # Addresses in-person expeditinos only.
 
-# Timer
+# Clear Schedules
 schedule clear gc:utility/timers/countdown/tick
+schedule clear rc:expedition/harmonica_refill
 
 # Sound
 function gc:sounds/expedition_end

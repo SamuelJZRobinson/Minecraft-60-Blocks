@@ -1,6 +1,6 @@
 # Settings
 scoreboard players set isAddition ItemsBundles 1
-scoreboard players set doInstantAdd ItemsBundles 0
+scoreboard players set doInstantAdd ItemsBundles 1
 scoreboard players set doBundle ItemsBundles 1
 scoreboard players set doSpawn ItemsBundles 0
 

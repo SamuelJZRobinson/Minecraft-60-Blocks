@@ -1,1 +1,1 @@
-give @s carrot_on_a_stick[custom_name='{"bold":true,"text":"Radio"}',lore=['{"color":"gray","text":"Click to use"}'],custom_model_data=15,custom_data={itemId:14}] 1
+give @s carrot_on_a_stick[custom_name='{"color":"gray","bold":true,"text":"Radio"}',custom_model_data=9,custom_data={itemId:14}] 1

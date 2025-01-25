@@ -10,7 +10,11 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": "Suitcase"
+              "name": {
+                "text": "Suitcase",
+                "color": "gray",
+                "bold": true
+              }
             },
             {
               "function": "minecraft:set_custom_data",

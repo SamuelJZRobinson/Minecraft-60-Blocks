@@ -10,7 +10,11 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": "Map"
+              "name": {
+                "text": "Map",
+                "color": "gray",
+                "bold": true
+              }
             },
             {
               "function": "minecraft:set_custom_data",

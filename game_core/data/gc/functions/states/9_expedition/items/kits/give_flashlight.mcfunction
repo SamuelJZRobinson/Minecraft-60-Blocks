@@ -1,1 +1,1 @@
-give @s saddle[custom_name='{"bold":true,"text":"Flashlight"}',lore=['{"color":"gray","text":"Hold to use"}'],custom_model_data=8,custom_data={itemId:7,flashlight:1b}] 1
+give @s saddle[custom_name='{"color":"gray","bold":true,"text":"Flashlight"}',lore=['{"color":"gray","text":"Hold to use"}'],custom_model_data=8,custom_data={itemId:7}] 1

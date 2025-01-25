@@ -1,1 +1,1 @@
-give @s saddle[custom_name='{"bold":true,"text":"Checkers"}',custom_model_data=6,custom_data={itemId:6}] 1
+give @s saddle[custom_name='{"color":"gray","bold":true,"text":"Checkers"}',custom_model_data=6,custom_data={itemId:6}] 1

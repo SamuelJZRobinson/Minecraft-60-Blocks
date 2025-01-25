@@ -1,5 +1,6 @@
-# Stop Timer
+# Clear Schedules
 schedule clear gc:utility/timers/countdown/tick
+schedule clear rc:expedition/harmonica_refill
 
 # Hide Scores
 scoreboard objectives setdisplay sidebar

@@ -1,2 +1,2 @@
-give @s carrot_on_a_stick[custom_name='{"bold":true,"text":"Bug Spray"}',lore=['{"color":"gray","text":"Click to fire"}','{"color":"gray","text":"Range: 8"}','{"color":"gray","text":"Uses bug spray ammo"}'],custom_model_data=5,custom_data={itemId:4,bugSpray:1b}] 1
-give @s white_dye[custom_name='{"bold":true,"text":"Bug Spray Ammo"}',custom_data={bugSprayAmmo:1b}] 40
+give @s carrot_on_a_stick[custom_name='{"color":"gray","bold":true,"text":"Bug Spray"}',lore=['{"color":"gray","text":"Click to fire"}','{"color":"gray","text":"Range: 8"}','{"color":"gray","text":"Uses bug spray ammo"}'],custom_model_data=5,custom_data={itemId:4,bugSpray:1b}] 1
+give @s white_dye[custom_name='{"color":"gray","bold":true,"text":"Bug Spray Ammo"}',custom_data={bugSprayAmmo:1b}] 40

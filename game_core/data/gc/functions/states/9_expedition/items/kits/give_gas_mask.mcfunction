@@ -1,1 +1,1 @@
-item replace entity @s armor.head with pumpkin[custom_name='{"bold":true,"text":"Gas Mask"}',custom_model_data=1,custom_data={itemId:8},enchantments={levels:{"minecraft:binding_curse":1}}] 1
+item replace entity @s armor.head with pumpkin[custom_name='{"color":"gray","bold":true,"text":"Gas Mask"}',custom_model_data=1,custom_data={itemId:8},enchantments={levels:{"minecraft:binding_curse":1}}] 1

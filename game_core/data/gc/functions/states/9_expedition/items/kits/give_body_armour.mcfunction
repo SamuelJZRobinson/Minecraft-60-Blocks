@@ -1,1 +1,1 @@
-item replace entity @s armor.chest with leather_chestplate[custom_name='{"text":"Bulletproof Vest"}',damage=56,custom_model_data=1,custom_data={itemId:18},enchantments={levels:{"minecraft:projectile_protection":6,"minecraft:binding_curse":1}},dyed_color=1315860] 1
+item replace entity @s armor.chest with leather_chestplate[custom_name='{"color":"gray","bold":true,"text":"Bulletproof Vest"}',damage=56,custom_model_data=1,custom_data={itemId:18},enchantments={levels:{"minecraft:projectile_protection":6,"minecraft:binding_curse":1}},dyed_color=1315860] 1
