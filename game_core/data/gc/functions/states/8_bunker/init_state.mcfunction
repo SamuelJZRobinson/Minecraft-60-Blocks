@@ -1,5 +1,3 @@
-tellraw @a "state 8"
-
 # Notes
   # Delayed teleport accounts for player death respawn.
 

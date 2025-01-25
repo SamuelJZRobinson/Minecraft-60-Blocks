@@ -1,5 +1,3 @@
-tellraw @a "state 6"
-
 # Give Effects
 execute as @p[team=Player] run function gc:utility/effects/effects_scavenge_default
 

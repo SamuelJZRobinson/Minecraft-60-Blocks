@@ -1,5 +1,3 @@
-tellraw @a "state 5"
-
 # Notes
   # Atomic drill task loop handled by loop_1t.
 

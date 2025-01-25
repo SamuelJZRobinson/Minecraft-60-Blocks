@@ -1,5 +1,3 @@
-tellraw @a "state 2"
-
 # Place Signs
 execute positioned 17 36 15 run function gc:states/2_lobby/place/place_menu_signs
 execute positioned 17 36 15 run function gc:states/2_lobby/update_menu_signs

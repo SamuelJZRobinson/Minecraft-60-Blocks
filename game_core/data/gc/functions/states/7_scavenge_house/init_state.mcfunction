@@ -1,5 +1,3 @@
-tellraw @a "state 7"
-
 # Set Scores
 scoreboard players set music GameStatus 1
 

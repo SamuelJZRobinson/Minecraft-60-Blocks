@@ -1,5 +1,3 @@
-tellraw @a "state 4"
-
 # Give Outfits
 execute if score doTed Settings matches 0 as @p[team=Player] run function gc:utility/outfit/give_outfit_dolores
 execute if score doTed Settings matches 1 as @p[team=Player] run function gc:utility/outfit/give_outfit_ted

@@ -1,8 +1,6 @@
 # Notes
   # Cannot schedule initial start_request to allow @s selection so do it for manage_tests.
 
-tellraw @a "state 3"
-
 # Setup Teams
 team join Player @s
 

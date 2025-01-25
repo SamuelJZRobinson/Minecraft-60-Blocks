@@ -1,5 +1,3 @@
-tellraw @a "state 9"
-
 # POV Settings
   # Reset Scores
   execute if score doInPersonExpedition Settings matches 1 run scoreboard players reset * PlayerDeaths
