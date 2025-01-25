@@ -6,8 +6,8 @@ execute unless score preMusic GameStatus = music GameStatus run function gc:util
 
 # Player
   # Gamemode
-  # execute if score isGameStarted GameStatus matches 0 run gamemode adventure @a[team=Lobby,gamemode=!adventure]
-  # execute if score isGameStarted GameStatus matches 1 run gamemode spectator @a[team=Lobby,gamemode=!spectator]
+  execute if score isGameStarted GameStatus matches 0 run gamemode adventure @a[team=Lobby,gamemode=!adventure]
+  execute if score isGameStarted GameStatus matches 1 run gamemode spectator @a[team=Lobby,gamemode=!spectator]
   # Team Validation
     # Lobby
     team join Lobby @a[team=!Lobby,team=!Player]
