@@ -1,6 +1,10 @@
 # Notes
+  # Influenced by constant exposure to upsetting events.
+  # Break items and flee after 20 to 35 days.
   # Characters who can't break an item are forced to escape early.
   # Characters only break one item each time they become crazy.
+  # Negative events: dying or escaping family members, being the only character remaining, or attacking neighbours.
+  # Positive events: successful expeditions, friendly scavengers looking for supplies, not attacking neighbours.
 
 # Crazy
   # Restore Sanity

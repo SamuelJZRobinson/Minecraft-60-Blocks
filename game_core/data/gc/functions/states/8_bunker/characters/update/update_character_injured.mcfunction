@@ -1,3 +1,8 @@
+# Notes
+  # Influenced by events and expeditions.
+  # Only cured with a medkit.
+  # Fatal after 8 to 10 days.
+
 # Increment Days
 $execute if score isInjured $(objective) matches 1 run scoreboard players add injuredDays $(objective) 1
 

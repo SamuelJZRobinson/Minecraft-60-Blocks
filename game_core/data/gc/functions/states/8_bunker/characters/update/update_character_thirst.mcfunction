@@ -1,3 +1,6 @@
+# Notes
+  # Fatal after not drinking water for 6 days.
+
 # Decrement Score
 $scoreboard players remove water $(objective) 1
 

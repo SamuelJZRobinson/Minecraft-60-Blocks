@@ -1,3 +1,7 @@
+# Notes
+  # Influenced by expeditions and malnutrition.
+  # Fatal after 20 to 40 days.
+
 # Sick Chance
   # Low Soup
   $execute if score isSick $(objective) matches 0 if score soup $(objective) <= HUNGER_AMOUNT_CRITICAL CharactersLevels store result score output Math run function gc:utility/math/get_random_value_via_amount_score {"x":1,"score":SICK_STARVATION,"objective":CharactersOdds}

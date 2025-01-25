@@ -1,3 +1,6 @@
+# Notes
+  # Fatal after not eating food for 11 days.
+
 # Decrement Score
 $scoreboard players remove soup $(objective) 1
 
