@@ -2,6 +2,9 @@
 effect give @p[team=Player] invisibility 4 0 true
 effect give @p[team=Player] resistance 4 5 true
 
+# Outfits
+execute as @p[team=Player] run function gc:utility/outfit/manage_expedition_outfit
+
 # Teleport To Locations
 execute if score mapVisited MenuExpedition matches 1 run function gc:states/9_expedition/player/tp/tp_house_ruins
 execute if score mapVisited MenuExpedition matches 2 run function gc:states/9_expedition/player/tp/tp_retail_strip_1
