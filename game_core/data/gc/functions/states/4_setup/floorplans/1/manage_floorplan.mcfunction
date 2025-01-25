@@ -16,7 +16,7 @@ scoreboard players set bunkerSide GameStatus 1
 execute unless entity @e[type=minecraft:item_frame,tag=deleteItemFrame] run summon item_frame 18.00 -28.50 -12.50 {Facing:5b,Invulnerable:1b,Fixed:1b,Tags:["house","deleteItemFrame"],Item:{id:"minecraft:filled_map",count:1,components:{"minecraft:map_id":4}}}
 
 # Spawn Markers
-execute unless score gamemode Settings matches 1 run function gc:states/4_setup/floorplans/general/summon_bunker_indicator
-execute unless score gamemode Settings matches 1 run function gc:states/4_setup/floorplans/general/manage_markers
-execute unless score gamemode Settings matches 1 run function gc:states/4_setup/floorplans/1/summon_markers
-execute unless score gamemode Settings matches 1 run function gc:states/4_setup/floorplans/1/tag_room_markers
+function gc:states/4_setup/floorplans/general/summon_bunker_indicator
+function gc:states/4_setup/floorplans/general/manage_markers
+function gc:states/4_setup/floorplans/1/summon_markers
+function gc:states/4_setup/floorplans/1/tag_room_markers
