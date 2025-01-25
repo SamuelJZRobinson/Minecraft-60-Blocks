@@ -38,6 +38,3 @@ item replace entity @s hotbar.5 with red_stained_glass_pane[custom_name='{"color
 item replace entity @s hotbar.6 with red_stained_glass_pane[custom_name='{"color":"red","text":"Locked"}',custom_data={locked:1b}] 1
 item replace entity @s hotbar.7 with red_stained_glass_pane[custom_name='{"color":"red","text":"Locked"}',custom_data={locked:1b}] 1
 item replace entity @s hotbar.8 with red_stained_glass_pane[custom_name='{"color":"red","text":"Locked"}',custom_data={locked:1b}] 1
-
-# Offhand
-item replace entity @s weapon.offhand with red_stained_glass_pane[custom_name='{"color":"red","text":"Locked"}',custom_model_data=1,custom_data={locked:1b}] 1

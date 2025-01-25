@@ -11,6 +11,9 @@ scoreboard players set bundleCount ItemsBundles 0
   # Expedition
   execute store result score bundleCount ItemsBundles run data get storage minecraft:itemsprocess expeditionGainedItemIds
   execute if score bundleCount ItemsBundles matches 1.. run function gc:states/8_bunker/items/process/get_expedition_gained_items
+  # Expedition (In-Person)
+  execute store result score bundleCount ItemsBundles run data get storage minecraft:itemsprocess expeditionInPersonGainedItemIds
+  execute if score bundleCount ItemsBundles matches 1.. run function gc:states/8_bunker/items/process/get_expedition_in_person_gained_items
   # Characters
   execute store result score bundleCount ItemsBundles run data get storage minecraft:itemsprocess charactersGainedIds
   execute if score bundleCount ItemsBundles matches 1.. run function gc:states/8_bunker/items/process/get_characters_gained
@@ -43,5 +46,6 @@ data remove storage minecraft:itemsprocess charactersGainedIds
 data remove storage minecraft:itemsprocess charactersMovedIds
 data remove storage minecraft:itemsprocess charactersLostIds
 data remove storage minecraft:itemsprocess expeditionGainedItemIds
+data remove storage minecraft:itemsprocess expeditionInPersonGainedItemIds
 data remove storage minecraft:itemsprocess expeditionTakenItemIds
 data remove storage minecraft:itemsprocess expeditionLostItemIds

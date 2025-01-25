@@ -34,7 +34,7 @@ kill @e[team=Items]
   effect give @p[team=Player] instant_health 1 20 true
   effect give @p[team=Player] minecraft:blindness 2 0 true
   # Append Inventory Items
-  data modify storage minecraft:itemsprocess scavengeGainedItemIds append from entity @s Inventory[].tag.itemId
+  data modify storage minecraft:itemsprocess expeditionInPersonGainedItemIds append from entity @s Inventory[].components.minecraft:custom_data.itemId
   clear @s
 
 # Reset Scores

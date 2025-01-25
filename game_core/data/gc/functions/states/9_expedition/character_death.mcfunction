@@ -8,8 +8,8 @@ scoreboard objectives setdisplay sidebar
 function gc:states/1_factory_reset/clear/clear_locations
 
 # Append Player Inventory
-execute unless score gamemode Settings matches 1 run data modify storage minecraft:itemsprocess expeditionLostItemIds append from entity @s Inventory[].tag.itemId
-execute if score gamemode Settings matches 1 run data modify storage minecraft:itemsprocess suitcaseGainedItemIds append from entity @s Inventory[].tag.itemId
+execute unless score gamemode Settings matches 1 run data modify storage minecraft:itemsprocess expeditionLostItemIds append from entity @s Inventory[].components.minecraft:custom_data.itemId
+execute if score gamemode Settings matches 1 run data modify storage minecraft:itemsprocess suitcaseGainedItemIds append from entity @s Inventory[].components.minecraft:custom_data.itemId
 clear @s
 
 # Append Dead Character
