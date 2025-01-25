@@ -1,11 +1,5 @@
 # Reset Scores
-scoreboard players set isAddition ItemsBundles -1
 scoreboard players set bundleCount ItemsBundles 0
-scoreboard players set doBundle ItemsBundles 1
-scoreboard players set doInstantAdd ItemsBundles 0
-scoreboard players set doSpawn ItemsBundles 0
-scoreboard players set doDisplayOnly ItemsBundles 0
-scoreboard players set doBreak ItemsBundles 0
 
 # Get Item Ids (Addition)
   # Scavenge
