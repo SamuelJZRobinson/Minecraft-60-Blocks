@@ -1,1 +1,1 @@
-summon warden ~ ~ ~ {Glowing:0b,DeathLootTable:"minecraft:empty",Team:"Mobs",PersistenceRequired:1b,Attributes:[{Name:generic.follow_range,Base:40},{Name:generic.max_health,Base:70},{Name:generic.movement_speed,Base:0.45}]}
+summon warden ~ ~ ~ {DeathLootTable:"minecraft:empty",Team:"Mobs",PersistenceRequired:1b,Health:60f,Attributes:[{Name:generic.follow_range,Base:32},{Name:generic.max_health,Base:60},{Name:generic.movement_speed,Base:0.25}],Brain:{memories:{"minecraft:dig_cooldown":{value:{},ttl:1200L}}}}

@@ -1,1 +1,1 @@
-summon ravager ~ ~ ~ {Glowing:0b,DeathLootTable:"minecraft:empty",Team:"Mobs",PersistenceRequired:1b,Health:70f,RoarTick:5,Attributes:[{Name:generic.follow_range,Base:40},{Name:generic.max_health,Base:70}]}
+summon ravager ~ ~ ~ {DeathLootTable:"minecraft:empty",Team:"Mobs",PersistenceRequired:1b,Health:60f,RoarTick:5,Attributes:[{Name:generic.follow_range,Base:32},{Name:generic.max_health,Base:60},{Name:generic.movement_speed,Base:0.25}]}

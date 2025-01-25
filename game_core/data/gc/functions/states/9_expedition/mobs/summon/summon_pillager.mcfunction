@@ -1,1 +1,1 @@
-summon pillager ~ ~ ~ {Glowing:0b,DeathLootTable:"minecraft:empty",Team:"Mobs",PersistenceRequired:1b,CanPickUpLoot:0b,HandItems:[{id:"minecraft:crossbow",count:1},{}],HandDropChances:[0.000F,0.000F],Attributes:[{Name:generic.follow_range,Base:40},{Name:generic.movement_speed,Base:0.35}]}
+summon pillager ~ ~ ~ {DeathLootTable:"minecraft:empty",Team:"Mobs",PersistenceRequired:1b,CanPickUpLoot:0b,HandItems:[{id:"minecraft:crossbow",count:1},{}],HandDropChances:[0.000F,0.000F],Attributes:[{Name:generic.follow_range,Base:32},{Name:generic.movement_speed,Base:0.3}]}
