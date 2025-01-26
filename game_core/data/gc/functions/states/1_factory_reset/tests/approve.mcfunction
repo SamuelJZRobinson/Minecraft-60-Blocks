@@ -8,7 +8,7 @@ function gc:states/1_factory_reset/set/set_players
 time set day
 
 # Status
-tellraw @a ["",{"text":"60 ","bold":true,"color":"yellow"},{"text":"Blocks ","bold":true,"color":"red"},{"text":"datapack loaded!","color":"white"}]
+tellraw @a ["",{"text":"60 ","bold":true,"color":"yellow"},{"text":"Blocks ","bold":true,"color":"red"},{"text":"game core loaded!","color":"white"}]
 
 # Proceed
 schedule function gc:states/inc_state 1t replace
